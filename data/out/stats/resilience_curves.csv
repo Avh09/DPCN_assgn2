@@ -1,0 +1,337 @@
+scope,strategy,fraction_removed,lcc_fraction,efficiency_rel,components
+all,random,0.0,0.76,1.0,167.0
+all,random,0.02,0.7372,0.9361,167.84
+all,random,0.04,0.7148,0.8753,168.28
+all,random,0.06,0.6928,0.816,169.16
+all,random,0.08,0.6711,0.7605,169.38
+all,random,0.1,0.6486,0.7055,170.24
+all,random,0.12,0.6256,0.6524,170.94
+all,random,0.14,0.6017,0.6043,171.26
+all,random,0.16,0.5791,0.556,171.4
+all,random,0.18,0.5582,0.5131,171.94
+all,random,0.2,0.5358,0.4693,172.88
+all,random,0.22,0.5106,0.4271,173.32
+all,random,0.24,0.487,0.3889,173.04
+all,random,0.26,0.4612,0.3483,173.38
+all,random,0.28,0.4405,0.3142,173.28
+all,random,0.3,0.4192,0.2825,173.36
+all,random,0.32,0.3883,0.2487,173.34
+all,random,0.34,0.3581,0.219,173.04
+all,random,0.36,0.3277,0.1897,173.4
+all,random,0.38,0.2966,0.1648,172.98
+all,random,0.4,0.2701,0.1432,172.84
+all,degree,0.0,0.76,1.0,167.0
+all,degree,0.02,0.7225,0.7733,179.0
+all,degree,0.04,0.6738,0.6251,195.0
+all,degree,0.06,0.63,0.48,206.0
+all,degree,0.08,0.55,0.3088,222.0
+all,degree,0.1,0.3012,0.1832,243.0
+all,degree,0.12,0.2325,0.1299,260.0
+all,degree,0.14,0.2112,0.0985,277.0
+all,degree,0.16,0.1412,0.0657,299.0
+all,degree,0.18,0.085,0.037,321.0
+all,degree,0.2,0.035,0.0249,338.0
+all,degree,0.22,0.035,0.0208,354.0
+all,degree,0.24,0.0288,0.0143,377.0
+all,degree,0.26,0.0112,0.0104,390.0
+all,degree,0.28,0.0112,0.009,395.0
+all,degree,0.3,0.01,0.0072,405.0
+all,degree,0.32,0.01,0.006,411.0
+all,degree,0.34,0.0075,0.0046,417.0
+all,degree,0.36,0.0075,0.004,414.0
+all,degree,0.38,0.005,0.003,416.0
+all,degree,0.4,0.005,0.0024,415.0
+all,betweenness,0.0,0.76,1.0,167.0
+all,betweenness,0.02,0.7338,0.7801,171.0
+all,betweenness,0.04,0.2825,0.391,176.0
+all,betweenness,0.06,0.2588,0.3179,187.0
+all,betweenness,0.08,0.2388,0.237,205.0
+all,betweenness,0.1,0.205,0.185,233.0
+all,betweenness,0.12,0.1925,0.1445,249.0
+all,betweenness,0.14,0.1788,0.1132,268.0
+all,betweenness,0.16,0.1325,0.0761,285.0
+all,betweenness,0.18,0.095,0.0546,298.0
+all,betweenness,0.2,0.08,0.0451,315.0
+all,betweenness,0.22,0.0725,0.0356,326.0
+all,betweenness,0.24,0.0362,0.0207,346.0
+all,betweenness,0.26,0.0225,0.0163,358.0
+all,betweenness,0.28,0.0225,0.0132,366.0
+all,betweenness,0.3,0.0138,0.0103,383.0
+all,betweenness,0.32,0.01,0.0078,389.0
+all,betweenness,0.34,0.01,0.0067,393.0
+all,betweenness,0.36,0.01,0.0059,394.0
+all,betweenness,0.38,0.01,0.0043,402.0
+all,betweenness,0.4,0.01,0.0035,403.0
+all,betweenness_adaptive,0.0,0.76,1.0,167.0
+all,betweenness_adaptive,0.02,0.2788,0.3895,179.0
+all,betweenness_adaptive,0.04,0.215,0.2577,190.0
+all,betweenness_adaptive,0.06,0.1212,0.1388,207.0
+all,betweenness_adaptive,0.08,0.0512,0.0832,230.0
+all,betweenness_adaptive,0.1,0.0412,0.0557,255.0
+all,betweenness_adaptive,0.12,0.0288,0.0401,273.0
+all,betweenness_adaptive,0.14,0.0188,0.0286,302.0
+all,betweenness_adaptive,0.16,0.015,0.0206,335.0
+all,betweenness_adaptive,0.18,0.0088,0.0153,362.0
+all,betweenness_adaptive,0.2,0.0075,0.0114,393.0
+all,betweenness_adaptive,0.22,0.0062,0.0086,420.0
+all,betweenness_adaptive,0.24,0.0062,0.0068,436.0
+all,betweenness_adaptive,0.26,0.005,0.0053,451.0
+all,betweenness_adaptive,0.28,0.005,0.004,467.0
+all,betweenness_adaptive,0.3,0.0038,0.0028,478.0
+all,betweenness_adaptive,0.32,0.0038,0.0026,467.0
+all,betweenness_adaptive,0.34,0.0038,0.0024,457.0
+all,betweenness_adaptive,0.36,0.0038,0.0021,450.0
+all,betweenness_adaptive,0.38,0.0038,0.002,437.0
+all,betweenness_adaptive,0.4,0.0038,0.0018,427.0
+MANIT Bhopal,random,0.0,0.7939,1.0,56.0
+MANIT Bhopal,random,0.02,0.7652,0.9343,56.74
+MANIT Bhopal,random,0.04,0.7386,0.8727,57.12
+MANIT Bhopal,random,0.06,0.7132,0.8148,57.62
+MANIT Bhopal,random,0.08,0.6893,0.7608,57.82
+MANIT Bhopal,random,0.1,0.6643,0.7096,58.08
+MANIT Bhopal,random,0.12,0.6401,0.6592,58.42
+MANIT Bhopal,random,0.14,0.6164,0.616,58.8
+MANIT Bhopal,random,0.16,0.5959,0.5711,58.48
+MANIT Bhopal,random,0.18,0.573,0.5272,59.04
+MANIT Bhopal,random,0.2,0.5486,0.4862,59.1
+MANIT Bhopal,random,0.22,0.5268,0.4456,59.18
+MANIT Bhopal,random,0.24,0.5021,0.4036,59.46
+MANIT Bhopal,random,0.26,0.4766,0.3669,59.86
+MANIT Bhopal,random,0.28,0.4506,0.3316,60.62
+MANIT Bhopal,random,0.3,0.4251,0.2967,60.98
+MANIT Bhopal,random,0.32,0.4018,0.2671,61.14
+MANIT Bhopal,random,0.34,0.3814,0.2402,61.48
+MANIT Bhopal,random,0.36,0.3607,0.2156,61.36
+MANIT Bhopal,random,0.38,0.3431,0.1968,61.06
+MANIT Bhopal,random,0.4,0.3217,0.1762,60.7
+MANIT Bhopal,degree,0.0,0.7939,1.0,56.0
+MANIT Bhopal,degree,0.02,0.7669,0.7964,58.0
+MANIT Bhopal,degree,0.04,0.7399,0.6548,60.0
+MANIT Bhopal,degree,0.06,0.6993,0.5054,65.0
+MANIT Bhopal,degree,0.08,0.6149,0.4156,70.0
+MANIT Bhopal,degree,0.1,0.5845,0.3389,75.0
+MANIT Bhopal,degree,0.12,0.4291,0.2168,83.0
+MANIT Bhopal,degree,0.14,0.3615,0.1743,89.0
+MANIT Bhopal,degree,0.16,0.2365,0.1068,96.0
+MANIT Bhopal,degree,0.18,0.2264,0.0961,100.0
+MANIT Bhopal,degree,0.2,0.2128,0.0857,105.0
+MANIT Bhopal,degree,0.22,0.1892,0.073,109.0
+MANIT Bhopal,degree,0.24,0.0878,0.0436,115.0
+MANIT Bhopal,degree,0.26,0.0845,0.0377,116.0
+MANIT Bhopal,degree,0.28,0.0743,0.0294,121.0
+MANIT Bhopal,degree,0.3,0.0574,0.0246,123.0
+MANIT Bhopal,degree,0.32,0.0304,0.0168,129.0
+MANIT Bhopal,degree,0.34,0.0236,0.0138,132.0
+MANIT Bhopal,degree,0.36,0.0236,0.0119,134.0
+MANIT Bhopal,degree,0.38,0.0203,0.0104,134.0
+MANIT Bhopal,degree,0.4,0.0203,0.01,130.0
+MANIT Bhopal,betweenness,0.0,0.7939,1.0,56.0
+MANIT Bhopal,betweenness,0.02,0.7027,0.7467,59.0
+MANIT Bhopal,betweenness,0.04,0.625,0.5721,64.0
+MANIT Bhopal,betweenness,0.06,0.5878,0.5132,69.0
+MANIT Bhopal,betweenness,0.08,0.5676,0.4252,72.0
+MANIT Bhopal,betweenness,0.1,0.4966,0.3435,78.0
+MANIT Bhopal,betweenness,0.12,0.3514,0.209,85.0
+MANIT Bhopal,betweenness,0.14,0.3209,0.18,90.0
+MANIT Bhopal,betweenness,0.16,0.3007,0.1532,97.0
+MANIT Bhopal,betweenness,0.18,0.2905,0.1274,103.0
+MANIT Bhopal,betweenness,0.2,0.277,0.1036,105.0
+MANIT Bhopal,betweenness,0.22,0.1182,0.0602,108.0
+MANIT Bhopal,betweenness,0.24,0.0845,0.0462,113.0
+MANIT Bhopal,betweenness,0.26,0.0743,0.0391,115.0
+MANIT Bhopal,betweenness,0.28,0.0676,0.033,120.0
+MANIT Bhopal,betweenness,0.3,0.0372,0.0214,129.0
+MANIT Bhopal,betweenness,0.32,0.0372,0.0183,129.0
+MANIT Bhopal,betweenness,0.34,0.0304,0.0152,131.0
+MANIT Bhopal,betweenness,0.36,0.0304,0.0142,131.0
+MANIT Bhopal,betweenness,0.38,0.0304,0.0135,131.0
+MANIT Bhopal,betweenness,0.4,0.0203,0.0089,136.0
+MANIT Bhopal,betweenness_adaptive,0.0,0.7939,1.0,56.0
+MANIT Bhopal,betweenness_adaptive,0.02,0.7432,0.7119,60.0
+MANIT Bhopal,betweenness_adaptive,0.04,0.5845,0.4762,64.0
+MANIT Bhopal,betweenness_adaptive,0.06,0.2703,0.2392,69.0
+MANIT Bhopal,betweenness_adaptive,0.08,0.1351,0.1434,78.0
+MANIT Bhopal,betweenness_adaptive,0.1,0.0845,0.097,83.0
+MANIT Bhopal,betweenness_adaptive,0.12,0.0642,0.0748,91.0
+MANIT Bhopal,betweenness_adaptive,0.14,0.0507,0.0574,99.0
+MANIT Bhopal,betweenness_adaptive,0.16,0.0372,0.0439,109.0
+MANIT Bhopal,betweenness_adaptive,0.18,0.0304,0.0336,118.0
+MANIT Bhopal,betweenness_adaptive,0.2,0.0236,0.0258,127.0
+MANIT Bhopal,betweenness_adaptive,0.22,0.0169,0.0202,135.0
+MANIT Bhopal,betweenness_adaptive,0.24,0.0135,0.0164,142.0
+MANIT Bhopal,betweenness_adaptive,0.26,0.0135,0.0133,148.0
+MANIT Bhopal,betweenness_adaptive,0.28,0.0135,0.011,154.0
+MANIT Bhopal,betweenness_adaptive,0.3,0.0135,0.0086,160.0
+MANIT Bhopal,betweenness_adaptive,0.32,0.0101,0.0061,163.0
+MANIT Bhopal,betweenness_adaptive,0.34,0.0068,0.0051,162.0
+MANIT Bhopal,betweenness_adaptive,0.36,0.0068,0.0048,158.0
+MANIT Bhopal,betweenness_adaptive,0.38,0.0068,0.0047,154.0
+MANIT Bhopal,betweenness_adaptive,0.4,0.0068,0.0042,151.0
+NIT Jamshedpur,random,0.0,0.6087,1.0,74.0
+NIT Jamshedpur,random,0.02,0.5901,0.9361,73.74
+NIT Jamshedpur,random,0.04,0.573,0.885,73.54
+NIT Jamshedpur,random,0.06,0.553,0.8236,73.22
+NIT Jamshedpur,random,0.08,0.5377,0.7749,72.8
+NIT Jamshedpur,random,0.1,0.5198,0.7203,72.18
+NIT Jamshedpur,random,0.12,0.5012,0.6684,71.88
+NIT Jamshedpur,random,0.14,0.486,0.6286,71.76
+NIT Jamshedpur,random,0.16,0.4679,0.5835,71.24
+NIT Jamshedpur,random,0.18,0.4517,0.5387,71.34
+NIT Jamshedpur,random,0.2,0.429,0.4854,71.66
+NIT Jamshedpur,random,0.22,0.4084,0.4419,71.42
+NIT Jamshedpur,random,0.24,0.3882,0.4028,71.38
+NIT Jamshedpur,random,0.26,0.3658,0.3637,70.86
+NIT Jamshedpur,random,0.28,0.3481,0.3337,70.5
+NIT Jamshedpur,random,0.3,0.3268,0.2991,69.9
+NIT Jamshedpur,random,0.32,0.3098,0.2712,69.04
+NIT Jamshedpur,random,0.34,0.2903,0.2455,68.72
+NIT Jamshedpur,random,0.36,0.2677,0.2132,68.52
+NIT Jamshedpur,random,0.38,0.2516,0.1916,68.38
+NIT Jamshedpur,random,0.4,0.2244,0.1649,67.96
+NIT Jamshedpur,degree,0.0,0.6087,1.0,74.0
+NIT Jamshedpur,degree,0.02,0.4957,0.6081,84.0
+NIT Jamshedpur,degree,0.04,0.3696,0.3533,92.0
+NIT Jamshedpur,degree,0.06,0.2435,0.1916,101.0
+NIT Jamshedpur,degree,0.08,0.1478,0.1284,106.0
+NIT Jamshedpur,degree,0.1,0.0652,0.0726,119.0
+NIT Jamshedpur,degree,0.12,0.0522,0.0543,125.0
+NIT Jamshedpur,degree,0.14,0.0391,0.0412,133.0
+NIT Jamshedpur,degree,0.16,0.0391,0.0355,136.0
+NIT Jamshedpur,degree,0.18,0.0348,0.0308,137.0
+NIT Jamshedpur,degree,0.2,0.0217,0.0196,144.0
+NIT Jamshedpur,degree,0.22,0.013,0.0139,147.0
+NIT Jamshedpur,degree,0.24,0.013,0.0135,144.0
+NIT Jamshedpur,degree,0.26,0.013,0.0111,144.0
+NIT Jamshedpur,degree,0.28,0.013,0.0088,145.0
+NIT Jamshedpur,degree,0.3,0.013,0.007,144.0
+NIT Jamshedpur,degree,0.32,0.0087,0.0052,143.0
+NIT Jamshedpur,degree,0.34,0.0087,0.004,142.0
+NIT Jamshedpur,degree,0.36,0.0087,0.0032,139.0
+NIT Jamshedpur,degree,0.38,0.0087,0.0024,137.0
+NIT Jamshedpur,degree,0.4,0.0087,0.0024,132.0
+NIT Jamshedpur,betweenness,0.0,0.6087,1.0,74.0
+NIT Jamshedpur,betweenness,0.02,0.5217,0.681,81.0
+NIT Jamshedpur,betweenness,0.04,0.4478,0.4903,87.0
+NIT Jamshedpur,betweenness,0.06,0.2043,0.2005,96.0
+NIT Jamshedpur,betweenness,0.08,0.1391,0.1382,103.0
+NIT Jamshedpur,betweenness,0.1,0.0652,0.0786,114.0
+NIT Jamshedpur,betweenness,0.12,0.0652,0.0672,118.0
+NIT Jamshedpur,betweenness,0.14,0.0565,0.0568,122.0
+NIT Jamshedpur,betweenness,0.16,0.0565,0.0445,130.0
+NIT Jamshedpur,betweenness,0.18,0.0435,0.0373,132.0
+NIT Jamshedpur,betweenness,0.2,0.0348,0.0308,134.0
+NIT Jamshedpur,betweenness,0.22,0.0348,0.027,135.0
+NIT Jamshedpur,betweenness,0.24,0.0348,0.0248,136.0
+NIT Jamshedpur,betweenness,0.26,0.0348,0.0223,136.0
+NIT Jamshedpur,betweenness,0.28,0.0348,0.018,137.0
+NIT Jamshedpur,betweenness,0.3,0.0348,0.0153,136.0
+NIT Jamshedpur,betweenness,0.32,0.0348,0.0145,133.0
+NIT Jamshedpur,betweenness,0.34,0.0217,0.0097,133.0
+NIT Jamshedpur,betweenness,0.36,0.013,0.0046,136.0
+NIT Jamshedpur,betweenness,0.38,0.0087,0.0036,134.0
+NIT Jamshedpur,betweenness,0.4,0.0087,0.0028,131.0
+NIT Jamshedpur,betweenness_adaptive,0.0,0.6087,1.0,74.0
+NIT Jamshedpur,betweenness_adaptive,0.02,0.4435,0.5675,80.0
+NIT Jamshedpur,betweenness_adaptive,0.04,0.2696,0.3002,87.0
+NIT Jamshedpur,betweenness_adaptive,0.06,0.087,0.1455,97.0
+NIT Jamshedpur,betweenness_adaptive,0.08,0.0696,0.0957,109.0
+NIT Jamshedpur,betweenness_adaptive,0.1,0.0391,0.0672,115.0
+NIT Jamshedpur,betweenness_adaptive,0.12,0.0261,0.0468,125.0
+NIT Jamshedpur,betweenness_adaptive,0.14,0.0217,0.0358,134.0
+NIT Jamshedpur,betweenness_adaptive,0.16,0.0217,0.0245,143.0
+NIT Jamshedpur,betweenness_adaptive,0.18,0.013,0.0181,148.0
+NIT Jamshedpur,betweenness_adaptive,0.2,0.013,0.0131,153.0
+NIT Jamshedpur,betweenness_adaptive,0.22,0.0087,0.0097,155.0
+NIT Jamshedpur,betweenness_adaptive,0.24,0.0087,0.0088,153.0
+NIT Jamshedpur,betweenness_adaptive,0.26,0.0087,0.0076,151.0
+NIT Jamshedpur,betweenness_adaptive,0.28,0.0087,0.0072,148.0
+NIT Jamshedpur,betweenness_adaptive,0.3,0.0087,0.0064,145.0
+NIT Jamshedpur,betweenness_adaptive,0.32,0.0087,0.0056,142.0
+NIT Jamshedpur,betweenness_adaptive,0.34,0.0087,0.0048,140.0
+NIT Jamshedpur,betweenness_adaptive,0.36,0.0087,0.004,137.0
+NIT Jamshedpur,betweenness_adaptive,0.38,0.0087,0.0032,135.0
+NIT Jamshedpur,betweenness_adaptive,0.4,0.0087,0.0024,132.0
+NIT Silchar,random,0.0,0.8175,1.0,49.0
+NIT Silchar,random,0.02,0.7988,0.9515,48.94
+NIT Silchar,random,0.04,0.7725,0.8873,49.7
+NIT Silchar,random,0.06,0.7523,0.8392,50.1
+NIT Silchar,random,0.08,0.728,0.7829,50.5
+NIT Silchar,random,0.1,0.7094,0.7378,50.42
+NIT Silchar,random,0.12,0.6854,0.6847,50.32
+NIT Silchar,random,0.14,0.6664,0.6447,50.44
+NIT Silchar,random,0.16,0.6426,0.5946,50.5
+NIT Silchar,random,0.18,0.6215,0.5545,50.82
+NIT Silchar,random,0.2,0.5973,0.5053,50.7
+NIT Silchar,random,0.22,0.5764,0.4677,51.06
+NIT Silchar,random,0.24,0.551,0.4256,51.32
+NIT Silchar,random,0.26,0.5315,0.3952,51.34
+NIT Silchar,random,0.28,0.5077,0.361,51.42
+NIT Silchar,random,0.3,0.4859,0.3309,51.46
+NIT Silchar,random,0.32,0.4623,0.2983,51.56
+NIT Silchar,random,0.34,0.4416,0.2733,51.56
+NIT Silchar,random,0.36,0.4168,0.2433,51.66
+NIT Silchar,random,0.38,0.392,0.218,51.72
+NIT Silchar,random,0.4,0.3687,0.1925,51.66
+NIT Silchar,degree,0.0,0.8175,1.0,49.0
+NIT Silchar,degree,0.02,0.7847,0.8346,53.0
+NIT Silchar,degree,0.04,0.7482,0.694,57.0
+NIT Silchar,degree,0.06,0.7044,0.5955,64.0
+NIT Silchar,degree,0.08,0.6606,0.4996,67.0
+NIT Silchar,degree,0.1,0.5438,0.372,74.0
+NIT Silchar,degree,0.12,0.5182,0.3106,76.0
+NIT Silchar,degree,0.14,0.4453,0.2366,83.0
+NIT Silchar,degree,0.16,0.4088,0.1982,87.0
+NIT Silchar,degree,0.18,0.3759,0.1637,92.0
+NIT Silchar,degree,0.2,0.2226,0.0867,101.0
+NIT Silchar,degree,0.22,0.0985,0.0549,108.0
+NIT Silchar,degree,0.24,0.0985,0.0466,116.0
+NIT Silchar,degree,0.26,0.0912,0.0328,123.0
+NIT Silchar,degree,0.28,0.0292,0.0173,133.0
+NIT Silchar,degree,0.3,0.0292,0.0151,135.0
+NIT Silchar,degree,0.32,0.0292,0.0121,140.0
+NIT Silchar,degree,0.34,0.0292,0.0101,141.0
+NIT Silchar,degree,0.36,0.0219,0.0061,146.0
+NIT Silchar,degree,0.38,0.0219,0.0052,146.0
+NIT Silchar,degree,0.4,0.0109,0.0036,146.0
+NIT Silchar,betweenness,0.0,0.8175,1.0,49.0
+NIT Silchar,betweenness,0.02,0.7737,0.8373,54.0
+NIT Silchar,betweenness,0.04,0.7409,0.6591,57.0
+NIT Silchar,betweenness,0.06,0.6679,0.5696,61.0
+NIT Silchar,betweenness,0.08,0.6204,0.4869,66.0
+NIT Silchar,betweenness,0.1,0.5912,0.39,72.0
+NIT Silchar,betweenness,0.12,0.2737,0.1976,81.0
+NIT Silchar,betweenness,0.14,0.2482,0.1711,85.0
+NIT Silchar,betweenness,0.16,0.2336,0.1359,94.0
+NIT Silchar,betweenness,0.18,0.219,0.1078,95.0
+NIT Silchar,betweenness,0.2,0.1679,0.076,103.0
+NIT Silchar,betweenness,0.22,0.1533,0.065,106.0
+NIT Silchar,betweenness,0.24,0.1241,0.0481,117.0
+NIT Silchar,betweenness,0.26,0.0657,0.0321,122.0
+NIT Silchar,betweenness,0.28,0.0657,0.0273,126.0
+NIT Silchar,betweenness,0.3,0.062,0.0203,132.0
+NIT Silchar,betweenness,0.32,0.0474,0.0141,139.0
+NIT Silchar,betweenness,0.34,0.0219,0.0095,141.0
+NIT Silchar,betweenness,0.36,0.0146,0.0062,144.0
+NIT Silchar,betweenness,0.38,0.0109,0.005,145.0
+NIT Silchar,betweenness,0.4,0.0109,0.0037,145.0
+NIT Silchar,betweenness_adaptive,0.0,0.8175,1.0,49.0
+NIT Silchar,betweenness_adaptive,0.02,0.6387,0.6894,56.0
+NIT Silchar,betweenness_adaptive,0.04,0.5985,0.5258,61.0
+NIT Silchar,betweenness_adaptive,0.06,0.3285,0.301,65.0
+NIT Silchar,betweenness_adaptive,0.08,0.2263,0.2076,68.0
+NIT Silchar,betweenness_adaptive,0.1,0.135,0.1446,76.0
+NIT Silchar,betweenness_adaptive,0.12,0.1168,0.1009,85.0
+NIT Silchar,betweenness_adaptive,0.14,0.0839,0.0744,90.0
+NIT Silchar,betweenness_adaptive,0.16,0.0474,0.0511,97.0
+NIT Silchar,betweenness_adaptive,0.18,0.0365,0.0368,108.0
+NIT Silchar,betweenness_adaptive,0.2,0.0255,0.0268,118.0
+NIT Silchar,betweenness_adaptive,0.22,0.0219,0.0209,127.0
+NIT Silchar,betweenness_adaptive,0.24,0.0182,0.0143,141.0
+NIT Silchar,betweenness_adaptive,0.26,0.0109,0.0115,146.0
+NIT Silchar,betweenness_adaptive,0.28,0.0109,0.009,152.0
+NIT Silchar,betweenness_adaptive,0.3,0.0109,0.0069,157.0
+NIT Silchar,betweenness_adaptive,0.32,0.0109,0.0044,163.0
+NIT Silchar,betweenness_adaptive,0.34,0.0109,0.003,164.0
+NIT Silchar,betweenness_adaptive,0.36,0.0109,0.0027,160.0
+NIT Silchar,betweenness_adaptive,0.38,0.0109,0.0024,157.0
+NIT Silchar,betweenness_adaptive,0.4,0.0109,0.0018,154.0

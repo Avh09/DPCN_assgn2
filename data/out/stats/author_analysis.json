@@ -1,0 +1,467 @@
+{
+ "MANIT Bhopal": {
+  "faculty_listed": 296,
+  "faculty_with_papers": 296,
+  "faculty_without_papers": 0,
+  "papers_per_faculty_median": 18.0,
+  "papers_per_faculty_mean": 24.6,
+  "h_index_median": 6.0,
+  "h_index_p90": 14.0,
+  "h_index_max": 56,
+  "faculty_h_20_plus": 11,
+  "top10_share_of_citations_%": 35.9,
+  "top10_by_papers_share_of_papers_%": 15.6,
+  "gini_papers_per_faculty": 0.499,
+  "gini_citations_per_faculty": 0.726,
+  "faculty_median_q1_share_%": 28.450000000000003,
+  "top5_h_index": [
+   {
+    "faculty_name": "Kumarasamy Sudhakar",
+    "h_index": 56,
+    "papers": 145,
+    "citations": 11714
+   },
+   {
+    "faculty_name": "Tikendra Nath Verma",
+    "h_index": 37,
+    "papers": 145,
+    "citations": 4256
+   },
+   {
+    "faculty_name": "Prashant V. Baredar",
+    "h_index": 36,
+    "papers": 113,
+    "citations": 5818
+   },
+   {
+    "faculty_name": "Gaurav Dwivedi",
+    "h_index": 31,
+    "papers": 127,
+    "citations": 3236
+   },
+   {
+    "faculty_name": "Rajesh Purohit",
+    "h_index": 30,
+    "papers": 169,
+    "citations": 3272
+   }
+  ],
+  "top5_papers": [
+   {
+    "faculty_name": "Rajesh Purohit",
+    "papers": 169,
+    "citations": 3272,
+    "h_index": 30
+   },
+   {
+    "faculty_name": "Kumarasamy Sudhakar",
+    "papers": 145,
+    "citations": 11714,
+    "h_index": 56
+   },
+   {
+    "faculty_name": "Tikendra Nath Verma",
+    "papers": 145,
+    "citations": 4256,
+    "h_index": 37
+   },
+   {
+    "faculty_name": "Gaurav Dwivedi",
+    "papers": 127,
+    "citations": 3236,
+    "h_index": 31
+   },
+   {
+    "faculty_name": "Prashant V. Baredar",
+    "papers": 113,
+    "citations": 5818,
+    "h_index": 36
+   }
+  ],
+  "top5_citations": [
+   {
+    "faculty_name": "Kumarasamy Sudhakar",
+    "citations": 11714,
+    "papers": 145,
+    "h_index": 56
+   },
+   {
+    "faculty_name": "Prashant V. Baredar",
+    "citations": 5818,
+    "papers": 113,
+    "h_index": 36
+   },
+   {
+    "faculty_name": "Tikendra Nath Verma",
+    "citations": 4256,
+    "papers": 145,
+    "h_index": 37
+   },
+   {
+    "faculty_name": "Rajesh Purohit",
+    "citations": 3272,
+    "papers": 169,
+    "h_index": 30
+   },
+   {
+    "faculty_name": "Gaurav Dwivedi",
+    "citations": 3236,
+    "papers": 127,
+    "h_index": 31
+   }
+  ],
+  "top5_top_journal_papers": [
+   {
+    "faculty_name": "Tikendra Nath Verma",
+    "top_journal": "Fuel",
+    "top_journal_papers": 21
+   },
+   {
+    "faculty_name": "Rajesh Purohit",
+    "top_journal": "Advances in Materials and Processing Technologies",
+    "top_journal_papers": 17
+   },
+   {
+    "faculty_name": "Kumarasamy Sudhakar",
+    "top_journal": "Case Studies in Thermal Engineering",
+    "top_journal_papers": 10
+   },
+   {
+    "faculty_name": "JYOTI MITTAL",
+    "top_journal": "Desalination and Water Treatment",
+    "top_journal_papers": 9
+   },
+   {
+    "faculty_name": "Kamal Raj Pardasani",
+    "top_journal": "The European Physical Journal Plus",
+    "top_journal_papers": 9
+   }
+  ],
+  "current_vs_former": {
+   "current": 278,
+   "former": 18
+  },
+  "median_collaborators_in_faculty_network": 2.0
+ },
+ "NIT Jamshedpur": {
+  "faculty_listed": 235,
+  "faculty_with_papers": 235,
+  "faculty_without_papers": 0,
+  "papers_per_faculty_median": 13.0,
+  "papers_per_faculty_mean": 17.8,
+  "h_index_median": 4.0,
+  "h_index_p90": 11.0,
+  "h_index_max": 42,
+  "faculty_h_20_plus": 3,
+  "top10_share_of_citations_%": 38.6,
+  "top10_by_papers_share_of_papers_%": 20.1,
+  "gini_papers_per_faculty": 0.54,
+  "gini_citations_per_faculty": 0.723,
+  "faculty_median_q1_share_%": 20.0,
+  "top5_h_index": [
+   {
+    "faculty_name": "Sunil Kumar",
+    "h_index": 42,
+    "papers": 137,
+    "citations": 6433
+   },
+   {
+    "faculty_name": "Balram Ambade",
+    "h_index": 34,
+    "papers": 92,
+    "citations": 4686
+   },
+   {
+    "faculty_name": "RASHMI SINHA",
+    "h_index": 20,
+    "papers": 83,
+    "citations": 963
+   },
+   {
+    "faculty_name": "Sanja y",
+    "h_index": 18,
+    "papers": 53,
+    "citations": 1076
+   },
+   {
+    "faculty_name": "Dilip Kumar (Computer Science and Engineering)",
+    "h_index": 16,
+    "papers": 34,
+    "citations": 656
+   }
+  ],
+  "top5_papers": [
+   {
+    "faculty_name": "Sunil Kumar",
+    "papers": 137,
+    "citations": 6433,
+    "h_index": 42
+   },
+   {
+    "faculty_name": "Balram Ambade",
+    "papers": 92,
+    "citations": 4686,
+    "h_index": 34
+   },
+   {
+    "faculty_name": "Mani Kant Paswan",
+    "papers": 91,
+    "citations": 809,
+    "h_index": 15
+   },
+   {
+    "faculty_name": "RASHMI SINHA",
+    "papers": 83,
+    "citations": 963,
+    "h_index": 20
+   },
+   {
+    "faculty_name": "Omhari Gupta",
+    "papers": 76,
+    "citations": 333,
+    "h_index": 10
+   }
+  ],
+  "top5_citations": [
+   {
+    "faculty_name": "Sunil Kumar",
+    "citations": 6433,
+    "papers": 137,
+    "h_index": 42
+   },
+   {
+    "faculty_name": "Balram Ambade",
+    "citations": 4686,
+    "papers": 92,
+    "h_index": 34
+   },
+   {
+    "faculty_name": "Radha Krishna Prasad",
+    "citations": 1193,
+    "papers": 16,
+    "h_index": 12
+   },
+   {
+    "faculty_name": "Shashi Bhushan Prasad",
+    "citations": 1101,
+    "papers": 37,
+    "h_index": 11
+   },
+   {
+    "faculty_name": "Chandrashekhar Azad",
+    "citations": 1091,
+    "papers": 54,
+    "h_index": 14
+   }
+  ],
+  "top5_top_journal_papers": [
+   {
+    "faculty_name": "Ujjwal Laha",
+    "top_journal": "Pramana",
+    "top_journal_papers": 14
+   },
+   {
+    "faculty_name": "BINOD KUMAR SINGH",
+    "top_journal": "Multimedia Tools and Applications",
+    "top_journal_papers": 12
+   },
+   {
+    "faculty_name": "Sunil Kumar",
+    "top_journal": "Chaos Solitons & Fractals",
+    "top_journal_papers": 11
+   },
+   {
+    "faculty_name": "Sumit Kumar Debnath",
+    "top_journal": "Journal of Information Security and Applications",
+    "top_journal_papers": 9
+   },
+   {
+    "faculty_name": "RASHMI SINHA",
+    "top_journal": "Frequenz",
+    "top_journal_papers": 8
+   }
+  ],
+  "current_vs_former": {
+   "current": 173,
+   "former": 62
+  },
+  "median_collaborators_in_faculty_network": 1.0
+ },
+ "NIT Silchar": {
+  "faculty_listed": 276,
+  "faculty_with_papers": 276,
+  "faculty_without_papers": 0,
+  "papers_per_faculty_median": 23.0,
+  "papers_per_faculty_mean": 38.0,
+  "h_index_median": 7.0,
+  "h_index_p90": 22.0,
+  "h_index_max": 54,
+  "faculty_h_20_plus": 35,
+  "top10_share_of_citations_%": 29.5,
+  "top10_by_papers_share_of_papers_%": 18.6,
+  "gini_papers_per_faculty": 0.561,
+  "gini_citations_per_faculty": 0.707,
+  "faculty_median_q1_share_%": 34.5,
+  "top5_h_index": [
+   {
+    "faculty_name": "Md. Ahmaruzzaman",
+    "h_index": 54,
+    "papers": 276,
+    "citations": 10624
+   },
+   {
+    "faculty_name": "Samuel Lalthazuala Rokhum",
+    "h_index": 47,
+    "papers": 186,
+    "citations": 7193
+   },
+   {
+    "faculty_name": "Krishna Murari Pandey",
+    "h_index": 43,
+    "papers": 211,
+    "citations": 6132
+   },
+   {
+    "faculty_name": "Lalit Chandra Saikia",
+    "h_index": 36,
+    "papers": 169,
+    "citations": 3941
+   },
+   {
+    "faculty_name": "Sukumar Pati",
+    "h_index": 36,
+    "papers": 151,
+    "citations": 3445
+   }
+  ],
+  "top5_papers": [
+   {
+    "faculty_name": "Md. Ahmaruzzaman",
+    "papers": 276,
+    "citations": 10624,
+    "h_index": 54
+   },
+   {
+    "faculty_name": "Krishna Murari Pandey",
+    "papers": 211,
+    "citations": 6132,
+    "h_index": 43
+   },
+   {
+    "faculty_name": "Koushik Guha",
+    "papers": 199,
+    "citations": 1545,
+    "h_index": 20
+   },
+   {
+    "faculty_name": "Rabul Hussain Laskar",
+    "papers": 193,
+    "citations": 2311,
+    "h_index": 24
+   },
+   {
+    "faculty_name": "Samuel Lalthazuala Rokhum",
+    "papers": 186,
+    "citations": 7193,
+    "h_index": 47
+   }
+  ],
+  "top5_citations": [
+   {
+    "faculty_name": "Md. Ahmaruzzaman",
+    "citations": 10624,
+    "papers": 276,
+    "h_index": 54
+   },
+   {
+    "faculty_name": "Samuel Lalthazuala Rokhum",
+    "citations": 7193,
+    "papers": 186,
+    "h_index": 47
+   },
+   {
+    "faculty_name": "Krishna Murari Pandey",
+    "citations": 6132,
+    "papers": 211,
+    "h_index": 43
+   },
+   {
+    "faculty_name": "Lalit Chandra Saikia",
+    "citations": 3941,
+    "papers": 169,
+    "h_index": 36
+   },
+   {
+    "faculty_name": "Saroj Kr. Biswas",
+    "citations": 3509,
+    "papers": 184,
+    "h_index": 28
+   }
+  ],
+  "top5_top_journal_papers": [
+   {
+    "faculty_name": "Koushik Guha",
+    "top_journal": "Microsystem Technologies",
+    "top_journal_papers": 61
+   },
+   {
+    "faculty_name": "Ashish Paramane",
+    "top_journal": "IEEE Transactions on Dielectrics and Electrical Insulation",
+    "top_journal_papers": 24
+   },
+   {
+    "faculty_name": "Krishna Murari Pandey",
+    "top_journal": "International Journal of Hydrogen Energy",
+    "top_journal_papers": 18
+   },
+   {
+    "faculty_name": "Brinda Bhowmick",
+    "top_journal": "Silicon",
+    "top_journal_papers": 18
+   },
+   {
+    "faculty_name": "Md. Ahmaruzzaman",
+    "top_journal": "Scientific Reports",
+    "top_journal_papers": 17
+   }
+  ],
+  "current_vs_former": {
+   "current": 237,
+   "former": 39
+  },
+  "median_collaborators_in_faculty_network": 2.0
+ },
+ "brokers_top5": [
+  {
+   "faculty_name": "Vijay Bhaskar Semwal",
+   "institution": "MANIT Bhopal",
+   "betweenness": 0.11797,
+   "collaborators": 17.0
+  },
+  {
+   "faculty_name": "Rajesh Purohit",
+   "institution": "MANIT Bhopal",
+   "betweenness": 0.10955,
+   "collaborators": 25.0
+  },
+  {
+   "faculty_name": "SURESH KUMAR GAWRE",
+   "institution": "MANIT Bhopal",
+   "betweenness": 0.08985,
+   "collaborators": 15.0
+  },
+  {
+   "faculty_name": "Kunal Singh",
+   "institution": "NIT Jamshedpur",
+   "betweenness": 0.08102,
+   "collaborators": 7.0
+  },
+  {
+   "faculty_name": "Vimlesh Kumar Soni",
+   "institution": "MANIT Bhopal",
+   "betweenness": 0.06968,
+   "collaborators": 4.0
+  }
+ ],
+ "note": "faculty corpus only (group15_data.csv); h-index counts 2016-2026 papers of the corpus"
+}

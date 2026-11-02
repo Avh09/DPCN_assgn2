@@ -1,0 +1,377 @@
+{
+ "verdicts": [
+  "Headcount does not explain it: NITS has 274 research-active faculty, fewer than MANIT (296). Output per faculty does: 30.62 papers per person against 19.46 at MANIT and 15.5 at NITJ.",
+  "It is broad-based, not a few prolific people: the median faculty member at NITS has 23 papers against 18 at MANIT and 13 at NITJ.",
+  "Concentration: the top 10% of faculty hold 33.1% of paper credits at MANIT, 36.3% of paper credits at NITJ, 37.9% of paper credits at NITS (similar, so concentration is not what separates the three institutes).",
+  "Shared papers are not inflating it: splitting each paper between its faculty authors leaves NITS at 30.56 papers per faculty against 19.43 at MANIT and 15.41 at NITJ.",
+  "Team size (3.4-3.6 authors per paper) and conference share (33.2-37.6%) are similar across the three institutes, so these measures do not explain the gap.",
+  "Seniority: NITS has 10.6% professors against 26.7% at MANIT and 9.1% at NITJ, yet its professors average 86.7 papers each (MANIT 29.5, NITJ 37.2).",
+  "Like for like: NITS has the highest papers per faculty in 6 of the 8 departments that exist at all three institutes.",
+  "NITS published the most papers in 10 of the 10 full years (2016-2025)."
+ ],
+ "measures": [
+  {
+   "key": "papers",
+   "label": "Papers (full counting)",
+   "note": "How many papers",
+   "values": {
+    "MANIT Bhopal": 5759,
+    "NIT Jamshedpur": 3564,
+    "NIT Silchar": 8389
+   }
+  },
+  {
+   "key": "active_faculty",
+   "label": "Research-active faculty",
+   "note": "Size: more faculty can mean more papers",
+   "values": {
+    "MANIT Bhopal": 296,
+    "NIT Jamshedpur": 230,
+    "NIT Silchar": 274
+   }
+  },
+  {
+   "key": "papers_per_faculty",
+   "label": "Papers per active faculty",
+   "note": "Output per person",
+   "values": {
+    "MANIT Bhopal": 19.46,
+    "NIT Jamshedpur": 15.5,
+    "NIT Silchar": 30.62
+   }
+  },
+  {
+   "key": "median_papers_per_faculty",
+   "label": "Median papers per faculty",
+   "note": "Typical person; close to the mean = broad-based, far below = a few prolific people",
+   "values": {
+    "MANIT Bhopal": 18.0,
+    "NIT Jamshedpur": 13.0,
+    "NIT Silchar": 23.0
+   }
+  },
+  {
+   "key": "top10pct_faculty_share_of_faculty_paper_credits_%",
+   "label": "Share of paper credits held by the top 10% of faculty",
+   "note": "High = output concentrated in few people",
+   "values": {
+    "MANIT Bhopal": 33.1,
+    "NIT Jamshedpur": 36.3,
+    "NIT Silchar": 37.9
+   }
+  },
+  {
+   "key": "fractional_papers_per_faculty",
+   "label": "Papers per faculty, shared papers split between authors",
+   "note": "Removes the advantage of co-authoring many papers with colleagues",
+   "values": {
+    "MANIT Bhopal": 19.43,
+    "NIT Jamshedpur": 15.41,
+    "NIT Silchar": 30.56
+   }
+  },
+  {
+   "key": "papers_with_2plus_own_faculty_%",
+   "label": "Papers with 2+ faculty of the same institute (%)",
+   "note": "Internal co-authorship inflates full counts",
+   "values": {
+    "MANIT Bhopal": 24.1,
+    "NIT Jamshedpur": 14.9,
+    "NIT Silchar": 22.3
+   }
+  },
+  {
+   "key": "avg_authors_per_paper",
+   "label": "Authors per paper (mean)",
+   "note": "Bigger teams per paper",
+   "values": {
+    "MANIT Bhopal": 3.4,
+    "NIT Jamshedpur": 3.5,
+    "NIT Silchar": 3.6
+   }
+  },
+  {
+   "key": "conference_share_%",
+   "label": "Conference papers (%)",
+   "note": "Conferences are quicker to produce than journals",
+   "values": {
+    "MANIT Bhopal": 37.6,
+    "NIT Jamshedpur": 33.2,
+    "NIT Silchar": 35.0
+   }
+  },
+  {
+   "key": "share_Professor_%",
+   "label": "Professors (% of active faculty)",
+   "note": "Seniority mix",
+   "values": {
+    "MANIT Bhopal": 26.7,
+    "NIT Jamshedpur": 9.1,
+    "NIT Silchar": 10.6
+   }
+  },
+  {
+   "key": "share_Associate professor_%",
+   "label": "Associate professors (%)",
+   "note": "",
+   "values": {
+    "MANIT Bhopal": 27.0,
+    "NIT Jamshedpur": 15.7,
+    "NIT Silchar": 23.4
+   }
+  },
+  {
+   "key": "share_Assistant professor_%",
+   "label": "Assistant professors (%)",
+   "note": "",
+   "values": {
+    "MANIT Bhopal": 36.8,
+    "NIT Jamshedpur": 50.4,
+    "NIT Silchar": 51.1
+   }
+  },
+  {
+   "key": "papers_per_Professor",
+   "label": "Papers per professor",
+   "note": "Output by rank",
+   "values": {
+    "MANIT Bhopal": 29.5,
+    "NIT Jamshedpur": 37.2,
+    "NIT Silchar": 86.7
+   }
+  },
+  {
+   "key": "papers_per_Associate professor",
+   "label": "Papers per associate professor",
+   "note": "",
+   "values": {
+    "MANIT Bhopal": 33.3,
+    "NIT Jamshedpur": 25.3,
+    "NIT Silchar": 58.8
+   }
+  },
+  {
+   "key": "papers_per_Assistant professor",
+   "label": "Papers per assistant professor",
+   "note": "",
+   "values": {
+    "MANIT Bhopal": 13.3,
+    "NIT Jamshedpur": 16.6,
+    "NIT Silchar": 23.0
+   }
+  }
+ ],
+ "common_departments": [
+  {
+   "department": "Chemistry",
+   "values": {
+    "MANIT Bhopal": {
+     "faculty": 10,
+     "papers_per_faculty": 17.9
+    },
+    "NIT Jamshedpur": {
+     "faculty": 12,
+     "papers_per_faculty": 16.9
+    },
+    "NIT Silchar": {
+     "faculty": 12,
+     "papers_per_faculty": 65.8
+    }
+   }
+  },
+  {
+   "department": "Civil Engineering",
+   "values": {
+    "MANIT Bhopal": {
+     "faculty": 39,
+     "papers_per_faculty": 15.6
+    },
+    "NIT Jamshedpur": {
+     "faculty": 26,
+     "papers_per_faculty": 13.2
+    },
+    "NIT Silchar": {
+     "faculty": 44,
+     "papers_per_faculty": 19.8
+    }
+   }
+  },
+  {
+   "department": "Computer Science and Engineering",
+   "values": {
+    "MANIT Bhopal": {
+     "faculty": 32,
+     "papers_per_faculty": 38.8
+    },
+    "NIT Jamshedpur": {
+     "faculty": 25,
+     "papers_per_faculty": 19.4
+    },
+    "NIT Silchar": {
+     "faculty": 28,
+     "papers_per_faculty": 41.1
+    }
+   }
+  },
+  {
+   "department": "Electrical Engineering",
+   "values": {
+    "MANIT Bhopal": {
+     "faculty": 29,
+     "papers_per_faculty": 35.8
+    },
+    "NIT Jamshedpur": {
+     "faculty": 22,
+     "papers_per_faculty": 30.7
+    },
+    "NIT Silchar": {
+     "faculty": 38,
+     "papers_per_faculty": 44.7
+    }
+   }
+  },
+  {
+   "department": "Electronics and Communication Engineering",
+   "values": {
+    "MANIT Bhopal": {
+     "faculty": 31,
+     "papers_per_faculty": 24.5
+    },
+    "NIT Jamshedpur": {
+     "faculty": 23,
+     "papers_per_faculty": 27.7
+    },
+    "NIT Silchar": {
+     "faculty": 37,
+     "papers_per_faculty": 67.5
+    }
+   }
+  },
+  {
+   "department": "Mathematics",
+   "values": {
+    "MANIT Bhopal": {
+     "faculty": 5,
+     "papers_per_faculty": 20.8
+    },
+    "NIT Jamshedpur": {
+     "faculty": 16,
+     "papers_per_faculty": 25.2
+    },
+    "NIT Silchar": {
+     "faculty": 16,
+     "papers_per_faculty": 21.9
+    }
+   }
+  },
+  {
+   "department": "Mechanical Engineering",
+   "values": {
+    "MANIT Bhopal": {
+     "faculty": 46,
+     "papers_per_faculty": 29.5
+    },
+    "NIT Jamshedpur": {
+     "faculty": 39,
+     "papers_per_faculty": 19.0
+    },
+    "NIT Silchar": {
+     "faculty": 45,
+     "papers_per_faculty": 46.7
+    }
+   }
+  },
+  {
+   "department": "Physics",
+   "values": {
+    "MANIT Bhopal": {
+     "faculty": 10,
+     "papers_per_faculty": 26.4
+    },
+    "NIT Jamshedpur": {
+     "faculty": 11,
+     "papers_per_faculty": 11.9
+    },
+    "NIT Silchar": {
+     "faculty": 12,
+     "papers_per_faculty": 24.2
+    }
+   }
+  }
+ ],
+ "common_department_leaders": {
+  "MANIT Bhopal": 1,
+  "NIT Jamshedpur": 1,
+  "NIT Silchar": 6
+ },
+ "yearly_papers": {
+  "2016": {
+   "MANIT Bhopal": 285,
+   "NIT Jamshedpur": 84,
+   "NIT Silchar": 294
+  },
+  "2017": {
+   "MANIT Bhopal": 332,
+   "NIT Jamshedpur": 118,
+   "NIT Silchar": 362
+  },
+  "2018": {
+   "MANIT Bhopal": 355,
+   "NIT Jamshedpur": 142,
+   "NIT Silchar": 526
+  },
+  "2019": {
+   "MANIT Bhopal": 265,
+   "NIT Jamshedpur": 194,
+   "NIT Silchar": 578
+  },
+  "2020": {
+   "MANIT Bhopal": 448,
+   "NIT Jamshedpur": 297,
+   "NIT Silchar": 792
+  },
+  "2021": {
+   "MANIT Bhopal": 600,
+   "NIT Jamshedpur": 402,
+   "NIT Silchar": 893
+  },
+  "2022": {
+   "MANIT Bhopal": 622,
+   "NIT Jamshedpur": 443,
+   "NIT Silchar": 1098
+  },
+  "2023": {
+   "MANIT Bhopal": 684,
+   "NIT Jamshedpur": 476,
+   "NIT Silchar": 986
+  },
+  "2024": {
+   "MANIT Bhopal": 708,
+   "NIT Jamshedpur": 521,
+   "NIT Silchar": 1115
+  },
+  "2025": {
+   "MANIT Bhopal": 792,
+   "NIT Jamshedpur": 491,
+   "NIT Silchar": 1043
+  }
+ },
+ "yearly_leader": {
+  "2016": "NIT Silchar",
+  "2017": "NIT Silchar",
+  "2018": "NIT Silchar",
+  "2019": "NIT Silchar",
+  "2020": "NIT Silchar",
+  "2021": "NIT Silchar",
+  "2022": "NIT Silchar",
+  "2023": "NIT Silchar",
+  "2024": "NIT Silchar",
+  "2025": "NIT Silchar"
+ },
+ "not_in_dataset": [
+  "department-level laboratory facilities",
+  "faculty qualifications and training",
+  "teaching load"
+ ],
+ "definitions": "Research-active faculty = verified faculty with at least one paper in 2016-2026. Papers are fully counted per institute: a paper with faculty of two institutes counts for both."
+}

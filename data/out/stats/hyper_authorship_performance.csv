@@ -1,0 +1,7 @@
+institution,group,papers,share_of_papers_%,mean_citations,median_citations,share_of_citations_%,journal_Q1_%,conference_share_%
+MANIT Bhopal,more than 10 authors,22,0.38,21.27,8.5,0.52,80.0,9.1
+MANIT Bhopal,10 or fewer authors,5737,99.62,15.73,4.0,99.48,33.0,37.7
+NIT Jamshedpur,more than 10 authors,13,0.36,48.54,32.0,1.43,53.8,0.0
+NIT Jamshedpur,10 or fewer authors,3581,99.64,12.13,3.0,98.57,26.1,33.4
+NIT Silchar,more than 10 authors,28,0.33,29.61,11.5,0.66,63.0,3.6
+NIT Silchar,10 or fewer authors,8383,99.67,14.8,5.0,99.34,36.7,35.1

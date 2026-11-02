@@ -1,0 +1,32 @@
+{
+ "conference_papers_unfiltered": 7279,
+ "named_conference": 4089,
+ "generic_series": 3190,
+ "core_ranked": {
+  "": 7215,
+  "B": 22,
+  "C": 15,
+  "National: USA": 9,
+  "TBR": 7,
+  "National:India": 4,
+  "A": 2,
+  "A*": 1,
+  "unranked": 1,
+  "National: India": 1,
+  "Regional": 1,
+  "National: japan": 1
+ },
+ "a_star_a_papers": 3,
+ "a_star_a_with_any_faculty_author": 0,
+ "a_star_a_without_faculty": 3,
+ "named_not_in_core": 4025,
+ "in_final_corpus": {
+  "conference_papers": 6302,
+  "named_conference": 3476,
+  "generic_series": 2826,
+  "core_ranked": {
+   "B": 20,
+   "C": 12
+  }
+ }
+}

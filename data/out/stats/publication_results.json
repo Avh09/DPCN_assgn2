@@ -1,0 +1,1071 @@
+{
+ "papers_per_year": {
+  "MANIT Bhopal": {
+   "2016": 285,
+   "2017": 332,
+   "2018": 355,
+   "2019": 265,
+   "2020": 448,
+   "2021": 600,
+   "2022": 622,
+   "2023": 684,
+   "2024": 708,
+   "2025": 792,
+   "2026": 668
+  },
+  "NIT Jamshedpur": {
+   "2016": 85,
+   "2017": 118,
+   "2018": 146,
+   "2019": 196,
+   "2020": 309,
+   "2021": 411,
+   "2022": 445,
+   "2023": 476,
+   "2024": 521,
+   "2025": 491,
+   "2026": 396
+  },
+  "NIT Silchar": {
+   "2016": 295,
+   "2017": 362,
+   "2018": 527,
+   "2019": 578,
+   "2020": 792,
+   "2021": 896,
+   "2022": 1108,
+   "2023": 990,
+   "2024": 1117,
+   "2025": 1044,
+   "2026": 702
+  },
+  "all (unique papers)": {
+   "2016": 665,
+   "2017": 812,
+   "2018": 1028,
+   "2019": 1036,
+   "2020": 1541,
+   "2021": 1903,
+   "2022": 2169,
+   "2023": 2143,
+   "2024": 2342,
+   "2025": 2322,
+   "2026": 1759
+  }
+ },
+ "growth_2016_to_2025_cagr_%": {
+  "MANIT Bhopal": 12.0,
+  "NIT Jamshedpur": 21.5,
+  "NIT Silchar": 15.1
+ },
+ "totals": {
+  "MANIT Bhopal": 5759,
+  "NIT Jamshedpur": 3594,
+  "NIT Silchar": 8411,
+  "unique_papers": 17720
+ },
+ "type_split": {
+  "MANIT Bhopal": {
+   "journal": 3592,
+   "conference": 2167
+  },
+  "NIT Jamshedpur": {
+   "journal": 2399,
+   "conference": 1195
+  },
+  "NIT Silchar": {
+   "journal": 5464,
+   "conference": 2947
+  }
+ },
+ "quartiles": {
+  "MANIT Bhopal": {
+   "journal_papers": 3592,
+   "with_quartile": 3584,
+   "match_rate_%": 99.8,
+   "unranked": 8,
+   "Q1_fraction_%": 33.2,
+   "shares_%": {
+    "Q1": 33.2,
+    "Q2": 34.3,
+    "Q3": 21.8,
+    "Q4": 10.7
+   },
+   "Q1_fraction_by_year_%": {
+    "2016": 21.8,
+    "2017": 23.9,
+    "2018": 19.4,
+    "2019": 20.9,
+    "2020": 28.2,
+    "2021": 35.1,
+    "2022": 35.7,
+    "2023": 36.4,
+    "2024": 41.1,
+    "2025": 40.4,
+    "2026": 35.1
+   }
+  },
+  "NIT Jamshedpur": {
+   "journal_papers": 2399,
+   "with_quartile": 2398,
+   "match_rate_%": 100.0,
+   "unranked": 1,
+   "Q1_fraction_%": 26.3,
+   "shares_%": {
+    "Q1": 26.3,
+    "Q2": 40.0,
+    "Q3": 25.9,
+    "Q4": 7.8
+   },
+   "Q1_fraction_by_year_%": {
+    "2016": 24.2,
+    "2017": 27.7,
+    "2018": 22.3,
+    "2019": 24.1,
+    "2020": 25.9,
+    "2021": 24.3,
+    "2022": 25.8,
+    "2023": 26.6,
+    "2024": 24.7,
+    "2025": 28.2,
+    "2026": 30.6
+   }
+  },
+  "NIT Silchar": {
+   "journal_papers": 5464,
+   "with_quartile": 5453,
+   "match_rate_%": 99.8,
+   "unranked": 11,
+   "Q1_fraction_%": 36.8,
+   "shares_%": {
+    "Q1": 36.8,
+    "Q2": 39.6,
+    "Q3": 18.8,
+    "Q4": 4.7
+   },
+   "Q1_fraction_by_year_%": {
+    "2016": 36.9,
+    "2017": 30.7,
+    "2018": 27.5,
+    "2019": 27.9,
+    "2020": 31.6,
+    "2021": 35.5,
+    "2022": 33.8,
+    "2023": 40.8,
+    "2024": 42.0,
+    "2025": 42.0,
+    "2026": 42.9
+   }
+  }
+ },
+ "conference_rank": {
+  "MANIT Bhopal": {
+   "conference_papers": 2167,
+   "with_CORE_rank": 10,
+   "rank_counts": {
+    "C": 6,
+    "B": 4
+   },
+   "with_scopus_quartile": 2149,
+   "scopus_quartile_counts": {
+    "Q4": 1300,
+    "Q3": 774,
+    "Q2": 75
+   },
+   "unranked": 8
+  },
+  "NIT Jamshedpur": {
+   "conference_papers": 1195,
+   "with_CORE_rank": 3,
+   "rank_counts": {
+    "C": 2,
+    "B": 1
+   },
+   "with_scopus_quartile": 1168,
+   "scopus_quartile_counts": {
+    "Q4": 915,
+    "Q3": 223,
+    "Q2": 30
+   },
+   "unranked": 24
+  },
+  "NIT Silchar": {
+   "conference_papers": 2947,
+   "with_CORE_rank": 30,
+   "rank_counts": {
+    "B": 22,
+    "C": 8
+   },
+   "with_scopus_quartile": 2900,
+   "scopus_quartile_counts": {
+    "Q4": 2231,
+    "Q3": 608,
+    "Q2": 61
+   },
+   "unranked": 17
+  }
+ },
+ "top5_journals": {
+  "MANIT Bhopal": [
+   {
+    "journal_name": "National Academy Science Letters",
+    "papers": 64,
+    "citations": 116,
+    "quartile": "Q3"
+   },
+   {
+    "journal_name": "Energy Sources Part A Recovery Utilization and Environmental Effects",
+    "papers": 44,
+    "citations": 493,
+    "quartile": "Q2"
+   },
+   {
+    "journal_name": "Multimedia Tools and Applications",
+    "papers": 39,
+    "citations": 702,
+    "quartile": "Q1"
+   },
+   {
+    "journal_name": "Environmental Science and Pollution Research",
+    "papers": 34,
+    "citations": 654,
+    "quartile": "Q1"
+   },
+   {
+    "journal_name": "Scientific Reports",
+    "papers": 33,
+    "citations": 745,
+    "quartile": "Q1"
+   }
+  ],
+  "NIT Jamshedpur": [
+   {
+    "journal_name": "Multimedia Tools and Applications",
+    "papers": 31,
+    "citations": 858,
+    "quartile": "Q2"
+   },
+   {
+    "journal_name": "Journal of Materials Engineering and Performance",
+    "papers": 28,
+    "citations": 113,
+    "quartile": "Q2"
+   },
+   {
+    "journal_name": "Scientific Reports",
+    "papers": 24,
+    "citations": 415,
+    "quartile": "Q1"
+   },
+   {
+    "journal_name": "Pramana",
+    "papers": 22,
+    "citations": 119,
+    "quartile": "Q2"
+   },
+   {
+    "journal_name": "Arabian Journal for Science and Engineering",
+    "papers": 20,
+    "citations": 206,
+    "quartile": "Q1"
+   }
+  ],
+  "NIT Silchar": [
+   {
+    "journal_name": "Microsystem Technologies",
+    "papers": 90,
+    "citations": 1057,
+    "quartile": "Q2"
+   },
+   {
+    "journal_name": "Arabian Journal for Science and Engineering",
+    "papers": 87,
+    "citations": 1030,
+    "quartile": "Q1"
+   },
+   {
+    "journal_name": "Multimedia Tools and Applications",
+    "papers": 70,
+    "citations": 1727,
+    "quartile": "Q2"
+   },
+   {
+    "journal_name": "Silicon",
+    "papers": 53,
+    "citations": 1088,
+    "quartile": "Q2"
+   },
+   {
+    "journal_name": "International Journal of Hydrogen Energy",
+    "papers": 44,
+    "citations": 2935,
+    "quartile": "Q1"
+   }
+  ]
+ },
+ "top5_conference_venues": {
+  "MANIT Bhopal": {
+   "Materials Today Proceedings": 321,
+   "IEEE International Students' Conference on Electrical, Electronics and Computer Science (SCEECS)": 173,
+   "Lecture notes in mechanical engineering": 163,
+   "Lecture notes in electrical engineering": 103,
+   "Lecture notes in civil engineering": 101
+  },
+  "NIT Jamshedpur": {
+   "Lecture notes in electrical engineering": 189,
+   "Lecture notes in civil engineering": 89,
+   "Lecture notes in mechanical engineering": 88,
+   "Materials Today Proceedings": 83,
+   "AIP conference proceedings": 61
+  },
+  "NIT Silchar": {
+   "Lecture notes in mechanical engineering": 304,
+   "Lecture notes in electrical engineering": 247,
+   "Lecture notes in civil engineering": 153,
+   "Materials Today Proceedings": 140,
+   "Lecture notes in networks and systems": 95
+  }
+ },
+ "citations": {
+  "MANIT Bhopal": {
+   "total_citations": 90684,
+   "mean_per_paper": 15.75,
+   "median": 4.0,
+   "uncited_%": 23.7,
+   "papers_with_100plus": 161,
+   "share_of_citations_from_top_1%_papers_%": 21.5,
+   "mean_citations_by_year": {
+    "2016": 39.5,
+    "2017": 34.3,
+    "2018": 25.5,
+    "2019": 27.6,
+    "2020": 26.4,
+    "2021": 22.9,
+    "2022": 15.6,
+    "2023": 11.5,
+    "2024": 8.2,
+    "2025": 3.2,
+    "2026": 0.3
+   }
+  },
+  "NIT Jamshedpur": {
+   "total_citations": 44061,
+   "mean_per_paper": 12.26,
+   "median": 4.0,
+   "uncited_%": 25.5,
+   "papers_with_100plus": 61,
+   "share_of_citations_from_top_1%_papers_%": 20.7,
+   "mean_citations_by_year": {
+    "2016": 23.7,
+    "2017": 21.4,
+    "2018": 21.2,
+    "2019": 20.7,
+    "2020": 25.5,
+    "2021": 21.2,
+    "2022": 11.5,
+    "2023": 11.7,
+    "2024": 6.9,
+    "2025": 2.8,
+    "2026": 0.3
+   }
+  },
+  "NIT Silchar": {
+   "total_citations": 124894,
+   "mean_per_paper": 14.85,
+   "median": 5.0,
+   "uncited_%": 20.2,
+   "papers_with_100plus": 148,
+   "share_of_citations_from_top_1%_papers_%": 14.5,
+   "mean_citations_by_year": {
+    "2016": 32.4,
+    "2017": 25.4,
+    "2018": 25.1,
+    "2019": 20.2,
+    "2020": 22.0,
+    "2021": 20.5,
+    "2022": 15.3,
+    "2023": 15.4,
+    "2024": 8.4,
+    "2025": 3.4,
+    "2026": 0.5
+   }
+  }
+ },
+ "top10_most_cited": {
+  "MANIT Bhopal": [
+   {
+    "title": "Hydrogen embrittlement in different materials: A review",
+    "journal_name": "International Journal of Hydrogen Energy",
+    "year": 2018,
+    "citations": 971,
+    "doi": "https://doi.org/10.1016/j.ijhydene.2018.09.201"
+   },
+   {
+    "title": "Floating photovoltaic power plant: A review",
+    "journal_name": "Renewable and Sustainable Energy Reviews",
+    "year": 2016,
+    "citations": 878,
+    "doi": "https://doi.org/10.1016/j.rser.2016.08.051"
+   },
+   {
+    "title": "Solar\u2013wind hybrid renewable energy system: A review",
+    "journal_name": "Renewable and Sustainable Energy Reviews",
+    "year": 2016,
+    "citations": 843,
+    "doi": "https://doi.org/10.1016/j.rser.2015.12.223"
+   },
+   {
+    "title": "Analysis of k-Fold Cross-Validation over Hold-Out Validation on Colossal Datasets for Quality Classification",
+    "journal_name": "IEEE International Conference on Advanced Computing (IACC)",
+    "year": 2016,
+    "citations": 709,
+    "doi": "https://doi.org/10.1109/iacc.2016.25"
+   },
+   {
+    "title": "Sustainalism: An Integrated Socio-Economic-Environmental Model to Address Sustainable Development and Sustainability",
+    "journal_name": "Sustainability",
+    "year": 2023,
+    "citations": 703,
+    "doi": "https://doi.org/10.3390/su151310682"
+   },
+   {
+    "title": "Tomato plant disease detection using transfer learning with C-GAN synthetic images",
+    "journal_name": "Computers and Electronics in Agriculture",
+    "year": 2021,
+    "citations": 652,
+    "doi": "https://doi.org/10.1016/j.compag.2021.106279"
+   },
+   {
+    "title": "Spirulina \u2013 From growth to nutritional product: A review",
+    "journal_name": "Trends in Food Science & Technology",
+    "year": 2017,
+    "citations": 525,
+    "doi": "https://doi.org/10.1016/j.tifs.2017.09.010"
+   },
+   {
+    "title": "Factors influencing Indian consumers' actual buying behaviour towards organic food products",
+    "journal_name": "Journal of Cleaner Production",
+    "year": 2017,
+    "citations": 504,
+    "doi": "https://doi.org/10.1016/j.jclepro.2017.08.106"
+   },
+   {
+    "title": "Advances and Researches on Non Destructive Testing: A Review",
+    "journal_name": "Materials Today Proceedings",
+    "year": 2018,
+    "citations": 479,
+    "doi": "https://doi.org/10.1016/j.matpr.2017.11.620"
+   },
+   {
+    "title": "Recent advancement in BIPV product technologies: A review",
+    "journal_name": "Energy and Buildings",
+    "year": 2017,
+    "citations": 471,
+    "doi": "https://doi.org/10.1016/j.enbuild.2017.02.015"
+   }
+  ],
+  "NIT Jamshedpur": [
+   {
+    "title": "Per- and polyfluoroalkyl substances in water and wastewater: A critical review of their global occurrence and distribution",
+    "journal_name": "The Science of The Total Environment",
+    "year": 2021,
+    "citations": 930,
+    "doi": "https://doi.org/10.1016/j.scitotenv.2021.151003"
+   },
+   {
+    "title": "The role and significance of Magnesium in modern day research-A review",
+    "journal_name": "Journal of Magnesium and Alloys",
+    "year": 2021,
+    "citations": 699,
+    "doi": "https://doi.org/10.1016/j.jma.2021.05.012"
+   },
+   {
+    "title": "A comprehensive survey on feature selection in the various fields of machine learning",
+    "journal_name": "Applied Intelligence",
+    "year": 2021,
+    "citations": 497,
+    "doi": "https://doi.org/10.1007/s10489-021-02550-9"
+   },
+   {
+    "title": "A theoretical study of the Caputo\u2013Fabrizio fractional modeling for hearing loss due to Mumps virus with optimal control",
+    "journal_name": "Chaos Solitons & Fractals",
+    "year": 2021,
+    "citations": 376,
+    "doi": "https://doi.org/10.1016/j.chaos.2021.110668"
+   },
+   {
+    "title": "Environmental impact of spent lithium ion batteries and green recycling perspectives by organic acids \u2013 A review",
+    "journal_name": "Chemosphere",
+    "year": 2019,
+    "citations": 357,
+    "doi": "https://doi.org/10.1016/j.chemosphere.2019.125291"
+   },
+   {
+    "title": "A study of behaviour for immune and tumor cells in immunogenetic tumour model with non-singular fractional derivative",
+    "journal_name": "Chaos Solitons & Fractals",
+    "year": 2020,
+    "citations": 344,
+    "doi": "https://doi.org/10.1016/j.chaos.2020.109619"
+   },
+   {
+    "title": "A multibranch CNN-BiLSTM model for human activity recognition using wearable sensor data",
+    "journal_name": "The Visual Computer",
+    "year": 2021,
+    "citations": 335,
+    "doi": "https://doi.org/10.1007/s00371-021-02283-3"
+   },
+   {
+    "title": "A Comprehensive Review on CNTs and CNT-Reinforced Composites: Syntheses, Characteristics and Applications",
+    "journal_name": "Materials Today Communications",
+    "year": 2020,
+    "citations": 327,
+    "doi": "https://doi.org/10.1016/j.mtcomm.2020.101546"
+   },
+   {
+    "title": "A study of fractional Lotka\u2010Volterra population model using Haar wavelet and Adams\u2010Bashforth\u2010Moulton methods",
+    "journal_name": "Mathematical Methods in the Applied Sciences",
+    "year": 2020,
+    "citations": 312,
+    "doi": "https://doi.org/10.1002/mma.6297"
+   },
+   {
+    "title": "Application of ANN technique to predict the performance of solar collector systems - A review",
+    "journal_name": "Renewable and Sustainable Energy Reviews",
+    "year": 2018,
+    "citations": 299,
+    "doi": "https://doi.org/10.1016/j.rser.2018.01.001"
+   }
+  ],
+  "NIT Silchar": [
+   {
+    "title": "ZnO nanostructured materials and their potential applications: progress, challenges and perspectives",
+    "journal_name": "Nanoscale Advances",
+    "year": 2022,
+    "citations": 1104,
+    "doi": "https://doi.org/10.1039/d1na00880c"
+   },
+   {
+    "title": "Green synthesis of silver nanoparticles using plant extracts and their antimicrobial activities: a review of recent literature",
+    "journal_name": "RSC Advances",
+    "year": 2021,
+    "citations": 802,
+    "doi": "https://doi.org/10.1039/d0ra09941d"
+   },
+   {
+    "title": "Comparative Review of Energy Storage Systems, Their Roles, and Impacts on Future Power Systems",
+    "journal_name": "IEEE Access",
+    "year": 2018,
+    "citations": 530,
+    "doi": "https://doi.org/10.1109/access.2018.2888497"
+   },
+   {
+    "title": "Plastics and microplastics: A threat to environment",
+    "journal_name": "Environmental Technology & Innovation",
+    "year": 2019,
+    "citations": 436,
+    "doi": "https://doi.org/10.1016/j.eti.2019.100352"
+   },
+   {
+    "title": "Smart farming using artificial intelligence: A review",
+    "journal_name": "Engineering Applications of Artificial Intelligence",
+    "year": 2023,
+    "citations": 397,
+    "doi": "https://doi.org/10.1016/j.engappai.2023.105899"
+   },
+   {
+    "title": "A review on potential usage of industrial waste materials for binding heavy metal ions from aqueous solutions",
+    "journal_name": "Journal of Water Process Engineering",
+    "year": 2016,
+    "citations": 390,
+    "doi": "https://doi.org/10.1016/j.jwpe.2016.01.014"
+   },
+   {
+    "title": "Widely used catalysts in biodiesel production: a review",
+    "journal_name": "RSC Advances",
+    "year": 2020,
+    "citations": 390,
+    "doi": "https://doi.org/10.1039/d0ra07931f"
+   },
+   {
+    "title": "Multimodal Sentiment Analysis: A Survey of Methods, Trends, and Challenges",
+    "journal_name": "ACM Computing Surveys",
+    "year": 2023,
+    "citations": 364,
+    "doi": "https://doi.org/10.1145/3586075"
+   },
+   {
+    "title": "Waste snail shell derived heterogeneous catalyst for biodiesel production by the transesterification of soybean oil",
+    "journal_name": "RSC Advances",
+    "year": 2018,
+    "citations": 313,
+    "doi": "https://doi.org/10.1039/c8ra02397b"
+   },
+   {
+    "title": "A review on analysis and development of solar flat plate collector",
+    "journal_name": "Renewable and Sustainable Energy Reviews",
+    "year": 2016,
+    "citations": 311,
+    "doi": "https://doi.org/10.1016/j.rser.2016.09.078"
+   }
+  ]
+ },
+ "authors": {
+  "MANIT Bhopal": {
+   "authors_in_data": 497,
+   "core_authors(inferred faculty)": 199,
+   "core_h_index_quantiles(min,25,50,75,90,max)": [
+    2,
+    6,
+    8,
+    12,
+    16,
+    54
+   ],
+   "core_h_index_mean": 9.6,
+   "core_papers_median": 26.0,
+   "core_authors_share_of_all_author_rows_%": null,
+   "top10_by_h_index": [
+    {
+     "author": "Kumarasamy Sudhakar",
+     "h_index": 54,
+     "papers": 137,
+     "total_citations": 11137,
+     "main_field": "Energy"
+    },
+    {
+     "author": "Tikendra Nath Verma",
+     "h_index": 37,
+     "papers": 142,
+     "total_citations": 4253,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Prashant Baredar",
+     "h_index": 36,
+     "papers": 108,
+     "total_citations": 5818,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Gaurav Dwivedi",
+     "h_index": 31,
+     "papers": 126,
+     "total_citations": 3234,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Rajesh Purohit",
+     "h_index": 30,
+     "papers": 169,
+     "total_citations": 3272,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "R.S. Rana",
+     "h_index": 26,
+     "papers": 74,
+     "total_citations": 2507,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Anil Kumar",
+     "h_index": 24,
+     "papers": 34,
+     "total_citations": 2592,
+     "main_field": "Agricultural and Biological Sciences"
+    },
+    {
+     "author": "Vijay Bhaskar Semwal",
+     "h_index": 23,
+     "papers": 87,
+     "total_citations": 2715,
+     "main_field": "Computer Science"
+    },
+    {
+     "author": "Kamal Raj Pardasani",
+     "h_index": 21,
+     "papers": 58,
+     "total_citations": 1558,
+     "main_field": "Biochemistry, Genetics and Molecular Biology"
+    },
+    {
+     "author": "Jyoti Mittal",
+     "h_index": 21,
+     "papers": 32,
+     "total_citations": 2788,
+     "main_field": "Environmental Science"
+    }
+   ],
+   "top5_by_papers": [
+    {
+     "author": "Rajesh Purohit",
+     "papers": 169,
+     "h_index": 30
+    },
+    {
+     "author": "Tikendra Nath Verma",
+     "papers": 142,
+     "h_index": 37
+    },
+    {
+     "author": "Kumarasamy Sudhakar",
+     "papers": 137,
+     "h_index": 54
+    },
+    {
+     "author": "Gaurav Dwivedi",
+     "papers": 126,
+     "h_index": 31
+    },
+    {
+     "author": "Prashant Baredar",
+     "papers": 108,
+     "h_index": 36
+    }
+   ],
+   "papers_with_at_least_one_core_author_%": 90.7,
+   "core_h_index_histogram": {
+    "0-0": 0,
+    "1-2": 3,
+    "3-4": 28,
+    "5-7": 56,
+    "8-11": 59,
+    "12-19": 42,
+    "20-199": 11
+   }
+  },
+  "NIT Jamshedpur": {
+   "authors_in_data": 380,
+   "core_authors(inferred faculty)": 125,
+   "core_h_index_quantiles(min,25,50,75,90,max)": [
+    1,
+    6,
+    8,
+    10,
+    12,
+    39
+   ],
+   "core_h_index_mean": 8.5,
+   "core_papers_median": 23.0,
+   "core_authors_share_of_all_author_rows_%": null,
+   "top10_by_h_index": [
+    {
+     "author": "Sunil Kumar",
+     "h_index": 39,
+     "papers": 108,
+     "total_citations": 5400,
+     "main_field": "Mathematics"
+    },
+    {
+     "author": "Balram Ambade",
+     "h_index": 34,
+     "papers": 92,
+     "total_citations": 4686,
+     "main_field": "Environmental Science"
+    },
+    {
+     "author": "Rashmi Sinha",
+     "h_index": 20,
+     "papers": 80,
+     "total_citations": 961,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "S. Sanjay",
+     "h_index": 18,
+     "papers": 53,
+     "total_citations": 1076,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Dilip Kumar",
+     "h_index": 16,
+     "papers": 34,
+     "total_citations": 656,
+     "main_field": "Computer Science"
+    },
+    {
+     "author": "Manikant Paswan",
+     "h_index": 14,
+     "papers": 71,
+     "total_citations": 674,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Niranjan Kumar",
+     "h_index": 13,
+     "papers": 69,
+     "total_citations": 478,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Satish Kumar",
+     "h_index": 13,
+     "papers": 69,
+     "total_citations": 686,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Vishesh Ranjan Kar",
+     "h_index": 13,
+     "papers": 47,
+     "total_citations": 947,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Binod Kumar Singh",
+     "h_index": 13,
+     "papers": 47,
+     "total_citations": 684,
+     "main_field": "Computer Science"
+    }
+   ],
+   "top5_by_papers": [
+    {
+     "author": "Sunil Kumar",
+     "papers": 108,
+     "h_index": 39
+    },
+    {
+     "author": "Balram Ambade",
+     "papers": 92,
+     "h_index": 34
+    },
+    {
+     "author": "Rashmi Sinha",
+     "papers": 80,
+     "h_index": 20
+    },
+    {
+     "author": "Om Hari Gupta",
+     "papers": 76,
+     "h_index": 10
+    },
+    {
+     "author": "Koushlendra Kumar Singh",
+     "papers": 73,
+     "h_index": 12
+    }
+   ],
+   "papers_with_at_least_one_core_author_%": 85.6,
+   "core_h_index_histogram": {
+    "0-0": 0,
+    "1-2": 2,
+    "3-4": 11,
+    "5-7": 49,
+    "8-11": 41,
+    "12-19": 19,
+    "20-199": 3
+   }
+  },
+  "NIT Silchar": {
+   "authors_in_data": 458,
+   "core_authors(inferred faculty)": 200,
+   "core_h_index_quantiles(min,25,50,75,90,max)": [
+    2,
+    6,
+    10,
+    16,
+    24,
+    54
+   ],
+   "core_h_index_mean": 12.4,
+   "core_papers_median": 32.5,
+   "core_authors_share_of_all_author_rows_%": null,
+   "top10_by_h_index": [
+    {
+     "author": "Md. Ahmaruzzaman",
+     "h_index": 54,
+     "papers": 273,
+     "total_citations": 10616,
+     "main_field": "Energy"
+    },
+    {
+     "author": "Samuel Lalthazuala Rokhum",
+     "h_index": 47,
+     "papers": 184,
+     "total_citations": 7186,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Krishna Murari Pandey",
+     "h_index": 42,
+     "papers": 209,
+     "total_citations": 6072,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Lalit Chandra Saikia",
+     "h_index": 36,
+     "papers": 165,
+     "total_citations": 3921,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Sukumar Pati",
+     "h_index": 36,
+     "papers": 149,
+     "total_citations": 3442,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Biplab Das",
+     "h_index": 34,
+     "papers": 126,
+     "total_citations": 3168,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Binoy Krishna Roy",
+     "h_index": 33,
+     "papers": 177,
+     "total_citations": 3183,
+     "main_field": "Physics and Astronomy"
+    },
+    {
+     "author": "Siddhartha Sankar Dhar",
+     "h_index": 31,
+     "papers": 96,
+     "total_citations": 2509,
+     "main_field": "Energy"
+    },
+    {
+     "author": "Brinda Bhowmick",
+     "h_index": 29,
+     "papers": 166,
+     "total_citations": 2912,
+     "main_field": "Engineering"
+    },
+    {
+     "author": "Taimoor Khan",
+     "h_index": 29,
+     "papers": 160,
+     "total_citations": 2552,
+     "main_field": "Engineering"
+    }
+   ],
+   "top5_by_papers": [
+    {
+     "author": "Md. Ahmaruzzaman",
+     "papers": 273,
+     "h_index": 54
+    },
+    {
+     "author": "Krishna Murari Pandey",
+     "papers": 209,
+     "h_index": 42
+    },
+    {
+     "author": "Koushik Guha",
+     "papers": 198,
+     "h_index": 20
+    },
+    {
+     "author": "Rabul Hussain Laskar",
+     "papers": 193,
+     "h_index": 24
+    },
+    {
+     "author": "Trupti Ranjan Lenka",
+     "papers": 185,
+     "h_index": 24
+    }
+   ],
+   "papers_with_at_least_one_core_author_%": 94.9,
+   "core_h_index_histogram": {
+    "0-0": 0,
+    "1-2": 4,
+    "3-4": 19,
+    "5-7": 47,
+    "8-11": 44,
+    "12-19": 52,
+    "20-199": 34
+   }
+  }
+ },
+ "research_areas": {
+  "MANIT Bhopal": {
+   "fields_top8_%": {
+    "Engineering": 45.8,
+    "Computer Science": 16.8,
+    "Materials Science": 6.3,
+    "Environmental Science": 6.0,
+    "Energy": 4.4,
+    "Medicine": 3.0,
+    "Decision Sciences": 2.4,
+    "Social Sciences": 2.2
+   },
+   "domains_%": {
+    "Physical Sciences": 82.6,
+    "Social Sciences": 9.1,
+    "Life Sciences": 4.9,
+    "Health Sciences": 3.4
+   },
+   "field_missing_%": 0.0,
+   "highest_mean_citations_fields(min 50 papers)": {
+    "Energy": 46.2,
+    "Agricultural and Biological Sciences": 36.8,
+    "Environmental Science": 25.8,
+    "Chemical Engineering": 22.8
+   }
+  },
+  "NIT Jamshedpur": {
+   "fields_top8_%": {
+    "Engineering": 56.6,
+    "Computer Science": 12.4,
+    "Materials Science": 6.4,
+    "Environmental Science": 4.2,
+    "Mathematics": 4.1,
+    "Energy": 3.1,
+    "Physics and Astronomy": 2.8,
+    "Medicine": 2.2
+   },
+   "domains_%": {
+    "Physical Sciences": 92.0,
+    "Social Sciences": 3.2,
+    "Health Sciences": 3.0,
+    "Life Sciences": 1.8
+   },
+   "field_missing_%": 0.0,
+   "highest_mean_citations_fields(min 50 papers)": {
+    "Mathematics": 34.6,
+    "Environmental Science": 32.3,
+    "Medicine": 21.7,
+    "Materials Science": 13.9
+   }
+  },
+  "NIT Silchar": {
+   "fields_top8_%": {
+    "Engineering": 54.4,
+    "Computer Science": 14.4,
+    "Materials Science": 5.7,
+    "Energy": 5.3,
+    "Physics and Astronomy": 3.7,
+    "Environmental Science": 3.0,
+    "Medicine": 3.0,
+    "Decision Sciences": 1.6
+   },
+   "domains_%": {
+    "Physical Sciences": 89.8,
+    "Social Sciences": 4.4,
+    "Health Sciences": 3.7,
+    "Life Sciences": 2.1
+   },
+   "field_missing_%": 0.1,
+   "highest_mean_citations_fields(min 50 papers)": {
+    "Energy": 24.1,
+    "Agricultural and Biological Sciences": 23.2,
+    "Environmental Science": 22.7,
+    "Materials Science": 21.1
+   }
+  }
+ },
+ "data_quality": {
+  "papers_without_doi": 81,
+  "papers_without_source": 74,
+  "papers_without_field": 5,
+  "2026_is_partial_year": true,
+  "pubs_with_more_than_30_authors": 0,
+  "max_authors_on_one_paper": 30
+ }
+}

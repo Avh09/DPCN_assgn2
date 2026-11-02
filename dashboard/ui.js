@@ -205,10 +205,10 @@ document.addEventListener('keydown', e => {
     'fn-comms': 'Click a row to highlight the community · click a name for the profile', 'fn-brokers': 'Click a row to locate the person in the network', 'fn-bridges': 'Click a bar to open the profile',
     'rc-loc': 'Click a segment to list those partners in the explorer below', 'rc-region': 'Click a bar to filter the partner explorer', 'rc-upset': 'Click a bar to list the shared partner institutes', 'rc-pairs': 'Click a name below for the faculty profile', 'rc-sankey': 'Click a partner type, an institute or a band to list every institute behind it', 'rc-trend': 'Hover a point for the count',
     'rc-peers': 'Click a row for joint papers and the faculty behind the link', 'rc-scatter': 'Click a dot for that faculty profile', 'rc-topfac': 'Click a name for the profile',
-    'rc-ext': 'Click a row to see which of our faculty they work with', 'rc-inst': 'Click an Indian institute for its joint papers and faculty', 'rc-citpapers': 'Click a paper for details',
+    'rc-ext': 'Click a row to see which faculty of the three institutes work with that author', 'rc-inst': 'Click an Indian institute for its joint papers and faculty', 'rc-citpapers': 'Click a paper for details',
     'rc-all': "Click a row for the partner's joint papers and faculty",
   };
-  const NET = { 'cn-wrap': 'Click a node for paper details · hover for a preview · scroll to zoom, drag to pan', 'fn-wrap': 'Click a node for the faculty profile and their collaborators · click the legend to highlight a community', 'in-wrap': 'Click a partner for its joint papers and faculty · click one of our institutes to highlight only its partners' };
+  const NET = { 'cn-wrap': 'Click a node for paper details · hover for a preview · scroll to zoom, drag to pan', 'fn-wrap': 'Click a node for the faculty profile and their collaborators · click the legend to highlight a community', 'in-wrap': 'Click a partner for its joint papers and faculty · click one of the three institutes to highlight only its partners' };
   const pill = t => `<span class="hint">${PTR}${t}</span>`;
   Object.entries(HINTS).forEach(([id, t]) => {
     const head = document.getElementById(id)?.closest('.card')?.querySelector('.card-h > div');

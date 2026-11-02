@@ -1,0 +1,67 @@
+{
+  "source": "NIRF 2025 Engineering submissions, as supplied by the group (not part of the publication dataset)",
+  "MANIT Bhopal": {
+    "location": "Bhopal, Madhya Pradesh",
+    "facts": [
+      {
+        "label": "NIRF rank",
+        "value": "#81",
+        "note": "Engineering 2025 · score 48.26"
+      },
+      {
+        "label": "Full-time PhD scholars",
+        "value": "more than NIT Silchar"
+      },
+      {
+        "label": "Industry consultancy",
+        "value": "₹26.6 cr",
+        "note": "3 years"
+      }
+    ]
+  },
+  "NIT Jamshedpur": {
+    "location": "Jamshedpur, Jharkhand",
+    "facts": [
+      {
+        "label": "NIRF rank",
+        "value": "#82",
+        "note": "Engineering 2025 · score 48.25"
+      },
+      {
+        "label": "Sponsored research",
+        "value": "₹8.0 cr → ₹17.6 cr",
+        "note": "2022–23 to 2023–24"
+      }
+    ]
+  },
+  "NIT Silchar": {
+    "location": "Silchar, Assam",
+    "facts": [
+      {
+        "label": "NIRF rank",
+        "value": "#50",
+        "note": "Engineering 2025 · score 55.91"
+      },
+      {
+        "label": "PhD scholars",
+        "value": "646"
+      },
+      {
+        "label": "Sponsored research",
+        "value": "₹39.7 cr",
+        "note": "3 years"
+      },
+      {
+        "label": "Lab equipment and software",
+        "value": "₹22.1 cr",
+        "note": "3 years"
+      }
+    ]
+  },
+  "rank_source": "NIRF 2025 Engineering ranks as reported by ranking-listing sites (Careers360, CollegeDekho, Buddy4Study); not checked against nirfindia.org, and sites differ by one place for MANIT and NIT Jamshedpur",
+  "image_source": {
+    "MANIT Bhopal": "Photo: Akshat.saxena21, CC BY-SA 4.0, via Wikimedia Commons",
+    "NIT Jamshedpur": "Photo: ElmoVincena7, CC0, via Wikimedia Commons",
+    "NIT Silchar": "Photo: ranjan, public domain, via Wikimedia Commons"
+  }
+}

@@ -1,0 +1,407 @@
+{
+ "MANIT Bhopal": {
+  "references_total": 196946,
+  "references_with_institute_info": 172418,
+  "resolved_%": 87.5,
+  "references_to_other_indian_institutes": 35858,
+  "share_of_resolved_refs_to_other_indian_%": 20.8,
+  "distinct_indian_institutes_cited": 1702,
+  "papers_citing_another_indian_institute_%": 87.2,
+  "top10_cited_institutes": [
+   {
+    "cited_inst": "Indian Institute of Technology Roorkee",
+    "cluster": "IIT",
+    "citations": 2513,
+    "citing_papers": 940
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Delhi",
+    "cluster": "IIT",
+    "citations": 2180,
+    "citing_papers": 963
+   },
+   {
+    "cited_inst": "Vellore Institute of Technology University",
+    "cluster": "University/college",
+    "citations": 1034,
+    "citing_papers": 685
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Kharagpur",
+    "cluster": "IIT",
+    "citations": 929,
+    "citing_papers": 586
+   },
+   {
+    "cited_inst": "National Institute of Technology Rourkela",
+    "cluster": "NIT",
+    "citations": 710,
+    "citing_papers": 428
+   },
+   {
+    "cited_inst": "Indian Institute of Science Bangalore",
+    "cluster": "Premier science inst.",
+    "citations": 682,
+    "citing_papers": 426
+   },
+   {
+    "cited_inst": "Anna University, Chennai",
+    "cluster": "University/college",
+    "citations": 677,
+    "citing_papers": 467
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Kanpur",
+    "cluster": "IIT",
+    "citations": 653,
+    "citing_papers": 410
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Bombay",
+    "cluster": "IIT",
+    "citations": 647,
+    "citing_papers": 460
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Madras",
+    "cluster": "IIT",
+    "citations": 621,
+    "citing_papers": 460
+   }
+  ],
+  "citations_by_cluster": {
+   "University/college": 27167,
+   "IIT": 10719,
+   "NIT": 6362,
+   "Other": 2844,
+   "Government lab/agency": 1189,
+   "IIIT": 1111,
+   "Premier science inst.": 871,
+   "CSIR": 709,
+   "Medical/health": 544,
+   "DAE": 376,
+   "Industry": 362,
+   "IISER": 181
+  },
+  "by_year": {
+   "2016": {
+    "to_other_indian": 840,
+    "resolved": 5734
+   },
+   "2017": {
+    "to_other_indian": 1029,
+    "resolved": 6224
+   },
+   "2018": {
+    "to_other_indian": 1096,
+    "resolved": 7064
+   },
+   "2019": {
+    "to_other_indian": 1263,
+    "resolved": 6884
+   },
+   "2020": {
+    "to_other_indian": 2707,
+    "resolved": 12800
+   },
+   "2021": {
+    "to_other_indian": 4164,
+    "resolved": 19160
+   },
+   "2022": {
+    "to_other_indian": 4492,
+    "resolved": 20596
+   },
+   "2023": {
+    "to_other_indian": 5105,
+    "resolved": 21321
+   },
+   "2024": {
+    "to_other_indian": 5358,
+    "resolved": 25372
+   },
+   "2025": {
+    "to_other_indian": 5833,
+    "resolved": 27580
+   },
+   "2026": {
+    "to_other_indian": 3971,
+    "resolved": 19683
+   }
+  },
+  "to_our_other_two_institutes": {
+   "NIT Silchar": 297,
+   "NIT Jamshedpur": 186
+  }
+ },
+ "NIT Jamshedpur": {
+  "references_total": 121036,
+  "references_with_institute_info": 107327,
+  "resolved_%": 88.7,
+  "references_to_other_indian_institutes": 24983,
+  "share_of_resolved_refs_to_other_indian_%": 23.3,
+  "distinct_indian_institutes_cited": 1385,
+  "papers_citing_another_indian_institute_%": 91.4,
+  "top10_cited_institutes": [
+   {
+    "cited_inst": "Indian Institute of Technology Roorkee",
+    "cluster": "IIT",
+    "citations": 1177,
+    "citing_papers": 550
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Kharagpur",
+    "cluster": "IIT",
+    "citations": 1066,
+    "citing_papers": 510
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Dhanbad",
+    "cluster": "IIT",
+    "citations": 972,
+    "citing_papers": 461
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Delhi",
+    "cluster": "IIT",
+    "citations": 891,
+    "citing_papers": 489
+   },
+   {
+    "cited_inst": "Vellore Institute of Technology University",
+    "cluster": "University/college",
+    "citations": 721,
+    "citing_papers": 503
+   },
+   {
+    "cited_inst": "Thapar Institute of Engineering & Technology",
+    "cluster": "University/college",
+    "citations": 583,
+    "citing_papers": 261
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Madras",
+    "cluster": "IIT",
+    "citations": 580,
+    "citing_papers": 337
+   },
+   {
+    "cited_inst": "Jadavpur University",
+    "cluster": "University/college",
+    "citations": 547,
+    "citing_papers": 298
+   },
+   {
+    "cited_inst": "Indian Institute of Technology BHU",
+    "cluster": "IIT",
+    "citations": 503,
+    "citing_papers": 252
+   },
+   {
+    "cited_inst": "Indian Institute of Science Bangalore",
+    "cluster": "Premier science inst.",
+    "citations": 479,
+    "citing_papers": 269
+   }
+  ],
+  "citations_by_cluster": {
+   "University/college": 19535,
+   "IIT": 7609,
+   "NIT": 4423,
+   "Other": 2255,
+   "Government lab/agency": 838,
+   "Premier science inst.": 599,
+   "IIIT": 536,
+   "CSIR": 489,
+   "DAE": 439,
+   "Industry": 315,
+   "Medical/health": 176,
+   "IISER": 146
+  },
+  "by_year": {
+   "2016": {
+    "to_other_indian": 313,
+    "resolved": 1443
+   },
+   "2017": {
+    "to_other_indian": 455,
+    "resolved": 2286
+   },
+   "2018": {
+    "to_other_indian": 650,
+    "resolved": 2990
+   },
+   "2019": {
+    "to_other_indian": 1000,
+    "resolved": 4214
+   },
+   "2020": {
+    "to_other_indian": 1780,
+    "resolved": 8740
+   },
+   "2021": {
+    "to_other_indian": 2502,
+    "resolved": 12764
+   },
+   "2022": {
+    "to_other_indian": 2881,
+    "resolved": 12646
+   },
+   "2023": {
+    "to_other_indian": 4275,
+    "resolved": 16698
+   },
+   "2024": {
+    "to_other_indian": 4506,
+    "resolved": 17687
+   },
+   "2025": {
+    "to_other_indian": 3932,
+    "resolved": 16603
+   },
+   "2026": {
+    "to_other_indian": 2689,
+    "resolved": 11256
+   }
+  },
+  "to_our_other_two_institutes": {
+   "NIT Silchar": 292,
+   "MANIT Bhopal": 214
+  }
+ },
+ "NIT Silchar": {
+  "references_total": 320523,
+  "references_with_institute_info": 285591,
+  "resolved_%": 89.1,
+  "references_to_other_indian_institutes": 55127,
+  "share_of_resolved_refs_to_other_indian_%": 19.3,
+  "distinct_indian_institutes_cited": 1737,
+  "papers_citing_another_indian_institute_%": 90.1,
+  "top10_cited_institutes": [
+   {
+    "cited_inst": "Indian Institute of Technology Kharagpur",
+    "cluster": "IIT",
+    "citations": 2253,
+    "citing_papers": 1165
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Delhi",
+    "cluster": "IIT",
+    "citations": 2187,
+    "citing_papers": 1251
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Roorkee",
+    "cluster": "IIT",
+    "citations": 1869,
+    "citing_papers": 1083
+   },
+   {
+    "cited_inst": "Jadavpur University",
+    "cluster": "University/college",
+    "citations": 1678,
+    "citing_papers": 978
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Guwahati",
+    "cluster": "IIT",
+    "citations": 1433,
+    "citing_papers": 875
+   },
+   {
+    "cited_inst": "Vellore Institute of Technology University",
+    "cluster": "University/college",
+    "citations": 1393,
+    "citing_papers": 979
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Kanpur",
+    "cluster": "IIT",
+    "citations": 1336,
+    "citing_papers": 803
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Madras",
+    "cluster": "IIT",
+    "citations": 1242,
+    "citing_papers": 820
+   },
+   {
+    "cited_inst": "National Institute of Technology Rourkela",
+    "cluster": "NIT",
+    "citations": 1242,
+    "citing_papers": 699
+   },
+   {
+    "cited_inst": "Indian Institute of Technology Dhanbad",
+    "cluster": "IIT",
+    "citations": 1215,
+    "citing_papers": 640
+   }
+  ],
+  "citations_by_cluster": {
+   "University/college": 43525,
+   "IIT": 15959,
+   "NIT": 9808,
+   "Other": 3912,
+   "Premier science inst.": 1465,
+   "Government lab/agency": 1406,
+   "IIIT": 1144,
+   "CSIR": 736,
+   "Medical/health": 534,
+   "DAE": 528,
+   "Industry": 509,
+   "IISER": 326
+  },
+  "by_year": {
+   "2016": {
+    "to_other_indian": 1271,
+    "resolved": 7569
+   },
+   "2017": {
+    "to_other_indian": 1521,
+    "resolved": 8941
+   },
+   "2018": {
+    "to_other_indian": 2358,
+    "resolved": 13867
+   },
+   "2019": {
+    "to_other_indian": 2441,
+    "resolved": 14775
+   },
+   "2020": {
+    "to_other_indian": 4124,
+    "resolved": 23901
+   },
+   "2021": {
+    "to_other_indian": 5761,
+    "resolved": 31423
+   },
+   "2022": {
+    "to_other_indian": 7062,
+    "resolved": 38647
+   },
+   "2023": {
+    "to_other_indian": 8036,
+    "resolved": 39955
+   },
+   "2024": {
+    "to_other_indian": 9000,
+    "resolved": 42901
+   },
+   "2025": {
+    "to_other_indian": 8248,
+    "resolved": 37999
+   },
+   "2026": {
+    "to_other_indian": 5305,
+    "resolved": 25613
+   }
+  },
+  "to_our_other_two_institutes": {
+   "MANIT Bhopal": 390,
+   "NIT Jamshedpur": 226
+  }
+ }
+}

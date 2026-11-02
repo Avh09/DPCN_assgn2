@@ -4,7 +4,7 @@ const D = window.DATA;
 const I = D.insts, SHORT = ['MANIT', 'NITJ', 'NITS'];
 const P = D.papers, F = D.fac;
 // paper tuple fields
-const T = { title: 0, year: 1, type: 2, venue: 3, cites: 4, doi: 5, q: 6, field: 7, mask: 8, pr: 9, indeg: 10, outdeg: 11, iff: 12, multi: 13, inh: 14, ci: 15, cbi: 16 };
+const T = { title: 0, year: 1, type: 2, venue: 3, cites: 4, doi: 5, q: 6, field: 7, mask: 8, pr: 9, indeg: 10, outdeg: 11, iff: 12, multi: 13, inh: 14, ci: 15, cbi: 16, fwci: 17, vkind: 18, conf: 19, core: 20, subfield: 21, topic: 22, inSelf: 23, inSame: 24, inCross: 25, prYear: 26, wid: 27, review: 28, qsrc: 29, nref: 30, nauth: 31, ninst: 32, ncty: 33 };
 const YEARS = d3.range(2016, 2027);
 
 const state = { inst: -1, tab: 'overview', dirty: new Set(), history: [] };
@@ -210,7 +210,7 @@ function showDrawer(html, crumb, entry) {
 }
 function closeDrawer() { $('#drawer').classList.remove('on'); $('#scrim').classList.remove('on'); state.history = []; }
 $('#drClose').onclick = closeDrawer; $('#scrim').onclick = closeDrawer;
-$('#drBack').onclick = () => { state.history.pop(); const e = state.history.pop(); if (e) ({ f: openFaculty, p: openPaper, i: openPartner, t: openTypeDrawer, s: openSharedDrawer })[e[0]](e[1]); };
+$('#drBack').onclick = () => { state.history.pop(); const e = state.history.pop(); if (e) ({ f: openFaculty, p: openPaper, i: openPartner, x: openForeign, t: openTypeDrawer, s: openSharedDrawer })[e[0]](e[1]); };
 
 function paperRow(p, extra = '') {
   const x = P[p];
@@ -256,7 +256,7 @@ function openFaculty(fi) {
       <div class="stat"><div class="v num">${L.facWO[fi][0]}</div><div class="l">co-authors, same institute</div></div>
       <div class="stat"><div class="v num">${L.facWO[fi][2]}</div><div class="l">co-authors elsewhere in India</div></div>
       <div class="stat"><div class="v num">${L.facWO[fi][3]}</div><div class="l">co-authors abroad</div></div></div>
-      <div class="note" style="margin-top:6px">${L.facWO[fi][1]} co-authors at our other two institutes · betweenness in the full author network ${L.facWO[fi][6].toFixed(4)}</div>` : ''}
+      <div class="note" style="margin-top:6px">${L.facWO[fi][1]} co-authors at the other two institutes institutes · betweenness in the full author network ${L.facWO[fi][6].toFixed(4)}</div>` : ''}
     ${L && L.facPartners[fi] ? `<h4>Top partner institutes</h4><div class="chips">${L.facPartners[fi].map(([p, c, cl]) => `<span class="chip click" data-i="${esc(p)}"><span class="dot" style="background:${clColor(cl)}"></span>${esc(p)} · ${c}</span>`).join('')}</div>` : ''}
     ${collab.length ? `<h4>Faculty collaborators (${collab.length})</h4><div class="chips">${collab.map(([g, w]) => `<span class="chip click" data-f="${g}"><span class="dot" style="background:${instColor(F[g].i)}"></span>${esc(F[g].n)} · ${w}</span>`).join('')}</div>` : ''}
     <h4>Papers (${ps.length}) · most cited first</h4>
@@ -278,13 +278,16 @@ function openPaper(pi) {
     <div class="chips">${instNames(x[T.mask]).map(instChip).join('')}<span class="chip">${x[T.type] ? 'Conference' : 'Journal'}</span>${qChip(x[T.q])}${x[T.iff] ? `<span class="chip">Q1 · IF &gt; ${x[T.iff] === 2 ? 10 : 5}</span>` : ''}${x[T.multi] ? '<span class="chip">&gt;10 authors</span>' : ''}</div>
     <h3>${esc(x[T.title])}</h3>
     <div class="note">${esc(x[T.venue] || '—')} · ${x[T.year]} · ${esc(x[T.field])}</div>
+    ${x[T.nauth] ? `<div class="note">${x[T.nauth]} author${x[T.nauth] > 1 ? 's' : ''} · ${x[T.ninst]} institution${x[T.ninst] === 1 ? '' : 's'} · ${x[T.ncty]} countr${x[T.ncty] === 1 ? 'y' : 'ies'}${x[T.fwci] != null ? ` · FWCI ${(+x[T.fwci]).toFixed(2)}` : ''}</div>` : ''}
     <div style="margin-top:10px">${x[T.doi] ? `<a class="btn" href="${esc(x[T.doi])}" target="_blank" rel="noopener">Open DOI ↗</a>` : '<span class="note">No DOI</span>'}</div>
     <h4>Impact</h4>
     <div class="stats">
       <div class="stat"><div class="v num">${fmt(x[T.cites])}</div><div class="l">citations (OpenAlex)</div></div>
-      <div class="stat"><div class="v num">${x[T.indeg]}</div><div class="l">cited by corpus papers</div></div>
-      <div class="stat"><div class="v num">${x[T.outdeg]}</div><div class="l">corpus papers it cites</div></div>
-      <div class="stat"><div class="v num">#${fmt(prRank[pi])}</div><div class="l">PageRank of ${fmt(P.length)}</div></div>
+      <div class="stat"><div class="v num">${x[T.indeg]}</div><div class="l">cited by the institutes’ papers${x[T.inSelf] ? ` (${x[T.inSelf]} self)` : ''}</div></div>
+      <div class="stat"><div class="v num">${fmt(x[T.nref] || 0)}</div><div class="l">references (all, OpenAlex)</div></div>
+      <div class="stat"><div class="v num">${x[T.outdeg]}</div><div class="l">of them in our corpus</div></div>
+      <div class="stat"><div class="v num">#${fmt(prRank[pi])}</div><div class="l">within-corpus PageRank of ${fmt(P.length)}</div></div>
+      ${x[T.prYear] != null ? `<div class="stat"><div class="v num">#${fmt(x[T.prYear])}</div><div class="l">PageRank among ${x[T.year]} papers</div></div>` : ''}
       <div class="stat"><div class="v num">${x[T.pr] ? fmt2(x[T.pr]) : '—'}</div><div class="l">PageRank ×10⁶</div></div>
       <div class="stat"><div class="v num">${x[T.inh]}</div><div class="l">in-degree h-index</div></div>
     </div>
@@ -350,7 +353,7 @@ function iStat(i) {
   if (instCache.has(i)) return instCache.get(i);
   const s = S[I[i]];
   let o;
-  if (fullYears()) o = { papers: +s.papers, jp: +s.journal_papers, cp: +s.conference_papers, cites: +s.total_citations, fac: +s.faculty_with_papers,
+  if (fullYears()) o = { papers: +s.papers, jp: +s.journal_papers, cp: +s.conference_papers, cites: +s.total_citations, fac: F.filter(f => f.i === i && f.p > 0).length,
     h: +s.institute_h_index, q1: +s['journal_Q1_%'], if5: +s.Q1_and_IF_gt5, if10: +s.Q1_and_IF_gt10 };
   else {
     const ps = P.filter(x => (x[T.mask] & (1 << i)) && inYears(x)), js = ps.filter(x => x[T.type] === 0), jq = js.filter(x => /^Q[1-4]$/.test(x[T.q]));
@@ -372,13 +375,17 @@ function renderOverview() {
     ? `MANIT Bhopal, NIT Jamshedpur and NIT Silchar together: <b>${fmt(uniq)}</b> distinct papers${fullYears() ? '' : ` from ${yrLabel()}`} by <b>${fmt(F.length)}</b> verified faculty, <b>${fmt(D.cedges.length)}</b> citation links and <b>${fmt(D.fedges.length)}</b> co-authorship ties.`
     : `${I[state.inst]}: <b>${fmt(uniq)}</b> papers${fullYears() ? '' : ` from ${yrLabel()}`} by <b>${fmt(st[0].fac)}</b> faculty, institute h-index <b>${st[0].h}</b>.`;
   const silo = D.citNet.per_institute_outgoing_share;
+  const top = (f) => I.map((n, k) => [k, +f(n)]).filter(x => !isNaN(x[1])).sort((a, b) => b[1] - a[1])[0][0];
+  const kPub = top(n => S[n].papers), kImp = top(n => S[n].citations_per_paper), kGro = top(n => D.pub['growth_2016_to_2025_cagr_%'][n]);
+  const sameShare = I.map(n => +silo[n]['to_same_inst_%']), selfLink = e => F[e[0]].n === F[e[1]].n;
+  const crossN = D.fedges.filter(e => F[e[0]].i !== F[e[1]].i && !selfLink(e)).length;
   const ins = [
-    ['pubs', `${I[2]} publishes the most`, `${fmt(+S[I[2]].papers)} papers and the highest Q1 share (${S[I[2]]['journal_Q1_%']}%).`],
-    ['papers', `${I[0]} has the most impact per paper`, `${S[I[0]].citations_per_paper} citations per paper; institute h-index ${S[I[0]].institute_h_index}.`],
-    ['pubs', `${I[1]} grows fastest`, `${D.pub['growth_2016_to_2025_cagr_%'][I[1]]}% a year in papers (CAGR 2016→2025).`],
-    ['citnet', 'Citations stay at home', `${silo[I[0]]['to_same_inst_%']}–${silo[I[2]]['to_same_inst_%']}% of in-corpus citations point to the same institute.`],
-    ['reach', 'Three islands', `Only ${D.facNet.whole_network.cross_institute_edges} of ${fmt(D.facNet.whole_network.edges)} faculty links cross our institutes; each works mostly with other NITs, IITs and universities.`],
-    ['flows', 'Net importers of citations', `In/out ratio with other Indian institutes: ${I.map(i => S[i].in_over_out_ratio).join(' · ')}. All below 1.`],
+    ['pubs', `${I[kPub]} publishes the most`, `${fmt(+S[I[kPub]].papers)} papers; Q1 share of its ranked journal papers ${S[I[kPub]]['journal_Q1_%']}%.`],
+    ['papers', `${I[kImp]} has the most impact per paper`, `${S[I[kImp]].citations_per_paper} citations per paper; institute h-index ${S[I[kImp]].institute_h_index}.`],
+    ['pubs', `${I[kGro]} grows fastest`, `${D.pub['growth_2016_to_2025_cagr_%'][I[kGro]]}% a year in papers (CAGR 2016→2025).`],
+    ['citnet', 'Citations stay at home', `${fmt1(Math.min(...sameShare))}–${fmt1(Math.max(...sameShare))}% of in-corpus citations point to the same institute.`],
+    ['reach', 'Three islands', `Only ${crossN} of ${fmt(D.fedges.filter(e => !selfLink(e)).length)} faculty links cross the three institutes; each works mostly with other NITs, IITs and universities.`],
+    ['flows', 'Net importers of citations', `In/out ratio with other Indian institutes: ${I.map((n, k) => `${SHORT[k]} ${S[n].in_over_out_ratio}`).join(' · ')}. ${I.every(i => +S[i].in_over_out_ratio < 1) ? 'All below 1.' : ''}`],
   ];
   $('#insights').innerHTML = ins.map(([t, b, s]) => `<div class="ins" data-t="${t}"><span class="go">→</span><b>${b}</b>${s}</div>`).join('');
   $('#insights').querySelectorAll('.ins').forEach(e => e.onclick = () => go(e.dataset.t));
@@ -388,7 +395,7 @@ function renderOverview() {
   const q1 = d3.sum(st, s => s.q1 * s.jp) / (tot('jp') || 1);
   const k = [
     ['Papers', fmt(uniq), state.inst < 0 ? `distinct papers, ${yrLabel()}` : `${fmt(st[0].jp)} journal · ${fmt(st[0].cp)} conference`, bars(all.map(s => s.papers))],
-    ['Citations', fmt(tot('cites')), `${fmt1(tot('cites') / (tot('papers') || 1))} per paper`, bars(all.map(s => s.cites), d3.format('.3s'))],
+    ['Citations', fmt(state.inst < 0 ? d3.sum(P.filter(pIn), x => x[T.cites]) : tot('cites')), `${fmt1((state.inst < 0 ? d3.sum(P.filter(pIn), x => x[T.cites]) : tot('cites')) / ((state.inst < 0 ? uniq : tot('papers')) || 1))} per paper`, bars(all.map(s => s.cites), d3.format('.3s'))],
     ['Faculty with papers', fmt(tot('fac')), 'current + former, verified', bars(all.map(s => s.fac))],
     ['Institute h-index', state.inst < 0 ? d3.max(st, s => s.h) : st[0].h, state.inst < 0 ? 'highest of the three' : 'from all its papers', bars(all.map(s => s.h))],
     ['Journal Q1 share', fmt1(q1) + '%', `${fmt(tot('if5'))} Q1 papers with IF > 5`, bars(all.map(s => s.q1), d => d + '%')],
@@ -499,16 +506,22 @@ function renderPubs() {
     hovertemplate: '%{customdata}<br>%{x:,} papers · %{y:.1f} citations per paper<extra></extra>' }],
     { xaxis: { type: 'log', title: { text: 'Papers in the field (log scale)' } }, yaxis: { title: { text: 'Mean citations per paper' } } }, ev => explorer({ field: ev.points[0].customdata }));
 
+  // field filter shared by the journal and conference lists
+  const fsels = [...document.querySelectorAll('.pbField')], fsel = { get value() { return fsels[0].value; } };
+  if (!fsels[0].options.length) fsels.forEach(el => { el.innerHTML = '<option value="">All fields</option>' + fieldCount.map(d => `<option value="${esc(d[0])}">${esc(d[0])} (${fmt(d[1])})</option>`).join(''); el.onchange = () => { fsels.forEach(o => o.value = el.value); drawJournals(); ven(); }; });
+  const fieldOK = x => !fsel.value || x[T.field] === fsel.value;
   // journals (top 5 bold, 6-10 faded)
-  const jtop = i => { const m = new Map(); P.forEach(x => { if ((x[T.mask] & (1 << i)) && x[T.type] === 0 && inYears(x) && x[T.venue]) { const o = m.get(x[T.venue]) || { n: 0, c: 0, q: {} }; o.n++; o.c += x[T.cites]; o.q[x[T.q]] = (o.q[x[T.q]] || 0) + 1; m.set(x[T.venue], o); } });
-    return [...m].sort((a, b) => b[1].n - a[1].n).slice(0, 10).map(([name, o]) => ({ name, papers: o.n, citations: o.c, quartile: Object.entries(o.q).sort((a, b) => b[1] - a[1])[0][0] })); };
+  const jtop = i => { const m = new Map(); P.forEach(x => { if ((x[T.mask] & (1 << i)) && x[T.type] === 0 && inYears(x) && x[T.venue] && fieldOK(x)) { const o = m.get(x[T.venue]) || { n: 0, c: 0, q: {} }; o.n++; o.c += x[T.cites]; o.q[x[T.q]] = (o.q[x[T.q]] || 0) + 1; m.set(x[T.venue], o); } });
+    return [...m].sort((a, b) => b[1].n - a[1].n).slice(0, +($('#pbTop')?.value || 10)).map(([name, o]) => ({ name, papers: o.n, citations: o.c, quartile: Object.entries(o.q).sort((a, b) => b[1] - a[1])[0][0] })); };
   const venueCol = (i, list, key) => { const mx = d3.max(list, j => j.papers) || 1; return `<div><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span class="dot" style="background:${instColor(i)}"></span><b>${I[i]}</b></div>${list.map((j, k) => `
       <div class="jr" data-j="${esc(j.name)}" data-i="${i}" style="cursor:pointer;padding:6px 0;border-bottom:1px solid var(--border);opacity:${k < 5 ? 1 : .55}">
         <div style="display:flex;gap:8px;align-items:baseline"><span class="num note">${k + 1}</span><span style="flex:1">${esc(j.name)}</span>${j.quartile ? qChip(j.quartile) : ''}</div>
         <div style="display:flex;align-items:center;gap:6px;margin-top:3px"><i class="minibar" style="width:${(j.papers / mx * 70).toFixed(0)}%;background:${instColor(i)}"></i><span class="note num">${j.papers} papers · ${fmt(j.citations)} cites</span></div></div>`).join('') || '<p class="note">No papers in this range.</p>'}</div>`; };
   const gridCols = el => { el.style.gridTemplateColumns = sh.length === 1 ? '1fr' : ''; };
-  $('#pb-journals').innerHTML = sh.map(i => venueCol(i, jtop(i))).join(''); gridCols($('#pb-journals'));
-  $('#pb-journals').querySelectorAll('.jr').forEach(e => e.onclick = () => explorer({ venue: e.dataset.j, inst: +e.dataset.i, type: 0 }));
+  const drawJournals = () => { $('#pb-journals').innerHTML = sh.map(i => venueCol(i, jtop(i))).join(''); gridCols($('#pb-journals'));
+    $('#pb-journals').querySelectorAll('.jr').forEach(e => e.onclick = () => explorer({ venue: e.dataset.j, inst: +e.dataset.i, type: 0 })); };
+  if ($('#pbTop')) $('#pbTop').onchange = drawJournals;
+  drawJournals();
 
   // conference venues: named conferences vs proceedings series
   const ven = () => {
@@ -516,7 +529,7 @@ function renderPubs() {
     $('#pb-vennote').innerHTML = series
       ? 'These are <b>book series and proceedings volumes</b>, such as Springer\'s Lecture Notes or Materials Today: Proceedings. Each volume collects the papers of a different conference, so a series is not a single conference. Most are Scopus-indexed and rank Q3–Q4.'
       : 'These are <b>individual conferences</b>, such as IEEE TENCON or SILCON. Editions from different years are grouped together. Papers that appear only in a proceedings series are under "Proceedings series".';
-    const vtop = i => { const m = new Map(); P.forEach(x => { if ((x[T.mask] & (1 << i)) && x[T.type] === 1 && inYears(x) && x[T.venue] && SERIES.test(x[T.venue]) === series) {
+    const vtop = i => { const m = new Map(); P.forEach(x => { if ((x[T.mask] & (1 << i)) && x[T.type] === 1 && inYears(x) && x[T.venue] && fieldOK(x) && SERIES.test(x[T.venue]) === series) {
       const key = series ? x[T.venue] : confName(x[T.venue]); const o = m.get(key) || { n: 0, c: 0, q: {} }; o.n++; o.c += x[T.cites]; o.q[x[T.q]] = (o.q[x[T.q]] || 0) + 1; m.set(key, o); } });
       return [...m].sort((a, b) => b[1].n - a[1].n).slice(0, 8).map(([name, o]) => ({ name, papers: o.n, citations: o.c, quartile: Object.entries(o.q).sort((a, b) => b[1] - a[1])[0][0] })); };
     $('#pb-venues').innerHTML = sh.map(i => venueCol(i, vtop(i))).join(''); gridCols($('#pb-venues'));
@@ -559,7 +572,10 @@ function renderFaculty() {
       { key: 'n', label: 'Name', v: f => f.n, html: f => `<div class="namecell"><span class="av" style="background:linear-gradient(135deg, ${instColor(f.i)}, var(--brand1))">${esc(f.n.split(/\s+/).filter(w => /^[A-Za-z]/.test(w)).slice(0, 2).map(w => w[0].toUpperCase()).join(''))}</span><div><div class="t">${esc(f.n)}</div><div class="s">${esc(f.des || '')}${f.s === 'former' ? ' · former' : ''}</div></div></div>` },
       { key: 'i', label: 'Inst.', v: f => f.i, html: f => instChip(f.i) },
       { key: 'd', label: 'Department', v: f => f.d },
-      { key: 'h', label: 'h-index', num: 1, v: f => f.h },
+      { key: 'h', label: 'h-index 2016–26', num: 1, v: f => f.h },
+      { key: 'i10', label: 'i10', num: 1, v: f => f.i10 },
+      { key: 'citp', label: 'Cited %', num: 1, v: f => f.p ? Math.round(100 * f.cit / f.p) : null, html: f => f.p ? Math.round(100 * f.cit / f.p) + '%' : '—' },
+      { key: 'ya', label: 'Active yrs', num: 1, v: f => f.ya },
       { key: 'p', label: 'Papers', num: 1, v: f => f.p, html: f => fmt(f.p) },
       { key: 'c', label: 'Citations', num: 1, v: f => f.c, html: f => fmt(f.c) },
       { key: 'q1', label: 'Q1 %', num: 1, v: f => f.q1, html: f => f.q1 == null ? '—' : f.q1 },
@@ -604,7 +620,7 @@ function exMatch(k) {
   if (f.inst != null && f.inst >= 0 && !(p[T.mask] & (1 << f.inst))) return false;
   if (f.year && p[T.year] !== +f.year) return false;
   if (f.type != null && f.type !== '' && p[T.type] !== +f.type) return false;
-  if (f.q) { if (f.q === 'Unranked' ? /^(Q[1-4]|A\*|A|B|C)$/.test(p[T.q]) : p[T.q] !== f.q) return false; }
+  if (f.q) { if (f.q === 'Unranked' ? /^(Q[1-4]|A\*|A|B|C)$/.test(p[T.q]) : p[T.q] !== f.q || (/^Q[1-4]$/.test(f.q) && p[T.type] !== 0)) return false; }   // journal quartiles apply to journal papers only
   if (f.field && p[T.field] !== f.field) return false;
   if (f.venue && p[T.venue] !== f.venue && confName(p[T.venue]) !== f.venue) return false;
   if (f.iff && !(p[T.iff] >= +f.iff)) return false;
@@ -686,7 +702,8 @@ function renderPapers() {
       { key: 'year', label: 'Year', num: 1, v: k => P[k][T.year] },
       { key: 'q', label: 'Rank', v: k => P[k][T.q], html: k => qChip(P[k][T.q]) + (P[k][T.iff] ? ` <span class="chip">IF&gt;${P[k][T.iff] === 2 ? 10 : 5}</span>` : '') },
       { key: 'cites', label: 'Cites', num: 1, v: k => P[k][T.cites], html: k => fmt(P[k][T.cites]) },
-      { key: 'pr', label: 'PageRank', num: 1, v: k => P[k][T.pr], html: k => P[k][T.pr] ? fmt2(P[k][T.pr]) : '—' },
+      { key: 'pr', label: 'PageRank ×10⁶ (within corpus)', num: 1, v: k => P[k][T.pr], html: k => P[k][T.pr] ? fmt2(P[k][T.pr]) : '—' },
+      { key: 'indeg', label: 'In-degree: papers that cite it (self)', num: 1, v: k => P[k][T.indeg], html: k => `${fmt(P[k][T.indeg])}${P[k][T.inSelf] ? ` <span class="note">(${P[k][T.inSelf]} self)</span>` : ''}` },
       { key: 'doi', label: '', v: k => P[k][T.doi], html: k => doiLink(P[k][T.doi]) },
     ],
     onRow: k => openPaper(k),
@@ -709,7 +726,7 @@ function cnColor(p, mode) {
   if (mode === 'year') return yearColor(x[T.year]);
   return /^Q[1-4]$/.test(x[T.q]) ? css('--' + x[T.q].toLowerCase()) : css('--other');
 }
-const CN_SIZE = { pr: 'PageRank (influence)', in: 'in-degree (times cited by our papers)', c: 'total citations', btw: 'betweenness (bridge papers, in this view)' };
+const CN_SIZE = { pr: 'PageRank (influence)', in: 'in-degree (how many papers in the set cite it)', c: 'total citations', btw: 'betweenness (bridge papers, in this view)' };
 const CN_COLOR = { inst: 'institute', field: 'research field', q: 'venue quartile', year: 'publication year' };
 function cnLegend(o) {
   let items;
@@ -718,7 +735,7 @@ function cnLegend(o) {
   else if (o.color === 'q') items = [...QS.map(q => [css('--' + q.toLowerCase()), q]), [css('--other'), 'CORE-ranked or unranked']];
   else items = [2016, 2018, 2020, 2022, 2024, 2026].map(y => [yearColor(y), String(y)]);
   $('#cn-legend').innerHTML = `<div class="lg-t">Colour = ${CN_COLOR[o.color]}</div>` + items.map(([c, l]) => `<div><span class="dot" style="background:${c}"></span>${esc(l)}</div>`).join('') +
-    `<div class="lg-s">Size = ${CN_SIZE[o.size]}<br>Arrow points to the cited paper</div>`;
+    `<div class="lg-s">Size = ${CN_SIZE[o.size]}<br>Arrow points to the cited paper${$('#cnStar')?.checked ? '<br><span style="color:var(--brand3)">Orange line = citation between two institutes</span><br>Ring = standout paper' : ''}</div>`;
 }
 $('#cnField').innerHTML = '<option value="">All fields</option>' + fieldCount.map(([f, n]) => `<option value="${esc(f)}">${esc(f)} (${fmt(n)})</option>`).join('');
 function cnOpts() {
@@ -749,7 +766,8 @@ function components(ids, links) {
 }
 function cnBuild(o) {
   const share = (s, t) => (P[s][T.mask] & P[t][T.mask]) !== 0;
-  const keep = (s, t) => o.links === 'all' || (o.links === 'within' ? share(s, t) : !share(s, t));
+  const selfL = (s, t) => (D.pfac[s] || []).some(f => (D.pfac[t] || []).includes(f));
+  const keep = (s, t) => o.links === 'all' || (o.links === 'self' ? selfL(s, t) : o.links === 'noself' ? !selfL(s, t) : o.links === 'within' ? share(s, t) : !share(s, t));
   let ids, links;
   if (o.view === 'ego1' || o.view === 'ego2') {
     if (cn.sel == null) return { need: 'ego' };
@@ -807,7 +825,7 @@ function cnActive(o) {
   if (o.flow) parts.push(o.flow === 'out' ? 'Cites another Indian institute' : 'Cited by another Indian institute');
   if (o.multi) parts.push('≤ 10 authors');
   if (o.min) parts.push(`Cited ≥ ${o.min}× in corpus`);
-  if (o.links !== 'all') parts.push(o.links === 'within' ? 'Links within one institute' : 'Links between our institutes');
+  if (o.links !== 'all') parts.push({ within: 'Links within one institute', between: 'Links between the three institutes', self: 'Self-citations only', noself: 'Without self-citations' }[o.links]);
   $('#cnActive').innerHTML = parts.length ? `<span class="note">Active:</span> ${parts.map(p => `<span class="chip">${esc(p)}</span>`).join(' ')}` : '<span class="note">No filters: showing the most influential papers by PageRank.</span>';
 }
 function cnResetAll() {
@@ -843,12 +861,14 @@ function drawCitGraph() {
   $('#cn-stats').innerHTML = `<b class="num">${fmt(nodes.length)}</b> papers · <b class="num">${fmt(links.length)}</b> citations shown<br><span class="note">${o.view.startsWith('ego') ? 'around the selected paper' : `of ${fmt(P.filter(pIn).length)} papers in scope`}</span>`;
   const { width: W, height: H } = wrap.getBoundingClientRect();
   const defs = svg.append('defs');
-  [['arr', css('--axis')], ['arrH', css('--brand1')]].forEach(([id, c]) => defs.append('marker').attr('id', id).attr('viewBox', '0 -4 8 8').attr('refX', 8).attr('markerWidth', 6).attr('markerHeight', 6).attr('orient', 'auto').append('path').attr('d', 'M0,-4L8,0L0,4').attr('fill', c));
+  [['arr', css('--muted')], ['arrH', css('--brand1')]].forEach(([id, c]) => defs.append('marker').attr('id', id).attr('viewBox', '0 -4 8 8').attr('refX', 8).attr('markerWidth', 6).attr('markerHeight', 6).attr('orient', 'auto').append('path').attr('d', 'M0,-4L8,0L0,4').attr('fill', c));
   const g = svg.append('g');
-  const zoom = d3.zoom().scaleExtent([.15, 8]).on('zoom', e => g.attr('transform', e.transform));
+  const zoom = d3.zoom().scaleExtent([.15, 8]).on('zoom', e => { g.attr('transform', e.transform); g.selectAll('.stars text').attr('font-size', 11.5 / e.transform.k).attr('stroke-width', 4 / e.transform.k); g.selectAll('.stars circle').attr('stroke-width', 3 / e.transform.k); });
   svg.call(zoom).on('dblclick.zoom', null);
   Object.assign(cn, { zoom, svg, W, H, byId });
-  const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', css('--axis')).attr('stroke-opacity', .55).attr('stroke-width', .8).attr('marker-end', 'url(#arr)');
+  const starOn = !!$('#cnStar')?.checked, cross = l => !(P[l.source.id][T.mask] & P[l.target.id][T.mask]);
+  cn.cross = cross;
+  const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', l => starOn && cross(l) ? css('--brand3') : css('--muted')).attr('stroke-opacity', l => starOn && cross(l) ? 1 : .7).attr('stroke-width', l => starOn && cross(l) ? 2.4 : 1.2).attr('marker-end', 'url(#arr)');
   const node = g.append('g').selectAll('circle').data(nodes).join('circle')
     .attr('r', d => r(val(d.id))).attr('fill', d => cnColor(d.id, o.color)).attr('stroke', d => d.id === cn.sel ? css('--ink') : css('--surface')).attr('stroke-width', d => d.id === cn.sel ? 2.5 : 1.5).style('cursor', 'pointer')
     .on('mouseenter', (e, d) => tip(e, `<b>${esc(P[d.id][T.title])}</b><div class="m">${instNames(P[d.id][T.mask]).map(i => SHORT[i]).join(', ')} · ${P[d.id][T.year]} · ${esc(P[d.id][T.venue] || '')} · ${esc(P[d.id][T.q])}</div><div class="m">PageRank #${fmt(prRank[d.id])} · cited ${P[d.id][T.indeg]}× in corpus · ${fmt(P[d.id][T.cites])} citations${btw ? ` · betweenness ${fmt1(btw.get(d.id))}` : ''}</div>`))
@@ -858,6 +878,8 @@ function drawCitGraph() {
       .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; }).on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
   svg.on('click', () => cnSelect(null));
   cn.node = node; cn.link = link;
+  const cMax = f => nodes.reduce((m, n) => (!m || f(n) > f(m) ? n : m), null), cS = (node, tag) => node && ({ node, tag: `${tag}: ${P[node.id][T.title].slice(0, 42)}${P[node.id][T.title].length > 42 ? '…' : ''}`, r: r(val(node.id)) });
+  const starUp = addStars(g, mergeStars([cS(cMax(n => P[n.id][T.cites]), 'Most cited in view'), cS(cMax(n => P[n.id][T.pr]), 'Top PageRank in view'), cS(cMax(n => P[n.id][T.indeg]), 'Most cited inside the set, in view')].filter(Boolean)), starOn);
   const sim = cn.sim = d3.forceSimulation(nodes)
     .force('link', d3.forceLink(links).distance(28).strength(.5))
     .force('charge', d3.forceManyBody().strength(-34).distanceMax(320))
@@ -866,7 +888,7 @@ function drawCitGraph() {
     .on('tick', () => {
       link.each(function (l) { const dx = l.target.x - l.source.x, dy = l.target.y - l.source.y, len = Math.hypot(dx, dy) || 1, rr = r(val(l.target.id)) + 2;
         this.setAttribute('x1', l.source.x); this.setAttribute('y1', l.source.y); this.setAttribute('x2', l.target.x - dx / len * rr); this.setAttribute('y2', l.target.y - dy / len * rr); });
-      node.attr('cx', d => d.x).attr('cy', d => d.y);
+      node.attr('cx', d => d.x).attr('cy', d => d.y); starUp();
     });
   sim.stop().tick(220); sim.on('tick')(); fitView(cn, nodes);
   if (cn.sel != null && byId.has(cn.sel)) cnSelect(cn.sel, o.view.startsWith('ego') ? false : !!cn.zoomSel);
@@ -887,23 +909,25 @@ function renderCitnet() {
   });
   const ind = d3.rollups(P.filter(p => p[T.indeg] > 0 && pIn(p)), v => v.length, p => p[T.indeg]).sort((a, b) => a[0] - b[0]);
   plot('cn-indeg', [{ type: 'scatter', mode: 'markers', x: ind.map(d => d[0]), y: ind.map(d => d[1]), marker: { size: 8, color: state.inst < 0 ? css('--c7') : instColor(state.inst), line: { color: css('--surface'), width: 1.5 } }, hovertemplate: 'Cited %{x}× in corpus: %{y} papers<extra></extra>' }],
-    { xaxis: { type: 'log', title: { text: 'In-degree: times cited by our papers (log)' } }, yaxis: { type: 'log', title: { text: 'Number of papers (log)' } } });
+    { xaxis: { type: 'log', title: { text: 'In-degree: number of papers in the set that cite this paper (log)' } }, yaxis: { type: 'log', title: { text: 'Number of papers (log)' } } });
   const flowDraw = () => {
-    const cross = segVal('flowMode') === 'cross', M = D.citNet.flow_matrix_source_rows_target_cols;
+    const cross = segVal('flowMode') === 'cross', pct = segVal('flowUnit') === 'pct';
+    const M = pct ? D.citNet.flow_matrix_row_pct : D.citNet.flow_matrix_source_rows_target_cols;   // row = citing institute, column = cited institute
     const z = I.map(a => I.map(b => cross && a === b ? null : M[a][b]));
+    const lab = v => v == null ? '—' : pct ? fmt1(v) + '%' : fmt(v);
     plot('cn-flow', [{ type: 'heatmap', x: SHORT.map(s => '→ ' + s), y: SHORT, z, colorscale: [[0, css('--seq0')], [1, css('--seq1')]], showscale: false, xgap: 3, ygap: 3,
-      hovertemplate: '%{y} cites %{x}: %{z:,}<extra></extra>' }],
-      { yaxis: { autorange: 'reversed', title: { text: 'Citing institute' } }, xaxis: { title: { text: 'Cited institute' } }, margin: { l: 70, r: 10, t: 4, b: 44 },
-        annotations: I.flatMap((a, r) => I.map((b, c) => ({ x: '→ ' + SHORT[c], y: SHORT[r], text: z[r][c] == null ? '—' : fmt(z[r][c]), showarrow: false, font: { color: z[r][c] / d3.max(z.flat()) > .5 ? (isDark() ? '#0b0b0b' : '#ffffff') : css('--ink'), size: 13 } }))) });
+      hovertemplate: pct ? '%{y} citing links that go to %{x}: %{z:.1f}% of its outgoing links<extra></extra>' : '%{y} papers cite %{x} papers: %{z:,} links<extra></extra>' }],
+      { yaxis: { autorange: 'reversed', title: { text: 'Citing institute (row)' } }, xaxis: { title: { text: 'Cited institute (column)' } }, margin: { l: 70, r: 10, t: 4, b: 44 },
+        annotations: I.flatMap((a, r) => I.map((b, c) => ({ x: '→ ' + SHORT[c], y: SHORT[r], text: lab(z[r][c]), showarrow: false, font: { color: z[r][c] / d3.max(z.flat()) > .5 ? (isDark() ? '#0b0b0b' : '#ffffff') : css('--ink'), size: 13 } }))) });
   };
-  flowDraw(); segBind('flowMode', flowDraw);
+  flowDraw(); segBind('flowMode', flowDraw); segBind('flowUnit', flowDraw);
   const mac = D.citMacro, rows = [['papers', 'Papers'], ['citation_links', 'Citation links'], ['density', 'Density'], ['avg_clustering_undirected', 'Avg clustering (undirected)'], ['reciprocity', 'Reciprocity'], ['weak_components', 'Weak components'], ['largest_component_share_%', 'Largest component %'], ['papers_never_cited_in_corpus_%', 'Never cited in corpus %']];
   const scopes = ['whole corpus', ...instsShown().map(i => I[i])];
   $('#cn-macro').innerHTML = `<div class="tbl-wrap"><table><thead><tr><th></th>${scopes.map(s => `<th class="r">${s === 'whole corpus' ? 'All' : SHORT[I.indexOf(s)]}</th>`).join('')}</tr></thead><tbody>${rows.map(([k, l]) => `<tr><td>${l}</td>${scopes.map(s => `<td class="r num">${typeof mac[s][k] === 'number' && mac[s][k] >= 1000 ? fmt(mac[s][k]) : mac[s][k]}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 function cnSelect(p, zoomTo) {
   cn.sel = p; if (!cn.node) return;
-  if (p == null) { cn.node.attr('opacity', 1); cn.link.attr('stroke-opacity', .55).attr('stroke', css('--axis')).attr('marker-end', 'url(#arr)'); return; }
+  if (p == null) { cn.node.attr('opacity', 1); const sx = $('#cnStar')?.checked; cn.link.attr('stroke-opacity', l => sx && cn.cross(l) ? 1 : .7).attr('stroke', l => sx && cn.cross(l) ? css('--brand3') : css('--muted')).attr('marker-end', 'url(#arr)'); return; }
   const nb = new Set([p, ...citesOut[p], ...citesIn[p]]);
   cn.node.attr('opacity', d => nb.has(d.id) ? 1 : .12);
   cn.link.attr('stroke-opacity', l => l.source.id === p || l.target.id === p ? .95 : .04).attr('stroke', l => l.source.id === p || l.target.id === p ? css('--brand1') : css('--axis'))
@@ -916,7 +940,7 @@ function focusPaper(p) {
   state.dirty.add('citnet'); go('citnet');
   setTimeout(() => openPaper(p), 400);
 }
-['cnN', 'cnMin', 'cnView', 'cnLinks', 'cnType', 'cnIF', 'cnCore', 'cnField', 'cnFlow', 'cnMulti', 'cnSize', 'cnColor'].forEach(id => $('#' + id).addEventListener('input', () => {
+['cnN', 'cnMin', 'cnView', 'cnLinks', 'cnType', 'cnIF', 'cnCore', 'cnField', 'cnFlow', 'cnMulti', 'cnSize', 'cnColor', 'cnStar'].forEach(id => $('#' + id).addEventListener('input', () => {
   if (id === 'cnN') $('#cnNv').textContent = $('#cnN').value; if (id === 'cnMin') $('#cnMinv').textContent = $('#cnMin').value;
   clearTimeout(cn.t); cn.t = setTimeout(drawCitGraph, id === 'cnN' || id === 'cnMin' ? 250 : 0); }));
 document.querySelectorAll('#cnQ input').forEach(e => e.addEventListener('change', () => { clearTimeout(cn.t); cn.t = setTimeout(drawCitGraph, 0); }));
@@ -951,7 +975,7 @@ function fnLegend(mode) {
   const what = { lv: 'research community (Louvain): faculty who publish together', inst: 'institute', dept: 'department', kc: 'k-core: depth inside the network' }[mode];
   const size = { deg: 'number of faculty collaborators', h: 'h-index', btw: 'betweenness (bridging role)', p: 'papers', eig: 'eigenvector centrality' }[$('#fnSize').value];
   $('#fn-legend').innerHTML = `<div class="lg-t">Colour = ${what}</div>` + items.map(([c, l, id]) => `<div ${id != null ? `data-c="${id}"` : ''}><span class="dot" style="background:${c}"></span>${esc(l)}</div>`).join('') +
-    `<div class="lg-s">Size = ${size}<br>Line = joint papers (thicker = more)${mode === 'lv' ? '<br>Click a community to highlight it' : ''}</div>`;
+    `<div class="lg-s">Size = ${size}<br>Ring = standout: top broker, most co-authors, strongest cross-institute pair<br>Line = joint papers (thicker = more)${$('#fnCross')?.checked ? `<br><span style="color:var(--brand3)">Orange line = link between two institutes </span>` : ''}${mode === 'lv' ? '<br>Click a community to highlight it' : ''}</div>`;
   $('#fn-legend').querySelectorAll('[data-c]').forEach(e => e.onclick = () => focusCommunity(+e.dataset.c, true));
 }
 function renderCollab() {
@@ -960,22 +984,26 @@ function renderCollab() {
   const sh = instsShown();
   let ids = d3.range(F.length).filter(i => sh.includes(F[i].i));
   const ok = new Set(ids);
-  let E = D.fedges.filter(([a, b, w]) => ok.has(a) && ok.has(b) && w >= minW);
+  const lk = $('#fnLinks')?.value || 'all';
+  let E = D.fedges.filter(([a, b, w]) => ok.has(a) && ok.has(b) && w >= minW && (lk === 'all' || (lk === 'between') === (F[a].i !== F[b].i)));
   if ($('#fnIso').checked) { const d = new Set(E.flatMap(e => [e[0], e[1]])); ids = ids.filter(i => d.has(i)); }
+  const topN = +($('#fnTop')?.value || 0);
+  if (topN > 0 && ids.length > topN) { ids = ids.slice().sort((a, b) => F[b][sizeBy] - F[a][sizeBy]).slice(0, topN); const keep = new Set(ids); E = E.filter(([a, b]) => keep.has(a) && keep.has(b)); }
   const nodes = ids.map(i => ({ id: i })), byId = new Map(nodes.map(n => [n.id, n]));
   const links = E.map(([a, b, w]) => ({ source: byId.get(a), target: byId.get(b), w })).filter(l => l.source && l.target);
   const r = d3.scaleSqrt().domain([0, d3.max(nodes, n => F[n.id][sizeBy]) || 1]).range([3, 18]);
   fnLegend(mode);
   const ws = D.facNet[state.inst < 0 ? 'whole_network' : I[state.inst]];
-  $('#fn-stats').innerHTML = `<b class="num">${fmt(nodes.length)}</b> faculty · <b class="num">${fmt(links.length)}</b> links<br><span class="note">Louvain ${ws.louvain.communities} communities · Q = ${ws.louvain.modularity}</span>`;
+  $('#fn-stats').innerHTML = `<b class="num">${fmt(nodes.length)}</b> faculty${topN ? ` (top ${topN} by ${$('#fnSize').selectedOptions[0].text.toLowerCase()})` : ''} · <b class="num">${fmt(links.length)}</b> links${$('#fnCross')?.checked ? ` (<b class="num" style="color:var(--brand3)">${fmt(links.filter(fnX).length)}</b> between institutes)` : ''}<br><span class="note">Louvain ${ws.louvain.communities} communities · Q = ${ws.louvain.modularity}</span>`;
 
   const svg = d3.select('#fn-svg'); svg.selectAll('*').remove();
   const { width: W, height: H } = $('#fn-wrap').getBoundingClientRect();
   const g = svg.append('g');
-  const zoom = d3.zoom().scaleExtent([.15, 8]).on('zoom', e => { g.attr('transform', e.transform); label.attr('font-size', 10.5 / e.transform.k).attr('stroke-width', 3 / e.transform.k).style('display', d => showLab(d, e.transform.k) ? null : 'none'); });
+  const zoom = d3.zoom().scaleExtent([.15, 8]).on('zoom', e => { g.attr('transform', e.transform); g.selectAll('.stars text').attr('font-size', 11.5 / e.transform.k).attr('stroke-width', 4 / e.transform.k); g.selectAll('.stars circle').attr('stroke-width', 3 / e.transform.k); label.attr('font-size', 10.5 / e.transform.k).attr('stroke-width', 3 / e.transform.k).style('display', d => showLab(d, e.transform.k) ? null : 'none'); });
   svg.call(zoom).on('dblclick.zoom', null);
   Object.assign(fn, { zoom, svg, W, H, byId });
   const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', css('--axis')).attr('stroke-opacity', .6).attr('stroke-width', l => Math.min(6, .6 + Math.sqrt(l.w) * .7));
+  Object.assign(fn, { link }); fnLinkBase();
   const node = g.append('g').selectAll('circle').data(nodes).join('circle')
     .attr('r', d => r(F[d.id][sizeBy])).attr('fill', d => fnColor(d.id, mode)).attr('stroke', css('--surface')).attr('stroke-width', 1.5).style('cursor', 'pointer')
     .on('mouseenter', (e, d) => { const f = F[d.id]; tip(e, `<b>${esc(f.n)}</b><div class="m">${SHORT[f.i]} · ${esc(f.d)}</div><div class="m">h ${f.h} · ${fmt(f.p)} papers · ${f.deg} collaborators · betweenness ${fmt3(f.btw)} · community ${f.lv}</div>`); })
@@ -990,6 +1018,11 @@ function renderCollab() {
   svg.on('click', () => { fnSelect(null); });
   Object.assign(fn, { node, link, label });
   if (fn.sim) fn.sim.stop();
+  const starOn = !!$('#fnStar')?.checked;
+  const pickMax = f => nodes.reduce((m, n) => (!m || f(n) > f(m) ? n : m), null), xl = links.filter(fnX).sort((p, q) => q.w - p.w)[0];
+  const sNode = (node, tag) => node && ({ node, tag: `${tag}: ${F[node.id].n}`, r: r(F[node.id][sizeBy]) });
+  const starUp = addStars(g, mergeStars([sNode(pickMax(n => F[n.id].btw), 'Top broker'), sNode(pickMax(n => F[n.id].deg), 'Most co-authors'), xl && sNode(xl.source, 'Strongest cross-institute pair'), xl && sNode(xl.target, 'Strongest cross-institute pair')].filter(Boolean)), starOn);
+  fn.starLink = xl; fnLinkBase();
   const sim = fn.sim = d3.forceSimulation(nodes)
     .force('link', d3.forceLink(links).distance(l => 34 / Math.sqrt(l.w)).strength(.6))
     .force('charge', d3.forceManyBody().strength(-42).distanceMax(380))
@@ -997,7 +1030,7 @@ function renderCollab() {
     .force('collide', d3.forceCollide(d => r(F[d.id][sizeBy]) + 2))
     .on('tick', () => {
       link.attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
-      node.attr('cx', d => d.x).attr('cy', d => d.y); label.attr('x', d => d.x).attr('y', d => d.y);
+      node.attr('cx', d => d.x).attr('cy', d => d.y); label.attr('x', d => d.x).attr('y', d => d.y); starUp();
     });
   sim.stop().tick(260); sim.on('tick')(); fitView(fn, nodes);
   if (fn.pending) { const p = fn.pending; fn.pending = null; p(); }
@@ -1041,9 +1074,23 @@ function renderCollab() {
     <tr><td>Cross-department links</td>${X.map(x => `<td class="r num">${mod(x.scope)['cross_department_edges_%']}%</td>`).join('')}</tr>
     </tbody></table></div>`;
 }
+// rings and short tags around chosen nodes; returns a function that keeps them on the nodes while the layout moves
+function addStars(g, items, on) {
+  const grp = g.append('g').attr('class', 'stars').attr('pointer-events', 'none').style('display', on ? null : 'none');
+  const ring = grp.selectAll('circle').data(items).join('circle').attr('fill', 'none').attr('stroke', css('--brand3')).attr('stroke-width', 3).attr('r', d => d.r + 5);
+  const tag = grp.selectAll('text').data(items).join('text').text(d => d.tag).attr('font-size', 11.5).attr('font-weight', 700).attr('text-anchor', 'middle').attr('fill', css('--brandInk')).attr('paint-order', 'stroke').attr('stroke', css('--raise')).attr('stroke-width', 4);
+  return () => { ring.attr('cx', d => d.node.x).attr('cy', d => d.node.y); tag.attr('x', d => d.node.x).attr('y', d => d.node.y - d.r - 9); };
+}
+const mergeStars = list => { const m = new Map(); list.forEach(s => { if (!s.node) return; const e = m.get(s.node.id); e ? e.tag += ' · ' + s.tag : m.set(s.node.id, { ...s }); }); return [...m.values()]; };
+const fnX = l => F[l.source.id].i !== F[l.target.id].i;
+function fnLinkBase() {
+  const on = $('#fnCross')?.checked;
+  fn.link.attr('stroke', l => on && fnX(l) ? css('--brand3') : css('--axis')).attr('stroke-opacity', l => on ? (fnX(l) ? 1 : .28) : .6)
+    .attr('stroke-width', l => Math.min(6, .6 + Math.sqrt(l.w) * .7) + (on && fnX(l) ? 1.6 : 0) + (l === fn.starLink && $('#fnStar')?.checked ? 2.5 : 0));
+}
 function fnSelect(i) {
   fn.sel = i; fn.comm = null; if (!fn.node) return;
-  if (i == null) { fn.node.attr('opacity', 1); fn.link.attr('stroke-opacity', .6).attr('stroke', css('--axis')); fn.label.attr('opacity', 1); return; }
+  if (i == null) { fn.node.attr('opacity', 1); fnLinkBase(); fn.label.attr('opacity', 1); return; }
   const nb = new Set([i, ...adj[i].map(a => a[0])]);
   fn.node.attr('opacity', d => nb.has(d.id) ? 1 : .1);
   fn.label.attr('opacity', d => nb.has(d.id) ? 1 : .08).style('display', d => nb.has(d.id) && $('#fnLab').checked ? null : 'none');
@@ -1079,9 +1126,9 @@ function focusCommunity(c, inPlace) {
   zoom();
   $('#fn-wrap').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
-['fnColor', 'fnSize', 'fnW', 'fnIso'].forEach(id => $('#' + id).addEventListener('input', () => { if (id === 'fnW') $('#fnWv').textContent = $('#fnW').value; clearTimeout(fn.t); fn.t = setTimeout(renderCollab, id === 'fnW' ? 200 : 0); }));
+['fnColor', 'fnSize', 'fnW', 'fnIso', 'fnTop', 'fnCross', 'fnStar', 'fnLinks'].forEach(id => $('#' + id).addEventListener('input', () => { if (id === 'fnW') $('#fnWv').textContent = $('#fnW').value; clearTimeout(fn.t); fn.t = setTimeout(renderCollab, id === 'fnW' ? 200 : 0); }));
 $('#fnLab').onchange = () => { if (fn.label) fn.label.style('display', d => $('#fnLab').checked ? null : 'none'); if (fn.sel != null) fnSelect(fn.sel); };
-$('#fnReset').onclick = () => { fn.sel = null; fn.comm = null; fnSelect(null); fitView(fn, [...fn.byId.values()]); };
+$('#fnReset').onclick = () => { if ($('#fnTop').value !== '0' || $('#fnLinks').value !== 'all') { $('#fnTop').value = '0'; $('#fnLinks').value = 'all'; renderCollab(); } fn.sel = null; fn.comm = null; fnSelect(null); fitView(fn, [...fn.byId.values()]); };
 $('#facList').innerHTML = F.map(f => `<option value="${esc(f.n)} (${SHORT[f.i]})">`).join('');
 $('#fnFind').addEventListener('change', e => { const v = e.target.value; const i = F.findIndex(f => `${f.n} (${SHORT[f.i]})` === v); if (i >= 0) { focusFaculty(i); openFaculty(i); e.target.value = ''; } });
 
@@ -1128,7 +1175,7 @@ function renderFlowsExtra() {
   const agg = new Map();
   sh.forEach(i => (PR[I[i]]?.cross_cluster || []).forEach(r => { const o = agg.get(r.partner_cluster) || { sp: 0, cf: 0, ct: 0, n: 0 }; o.sp += r.shared_papers; o.cf += r.cites_from_partner; o.ct += r.cites_to_partner; o.n += r.partners; agg.set(r.partner_cluster, o); }));
   const cls = [...agg].sort((a, b) => b[1].sp - a[1].sp).map(d => d[0]).reverse();
-  plot('fl-types', [['Joint papers', 'sp', '--c1'], ['They cite our papers', 'cf', '--c3'], ['Our papers cite them', 'ct', '--c2']].map(([n, k, c]) => ({
+  plot('fl-types', [['Joint papers', 'sp', '--c1'], ['Other institutes cite the institutes’ papers', 'cf', '--c3'], ['The institutes’ papers cite other institutes', 'ct', '--c2']].map(([n, k, c]) => ({
     type: 'bar', orientation: 'h', name: n, y: cls, x: cls.map(cl => agg.get(cl)[k]), customdata: cls.map(cl => agg.get(cl).n), marker: { color: css(c) },
     hovertemplate: `%{y} (%{customdata} institutes) · ${n}: %{x:,}<extra></extra>` })),
     { barmode: 'group', bargap: .25, bargroupgap: .05, margin: { l: lm(cls), r: 14, t: 56, b: 44 }, xaxis: { type: 'log', title: { text: 'Count (log scale)' } }, legend: { orientation: 'h', y: 1.02, yanchor: 'bottom', x: 0 } },
@@ -1150,15 +1197,15 @@ function renderMethod() {
     ['Clean', 'Errata, retractions and duplicate records removed. Only journal articles and conference papers kept.'],
     ['Verify faculty', 'Authors matched to the official faculty lists, including former faculty found on archived department pages. Students, staff and visitors removed. Matches checked by hand.'],
     ['Rank venues', 'Journals ranked Q1–Q4 with SCImago. Conference proceedings ranked by their Scopus CiteScore quartile, and by CORE 2023 where listed.'],
-    ['Build networks', 'A citation network between our papers, a co-authorship network between faculty, and links with other Indian institutes.'],
+    ['Build networks', 'A citation network between the institutes’ papers, a co-authorship network between faculty, and links with other Indian institutes.'],
   ];
   $('#pipe').innerHTML = steps.map(([b, p], k) => `<div class="step"><div class="n">${k + 1}</div><b>${b}</b><p>${p}</p></div>`).join('');
-  const fun = [['Records downloaded from OpenAlex', 23372], ['After removing errata, retractions and duplicates', 23220], ['Journal and conference papers', 20496], ['Papers with a verified faculty author', 17906]];
+  const fun = D.funnel;
   Plotly.react('md-funnel', [{ type: 'funnel', y: fun.map(f => f[0]), x: fun.map(f => f[1]), textinfo: 'value+percent initial', texttemplate: '%{value:,} (%{percentInitial:.0%})',
-    marker: { color: [css('--c7'), css('--c1'), css('--c3'), css('--c5')] }, connector: { line: { color: css('--axis'), width: 1 } }, textfont: { color: '#fff', size: 12 },
+    marker: { color: [css('--c7'), css('--c1'), css('--c3'), css('--c4'), css('--c5')] }, connector: { line: { color: css('--axis'), width: 1 } }, textfont: { color: '#fff', size: 12 },
     hovertemplate: '%{y}: %{x:,} records (%{percentInitial:.1%} of the download)<extra></extra>' }],
     baseLayout({ margin: { l: lm(fun.map(f => f[0])), r: 20, t: 4, b: 44 }, xaxis: { title: { text: 'Number of records' } }, yaxis: { title: { text: '' } } }), { displayModeBar: false, responsive: true });
-  const src = [['SCImago SJR (journals)', 10894], ['Scopus CiteScore percentile', 3481], ['Estimated from OpenAlex venue data', 2661], ['Estimated from the publisher series', 767], ['CORE 2023 list', 33], ['No ranking available', 70]];
+  const src = D.qsrc;
   plot('md-qsrc', [{ type: 'bar', orientation: 'h', y: src.map(s => s[0]).reverse(), x: src.map(s => s[1]).reverse(), marker: { color: css('--c1') }, text: src.map(s => fmt(s[1])).reverse(), textposition: 'outside', cliponaxis: false, textfont: { color: css('--ink2') }, hovertemplate: '%{y}: %{x:,} paper rows<extra></extra>' }],
     { margin: { l: lm(src.map(s => s[0])), r: 50, t: 4, b: 44 }, bargap: .3, xaxis: { type: 'log', title: { text: 'Paper rows ranked this way (log scale)' } } });
   $('#limits').innerHTML = `<ul style="margin:0;padding-left:18px;color:var(--ink2)">
@@ -1208,12 +1255,36 @@ function openPartner(name) {
       <div class="stat"><div class="v num">${fmt(ct)}</div><div class="l">times our papers cite them</div></div>
       ${rows.some(r => r[PT.wj] != null) ? `<div class="stat"><div class="v num">${rows.filter(r => r[PT.wj] != null).map(r => fmt2(r[PT.wj])).join(' / ')}</div><div class="l">topic similarity (weighted Jaccard, 0–1)</div></div>` : ''}</div>
     <h4>Joint papers per year</h4><div id="drPY" style="height:140px"></div>
-    <h4>Our faculty on these papers (${fl.length})</h4>
+    <h4>Faculty of the three institutes on these papers (${fl.length})</h4>
     <div class="chips">${fl.map(([f, c]) => `<span class="chip click" data-f="${f}"><span class="dot" style="background:${instColor(F[f].i)}"></span>${esc(F[f].n)} · ${c}</span>`).join('')}</div>
     <h4>Joint papers (${ps.length}) · most cited first</h4>
     <div class="plist">${ps.slice(0, 25).map(p => paperRow(p)).join('')}</div>`;
   showDrawer(html, 'Partner institute', ['i', name]);
   Plotly.react('drPY', [{ type: 'bar', x: YEARS, y: yrs, marker: { color: clColor(r0[PT.cl]) }, hovertemplate: '%{x}: %{y} papers<extra></extra>' }],
+    baseLayout({ margin: { l: 28, r: 6, t: 4, b: 24 }, xaxis: { dtick: 2 }, bargap: .25 }), { displayModeBar: false, responsive: true });
+}
+// a partner institute abroad: joint papers and our faculty on them
+function openForeign(name) {
+  const rows = (L.foreign || []).filter(r => r[1] === name);
+  if (!rows.length) return;
+  const ps = (L.foreignPapers[name] || []).slice().sort((a, b) => P[b][T.cites] - P[a][T.cites]);
+  const fc = new Map(); ps.forEach(p => D.pfac[p].forEach(f => fc.set(f, (fc.get(f) || 0) + 1)));
+  const fl = [...fc].sort((a, b) => b[1] - a[1]);
+  const yrs = YEARS.map(y => ps.filter(p => P[p][T.year] === y).length);
+  const html = `
+    <div class="chips"><span class="chip">Abroad${rows[0][2] ? ' · ' + esc(rows[0][2]) : ''}</span></div>
+    <h3>${esc(name)}</h3>
+    <div class="note">Partner institute abroad · joint papers with our faculty</div>
+    <h4>Links with our institutes</h4>
+    <div class="stats">${rows.map(r => `<div class="stat"><div class="v num">${r[3]}</div><div class="l">${SHORT[r[0]]} joint papers</div></div>`).join('')}
+      <div class="stat"><div class="v num">${fmt(d3.sum(rows, r => r[4]))}</div><div class="l">citations of joint papers</div></div></div>
+    <h4>Joint papers per year</h4><div id="drPY" style="height:140px"></div>
+    <h4>Faculty of the three institutes on these papers (${fl.length})</h4>
+    <div class="chips">${fl.map(([f, c]) => `<span class="chip click" data-f="${f}"><span class="dot" style="background:${instColor(F[f].i)}"></span>${esc(F[f].n)} · ${c}</span>`).join('') || '<span class="note">—</span>'}</div>
+    <h4>Joint papers (${ps.length}) · most cited first</h4>
+    <div class="plist">${ps.slice(0, 25).map(p => paperRow(p)).join('')}</div>`;
+  showDrawer(html, 'Partner abroad', ['x', name]);
+  Plotly.react('drPY', [{ type: 'bar', x: YEARS, y: yrs, marker: { color: css('--c5') }, hovertemplate: '%{x}: %{y} papers<extra></extra>' }],
     baseLayout({ margin: { l: 28, r: 6, t: 4, b: 24 }, xaxis: { dtick: 2 }, bargap: .25 }), { displayModeBar: false, responsive: true });
 }
 // all partner institutes of one type (from the Sankey, the flows chart or a legend)
@@ -1265,7 +1336,7 @@ function openExternal(r) {
     ${r.faculty_connected > names.length ? `<p class="note">and ${r.faculty_connected - names.length} more</p>` : ''}`, 'Outside author', null);
 }
 
-// ---------------------------------------------------------------- institute network: our three institutes + their partners
+// ---------------------------------------------------------------- institute network: the three institutes + their partners
 const inet = { focus: -1 };
 function drawInstNet() {
   if (!L) return;
@@ -1297,15 +1368,15 @@ function drawInstNet() {
   const shareCol = k => [css('--other'), css('--c2'), css('--c8')][k - 1];
   const colorOf = a => colorBy === 'type' ? (a.foreign ? css('--c5') : clColor(a.cl)) : colorBy === 'loc' ? (a.foreign ? css('--c5') : locColor(a.loc[[0, 1, 2].sort((x, y) => a.w[y] - a.w[x])[0]] || 'Unknown')) : shareCol(a.k);
   const shared2 = parts.filter(a => a.k >= 2).length, shared3 = parts.filter(a => a.k === 3).length;
-  $('#in-stats').innerHTML = `<b class="num">${fmt(parts.length)}</b> partner institutes shown<br><span class="note">${fmt(shared2)} shared by 2+ of ours · ${fmt(shared3)} by all three</span>${mode === 'world' && !fullYears() ? '<br><span class="note">Partners abroad shown for all years only</span>' : ''}`;
+  $('#in-stats').innerHTML = `<b class="num">${fmt(parts.length)}</b> partner institutes shown<br><span class="note">${fmt(shared2)} shared by 2+ institutes · ${fmt(shared3)} by all three</span>${mode === 'world' && !fullYears() ? '<br><span class="note">Partners abroad shown for all years only</span>' : ''}`;
   const legend = colorBy === 'type' ? [...CL_ORDER.map(c => [clColor(c), c]), [css('--other'), 'Other types'], ...(mode === 'world' ? [[css('--c5'), 'Abroad']] : [])]
     : colorBy === 'loc' ? LOCS.map(l => [locColor(l), l]).concat(mode === 'world' ? [[css('--c5'), 'Abroad']] : [])
-    : [[shareCol(1), 'Works with one of ours'], [shareCol(2), 'Shared by two of ours'], [shareCol(3), 'Shared by all three']];
-  $('#in-legend').innerHTML = `<div class="lg-t">Colour = ${{ type: 'partner type', loc: 'distance from home state', shared: 'how many of our institutes it works with' }[colorBy]}</div>` +
-    legend.map(([c, l]) => `<div><span class="dot" style="background:${c}"></span>${esc(l)}</div>`).join('') + '<div class="lg-s">Big circles = our institutes · node size = joint papers · line width = joint papers with that institute · dashed = joint papers between our three</div>';
+    : [[shareCol(1), 'Works with one institute'], [shareCol(2), 'Shared by two institutes'], [shareCol(3), 'Shared by all three']];
+  $('#in-legend').innerHTML = `<div class="lg-t">Colour = ${{ type: 'partner type', loc: 'distance from home state', shared: 'how many of the three institutes it works with' }[colorBy]}</div>` +
+    legend.map(([c, l]) => `<div><span class="dot" style="background:${c}"></span>${esc(l)}</div>`).join('') + `<div class="lg-s">${$('#inStar')?.checked ? 'Ring = standout: the top partner and the three biggest partners that work with all three institutes<br>' : ''}Big circles = the three institutes · node size = joint papers · line width = joint papers with that institute · dashed = joint papers between the three institutes</div>`;
   if (!parts.length) { wrap.insertAdjacentHTML('beforeend', '<div class="cn-empty"><b>No partners above this threshold</b><p>Lower "Min joint papers" or widen the year range.</p></div>'); }
   const g = svg.append('g');
-  const zoom = d3.zoom().scaleExtent([.3, 6]).on('zoom', e => { g.attr('transform', e.transform); lab.style('display', d => showLab(d, e.transform.k) ? null : 'none'); });
+  const zoom = d3.zoom().scaleExtent([.3, 6]).on('zoom', e => { g.attr('transform', e.transform); g.selectAll('.stars text').attr('font-size', 11.5 / e.transform.k).attr('stroke-width', 4 / e.transform.k); g.selectAll('.stars circle').attr('stroke-width', 3 / e.transform.k); lab.style('display', d => showLab(d, e.transform.k) ? null : 'none'); });
   svg.call(zoom).on('dblclick.zoom', null);
   inet.zoom = zoom; inet.svg = svg;
   const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', d => instColor(d.i)).attr('stroke-opacity', .28).attr('stroke-width', d => Math.min(7, .5 + Math.sqrt(d.w) * .45));
@@ -1318,9 +1389,12 @@ function drawInstNet() {
     .on('mouseenter', (e, d) => tip(e, d.our != null ? `<b>${I[d.our]}</b><div class="m">${fmt(parts.filter(a => a.w[d.our] > 0).length)} partners in view · click to highlight them</div>`
       : `<b>${esc(d.a.name)}</b><div class="m">${d.a.foreign ? 'Abroad' + (d.a.country ? ' · ' + d.a.country : '') : esc(d.a.cl)}</div><div class="m">${[0, 1, 2].filter(i => d.a.w[i]).map(i => `${SHORT[i]} ${d.a.w[i]}`).join(' · ')} joint papers</div>`))
     .on('mousemove', moveTip).on('mouseleave', hideTip)
-    .on('click', (e, d) => { e.stopPropagation(); if (d.our != null) { inet.focus = inet.focus === d.our ? -1 : d.our; focusInst(); } else if (!d.a.foreign) openPartner(d.a.name); })
+    .on('click', (e, d) => { e.stopPropagation(); if (d.our != null) { inet.focus = inet.focus === d.our ? -1 : d.our; focusInst(); } else if (!d.a.foreign) openPartner(d.a.name); else openForeign(d.a.name); })
     .call(d3.drag().on('start', (e, d) => { if (d.our != null) return; if (!e.active) sim.alphaTarget(.2).restart(); d.fx = d.x; d.fy = d.y; })
       .on('drag', (e, d) => { if (d.our != null) return; d.fx = e.x; d.fy = e.y; }).on('end', (e, d) => { if (d.our != null) return; if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+  const inStarOn = !!$('#inStar')?.checked, topP = pnodes.slice().sort((p, q) => q.a.tot - p.a.tot)[0], all3 = pnodes.filter(n => n.a.k === 3).sort((p, q) => q.a.tot - p.a.tot).slice(0, 3);
+  const iS = (node, tag) => node && ({ node, tag: tag === 'Top partner' ? `Top partner: ${abbr(node.a.name)}` : abbr(node.a.name), r: rP(node.a.tot) });
+  const inStarUp = addStars(g, mergeStars([iS(topP, 'Top partner'), ...all3.map(n => iS(n, 'Works with all three'))].filter(Boolean)), inStarOn);
   const lab = g.append('g').selectAll('text').data(nodes).join('text').text(d => d.our != null ? SHORT[d.our] : abbr(d.a.name))
     .attr('font-size', d => d.our != null ? 13 : 10).attr('font-weight', d => d.our != null ? 700 : 400).attr('text-anchor', d => d.our != null ? 'middle' : 'start')
     .attr('fill', d => d.our != null ? '#fff' : css('--ink')).attr('paint-order', 'stroke').attr('stroke', d => d.our != null ? 'none' : css('--raise')).attr('stroke-width', 3)
@@ -1340,12 +1414,12 @@ function drawInstNet() {
       link.attr('x1', d => d.source.x).attr('y1', d => d.source.y).attr('x2', d => d.target.x).attr('y2', d => d.target.y);
       ol.attr('x1', d => byId.get(d.source).fx).attr('y1', d => byId.get(d.source).fy).attr('x2', d => byId.get(d.target).fx).attr('y2', d => byId.get(d.target).fy);
       olt.attr('x', d => (byId.get(d.source).fx + byId.get(d.target).fx) / 2).attr('y', d => (byId.get(d.source).fy + byId.get(d.target).fy) / 2 - 6);
-      node.attr('cx', d => d.x).attr('cy', d => d.y); lab.attr('x', d => d.x).attr('y', d => d.y);
+      node.attr('cx', d => d.x).attr('cy', d => d.y); lab.attr('x', d => d.x).attr('y', d => d.y); inStarUp();
     });
   sim.stop().tick(260); sim.on('tick')();
   inet.sim = sim; focusInst();
 }
-['inPart', 'inMin', 'inColor'].forEach(id => $('#' + id)?.addEventListener('input', () => { clearTimeout(inet.t); inet.t = setTimeout(drawInstNet, id === 'inMin' ? 200 : 0); }));
+['inPart', 'inMin', 'inColor', 'inStar'].forEach(id => $('#' + id)?.addEventListener('input', () => { clearTimeout(inet.t); inet.t = setTimeout(drawInstNet, id === 'inMin' ? 200 : 0); }));
 $('#inLab') && ($('#inLab').onchange = drawInstNet);
 $('#inReset') && ($('#inReset').onclick = () => { inet.focus = -1; inet.svg?.transition().duration(500).call(inet.zoom.transform, d3.zoomIdentity); drawInstNet(); });
 
@@ -1374,10 +1448,10 @@ function drawConnected() {
   const cnt = mk => [...m.values()].filter(v => v === mk).length;
   plot('rc-upset', [{ type: 'bar', x: combos.map(name), y: combos.map(cnt), customdata: combos, marker: { color: combos.map(mk => [1, 2, 4].includes(mk) ? instColor([1, 2, 4].indexOf(mk)) : mk === 7 ? css('--c8') : css('--c7')) },
     text: combos.map(cnt), textposition: 'outside', cliponaxis: false, textfont: { color: css('--ink2') }, hovertemplate: '%{x}: %{y} partner institutes<extra></extra>' }],
-    { bargap: .3, margin: { l: 50, r: 10, t: 14, b: 70 }, xaxis: { tickangle: -20, title: { text: 'Which of our institutes work with the partner' } }, yaxis: { title: { text: 'Indian partner institutes' } } },
+    { bargap: .3, margin: { l: 50, r: 10, t: 14, b: 70 }, xaxis: { tickangle: -20, title: { text: 'Which of the three institutes work with the partner' } }, yaxis: { title: { text: 'Indian partner institutes' } } },
     ev => openSharedDrawer(String(ev.points[0].customdata)));
   const B = L.between;
-  $('#rc-betweenlist').innerHTML = `<div class="sublabel">Strongest faculty pairs across our institutes</div><div class="chips">${B.faculty_pairs.slice(0, 10).map(p => {
+  $('#rc-betweenlist').innerHTML = `<div class="sublabel">Strongest faculty pairs across the three institutes</div><div class="chips">${B.faculty_pairs.slice(0, 10).map(p => {
     const a = facByName.get(I.indexOf(p.inst_a) + '|' + p.a), b = facByName.get(I.indexOf(p.inst_b) + '|' + p.b);
     return `<span class="chip">${a != null ? `<a href="#" data-f="${a}">${esc(p.a)}</a>` : esc(p.a)} (${SHORT[I.indexOf(p.inst_a)]}) ↔ ${b != null ? `<a href="#" data-f="${b}">${esc(p.b)}</a>` : esc(p.b)} (${SHORT[I.indexOf(p.inst_b)]}) · ${p.joint_papers}</span>`; }).join('')}</div>`;
   $('#rc-betweenlist').querySelectorAll('[data-f]').forEach(e => e.onclick = ev => { ev.preventDefault(); openFaculty(+e.dataset.f); });
@@ -1459,8 +1533,8 @@ function renderReach() {
       { key: 'cl', label: 'Type', v: r => r[PT.cl] },
       { key: 'loc', label: 'Locality', v: r => LOCS.indexOf(r[PT.loc]), html: r => `<span class="chip"><span class="dot" style="background:${locColor(r[PT.loc])}"></span>${esc(r[PT.loc])}</span>` },
       { key: 'papers', label: 'Joint papers', num: 1, v: r => pl(r) },
-      { key: 'cf', label: 'They cite us', num: 1, v: r => r[PT.cf], html: r => r[PT.cf] == null ? '—' : fmt(r[PT.cf]) },
-      { key: 'ct', label: 'We cite them', num: 1, v: r => r[PT.ct], html: r => r[PT.ct] == null ? '—' : fmt(r[PT.ct]) },
+      { key: 'cf', label: 'Cite the institutes', num: 1, v: r => r[PT.cf], html: r => r[PT.cf] == null ? '—' : fmt(r[PT.cf]) },
+      { key: 'ct', label: 'Cited by the institutes', num: 1, v: r => r[PT.ct], html: r => r[PT.ct] == null ? '—' : fmt(r[PT.ct]) },
       { key: 'nfac', label: 'Faculty', num: 1, v: r => r[PT.nfac] },
       { key: 'wj', label: 'Topic sim.', num: 1, v: r => r[PT.wj], html: r => r[PT.wj] == null ? '—' : fmt2(r[PT.wj]) },
     ],
@@ -1471,7 +1545,7 @@ function renderReach() {
   plot('rc-scatter', sh.map(i => { const fsx = F.map((f, k) => k).filter(k => F[k].i === i && WO[k]); return {
     type: 'scatter', mode: 'markers', name: I[i], x: fsx.map(k => WO[k][0] + 1), y: fsx.map(k => WO[k][1] + WO[k][2] + WO[k][3] + 1), customdata: fsx,
     marker: { size: fsx.map(k => Math.sqrt(F[k].p) * 1.3 + 4), color: instColor(i), opacity: .7, line: { color: css('--surface'), width: 1 } },
-    hovertext: fsx.map(k => `<b>${esc(F[k].n)}</b> (${SHORT[i]})<br>${WO[k][0]} co-authors at ${SHORT[i]} · ${WO[k][1]} at our other two · ${WO[k][2]} elsewhere in India · ${WO[k][3]} abroad`), hovertemplate: '%{hovertext}<extra></extra>' }; }),
+    hovertext: fsx.map(k => `<b>${esc(F[k].n)}</b> (${SHORT[i]})<br>${WO[k][0]} co-authors at ${SHORT[i]} · ${WO[k][1]} at the other two institutes · ${WO[k][2]} elsewhere in India · ${WO[k][3]} abroad`), hovertemplate: '%{hovertext}<extra></extra>' }; }),
     { xaxis: { type: 'log', title: { text: '→ Faculty co-authors inside the same institute (log scale)' } }, yaxis: { type: 'log', title: { text: '↑ Co-authors outside the institute (log scale)' } },
       shapes: [{ type: 'line', x0: 1, y0: 1, x1: 40, y1: 40, line: { color: css('--muted'), dash: 'dot', width: 1 } }],
       annotations: [{ x: Math.log10(30), y: Math.log10(30), text: 'equal inside and outside', showarrow: false, font: { size: 10.5, color: css('--muted') }, xanchor: 'left', yanchor: 'top' }] }, ev => openFaculty(ev.points[0].customdata));
@@ -1502,13 +1576,13 @@ function renderReach() {
     rs = rs.slice(0, 15).reverse();
     plot('rc-inst', [{ type: 'bar', orientation: 'h', y: rs.map(r => abbr(r.institution) + ' '), x: rs.map(r => m === 'btw' ? +r.betweenness : +r.papers_with_us), customdata: rs.map(r => r.institution),
       marker: { color: rs.map(r => r.country === 'IN' ? clColor(r.cluster) : css('--c5')) }, hovertext: rs.map(r => `${esc(r.institution)} (${r.country === 'IN' ? esc(r.cluster) : 'abroad'})<br>${r.papers_with_us} papers with ${esc(r.linked_to)}`),
-      hovertemplate: '%{hovertext}<extra></extra>' }], { margin: { l: lm(rs.map(r => abbr(r.institution))), r: 14, t: 4, b: 44 }, bargap: .25, xaxis: { title: { text: m === 'btw' ? 'Betweenness in the institute network' : 'Papers with our institutes' } } },
-      ev => { const n = ev.points[0].customdata; if (L.partners.some(r => r[PT.name] === n)) openPartner(n); });
+      hovertemplate: '%{hovertext}<extra></extra>' }], { margin: { l: lm(rs.map(r => abbr(r.institution))), r: 14, t: 4, b: 44 }, bargap: .25, xaxis: { title: { text: m === 'btw' ? 'Betweenness in the institute network' : 'Papers with the three institutes' } } },
+      ev => { const n = ev.points[0].customdata; if (L.partners.some(r => r[PT.name] === n)) openPartner(n); else if ((L.foreign || []).some(r => r[1] === n)) openForeign(n); });
   };
   instChart(); segBind('rcInst', instChart);
 
   const CO = L.citOrigin;
-  plot('rc-cit', [['Same institute', 'from_same_institute_%', '--q1'], ['Our other two', 'from_our_other_two_%', '--c4'], ['Outside the corpus', null, '--q3']].map(([n, k, c]) => ({
+  plot('rc-cit', [['Same institute', 'from_same_institute_%', '--q1'], ['The other two institutes', 'from_our_other_two_%', '--c4'], ['Outside the corpus', null, '--q3']].map(([n, k, c]) => ({
     type: 'bar', orientation: 'h', name: n, y: sh.map(i => SHORT[i]), x: sh.map(i => k ? CO[I[i]][k] : +(100 - CO[I[i]]['from_same_institute_%'] - CO[I[i]]['from_our_other_two_%']).toFixed(2)),
     marker: { color: css(c), line: { color: css('--surface'), width: 2 } }, hovertemplate: `%{y} · ${n}: %{x}%<extra></extra>` })),
     { barmode: 'stack', xaxis: { ticksuffix: '%', range: [0, 100], title: { text: 'Share of all citations received' } }, yaxis: { autorange: 'reversed' }, legend: { orientation: 'h', y: 1.25, x: 0, traceorder: 'normal' }, margin: { l: 52, r: 10, t: 40, b: 44 } });
@@ -1533,14 +1607,17 @@ function renderReach() {
       { key: 'state', label: 'State', v: r => r[PT.state] },
       { key: 'loc', label: 'Locality', v: r => LOCS.indexOf(r[PT.loc]), html: r => esc(r[PT.loc]) },
       { key: 'papers', label: 'Papers', num: 1, v: r => pl(r) },
-      { key: 'cf', label: 'They cite us', num: 1, v: r => r[PT.cf], html: r => r[PT.cf] == null ? '—' : fmt(r[PT.cf]) },
-      { key: 'ct', label: 'We cite them', num: 1, v: r => r[PT.ct], html: r => r[PT.ct] == null ? '—' : fmt(r[PT.ct]) },
+      { key: 'cf', label: 'Cite the institutes', num: 1, v: r => r[PT.cf], html: r => r[PT.cf] == null ? '—' : fmt(r[PT.cf]) },
+      { key: 'ct', label: 'Cited by the institutes', num: 1, v: r => r[PT.ct], html: r => r[PT.ct] == null ? '—' : fmt(r[PT.ct]) },
       { key: 'nfac', label: 'Faculty', num: 1, v: r => r[PT.nfac] },
+      { key: 'nco', label: 'Partner co-authors', num: 1, v: r => NVP.get(r[PT.i] + '|' + r[PT.name])?.[0] ?? null, html: r => { const x = NVP.get(r[PT.i] + '|' + r[PT.name]); return x ? fmt(x[0]) : '—'; } },
+      { key: 'nfw', label: 'Mean FWCI', num: 1, v: r => NVP.get(r[PT.i] + '|' + r[PT.name])?.[1] ?? null, html: r => { const x = NVP.get(r[PT.i] + '|' + r[PT.name]); return x && x[1] != null ? x[1].toFixed(2) : '—'; } },
     ],
     onRow: r => openPartner(r[PT.name]),
   });
   drawRcAll(false);
 }
+const NVP = new Map(((D.insights || {}).new_views?.pairs || []).map(([i, n, c, f]) => [i + '|' + n, [c, f]]));
 function drawRcAll(scroll) {
   if (!rcTable) return;
   if (rcFilter.loc) { const s = rcTable.opt.selects[1]; s.el.value = rcFilter.loc; rcTable.st.filters.loc = rcFilter.loc; }
@@ -1556,11 +1633,11 @@ function drawRcAll(scroll) {
 function renderChecklist() {
   const ok = 'Done', part = 'Partial', pend = 'Pending';
   const items = [
-    ['Dataset: group15_data.csv with all 14 required columns, 2016–2026, all 3 institutes', ok, 'method', '22,286 rows · 17,906 papers'],
-    ['Faculty list incl. former faculty (historical affiliation)', ok, 'faculty', '823 verified faculty, current + former'],
+    ['Dataset: group15_data.csv with all 14 required columns, 2016–2026, all 3 institutes', ok, 'method', `${fmt(D.group15Rows)} rows · ${fmt(P.length)} papers`],
+    ['Faculty list incl. former faculty (historical affiliation)', ok, 'faculty', `${fmt(F.length)} verified faculty, current + former`],
     ['Journal quartile Q1–Q4 (SCImago) and CORE conference rank', ok, 'pubs', 'SJR, Scopus CiteScore, CORE 2023'],
     ['Papers with >10 authors flagged', ok, 'papers', 'is_multi_author_10plus'],
-    ['Deduplication by DOI and by title + year', part, 'method', '92 title + year pairs (journal + early-access copy) kept'],
+    ['Deduplication by DOI and by title + year', part, 'method', `${fmt(D.dupMerged)} duplicate records merged; audit in duplicate_audit.csv`],
     ['citation_network.csv · authorship_network.csv · indian_connections.csv', ok, 'citnet', 'required columns present'],
     ['Panel: publication trend 2016–2026', ok, 'overview', ''], ['Panel: faculty list (name, dept, h-index, papers)', ok, 'faculty', ''],
     ['Panel: journal quartile distribution', ok, 'pubs', ''], ['Panel: sortable faculty performance table', ok, 'faculty', ''],
@@ -1571,12 +1648,12 @@ function renderChecklist() {
     ['Citation network: in-degree, PageRank top 10, cross-institute flow', ok, 'citnet', ''],
     ['Authorship network: degree, betweenness, Louvain / Leiden', ok, 'collab', ''],
     ['Citation flow: in / out / ratio, top 10 citing institutes, year-wise chart', ok, 'flows', ''],
-    ['Top 10 most-cited papers citing our institutes', pend, 'flows', 'needs the citation counts of the citing papers (one more OpenAlex lookup)'],
+    ['Top 10 most-cited papers citing the three institutes', pend, 'flows', 'needs the citation counts of the citing papers (one more OpenAlex lookup)'],
     ['Connectivity: every Indian partner ranked by joint papers', ok, 'reach', '1,333 institute links'],
     ['Cross-cluster links flagged (IIT, NIT, CSIR, DAE, IISER …)', ok, 'reach', 'name + known-lab rules + exact parent lookup (partners.py)'],
     ['Jaccard topic similarity with partners', part, 'reach', 'top partners only (partners.py)'],
     ['Hub authors bridging institutes', ok, 'collab', 'bridge authors, brokers, outside authors'],
-    ['Locality: same state / region, peer NITs & IITs outside our group', ok, 'reach', ''],
+    ['Locality: same state / region, peer NITs & IITs outside the three institutes', ok, 'reach', ''],
     ['Highest nodes within vs outside each institute', ok, 'reach', ''],
     ['Statistics report ≤ 5 pages + detailed report', ok, 'method', 'report/ folder'],
   ];
@@ -1588,13 +1665,14 @@ function renderChecklist() {
 
 const RENDER = { overview: renderOverview, pubs: renderPubs, faculty: renderFaculty, papers: renderPapers, citnet: renderCitnet, collab: renderCollab, reach: renderReach, flows: renderFlows, method: renderMethod };
 buildInstSeg(); buildYearCtl();
-// deep links: #collab?f=<faculty index>, #citnet?p=<paper index>, #faculty?f=<i> (profile only)
-const [start, qs] = (location.hash || '').slice(1).split('?');
+// deep links: #collab?f=<faculty index>, #citnet?p=<paper index>, #faculty?f=<i> (profile only), #reach?i=<partner institute>, any tab with &inst=<0..2> (institute lens)
+const [start, qs] = (window.__startHash || (location.hash || '').slice(1)).split('?');
 go(RENDER[start] ? start : 'overview');
 const dl = new URLSearchParams(qs || '');
+if (dl.has('inst') && +dl.get('inst') >= 0 && +dl.get('inst') < I.length) setInst(+dl.get('inst'));
 if (dl.has('f')) { const i = +dl.get('f'); if (start === 'collab') focusFaculty(i); openFaculty(i); }
 if (dl.has('i')) openPartner(dl.get('i'));
 if (dl.has('p')) { const p = +dl.get('p'); if (start === 'citnet') focusPaper(p); else openPaper(p); }
-window.atlas = { openFaculty, openPaper, openPartner, focusFaculty, focusPaper, explorer, setInst, go, state, instColor, SHORT, closeDrawer };
+window.atlas = { instStat: iStat, yrLabel, openForeign, T, RENDER, renderTab, rendered, instsShown, inYears: (...a) => inYears(...a), fmt, fmt1, fmt2, plot, css, isDark: () => isDark(), segBind, openFaculty, openPaper, openPartner, focusFaculty, focusPaper, explorer, setInst, go, state, instColor, SHORT, closeDrawer };
 let rz; addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => document.querySelectorAll(`#tab-${state.tab} .js-plotly-plot`).forEach(el => Plotly.Plots.resize(el)), 150); });
 })();

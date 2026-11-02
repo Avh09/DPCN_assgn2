@@ -1,0 +1,66 @@
+
+== 1. Submission files: columns, years, institutes
+[PASS] group15_data.csv has all 14 required columns
+[PASS] group column is 15 everywhere
+[PASS] years within 2016-2026  (2016-2026)
+[PASS] all 3 institutes present  ({'NIT Silchar': 10695, 'MANIT Bhopal': 7330, 'NIT Jamshedpur': 4261})
+[PASS] type is journal or conference
+[PASS] no duplicate (paper, author, institute) rows  (0)
+[PASS] cites_indian_inst is TRUE/FALSE (blank only where no data)  (blank 0.0%)
+[PASS] cited_by_indian_inst is TRUE/FALSE (blank only where no data)  (blank 0.0%)
+[PASS] cited_by_indian_inst filled for every row
+[PASS] DOIs in https://doi.org/ form
+[PASS] group15_data.csv holds faculty rows only
+[PASS] no empty cell in the required columns (DOI and conference ISSN excepted)  ({})
+[PASS] quartile values valid
+[PASS] citation_network.csv has exactly the required columns  (['source_doi', 'target_doi', 'source_inst', 'target_inst', 'year'])
+[PASS] authorship_network.csv has exactly the required columns  (['author_a', 'author_b', 'paper_doi', 'inst_a', 'inst_b', 'year'])
+[PASS] indian_connections.csv has exactly the required columns  (['your_inst', 'partner_inst', 'shared_papers', 'total_citations'])
+[PASS] citation_network: every source and target paper is in the dataset
+[PASS] citation_network: no paper cites itself
+[PASS] required columns kept after our scripts (is_faculty, department)
+
+== 2. Citation flow: recomputed independently from the raw download
+[PASS] cited_by_indian_inst matches the independent recomputation  (11016 TRUE, differences 0)
+[PASS] MANIT Bhopal: citing works found = 90,833 of 90,669 OpenAlex citations  (100.2%)
+[PASS] MANIT Bhopal: inflow_results agrees
+[PASS] NIT Jamshedpur: citing works found = 44,124 of 44,134 OpenAlex citations  (100.0%)
+[PASS] NIT Jamshedpur: inflow_results agrees
+[PASS] NIT Silchar: citing works found = 126,245 of 126,018 OpenAlex citations  (100.2%)
+[PASS] NIT Silchar: inflow_results agrees
+[PASS] flow chart in_cites = yearly incoming file
+[PASS] flow chart out_cites = yearly outgoing file
+[PASS] MANIT Bhopal: impact ratio = in / out  (0.76)
+[PASS] NIT Jamshedpur: impact ratio = in / out  (0.58)
+[PASS] NIT Silchar: impact ratio = in / out  (0.78)
+
+== 3. Faculty matching and faculty statistics
+[PASS] each author id belongs to at most one faculty member
+[PASS] every matched faculty member is on the official list
+[PASS] same-name-different-people faculty are not matched
+[PASS] is_faculty TRUE exactly for matched author ids (after paper-level corrections)
+[PASS] all 104 corrections in faculty_overrides.csv are applied  (0 not applied)
+[PASS] every correction states its evidence
+[PASS] faculty table: papers, citations, h-index match a recount  (823 faculty)
+[PASS] former faculty: 81% of their papers fall within the years they were on the faculty pages (+-2 years); 107 of 127 people mostly inside
+[PASS] manual audit precision 90% (50 random matches)
+
+== 4. Faculty network
+[PASS] no self-links
+[PASS] no repeated links
+[PASS] 40 random links: joint paper count matches a recount  (0 wrong)
+[PASS] node table collaborators = degree in edge file
+
+== 5. Maths functions on cases with known answers
+[PASS] h-index
+[PASS] NMI = 1 for the same grouping with other labels
+[PASS] NMI = 0 for independent groupings
+[PASS] ARI = 1 for the same grouping, -0.5 for the textbook example
+[PASS] weighted Jaccard recomputed by hand (MANIT Bhopal - National Institute of Technology Raipur)  (0.610 vs 0.61)
+
+== 6. Indian partners
+[PASS] detailed file has the same partner rows as indian_connections.csv
+[PASS] cites_from_partner = incoming file
+[PASS] no partner is one of our own institutes counted as 'other'
+
+SUMMARY: 52 passed, 0 failed, 0 warnings

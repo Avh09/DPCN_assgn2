@@ -1,0 +1,154 @@
+{
+ "whole corpus": {
+  "papers": 17720,
+  "citation_links": 28040,
+  "density": 8.9e-05,
+  "avg_clustering_undirected": 0.1799,
+  "reciprocity": 0.0009,
+  "weak_components": 6695,
+  "largest_component_share_%": 45.4,
+  "papers_never_cited_in_corpus_%": 57.3,
+  "top3_by_authority": [
+   {
+    "title": "Photocatalytic performance of g-C3N4 based nanocomposites for effective degradation/removal of dyes from water and wastewater",
+    "hits_authority": 0.03281807010046916
+   },
+   {
+    "title": "Green and environmentally sustainable fabrication of SnS2 quantum dots/chitosan nanocomposite for enhanced photocatalytic performance: Effect of process variables, and water matrices",
+    "hits_authority": 0.029025475267987138
+   },
+   {
+    "title": "Tin oxide based nanostructured materials: synthesis and potential applications",
+    "hits_authority": 0.026980086209237013
+   }
+  ],
+  "top3_by_hub": [
+   {
+    "title": "From light to chemicals: Breaking ground in photocatalytic H2O2 production for a sustainable future",
+    "hits_hub": 0.021881608014561526
+   },
+   {
+    "title": "Insights into persulfate-activated photodegradation of tinidazole and photoreduction of hexavalent chromium through \u03b2-In2S3 anchored on Ag-doped fish scale-derived HAp composite quantum dots",
+    "hits_hub": 0.01999267988211243
+   },
+   {
+    "title": "In 2 S 3 /HAp nanocomposite: a comprehensive study on synthesis, structural insights, and high-performance adsorption of Methyl Red dye in water treatment applications",
+    "hits_hub": 0.018937472857588542
+   }
+  ]
+ },
+ "MANIT Bhopal": {
+  "papers": 5759,
+  "citation_links": 6066,
+  "density": 0.000183,
+  "avg_clustering_undirected": 0.1439,
+  "reciprocity": 0.0003,
+  "weak_components": 2779,
+  "largest_component_share_%": 20.0,
+  "papers_never_cited_in_corpus_%": 64.4,
+  "top3_by_authority": [
+   {
+    "title": "Silver doped manganese oxide-carbon nanotube nanocomposite for enhanced dye-sequestration: Isotherm studies and RSM modelling approach",
+    "hits_authority": 0.0022105385560145024
+   },
+   {
+    "title": "Removal of caffeine, nicotine and amoxicillin from (waste)waters by various adsorbents. A review",
+    "hits_authority": 0.001131112728996333
+   },
+   {
+    "title": "Conversion of Glycerol to Solketal using Heterogeneous Catalysts",
+    "hits_authority": 0.00044634227011681104
+   }
+  ],
+  "top3_by_hub": [
+   {
+    "title": "Efficient batch and Fixed-Bed sequestration of a basic dye using a novel variant of ordered mesoporous carbon as adsorbent",
+    "hits_hub": 0.00012213626099904617
+   },
+   {
+    "title": "Kahwa tea (Camellia sinensis) carbon \u2014 a novel and green low-cost adsorbent for the sequestration of Titan yellow dye from its aqueous solutions",
+    "hits_hub": 7.578808111763573e-05
+   },
+   {
+    "title": "Efficient ultrasonic assisted adsorption of organic pollutants employing bimetallic-carbon nanocomposites",
+    "hits_hub": 6.24733739610769e-05
+   }
+  ]
+ },
+ "NIT Jamshedpur": {
+  "papers": 3594,
+  "citation_links": 3708,
+  "density": 0.000287,
+  "avg_clustering_undirected": 0.1527,
+  "reciprocity": 0.0005,
+  "weak_components": 1768,
+  "largest_component_share_%": 5.2,
+  "papers_never_cited_in_corpus_%": 63.7,
+  "top3_by_authority": [
+   {
+    "title": "Facile Synthesis of Citric Acid Functionalized Fe 3 O 4 @Activated Carbon Magnetic Nanocomposite for Efficient Adsorption of Brilliant Green Dye from Wastewater",
+    "hits_authority": 9.196532683046476e-06
+   },
+   {
+    "title": "Micro/nanostructured gas sensors: the physics behind the nanostructure growth, sensing and selectivity mechanisms",
+    "hits_authority": 5.860520465860482e-06
+   },
+   {
+    "title": "Comparative Study of Thin-Film-Based Planar and Vertical Devices Towards Isopropyl Alcohol Sensing",
+    "hits_authority": 5.77336746967079e-06
+   }
+  ],
+  "top3_by_hub": [
+   {
+    "title": "Synthesis of magnetically tuneable molybdic acid-functionalized Fe3O4 nanoparticles for efficient dye removal in aqueous media",
+    "hits_hub": 0.00012331093563023904
+   },
+   {
+    "title": "Ternary Composite and Beyond for Gas Sensing: A Review",
+    "hits_hub": 7.390905869874278e-05
+   },
+   {
+    "title": "Cooperative effect between BaTiO3 and CaFe2O4 in a cocatalyst-free heterojunction composite for improved photochemical H2 generation",
+    "hits_hub": 3.68262301383168e-05
+   }
+  ]
+ },
+ "NIT Silchar": {
+  "papers": 8411,
+  "citation_links": 17250,
+  "density": 0.000244,
+  "avg_clustering_undirected": 0.2211,
+  "reciprocity": 0.0012,
+  "weak_components": 2529,
+  "largest_component_share_%": 50.7,
+  "papers_never_cited_in_corpus_%": 51.8,
+  "top3_by_authority": [
+   {
+    "title": "Photocatalytic performance of g-C3N4 based nanocomposites for effective degradation/removal of dyes from water and wastewater",
+    "hits_authority": 0.03281807010046916
+   },
+   {
+    "title": "Green and environmentally sustainable fabrication of SnS2 quantum dots/chitosan nanocomposite for enhanced photocatalytic performance: Effect of process variables, and water matrices",
+    "hits_authority": 0.029025475267987138
+   },
+   {
+    "title": "Tin oxide based nanostructured materials: synthesis and potential applications",
+    "hits_authority": 0.026980086209237013
+   }
+  ],
+  "top3_by_hub": [
+   {
+    "title": "From light to chemicals: Breaking ground in photocatalytic H2O2 production for a sustainable future",
+    "hits_hub": 0.021881608014561526
+   },
+   {
+    "title": "Insights into persulfate-activated photodegradation of tinidazole and photoreduction of hexavalent chromium through \u03b2-In2S3 anchored on Ag-doped fish scale-derived HAp composite quantum dots",
+    "hits_hub": 0.01999267988211243
+   },
+   {
+    "title": "In 2 S 3 /HAp nanocomposite: a comprehensive study on synthesis, structural insights, and high-performance adsorption of Methyl Red dye in water treatment applications",
+    "hits_hub": 0.018937472857588542
+   }
+  ]
+ }
+}

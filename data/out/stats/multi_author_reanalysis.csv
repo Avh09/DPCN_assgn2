@@ -1,0 +1,7 @@
+institution,scope,papers,citations,citations_per_paper,journal_Q1_share_%,faculty_with_papers,median_faculty_h,p90_faculty_h,faculty_h_20_plus,max_faculty_h,papers_with_10plus_authors
+MANIT Bhopal,all papers,5759,90684,15.75,33.2,296,6.0,14.0,11,56,22
+MANIT Bhopal,without >10-author papers,5737,90216,15.73,33.0,296,6.0,14.0,11,56,0
+NIT Jamshedpur,all papers,3594,44061,12.26,26.3,235,4.0,11.0,3,42,13
+NIT Jamshedpur,without >10-author papers,3581,43430,12.13,26.1,235,4.0,11.0,3,42,0
+NIT Silchar,all papers,8411,124894,14.85,36.8,276,7.0,22.0,35,54,28
+NIT Silchar,without >10-author papers,8383,124065,14.8,36.7,276,7.0,22.0,34,53,0

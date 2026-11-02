@@ -1,0 +1,51 @@
+{
+ "papers_per_sample": 3594,
+ "draws": 500,
+ "institutes": {
+  "MANIT Bhopal": {
+   "observed_h": 118,
+   "papers": 5759,
+   "mean_h_at_equal_size": 100.3,
+   "p5": 97.0,
+   "p95": 104.0
+  },
+  "NIT Jamshedpur": {
+   "observed_h": 84,
+   "papers": 3594,
+   "mean_h_at_equal_size": 84.0,
+   "p5": 84.0,
+   "p95": 84.0
+  },
+  "NIT Silchar": {
+   "observed_h": 112,
+   "papers": 8411,
+   "mean_h_at_equal_size": 87.6,
+   "p5": 83.0,
+   "p95": 91.0
+  }
+ },
+ "note": "h-index grows with the number of papers; drawing the same number of papers from each institute compares the institutes at equal size",
+ "citation_percentiles": {
+  "MANIT Bhopal": {
+   "50": 4.0,
+   "75": 14.0,
+   "90": 36.19999999999982,
+   "95": 66.0,
+   "99": 188.26000000000022
+  },
+  "NIT Jamshedpur": {
+   "50": 4.0,
+   "75": 11.0,
+   "90": 28.0,
+   "95": 49.0,
+   "99": 138.28000000000065
+  },
+  "NIT Silchar": {
+   "50": 5.0,
+   "75": 17.0,
+   "90": 39.0,
+   "95": 60.0,
+   "99": 131.0
+  }
+ }
+}

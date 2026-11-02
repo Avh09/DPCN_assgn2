@@ -1,0 +1,201 @@
+author,institution,country,faculty_connected,our_institutes,coauthors_total,betweenness_full_network,faculty
+Kuldeep Kumar Saxena,GLA University,IN,9,MANIT Bhopal; NIT Jamshedpur,35,0.0133,Amit Telang; Arvind K Patel; C.Sasikumar; Gaurav Dwivedi; R. S. Rana; Rajesh Purohit
+T Dheepa,(no affiliation),,8,NIT Silchar,45,0.0074,Badal Soni; Laiphrakpam Dolendro Singh; Malaya Dutta Borah; P. Srinivasan; R. Murugan; Ramanujam E
+Taha Selim Ustun,National Institute of Advanced Industrial Science and Technology,JP,8,NIT Silchar,21,0.00611,Arup Kumar Goswami; Avadh Pati; Dulal Chandra Das; Nabanita Adhikary; Nalin Behari Dev Choudhury; Nidul Sinha
+Lalit Kumar,Manipal University Jaipur,,7,MANIT Bhopal,8,0.00011,Akhtar Rasool; Manasi Gyanchandani; Manish Pandey; Nilay Khare; Rajesh Wadhwani; Sanyam Shukla
+Gaurav Saini,Harcourt Butler Technical University,IN,6,MANIT Bhopal; NIT Jamshedpur,21,0.01806,Gaurav Dwivedi; Jay Mant Jha; Kumari Namrata; Sanja y; Tikendra Nath Verma; Vishnu Prasad
+Mika E. T. Sillanpää,Duy Tan University,VN,6,MANIT Bhopal; NIT Silchar,27,0.01454,Anil Kumar Sharma; Jay Mant Jha; Md. Ahmaruzzaman; Prabhakaran K K; Prashant V. Baredar; S. Suresh
+Virendra Pratap Singh,(no affiliation),,6,MANIT Bhopal; NIT Silchar,18,0.00668,Gajendra Dixit; Rajesh Purohit; Raman Nateriya; Ravi Kumar Dwivedi; Savita Dixit; Vinyas Mahesh
+Bhargav Appasani,KIIT University,IN,6,NIT Silchar,24,0.00577,Avadh Pati; Devendra Singh Gurjar; Nabanita Adhikary; Prabina Pattanayak; Sunil Kumar Mishra; Vipin Chandra Pal
+Basil Kuriachen,(no affiliation),,6,MANIT Bhopal; NIT Silchar,18,0.00516,Gajendra Dixit; Rajesh Purohit; Raman Nateriya; Ravi Kumar Dwivedi; Savita Dixit; Vinyas Mahesh
+Mohan Lal Kolhe,University of Agder,NO,6,MANIT Bhopal; NIT Jamshedpur; NIT Silchar,42,0.00508,Jaytrilok Choudhary; Kethavath Raghavendra Naik; N. P. Patidar; SREENU SREEKUMAR; Simanta Kumar Samal; Vasudev Dehalwar
+HARISH KUMAR SHARMA,GLA University,IN,6,NIT Jamshedpur,8,0.00415,Amresh Kumar; Koushlendra Kumar Singh; Mani Kant Paswan; Satish Kumar; Shailesh Kumar Prasad; Shashi Bhushan Prasad
+Puneet Verma,Queensland University of Technology,AU,6,MANIT Bhopal,44,0.00383,Anil Kumar; Archana Soni; Gaurav Dwivedi; Meena Agrawal; Prashant V. Baredar; Tikendra Nath Verma
+Anoop Kumar Shukla,Amity University,IN,6,MANIT Bhopal; NIT Jamshedpur,51,0.00351,Gaurav Dwivedi; Gurveer Singh; Meena Agrawal; Prashant V. Baredar; Sanja y; Tikendra Nath Verma
+Jacopo Iannacci,Fondazione Bruno Kessler,IT,6,NIT Silchar,47,0.0025,Brinda Bhowmick; Kavicharan Mummaneni; Koushik Guha; Krishna Lal Baishnab; Madhuchhanda Choudhury; Trupti Ranjan Lenka
+Raj Kumar Mistri,Indian Institute of Information Technology Ranchi,IN,6,NIT Jamshedpur; NIT Silchar,13,0.00215,Fazal A. Talukdar; Ganesh Prasad; Prabina Pattanayak; RASHMI SINHA; Taimoor Khan; Wasim Arif
+Ramesh Kumar Verma,(no affiliation),,6,NIT Jamshedpur; NIT Silchar,17,0.00081,Akhilesh Kumar; Ashraf Hossain; Fazal A. Talukdar; Ganesh Prasad; Prabina Pattanayak; Taimoor Khan
+Shilpi Tomar,(no affiliation),,6,MANIT Bhopal,11,0.00032,Anoop Arya; Ashish Kumar Sahu; Manoj Arya; Priyanka Paliwal; Shweta Mehroliya; Sushma Gupta
+Pramod Sahu,Air India Limited (India),IN,6,MANIT Bhopal,10,0.00024,Pushyamitra Mishra; R. S. Rana; Rajesh Purohit; S. Suresh; Vilas Warudkar; Vishal Parashar
+Saraswati Rana,RKDF University,IN,6,MANIT Bhopal,7,0.00019,Amit Suhane; Archana Nigrawal; R. S. Rana; Rajesh Purohit; S. Suresh; Sanjay Soni
+Sankar Chakma,"Indian Institute of Science Education and Research, Bhopal",IN,5,MANIT Bhopal; NIT Silchar,14,0.00908,Rajeev Parmar; Rupak Kishor; Samuel Lalthazuala Rokhum; Shanti Gopal Patra; Subhajit Patra
+Gurunathan Baskar,St. Joseph’s College of Engineering,IN,5,NIT Silchar,37,0.00857,N. Shaemningwar Moyon; Ruma Rano; Samuel Lalthazuala Rokhum; Shanti Gopal Patra; Siddhartha S Dhar
+Anil Singh Yadav,(no affiliation),,5,MANIT Bhopal; NIT Jamshedpur,23,0.00725,Amit Telang; J. L. Bhagoria; Ravi Kumar Dwivedi; Tikendra Nath Verma; Vishesh Ranjan Kar
+Tanmoy Mukhopadhyay,Swansea University,GB,5,NIT Jamshedpur; NIT Silchar,20,0.00716,Krishna Murari Pandey; Lintu Roy; Saikat Ranjan Maity; Subhadeep Metya; Sudip Dey
+Somnath Sarangi,Indian Institute of Technology Patna,IN,5,MANIT Bhopal; NIT Jamshedpur,13,0.0046,Deepak Kumar (Mechanical Engineering); Jayendra Kumar; Ravi Kumar Mandava; Vijay Panchore; Vinod Yadav
+Ardalan B. Hussein,Széchenyi István University,HU,5,NIT Jamshedpur,9,0.00296,Awdhesh K Choudhary; Brajkishor Prasad; Keshav Kumar Sharma; Mrutyunjay Rout; Sanjay V. Kumar
+Rajan Kumar,(no affiliation),,5,MANIT Bhopal; NIT Jamshedpur; NIT Silchar,15,0.00251,Amit Suhane; Arvind K Patel; Ravi Kumar Dwivedi; Satish Pal Singh Rajput; Vinyas Mahesh
+Devendar Rao B,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,IN,5,NIT Silchar,19,0.00243,Malaya Dutta Borah; R. Murugan; Ramanujam E; Ripon Patgiri; Suganya Devi K
+Amitkumar Vidyakant Jha,KIIT University,IN,5,NIT Silchar,20,0.00223,Avadh Pati; Devendra Singh Gurjar; Prabina Pattanayak; Sunil Kumar Mishra; Vipin Chandra Pal
+Gopinath Palai,Gandhi Institute for Technological Advancement,IN,5,NIT Silchar,17,0.00206,Krishna Lal Baishnab; Paramita Sarkar; Pukhrambam Puspa Devi; S. K. Tripathy; Trupti Ranjan Lenka
+Subir Datta,Mizoram University,IN,5,NIT Silchar,13,0.00185,Binoy Krishna Roy; Jyoti Prakash Mishra; Lalit Chandra Saikia; Nidul Sinha; Saurabh Chaudhury
+Ajit Singh,(no affiliation),,5,NIT Jamshedpur; NIT Silchar,8,0.00153,Arnab Nandi; Arvind Choubey; Prabina Pattanayak; RASHMI SINHA; Wasim Arif
+Biplab Kumar Debnath,National Institute of Technology Meghalaya,IN,5,NIT Silchar,18,0.0008,Agnimitra Biswas; Biplab Das; Rajat Gupta; Sumita Debbarma; Sushant Negi
+S. M. Suhail Hussain,National Institute of Advanced Industrial Science and Technology,JP,5,NIT Silchar,10,0.00076,Arup Kumar Goswami; Dulal Chandra Das; Nidul Sinha; Nirmala Soren; Prashant Kumar Tiwari
+Suneel Yadav,Indian Institute of Information Technology Allahabad,IN,5,NIT Silchar,35,0.00073,Devendra Singh Gurjar; Ganesh Prasad; Prabina Pattanayak; Ranjay Hazra; Taimoor Khan
+Deepak Mishra,UNSW Sydney,AU,5,NIT Silchar,15,0.00073,Ashraf Hossain; Ganesh Prasad; Krishna Lal Baishnab; Prabina Pattanayak; Rabul Hussain Laskar
+Satyasreet Jena,Vellore Institute of Technology University,IN,5,NIT Jamshedpur,7,0.00028,Dharmendra Patel; Mani Kant Paswan; Sanjay V. Kumar; Shashi Bhushan Prasad; Vishesh Ranjan Kar
+Manish Mandloi,Narsee Monjee Institute of Management Studies,IN,5,NIT Silchar,6,0.00024,Arnab Nandi; Ashraf Hossain; Devendra Singh Gurjar; Krishna Lal Baishnab; Prabina Pattanayak
+Aman Singh Rajpoot,Indian Institute of Information Technology Design and Manufacturing Jabalpur,IN,4,MANIT Bhopal; NIT Jamshedpur,10,0.02083,Balram Ambade; Gaurav Dwivedi; Sanja y; Tikendra Nath Verma
+Din Bandhu,(no affiliation),,4,MANIT Bhopal; NIT Silchar,8,0.01379,Arup Kumar Goswami; Prashant Kumar Tiwari; R. S. Rana; Rajesh Purohit
+Om Prakash,"Birla Institute of Technology, Mesra",IN,4,MANIT Bhopal; NIT Silchar,18,0.01293,Anil Kumar; Biplab Das; Gaurav Dwivedi; Prashant V. Baredar
+Erdem Cüce,Recep Tayyip Erdoğan University,TR,4,MANIT Bhopal; NIT Silchar,43,0.01113,Archana Soni; Kumarasamy Sudhakar; Somnath Santra; Tikendra Nath Verma
+Anchit Modi,Barkatullah University,IN,4,MANIT Bhopal; NIT Silchar,27,0.00903,Fozia Z. Haque; M. M. Malik; Rajnish Kurchania; Vinyas Mahesh
+Saurav Dixit,Uttaranchal University,IN,4,MANIT Bhopal; NIT Jamshedpur,17,0.0085,Shalendra Kumar; Shashi Bhushan Prasad; VIRENDRA KUMAR; Vijayshri Chaurasia
+Waheed Ahmad Khanday,(no affiliation),,4,NIT Silchar,16,0.00764,Amit Kumar Das; Md. Ahmaruzzaman; Monowar Hussain; Samuel Lalthazuala Rokhum
+Abhishek Dasore,(no affiliation),,4,MANIT Bhopal; NIT Silchar,49,0.00723,Anil Kumar; Gaurav Dwivedi; Tikendra Nath Verma; Vivekanandan S
+Vishal Goyal,GLA University,IN,4,NIT Jamshedpur; NIT Silchar,9,0.00696,Fazal A. Talukdar; Mayank Srivastava; S. K. Tripathy; Trupti Ranjan Lenka
+Dheeresh K. Mallick,"Birla Institute of Technology, Mesra",IN,4,MANIT Bhopal; NIT Jamshedpur,7,0.00371,Bholanath Roy; Chandrashekhar Azad; Vaibhav Soni; Vijay Bhaskar Semwal
+Manoj S. Choudhari,Vellore Institute of Technology University,IN,4,MANIT Bhopal; NIT Jamshedpur,9,0.00343,Gaurav Dwivedi; Mani Kant Paswan; Sanja y; Tikendra Nath Verma
+Ankur Kanti Guha,Cotton University,IN,4,NIT Silchar,9,0.0034,Biswa Nath Ghosh; Md. Ahmaruzzaman; Pranjit Barman; Saptarshi Roy
+Gokarneswar Sahoo,National Institute of Technology Rourkela,IN,4,NIT Jamshedpur; NIT Silchar,14,0.00305,Subrata Mahanta; Sudipta Chakraborty; Tapas Das; Titas Kumar Mukhopadhyay
+Saboor Shaik,Vellore Institute of Technology University,IN,4,MANIT Bhopal,30,0.00286,Alok Singh; Priyanka Paliwal; Ravindra D. Jilte; Tikendra Nath Verma
+Chanduveetil Ahamed Saleel,King Khalid University,SA,4,MANIT Bhopal; NIT Silchar,47,0.00267,Alok Singh; Ravindra D. Jilte; Tikendra Nath Verma; Vivekanandan S
+Sanjeevikumar Padmanaban,University of South-Eastern Norway,NO,4,NIT Jamshedpur; NIT Silchar,13,0.00252,Ashok Kumar Akella; Kumari Namrata; SREENU SREEKUMAR; Veerpratap Meena
+Avijit Debnath,Assam University,IN,4,NIT Silchar,4,0.00227,Abhijt Chakraborty; Ashim Kumar Das; Gurudas Das; Ujjwal Kanti Paul
+Shankar Chakraborty,Jadavpur University,IN,4,NIT Jamshedpur; NIT Silchar,6,0.00225,KANIKA PRASAD; Prosun Mandal; Saikat Ranjan Maity; Sumit Bhowmik
+Valentina Emilia Bălaş,Aurel Vlaicu University of Arad,RO,4,NIT Silchar,17,0.00204,Arnab Nandi; Ashraf Hossain; Fazal A. Talukdar; Rajeeb Dey
+Niraj Kumar Dewangan,National Institute of Technology Raipur,IN,4,MANIT Bhopal; NIT Jamshedpur,6,0.00167,Alok Priyadarshi; Rajesh Kumar Nema; Savita Nema; Sushma Gupta
+Satyabrata Jit,Indian Institute of Technology BHU,IN,4,NIT Jamshedpur; NIT Silchar,16,0.00149,Basanta Bhowmik; Binay Kumar; Kunal Singh; Srimanta Baishya
+Gurmeet Singh,Chandigarh University,IN,4,NIT Jamshedpur,13,0.00128,Sanja y; Satish Kumar; Shalendra Kumar; Shashi Bhushan Prasad
+Ajai Kumar,Gautam Buddha University,IN,4,NIT Silchar,6,0.00108,Banani Basu; Fazal A. Talukdar; Kedar Nath Das; Santanu Roy
+Andrew E. H. Wheatley,University of Cambridge,GB,4,NIT Silchar,21,0.00098,Rajat Gupta; Ruma Rano; Samuel Lalthazuala Rokhum; Shanti Gopal Patra
+Jayasree Chakraborty,Memorial Sloan Kettering Cancer Center,US,4,NIT Silchar,6,0.00092,Abhishek Midya; Arun Kumar Sunaniya; Rajdeep Dasgupta; Wasim Arif
+Sekar K,Rajalakshmi Engineering College,,4,NIT Silchar,16,0.00085,Badal Soni; Malaya Dutta Borah; Ramanujam E; Ripon Patgiri
+Rajeev Kumar Panda,National Institute of Technology Rourkela,IN,4,NIT Silchar,4,0.00083,Ashim Kumar Das; Dibya Nandan Mishra; Shubham Senapati; Vivek Kumar Pathak
+Alok Kumar Shukla,Thapar Institute of Engineering & Technology,IN,4,MANIT Bhopal; NIT Jamshedpur,10,0.00074,B Ramachandra Reddy; Diwakar Tripathi; Koushlendra Kumar Singh; Manisha Singh
+Sanjay Basumatary,Bodoland University,IN,4,NIT Silchar,56,0.00073,N. Shaemningwar Moyon; Ruma Rano; Samuel Lalthazuala Rokhum; Siddhartha S Dhar
+Sujit Kumar Verma,GLA University,IN,4,NIT Jamshedpur,6,0.00067,Amresh Kumar; Koushlendra Kumar Singh; Satish Kumar; Shalendra Kumar
+Gagan Vishwakarma,Indian Institute of Information Technology Bhopal,IN,4,MANIT Bhopal,9,0.00061,Deepak Singh Tomar; Dhirendra Pratap Singh; Ghanshyam Singh Thakur; Jaytrilok Choudhary
+Regasa Yadeta Sembeta,Mattu University,,4,NIT Jamshedpur,7,0.00056,Keshav Kumar Sharma; Prahlad Prasad; Rakesh Pratap Singh; Subhadeep Metya
+Massimo Donelli,University of Trento,IT,4,NIT Silchar,24,0.00036,Kavicharan Mummaneni; Koushik Guha; Krishna Lal Baishnab; Trupti Ranjan Lenka
+Jialai Wang,University of Alabama,US,4,NIT Silchar,10,0.00028,Krishna Murari Pandey; Pannalal Choudhury; Sudipta Halder; Sukumar Pati
+Mehdi Ali Ehyaei,"Islamic Azad University, Tehran",IR,4,NIT Silchar,38,0.00025,Biplab Das; Rajat Gupta; Sumita Debbarma; Sushant Negi
+Sahadev Roy,National Institute of Technology Arunachal Pradesh,IN,4,NIT Jamshedpur,4,0.00021,AJAY KUMAR; AMIT PRAKASH; Ajay Kumar Singh; Hira Lal Yadav
+Chhangte Vanlalveni,Mizoram University,IN,4,NIT Silchar,16,0.0002,Rajat Gupta; Ruma Rano; Samuel Lalthazuala Rokhum; Sushovan Chatterjee
+László Baranyi,University of Miskolc,HU,4,NIT Silchar,4,0.00018,B. Hema Sundar Raju; Pankaj Biswas; Pitambar R Randive; Sukumar Pati
+Ramesh Devarapalli,(no affiliation),,4,NIT Silchar,6,0.00016,Lalit Chandra Saikia; Nidul Sinha; Raj Kumar Biswas; Saheli Ray
+Sasan Zahmatkesh,Tecnológico de Monterrey,MX,4,MANIT Bhopal,12,0.00015,Anil Kumar Sharma; Prabhakaran K K; Prashant V. Baredar; S. Suresh
+Ajay Tripathi,(no affiliation),,4,MANIT Bhopal,8,0.00014,Amit Suhane; Pushyamitra Mishra; Ravi Kumar Dwivedi; Sanjay Soni
+Khoirom Motilal Singh,Koneru Lakshmaiah Education Foundation,IN,4,NIT Silchar,6,0.00013,Anish Kumar Saha; Dalton Meitei Thounaojam; Laiphrakpam Dolendro Singh; Ripon Patgiri
+Sadegh Safari,"Islamic Azad University, Tehran",IR,4,NIT Silchar,27,0.00012,Biplab Das; Rajat Gupta; Sumita Debbarma; Sushant Negi
+Moonis Ali Khan,King Saud University,SA,4,MANIT Bhopal,11,0.00012,Anil Kumar Sharma; Prabhakaran K K; Prashant V. Baredar; S. Suresh
+Jayanta Deb Mondol,University of Ulster,GB,4,NIT Silchar,8,6e-05,Agnimitra Biswas; Biplab Das; Rajat Gupta; Sushant Negi
+Bidesh Roy,(no affiliation),,4,NIT Silchar,7,5e-05,Biplab Das; Krishna Murari Pandey; Rahul Dev Misra; Sumita Debbarma
+Duansh Sharma,"Rutgers, The State University of New Jersey",US,4,MANIT Bhopal,4,0.0,Dhirendra Pratap Singh; Jaytrilok Choudhary; Manish Pandey; Nilay Khare
+Preetam Kumar,Indian Institute of Technology Patna,IN,4,NIT Silchar,4,0.0,Devendra Singh Gurjar; Fazal A. Talukdar; Ganesh Prasad; Prabina Pattanayak
+Anshul Verma,Banaras Hindu University,IN,4,MANIT Bhopal,5,0.0,Anoop Arya; Priyanka Paliwal; Shweta Mehroliya; Sushma Gupta
+Varun Lahoty,Vellore Institute of Technology University,IN,4,NIT Jamshedpur,5,0.0,Dharmendra Patel; Mani Kant Paswan; Sanjay V. Kumar; Shashi Bhushan Prasad
+Akash Haripriya,National Law Institute University,IN,4,MANIT Bhopal,4,0.0,Dhirendra Pratap Singh; Jaytrilok Choudhary; Manish Pandey; Nilay Khare
+Richa Mishra,Parul University,IN,4,NIT Silchar,4,0.0,Brinda Bhowmick; Krishna Lal Baishnab; Madhuchhanda Choudhury; Paramita Sarkar
+P Balakrishna,(no affiliation),,4,MANIT Bhopal,4,0.0,GUMPU SRINIVASULU; M. Raju; Manisha Dubey; N. P. Patidar
+Sumit Gupta,"Indian Institute of Information Technology, Pune",IN,4,MANIT Bhopal,4,0.0,Dhirendra Pratap Singh; Jaytrilok Choudhary; Manish Pandey; Nilay Khare
+Arivalagan Pugazhendhi,Ton Duc Thang University,VN,3,MANIT Bhopal; NIT Silchar,34,0.03131,Gaurav Dwivedi; Samuel Lalthazuala Rokhum; Tikendra Nath Verma
+Naveen Kumar Sharma,Punjab Technical University,IN,3,MANIT Bhopal; NIT Silchar,11,0.01974,Gaurav Dwivedi; Gaurav Singh Baghel; Rajnish Shrivastava
+Tahani Awad Alahmadi,King Saud University,SA,3,MANIT Bhopal; NIT Jamshedpur; NIT Silchar,25,0.01771,Samuel Lalthazuala Rokhum; Subrata Mahanta; Tikendra Nath Verma
+Hussain Mohamed Chelladurai,Indian Institute of Information Technology Design and Manufacturing Jabalpur,IN,3,MANIT Bhopal; NIT Jamshedpur,6,0.01307,Balram Ambade; Gaurav Dwivedi; Tikendra Nath Verma
+Rajeshwer Prasad Saini,Indian Institute of Technology Roorkee,IN,3,MANIT Bhopal; NIT Jamshedpur; NIT Silchar,6,0.0121,Ashok Kumar Akella; Gaurav Dwivedi; Krishna Murari Pandey
+Tasawar Hayat,Quaid-i-Azam University,PK,3,NIT Jamshedpur; NIT Silchar,11,0.01094,Binoy Krishna Roy; Ramayan Singh; Sunil Kumar
+Ravinder Kumar,Lovely Professional University,IN,3,MANIT Bhopal; NIT Silchar,14,0.01089,Biplab Das; Sushant Negi; Tikendra Nath Verma
+R. N. P. Choudhary,Ames National Laboratory,US,3,MANIT Bhopal; NIT Silchar,19,0.00992,Santanu Pakhira; Subrat Kumar Barik; Sudarsan Sahoo
+Gopal Nandan,Amity University,IN,3,MANIT Bhopal; NIT Jamshedpur,13,0.00898,Gaurav Dwivedi; Koushlendra Kumar Singh; Satish Kumar
+Shiv Lal,(no affiliation),,3,MANIT Bhopal; NIT Jamshedpur,7,0.00802,Prashant V. Baredar; R.M.Sarviya; Sunil Kumar
+Arigela Satya Veerendra,Universiti Malaysia Pahang Al-Sultan Abdullah,MY,3,MANIT Bhopal; NIT Silchar,9,0.00776,Dulal Chandra Das; Kumarasamy Sudhakar; Nirmala Soren
+Anil Kumar Chaubey,Institute of Minerals and Materials Technology,IN,3,MANIT Bhopal; NIT Jamshedpur,12,0.00712,Jichil Majhi; Ramesh Kumar Nayak; Saroj Kumar Sarangi
+Kartikey Verma,Indian Institute of Technology Kanpur,IN,3,MANIT Bhopal; NIT Jamshedpur,24,0.00554,Shashi Bhushan Prasad; Subhash Singh; Veerpratap Meena
+Asim Kumar Naskar,National Institute of Technology Rourkela,IN,3,NIT Jamshedpur; NIT Silchar,7,0.00523,Jiwanjot Singh; Sudipta Chakraborty; Veerpratap Meena
+Megha Katare Pandey,All India Institute of Medical Sciences Bhopal,IN,3,MANIT Bhopal,20,0.00523,Khushhali M. Pandey; Kuldeep Singh Yadav; Shivendra K Chaurasiya
+Arunodaya Raj Mishra,(no affiliation),,3,MANIT Bhopal; NIT Silchar,13,0.00511,Badal Soni; Kamal Raj Pardasani; Naresh Babu Muppalaneni
+Asif Afzal,Visvesvaraya Technological University,IN,3,MANIT Bhopal,50,0.00486,Priyanka Paliwal; Ravindra D. Jilte; Tikendra Nath Verma
+Souvik Pal,Centre for Development of Advanced Computing,IN,3,MANIT Bhopal,15,0.0045,Bharatkumar K. Modhera; Rahul M Shrivastava; Ruchi Khare
+Muhammad Khurram Khan,King Saud University,SA,3,MANIT Bhopal; NIT Jamshedpur,15,0.00441,B Ramachandra Reddy; Dheerendra Mishra; Jitesh Pradhan
+Avelino Núñez‐Delgado,Universidade de Santiago de Compostela,ES,3,MANIT Bhopal,17,0.00399,Alok Mittal; JYOTI MITTAL; S. Suresh
+Dibyendu Adak,National Institute of Technology Meghalaya,IN,3,NIT Jamshedpur; NIT Silchar,16,0.00376,Madan Mohan Prasad; Sanjay V. Kumar; Subhrajit Dutta
+Nabisab Mujawar Mubarak,Saveetha University,IN,3,MANIT Bhopal; NIT Jamshedpur; NIT Silchar,20,0.00334,Deepak Kumar; Md. Ahmaruzzaman; Sarvesh Pandey
+Manoj Kumar Tripathi,Central Institute of Agricultural Engineering,IN,3,MANIT Bhopal,15,0.00325,Bharatkumar K. Modhera; Rahul M Shrivastava; Ruchi Khare
+Dinesh Kumar Saini,Manipal University Jaipur,,3,MANIT Bhopal; NIT Jamshedpur,10,0.00321,Danish Ali Khan; R. K. Pateriya; Vinay Kumar
+Pramod Kumar,Guru Ghasidas Vishwavidyalaya,IN,3,MANIT Bhopal; NIT Jamshedpur,6,0.00312,Alok Mittal; JYOTI MITTAL; Keshav Kumar Sharma
+Mohammad Hadi Dehghani,Center for Solid Waste Research,,3,MANIT Bhopal; NIT Jamshedpur; NIT Silchar,16,0.0031,Deepak Kumar; Md. Ahmaruzzaman; Sarvesh Pandey
+Khalid S. Ansari,Yeshwantrao Chavan College of Engineering,IN,3,MANIT Bhopal; NIT Jamshedpur; NIT Silchar,16,0.0031,Deepak Kumar; Md. Ahmaruzzaman; Sarvesh Pandey
+Vijay K. Sood,Ontario Tech University,CA,3,NIT Jamshedpur; NIT Silchar,3,0.00306,Jiwanjot Singh; Omhari Gupta; Rabindra Nath Mahanty
+Hieu Pham Trung Nguyen,New Jersey Institute of Technology,US,3,NIT Silchar,39,0.00305,Fazal A. Talukdar; S. K. Tripathy; Trupti Ranjan Lenka
+Baseem Khan,Hawassa University,ET,3,NIT Jamshedpur; NIT Silchar,16,0.00296,Arup Kumar Goswami; MADHU SINGH; Veerpratap Meena
+Ahmed Al‐Durra,Khalifa University of Science and Technology,AE,3,MANIT Bhopal; NIT Silchar,10,0.00296,Dulal Chandra Das; Nirmala Soren; Shailendra Kumar
+Tamal Banerjee,Indian Institute of Technology Guwahati,IN,3,MANIT Bhopal; NIT Silchar,12,0.00294,Nabendu Paul; Rajdeep Dasgupta; Siddhartha S Dhar
+Arup Kumar Das,University of Engineering & Management,IN,3,NIT Silchar,8,0.00286,Ashish Paramane; Biswarup Ganguly; Jiwanjot Singh
+Vijay K. Sood,Ontario Tech University,CA,3,NIT Jamshedpur; NIT Silchar,9,0.00285,Arun Kumar Singh; Jiwanjot Singh; Omhari Gupta
+Abhinav Kumar Gupta,(no affiliation),,3,MANIT Bhopal,10,0.0028,Bhavana P. Shrivastava; Gaurav Upadhyay; TARUN KUMAR GUPTA
+Rajan Kumar,Indian Institute of Technology Dhanbad,IN,3,MANIT Bhopal; NIT Jamshedpur,9,0.00258,Rajat Tripathi; Rajesh Purohit; Satish Pal Singh Rajput
+Manoj Panchal,(no affiliation),,3,MANIT Bhopal,17,0.00246,Gaurav Dwivedi; Soumya Ranjan Guru; Tikendra Nath Verma
+Lourembam Lolit Kumar Singh,Mizoram University,IN,3,NIT Jamshedpur; NIT Silchar,9,0.00234,Banani Basu; Partha Pakray; Surajit Kundu
+Sukumar Mishra,Indian Institute of Technology Delhi,IN,3,MANIT Bhopal; NIT Jamshedpur,4,0.00226,Mani Kant Paswan; Sanja y; Shailendra Kumar
+Shubhankar Samanta,Bidhannagar College,IN,3,NIT Jamshedpur; NIT Silchar,22,0.00225,Subrata Mahanta; Sudipta Chakraborty; Tapas Das
+Deepak Kumar Gupta,(no affiliation),,3,MANIT Bhopal,6,0.00214,Priyanka Verma; R. K. Pateriya; Vijay Bhaskar Semwal
+Siddhartha Sankar Ghosh,Indian Institute of Technology Guwahati,IN,3,MANIT Bhopal; NIT Silchar,6,0.00207,Binita Nath; Kuldeep Singh Yadav; Pranjit Barman
+Roopesh Kumar Sinha,(no affiliation),,3,MANIT Bhopal; NIT Jamshedpur,15,0.00204,Arvind K Patel; Rajesh Purohit; Vilas Warudkar
+Apurba Das,Indian Institute of Technology Guwahati,IN,3,NIT Silchar,12,0.00192,Ashish B. Deoghare; Sushovan Chatterjee; Susmita Rabha
+Sanjeev Sharma,Indian Institute of Technology BHU,IN,3,NIT Jamshedpur; NIT Silchar,8,0.00191,Devendra Singh Gurjar; Nagendra Kumar; Prabina Pattanayak
+S. K. Sit,(no affiliation),,3,NIT Jamshedpur; NIT Silchar,3,0.00189,Shahedul Haque Laskar; Shiva Nand Singh; Swagatadeb Sahoo
+Indrajit Ghosh,Indian Institute of Technology Roorkee,IN,3,MANIT Bhopal; NIT Jamshedpur; NIT Silchar,4,0.00188,Pabitra Rajbongshi; Pritikana Das; Sabyasachi Biswas
+Ritu Sharma,Malaviya National Institute of Technology Jaipur,IN,3,NIT Silchar,5,0.00182,Anup Kumar Sharma; Brinda Bhowmick; Rajesh Saha
+Amitesh Prakash,(no affiliation),,3,NIT Jamshedpur,10,0.00175,Kumari Namrata; MADHU SINGH; Niranjan Kumar
+Prerana Nashine,National Institute of Technology Rourkela,IN,3,MANIT Bhopal,30,0.00173,Anil Kumar; Gaurav Dwivedi; Tikendra Nath Verma
+Rukmi Dutta,UNSW Sydney,AU,3,NIT Silchar,5,0.00166,Dulal Chandra Das; Lalit Chandra Saikia; SREENU SREEKUMAR
+Ersan Kabalcı,Nevşehir Hacı Bektaş Veli University,TR,3,NIT Silchar,10,0.00165,Avadh Pati; Devendra Singh Gurjar; Prabina Pattanayak
+Ajit Kumar Singh,Indian Institute of Information Technology Ranchi,IN,3,NIT Jamshedpur; NIT Silchar,20,0.00164,Arvind Choubey; Praveen Kumar Gupta; RASHMI SINHA
+Mohammad S. Obaidat,University of Jordan,JO,3,MANIT Bhopal; NIT Jamshedpur,16,0.00163,Alekha Kumar Mishra; Dheerendra Mishra; SUBRATA DUTTA
+Keshavendra Choudhary,(no affiliation),,3,MANIT Bhopal,7,0.00158,R. S. Rana; Rajesh Purohit; Tikendra Nath Verma
+Abhishek Sharma,G.L. Bajaj Institute of Technology and Management Greater Noida,IN,3,MANIT Bhopal; NIT Jamshedpur,9,0.00149,Gaurav Dwivedi; Mani Kant Paswan; Sanja y
+Manoj Gupta,JECRC University,IN,3,MANIT Bhopal; NIT Jamshedpur,11,0.00148,Ashok Kumar Akella; Kumari Namrata; Pankaj Swarnkar
+Sonali R Nandanwar,(no affiliation),,3,MANIT Bhopal,15,0.00146,M. Raju; N. P. Patidar; SURESH KUMAR GAWRE
+Yogesh Dewang,(no affiliation),,3,MANIT Bhopal,7,0.00142,Manjeet Singh Hora; R. S. Rana; Rajesh Purohit
+G. S. Seth,Indian Institute of Technology Dhanbad,IN,3,NIT Jamshedpur,10,0.00138,Raj Nandkeolyar; Rajat Tripathi; Ramayan Singh
+Kanwer Singh Arora,Tata Steel (India),IN,3,NIT Jamshedpur,8,0.00138,Ashok Kumar (Metallurgical and Materials Engineering); Mayuri Baruah; Monalisa Mandal
+Bidyadhar Subudhi,National Institute of Technology Rourkela,IN,3,NIT Silchar,9,0.00137,Binoy Krishna Roy; Rajeeb Dey; Sudipta Chakraborty
+Vibhav Prakash Singh,Motilal Nehru National Institute of Technology,IN,3,NIT Jamshedpur,11,0.00136,Ashok Kumar Mehta; Koushlendra Kumar Singh; Vinay Kumar
+Om Parkash Malik,University of Calgary,CA,3,MANIT Bhopal; NIT Jamshedpur,7,0.00128,Anoop Arya; Omhari Gupta; SURESH KUMAR GAWRE
+Truong Khang Nguyen,Ton Duc Thang University,VN,3,NIT Silchar,9,0.00125,Pukhrambam Puspa Devi; S. K. Tripathy; Trupti Ranjan Lenka
+Amitabha Nath,Indian Institute of Technology Bombay,IN,3,MANIT Bhopal; NIT Silchar,3,0.00122,Ashish B. Deoghare; Emon Barua; Paramita Sarkar
+Boggarapu Nageswara Rao,Koneru Lakshmaiah Education Foundation,IN,3,MANIT Bhopal,5,0.00114,R. S. Rana; Rajesh Purohit; Ravi Kumar Mandava
+Yatendra Sahu,Indian Institute of Information Technology Bhopal,IN,3,MANIT Bhopal,9,0.00113,Ghanshyam Singh Thakur; Priyanka Verma; R. K. Pateriya
+C.S. Rajeshwari,National Institute of Technical Teachers’ Training and Research,IN,3,MANIT Bhopal,9,0.00112,Alpana Pandey; Anoop Arya; Shweta Mehroliya
+Biraj Kumar Sahoo,National Metallurgical Laboratory,IN,3,NIT Jamshedpur,13,0.00109,Monalisa Mandal; Poulami Maji; Renu Kumari
+Richard James Ball,University of Bath,GB,3,MANIT Bhopal,30,0.00106,Archana Nigrawal; Jyoti Rani; Rajnish Kurchania
+K. Priya Ajit,Indian Institute of Technology Dhanbad,IN,3,MANIT Bhopal; NIT Jamshedpur,3,0.00106,Bipin Kumar; J. L. Bhagoria; Vilas Warudkar
+Ioannis Konstantinos Argyros,Cameron University,US,3,MANIT Bhopal; NIT Jamshedpur,6,0.00104,Jai Prakash Jaiswal; Kamal Raj Pardasani; Sunil Kumar
+Abhijit Bhowmik,Lovely Professional University,IN,3,NIT Jamshedpur; NIT Silchar,6,0.00101,Biplab Das; Prosun Mandal; Saikat Ranjan Maity
+Gobinath Ravindran,SR University,IN,3,NIT Jamshedpur; NIT Silchar,5,0.00095,Abdhesh Kumar Sinha; Purushottam Kumar Singh; Subhadeep Metya
+Ajay Kumar Choubey,National Institute of Technical Teachers’ Training and Research,IN,3,MANIT Bhopal,3,0.00095,C.Sasikumar; R. S. Rana; Rajesh Purohit
+Nilanjan Dey,Techno India University,IN,3,NIT Silchar,8,0.00088,Fazal A. Talukdar; Kedar Nath Das; Santanu Roy
+Lakshi Saikia,North East Institute of Science and Technology,IN,3,NIT Silchar,8,0.00086,Md. Ahmaruzzaman; Ruma Rano; Samuel Lalthazuala Rokhum
+Piet N.L. Lens,IHE Delft Institute for Water Education,NL,3,MANIT Bhopal,4,0.00084,Jay Mant Jha; M.S. Chauhan; S. Suresh
+Tabish Alam,Central Building Research Institute,IN,3,MANIT Bhopal,13,0.00076,Gaurav Dwivedi; J. L. Bhagoria; Tikendra Nath Verma
+Manis Kumar Jha,National Metallurgical Laboratory,IN,3,NIT Jamshedpur,16,0.00074,Balram Ambade; Rajendra Prasad Singh; Ranjit Prasad
+Nimay Chandra Giri,Centurion University of Technology and Management,IN,3,MANIT Bhopal,7,0.0007,Anoop Arya; Shweta Mehroliya; Tikendra Nath Verma
+Mayank Chhabra,Amity University,IN,3,MANIT Bhopal,16,0.00069,Gaurav Dwivedi; Prashant V. Baredar; Tikendra Nath Verma
+Asim Datta,(no affiliation),,3,NIT Silchar,6,0.00066,Binoy Krishna Roy; Lalit Chandra Saikia; Nidul Sinha
+Fausto Pedro Garcı́a Márquez,University of Castilla-La Mancha,ES,3,NIT Silchar,9,0.00065,Ambrish Devanshu; Lalit Chandra Saikia; Raj Kumar Biswas
+Unnati Bora,North East Institute of Science and Technology,IN,3,NIT Silchar,5,0.00064,Md. Ahmaruzzaman; Ruma Rano; Samuel Lalthazuala Rokhum
+Sanjoy Debbarma,National Institute of Technology Meghalaya,IN,3,MANIT Bhopal; NIT Silchar,7,0.00062,Lalit Chandra Saikia; Nidul Sinha; Siddhartha Deb Roy
+Sumit Kumar Jindal,Vellore Institute of Technology University,IN,3,NIT Jamshedpur,14,0.00062,AJAY KUMAR; Basudeba Behera; Mayank Srivastava
+Da Shi,University of Cambridge,GB,3,NIT Silchar,13,0.00061,Rajat Gupta; Samuel Lalthazuala Rokhum; Sudipta Halder
+Suchi Gangwar,RKDF University,IN,3,MANIT Bhopal,6,0.00057,Aditya Goel; Dheeraj K. Agarwal; Vijayshri Chaurasia
+M. Tanveer,Indian Institute of Technology Indore,IN,3,NIT Silchar,22,0.00056,Chandrajit Choudhury; R. Murugan; Tripti Goel
+Amrit Mukherjee,Anhui University,CN,3,NIT Silchar,12,0.00052,Arun Kumar Sunaniya; Fazal A. Talukdar; Ranjay Hazra
+Walid El‐Shafai,Prince Sultan University,SA,3,NIT Jamshedpur,10,0.00052,Ashok Kumar Akella; Krishna Bihari Yadav; Kumari Namrata
+Umer Rashid,Universiti Putra Malaysia,MY,3,NIT Silchar,34,0.00049,N. Shaemningwar Moyon; Ruma Rano; Samuel Lalthazuala Rokhum
+S. A. R. Hashmi,Advanced Materials and Processes Research Institute,IN,3,MANIT Bhopal,18,0.00045,Archana Nigrawal; Rajesh Purohit; S. Suresh
+Tanupriya Choudhury,Amity University,IN,3,NIT Jamshedpur,6,0.00042,Bhaskar Mondal; Danish Ali Khan; Tarni Mandal
+Chris Bowen,University of Bath,GB,3,MANIT Bhopal,12,0.00041,Jyoti Rani; M. M. Malik; Rajnish Kurchania
+Kahtan A. Mohammed,University of Babylon,IQ,3,MANIT Bhopal,8,0.0004,Amit Telang; Rajesh Purohit; Ravi Kumar Dwivedi
+Sunil Kumar Mishra,KIIT University,IN,3,NIT Silchar,14,0.00038,Avadh Pati; Nabanita Adhikary; Vipin Chandra Pal
+Manas Ranjan Tripathy,Indian Institute of Technology BHU,IN,3,NIT Silchar,9,0.00037,Bijit Choudhuri; Brinda Bhowmick; Srimanta Baishya
+Lachit Dutta,Gauhati University,IN,3,NIT Silchar,4,0.00037,Bijit Choudhuri; Brinda Bhowmick; Ujjal Chakraborty
+Gopal Rawat,National Institute of Technology Hamirpur,BD,3,NIT Jamshedpur; NIT Silchar,12,0.00033,Bijit Choudhuri; Kavicharan Mummaneni; Kunal Singh
+Kusum Lata Agarwal,(no affiliation),,3,MANIT Bhopal,7,0.00033,Sanjeev Singh; Shailendra Kumar; Ujjwal Kumar Kalla
+Priyanka Majumder,National Institute of Technology Agartala,IN,3,NIT Silchar,6,0.00031,Anup Kumar Sharma; Lalu Seban; Munmun Khanra
+Bamidele Charles Olaiya,Kampala International University,UG,3,NIT Jamshedpur,5,0.0003,Awdhesh K Choudhary; Keshav Kumar Sharma; Madhuri Seeram
+Sarika Verma,Advanced Materials and Processes Research Institute,IN,3,MANIT Bhopal,22,0.00028,Anil Kumar Sharma; Jay Mant Jha; S. Suresh
+Ankur Singh Rana,National Institute of Technology Tiruchirappalli,IN,3,MANIT Bhopal; NIT Silchar,13,0.00026,M. Raju; Mukesh Kirar; SREENU SREEKUMAR
+Mohd Asim Aftab,Jamia Millia Islamia,IN,3,NIT Silchar,6,0.00025,Arup Kumar Goswami; Dulal Chandra Das; Prashant Kumar Tiwari
+Manas  Kamal Bhuyan,Indian Institute of Technology Guwahati,IN,3,NIT Silchar,21,0.00025,Rabul Hussain Laskar; Ram Kumar Karsh; Taimoor Khan

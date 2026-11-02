@@ -1,0 +1,4 @@
+institution,papers,citations_min,citations_median,citations_max,citations_total,journal_papers,conference_papers,Q1,journal_ranked,Q1_share_%,ranking_coverage_%,Q1_all_30_share_%,Q1_and_IF_gt5,Q1_and_IF_gt10,median_venue_h_index,papers_with_faculty_h_20_plus,median_max_faculty_h,papers_with_10plus_authors,estimated_quartiles_in_top30
+MANIT Bhopal,30,275,367.0,971,13526,27,3,22,27,81.5,100.0,73.3,16,2,261.0,17,21.0,0,1
+NIT Jamshedpur,30,156,203.5,930,8356,30,0,24,30,80.0,100.0,80.0,12,4,128.0,19,38.0,0,0
+NIT Silchar,30,191,272.5,1104,9813,30,0,22,30,73.3,100.0,73.3,16,3,243.5,23,29.0,1,0

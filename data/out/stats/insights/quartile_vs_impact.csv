@@ -1,0 +1,38 @@
+period,quartile,papers,median_citations,mean_fwci,median_fwci
+2016-18,Q1,432,53.0,4.65,2.96
+2016-18,Q2,502,19.5,1.84,1.12
+2016-18,Q3,418,10.0,1.39,0.71
+2016-18,Q4,267,3.0,0.52,0.15
+2019-21,Q1,840,33.0,3.6,2.12
+2019-21,Q2,1057,16.0,1.89,1.07
+2019-21,Q3,664,9.0,1.02,0.6
+2019-21,Q4,246,3.0,0.56,0.17
+2022-23,Q1,946,20.0,3.11,1.66
+2022-23,Q2,1191,11.0,1.58,0.89
+2022-23,Q3,496,6.0,0.92,0.52
+2022-23,Q4,110,2.0,0.53,0.22
+2024-26,Q1,1599,4.0,2.64,1.33
+2024-26,Q2,1585,2.0,1.68,0.6
+2024-26,Q3,843,1.0,0.93,0.26
+2024-26,Q4,202,0.0,0.53,0.0
+all (field: Engineering),Q1,1811,16.0,2.49,1.65
+all (field: Engineering),Q2,2235,7.0,1.21,0.75
+all (field: Engineering),Q3,1271,4.0,0.79,0.45
+all (field: Engineering),Q4,337,2.0,0.37,0.14
+all (field: Computer Science),Q1,476,10.5,3.17,1.55
+all (field: Computer Science),Q2,510,10.0,2.09,1.02
+all (field: Computer Science),Q3,259,4.0,1.42,0.53
+all (field: Computer Science),Q4,157,2.0,0.7,0.21
+all (field: Materials Science),Q1,239,13.0,1.98,1.15
+all (field: Materials Science),Q2,365,10.0,1.14,0.75
+all (field: Materials Science),Q3,144,5.5,0.82,0.44
+all (field: Materials Science),Q4,37,1.0,0.38,0.1
+all (field: Environmental Science),Q1,215,20.0,4.69,2.19
+all (field: Environmental Science),Q2,205,9.0,1.99,0.97
+all (field: Environmental Science),Q3,130,6.5,1.24,0.58
+all (field: Environmental Science),Q4,41,1.0,0.95,0.14
+all (field: Energy),Q1,294,25.5,2.13,1.42
+all (field: Energy),Q2,187,14.0,1.17,0.75
+all (field: Energy),Q3,66,8.5,0.75,0.52
+all (field: Energy),Q4,29,5.0,0.61,0.2
+all (conference papers),conference,6302,1.0,1.48,0.47

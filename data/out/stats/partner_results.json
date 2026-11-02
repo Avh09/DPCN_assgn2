@@ -1,0 +1,752 @@
+{
+ "between_our_institutes": {
+  "MANIT Bhopal vs NIT Jamshedpur": {
+   "jaccard": 0.452,
+   "weighted_jaccard": 0.614
+  },
+  "MANIT Bhopal vs NIT Silchar": {
+   "jaccard": 0.6,
+   "weighted_jaccard": 0.627
+  },
+  "NIT Jamshedpur vs NIT Silchar": {
+   "jaccard": 0.577,
+   "weighted_jaccard": 0.657
+  }
+ },
+ "MANIT Bhopal": {
+  "cross_cluster": [
+   {
+    "partner_cluster": "University/college",
+    "shared_papers": 1520,
+    "cites_from_partner": 24644,
+    "cites_to_partner": 19442,
+    "partners": 296
+   },
+   {
+    "partner_cluster": "IIT",
+    "shared_papers": 355,
+    "cites_from_partner": 3229,
+    "cites_to_partner": 10702,
+    "partners": 22
+   },
+   {
+    "partner_cluster": "NIT",
+    "shared_papers": 289,
+    "cites_from_partner": 3740,
+    "cites_to_partner": 5804,
+    "partners": 21
+   },
+   {
+    "partner_cluster": "IIIT",
+    "shared_papers": 140,
+    "cites_from_partner": 530,
+    "cites_to_partner": 1043,
+    "partners": 11
+   },
+   {
+    "partner_cluster": "CSIR",
+    "shared_papers": 98,
+    "cites_from_partner": 506,
+    "cites_to_partner": 1550,
+    "partners": 13
+   },
+   {
+    "partner_cluster": "Government lab/agency",
+    "shared_papers": 58,
+    "cites_from_partner": 426,
+    "cites_to_partner": 545,
+    "partners": 24
+   },
+   {
+    "partner_cluster": "Other",
+    "shared_papers": 51,
+    "cites_from_partner": 149,
+    "cites_to_partner": 400,
+    "partners": 17
+   },
+   {
+    "partner_cluster": "Medical/health",
+    "shared_papers": 42,
+    "cites_from_partner": 99,
+    "cites_to_partner": 162,
+    "partners": 11
+   },
+   {
+    "partner_cluster": "Industry",
+    "shared_papers": 35,
+    "cites_from_partner": 53,
+    "cites_to_partner": 98,
+    "partners": 13
+   },
+   {
+    "partner_cluster": "ICAR",
+    "shared_papers": 22,
+    "cites_from_partner": 74,
+    "cites_to_partner": 146,
+    "partners": 6
+   },
+   {
+    "partner_cluster": "IISER",
+    "shared_papers": 21,
+    "cites_from_partner": 113,
+    "cites_to_partner": 173,
+    "partners": 6
+   },
+   {
+    "partner_cluster": "Premier science inst.",
+    "shared_papers": 17,
+    "cites_from_partner": 130,
+    "cites_to_partner": 695,
+    "partners": 2
+   },
+   {
+    "partner_cluster": "DAE",
+    "shared_papers": 15,
+    "cites_from_partner": 104,
+    "cites_to_partner": 314,
+    "partners": 5
+   },
+   {
+    "partner_cluster": "ISRO",
+    "shared_papers": 6,
+    "cites_from_partner": 34,
+    "cites_to_partner": 121,
+    "partners": 3
+   },
+   {
+    "partner_cluster": "DRDO",
+    "shared_papers": 2,
+    "cites_from_partner": 6,
+    "cites_to_partner": 65,
+    "partners": 2
+   }
+  ],
+  "top_partners": [
+   {
+    "partner_inst": "National Institute of Technology Raipur",
+    "partner_cluster": "NIT",
+    "shared_papers": 85,
+    "cites_from_partner": 333,
+    "cites_to_partner": 432,
+    "jaccard_subfields": 0.655,
+    "weighted_jaccard": 0.61
+   },
+   {
+    "partner_inst": "Rajiv Gandhi Technical University",
+    "partner_cluster": "University/college",
+    "shared_papers": 67,
+    "cites_from_partner": 192,
+    "cites_to_partner": 191,
+    "jaccard_subfields": 0.581,
+    "weighted_jaccard": 0.493
+   },
+   {
+    "partner_inst": "Indian Institute of Technology Roorkee",
+    "partner_cluster": "IIT",
+    "shared_papers": 63,
+    "cites_from_partner": 497,
+    "cites_to_partner": 2513,
+    "jaccard_subfields": 0.559,
+    "weighted_jaccard": 0.557
+   },
+   {
+    "partner_inst": "Indian Institute of Information Technology Bhopal",
+    "partner_cluster": "IIIT",
+    "shared_papers": 51,
+    "cites_from_partner": 118,
+    "cites_to_partner": 46,
+    "jaccard_subfields": 0.364,
+    "weighted_jaccard": 0.349
+   },
+   {
+    "partner_inst": "Indian Institute of Technology Delhi",
+    "partner_cluster": "IIT",
+    "shared_papers": 51,
+    "cites_from_partner": 354,
+    "cites_to_partner": 2180,
+    "jaccard_subfields": 0.545,
+    "weighted_jaccard": 0.6
+   },
+   {
+    "partner_inst": "Indian Institute of Information Technology Design and Manufacturing Jabalpur",
+    "partner_cluster": "IIIT",
+    "shared_papers": 50,
+    "cites_from_partner": 210,
+    "cites_to_partner": 461,
+    "jaccard_subfields": 0.353,
+    "weighted_jaccard": 0.519
+   },
+   {
+    "partner_inst": "Amity University",
+    "partner_cluster": "University/college",
+    "shared_papers": 48,
+    "cites_from_partner": 544,
+    "cites_to_partner": 408,
+    "jaccard_subfields": 0.368,
+    "weighted_jaccard": 0.401
+   },
+   {
+    "partner_inst": "Advanced Materials and Processes Research Institute",
+    "partner_cluster": "CSIR",
+    "shared_papers": 45,
+    "cites_from_partner": 58,
+    "cites_to_partner": 303,
+    "jaccard_subfields": 0.387,
+    "weighted_jaccard": 0.323
+   },
+   {
+    "partner_inst": "University of Petroleum and Energy Studies",
+    "partner_cluster": "University/college",
+    "shared_papers": 45,
+    "cites_from_partner": 491,
+    "cites_to_partner": 269,
+    "jaccard_subfields": 0.486,
+    "weighted_jaccard": 0.524
+   },
+   {
+    "partner_inst": "Vellore Institute of Technology University",
+    "partner_cluster": "University/college",
+    "shared_papers": 43,
+    "cites_from_partner": 1101,
+    "cites_to_partner": 1034,
+    "jaccard_subfields": 0.567,
+    "weighted_jaccard": 0.62
+   }
+  ],
+  "most_similar_partners": [
+   {
+    "partner_inst": "Vellore Institute of Technology University",
+    "weighted_jaccard": 0.62,
+    "shared_papers": 43
+   },
+   {
+    "partner_inst": "National Institute of Technology Raipur",
+    "weighted_jaccard": 0.61,
+    "shared_papers": 85
+   },
+   {
+    "partner_inst": "Indian Institute of Technology Delhi",
+    "weighted_jaccard": 0.6,
+    "shared_papers": 51
+   },
+   {
+    "partner_inst": "Birla Institute of Technology, Mesra",
+    "weighted_jaccard": 0.57,
+    "shared_papers": 23
+   },
+   {
+    "partner_inst": "Jabalpur Engineering College",
+    "weighted_jaccard": 0.566,
+    "shared_papers": 26
+   }
+  ],
+  "least_similar_partners": [
+   {
+    "partner_inst": "Barkatullah University",
+    "weighted_jaccard": 0.241,
+    "shared_papers": 42
+   },
+   {
+    "partner_inst": "Academy of Scientific and Innovative Research",
+    "weighted_jaccard": 0.266,
+    "shared_papers": 22
+   },
+   {
+    "partner_inst": "Council of Scientific and Industrial Research",
+    "weighted_jaccard": 0.312,
+    "shared_papers": 29
+   }
+  ],
+  "similarity_vs_shared_papers_spearman": {
+   "rho": 0.221,
+   "p": 0.289,
+   "n": 25
+  }
+ },
+ "NIT Jamshedpur": {
+  "cross_cluster": [
+   {
+    "partner_cluster": "University/college",
+    "shared_papers": 1325,
+    "cites_from_partner": 12038,
+    "cites_to_partner": 13487,
+    "partners": 260
+   },
+   {
+    "partner_cluster": "IIT",
+    "shared_papers": 342,
+    "cites_from_partner": 1896,
+    "cites_to_partner": 7550,
+    "partners": 20
+   },
+   {
+    "partner_cluster": "NIT",
+    "shared_papers": 301,
+    "cites_from_partner": 2049,
+    "cites_to_partner": 3741,
+    "partners": 22
+   },
+   {
+    "partner_cluster": "CSIR",
+    "shared_papers": 148,
+    "cites_from_partner": 408,
+    "cites_to_partner": 1213,
+    "partners": 13
+   },
+   {
+    "partner_cluster": "IIIT",
+    "shared_papers": 104,
+    "cites_from_partner": 313,
+    "cites_to_partner": 455,
+    "partners": 9
+   },
+   {
+    "partner_cluster": "Industry",
+    "shared_papers": 71,
+    "cites_from_partner": 93,
+    "cites_to_partner": 216,
+    "partners": 14
+   },
+   {
+    "partner_cluster": "Government lab/agency",
+    "shared_papers": 61,
+    "cites_from_partner": 295,
+    "cites_to_partner": 412,
+    "partners": 14
+   },
+   {
+    "partner_cluster": "DAE",
+    "shared_papers": 33,
+    "cites_from_partner": 112,
+    "cites_to_partner": 465,
+    "partners": 7
+   },
+   {
+    "partner_cluster": "Other",
+    "shared_papers": 31,
+    "cites_from_partner": 115,
+    "cites_to_partner": 377,
+    "partners": 14
+   },
+   {
+    "partner_cluster": "Premier science inst.",
+    "shared_papers": 18,
+    "cites_from_partner": 141,
+    "cites_to_partner": 562,
+    "partners": 2
+   },
+   {
+    "partner_cluster": "Medical/health",
+    "shared_papers": 11,
+    "cites_from_partner": 21,
+    "cites_to_partner": 23,
+    "partners": 6
+   },
+   {
+    "partner_cluster": "DRDO",
+    "shared_papers": 11,
+    "cites_from_partner": 13,
+    "cites_to_partner": 92,
+    "partners": 2
+   },
+   {
+    "partner_cluster": "IISER",
+    "shared_papers": 6,
+    "cites_from_partner": 37,
+    "cites_to_partner": 124,
+    "partners": 4
+   },
+   {
+    "partner_cluster": "ICAR",
+    "shared_papers": 3,
+    "cites_from_partner": 20,
+    "cites_to_partner": 67,
+    "partners": 2
+   }
+  ],
+  "top_partners": [
+   {
+    "partner_inst": "National Metallurgical Laboratory",
+    "partner_cluster": "CSIR",
+    "shared_papers": 91,
+    "cites_from_partner": 99,
+    "cites_to_partner": 280,
+    "jaccard_subfields": 0.346,
+    "weighted_jaccard": 0.275
+   },
+   {
+    "partner_inst": "Indian Institute of Technology Dhanbad",
+    "partner_cluster": "IIT",
+    "shared_papers": 79,
+    "cites_from_partner": 272,
+    "cites_to_partner": 972,
+    "jaccard_subfields": 0.517,
+    "weighted_jaccard": 0.556
+   },
+   {
+    "partner_inst": "Vellore Institute of Technology University",
+    "partner_cluster": "University/college",
+    "shared_papers": 69,
+    "cites_from_partner": 582,
+    "cites_to_partner": 721,
+    "jaccard_subfields": 0.538,
+    "weighted_jaccard": 0.512
+   },
+   {
+    "partner_inst": "Indian Institute of Information Technology Ranchi",
+    "partner_cluster": "IIIT",
+    "shared_papers": 55,
+    "cites_from_partner": 109,
+    "cites_to_partner": 102,
+    "jaccard_subfields": 0.321,
+    "weighted_jaccard": 0.321
+   },
+   {
+    "partner_inst": "Indian Institute of Technology Kharagpur",
+    "partner_cluster": "IIT",
+    "shared_papers": 52,
+    "cites_from_partner": 228,
+    "cites_to_partner": 1066,
+    "jaccard_subfields": 0.484,
+    "weighted_jaccard": 0.49
+   },
+   {
+    "partner_inst": "Motilal Nehru National Institute of Technology",
+    "partner_cluster": "NIT",
+    "shared_papers": 52,
+    "cites_from_partner": 160,
+    "cites_to_partner": 359,
+    "jaccard_subfields": 0.667,
+    "weighted_jaccard": 0.674
+   },
+   {
+    "partner_inst": "Thapar Institute of Engineering & Technology",
+    "partner_cluster": "University/college",
+    "shared_papers": 45,
+    "cites_from_partner": 213,
+    "cites_to_partner": 583,
+    "jaccard_subfields": 0.615,
+    "weighted_jaccard": 0.528
+   },
+   {
+    "partner_inst": "National Institute of Technology Patna",
+    "partner_cluster": "NIT",
+    "shared_papers": 44,
+    "cites_from_partner": 276,
+    "cites_to_partner": 254,
+    "jaccard_subfields": 0.56,
+    "weighted_jaccard": 0.577
+   },
+   {
+    "partner_inst": "GLA University",
+    "partner_cluster": "University/college",
+    "shared_papers": 38,
+    "cites_from_partner": 219,
+    "cites_to_partner": 121,
+    "jaccard_subfields": 0.4,
+    "weighted_jaccard": 0.453
+   },
+   {
+    "partner_inst": "Tata Steel (India)",
+    "partner_cluster": "Industry",
+    "shared_papers": 37,
+    "cites_from_partner": 34,
+    "cites_to_partner": 124,
+    "jaccard_subfields": 0.409,
+    "weighted_jaccard": 0.237
+   }
+  ],
+  "most_similar_partners": [
+   {
+    "partner_inst": "Motilal Nehru National Institute of Technology",
+    "weighted_jaccard": 0.674,
+    "shared_papers": 52
+   },
+   {
+    "partner_inst": "Veer Surendra Sai University of Technology",
+    "weighted_jaccard": 0.655,
+    "shared_papers": 25
+   },
+   {
+    "partner_inst": "National Institute of Technology Srinagar",
+    "weighted_jaccard": 0.619,
+    "shared_papers": 24
+   },
+   {
+    "partner_inst": "National Institute of Technology Patna",
+    "weighted_jaccard": 0.577,
+    "shared_papers": 44
+   },
+   {
+    "partner_inst": "National Institute of Technology Rourkela",
+    "weighted_jaccard": 0.57,
+    "shared_papers": 29
+   }
+  ],
+  "least_similar_partners": [
+   {
+    "partner_inst": "Tata Steel (India)",
+    "weighted_jaccard": 0.237,
+    "shared_papers": 37
+   },
+   {
+    "partner_inst": "National Metallurgical Laboratory",
+    "weighted_jaccard": 0.275,
+    "shared_papers": 91
+   },
+   {
+    "partner_inst": "Council of Scientific and Industrial Research",
+    "weighted_jaccard": 0.283,
+    "shared_papers": 33
+   }
+  ],
+  "similarity_vs_shared_papers_spearman": {
+   "rho": -0.046,
+   "p": 0.828,
+   "n": 25
+  }
+ },
+ "NIT Silchar": {
+  "cross_cluster": [
+   {
+    "partner_cluster": "University/college",
+    "shared_papers": 2569,
+    "cites_from_partner": 40358,
+    "cites_to_partner": 34227,
+    "partners": 322
+   },
+   {
+    "partner_cluster": "NIT",
+    "shared_papers": 656,
+    "cites_from_partner": 8184,
+    "cites_to_partner": 9191,
+    "partners": 24
+   },
+   {
+    "partner_cluster": "IIT",
+    "shared_papers": 584,
+    "cites_from_partner": 5727,
+    "cites_to_partner": 15940,
+    "partners": 22
+   },
+   {
+    "partner_cluster": "CSIR",
+    "shared_papers": 90,
+    "cites_from_partner": 878,
+    "cites_to_partner": 2079,
+    "partners": 17
+   },
+   {
+    "partner_cluster": "IIIT",
+    "shared_papers": 78,
+    "cites_from_partner": 456,
+    "cites_to_partner": 488,
+    "partners": 8
+   },
+   {
+    "partner_cluster": "Premier science inst.",
+    "shared_papers": 76,
+    "cites_from_partner": 398,
+    "cites_to_partner": 1348,
+    "partners": 4
+   },
+   {
+    "partner_cluster": "Government lab/agency",
+    "shared_papers": 62,
+    "cites_from_partner": 499,
+    "cites_to_partner": 627,
+    "partners": 18
+   },
+   {
+    "partner_cluster": "Medical/health",
+    "shared_papers": 48,
+    "cites_from_partner": 119,
+    "cites_to_partner": 127,
+    "partners": 12
+   },
+   {
+    "partner_cluster": "Other",
+    "shared_papers": 37,
+    "cites_from_partner": 171,
+    "cites_to_partner": 230,
+    "partners": 9
+   },
+   {
+    "partner_cluster": "Industry",
+    "shared_papers": 27,
+    "cites_from_partner": 49,
+    "cites_to_partner": 163,
+    "partners": 17
+   },
+   {
+    "partner_cluster": "IISER",
+    "shared_papers": 13,
+    "cites_from_partner": 136,
+    "cites_to_partner": 311,
+    "partners": 6
+   },
+   {
+    "partner_cluster": "DAE",
+    "shared_papers": 7,
+    "cites_from_partner": 156,
+    "cites_to_partner": 521,
+    "partners": 4
+   },
+   {
+    "partner_cluster": "DRDO",
+    "shared_papers": 2,
+    "cites_from_partner": 3,
+    "cites_to_partner": 51,
+    "partners": 2
+   },
+   {
+    "partner_cluster": "ISRO",
+    "shared_papers": 2,
+    "cites_from_partner": 22,
+    "cites_to_partner": 108,
+    "partners": 1
+   }
+  ],
+  "top_partners": [
+   {
+    "partner_inst": "Indian Institute of Technology Guwahati",
+    "partner_cluster": "IIT",
+    "shared_papers": 137,
+    "cites_from_partner": 796,
+    "cites_to_partner": 1433,
+    "jaccard_subfields": 0.5,
+    "weighted_jaccard": 0.467
+   },
+   {
+    "partner_inst": "Mizoram University",
+    "partner_cluster": "University/college",
+    "shared_papers": 134,
+    "cites_from_partner": 920,
+    "cites_to_partner": 464,
+    "jaccard_subfields": 0.25,
+    "weighted_jaccard": 0.236
+   },
+   {
+    "partner_inst": "Koneru Lakshmaiah Education Foundation",
+    "partner_cluster": "University/college",
+    "shared_papers": 103,
+    "cites_from_partner": 984,
+    "cites_to_partner": 406,
+    "jaccard_subfields": 0.464,
+    "weighted_jaccard": 0.456
+   },
+   {
+    "partner_inst": "National Institute of Technology Durgapur",
+    "partner_cluster": "NIT",
+    "shared_papers": 100,
+    "cites_from_partner": 726,
+    "cites_to_partner": 988,
+    "jaccard_subfields": 0.552,
+    "weighted_jaccard": 0.617
+   },
+   {
+    "partner_inst": "Vellore Institute of Technology University",
+    "partner_cluster": "University/college",
+    "shared_papers": 93,
+    "cites_from_partner": 1725,
+    "cites_to_partner": 1393,
+    "jaccard_subfields": 0.536,
+    "weighted_jaccard": 0.536
+   },
+   {
+    "partner_inst": "Assam University",
+    "partner_cluster": "University/college",
+    "shared_papers": 76,
+    "cites_from_partner": 359,
+    "cites_to_partner": 294,
+    "jaccard_subfields": 0.178,
+    "weighted_jaccard": 0.205
+   },
+   {
+    "partner_inst": "Jadavpur University",
+    "partner_cluster": "University/college",
+    "shared_papers": 73,
+    "cites_from_partner": 585,
+    "cites_to_partner": 1678,
+    "jaccard_subfields": 0.457,
+    "weighted_jaccard": 0.459
+   },
+   {
+    "partner_inst": "Indian Institute of Technology Kharagpur",
+    "partner_cluster": "IIT",
+    "shared_papers": 66,
+    "cites_from_partner": 465,
+    "cites_to_partner": 2253,
+    "jaccard_subfields": 0.485,
+    "weighted_jaccard": 0.493
+   },
+   {
+    "partner_inst": "National Institute of Technology Meghalaya",
+    "partner_cluster": "NIT",
+    "shared_papers": 66,
+    "cites_from_partner": 476,
+    "cites_to_partner": 335,
+    "jaccard_subfields": 0.552,
+    "weighted_jaccard": 0.628
+   },
+   {
+    "partner_inst": "Indian Institute of Science Bangalore",
+    "partner_cluster": "Premier science inst.",
+    "shared_papers": 65,
+    "cites_from_partner": 277,
+    "cites_to_partner": 1111,
+    "jaccard_subfields": 0.484,
+    "weighted_jaccard": 0.43
+   }
+  ],
+  "most_similar_partners": [
+   {
+    "partner_inst": "Motilal Nehru National Institute of Technology",
+    "weighted_jaccard": 0.682,
+    "shared_papers": 42
+   },
+   {
+    "partner_inst": "Malaviya National Institute of Technology Jaipur",
+    "weighted_jaccard": 0.665,
+    "shared_papers": 56
+   },
+   {
+    "partner_inst": "National Institute of Technology Meghalaya",
+    "weighted_jaccard": 0.628,
+    "shared_papers": 66
+   },
+   {
+    "partner_inst": "National Institute of Technology Durgapur",
+    "weighted_jaccard": 0.617,
+    "shared_papers": 100
+   },
+   {
+    "partner_inst": "National Institute of Technology Agartala",
+    "weighted_jaccard": 0.596,
+    "shared_papers": 55
+   }
+  ],
+  "least_similar_partners": [
+   {
+    "partner_inst": "Assam University",
+    "weighted_jaccard": 0.205,
+    "shared_papers": 76
+   },
+   {
+    "partner_inst": "Mizoram University",
+    "weighted_jaccard": 0.236,
+    "shared_papers": 134
+   },
+   {
+    "partner_inst": "Tezpur University",
+    "weighted_jaccard": 0.328,
+    "shared_papers": 47
+   }
+  ],
+  "similarity_vs_shared_papers_spearman": {
+   "rho": -0.064,
+   "p": 0.763,
+   "n": 25
+  }
+ }
+}

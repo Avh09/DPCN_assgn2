@@ -1,0 +1,869 @@
+institution,name,department,designation,faculty_status,first_seen,last_seen,openalex_author_ids,papers,citations,h_index_2016_2026,match_status,source,verification
+MANIT Bhopal,Ashutosh Sharma,Architecture and Planning,Professor,current,,,A5011925762;A5113817184;A5121833126,3,1,1,matched,official faculty page,web-checked
+MANIT Bhopal,Alka Bharat,Architecture and Planning,Professor (HAG),current,,,A5018986786,12,81,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manmohan Kapshe,Architecture and Planning,Professor (HAG),current,,,A5070259036,13,256,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Anupama Sharma,Architecture and Planning,Professor,current,,,A5101605829;NAME:anupama sharma,5,61,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Krishna K Dhote,Architecture and Planning,Professor (HAG) & HOD,current,,,A5004729152,7,25,3,matched,official faculty page,checked
+MANIT Bhopal,Yogesh K. Garg,Architecture and Planning,Professor,current,,,A5103175904;A5121504099,10,25,3,matched,official faculty page,web-checked
+MANIT Bhopal,Jagdish Singh,Architecture and Planning,Professor,current,,,NAME:jagdish singh;A5049725607,3,6,2,matched,official faculty page,checked
+MANIT Bhopal,Vinay Mohan Das,Architecture and Planning,Professor,current,,,A5031417375,6,7,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Nakul Dhagat,Architecture and Planning,Professor,current,,,A5085051984,2,6,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Charumitra Kapshe,Architecture and Planning,Professor,current,,,A5060749376,2,5,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Preeti Onkar,Architecture and Planning,Professor,current,,,A5008115207,7,24,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rajat Soni,Architecture and Planning,Associate Professor,current,,,A5069069663;NAME:rajat soni,5,18,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Seemi Ahmed,Architecture and Planning,Associate Professor,current,,,A5059678527;A5097633557,2,0,0,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Supriya Vyas,Architecture and Planning,Associate Professor,current,,,A5051770401,10,38,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rajshree Kamat,Architecture and Planning,Associate Professor,current,,,A5035268953;A5010159541;NAME:rajshree kamat,7,3,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Navneet Munoth,Architecture and Planning,Associate Professor,current,,,A5049665993,10,20,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Anuj Jaiswal,Architecture and Planning,Associate Professor,current,,,A5053787282;NAME:anuj jaiswal,13,58,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Ar. Savita Subherwal Raje,Architecture and Planning,Associate Professor,current,,,,0,0,0,not_found,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sonia Taneja,Architecture and Planning,Associate Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Kavita Dehalwar,Architecture and Planning,Assistant Professor,current,,,A5037336479;NAME:kavita dehalwar,25,135,7,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Surabhi Mehrotra,Architecture and Planning,Assistant Professor,current,,,A5066546260,20,117,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,NEHA PRANAV KOLHE,Architecture and Planning,Assistant Professor,current,,,A5065102244,6,30,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Bulbul Shukla,Architecture and Planning,Assistant Professor,current,,,A5089845634,2,4,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rahul Tiwari,Architecture and Planning,Assistant Professor,current,,,A5085293711;A5087710342;NAME:rahul tiwari,13,22,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Anugrah Anilkumar Nagaich,Architecture and Planning,Assistant Professor,current,,,A5026030700;A5155472688,5,9,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Arshi Parashar,Architecture and Planning,Assistant Professor (Grade -I),current,,,A5047924123,4,6,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Vicky Lalramsangi,Architecture and Planning,Assistant Professor,current,,,A5114401952,3,12,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Naveen Prashar,Architecture and Planning,Assistant Professor (Grade-II),current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Premjeet Das Gupta,Architecture and Planning,Assistant Professor (Grade-I),current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Nikhil Bhandari,Architecture and Planning,Assistant Professor (Grade-II),current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Ar. Arpana Kumari,Architecture and Planning,Assistant Professor (Grade-II),current,,,,0,0,0,not_found,official faculty page,manually checked
+MANIT Bhopal,Rahul M Shrivastava,Biological Science and Engineering,Professor,current,,,A5048507138,21,295,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Khushhali M. Pandey,Biological Science and Engineering,Associate Professor & Head of the Department,current,,,A5048387116;A5130387939;A5050306334;NAME:khushhali menaria pandey,23,46,4,matched,official faculty page,web-checked
+MANIT Bhopal,Shivendra K Chaurasiya,Biological Science and Engineering,Associate Professor,current,,,A5020422856;NAME:shivendra k. chaurasiya,11,118,6,matched,official faculty page,web-checked
+MANIT Bhopal,Prerak Gupta,Biological Science and Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,manually checked
+MANIT Bhopal,Lakhan Kumar,Biological Science and Engineering,Assistant Professor - Temporary,current,,,,0,0,0,not_found,official faculty page,manually checked
+MANIT Bhopal,Karunesh Kumar Shukla,Civil Engineering,Professor & Director,current,,,A5101480715,2,1,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,S. K. Dubey,Civil Engineering,Professor,current,,,A5026654655,12,8,2,matched,official faculty page,checked
+MANIT Bhopal,Anil Kumar Sharma,Civil Engineering,Professor,current,,,A5035479354,2,28,2,matched,official faculty page,checked
+MANIT Bhopal,Vishnu Prasad,Civil Engineering,Professor,current,,,A5024127048;A5121751088,42,566,10,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manjeet Singh Hora,Civil Engineering,Professor,current,,,A5027602373,15,76,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Pradeep Kumar Jain,Civil Engineering,Professor,current,,,A5101785655;A5061858745;NAME:pradeep kumar jain,18,187,7,matched,official faculty page,checked
+MANIT Bhopal,S. K. Katiyar,Civil Engineering,Professor,current,,,A5052051562;A5125108457,12,195,5,matched,official faculty page,checked
+MANIT Bhopal,P. K. Agrawal,Civil Engineering,Professor,current,,,A5130978241;NAME:p.k. agarwal;NAME:dr. p.k. agarwal;NAME:p. k. agarwal,11,40,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Mukul Kulshrestha,Civil Engineering,Professor (HAG),current,,,A5016214796;A5137019232,23,93,7,matched,official faculty page,web-checked
+MANIT Bhopal,M.S. Chauhan,Civil Engineering,Professor & Head of the Department,current,,,A5057386663,28,482,8,matched,official faculty page,web-checked
+MANIT Bhopal,Jyoti Sarup,Civil Engineering,Professor,current,,,A5078229574,14,158,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,H. L.Tiwari,Civil Engineering,Professor,current,,,A5066574787;A5121966877,40,273,11,matched,official faculty page,web-checked
+MANIT Bhopal,Abhay Sharma,Civil Engineering,Associate Professor,current,,,A5089607013,7,33,4,matched,official faculty page,web-checked
+MANIT Bhopal,Suneet Kaur,Civil Engineering,Associate Professor,current,,,A5102928505;A5122571066;NAME:s. kaur;NAME:suneet kaur,13,11,2,matched,official faculty page,web-checked
+MANIT Bhopal,Harsangeet Kaur,Civil Engineering,Associate Professor,current,,,A5040536632,2,4,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Mahendra Kumar Choudhary,Civil Engineering,Professor,current,,,A5005344048;A5152913686;NAME:m. k. choudhary,26,118,7,matched,official faculty page,checked
+MANIT Bhopal,Kamal Singh,Civil Engineering,Associate Professor,current,,,A5060242509;A5108147549;A5129214021;A5104035907;NAME:kamal singh,14,41,2,matched,official faculty page,manually checked
+MANIT Bhopal,Siddhartha Rokade,Civil Engineering,Professor,current,,,A5045496333;A5113701791;NAME:siddhartha rokade,19,46,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Kishan Dharavath,Civil Engineering,Associate Professor,current,,,A5102988375;A5044856013;A5110443015,23,397,9,matched,official faculty page,checked
+MANIT Bhopal,Rakesh Kumar,Civil Engineering,Professor,current,,,A5100428871,11,45,4,matched,official faculty page,checked
+MANIT Bhopal,Ajay Thawait,Civil Engineering,Associate Professor,current,,,A5012756857,4,25,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Raman Nateriya,Civil Engineering,Associate Professor,current,,,A5065761121;A5072520935,25,234,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Priyanka Dhurvey,Civil Engineering,Associate Professor,current,,,A5042798145,29,93,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Vivek Garg,Civil Engineering,Associate Professor,current,,,A5101972912;A5101946937;NAME:vivek garg,9,25,2,matched,official faculty page,web-checked
+MANIT Bhopal,Neeraj Tiwari,Civil Engineering,Associate Professor,current,,,A5011397760,7,5,1,matched,official faculty page,web-checked
+MANIT Bhopal,Rajput S. P. S,Civil Engineering,Associate Professor,current,,,A5068539618,29,212,7,matched,official faculty page,web-checked
+MANIT Bhopal,Juned Raheem,Civil Engineering,Associate Professor,current,,,A5033889095,11,64,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rutuja M. Chavan,Civil Engineering,Assistant Professor,current,,,A5013830964,13,93,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Pritikana Das,Civil Engineering,Assistant Professor,current,,,A5088106735;NAME:pritikana das,22,153,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Bivina G R,Civil Engineering,Assistant Professor,current,,,A5112236855,26,91,4,matched,official faculty page,web-checked
+MANIT Bhopal,Rajesh Kumar Mahato,Civil Engineering,Assistant Professor,current,,,A5000282910,6,15,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Priyamitra Munoth,Civil Engineering,Assistant Professor,current,,,A5037097263,6,8,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Hasthi Venkateswarlu,Civil Engineering,Assistant Professor,current,,,A5072377323,11,21,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Bandaru Goutham Rajeev Gandhi,Civil Engineering,Assistant Professor,current,,,A5021442524,2,1,1,matched,official faculty page,checked
+MANIT Bhopal,Vikas Poonia,Civil Engineering,Assistant Professor,current,,,A5007493204,15,126,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Muhammed Hashid,Civil Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Aniket Chanda,Civil Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Vijaya Kumar Bulasara,Chemical Engineering,Associate Professor,current,,,A5060507037,2,17,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,S. Suresh,Chemical Engineering,Associate Professor,current,,,A5100667837,35,873,14,matched,official faculty page,web-checked
+MANIT Bhopal,Sunder Lal Pal,Chemical Engineering,Associate Professor & HOD,current,,,A5046871980;A5126115768,24,254,9,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Bharatkumar K. Modhera,Chemical Engineering,Associate Professor,current,,,A5053995311,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Dharmendra Pandey,Chemical Engineering,Assistant Professor,current,,,NAME:dharmendra pandey,2,6,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Jay Mant Jha,Chemical Engineering,Assistant Professor,current,,,A5060874410,16,361,10,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Kanchapogu Suresh,Chemical Engineering,Assistant Professor,current,,,A5057044841,7,63,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sumit H. Dhawane,Chemical Engineering,Assistant Professor,current,,,A5066410507;NAME:sumit h. dhawane,10,129,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rajeev Parmar,Chemical Engineering,Assistant Professor,current,,,A5073196595,8,18,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Subhajit Patra,Chemical Engineering,Assistant Professor,current,,,A5102727123,6,37,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rupak Kishor,Chemical Engineering,Assistant Professor,current,,,A5077135063,8,51,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Nabendu Paul,Chemical Engineering,Assistant Professor,current,,,A5074502641;A5133530779,5,27,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Akash M Chandran,Chemical Engineering,Assistant Professor Grade-II,current,,,A5045084969;A5118703906;A5157987070,7,26,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Kajal Mishra,Chemical Engineering,Assistant Professor Grade-II,current,,,NAME:k. mishra;A5035658875,3,12,1,matched,official faculty page,manually checked
+MANIT Bhopal,Maurya Gyanprakash,Chemical Engineering,Assistant Professor Grade-II,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Meenu Chawla,Computer Science and Engineering,Professor,current,,,A5078079341,51,471,11,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Nilay Khare,Computer Science and Engineering,Professor,current,,,A5030501294,73,953,12,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,R. K. Pateriya,Computer Science and Engineering,Professor,current,,,A5041506920;A5156286592;A5155874722,69,526,13,matched,official faculty page,web-checked
+MANIT Bhopal,Deepak Singh Tomar,Computer Science and Engineering,Professor,current,,,A5074527311,62,482,10,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sanyam Shukla,Computer Science and Engineering,Associate Professor,current,,,A5042467735,71,1901,17,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manish Pandey,Computer Science and Engineering,Associate Professor,current,,,A5101884159;NAME:manish pandey;A5123909662;A5138809572;A5141203639;A5138693664;A5140884198,68,638,12,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manasi Gyanchandani,Computer Science and Engineering,Associate Professor,current,,,A5023852902;A5044886542,70,1154,13,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Jaytrilok Choudhary,Computer Science and Engineering,Associate Professor,current,,,A5032170911,67,843,13,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Vasudev Dehalwar,Computer Science and Engineering,Associate Professor,current,,,A5089843731,33,374,7,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sweta Jain,Computer Science and Engineering,Associate Professor,current,,,A5043071085;A5121450698,49,1417,14,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rajesh Wadhwani,Computer Science and Engineering,Associate Professor,current,,,A5057510037;NAME:rajeshwadhvani;A5045681745,61,852,14,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Dhirendra Pratap Singh,Computer Science and Engineering,Associate Professor,current,,,A5054880944;NAME:dhirendra pratap singh,69,665,11,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Akhtar Rasool,Computer Science and Engineering,Associate Professor,current,,,A5078144626;NAME:akhtar rasool,87,921,14,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Mitul Kumar Ahirwal,Computer Science and Engineering,Associate Professor,current,,,A5065486002,67,578,13,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sri Khetwat Saritha,Computer Science and Engineering,Associate Professor,current,,,A5033858041;A5031497862;A5090712353,39,171,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Jyoti Bharti,Computer Science and Engineering,Assistant Professor,current,,,A5087954217;NAME:jyoti bharti;A5001211014,45,351,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Namita Tiwari,Computer Science and Engineering,Assistant Professor,current,,,A5038650263,40,202,9,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Bholanath Roy,Computer Science and Engineering,Assistant Professor,current,,,A5014667345,26,148,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Vijay Bhaskar Semwal,Computer Science and Engineering,Assistant Professor,current,,,A5064062259,88,2715,23,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Pragati Agrawal,Computer Science and Engineering,Assistant Professor,current,,,A5039694404;NAME:pragati agrawal,22,89,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Surendra Singh,Computer Science and Engineering,Assistant Professor,current,,,A5102801989;A5123710868;A5135857245,6,13,1,matched,official faculty page,checked
+MANIT Bhopal,Vaibhav Soni,Computer Science and Engineering,Assistant Professor,current,,,A5087358758;A5053740103,29,179,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Vikram Garg,Computer Science and Engineering,Assistant Professor,current,,,NAME:vikram garg,3,0,0,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Yadunath Pathak,Computer Science and Engineering,Assistant Professor,current,,,A5016524668,13,10,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Shweta Bhandari,Computer Science and Engineering,Assistant Professor,current,,,A5102724757,3,17,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Ashish Kumar Sahu,Computer Science and Engineering,Assistant Professor,current,,,A5040242633;A5072948556;NAME:aashish sahu;NAME:ashish kumar sahu,6,10,2,matched,official faculty page,checked
+MANIT Bhopal,Akash Sinha,Computer Science and Engineering,Assistant Professor,current,,,A5056131165,7,4,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Ramesh Kumar Thakur,Computer Science and Engineering,Assistant Professor,current,,,A5048990404,6,0,0,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manisha Singh,Computer Science and Engineering,Assistant Professor,current,,,A5100693824,2,5,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Pankaj Kumar,Computer Science and Engineering,Assistant Professor,current,,,A5101414494,5,104,1,matched,official faculty page,checked
+MANIT Bhopal,Archana Balmik,Computer Science and Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Medipelly Rampavan,Computer Science and Engineering,Assistant Professor,current,,,A5000014787,2,7,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rajesh Kumar Nema,Electrical Engineering,Professor,current,,,A5102765471;A5063765998,47,885,13,matched,official faculty page,web-checked
+MANIT Bhopal,Yogendra Kumar,Electrical Engineering,Professor,current,,,NAME:yogendra kumar,30,151,6,matched,official faculty page,web-checked
+MANIT Bhopal,Manisha Dubey,Electrical Engineering,Professor,current,,,A5018824781;A5102193647,32,309,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Savita Nema,Electrical Engineering,Professor,current,,,A5089562654,55,1637,16,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Shailendra Jain,Electrical Engineering,Professor (HAG),current,,,A5090001638;NAME:shailendra jain,39,503,12,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Tripta Thakur,Electrical Engineering,Professor,current,,,A5007195737,43,462,13,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,N. P. Patidar,Electrical Engineering,Professor,current,,,A5103119013;A5065565354,56,498,10,matched,official faculty page,web-checked
+MANIT Bhopal,Sushma Gupta,Electrical Engineering,Professor,current,,,A5101674107;A5122709919,90,1820,18,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sanjeev Singh,Electrical Engineering,:,current,,,A5100610090;A5128360316,51,208,8,matched,official faculty page,checked
+MANIT Bhopal,Anoop Arya,Electrical Engineering,Associate Professor,current,,,A5040120692;A5083919443;NAME:anoop arya,53,461,11,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,SURESH KUMAR GAWRE,Electrical Engineering,Associate Professor,current,,,A5061499948;A5046574731,63,538,12,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Priyanka Paliwal,Electrical Engineering,Associate Professor,current,,,A5007128984;NAME:priyanka paliwal,81,725,15,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Pankaj Swarnkar,Electrical Engineering,Associate Professor,current,,,A5045017090;A5054559319,57,519,14,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Amit Ojha,Electrical Engineering,AssociateProfessor,current,,,A5074865705;A5135895681,52,528,12,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rishi Kumar Singh,Electrical Engineering,Assistant Professor,current,,,A5041133074;A5136532134;NAME:rishi kumar singh,27,192,10,matched,official faculty page,web-checked
+MANIT Bhopal,Mukesh Kirar,Electrical Engineering,Associate Professor,current,,,A5009599535,50,213,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Giribabu Dyanamina,Electrical Engineering,Associate Professor,current,,,A5064960914;A5092567361;A5104092680,41,219,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,M. Raju,Electrical Engineering,Assistant Professor,current,,,A5030232349,30,188,9,matched,official faculty page,checked
+MANIT Bhopal,Punjan Dohare,Electrical Engineering,Assistant Professor,current,,,A5058982730,5,2,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Chaduvula Hemanth,Electrical Engineering,Assistant Professor,current,,,A5069170425,5,2,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,GUMPU SRINIVASULU,Electrical Engineering,Assistant Professor,current,,,A5089579008;A5109286582;A5092102068;A5104031151,12,3,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Siddhartha Deb Roy,Electrical Engineering,Assistant Professor,current,,,A5050877932,15,50,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manoja Kumar Behera,Electrical Engineering,Assistant Professor,current,,,A5019011333,1,1,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,T. S. Bheemraj,Electrical Engineering,Assistant Professor,current,,,A5039240468,2,2,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Prabhakaran K K,Electrical Engineering,Assistant Professor,current,,,A5053255749;A5136210483,2,3,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Saurabh Shukla,Electrical Engineering,Assistant Professor,current,,,A5135441843,1,0,0,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Subrat Kumar Swain,Electrical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Anil Jakhar,Electrical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,manually checked
+MANIT Bhopal,Lokesh Vankudoth,Electrical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,manually checked
+MANIT Bhopal,Aditya Goel,Electronics and Communication Engineering,Professor (HAG),current,,,A5017811320;A5125709699,40,290,10,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Ajay Somkuwar,Electronics and Communication Engineering,Professor,current,,,A5057564341,12,42,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Madhu Shandilya,Electronics and Communication Engineering,Professor,current,,,A5017844316,32,239,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,R. K. Baghel,Electronics and Communication Engineering,Professor,current,,,A5044450960;A5025995967,41,266,11,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Arvind Rajawat,Electronics and Communication Engineering,Professor,current,,,A5057233791,20,71,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Kavita Khare,Electronics and Communication Engineering,Professor,current,,,A5083830820,51,304,9,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Jyoti Singhai,Electronics and Communication Engineering,Professor,current,,,A5083375784,32,390,10,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,R. N. Yadav,Electronics and Communication Engineering,Professor,current,,,A5065530636;A5125000810,30,788,10,matched,official faculty page,checked
+MANIT Bhopal,J. S. Yadav,Electronics and Communication Engineering,Professor,current,,,A5033027664,18,145,6,matched,official faculty page,web-checked
+MANIT Bhopal,Dheeraj K. Agarwal,Electronics and Communication Engineering,Associate Professor & HOD,current,,,A5043401934;NAME:dheeraj agarwal;A5109467291;A5065951273;A5013679365;A5102309539;NAME:dheeraj k agarwal;NAME:dheeraj k. agarwal,56,869,16,matched,official faculty page,web-checked
+MANIT Bhopal,Lalita Gupta,Electronics and Communication Engineering,Associate Professor,current,,,A5031312635,36,620,7,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Laxmi Kumre,Electronics and Communication Engineering,Associate Professor,current,,,A5027261314,22,209,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Alpana Pandey,Electronics and Communication Engineering,Associate Professor,current,,,A5079515429,23,143,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sangeeta Nakhate,Electronics and Communication Engineering,Associate Professor,current,,,A5044146748;A5051795264,35,104,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,D. K. Raghuvanshi,Electronics and Communication Engineering,Associate Professor,current,,,A5112614724;A5130009967,14,449,5,matched,official faculty page,web-checked
+MANIT Bhopal,Vijayshri Chaurasia,Electronics and Communication Engineering,Associate Professor,current,,,A5061120057;NAME:vijayshri chaurasia,68,839,16,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Varun Bajaj,Electronics and Communication Engineering,Associate Professor,current,,,A5059215546,26,208,9,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Om Prakash Meena,Electronics and Communication Engineering,Associate Professor,current,,,A5035181746;A5129778356,15,59,4,matched,official faculty page,checked
+MANIT Bhopal,Rahul Kumar Chaurasiya,Electronics and Communication Engineering,Associate Professor,current,,,A5039417714,48,222,10,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manish Kashyap,Electronics and Communication Engineering,Assistant professor,current,,,A5012487492,15,158,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Akkala Subba Rao,Electronics and Communication Engineering,Assistant Professor,current,,,A5091438109,8,0,0,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Atul Kumar,Electronics and Communication Engineering,Assistant Professor,current,,,A5100918578,15,98,4,matched,official faculty page,checked
+MANIT Bhopal,Sandeep Patel,Electronics and Communication Engineering,Assistant Professor Grade - I,current,,,A5104034634;A5147419962,4,4,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Gaurav Upadhyay,Electronics and Communication Engineering,Assistant Professor,current,,,A5023822652,6,1,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rahul Pal,Electronics and Communication Engineering,Assistant Professor,current,,,A5031624168;A5017293369,4,1,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Suryakant Gautam,Electronics and Communication Engineering,Assistant Professor,current,,,A5037833249,5,3,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Vibhuti Chauhan,Electronics and Communication Engineering,Assistant Professor,current,,,A5083166847,2,15,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,K. Srinivasarao,Electronics and Communication Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,manually checked
+MANIT Bhopal,Vivek Pratap Singh,Electronics and Communication Engineering,Assistant Professor,current,,,A5100785603,2,2,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Santosh Kumar Singh,Electronics and Communication Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,manually checked
+MANIT Bhopal,TARUN KUMAR GUPTA,Electronics and Communication Engineering,Assistant Professor,current,,,A5033819723,49,521,13,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sanjay Srivastava,Materials and Metallurgical Engineering,Professor,current,,,A5101487818;A5103593402,31,260,10,matched,official faculty page,manually checked
+MANIT Bhopal,C.Sasikumar,Materials and Metallurgical Engineering,Associate Professor,current,,,A5080732535,45,288,10,matched,official faculty page,web-checked
+MANIT Bhopal,Ramesh Kumar Nayak,Materials and Metallurgical Engineering,Associate Professor & HOD,current,,,A5010884528;NAME:ramesh kumar nayak;A5122380588,54,863,17,matched,official faculty page,checked
+MANIT Bhopal,Mangesh Lodhe,Materials and Metallurgical Engineering,Assistant Professor,current,,,A5039861554,11,64,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Jayashree Baral,Materials and Metallurgical Engineering,Assistant Professor,current,,,A5076519711,11,37,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manmath Kumar Dash,Materials and Metallurgical Engineering,Assistant Professor,current,,,A5085265977;A5143954778,4,3,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Ramkishor Anant,Materials and Metallurgical Engineering,Assistant Professor,current,,,A5048708524;NAME:ramkishor anant,25,119,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Akash Oraon,Materials and Metallurgical Engineering,Assistant Professor,current,,,A5061617183,2,0,0,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Abhilash Gunti,Materials and Metallurgical Engineering,Assistant Professor,current,,,A5042553756,1,1,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Nikhil Khatavkar,Materials and Metallurgical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,K VISHWANATH,Materials and Metallurgical Engineering,Assistant Professor,current,,,NAME:k. vishwanath,1,0,0,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,R.M.Sarviya,Mechanical Engineering,Professor,current,,,A5018232677,43,925,16,matched,official faculty page,web-checked
+MANIT Bhopal,Siraj Ahmed,Mechanical Engineering,Professor,current,,,A5038532273;A5126463871;NAME:ahmed siraj,31,700,12,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,J. L. Bhagoria,Mechanical Engineering,Professor (HAG),current,,,A5081633803;A5134369499,23,268,10,matched,official faculty page,checked
+MANIT Bhopal,Satish Pal Singh Rajput,Mechanical Engineering,Professor (HAG),current,,,A5013103708;NAME:s.p.s. rajput,30,346,10,matched,official faculty page,checked
+MANIT Bhopal,Rajesh Gupta,Mechanical Engineering,Professor,current,,,A5051034719;NAME:rajesh gupta,20,477,11,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,K. R. Aharwal,Mechanical Engineering,Professor& (Head of The Department),current,,,A5081187299,15,163,6,matched,official faculty page,web-checked
+MANIT Bhopal,Rajesh Purohit,Mechanical Engineering,Professor,current,,,A5007836080,169,3272,30,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,C. Murali Krishna,Mechanical Engineering,Professor,current,,,A5017545304,26,168,8,matched,official faculty page,web-checked
+MANIT Bhopal,Vimlesh Kumar Soni,Mechanical Engineering,Professor,current,,,A5009215334,9,115,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Atul Lanjewar,Mechanical Engineering,Professor,current,,,A5002925456;NAME:atul lanjewar,27,623,14,matched,official faculty page,web-checked
+MANIT Bhopal,Akhilesh Barve,Mechanical Engineering,Professor,current,,,A5056430818,29,678,16,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Vilas Warudkar,Mechanical Engineering,Professor,current,,,A5034932738,38,808,13,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manoj Arya,Mechanical Engineering,Associate Professor,current,,,A5065027430;NAME:manoj arya,25,85,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,R. S. Rana,Mechanical Engineering,Associate Professor,current,,,A5109844045;A5111033199;A5071057460,98,2872,28,matched,official faculty page,checked
+MANIT Bhopal,Ajay Pandey,Mechanical Engineering,Associate Professor,current,,,A5044039623;A5133007493;A5101587500,26,479,9,matched,official faculty page,web-checked
+MANIT Bhopal,Amit Telang,Mechanical Engineering,Associate Professor,current,,,A5051336940;NAME:a. telang,24,427,12,matched,official faculty page,web-checked
+MANIT Bhopal,Alok Singh,Mechanical Engineering,Associate Professor,current,,,A5101826137,32,994,16,matched,official faculty page,checked
+MANIT Bhopal,Tikendra Nath Verma,Mechanical Engineering,Associate Professor,current,,,A5018744688;NAME:tikendra nath verma,145,4256,37,matched,official faculty page,web-checked
+MANIT Bhopal,Vishal Parashar,Mechanical Engineering,Associate Professor,current,,,A5040867644,21,290,9,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Amit Suhane,Mechanical Engineering,Associate Professor,current,,,A5052329817,29,651,12,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Akhilesh Soni,Mechanical Engineering,Assistant Professor,current,,,A5036567044,10,496,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manish Vishwakarma,Mechanical Engineering,Associate Professor,current,,,A5067005405;A5133061182,16,1844,8,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Arvind Kumar,Mechanical Engineering,Associate Professor,current,,,A5081740210,11,227,9,matched,official faculty page,checked
+MANIT Bhopal,Ajay Verma,Mechanical Engineering,Associate Professor,current,,,A5083669395;NAME:ajay verma;A5100626168;A5140508195,22,482,8,matched,official faculty page,web-checked
+MANIT Bhopal,Vinod Yadav,Mechanical Engineering,:,current,,,A5079989430;A5133024012;NAME:v. yadav,29,102,6,matched,official faculty page,checked
+MANIT Bhopal,Mohammad Taufik,Mechanical Engineering,:,current,,,A5056100976;A5066795314;NAME:mohammad taufik,59,550,12,matched,official faculty page,checked
+MANIT Bhopal,Sudhanshu Kumar,Mechanical Engineering,:,current,,,A5021497533;A5021990756;A5133312546;A5143947172;NAME:sudhanshu kumar,20,81,4,matched,official faculty page,checked
+MANIT Bhopal,Abhinav Varshney,Mechanical Engineering,Assistant Professor,current,,,A5079862227;NAME:a. varshney,14,124,7,matched,official faculty page,checked
+MANIT Bhopal,Narendra Gajbhiye,Mechanical Engineering,Assistant Professor,current,,,A5081212488;NAME:narendra gajbhiye,16,32,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Ashish Das,Mechanical Engineering,Assistant Professor Grade-I,current,,,A5004476213,2,1,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Vijay Panchore,Mechanical Engineering,Assistant Professor,current,,,A5041580037,19,59,5,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Vikash Kumar,Mechanical Engineering,Assistant Professor,current,,,A5083743131;NAME:vikash kumar,25,183,7,matched,official faculty page,checked
+MANIT Bhopal,Emon Barua,Mechanical Engineering,Assistant Professor,current,,,A5043156812,4,10,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,N. Jayanth,Mechanical Engineering,Assistant Professor,current,,,A5084513412,1,0,0,matched,official faculty page,web-checked
+MANIT Bhopal,Jitendra Adhikari,Mechanical Engineering,Assistant Professor,current,,,A5073547747,8,19,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Aningi Mokhalingam,Mechanical Engineering,Assistant Professor,current,,,A5082623399,1,2,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Soumya Ranjan Guru,Mechanical Engineering,Assistant Professor,current,,,A5027182561,3,0,0,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Lal Singh Devsoth,Mechanical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Kuldeep Yadav,Mechanical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Asish Kumar Panda,Mechanical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Krishnan S,Mechanical Engineering,Assistant Professor,current,,,A5001417775;A5044361202,2,0,0,matched,official faculty page,web-checked
+MANIT Bhopal,Savita Dixit,Chemistry,HAG Professor,current,,,A5024132117;A5101802815,50,750,14,matched,official faculty page,checked
+MANIT Bhopal,Alok Mittal,Chemistry,Professor,current,,,A5074381212,24,1843,17,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Amit Dubey,Chemistry,Professor,current,,,NAME:amit dubey;A5135751850;A5103270932;NAME:a. dubey,14,39,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rampal Pandey,Chemistry,Associate Professor & (HOD),current,,,A5054304542,14,80,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,JYOTI MITTAL,Chemistry,Assistant Professor,current,,,A5041004629,32,2788,21,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Dharmendar Kumar Sharma,Chemistry,Assistant Professor,current,,,A5101650366,4,49,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sukanti Behera,Chemistry,Assistant Professor,current,,,A5087019956,3,14,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sarvesh Pandey,Chemistry,Assistant Professor,current,,,A5035944817,26,322,11,matched,official faculty page,web-checked
+MANIT Bhopal,Harjinder Singh,Chemistry,Assistant Professor,current,,,A5133669344;NAME:harjinder singh,2,1,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Soumya Mukherjee,Chemistry,Assistant Professor,current,,,A5118899728;A5140961493,10,8,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Namita Srivastava,Mathematics; Bioinformatics,Professor (HAG),current,,,A5064777550;A5123746992,21,506,7,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Madhvi Shakya,Mathematics; Bioinformatics,Professor,current,,,A5017479062;NAME:madhvi shakya,12,62,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Usha Chouhan,Mathematics; Bioinformatics,Professor & Head (MBC),current,,,A5038684358;NAME:usha chauhan,40,156,6,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Chandan Kumar Verma,Mathematics; Bioinformatics,Professor,current,,,A5033023758;A5100012418,48,511,9,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Manoj Jha,Mathematics; Bioinformatics,Associate Professor,current,,,A5101653368;A5121032740;A5037436980;NAME:manoj jha,21,138,5,matched,official faculty page,web-checked
+MANIT Bhopal,Pushpendra Kumar,Mathematics,Assistant Professor,current,,,A5037347792,26,80,5,matched,official faculty page,web-checked
+MANIT Bhopal,Dheerendra Mishra,Mathematics,Assistant Professor,current,,,A5010912349;NAME:dheerendra mishra,58,525,13,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Kuldeep Singh Yadav,Mathematics,Assistant Professor,current,,,A5008346286;A5044048588,4,7,1,matched,official faculty page,checked
+MANIT Bhopal,Suman Das,Mathematics,Assistant Professor,current,,,A5139225566,1,0,0,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Subhankar Dutta,Mathematics,Assistant Professor,current,,,A5013067939,15,33,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Priyabrata Mandal,Mathematics,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Sujoy Das,Bioinformatics; Computer Applications,Professor,current,,,A5103269395,11,77,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Sanjay Sharma,Computer Applications,Professor,current,,,A5100667460;A5154408916,18,118,7,matched,official faculty page,checked
+MANIT Bhopal,Amit Bhagat,Computer Applications,Associate Professor,current,,,A5019342905,30,289,10,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Ghanshyam Singh Thakur,Computer Applications,Associate Professor,current,,,A5090510208;A5157668844,21,150,7,matched,official faculty page,checked
+MANIT Bhopal,Jay Kumar Jain,Computer Applications,Assistant Professor,current,,,A5075551656;A5138681341,22,100,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Jitendra Kumar,Computer Applications,Assistant Professor (Gr-1),current,,,A5038146323,13,129,4,matched,official faculty page,checked
+MANIT Bhopal,M. M. Malik,Physics,Professor (HAG),current,,,A5033235977;A5133506004;NAME:m.m. malik,52,1071,16,matched,official faculty page,web-checked
+MANIT Bhopal,Rajnish Kurchania,Physics,Professor & Head,current,,,A5027528362;NAME:rajnish kurchania,60,1032,18,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Fozia Z. Haque,Physics,Associate Professor,current,,,A5085089279,65,1629,20,matched,official faculty page,checked
+MANIT Bhopal,Piyush Kumar Patel,Physics,Assistant Professor,current,,,A5039065444,28,799,12,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Jyoti Rani,Physics,Assistant Professor,current,,,A5082561677;A5122808927;A5002746061,17,239,8,matched,official faculty page,checked
+MANIT Bhopal,Santanu Pakhira,Physics,Assistant Professor (Grade I),current,,,A5063644198,11,29,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Subhash Singh,Physics,Assistant Professor,current,,,A5005399472;A5062068505,5,1,1,matched,official faculty page,checked
+MANIT Bhopal,Sadhana Singh,Physics,Assistant Professor Grade-II,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Akanksha Gupta,Physics,Assistant Professor,current,,,A5062238482,1,1,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,RAMARAJAN R,Physics,Assistant Professor (Grade-II),current,,,A5089316200,6,20,3,matched,official faculty page,web-checked
+MANIT Bhopal,Sumit Ghosh,Physics,Assistant Professor Grade-II,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Sachin Verma,Physics,Assistant Professor Grade-II,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Vinita Mohindra,Humanities and Social Sciences,Professor,current,,,A5010569861,11,143,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Anjuli Jain,Humanities and Social Sciences,Associate Professor,current,,,A5134969026;NAME:a. jain;NAME:anjuli jain,5,2,1,matched,official faculty page,web-checked
+MANIT Bhopal,Pushpender Yadav,Humanities and Social Sciences,Associate Professor & Head of the Department,current,,,A5052366435,22,28,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,ANJALI DHENGLE,Humanities and Social Sciences,Assistant Professor,current,,,A5016820477,6,17,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,NAMRATA,Humanities and Social Sciences,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Ashis Kumar Pradhan,Humanities and Social Sciences,Assistant Professor,current,,,A5002163459,37,565,15,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Madan Dhanora,Humanities and Social Sciences,Assistant Professor,current,,,A5060763885,7,3,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Ashish Gupta,Humanities and Social Sciences,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+MANIT Bhopal,Shuchi Srivastava,Management Studies,Professor,current,,,A5075074973;A5111323413,7,3,1,matched,official faculty page,checked
+MANIT Bhopal,Amit Banerji,Management Studies,Professor,current,,,A5020517285;NAME:amit banerji,15,44,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Priyanka Verma,Management Studies,Associate Professor,current,,,NAME:priyanka verma;A5028148341;A5117290879;NAME:dr. priyanka verma,22,843,9,matched,official faculty page,web-checked
+MANIT Bhopal,Nenavath Sreenu,Management Studies,Associate Professor & HOD,current,,,A5005632902;NAME:nenavath sreenu,47,742,15,matched,official faculty page,web-checked
+MANIT Bhopal,Gyaneshwar Singh Kushwaha,Management Studies,Associate Professor,current,,,A5075700674,22,179,7,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Varsha Rokade,Management Studies,Associate Professor,current,,,A5033578914;NAME:varsha rokade,17,100,3,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Bikrant Kesari,Management Studies,Associate Professor,current,,,A5017658242;A5126919996,26,826,9,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Hergovind Singh,Management Studies,Assistant Professor,current,,,A5101132892,1,1,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Arvind Mittal,Energy Science and Engineering,Professor& (HOD),current,,,A5101475554;NAME:arvind mittal,34,575,11,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Prashant V. Baredar,Energy Science and Engineering,Professor,current,,,A5054847739;A5140473046,116,5818,36,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Archana Soni,Energy Science and Engineering,Associate Professor,current,,,A5078071310,30,910,10,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Meena Agrawal,Energy Science and Engineering,Associate Professor,current,,,A5079213264,16,254,9,matched,official faculty page,checked
+MANIT Bhopal,Ravindra D. Jilte,Energy Science and Engineering,Associate Professor,current,,,A5057241730,5,227,4,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Kavita Gidwani,Energy Science and Engineering,Assistant Professor,current,,,A5006605757,2,9,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Gaurav Dwivedi,Energy Science and Engineering,Assistant Professor,current,,,A5084382021;NAME:gaurav dwivedi,127,3236,31,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Gurveer Singh,Energy Science and Engineering,Assistant Professor,current,,,A5034465151,5,21,2,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Jaideep Gupta,Energy Science and Engineering,Visiting Professor,current,,,A5017352124,1,2,1,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Kumarasamy Sudhakar,Energy Science and Engineering,,current,,,NAME:k. sudhakar;A5133164786;NAME:kumarasamy sudhakar;A5108044051,146,11689,55,matched,added after verification (not on scraped page),"checked; department confirmed: Permanent position at MANIT Bhopal (Energy Centre); currently Associate Professor, Universiti Malaysia Pahang (confirmed by the team, Oct 2026). Co-authors and papers are mainly Energy Science."
+MANIT Bhopal,Kamal Raj Pardasani,Mathematics; Bioinformatics,,current,,,A5154742749;A5157491756;A5026452888,61,1558,21,matched,added after verification (not on scraped page),checked
+MANIT Bhopal,Ravi Kumar Dwivedi,Mechanical Engineering,,current,,,A5069469512,48,800,13,matched,added after verification (not on scraped page),checked
+MANIT Bhopal,Archana Nigrawal,Physics,,current,,,A5045680982,21,112,8,matched,added after verification (not on scraped page),checked
+MANIT Bhopal,Bhavana P. Shrivastava,Electronics and Communication Engineering,,current,,,A5130069414;A5031005993;NAME:bhawnap.shrivastava,21,170,7,matched,added after verification (not on scraped page),checked
+MANIT Bhopal,Shweta Mehroliya,Electrical Engineering,,current,,,A5031847941,14,118,7,matched,added after verification (not on scraped page),web-checked
+MANIT Bhopal,Ruchi Khare,Civil Engineering,Professor,current,,,A5057682450;NAME:r. khare,39,308,10,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Rajiv Ranjan Suman,Computer Science and Engineering,Associate Professor,current,,,A5022899440,7,163,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Alekha Kumar Mishra,Computer Science and Engineering,Assistant Professor,current,,,A5057038181,27,264,8,matched,official faculty page,checked
+NIT Jamshedpur,Amit Majumder,Computer Science and Engineering,Assistant Professor,current,,,A5033551261,3,6,1,matched,official faculty page,checked
+NIT Jamshedpur,B Ramachandra Reddy,Computer Science and Engineering,Assistant Professor,current,,,A5078975323;A5121803446,22,180,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,BINOD KUMAR SINGH,Computer Science and Engineering,Associate Professor,current,,,A5085448304,47,684,13,matched,official faculty page,checked
+NIT Jamshedpur,Chandrashekhar Azad,Computer Science and Engineering,Assistant Professor,current,,,A5101793294;A5002570694;A5101793293,54,1091,14,matched,official faculty page,web-checked
+NIT Jamshedpur,Danish Ali Khan,Computer Science and Engineering,Professor,current,,,A5064846170;A5113291538;A5133801685;NAME:danish ali khan,43,359,9,matched,official faculty page,checked
+NIT Jamshedpur,Deepak Rai,Computer Science and Engineering,Assistant Professor,current,,,A5074629782;A5077522822,7,18,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Dilip Kumar Shaw,Computer Science and Engineering,Associate Professor,current,,,A5031306927,16,129,5,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Diwakar Tripathi,Computer Science and Engineering,Assistant Professor,current,,,A5091894325;A5130791236,5,14,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,DK Yadav,Computer Science and Engineering,Professor,current,,,A5042648996,32,268,10,matched,official faculty page,checked
+NIT Jamshedpur,Gopa Bhaumik,Computer Science and Engineering,Assistant Professor,current,,,A5061039107,12,62,5,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Jitesh Pradhan,Computer Science and Engineering,Assistant Professor,current,,,A5061224057;NAME:jitesh pradhan,27,189,7,matched,official faculty page,checked
+NIT Jamshedpur,Koushlendra Kumar Singh,Computer Science and Engineering,Assistant Professor,current,,,A5014940645;A5133827377,74,603,12,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Mayukh Sarkar,Computer Science and Engineering,Assistant Professor,current,,,A5123728457;NAME:mayukh sarkar,3,17,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Nidhi Kushwaha,Computer Science and Engineering,Assistant Professor,current,,,A5068764528;NAME:nidhi kushwaha,4,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Pampa Howladar,Computer Science and Engineering,Assistant Professor,current,,,A5146444581,2,0,0,matched,official faculty page,web-checked
+NIT Jamshedpur,Rakesh Kumar,Computer Science and Engineering,Assistant Professor,current,,,A5100719860,2,5,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,SUBRATA DUTTA,Computer Science and Engineering,Assistant Professor,current,,,A5088453928;NAME:subrata dutta,26,226,11,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Suchismita Mahato,Computer Science and Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Jamshedpur,AJAY KUMAR,Electronics and Communication Engineering,Assistant Professor,current,,,A5061480590;A5008191863,55,839,14,matched,official faculty page,checked
+NIT Jamshedpur,Akhilesh Kumar,Electronics and Communication Engineering,HOD,current,,,A5085978626;A5128947144,26,573,8,matched,official faculty page,checked
+NIT Jamshedpur,AMIT PRAKASH,Electronics and Communication Engineering,Associate Professor,current,,,A5075487629;A5146858717;NAME:amit prakash,38,184,8,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Arjun Kumar,Electronics and Communication Engineering,Assistant Professor,current,,,A5033784552,1,0,0,matched,official faculty page,web-checked
+NIT Jamshedpur,Basanta Bhowmik,Electronics and Communication Engineering,Assistant Professor,current,,,A5074531271,24,311,7,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Basudeba Behera,Electronics and Communication Engineering,Assistant Professor,current,,,A5030581736;NAME:basudeba behera,39,236,8,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Bhut Nath Singh Munda,Electronics and Communication Engineering,Associate Professor,current,,,,0,0,0,not_found,official faculty page,manually checked
+NIT Jamshedpur,Chandradeep Singh,Electronics and Communication Engineering,Assistant Professor,current,,,A5147335374,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Jayendra Kumar,Electronics and Communication Engineering,Assistant Professor,current,,,A5068499026,33,309,8,matched,official faculty page,checked
+NIT Jamshedpur,Kaushik Das,Electronics and Communication Engineering,Assistant Professor,current,,,NAME:kaushik das;A5064595082,8,28,3,matched,official faculty page,manually checked
+NIT Jamshedpur,Kunal Singh,Electronics and Communication Engineering,Assistant Professor,current,,,A5002538464;A5136744841,35,275,11,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Mayank Srivastava,Electronics and Communication Engineering,Assistant Professor,current,,,A5068220260,65,421,11,matched,official faculty page,web-checked
+NIT Jamshedpur,Nagendra Kumar,Electronics and Communication Engineering,Assistant Professor,current,,,A5068162594;A5121754293;A5135150105;NAME:nagendra kumar,34,435,9,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Prashant Kumar,Electronics and Communication Engineering,Assistant Professor,current,,,A5026854116,14,49,4,matched,official faculty page,checked
+NIT Jamshedpur,Rajashree Nayak,Electronics and Communication Engineering,Assistant Professor,current,,,A5005793537;NAME:rajashree nayak,10,8,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,RASHMI SINHA,Electronics and Communication Engineering,Associate Professor,current,,,A5027511991;NAME:rashmi sinha;A5084125220,83,963,20,matched,official faculty page,web-checked
+NIT Jamshedpur,Surajit Kundu,Electronics and Communication Engineering,Assistant Professor,current,,,A5027692504,60,207,9,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Swagatadeb Sahoo,Electronics and Communication Engineering,Assistant Professor,current,,,A5019387422,37,372,11,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Aabshar U.K. Imam,unknown,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Jamshedpur,Abdhesh Kumar Sinha,Civil Engineering,Associate Professor,current,,,A5060028980;NAME:abdhesh kumar sinha,21,236,7,matched,official faculty page,checked
+NIT Jamshedpur,Abhijit Dey,Mechanical Engineering,Assistant Professor,current,,,A5050482377;A5120985394;NAME:abhijit dey,16,24,3,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Abhishek Sharma,Mechanical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Jamshedpur,Abhishek Majhi,Physics,Assistant Professor,current,,,A5065507263,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Ajay Kumar Singh,Physics,Associate Professor,current,,,A5100716094;A5100727879;NAME:ajay kumar singh,3,10,1,matched,official faculty page,checked
+NIT Jamshedpur,Akanksha Shukla,"Humanities, Social Sciences and Management",Assistant Professor,current,,,A5010435057,21,113,5,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Akhileshwar Kumar Singh,Civil Engineering,Associate Professor,current,,,A5077957440,4,12,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Alok Priyadarshi,Electrical Engineering,Assistant Professor,current,,,A5111072231;A5135289813,31,88,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Alok Kumar Ray,Mechanical Engineering,Assistant Professor,current,,,NAME:alok kumar ray;A5152959914,6,4,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,AMIT BANSODE,"Humanities, Social Sciences and Management",Assistant Professor,current,,,A5038264143,1,1,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Amit Patel,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5039107780,1,0,0,matched,official faculty page,manually checked
+NIT Jamshedpur,Amresh Kumar,Production and Industrial Engineering,Professor,current,,,A5010780417;A5103972831,28,216,8,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Ananta Kumar Atta,Chemistry,Associate Professor,current,,,A5085853238,14,122,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,ANANYO BHATTACHARYA,Electrical Engineering,Assistant Professor,current,,,A5013278619,29,59,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,ANIL KUMAR CHOUDHARY,Civil Engineering,Professor,current,,,A5103563723;NAME:anil kumar choudhary,23,147,7,matched,official faculty page,manually checked
+NIT Jamshedpur,Anil Prasad,Mechanical Engineering,Associate Professor,current,,,A5010132516,17,71,5,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Anushree Dutta,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5009918925,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Aravind Gali,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5014401495,5,34,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Arnab Kumar Sinha,Civil Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,manually checked
+NIT Jamshedpur,Arvind K Patel,Mechanical Engineering,Assistant Professor,current,,,A5036922197;A5152225520,5,9,2,matched,official faculty page,web-checked
+NIT Jamshedpur,Ashok Kumar Mandal,Mechanical Engineering,Assistant Professor,current,,,A5101859589;NAME:ashok kumar mandal;NAME:a.k. mandal;NAME:ashok k. mandal,9,60,4,matched,official faculty page,checked
+NIT Jamshedpur,Ashok Kumar Jha,Production and Industrial Engineering,Associate Professor,current,,,A5102751466,9,73,5,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Ashok Kumar Barik,Mechanical Engineering,Assistant Professor,current,,,A5010021128,13,86,7,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Ashwinee Kumar,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5121776594,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Awdhesh K Choudhary,Civil Engineering,Assistant Professor,current,,,A5040112872;A5101828440;NAME:awdhesh kumar choudhary,43,309,10,matched,official faculty page,checked
+NIT Jamshedpur,Balram Ambade,Chemistry,Associate Professor,current,,,A5060369416,92,4686,34,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Bibekananda kundu,Physics,Assistant Professor,current,,,A5030427324,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Binay Kumar,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5011456941;A5054868873,9,41,4,matched,official faculty page,manually checked
+NIT Jamshedpur,Bipin Kumar,Mechanical Engineering,Assistant Professor,current,,,A5033094107,9,50,3,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Brajkishor Prasad,Civil Engineering,Associate Professor,current,,,A5083441545,13,52,3,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Chintalacheruvu Madhusudana Rao,Civil Engineering,Associate Professor,current,,,A5056387354;NAME:c. madhusudana rao;NAME:c.m. rao,23,370,10,matched,official faculty page,checked
+NIT Jamshedpur,Debshri Swargiary,Civil Engineering,Assistant Professor,current,,,A5085666929,4,10,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Deepak Kumar,Mechanical Engineering,Assistant Professor,current,,,A5030365234;A5135349571,34,279,11,matched,official faculty page,checked
+NIT Jamshedpur,Dharmendra Patel,Production and Industrial Engineering,Assistant Professor,current,,,A5084506122;NAME:dharmendra patel,22,264,11,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Dulari Hansdah,Mechanical Engineering,Assistant Professor,current,,,A5037034922,13,268,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Goutam Sutradhar,Mechanical Engineering,Professor,current,,,A5064091590,9,34,4,matched,official faculty page,web-checked
+NIT Jamshedpur,Gunda Yoganjaneyulu,Production and Industrial Engineering,Assistant Professor,current,,,A5022481269;NAME:gunda yoganjaneyulu,3,7,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Hari Shankar Prasad,Mathematics,Assistant Professor,current,,,A5060147048,5,31,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Hira Lal Yadav,Physics,Professor,current,,,A5050068363;NAME:hira lal yadav;NAME:hira yadav,17,55,4,matched,official faculty page,web-checked
+NIT Jamshedpur,J Jayapal,Civil Engineering,Assistant Professor,current,,,A5011857028,4,0,0,matched,official faculty page,web-checked
+NIT Jamshedpur,Jichil Majhi,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5003571459,2,22,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,JITENDRA KUMAR,Electrical Engineering,Assistant Professor,current,,,A5076772790,40,191,8,matched,official faculty page,checked
+NIT Jamshedpur,Kamal Pal,Production and Industrial Engineering,Associate Professor,current,,,A5085676776,6,28,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,KANIKA PRASAD,Production and Industrial Engineering,Assistant Professor,current,,,A5083208445;NAME:kanika prasad,27,395,12,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Keshav Kumar Sharma,Civil Engineering,Assistant Professor,current,,,A5060710405;NAME:k. k. sharma,33,166,7,matched,official faculty page,web-checked
+NIT Jamshedpur,Kethavath Raghavendra Naik,Electrical Engineering,Assistant Professor,current,,,A5030158772;A5135333915,12,14,2,matched,official faculty page,web-checked
+NIT Jamshedpur,Krishna Bihari Yadav,Electrical Engineering,Professor,current,,,A5101814451;A5101178147;NAME:k b yadav;NAME:k. b. yadav;NAME:k.b. yadav,55,229,8,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Krishna Deo Prasad Singh,Mechanical Engineering,Associate Professor,current,,,A5006707496,12,245,7,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Kumari Namrata,Electrical Engineering,Associate Professor,current,,,A5010182547;A5086865038;NAME:kumari namrata;A5109407605;A5113363009,75,442,12,matched,official faculty page,checked
+NIT Jamshedpur,Kuntal Maji,Production and Industrial Engineering,Assistant Professor,current,,,A5002683565,16,91,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Laljee Prasad,Mechanical Engineering,Assistant Professor,current,,,A5109543024;A5109628656,19,246,8,matched,official faculty page,checked
+NIT Jamshedpur,M A Hassan,Mechanical Engineering,Associate Professor,current,,,A5101634811,18,223,7,matched,official faculty page,checked
+NIT Jamshedpur,MADHU SINGH,Electrical Engineering,Associate Professor,current,,,A5060872902;A5141177407,33,85,5,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Madhuri Seeram,Civil Engineering,Associate Professor,current,,,A5051750935,10,73,5,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,MALAY NIRAJ,Mechanical Engineering,Associate Professor,current,,,A5033819813,3,25,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Mani Kant Paswan,Mechanical Engineering,Professor,current,,,A5112539732;A5070980747;A5004678208,20,135,6,matched,official faculty page,web-checked
+NIT Jamshedpur,Manish Kumar Jha,"Humanities, Social Sciences and Management",Associate Professor,current,,,A5028876938;A5035141437;A5047008189;NAME:manish jha,22,158,6,matched,official faculty page,web-checked
+NIT Jamshedpur,Manthirikul Sandeep,Civil Engineering,Assistant Professor,current,,,A5016496498,2,2,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Mayuri Baruah,Production and Industrial Engineering,Assistant Professor,current,,,A5047948395;NAME:mayuri baruah,16,96,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Monalisa Mandal,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5057439175,4,16,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,MOUMITA MONDAL,Chemistry,Assistant Professor,current,,,A5010689142;NAME:moumita mondal,3,9,1,matched,official faculty page,checked
+NIT Jamshedpur,inal Kanti Sarkar,Electrical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Jamshedpur,Naresh Prasad,Mechanical Engineering,Assistant Professor,current,,,A5055669401;NAME:naresh prasad;A5021573460,14,96,5,matched,official faculty page,checked
+NIT Jamshedpur,Naveen Kumar Veldurthi,Chemistry,Assistant Professor,current,,,A5044002759,15,93,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Neha Agnihotri,Physics,Assistant Professor,current,,,NAME:neha agnihotri,4,32,3,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Neha Jaiswal,"Humanities, Social Sciences and Management",Assistant Professor,current,,,A5126043341,4,1,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Nigam Prakash,Civil Engineering,Associate Professor,current,,,A5049147719,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Niranjan Kumar,Electrical Engineering,Professor,current,,,A5100690478,69,478,13,matched,official faculty page,checked
+NIT Jamshedpur,Omhari Gupta,Electrical Engineering,Assistant Professor,current,,,A5070571708,76,333,10,matched,official faculty page,web-checked
+NIT Jamshedpur,Parmanand Kumar,Mechanical Engineering,Associate Professor,current,,,A5100752372;A5104104825;A5113843207,17,202,8,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Partha Duley,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5090777594,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Poulami Maji,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5079122163;NAME:poulami maji,9,23,3,matched,official faculty page,manually checked
+NIT Jamshedpur,Prabha Chand,Mechanical Engineering,Professor,current,,,A5003250099,26,788,11,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Prabhat Kumar,Chemistry,Assistant Professor,current,,,A5024849889,1,6,1,matched,official faculty page,checked
+NIT Jamshedpur,Prahlad Prasad,Civil Engineering,Associate Professor,current,,,NAME:prahlad prasad;A5113297155;A5111756932,6,8,2,matched,official faculty page,checked
+NIT Jamshedpur,Prakash Sarkar,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5073350875;A5057329358,9,116,4,matched,official faculty page,checked
+NIT Jamshedpur,Pranab Kumar Kundu,Mechanical Engineering,Associate Professor,current,,,A5007385742,16,69,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Rabindra Nath Mahanty,Electrical Engineering,Professor,current,,,A5078090716;NAME:r.n mahanty;NAME:rabindra nath mohanty,32,176,7,matched,official faculty page,checked
+NIT Jamshedpur,Raj Nandkeolyar,Mathematics,Associate Professor,current,,,A5076349797,47,774,12,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,RAJ BALLAV,Production and Industrial Engineering,Professor,current,,,A5071183209;A5004689398;NAME:raj ballav,26,247,9,matched,official faculty page,checked
+NIT Jamshedpur,Rajat Tripathi,Mathematics,Assistant Professor,current,,,A5062962206,28,546,12,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Rajeev Ranjan,Physics,Associate Professor,current,,,NAME:rajeev ranjan;NAME:r. ranjan,6,4,1,matched,official faculty page,web-checked
+NIT Jamshedpur,Rajiv Bhushan,"Humanities, Social Sciences and Management",Associate Professor,current,,,A5035037383,7,4,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Ram Krishna,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5057700867;NAME:ram krishna,19,104,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Ram Vinoy Sharma,Mechanical Engineering,Professor,current,,,A5113015835;A5126504838,29,197,8,matched,official faculty page,web-checked
+NIT Jamshedpur,Ratnesh Kumar Mishra,Mathematics,Assistant Professor,current,,,A5110920562,6,5,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Ravi Bhushan,Electrical Engineering,Assistant Professor,current,,,A5081493120;NAME:ravi bhushan,18,27,3,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Renu Kumari,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5063596385;A5113211302,21,49,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Rina Sahu,Metallurgical and Materials Engineering,Associate Professor,current,,,A5109544584;A5119743132;NAME:rina sahu,24,507,5,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Rinku Kumar Gouda,Mechanical Engineering,Assistant Professor,current,,,A5035019452,8,21,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Saikat Ranjan Maity,Mechanical Engineering,Associate Professor,current,,,A5044067397;NAME:saikat ranjan maity,18,51,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sajjan Kumar Paswan,Civil Engineering,Assistant Professor,current,,,NAME:s. k. paswan;NAME:sajjan kumar paswan,2,5,1,matched,official faculty page,checked
+NIT Jamshedpur,Sakthivel S,Chemistry,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,manually checked
+NIT Jamshedpur,Samiran Chakraborty,Mathematics,Assistant Professor,current,,,A5040887229,10,18,3,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sangeeta Kumari,Civil Engineering,Assistant Professor,current,,,A5022800645,9,59,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sanja y,Mechanical Engineering,Professor,current,,,A5100696206,53,1076,18,matched,official faculty page,web-checked
+NIT Jamshedpur,SANJAY VAJPAI,Metallurgical and Materials Engineering,Assistant Professor,current,,,A5042607488,13,254,8,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sankar Kumar Roy,Mechanical Engineering,Assistant Professor,current,,,A5101492036,1,2,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Saroj Kumar Sarangi,Mechanical Engineering,Professor,current,,,A5067812235,16,47,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Satish Kumar,Mechanical Engineering,Professor,current,,,A5101809238;A5103661394;A5121975902,73,693,13,matched,official faculty page,checked
+NIT Jamshedpur,Shailesh Kumar Prasad,Chemistry,Associate Professor,current,,,A5109984788,8,106,3,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,SHAILESH KUMAR JHA,Mechanical Engineering,Assistant Professor,current,,,A5059525390,2,11,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Shakti Prasad,Mathematics,Associate Professor,current,,,A5091513991,15,14,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Shashank Pandey,Mechanical Engineering,Assistant Professor,current,,,A5039306019,24,178,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Shashi Bhushan Prasad,Production and Industrial Engineering,Professor,current,,,A5082947559;A5112406034,37,1101,11,matched,official faculty page,checked
+NIT Jamshedpur,Shubham Tripathi,Production and Industrial Engineering,Assistant Professor,current,,,A5128249161;NAME:shubham tripathi,2,6,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Shubhranshu Kumar Tiwary,Electrical Engineering,Assistant Professor,current,,,A5052255115,2,0,0,matched,official faculty page,checked
+NIT Jamshedpur,Shwati Sudha,"Humanities, Social Sciences and Management",Assistant Professor,current,,,A5025470606,8,38,3,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Simanta Kumar Samal,Electrical Engineering,Assistant Professor,current,,,A5076184393,12,6,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Snehasis Kundu,Mathematics,Assistant Professor,current,,,A5067341883,26,206,9,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Somenath Mondal,Civil Engineering,Assistant Professor,current,,,A5048629574,25,342,10,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sounak Kabasi,Civil Engineering,Assistant Professor,current,,,A5043250214,5,10,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sourav Das,Mathematics,Assistant Professor,current,,,A5003832458;NAME:sourav das,20,109,6,matched,official faculty page,checked
+NIT Jamshedpur,Sri Krishna Sudhamsu Kambhammettu,Mechanical Engineering,Assistant Professor,current,,,A5068970731,5,2,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sriram Karthick Raja P,Civil Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Jamshedpur,Subhadeep Metya,Civil Engineering,Assistant Professor,current,,,A5004448893,28,109,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Subrata Mahanta,Chemistry,Assistant Professor,current,,,A5084679435,9,260,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sudhanshu Shekhar Pati,Chemistry,Assistant Professor,current,,,A5020670826;A5121014902;A5011838022,22,108,6,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sunil Kumar,Mathematics,Associate Professor,current,,,A5060764666;A5143848917;A5103721440;A5101927089,137,6433,42,matched,official faculty page,checked
+NIT Jamshedpur,SUNIL KUMAR MURMU,Civil Engineering,Associate Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Jamshedpur,Supriyo Das,Electrical Engineering,Assistant Professor,current,,,A5022253476,6,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Suravi Pal,Civil Engineering,Assistant Professor,current,,,A5063761970,1,0,0,matched,official faculty page,checked
+NIT Jamshedpur,Surya Prakash,Electrical Engineering,Assistant Professor,current,,,A5052958779;A5123760829;A5134330020,11,89,3,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,SUSHIL KUMAR,"Humanities, Social Sciences and Management",Assistant Professor,current,,,A5102732264,7,13,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sushil Kumar Gupta,Electrical Engineering,Associate Professor,current,,,A5002958785,5,37,2,matched,official faculty page,checked
+NIT Jamshedpur,Susmita Datta,Production and Industrial Engineering,Assistant Professor,current,,,A5040824108,2,0,0,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Tapas Das,Chemistry,Assistant Professor,current,,,A5001840045,22,350,9,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Titas Kumar Mukhopadhyay,Chemistry,Assistant Professor,current,,,A5028613715;NAME:titas kumar mukhopadhyay,14,10,2,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Tushar Banerjee,Production and Industrial Engineering,Assistant Professor,current,,,A5032054269;A5139116631;NAME:tushar banerjee,13,68,5,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Uday Kumar,Physics,Assistant Professor,current,,,A5034703365;NAME:uday kumar;NAME:u. kumar,26,236,9,matched,official faculty page,checked
+NIT Jamshedpur,Ujjwal Laha,Physics,Professor,current,,,A5017024497,70,471,12,matched,official faculty page,web-checked
+NIT Jamshedpur,Utpal Ghosh,Civil Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Jamshedpur,Veerpratap Meena,Electrical Engineering,Assistant Professor,current,,,A5014617242,38,598,13,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Vijay Kumar Dalla,Mechanical Engineering,Assistant Professor,current,,,A5026486640,26,101,7,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Vineet Sahoo,Mechanical Engineering,Assistant Professor,current,,,A5051055670,19,115,7,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,VIRENDRA KUMAR,Civil Engineering,Professor,current,,,A5101485375;A5100851133;NAME:virendra kumar;A5138206329;A5138218887,24,99,6,matched,official faculty page,checked
+NIT Jamshedpur,Vishesh Ranjan Kar,Mechanical Engineering,Assistant Professor,current,,,A5050135836;A5043516378,48,954,13,matched,official faculty page,checked
+NIT Jamshedpur,Sanjay V. Kumar,Civil Engineering,Associate Professor,current,,,A5100785501;A5100654328,30,332,12,matched,added after verification (not on scraped page),checked
+NIT Jamshedpur,Arun Kumar,Electrical Engineering,,current,,,A5122643540;A5101761887,15,27,3,matched,added after verification (not on scraped page),manually checked
+NIT Jamshedpur,Kundan Kumar,Electrical Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Amit Kumar,Electronics and Communication Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Munendra Singh,Electronics and Communication Engineering,Assistant Professor,current,,,A5128819879;A5135903610,3,1,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dilip Kumar Baidya,Civil Engineering,"Professor & Director, NIT Silchar",current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Fazal A. Talukdar,Electronics and Communication Engineering,Professor (HAG),current,,,A5034744347,104,1210,20,matched,official faculty page,web-checked
+NIT Silchar,Nidul Sinha,Electrical Engineering,Professor (HAG),current,,,A5084472772;NAME:n. sinha,101,2566,27,matched,official faculty page,web-checked
+NIT Silchar,Parthasarathi Choudhury,Civil Engineering,Professor (HAG),current,,,A5057335640,19,85,5,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Srimanta Baishya,Electronics and Communication Engineering,Professor (HAG),current,,,A5091134142;A5103280482,142,1845,24,matched,official faculty page,checked
+NIT Silchar,Ashim Kanti Dey,Civil Engineering,Professor (HAG),current,,,A5102864196;NAME:ashim kanti dey,50,545,13,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Aminul Islam Laskar,Civil Engineering,Professor (HAG),current,,,A5104077032,24,494,11,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Mokaddes Ali Ahmed,Civil Engineering,Professor (HAG),current,,,A5029957524;A5051112307;NAME:mokaddes ali ahmed,47,427,9,matched,official faculty page,web-checked
+NIT Silchar,Binoy Krishna Roy,Electrical Engineering,Professor,current,,,A5061094508,179,3183,33,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Shahedul Haque Laskar,Electronics and Instrumentation Engineering,Professor,current,,,A5054487356,48,695,17,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Mausumi Sen,Mathematics,Professor,current,,,A5054312789;A5138742714,51,244,8,matched,official faculty page,web-checked
+NIT Silchar,Asim Roy,Physics,Professor,current,,,A5045637084;NAME:asim roy,51,970,17,matched,official faculty page,web-checked
+NIT Silchar,Md. Ahmaruzzaman,Chemistry,Professor,current,,,A5071062334;NAME:md. ahmaruzzaman;A5140162936,276,10624,54,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Rahul Dev Misra,Mechanical Engineering,Professor,current,,,A5088997508;A5103267013;A5020303582,76,1642,22,matched,official faculty page,web-checked
+NIT Silchar,Saurabh Chaudhury,Electrical Engineering,Professor,current,,,A5047103341;A5046678294;A5037440483,78,1379,21,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Siddhartha S Dhar,Chemistry,Professor,current,,,A5017319291;A5148409932;NAME:siddhartha sankar dhar,98,2514,31,matched,official faculty page,web-checked
+NIT Silchar,Promod Kumar Patowari,Mechanical Engineering,Professor,current,,,A5070260542;NAME:promod kumar patowari,126,2364,27,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Krishna Lal Baishnab,Electronics and Communication Engineering,"Professor (on deputation: Principal, BVEC Sribhumi)",current,,,A5049961683;A5085747115,99,843,15,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Nalin Behari Dev Choudhury,Electrical Engineering,Professor,current,,,A5000178060;A5059561407,93,1219,16,matched,official faculty page,checked
+NIT Silchar,Pranjit Barman,Chemistry,Professor,current,,,A5013748846;A5113288599;NAME:pranjit barman,81,1584,24,matched,official faculty page,web-checked
+NIT Silchar,Rabul Hussain Laskar,Electronics and Communication Engineering,Professor,current,,,A5000303933,193,2311,24,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Arup Kumar Goswami,Electrical Engineering,Professor,current,,,A5066261987;A5012112990,133,2221,22,matched,official faculty page,checked
+NIT Silchar,Santanu Roy,Mathematics,Professor,current,,,A5040351771,15,253,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dibakar Chakraborty,Civil Engineering,Professor,current,,,A5043548821,6,87,4,matched,official faculty page,manually checked
+NIT Silchar,Brinda Bhowmick,Electronics and Communication Engineering,Professor,current,,,A5021356966,166,2912,29,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Lalit Chandra Saikia,Electrical Engineering,Professor,current,,,A5061366658;A5002057298;A5096964186;NAME:lalit  chandra saikia;NAME:lalit chandra saikia,169,3941,36,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Upendra Kumar,Civil Engineering,Professor,current,,,A5023145925,22,960,13,matched,official faculty page,on official page; record not flagged
+NIT Silchar,A.K. Barbhuiya,Civil Engineering,Professor,current,,,A5046493678;A5055927549;A5155437592,16,144,7,matched,official faculty page,web-checked
+NIT Silchar,Jyoti Prakash Mishra,Electrical Engineering,Professor,current,,,A5101991748,39,460,12,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Parthajit Roy,Civil Engineering,Professor,current,,,NAME:parthajit roy,22,278,9,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Pinki Roy,Computer Science and Engineering,Associate Professor,current,,,A5010493101;NAME:pinki roy,51,1114,17,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ashim Kumar Das,Management Studies,Associate Professor,current,,,A5032757676,9,12,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Samir Kumar Borgohain,Computer Science and Engineering,Associate Professor,current,,,A5078399965;NAME:samir borgohain,29,318,11,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Rajdeep Dasgupta,Electronics and Instrumentation Engineering,Associate Professor,current,,,A5101695813,23,332,10,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Bijan Nath,Mathematics,Associate Professor,current,,,A5074012921,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Subrat Kumar Barik,Physics,Associate Professor,current,,,A5103256010;A5091201270;NAME:subrat kumar barik,19,207,9,matched,official faculty page,checked
+NIT Silchar,Soma Panja,Management Studies,Associate Professor,current,,,A5016394063,13,20,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Saroj Kr. Biswas,Computer Science and Engineering,Associate Professor,current,,,A5103019545;A5112248175;A5124374117;NAME:saroj kr. biswas;A5153649183;NAME:saroj kr biswas,185,3509,28,matched,official faculty page,checked
+NIT Silchar,Pijus Kanti De,Mathematics,Associate Professor,current,,,A5021366098,47,1072,16,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Reena Sanasam,Humanities and Social Sciences,Associate Professor,current,,,A5002731508,2,5,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ranjith G. Nair,Physics,Associate Professor,current,,,A5035094986;NAME:ranjith g. nair,61,1197,18,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ranjay Hazra,Electronics and Instrumentation Engineering,Associate Professor,current,,,A5002872086;NAME:ranjay hazra,58,703,13,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ruma Rano,Chemistry,Associate Professor,current,,,A5038818362,16,311,5,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Rupak Dutta,Physics,Associate Professor,current,,,A5065699304;NAME:rupak dutta;A5064198189,31,367,12,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Subrata Bera,Mathematics,Associate Professor,current,,,A5091491449,14,88,5,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Avishek Ray,Humanities and Social Sciences,Associate Professor,current,,,A5103208991;A5072853110;A5157219132,43,112,5,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ujwala Baruah,Computer Science and Engineering,Associate Professor,current,,,A5056783690,22,102,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Kedar Nath Das,Mathematics,Associate Professor,current,,,A5017972284,53,588,12,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Samuel Lalthazuala Rokhum,Chemistry,Associate Professor,current,,,A5015403427;NAME:samuel lalthazuala rokhum,186,7193,47,matched,official faculty page,web-checked
+NIT Silchar,Saumya R. Mohapatra,Physics,Associate Professor,current,,,A5101675488,24,277,9,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Suganya Devi K,Computer Science and Engineering,Associate Professor,current,,,NAME:suganya devi kothandapani;A5139690833;A5141283663;A5007608401,62,735,13,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Kalyan Chakraborty,Mechanical Engineering,Associate Professor,current,,,A5069274170;NAME:kalyan chakraborty,19,40,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Madhumita Banerjee,Electronics and Communication Engineering,Associate Professor,current,,,A5129075430;NAME:madhumita banerjee,2,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Tanmoy Malakar,Electrical Engineering,Associate Professor,current,,,A5068224876,38,406,9,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Subhasis Panda,Physics,Associate Professor,current,,,A5010895558,17,268,7,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Munmun Khanra,Electronics and Instrumentation Engineering,Associate Professor,current,,,A5002522819,34,595,12,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Partha Pakray,Computer Science and Engineering,Associate Professor,current,,,A5017734144,103,966,19,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Wasim Arif,Electronics and Communication Engineering,Associate Professor,current,,,A5035754834,90,965,15,matched,official faculty page,on official page; record not flagged
+NIT Silchar,P. Srinivasan,Physics,Associate Professor,current,,,A5101512668;A5055963020;A5133079785;A5153015105,38,539,11,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Agnimitra Biswas,Mechanical Engineering,Associate Professor,current,,,A5063958371,106,1912,24,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Koushik Guha,Electronics and Communication Engineering,Associate Professor,current,,,A5091334730;NAME:koushik guha,200,1545,20,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dulal Chandra Das,Electrical Engineering,Associate Professor,current,,,A5014577316,86,2014,23,matched,official faculty page,checked
+NIT Silchar,Sudipta Halder,Mechanical Engineering,Associate Professor,current,,,A5090379625;A5010537172,65,1574,24,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Trupti Ranjan Lenka,Electronics and Communication Engineering,Associate Professor,current,,,A5038501680;A5130674937;NAME:trupti r. lenka,186,2193,24,matched,official faculty page,checked
+NIT Silchar,Rajeeb Dey,Electrical Engineering,Associate Professor,current,,,A5102829470,52,495,13,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Biswa Nath Ghosh,Chemistry,Associate Professor,current,,,A5029311934,35,317,11,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Tauhidur Rahman,Civil Engineering,Associate Professor,current,,,A5109456280,9,54,5,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sumit Bhowmik,Mechanical Engineering,Associate Professor,current,,,A5047525229,112,2179,27,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ashraf Hossain,Electronics and Communication Engineering,Associate Professor,current,,,A5001077611;NAME:ashraf hossain,67,630,13,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Juthika Mahanta,Mathematics,Associate Professor,current,,,A5084633261,29,401,9,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dipankar Bhanja,Mechanical Engineering,Associate Professor,current,,,A5065737727,87,1073,19,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Banani Basu,Electronics and Communication Engineering,Associate Professor,current,,,A5045359647;NAME:banani basu,75,595,14,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Arjun Sil,Civil Engineering,Associate Professor,current,,,A5000982361,73,691,13,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sujit Nath,Mechanical Engineering,Associate Professor,current,,,A5018829998;NAME:sujit nath,81,767,16,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Taimoor Khan,Electronics and Communication Engineering,Associate Professor,current,,,A5036112939;NAME:taimoor khan,161,2552,29,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dillip Kumar Ghose,Civil Engineering,Associate Professor,current,,,A5039969991;NAME:dillip kumar ghose,51,1071,19,matched,official faculty page,web-checked
+NIT Silchar,Lakshmi Vara Prasad. M,Civil Engineering,Associate Professor,current,,,A5067466856;A5071586799;NAME:lakshmi vara prasad meesaraganda,36,251,9,matched,official faculty page,web-checked
+NIT Silchar,S. K. Tripathy,Electronics and Communication Engineering,Associate Professor,current,,,A5046638236,57,629,13,matched,official faculty page,checked
+NIT Silchar,Sukumar Pati,Mechanical Engineering,Associate Professor,current,,,A5006818063;NAME:s. pati;NAME:sukumar pati,151,3445,36,matched,official faculty page,web-checked
+NIT Silchar,Debjit Bhowmik,Civil Engineering,Associate Professor,current,,,NAME:debjit bhowmik;NAME:d. bhowmik,32,286,10,matched,official faculty page,checked
+NIT Silchar,Ashish B. Deoghare,Mechanical Engineering,Associate Professor,current,,,A5069045822;A5031421462,71,1347,22,matched,official faculty page,checked
+NIT Silchar,Arnab Nandi,Electronics and Communication Engineering,Associate Professor,current,,,A5051493118;NAME:arnab nandi;A5067533378,72,610,15,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Briti Sundar Sil,Civil Engineering,Associate Professor,current,,,A5065969302,28,375,11,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ujjal Chakraborty,Electronics and Communication Engineering,Associate Professor,current,,,A5071956375;A5070567489,66,933,17,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Biplab Das,Mechanical Engineering,Associate Professor,current,,,A5072468431;A5109669303;NAME:biplab das;A5103642046;A5121992424;A5132572901;A5143657703,148,3235,34,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sudip Dey,Mechanical Engineering,Associate Professor,current,,,A5101642629;NAME:sudip dey;A5067546383,106,1972,26,matched,official faculty page,checked
+NIT Silchar,Monowar Hussain,Civil Engineering,Associate Professor,current,,,A5108691281;A5103817601;NAME:monowar hussain,34,752,14,matched,official faculty page,checked
+NIT Silchar,Khwairakpam Lakshman Singh,Civil Engineering,Associate Professor,current,,,A5101355701;A5018204800,2,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Saikat Ranjan Maity,Mechanical Engineering,Associate Professor (On Lien),current,,,A5044067397,106,2017,25,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Nirmalendu Debnath,Civil Engineering,Associate Professor,current,,,A5055425202,27,199,8,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Pitambar R Randive,Mechanical Engineering,Associate Professor,current,,,A5076222329;A5102817598,79,1582,25,matched,official faculty page,checked
+NIT Silchar,Susmita Ghosh,Civil Engineering,Associate Professor,current,,,A5026083141;A5104210443;A5086178863,14,142,6,matched,official faculty page,checked
+NIT Silchar,Prashanth J,Civil Engineering,Associate Professor,current,,,A5067706248;A5083219455,20,192,7,matched,official faculty page,web-checked
+NIT Silchar,Bijan Kumar Roy,Civil Engineering,Associate Professor,current,,,A5027927497;A5040468537,18,75,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Arun Kumar Sunaniya,Electronics and Instrumentation Engineering,Associate Professor,current,,,A5053146402;NAME:arun kumar sunaniya,22,341,7,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Saurabh Verma,Management Studies,Assistant Professor Grade-I,current,,,A5078167208;A5028035860;A5023506097;A5033437533;NAME:saurabh verma,18,92,6,matched,official faculty page,web-checked
+NIT Silchar,Binoti Patro,Management Studies,Assistant Professor Grade- I,current,,,A5029993423,5,111,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Jupitara Hazarika,Electronics and Instrumentation Engineering,Assistant Professor,current,,,A5016409277;NAME:jupitara hazarika,27,239,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sudarsan Sahoo,Electronics and Instrumentation Engineering,Assistant Professor,current,,,A5043803375,29,181,7,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Rama Koteswara Rao Kondasani,Management Studies,Assistant Professor,current,,,A5014911796,13,108,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Panchali Bhattacharya,Humanities and Social Sciences,Assistant Professor,current,,,A5113178230,1,2,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Praveen Kumar Gupta,Mathematics,Assistant Professor,current,,,A5100675978;A5123388717;NAME:praveen kumar gupta,27,153,7,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dinamani Biswal,Humanities and Social Sciences,Assistant Professor,current,,,A5023373368,4,7,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ganti Ramesh,Mathematics,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Shashi Kumar G K,Humanities and Social Sciences,Assistant Professor,current,,,A5107893868;NAME:shashi kumar,3,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dibya Nandan Mishra,Management Studies,Assistant Professor,current,,,A5040082535,3,5,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Arup Bhattacharjee,Computer Science and Engineering,"Assistant Professor, Grade-I",current,,,NAME:arup bhattacharjee,8,10,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Md. Maqbul,Mathematics,Assistant Professor (Grade-I),current,,,A5048798431,11,53,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ujjal Protim Dutta,Humanities and Social Sciences,Assistant Professor,current,,,A5045056276,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Pankaj Chaturvedi,Physics,Assistant Professor,current,,,A5011993062,1,12,1,matched,official faculty page,checked
+NIT Silchar,N. Shaemningwar Moyon,Chemistry,Assistant Professor Gr-I,current,,,A5091327799,16,284,9,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Biswanath Dey,Computer Science and Engineering,Assistant Professor,current,,,A5043922390;A5135367727;NAME:biswanath dey,5,9,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Lalu Seban,Electronics and Instrumentation Engineering,Assistant Professor,current,,,A5043762114,15,93,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Pankaj Biswas,Mathematics,Assistant Professor,current,,,A5012535258;A5152499786;NAME:pankaj biswas,49,303,10,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sumallya Mukhopadhyay,Humanities and Social Sciences,Assistant Professor,current,,,A5018804180,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Susmita Rabha,Physics,Assistant Professor,current,,,A5012029862,3,5,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Pantha Kanti Nath,Computer Science and Engineering,Assistant Professor,current,,,A5053176788,2,9,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Prasanta Roy,Electrical Engineering,Assistant Professor,current,,,A5101490730,42,426,12,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Shivendra Kumar Pandey,Electronics and Instrumentation Engineering,Assistant Professor,current,,,A5050733678,21,113,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Snehasish Nandy,Physics,Assistant Professor,current,,,A5087019850,13,30,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dalton Meitei Thounaojam,Computer Science and Engineering,Assistant Professor (on lien),current,,,A5025384745,54,726,16,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Chayan Bhattacharjee,Electrical Engineering,Assistant Professor,current,,,A5017115252,22,403,10,matched,official faculty page,on official page; record not flagged
+NIT Silchar,B. Hema Sundar Raju,Mathematics,Assistant Professor,current,,,A5008594819,20,117,7,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Koena Mukherjee,Electronics and Instrumentation Engineering,Assistant Professor (on lien),current,,,A5032910545;NAME:koena mukherjee,24,43,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Badal Soni,Computer Science and Engineering,Assistant Professor,current,,,A5019300933,84,1303,19,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Raj Kumar Biswas,Electrical Engineering,Assistant Professor,current,,,A5060875549,18,162,9,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Shankar. K,Electronics and Instrumentation Engineering,Assistant Professor,current,,,A5017504840;A5123438050,4,3,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Santan Kumar,Mathematics,Assistant Professor,current,,,A5049918031;NAME:santan kumar,21,87,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ripon Patgiri,Computer Science and Engineering,Assistant Professor,current,,,A5069345461,94,1283,19,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Saheli Ray,Electrical Engineering,Assistant Professor,current,,,A5039967376;NAME:saheli ray,30,260,9,matched,official faculty page,checked
+NIT Silchar,Sudipta Chakraborty,Electronics and Instrumentation Engineering,Assistant Professor,current,,,A5101876330;A5116744842;NAME:sudipta chakraborty;A5154377311,58,546,15,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Aryaman Sensarma,Mathematics,Assistant Professor,current,,,A5023232959,2,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Umakanta Majhi,Computer Science and Engineering,Assistant Professor,current,,,A5077074205,3,1,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Amritesh Kumar,Electrical Engineering,Assistant Professor,current,,,A5035069894;NAME:amirtesh kumar;A5100534702;NAME:amritesh kumar,64,285,9,matched,official faculty page,web-checked
+NIT Silchar,Anup Kumar Sharma,Electronics and Instrumentation Engineering,Assistant Professor,current,,,A5101634539;A5034642004;NAME:anup kumar sharma,15,175,5,matched,official faculty page,web-checked
+NIT Silchar,Ramakrishna Manchi,Mathematics,Assistant Professor,current,,,A5022891744,2,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Partha Kayal,Electrical Engineering,Assistant Professor,current,,,A5010509569,41,218,8,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Vipin Chandra Pal,Electronics and Instrumentation Engineering,Assistant Professor,current,,,A5018292015,38,149,7,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Shyamosree Pal,Computer Science and Engineering,"Assistant Professor, Grade-I",current,,,A5045162504,18,161,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Arijit Jana,Mathematics,Assistant Professor,current,,,A5010201668,6,2,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ram Kumar Karsh,Electronics and Communication Engineering,Assistant Professor,current,,,A5048695246;A5124693514,71,803,16,matched,official faculty page,web-checked
+NIT Silchar,Tapan Pradhan,Electrical Engineering,Assistant Professor,current,,,A5039537230,8,29,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Nabanita Adhikary,Electrical Engineering,Assistant Professor,current,,,A5048323019;A5074642560,30,134,7,matched,official faculty page,web-checked
+NIT Silchar,Avijit Das,Mathematics,Assistant Professor,current,,,A5026657960,6,12,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sumita Debbarma,Mechanical Engineering,Assistant Professor (Gr. I),current,,,A5036264413;NAME:s debbarma,35,1009,18,matched,official faculty page,web-checked
+NIT Silchar,Ganesh Prasad,Electronics and Communication Engineering,Assistant Professor,current,,,A5009895551;A5123624104;A5114082629,49,318,9,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Laiphrakpam Dolendro Singh,Computer Science and Engineering,"Assistant Professor, Grade-I",current,,,A5072932633;NAME:dolendro singh laiphrakpam;NAME:laiphrakpam dolendro singh,37,391,11,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Prabina Pattanayak,Electronics and Communication Engineering,Assistant Professor (on lien),current,,,A5009273557,62,555,12,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Malaya Dutta Borah,Computer Science and Engineering,"Assistant Professor, Grade-I",current,,,A5053012669,63,955,16,matched,official faculty page,on official page; record not flagged
+NIT Silchar,R. Murugan,Electronics and Communication Engineering,Assistant Professor (on lien),current,,,A5089709459;A5124871638;NAME:r. murugan,103,1667,22,matched,official faculty page,checked
+NIT Silchar,Avadh Pati,Electrical Engineering,Assistant Professor,current,,,A5051729734,40,189,7,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Anish Kumar Saha,Computer Science and Engineering,"Assistant Professor, Grade-I",current,,,A5087503069,23,138,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Parbin Sultana,Civil Engineering,Assistant Professor,current,,,A5072598002,14,68,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Kavicharan Mummaneni,Electronics and Communication Engineering,Assistant Professor,current,,,A5036984448;NAME:kavicharan mummaneni,68,582,12,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Thoudam Doren Singh,Computer Science and Engineering,"Assistant Professor, Grade-I (on lien)",current,,,A5029923937;NAME:thoudam singh,44,950,14,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Lintu Roy,Mechanical Engineering,Assistant Professor,current,,,A5090449217,15,255,8,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Pallab Das,Civil Engineering,Assistant Professor,current,,,A5082857904;A5102718685;A5124643292,9,10,2,matched,official faculty page,checked
+NIT Silchar,Pukhrambam Puspa Devi,Electronics and Communication Engineering,Assistant Professor,current,,,A5013479899;NAME:pukhrambam puspa devi;A5110524322;A5133267637;NAME:p. puspa devi;NAME:puspa devi pukhrambam,64,1600,23,matched,official faculty page,web-checked
+NIT Silchar,Asha Rani M. A,Electrical Engineering,Assistant Professor,current,,,A5054448927;NAME:asha rani m.a.;A5102953697,24,47,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Anupam Biswas,Computer Science and Engineering,Assistant Professor Grade-I,current,,,A5078136113;A5103198485;NAME:anupam biswas,48,509,11,matched,official faculty page,web-checked
+NIT Silchar,Sujit Kumar Pattanayak,Mechanical Engineering,Assistant Professor,current,,,A5077015674,5,5,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Nitesh Ahir,Civil Engineering,Assistant Professor,current,,,A5092648832,1,0,0,matched,official faculty page,web-checked
+NIT Silchar,Gaurav Singh Baghel,Electronics and Communication Engineering,Assistant Professor,current,,,A5016796601,35,158,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sreejith. S,Electrical Engineering,Assistant Professor,current,,,A5061058104;A5126223846,18,100,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Nirmali Borthakur,Civil Engineering,Assistant Professor,current,,,A5005445488,16,95,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Pradip Deb Roy,Mechanical Engineering,Assistant Professor Gr I,current,,,A5038609873,10,30,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,M. V. Swati,Electronics and Communication Engineering,Assistant Professor,current,,,A5076497240,26,153,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Risha Mal,Electrical Engineering,Assistant Professor (on lien),current,,,A5014698974,6,44,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Tripti Goel,Electronics and Communication Engineering,Assistant Professor,current,,,A5023953048;NAME:t. goel;NAME:tripti goel,88,1930,25,matched,official faculty page,web-checked
+NIT Silchar,Chinmaya Kumar Sahoo,Mechanical Engineering,Assistant Professor,current,,,A5087380216;A5103256878,33,235,10,matched,official faculty page,checked
+NIT Silchar,Swapna Mansani,Electrical Engineering,Assistant Professor,current,,,A5066076753,45,223,8,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Devendra Singh Gurjar,Electronics and Communication Engineering,Assistant Professor,current,,,A5065774100;A5129462670;NAME:devendra singh gurjar,72,747,13,matched,official faculty page,checked
+NIT Silchar,Abhishek Paul,Mechanical Engineering,Assistant Professor,current,,,A5013783350;NAME:abhishek paul,35,365,11,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ashish Paramane,Electrical Engineering,Assistant Professor,current,,,A5002601939;A5120949542;NAME:ashish paramane,107,1149,20,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Subhrajit Dutta,Civil Engineering,Assistant Professor,current,,,A5071363632,70,931,18,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Chandrajit Choudhury,Electronics and Communication Engineering,Assistant Professor,current,,,A5049004733,11,115,5,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Bipul Das,Mechanical Engineering,Assistant Professor,current,,,A5057815706;A5104291107,36,176,8,matched,official faculty page,on official page; record not flagged
+NIT Silchar,SREENU SREEKUMAR,Electrical Engineering,Assistant Professor,current,,,A5043861643,36,126,5,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Yogesh Singh,Mechanical Engineering,Assistant Professor,current,,,NAME:yogesh singh;A5100669926,42,250,9,matched,official faculty page,checked
+NIT Silchar,Amit Kumar Das,Civil Engineering,Assistant Professor,current,,,A5078252394;A5135256159;NAME:amit kumar das,17,169,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Bijit Choudhuri,Electronics and Communication Engineering,Assistant Professor,current,,,A5009567124;NAME:bijit choudhuri,44,326,12,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ambrish Devanshu,Electrical Engineering,Assistant Professor,current,,,A5083408484,10,17,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Suprava Jena,Civil Engineering,Assistant Professor,current,,,A5043673817,24,81,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Simanchal Kar,Mechanical Engineering,Assistant Professor,current,,,A5054583671;A5117695182;A5023890189;NAME:s. kar,27,510,9,matched,official faculty page,web-checked
+NIT Silchar,Rajesh Saha,Electronics and Communication Engineering,Assistant Professor,current,,,A5065552943;A5021677748,52,293,10,matched,official faculty page,web-checked
+NIT Silchar,Rajeev Nayan Gupta,Mechanical Engineering,Assistant Professor,current,,,A5027257796,17,31,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ambika Kuity,Civil Engineering,Assistant Professor (on Lien),current,,,A5035032427;A5108842989,11,56,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Mallikarjuna Balimidi,Electrical Engineering,Assistant Professor,current,,,A5059909347;A5148875904,7,2,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sushant Negi,Mechanical Engineering,Assistant Professor (G-I),current,,,A5029914890,57,1172,17,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Olympa Baro,Civil Engineering,Assistant Professor,current,,,A5029604360;NAME:olympa baro,9,38,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Himanshu Karan,Electronics and Communication Engineering,Assistant Professor,current,,,A5027860509,10,19,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Vivekanandan S,Electrical Engineering,Assistant Professor,current,,,A5073214563;A5148866815,24,84,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Atanu Sahu,Civil Engineering,Assistant Professor,current,,,A5050298457;A5045497893,21,13,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sucharita Chakraborty,Electronics and Communication Engineering,Assistant Professor,current,,,A5101850679,3,3,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Biswarup Ganguly,Electrical Engineering,Assistant Professor,current,,,A5037118341,32,165,9,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Kulkarni Vihangraj Vijaykumar,Civil Engineering,Assistant Professor (on lien),current,,,A5106686781,9,196,6,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Debayan Sarkar,Electrical Engineering,Assistant Professor,current,,,A5008188512,14,9,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Vinyas Mahesh,Mechanical Engineering,Assistant Professor,current,,,A5006163487;NAME:vinyas mahesh,74,1244,21,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Jyotirmoy Haloi,Civil Engineering,Assistant Professor,current,,,A5001064405;A5006483180,5,75,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Biswajit Sahoo,Electrical Engineering,Assistant Professor,current,,,NAME:biswajit sahoo;A5148904100,5,3,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Jayshree Hazarika,Civil Engineering,Assistant Professor,current,,,,0,0,0,not_found,official faculty page,on official page; record not flagged
+NIT Silchar,Binita Nath,Mechanical Engineering,Assistant Professor,current,,,A5034300638;A5113330140,6,27,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Subhadip Biswas,Civil Engineering,Assistant Professor,current,,,A5033767805,10,14,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Sunilkumar D,Mechanical Engineering,Assistant Professor,current,,,A5098967692;A5037818662,20,29,4,matched,official faculty page,web-checked
+NIT Silchar,Prosun Mandal,Mechanical Engineering,Assistant Professor,current,,,A5002917306,13,62,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dinesh P,Civil Engineering,Assistant Professor,current,,,A5022259783,1,10,1,matched,official faculty page,manually checked
+NIT Silchar,Purushottam Kumar Singh,Mechanical Engineering,Assistant Professor,current,,,A5103754062,16,33,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Subhadeep Biswas,Civil Engineering,Assistant Professor,current,,,A5084413661;A5133957161,6,26,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Rajarshi Pramanik,Civil Engineering,Assistant Professor,current,,,A5044443483,3,3,1,matched,official faculty page,checked
+NIT Silchar,Ojing Siram,Mechanical Engineering,Assistant Professor,current,,,A5029819532,2,7,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Subhajit Das,Civil Engineering,Assistant Professor,current,,,A5101564772,5,32,3,matched,official faculty page,checked
+NIT Silchar,Gautam Choubey,Mechanical Engineering,Assistant Professor,current,,,A5057035510;A5125647946;NAME:gautam choubey,41,1540,16,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Dipanjan Mukherjee,Civil Engineering,Assistant Professor,current,,,A5102861903,5,21,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Somnath Santra,Mechanical Engineering,Assistant Professor,current,,,A5005393634,17,67,5,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Bhupali Dutta,Civil Engineering,Assistant Professor,current,,,A5020481582,4,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Tanaya Nayak,Management Studies,Assistant Professor Grade II,current,,,A5018745035;NAME:tanaya nayak,5,40,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Prabhakar Sharma Neog,Computer Science and Engineering,"Assistant Professor, Grade-II",current,,,,0,0,0,not_found,official faculty page,manually checked
+NIT Silchar,Shanti Gopal Patra,Chemistry,Assistant Professor Grade II,current,,,A5022861683,25,121,7,matched,official faculty page,checked
+NIT Silchar,Papri Sutar,Chemistry,Assistant Professor Grade II,current,,,A5015757629,4,20,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Parikshit Saikia,Computer Science and Engineering,"Assistant Professor, Grade-II",current,,,A5077975268,6,3,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Ramanujam E,Computer Science and Engineering,Assistant Professor – Grade II,current,,,A5128029710;A5139148577;A5021187610,32,139,7,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Chukhu Chunka,Computer Science and Engineering,"Assistant Professor, Grade-II",current,,,A5023441667,11,59,3,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Debbrota Paul Chowdhury,Computer Science and Engineering,"Assistant Professor, Grade-II",current,,,A5065437403,4,2,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Aparajita Dutta,Computer Science and Engineering,"Assistant Professor, Grade-II",current,,,A5067383615;A5031614316,7,8,2,matched,official faculty page,checked
+NIT Silchar,Sumitra Sharma,Mechanical Engineering,Assistant Professor Grade II,current,,,A5013920222,12,67,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Alfa Bisoi,Mechanical Engineering,Assistant Professor Grade II,current,,,A5065427488,18,36,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Paramita Sarkar,Electronics and Communication Engineering,Assistant Professor Gr-II,current,,,A5041496442;A5122364971,12,109,5,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Partha Saha,Electronics and Communication Engineering,Assistant Professor Gr-II,current,,,A5000537787,2,9,2,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Tourangbam Harishore Singh,Electronics and Communication Engineering,Assistant Professor (Gr- II),current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Debjani Goswami,Electronics and Communication Engineering,Assistant Professor (Gr. II),current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Ankush Kumar,Civil Engineering,Assistant Professor (Gr. II),current,,,A5078406115;A5088525706,4,2,1,matched,official faculty page,checked
+NIT Silchar,Neha Kumari,Humanities and Social Sciences,Assistant Professor (Gr. II),current,,,A5101803391,2,33,1,matched,official faculty page,manually checked
+NIT Silchar,Debasish Nath,Electronics and Instrumentation Engineering,Assistant Professor (Gr- II),current,,,A5002025715;NAME:debasish nath,4,3,1,matched,official faculty page,checked
+NIT Silchar,Dhruba Jyoti Bora,Electronics and Instrumentation Engineering,Assistant Professor (Gr- II),current,,,A5069416807,8,117,4,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Megavath Diwakar Naik,Electrical Engineering,Assistant Professor (Gr- II),current,,,,0,0,0,not_found,official faculty page,manually checked
+NIT Silchar,Nilanjan Roy,Chemistry,Assistant Professor (Gr-II),current,,,A5101412622,2,1,1,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Shubham Senapati,Management Studies,Assistant Professor Gr-II,current,,,A5027480678,2,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Purbayan Ghosh Mondal,Civil Engineering,Assistant Professor (Gr- II),current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Aayushi Lyngwa,Humanities and Social Sciences,Assistant Professor (Gr- II),current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Sunil Kumar Mishra,Electrical Engineering,Assistant Professor (Gr- II),current,,,A5027744369,1,0,0,matched,official faculty page,web-checked
+NIT Silchar,Debtanay Das,Mechanical Engineering,Assistant Professor (Gr. II),current,,,A5020883171,1,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Barun Kanoo,Civil Engineering,Assistant Professor (Gr. II),current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Sushanta Kumar Sahoo,Mechanical Engineering,Assistant Professor (Gr. II),current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Arun Rajput,Mechanical Engineering,Assistant Professor (Gr. II),current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Moirangthem Biken Singh,Computer Science and Engineering,Assistant Professor (Gr. II),current,,,A5012713243,3,0,0,matched,official faculty page,on official page; record not flagged
+NIT Silchar,Abhijeet Sethi,Mechanical Engineering,Assistant Professor (Gr. II),current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Shuprajhaa T,Electronics and Instrumentation Engineering,Assistant Professor (Gr. II),current,,,,0,0,0,not_found,official faculty page,manually checked
+NIT Silchar,Partha Das,Civil Engineering,Assistant Professor (Gr. II),current,,,A5033411779;NAME:partha pratim das,2,0,0,matched,official faculty page,checked
+NIT Silchar,Shubham Agrawal,Mechanical Engineering,Assistant Professor (Gr. II),current,,,,0,0,0,not_found,official faculty page,manually checked
+NIT Silchar,Biswajit Pal,Civil Engineering,Assistant Professor (Gr. II),current,,,,0,0,0,not_found,official faculty page,web-checked
+NIT Silchar,Saptarshi Roy,Chemistry,,current,,,A5113293391,42,1069,19,matched,added after verification (not on scraped page),checked
+NIT Silchar,Sunil Kumar,Mechanical Engineering,,current,,,A5087119327,37,671,16,matched,added after verification (not on scraped page),checked
+NIT Silchar,N. B. Singh,Humanities and Social Sciences,Professor,current,,,,0,0,0,not_found,official faculty page,on official page; record not flagged
+MANIT Bhopal,Rekha Jain,Architecture and Planning,,former,2017.0,2022.0,NAME:jain rekha;NAME:rekha jain,2,95,2,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,Jai Prakash Jaiswal,Bioinformatics,,former,2022.0,2024.0,A5016815937,28,162,6,matched,"official faculty page (former, archived)",checked
+MANIT Bhopal,Kiran Singh,Biological Science and Engineering,,former,2017.0,2024.0,A5115593550,1,7,1,matched,"official faculty page (former, archived)",manually checked
+MANIT Bhopal,Charu Parashar,Civil Engineering,,former,2017.0,2023.0,A5015519318,2,2,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,Nitin Dindorker,Civil Engineering,,former,2017.0,2023.0,A5063007517,14,50,3,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,Rajnish Shrivastava,Civil Engineering,,former,2017.0,2017.0,A5091597412,6,118,4,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,Ramjeevan Singh Thakur,Computer Applications,,former,2018.0,2021.0,A5015203693;A5028075085;A5155494597;NAME:r.s. thakur,24,356,8,matched,"official faculty page (former, archived)",manually checked
+MANIT Bhopal,Praveen Kaushik,Computer Science and Engineering,,former,2017.0,2024.0,A5048615209,17,278,8,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,Shailendra Kumar,Electrical Engineering,,former,2021.0,2023.0,A5100736812;A5128352459;A5132584986,50,428,12,matched,"official faculty page (former, archived)",checked
+MANIT Bhopal,Ujjwal Kumar Kalla,Electrical Engineering,,former,2021.0,2024.0,A5080670230,42,238,9,matched,"official faculty page (former, archived)",web-checked
+MANIT Bhopal,Sukeshni Tirkey,Electronics and Communication Engineering,,former,2021.0,2024.0,A5042093785;A5094304462,12,139,7,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,Anil Kumar,Energy Science and Engineering,,former,2017.0,2021.0,A5022603456,34,2592,24,matched,"official faculty page (former, archived)",checked
+MANIT Bhopal,Ameenur Rehman Siddiqui,Mechanical Engineering,,former,2017.0,2020.0,A5017236879;A5115563928,3,16,2,matched,"official faculty page (former, archived)",checked
+MANIT Bhopal,Gajendra Dixit,Mechanical Engineering,,former,2017.0,2024.0,A5075248800,23,331,11,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,Pushyamitra Mishra,Mechanical Engineering,,former,2022.0,2023.0,A5008448755;NAME:pushyamitra mishra,23,285,7,matched,"official faculty page (former, archived)",checked
+MANIT Bhopal,Ravi Kumar Mandava,Mechanical Engineering,,former,2021.0,2023.0,A5076648731,24,177,6,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,Sanjay Soni,Mechanical Engineering,,former,2017.0,2023.0,A5062537355,19,220,8,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,M. K. Pradhan,Mechanical Engineering,,former,,,A5090230502,49,757,15,matched,added after verification (not on scraped page),checked
+NIT Jamshedpur,Rawesh Kumar,Chemistry,ad-hoc,former,2016.0,2018.0,A5006037747,2,29,1,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Sandip Mandal,Chemistry,ad-hoc,former,2016.0,2018.0,A5101703468,2,114,2,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Ashok Kumar Khan,Civil Engineering,,former,2016.0,2019.0,A5032638989,5,3,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Karunesh Kumar Shukla,Civil Engineering,,former,2018.0,2021.0,A5101480715,7,34,3,matched,"official faculty page (former, archived)",web-checked
+NIT Jamshedpur,Madan Mohan Prasad,Civil Engineering,,former,2016.0,2019.0,A5103796903;NAME:m. m. prasad;NAME:m.m. prasad,3,260,3,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Rakesh Pratap Singh,Civil Engineering,,former,2016.0,2021.0,A5101557545,7,23,2,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Sabyasachi Biswas,Civil Engineering,,former,2019.0,2021.0,A5090707822,5,20,3,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Shashi Ranjan Pandey,Civil Engineering,,former,2016.0,2021.0,NAME:shashi ranjan pandey;A5030940997,3,11,2,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Ashok Kumar Mehta,Computer Applications,,former,2016.0,2021.0,A5045180151;A5127466197;NAME:a. k. mehta,20,174,7,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Buddhadeb Pradhan,Computer Applications,ad-hoc,former,2021.0,2021.0,A5040852063,5,130,5,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Chandan Kumar,Computer Applications,ad-hoc,former,2016.0,2018.0,A5048293930,1,0,0,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Chandra Mouli,Computer Applications,,former,2019.0,2019.0,A5089280246,6,14,2,matched,"official faculty page (former, archived)",web-checked
+NIT Jamshedpur,Dindayal Mahto,Computer Applications,ad-hoc,former,2016.0,2018.0,A5112366337,1,21,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Jayakrushna Sahoo,Computer Applications,ad-hoc,former,2017.0,2017.0,A5083804893,1,23,1,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Mohd Naseem,Computer Applications,ad-hoc,former,2016.0,2017.0,A5076194851,1,21,1,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Sudhanshu Kumar Jha,Computer Applications,ad-hoc,former,2016.0,2018.0,A5103216777,1,18,1,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Sunil Kumar Gouda,Computer Applications,ad-hoc,former,2016.0,2018.0,A5076158494,3,29,3,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Bhaskar Mondal,Computer Science and Engineering,ad-hoc,former,2016.0,2018.0,A5083110363;A5109200756,9,219,6,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Rabi Shaw,Computer Science and Engineering,ad-hoc,former,2017.0,2018.0,A5070655398,1,0,0,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Ritesh Kumar,Computer Science and Engineering,,former,2021.0,2021.0,A5083240827,2,12,2,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Vijay Bhaskar Semwal,Computer Science and Engineering,ad-hoc,former,2016.0,2016.0,A5064062259,1,6,1,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Vinay Kumar,Computer Science and Engineering,,former,2019.0,2021.0,A5022530074,18,366,11,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Amarnath Thakur,Electrical Engineering,,former,2016.0,2019.0,A5066430806,15,105,5,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Arun Kumar Singh,Electrical Engineering,,former,2016.0,2020.0,A5102941893,33,412,11,matched,"official faculty page (former, archived)",web-checked
+NIT Jamshedpur,Ashok Kumar Akella,Electrical Engineering,,former,2016.0,2019.0,A5045943670;NAME:ashok akella,47,583,12,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Umesh Kumar Sinha,Electrical Engineering,,former,2016.0,2020.0,A5069847671,29,88,6,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Arvind Choubey,Electronics and Communication Engineering,,former,2017.0,2021.0,A5061390619,19,285,9,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Debashis Maji,Electronics and Communication Engineering,ad-hoc,former,2016.0,2017.0,A5056177124,2,13,2,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Mrutyunjay Rout,Electronics and Communication Engineering,,former,2019.0,2021.0,A5033300630;A5102915407;NAME:mrutyunjay rout,28,196,7,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Rajiv Kumar,Electronics and Communication Engineering,ad-hoc,former,2016.0,2018.0,A5114889221;A5100757693;A5103913264;NAME:rajiv ranjian kumar,5,4,1,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Shiva Nand Singh,Electronics and Communication Engineering,,former,2019.0,2021.0,A5103971623,17,111,7,matched,"official faculty page (former, archived)",web-checked
+NIT Jamshedpur,Debalina Chakaravarty,"Humanities, Social Sciences and Management",ad-hoc,former,2016.0,2018.0,A5029959201,1,10,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Maninder Kapoor,"Humanities, Social Sciences and Management",,former,2016.0,2021.0,A5071647254,2,4,1,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Smruti Patre,"Humanities, Social Sciences and Management",ad-hoc,former,2016.0,2018.0,A5022404485,1,21,1,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Sneha Mishra,"Humanities, Social Sciences and Management",ad-hoc,former,2016.0,2018.0,A5038848788;A5077696552,2,0,0,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Mahendra Kumar Gupta,Mathematics,,former,2019.0,2021.0,A5008576203,17,180,8,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Ramayan Singh,Mathematics,Professor,former,2016.0,2024.0,A5022944787;A5112304386,20,589,12,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Soumik Biswas,Mathematics,ad-hoc,former,2016.0,2016.0,A5022331050,1,6,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Sourav Pradhan,Mathematics,ad-hoc,former,2016.0,2018.0,A5029912752,2,9,2,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Sripati Jha,Mathematics,,former,2016.0,2021.0,A5103153313,5,161,4,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Sumit Kumar Debnath,Mathematics,Assistant Professor,former,2019.0,2024.0,A5039022884,35,243,8,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Tarni Mandal,Mathematics,,former,2016.0,2021.0,A5109525682;A5067510600;NAME:t. mandal;A5056338546,36,501,11,matched,"official faculty page (former, archived)",web-checked
+NIT Jamshedpur,Hari Narayan Singh,Mechanical Engineering,,former,2016.0,2019.0,NAME:h. n. singh;NAME:hari n. singh,2,13,2,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Mrityunjay Kumar Sinha,Mechanical Engineering,,former,2016.0,2021.0,A5019391655;A5052086193;A5091404650;A5102291370,27,98,5,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Radha Krishna Prasad,Mechanical Engineering,,former,2016.0,2019.0,A5041385538;NAME:radha krishna prasad,16,1193,12,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Ratnesh Kumar,Mechanical Engineering,ad-hoc,former,2017.0,2018.0,A5113276480,1,36,1,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Shalendra Kumar,Mechanical Engineering,,former,2016.0,2021.0,A5089081111;A5060206718;A5126479558,19,140,5,matched,"official faculty page (former, archived)",web-checked
+NIT Jamshedpur,Shubhankar Chakarborty,Mechanical Engineering,ad-hoc,former,2017.0,2018.0,A5010076839,7,36,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Suresh Prasad Sharma,Mechanical Engineering,,former,2016.0,2018.0,A5103289954,2,18,2,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Bharat Bhushan Jha,Metallurgical and Materials Engineering,,former,2021.0,2021.0,A5048744389,4,24,2,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Chandra Shekhar Choudhary,Metallurgical and Materials Engineering,,former,2016.0,2021.0,A5106936982,2,0,0,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Mahesh Kumar Agrawal,Metallurgical and Materials Engineering,,former,2016.0,2020.0,A5112348016,2,6,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Rajendra Prasad Singh,Metallurgical and Materials Engineering,,former,2016.0,2021.0,A5048861401,4,24,3,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Ranjit Prasad,Metallurgical and Materials Engineering,,former,2016.0,2021.0,A5046339103,16,127,7,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Nitin Chandra,Physics,ad-hoc,former,2016.0,2018.0,NAME:nitin chandra,1,5,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Prashanta Kumar Khandai,Physics,ad-hoc,former,2016.0,2017.0,A5002841779,1,0,0,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Yamuna Prasad Yadav,Physics,,former,2016.0,2020.0,A5057799949;A5102137792,2,3,1,matched,"official faculty page (former, archived)",checked
+NIT Jamshedpur,Anand Mukut Tigga,Production and Industrial Engineering,,former,2016.0,2019.0,A5037050770,8,84,6,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Jamshedpur,Ashish Das,Production and Industrial Engineering,,former,2019.0,2021.0,A5004476213,23,289,10,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Kuldip Kumar Sahu,Production and Industrial Engineering,ad-hoc,former,2016.0,2018.0,A5025970183,1,12,1,matched,"official faculty page (former, archived)",manually checked
+NIT Jamshedpur,Simanchal Kar,Production and Industrial Engineering,,former,2019.0,2019.0,A5054583671,1,8,1,matched,"official faculty page (former, archived)",web-checked
+NIT Jamshedpur,Subhash Singh,Production and Industrial Engineering,,former,2019.0,2021.0,A5062068505,21,1068,10,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Baban H Shambharkar,Chemistry,,former,2025.0,2025.0,A5043726858,8,220,8,matched,"official faculty page (former, archived)",web-checked
+NIT Silchar,D Koteswara Raju,Electrical Engineering,,former,2025.0,2025.0,A5006470586,28,1006,17,matched,"official faculty page (former, archived)",checked
+NIT Silchar,Naresh Babu Muppalaneni,Computer Science and Engineering,,current,2025.0,2025.0,A5030875842;A5124131913,49,366,11,matched,"official faculty page (former, archived)",checked
+NIT Silchar,Pravin P S,Electronics and Instrumentation Engineering,,former,2025.0,2025.0,A5140541453,3,0,0,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Shyamapada Mukherjee,Computer Science and Engineering,,former,2025.0,2025.0,A5024019557;A5092115342,31,181,6,matched,"official faculty page (former, archived)",manually checked
+NIT Silchar,Srikanth Allamsetty,Electrical Engineering,,former,2025.0,2025.0,A5038148006,5,9,2,matched,"official faculty page (former, archived)",checked
+NIT Silchar,Anangsha Alammyan,Civil Engineering,,former,2020.0,2022.0,A5027342727,1,2,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Pabitra Rajbongshi,Civil Engineering,,former,2016.0,2017.0,A5037717110;A5078183693,4,18,3,matched,"official faculty page (former, archived)",manually checked
+NIT Silchar,Satyabrata Choudhury,Civil Engineering,,former,2016.0,2022.0,A5063164196,42,290,10,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Biswajit Purkayastha,Computer Science and Engineering,,former,2016.0,2025.0,A5043818101,80,1350,16,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Ashoke Kumar Sinha,Electrical Engineering,,former,2016.0,2017.0,A5108568239;NAME:a. k. sinha,5,15,3,matched,"official faculty page (former, archived)",manually checked
+NIT Silchar,Jiwanjot Singh,Electrical Engineering,,former,2020.0,2025.0,A5030758587,27,189,8,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Nirmala Soren,Electrical Engineering,,former,2016.0,2025.0,A5002943296,15,204,7,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Prashant Kumar Tiwari,Electrical Engineering,,former,2016.0,2025.0,A5079453326,33,1228,14,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Bhaswati Das,Electronics and Communication Engineering,,former,2016.0,2016.0,,0,0,0,ambiguous_only,"official faculty page (former, archived)",manually checked
+NIT Silchar,Jishan Mehedi,Electronics and Communication Engineering,,former,2016.0,2018.0,A5071568281,1,9,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Madhuchhanda Choudhury,Electronics and Communication Engineering,,former,2016.0,2025.0,A5110531919;A5041552069,28,241,10,matched,"official faculty page (former, archived)",manually checked
+NIT Silchar,Madhumita Paul,Electronics and Communication Engineering,,former,2016.0,2022.0,A5069095757,4,55,3,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Prashanta Kumar Paul,Electronics and Communication Engineering,,former,2016.0,2025.0,A5109403492,8,152,5,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Robin Khosla,Electronics and Communication Engineering,,former,2019.0,2025.0,A5056709988,13,286,10,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Abhishek Midya,Electronics and Instrumentation Engineering,,former,2016.0,2017.0,A5058543533,8,133,6,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Manas Kumar Bera,Electronics and Instrumentation Engineering,,former,2017.0,2025.0,A5073060049,24,250,9,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Swagatadeb Sahoo,Electronics and Instrumentation Engineering,,former,2017.0,2018.0,A5019387422,4,20,2,matched,"official faculty page (former, archived)",manually checked
+NIT Silchar,Dibyakusum Ray,Humanities and Social Sciences,,former,2017.0,2020.0,A5088667519,3,4,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Gurudas Das,Humanities and Social Sciences,,former,2016.0,2024.0,A5031367272,24,131,7,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Abhijit Ghosh,Management Studies,,former,2016.0,2016.0,NAME:a. ghosh,1,8,1,matched,"official faculty page (former, archived)",manually checked
+NIT Silchar,Abhijt Chakraborty,Management Studies,,former,2017.0,2017.0,A5102714073,8,8,2,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Kelvin Mutum,Management Studies,,former,2016.0,2016.0,A5059986047;A5158239115,5,9,2,matched,"official faculty page (former, archived)",manually checked
+NIT Silchar,Ujjwal Kanti Paul,Management Studies,,former,2017.0,2017.0,A5023990521,5,41,4,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Vivek Kumar Pathak,Management Studies,,former,2016.0,2016.0,A5101919852,1,5,1,matched,"official faculty page (former, archived)",manually checked
+NIT Silchar,Amitava Ray,Mechanical Engineering,,former,2016.0,2016.0,A5076844154,1,10,1,matched,"official faculty page (former, archived)",manually checked
+NIT Silchar,Darpahari Das,Mechanical Engineering,,former,2016.0,2025.0,A5076648501,2,6,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Debasish Dutta,Mechanical Engineering,,former,2016.0,2016.0,NAME:debasish dutta,2,6,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Kaushal Kumar Sharma,Mechanical Engineering,,former,2016.0,2025.0,A5003745365;NAME:kaushal k. sharma;NAME:k. k. sharma,47,718,16,matched,"official faculty page (former, archived)",web-checked
+NIT Silchar,Krishna Murari Pandey,Mechanical Engineering,,former,2016.0,2025.0,A5022121582;A5088773616;NAME:k m pandey,214,6132,43,matched,"official faculty page (former, archived)",checked
+NIT Silchar,Pannalal Choudhury,Mechanical Engineering,,former,2016.0,2025.0,A5006163013,12,97,6,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Rajat Gupta,Mechanical Engineering,,former,2016.0,2025.0,A5076477100;NAME:rajat gupta,33,1230,18,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Ravi Kumar Gupta,Mechanical Engineering,,former,2016.0,2025.0,A5007058808,1,93,1,matched,"official faculty page (former, archived)",checked
+NIT Silchar,Sushovan Chatterjee,Mechanical Engineering,,former,2016.0,2018.0,A5058159838,3,355,3,matched,"official faculty page (former, archived)",on official page; record not flagged
+NIT Silchar,Avijit Chowdhury,Physics,,former,2016.0,2023.0,A5073734545;A5015568158;NAME:avijit chowdhury,32,307,13,matched,"official faculty page (former, archived)",checked
+NIT Silchar,Nandini Roy,Physics,,former,2018.0,2024.0,A5009277712,1,27,1,matched,"official faculty page (former, archived)",on official page; record not flagged
+MANIT Bhopal,Deepak Kumar (Mechanical Engineering),Mechanical Engineering,Assistant Professor,current,,,A5100702991;A5129983627;A5101721624,58,505,13,matched,official faculty page,on official page; record not flagged
+MANIT Bhopal,Deepak Kumar (Humanities and Social Sciences),Humanities and Social Sciences,Assistant Professor,current,,,A5035848453;A5012794152;A5027345646,6,18,1,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Dilip Kumar (Computer Science and Engineering),Computer Science and Engineering,Assistant Professor,current,,,A5114514461,34,656,16,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Dilip Kumar (Electronics and Communication Engineering),Electronics and Communication Engineering,Associate Professor,current,,,,0,0,0,same_name_different_people,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Dinesh Kumar (Computer Science and Engineering),Computer Science and Engineering,Assistant Professor,current,,,A5021506332;A5074372757;A5141060229,13,99,4,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,DINESH KUMAR (Production and Industrial Engineering),Production and Industrial Engineering,Assistant Professor,current,,,A5049211783;A5101698482;A5137820123,16,253,10,matched,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sanjay Kumar (Computer Science and Engineering),Computer Science and Engineering,Associate Professor,current,,,,0,0,0,same_name_different_people,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Sanjay Kumar (Electrical Engineering),Electrical Engineering,Assistant Professor,current,,,,0,0,0,same_name_different_people,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Ashok Kumar (Civil Engineering),Civil Engineering,Assistant Professor,current,,,,0,0,0,same_name_different_people,official faculty page,on official page; record not flagged
+NIT Jamshedpur,Ashok Kumar (Metallurgical and Materials Engineering),Metallurgical and Materials Engineering,Professor,current,,,A5016490586;A5101510323,18,130,7,matched,official faculty page,on official page; record not flagged

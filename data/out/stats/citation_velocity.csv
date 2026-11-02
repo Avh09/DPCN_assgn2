@@ -1,0 +1,67 @@
+institution,table,year,value,cumulative
+MANIT Bhopal,"citations received, by year of the citing paper",2016,142.0,142.0
+MANIT Bhopal,"citations received, by year of the citing paper",2017,801.0,943.0
+MANIT Bhopal,"citations received, by year of the citing paper",2018,1639.0,2582.0
+MANIT Bhopal,"citations received, by year of the citing paper",2019,2965.0,5547.0
+MANIT Bhopal,"citations received, by year of the citing paper",2020,4970.0,10517.0
+MANIT Bhopal,"citations received, by year of the citing paper",2021,8325.0,18842.0
+MANIT Bhopal,"citations received, by year of the citing paper",2022,11134.0,29976.0
+MANIT Bhopal,"citations received, by year of the citing paper",2023,14657.0,44633.0
+MANIT Bhopal,"citations received, by year of the citing paper",2024,16406.0,61039.0
+MANIT Bhopal,"citations received, by year of the citing paper",2025,17466.0,78505.0
+MANIT Bhopal,"citations received, by year of the citing paper",2026,12706.0,91211.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2016,50.0,50.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2017,262.0,312.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2018,573.0,885.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2019,1014.0,1899.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2020,2498.0,4397.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2021,3721.0,8118.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2022,4949.0,13067.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2023,6436.0,19503.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2024,8561.0,28064.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2025,9476.0,37540.0
+NIT Jamshedpur,"citations received, by year of the citing paper",2026,6718.0,44258.0
+NIT Silchar,"citations received, by year of the citing paper",2016,214.0,214.0
+NIT Silchar,"citations received, by year of the citing paper",2017,867.0,1081.0
+NIT Silchar,"citations received, by year of the citing paper",2018,2079.0,3160.0
+NIT Silchar,"citations received, by year of the citing paper",2019,3712.0,6872.0
+NIT Silchar,"citations received, by year of the citing paper",2020,6345.0,13217.0
+NIT Silchar,"citations received, by year of the citing paper",2021,10586.0,23803.0
+NIT Silchar,"citations received, by year of the citing paper",2022,15086.0,38889.0
+NIT Silchar,"citations received, by year of the citing paper",2023,18048.0,56937.0
+NIT Silchar,"citations received, by year of the citing paper",2024,23468.0,80405.0
+NIT Silchar,"citations received, by year of the citing paper",2025,26082.0,106487.0
+NIT Silchar,"citations received, by year of the citing paper",2026,19267.0,125754.0
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2016,3.66,39.54
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2017,3.5,34.34
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2018,2.9,25.5
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2019,3.54,27.6
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2020,3.88,26.38
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2021,3.94,22.86
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2022,3.26,15.64
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2023,3.03,11.51
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2024,2.94,8.22
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2025,1.76,3.16
+MANIT Bhopal,publication-year cohort: citations per paper per year of age,2026,0.34,0.28
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2016,2.2,23.72
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2017,2.18,21.39
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2018,2.41,21.23
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2019,2.65,20.66
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2020,3.74,25.46
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2021,3.66,21.24
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2022,2.39,11.48
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2023,3.08,11.7
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2024,2.46,6.9
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2025,1.55,2.79
+NIT Jamshedpur,publication-year cohort: citations per paper per year of age,2026,0.42,0.34
+NIT Silchar,publication-year cohort: citations per paper per year of age,2016,3.0,32.42
+NIT Silchar,publication-year cohort: citations per paper per year of age,2017,2.59,25.39
+NIT Silchar,publication-year cohort: citations per paper per year of age,2018,2.85,25.12
+NIT Silchar,publication-year cohort: citations per paper per year of age,2019,2.58,20.16
+NIT Silchar,publication-year cohort: citations per paper per year of age,2020,3.24,22.03
+NIT Silchar,publication-year cohort: citations per paper per year of age,2021,3.53,20.46
+NIT Silchar,publication-year cohort: citations per paper per year of age,2022,3.19,15.3
+NIT Silchar,publication-year cohort: citations per paper per year of age,2023,4.06,15.42
+NIT Silchar,publication-year cohort: citations per paper per year of age,2024,3.01,8.42
+NIT Silchar,publication-year cohort: citations per paper per year of age,2025,1.87,3.36
+NIT Silchar,publication-year cohort: citations per paper per year of age,2026,0.6,0.48

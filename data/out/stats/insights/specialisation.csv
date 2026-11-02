@@ -1,0 +1,313 @@
+level,institution,name,papers,share_%,location_quotient,mean_citations,median_citations,mean_fwci,total_citations,median_year
+field,MANIT Bhopal,Engineering,2639,45.82,0.88,12.2,4.0,1.43,32133,2022.0
+field,MANIT Bhopal,Computer Science,969,16.83,1.14,12.9,3.0,1.62,12462,2022.0
+field,MANIT Bhopal,Materials Science,362,6.29,1.05,20.7,7.0,1.47,7489,2022.0
+field,MANIT Bhopal,Environmental Science,345,5.99,1.42,25.8,5.0,2.85,8906,2023.0
+field,MANIT Bhopal,Energy,252,4.38,0.96,46.2,10.0,2.1,11643,2021.0
+field,MANIT Bhopal,Medicine,171,2.97,1.05,14.5,3.0,2.77,2475,2023.0
+field,MANIT Bhopal,Decision Sciences,140,2.43,1.46,12.3,2.0,2.29,1717,2023.0
+field,MANIT Bhopal,Social Sciences,129,2.24,1.73,6.1,1.0,5.29,793,2024.0
+field,MANIT Bhopal,"Business, Management and Accounting",123,2.14,1.5,18.0,4.0,5.3,2212,2022.0
+field,MANIT Bhopal,Agricultural and Biological Sciences,122,2.12,1.54,36.8,8.0,4.23,4488,2022.5
+field,MANIT Bhopal,"Biochemistry, Genetics and Molecular Biology",83,1.44,2.22,16.1,4.0,1.0,1337,2021.0
+field,MANIT Bhopal,"Economics, Econometrics and Finance",75,1.3,2.16,17.1,8.0,3.41,1283,2023.0
+field,MANIT Bhopal,Neuroscience,73,1.27,1.45,8.6,3.0,2.16,627,2024.0
+field,MANIT Bhopal,Mathematics,69,1.2,0.7,5.5,3.0,1.63,379,2022.0
+field,MANIT Bhopal,Chemical Engineering,55,0.96,1.73,22.8,14.0,2.39,1252,2022.0
+field,MANIT Bhopal,Psychology,33,0.57,1.37,7.5,1.0,3.03,247,2024.0
+field,MANIT Bhopal,Physics and Astronomy,28,0.49,0.2,4.2,1.0,0.81,118,2024.5
+field,MANIT Bhopal,Health Professions,23,0.4,0.66,6.0,0.0,1.65,139,2024.0
+field,MANIT Bhopal,Arts and Humanities,22,0.38,1.33,1.3,0.5,17.22,28,2025.0
+field,MANIT Bhopal,Chemistry,21,0.36,0.33,33.8,4.0,2.43,709,2024.0
+field,MANIT Bhopal,Earth and Planetary Sciences,15,0.26,0.61,13.4,2.0,1.9,201,2024.0
+field,MANIT Bhopal,Immunology and Microbiology,5,0.09,2.2,5.4,5.0,0.99,27,2018.0
+field,MANIT Bhopal,Nursing,2,0.03,1.54,1.5,1.5,0.34,3,2020.5
+field,MANIT Bhopal,Dentistry,2,0.03,1.54,5.5,5.5,0.78,11,2020.5
+field,MANIT Bhopal,"Pharmacology, Toxicology and Pharmaceutics",1,0.02,0.44,5.0,5.0,2.1,5,2025.0
+field,NIT Jamshedpur,Engineering,2033,56.57,1.09,9.0,3.0,1.3,18248,2023.0
+field,NIT Jamshedpur,Computer Science,445,12.38,0.84,11.9,3.0,1.81,5294,2023.0
+field,NIT Jamshedpur,Materials Science,230,6.4,1.07,13.9,3.0,1.64,3197,2023.5
+field,NIT Jamshedpur,Environmental Science,151,4.2,1.0,32.3,10.0,3.17,4872,2023.0
+field,NIT Jamshedpur,Mathematics,148,4.12,2.39,34.6,7.0,3.04,5125,2021.5
+field,NIT Jamshedpur,Energy,111,3.09,0.68,12.0,2.0,1.16,1330,2023.0
+field,NIT Jamshedpur,Physics and Astronomy,100,2.78,1.13,8.0,3.0,0.6,797,2021.0
+field,NIT Jamshedpur,Medicine,79,2.2,0.78,21.7,6.0,4.29,1712,2023.0
+field,NIT Jamshedpur,"Business, Management and Accounting",53,1.47,1.04,11.0,5.0,2.87,581,2023.0
+field,NIT Jamshedpur,Chemistry,50,1.39,1.27,11.6,7.5,1.51,582,2023.0
+field,NIT Jamshedpur,Agricultural and Biological Sciences,39,1.09,0.79,20.3,6.0,5.79,790,2023.0
+field,NIT Jamshedpur,Earth and Planetary Sciences,26,0.72,1.69,21.8,14.0,2.44,568,2023.0
+field,NIT Jamshedpur,Health Professions,25,0.7,1.14,11.2,4.0,3.23,280,2023.0
+field,NIT Jamshedpur,Decision Sciences,25,0.7,0.42,10.9,5.0,1.9,273,2022.0
+field,NIT Jamshedpur,Neuroscience,16,0.45,0.51,4.8,1.0,1.68,77,2025.5
+field,NIT Jamshedpur,Chemical Engineering,13,0.36,0.65,3.2,3.0,0.46,42,2021.0
+field,NIT Jamshedpur,Social Sciences,11,0.31,0.24,3.5,2.0,4.74,38,2023.0
+field,NIT Jamshedpur,"Economics, Econometrics and Finance",11,0.31,0.51,8.8,4.0,1.48,97,2024.0
+field,NIT Jamshedpur,"Biochemistry, Genetics and Molecular Biology",11,0.31,0.47,0.5,0.0,0.37,5,2026.0
+field,NIT Jamshedpur,Arts and Humanities,7,0.19,0.68,0.6,0.0,0.7,4,2024.0
+field,NIT Jamshedpur,Psychology,7,0.19,0.47,4.6,0.0,2.56,32,2025.0
+field,NIT Jamshedpur,Dentistry,2,0.06,2.47,3.5,3.5,1.5,7,2024.0
+field,NIT Jamshedpur,Nursing,1,0.03,1.23,110.0,110.0,3.96,110,2023.0
+field,NIT Silchar,Engineering,4576,54.4,1.05,14.0,5.0,1.45,63870,2022.0
+field,NIT Silchar,Computer Science,1207,14.35,0.97,11.9,4.0,1.54,14385,2022.0
+field,NIT Silchar,Materials Science,481,5.72,0.96,21.1,8.0,1.58,10158,2022.0
+field,NIT Silchar,Energy,443,5.27,1.16,24.1,13.0,1.38,10693,2023.0
+field,NIT Silchar,Physics and Astronomy,310,3.69,1.49,13.5,5.5,1.57,4179,2022.0
+field,NIT Silchar,Environmental Science,252,3.0,0.71,22.7,9.0,2.56,5728,2022.0
+field,NIT Silchar,Medicine,249,2.96,1.05,16.5,5.0,3.89,4106,2023.0
+field,NIT Silchar,Decision Sciences,131,1.56,0.93,15.3,5.0,2.64,2008,2022.0
+field,NIT Silchar,Chemistry,123,1.46,1.34,17.2,9.0,1.8,2112,2023.0
+field,NIT Silchar,Social Sciences,89,1.06,0.82,8.7,2.0,4.55,774,2024.0
+field,NIT Silchar,Mathematics,88,1.05,0.61,6.1,2.0,1.53,541,2022.0
+field,NIT Silchar,Agricultural and Biological Sciences,82,0.97,0.71,23.2,6.0,5.27,1906,2024.0
+field,NIT Silchar,"Business, Management and Accounting",77,0.92,0.64,15.8,5.0,4.56,1215,2023.0
+field,NIT Silchar,Neuroscience,66,0.78,0.9,18.5,3.0,2.05,1219,2022.0
+field,NIT Silchar,Health Professions,60,0.71,1.17,7.2,2.0,1.91,431,2022.0
+field,NIT Silchar,Earth and Planetary Sciences,35,0.42,0.97,11.3,5.0,1.51,396,2022.0
+field,NIT Silchar,Psychology,34,0.4,0.97,10.1,2.0,2.78,345,2022.0
+field,NIT Silchar,Chemical Engineering,30,0.36,0.64,13.3,7.5,1.89,398,2022.0
+field,NIT Silchar,Arts and Humanities,22,0.26,0.91,3.4,1.0,8.0,74,2021.5
+field,NIT Silchar,"Economics, Econometrics and Finance",21,0.25,0.41,9.4,3.0,2.19,197,2022.0
+field,NIT Silchar,"Biochemistry, Genetics and Molecular Biology",21,0.25,0.38,4.0,1.0,0.92,84,2024.0
+field,NIT Silchar,"Pharmacology, Toxicology and Pharmaceutics",6,0.07,1.81,11.3,7.0,1.84,68,2020.5
+field,NIT Silchar,Immunology and Microbiology,2,0.02,0.6,2.0,2.0,0.25,4,2023.5
+field,NIT Silchar,Nursing,1,0.01,0.53,2.0,2.0,0.53,2,2024.0
+subfield,MANIT Bhopal,Electrical and Electronic Engineering,869,15.09,0.82,9.2,4.0,1.24,8029,2022.0
+subfield,MANIT Bhopal,Mechanical Engineering,571,9.91,1.15,16.8,7.0,1.53,9566,2022.0
+subfield,MANIT Bhopal,Artificial Intelligence,318,5.52,1.12,18.7,4.0,1.69,5938,2023.0
+subfield,MANIT Bhopal,Biomedical Engineering,300,5.21,0.99,20.5,8.0,1.67,6136,2022.0
+subfield,MANIT Bhopal,Computer Vision and Pattern Recognition,247,4.29,1.06,14.2,3.0,1.63,3511,2023.0
+subfield,MANIT Bhopal,"Renewable Energy, Sustainability and the Environment",209,3.63,0.91,41.8,10.0,1.83,8728,2021.0
+subfield,MANIT Bhopal,Control and Systems Engineering,178,3.09,0.73,8.6,2.0,1.38,1527,2022.0
+subfield,MANIT Bhopal,Civil and Structural Engineering,166,2.88,0.67,6.5,1.0,1.53,1073,2024.0
+subfield,MANIT Bhopal,Materials Chemistry,164,2.85,0.95,20.2,7.0,1.18,3320,2020.5
+subfield,MANIT Bhopal,Computer Networks and Communications,151,2.62,1.19,9.0,4.0,1.51,1364,2022.0
+subfield,MANIT Bhopal,Information Systems,129,2.24,1.49,7.7,3.0,2.18,998,2021.0
+subfield,MANIT Bhopal,Aerospace Engineering,122,2.12,0.56,12.8,2.5,1.29,1567,2022.0
+subfield,MANIT Bhopal,Management Science and Operations Research,114,1.98,1.59,13.7,2.0,2.36,1559,2023.0
+subfield,MANIT Bhopal,Water Science and Technology,112,1.94,1.51,33.6,9.0,2.15,3758,2023.0
+subfield,MANIT Bhopal,Automotive Engineering,102,1.77,1.29,13.0,4.0,1.49,1322,2023.0
+subfield,MANIT Bhopal,Polymers and Plastics,98,1.7,1.22,20.1,9.0,2.11,1966,2021.5
+subfield,MANIT Bhopal,Environmental Engineering,87,1.51,1.47,29.5,9.0,2.12,2567,2022.0
+subfield,MANIT Bhopal,Mechanics of Materials,84,1.46,0.81,8.0,1.0,1.09,670,2022.0
+subfield,MANIT Bhopal,Building and Construction,80,1.39,1.58,12.7,3.0,2.28,1015,2024.0
+subfield,MANIT Bhopal,Molecular Biology,69,1.2,2.28,16.6,3.0,0.96,1146,2021.0
+subfield,MANIT Bhopal,"Radiology, Nuclear Medicine and Imaging",67,1.16,1.2,15.1,5.0,2.72,1012,2022.0
+subfield,MANIT Bhopal,"Safety, Risk, Reliability and Quality",60,1.04,1.34,6.7,1.5,1.56,401,2024.0
+subfield,MANIT Bhopal,Global and Planetary Change,59,1.02,1.97,8.6,3.0,2.24,505,2023.0
+subfield,MANIT Bhopal,Plant Science,58,1.01,1.26,36.6,6.5,3.84,2120,2022.5
+subfield,MANIT Bhopal,"Electronic, Optical and Magnetic Materials",57,0.99,1.04,8.0,5.0,0.76,457,2023.0
+subfield,MANIT Bhopal,Signal Processing,53,0.92,1.16,4.6,2.0,1.31,245,2024.0
+subfield,MANIT Bhopal,Transportation,52,0.9,2.32,4.9,1.0,2.52,254,2025.0
+subfield,MANIT Bhopal,Cognitive Neuroscience,50,0.87,1.48,7.4,3.0,2.62,372,2024.0
+subfield,MANIT Bhopal,Computational Mechanics,45,0.78,0.46,7.2,2.0,1.35,324,2024.0
+subfield,MANIT Bhopal,Fluid Flow and Transfer Processes,45,0.78,1.75,24.5,14.0,2.7,1101,2022.0
+subfield,MANIT Bhopal,Sociology and Political Science,45,0.78,1.73,8.9,1.0,4.9,399,2023.0
+subfield,MANIT Bhopal,Energy Engineering and Power Technology,43,0.75,1.38,67.8,12.0,3.4,2915,2021.0
+subfield,MANIT Bhopal,Economics and Econometrics,41,0.71,1.97,20.7,15.0,4.15,849,2022.0
+subfield,MANIT Bhopal,Strategy and Management,40,0.69,2.37,17.3,8.0,3.4,693,2021.0
+subfield,MANIT Bhopal,Numerical Analysis,31,0.54,2.51,5.4,3.0,0.68,168,2018.0
+subfield,MANIT Bhopal,Computational Theory and Mathematics,30,0.52,1.2,3.8,1.5,0.43,114,2021.5
+subfield,MANIT Bhopal,Food Science,29,0.5,1.82,59.9,41.0,5.78,1737,2017.0
+subfield,MANIT Bhopal,Finance,29,0.5,2.35,10.5,3.0,2.57,305,2024.0
+subfield,MANIT Bhopal,Biomaterials,28,0.49,1.15,15.8,4.0,0.82,442,2023.0
+subfield,MANIT Bhopal,Media Technology,28,0.49,2.21,6.1,2.0,1.64,171,2022.5
+subfield,NIT Jamshedpur,Electrical and Electronic Engineering,636,17.7,0.96,7.1,3.0,1.18,4520,2023.0
+subfield,NIT Jamshedpur,Mechanical Engineering,437,12.16,1.41,11.9,4.0,1.46,5195,2022.0
+subfield,NIT Jamshedpur,Biomedical Engineering,178,4.95,0.94,13.4,6.0,1.26,2382,2022.0
+subfield,NIT Jamshedpur,Control and Systems Engineering,168,4.67,1.1,8.7,4.0,1.33,1456,2022.0
+subfield,NIT Jamshedpur,Civil and Structural Engineering,167,4.65,1.08,9.4,2.0,1.62,1569,2023.0
+subfield,NIT Jamshedpur,Aerospace Engineering,153,4.26,1.13,7.0,2.0,1.51,1076,2023.0
+subfield,NIT Jamshedpur,Artificial Intelligence,147,4.09,0.83,10.3,3.0,1.32,1519,2023.0
+subfield,NIT Jamshedpur,Materials Chemistry,110,3.06,1.03,12.2,3.0,1.22,1340,2023.5
+subfield,NIT Jamshedpur,Mechanics of Materials,104,2.89,1.6,8.2,3.0,0.86,852,2022.0
+subfield,NIT Jamshedpur,Computer Vision and Pattern Recognition,99,2.75,0.68,18.9,3.0,1.68,1870,2022.0
+subfield,NIT Jamshedpur,"Renewable Energy, Sustainability and the Environment",88,2.45,0.62,13.2,2.0,1.29,1165,2023.0
+subfield,NIT Jamshedpur,Modeling and Simulation,86,2.39,3.1,56.5,22.0,3.97,4858,2020.0
+subfield,NIT Jamshedpur,Computer Networks and Communications,78,2.17,0.98,12.9,5.0,2.0,1005,2022.0
+subfield,NIT Jamshedpur,Information Systems,68,1.89,1.26,6.4,2.0,2.56,438,2024.0
+subfield,NIT Jamshedpur,Nuclear and High Energy Physics,66,1.84,3.46,6.5,3.0,0.39,427,2021.0
+subfield,NIT Jamshedpur,Computational Mechanics,65,1.81,1.05,9.5,3.0,1.23,619,2022.0
+subfield,NIT Jamshedpur,"Public Health, Environmental and Occupational Health",49,1.36,2.75,30.8,11.0,5.32,1508,2022.0
+subfield,NIT Jamshedpur,"Electronic, Optical and Magnetic Materials",42,1.17,1.23,13.9,6.5,2.74,585,2022.0
+subfield,NIT Jamshedpur,Automotive Engineering,41,1.14,0.83,4.1,1.0,0.65,170,2024.0
+subfield,NIT Jamshedpur,Plant Science,37,1.03,1.28,20.2,6.0,5.85,749,2023.0
+subfield,NIT Jamshedpur,Biomaterials,34,0.95,2.24,28.4,3.0,1.88,967,2024.0
+subfield,NIT Jamshedpur,Ecological Modeling,34,0.95,3.05,11.1,7.5,4.32,379,2021.5
+subfield,NIT Jamshedpur,Polymers and Plastics,33,0.92,0.66,8.4,4.0,1.44,276,2024.0
+subfield,NIT Jamshedpur,"Safety, Risk, Reliability and Quality",30,0.83,1.07,4.6,1.5,1.3,138,2023.0
+subfield,NIT Jamshedpur,Water Science and Technology,29,0.81,0.63,18.1,7.0,1.51,526,2023.0
+subfield,NIT Jamshedpur,Signal Processing,28,0.78,0.99,10.8,6.5,1.81,303,2021.5
+subfield,NIT Jamshedpur,Organic Chemistry,28,0.78,1.41,14.5,9.0,1.28,407,2023.0
+subfield,NIT Jamshedpur,Applied Mathematics,22,0.61,2.47,3.5,1.5,2.69,78,2024.0
+subfield,NIT Jamshedpur,Ocean Engineering,22,0.61,1.34,3.7,2.0,1.01,81,2022.5
+subfield,NIT Jamshedpur,Health Information Management,20,0.56,1.11,13.1,4.5,3.83,262,2022.0
+subfield,NIT Jamshedpur,Management Science and Operations Research,19,0.53,0.43,9.8,5.0,1.84,187,2022.0
+subfield,NIT Jamshedpur,Atmospheric Science,18,0.5,2.4,29.4,18.0,3.01,529,2023.0
+subfield,NIT Jamshedpur,Pollution,18,0.5,1.93,31.6,19.0,2.24,568,2023.5
+subfield,NIT Jamshedpur,Building and Construction,17,0.47,0.54,9.3,4.0,1.62,158,2023.0
+subfield,NIT Jamshedpur,Energy Engineering and Power Technology,17,0.47,0.87,7.9,2.0,0.55,135,2023.0
+subfield,NIT Jamshedpur,"Health, Toxicology and Mutagenesis",17,0.47,2.89,90.9,90.0,6.86,1545,2021.0
+subfield,NIT Jamshedpur,Statistics and Probability,16,0.45,1.41,1.1,0.0,0.49,17,2025.0
+subfield,NIT Jamshedpur,Management Information Systems,16,0.45,1.04,18.7,13.5,3.86,299,2021.0
+subfield,NIT Jamshedpur,Environmental Engineering,16,0.45,0.43,8.3,4.0,1.69,133,2023.5
+subfield,NIT Jamshedpur,"Radiology, Nuclear Medicine and Imaging",14,0.39,0.4,5.9,0.0,1.99,83,2025.0
+subfield,NIT Silchar,Electrical and Electronic Engineering,1775,21.1,1.14,12.8,4.0,1.18,22731,2022.0
+subfield,NIT Silchar,Mechanical Engineering,526,6.25,0.73,13.5,5.0,1.45,7090,2022.0
+subfield,NIT Silchar,Biomedical Engineering,463,5.5,1.04,23.5,10.0,1.77,10876,2023.0
+subfield,NIT Silchar,Civil and Structural Engineering,427,5.08,1.19,9.9,4.0,1.37,4247,2022.0
+subfield,NIT Silchar,Artificial Intelligence,413,4.91,0.99,13.6,4.0,1.62,5637,2022.0
+subfield,NIT Silchar,"Renewable Energy, Sustainability and the Environment",407,4.84,1.22,22.8,13.0,1.35,9285,2023.0
+subfield,NIT Silchar,Control and Systems Engineering,406,4.83,1.14,12.7,4.0,1.69,5144,2022.0
+subfield,NIT Silchar,Aerospace Engineering,395,4.7,1.24,13.0,5.0,1.62,5149,2021.0
+subfield,NIT Silchar,Computer Vision and Pattern Recognition,371,4.41,1.09,10.8,5.0,1.14,4009,2022.0
+subfield,NIT Silchar,Materials Chemistry,258,3.07,1.03,24.4,8.0,1.44,6296,2022.0
+subfield,NIT Silchar,Computational Mechanics,194,2.31,1.34,23.6,8.0,2.28,4573,2021.0
+subfield,NIT Silchar,Computer Networks and Communications,162,1.93,0.87,9.1,4.0,1.07,1470,2021.0
+subfield,NIT Silchar,Mechanics of Materials,132,1.57,0.87,11.6,5.0,1.89,1534,2022.0
+subfield,NIT Silchar,Polymers and Plastics,117,1.39,0.99,16.5,11.0,1.55,1935,2023.0
+subfield,NIT Silchar,Statistical and Nonlinear Physics,116,1.38,1.8,17.4,10.5,1.66,2015,2020.0
+subfield,NIT Silchar,Condensed Matter Physics,105,1.25,2.01,9.4,5.0,1.45,992,2022.0
+subfield,NIT Silchar,Automotive Engineering,100,1.19,0.87,13.9,5.5,1.41,1386,2024.0
+subfield,NIT Silchar,"Radiology, Nuclear Medicine and Imaging",91,1.08,1.11,17.5,4.0,2.96,1594,2023.0
+subfield,NIT Silchar,Water Science and Technology,87,1.03,0.8,33.5,16.0,2.67,2913,2023.0
+subfield,NIT Silchar,Management Science and Operations Research,87,1.03,0.83,12.0,5.0,2.3,1045,2023.0
+subfield,NIT Silchar,Human-Computer Interaction,85,1.01,1.72,14.1,7.0,2.66,1198,2022.0
+subfield,NIT Silchar,Environmental Engineering,79,0.94,0.91,16.1,11.0,2.81,1273,2021.0
+subfield,NIT Silchar,"Electronic, Optical and Magnetic Materials",79,0.94,0.99,17.5,9.0,1.71,1386,2022.0
+subfield,NIT Silchar,Information Systems,69,0.82,0.55,18.9,6.0,3.71,1304,2022.0
+subfield,NIT Silchar,Organic Chemistry,68,0.81,1.46,19.1,8.0,1.43,1302,2019.0
+subfield,NIT Silchar,"Atomic and Molecular Physics, and Optics",60,0.71,1.52,13.3,3.0,1.9,798,2022.0
+subfield,NIT Silchar,Signal Processing,59,0.7,0.89,8.6,3.0,0.95,506,2021.0
+subfield,NIT Silchar,Building and Construction,59,0.7,0.8,11.4,4.0,1.83,674,2022.0
+subfield,NIT Silchar,Health Information Management,51,0.61,1.21,8.1,2.0,1.93,415,2022.0
+subfield,NIT Silchar,"Safety, Risk, Reliability and Quality",48,0.57,0.73,4.6,2.0,1.26,223,2024.0
+subfield,NIT Silchar,Plant Science,47,0.56,0.7,27.7,4.0,6.59,1301,2024.0
+subfield,NIT Silchar,Cognitive Neuroscience,44,0.52,0.89,19.8,4.0,2.21,873,2021.0
+subfield,NIT Silchar,Management Information Systems,38,0.45,1.05,15.6,9.0,4.28,593,2022.0
+subfield,NIT Silchar,Ocean Engineering,38,0.45,0.99,4.4,1.5,0.81,167,2024.0
+subfield,NIT Silchar,Computational Theory and Mathematics,37,0.44,1.01,5.7,2.0,0.86,210,2022.0
+subfield,NIT Silchar,Modeling and Simulation,36,0.43,0.55,7.7,4.5,1.53,278,2021.5
+subfield,NIT Silchar,Energy Engineering and Power Technology,36,0.43,0.79,39.1,8.5,1.73,1408,2022.0
+subfield,NIT Silchar,"Statistics, Probability and Uncertainty",34,0.4,1.56,24.5,10.0,3.05,833,2020.0
+subfield,NIT Silchar,"Public Health, Environmental and Occupational Health",33,0.39,0.79,7.8,3.0,4.2,257,2024.0
+subfield,NIT Silchar,Oncology,32,0.38,1.38,19.6,13.0,2.54,628,2023.0
+topic,MANIT Bhopal,Aluminum Alloys Composites Properties,129,2.24,1.98,15.3,8.0,1.26,1974,2021.0
+topic,MANIT Bhopal,Heat Transfer Mechanisms,110,1.91,1.51,18.0,9.0,1.51,1977,2022.0
+topic,MANIT Bhopal,Biodiesel Production and Applications,109,1.89,1.16,30.1,21.0,1.95,3284,2022.0
+topic,MANIT Bhopal,Low-power high-performance VLSI design,101,1.75,2.25,8.1,4.0,0.68,817,2019.0
+topic,MANIT Bhopal,Photovoltaic System Optimization Techniques,82,1.42,1.44,16.7,4.0,1.91,1371,2022.0
+topic,MANIT Bhopal,Multilevel Inverters and Converters,80,1.39,1.57,10.3,5.0,1.67,827,2022.0
+topic,MANIT Bhopal,Natural Fiber Reinforced Composites,76,1.32,1.28,21.1,9.0,2.45,1600,2022.0
+topic,MANIT Bhopal,Advanced DC-DC Converters,68,1.18,1.37,4.4,2.0,1.35,299,2023.0
+topic,MANIT Bhopal,Microgrid Control and Optimization,66,1.15,0.88,8.7,3.5,1.25,575,2021.0
+topic,MANIT Bhopal,Adsorption and biosorption for pollutant removal,57,0.99,1.49,59.5,18.0,3.14,3391,2022.0
+topic,MANIT Bhopal,Power Quality and Harmonics,57,0.99,1.17,7.2,4.0,1.35,410,2021.0
+topic,MANIT Bhopal,AI in cancer detection,56,0.97,1.44,22.9,6.0,1.64,1284,2023.0
+topic,MANIT Bhopal,Wind Energy Research and Development,56,0.97,1.52,21.9,9.5,1.94,1229,2020.0
+topic,MANIT Bhopal,Additive Manufacturing and 3D Printing Technologies,54,0.94,1.66,10.4,6.0,1.21,560,2023.0
+topic,MANIT Bhopal,Context-Aware Activity Recognition Systems,51,0.89,1.87,33.9,5.0,3.87,1727,2025.0
+topic,MANIT Bhopal,EEG and Brain-Computer Interfaces,46,0.8,1.44,7.8,3.0,2.65,361,2024.0
+topic,MANIT Bhopal,Privacy-Preserving Technologies in Data,45,0.78,2.77,18.0,1.0,3.03,812,2025.0
+topic,MANIT Bhopal,Solar Thermal and Photovoltaic Systems,45,0.78,1.25,73.9,52.0,2.55,3326,2018.0
+topic,MANIT Bhopal,Advanced Combustion Engine Technologies,45,0.78,2.1,24.5,14.0,2.7,1101,2022.0
+topic,MANIT Bhopal,Advanced Machining and Optimization Techniques,43,0.75,0.71,11.3,5.0,0.64,485,2021.0
+topic,MANIT Bhopal,Network Security and Intrusion Detection,41,0.71,1.73,8.3,4.0,1.96,342,2023.0
+topic,MANIT Bhopal,Hybrid Renewable Energy Systems,40,0.69,1.45,67.5,10.5,3.26,2701,2021.0
+topic,MANIT Bhopal,Smart Agriculture and AI,39,0.68,1.05,32.0,5.0,4.43,1249,2023.0
+topic,MANIT Bhopal,Electric Vehicles and Infrastructure,38,0.66,1.15,19.5,4.0,2.74,742,2023.0
+topic,MANIT Bhopal,Stock Market Forecasting Methods,38,0.66,2.72,1.9,1.0,2.5,71,2025.0
+topic,MANIT Bhopal,Geotechnical Engineering and Soil Stabilization,37,0.64,0.62,6.8,1.0,1.27,251,2025.0
+topic,MANIT Bhopal,Optimal Power Flow Distribution,36,0.63,0.86,12.2,3.5,1.09,439,2022.0
+topic,MANIT Bhopal,Advanced Authentication Protocols Security,36,0.63,2.26,11.0,6.5,1.91,397,2023.0
+topic,MANIT Bhopal,Antenna Design and Analysis,33,0.57,0.28,2.6,0.0,0.44,87,2023.0
+topic,MANIT Bhopal,Concrete and Cement Materials Research,33,0.57,1.18,10.0,2.0,2.99,330,2025.0
+topic,MANIT Bhopal,COVID-19 diagnosis using AI,33,0.57,1.64,11.2,2.0,2.92,371,2024.0
+topic,MANIT Bhopal,Multi-Criteria Decision Making,33,0.57,0.92,36.5,5.0,3.8,1205,2021.0
+topic,MANIT Bhopal,Energy Load and Power Forecasting,32,0.56,1.35,4.5,2.0,0.96,144,2023.0
+topic,MANIT Bhopal,Cavitation Phenomena in Pumps,31,0.54,2.89,13.2,2.0,1.58,409,2022.0
+topic,MANIT Bhopal,Electric Power System Optimization,30,0.52,0.83,9.9,4.0,1.04,296,2020.0
+topic,MANIT Bhopal,Iterative Methods for Nonlinear Equations,30,0.52,3.08,5.6,3.0,0.71,168,2018.5
+topic,MANIT Bhopal,Urban Transport and Accessibility,29,0.5,2.62,5.1,1.0,3.55,147,2025.0
+topic,MANIT Bhopal,Retinal Imaging and Analysis,28,0.49,0.94,21.6,12.5,2.93,605,2021.0
+topic,MANIT Bhopal,Materials Engineering and Processing,28,0.49,2.39,7.6,3.5,0.92,213,2022.5
+topic,MANIT Bhopal,Traffic and Road Safety,28,0.49,1.49,4.8,1.0,1.2,133,2024.0
+topic,NIT Jamshedpur,Antenna Design and Analysis,92,2.56,1.26,7.9,3.0,1.51,731,2023.0
+topic,NIT Jamshedpur,Nanofluid Flow and Heat Transfer,87,2.42,3.02,16.1,8.0,1.24,1403,2022.0
+topic,NIT Jamshedpur,Fractional Differential Equations Solutions,74,2.06,3.44,48.3,18.5,3.87,3576,2020.0
+topic,NIT Jamshedpur,Heat Transfer Mechanisms,67,1.86,1.47,28.2,9.0,2.53,1892,2019.0
+topic,NIT Jamshedpur,Nuclear physics research studies,65,1.81,4.93,6.6,3.0,0.4,427,2021.0
+topic,NIT Jamshedpur,Geotechnical Engineering and Soil Stabilization,63,1.75,1.7,6.7,2.0,1.27,420,2022.0
+topic,NIT Jamshedpur,Composite Structure Analysis and Optimization,54,1.5,2.58,12.4,3.0,1.15,669,2022.5
+topic,NIT Jamshedpur,Photovoltaic System Optimization Techniques,48,1.34,1.35,9.8,2.0,1.61,472,2023.0
+topic,NIT Jamshedpur,Power Systems Fault Detection,45,1.25,2.67,5.8,4.0,1.21,263,2022.0
+topic,NIT Jamshedpur,Mathematical and Theoretical Epidemiology and Ecology Models,45,1.25,2.84,32.5,11.0,5.59,1464,2022.0
+topic,NIT Jamshedpur,Islanding Detection in Power Systems,44,1.22,4.17,4.8,3.0,1.45,209,2023.0
+topic,NIT Jamshedpur,Power Quality and Harmonics,42,1.17,1.38,7.1,4.0,2.06,298,2022.0
+topic,NIT Jamshedpur,Thermodynamic and Exergetic Analyses of Power and Cooling Systems,37,1.03,4.05,20.7,9.0,2.75,765,2019.0
+topic,NIT Jamshedpur,Multilevel Inverters and Converters,37,1.03,1.16,3.4,3.0,0.7,125,2022.0
+topic,NIT Jamshedpur,Power System Optimization and Stability,35,0.97,2.1,6.7,3.0,1.45,234,2021.0
+topic,NIT Jamshedpur,Photonic and Optical Devices,35,0.97,4.66,7.0,4.0,0.94,245,2023.0
+topic,NIT Jamshedpur,Advanced DC-DC Converters,35,0.97,1.13,3.1,1.0,2.9,108,2024.0
+topic,NIT Jamshedpur,Erosion and Abrasive Machining,34,0.95,3.1,11.1,7.5,4.32,379,2021.5
+topic,NIT Jamshedpur,Advanced Welding Techniques Analysis,34,0.95,2.43,10.1,5.5,1.5,345,2022.0
+topic,NIT Jamshedpur,Smart Agriculture and AI,33,0.92,1.43,14.4,5.0,4.78,475,2023.0
+topic,NIT Jamshedpur,Concrete and Cement Materials Research,31,0.86,1.78,22.2,9.0,2.88,689,2023.0
+topic,NIT Jamshedpur,Advanced Machining and Optimization Techniques,30,0.83,0.79,11.0,7.5,0.93,330,2021.0
+topic,NIT Jamshedpur,Magnesium Alloys: Properties and Applications,29,0.81,3.49,31.9,3.0,2.0,924,2023.0
+topic,NIT Jamshedpur,Aluminum Alloys Composites Properties,29,0.81,0.71,8.6,6.0,1.28,248,2022.0
+topic,NIT Jamshedpur,Advanced Memory and Neural Computing,29,0.81,1.47,9.6,4.0,0.59,278,2022.0
+topic,NIT Jamshedpur,Heat and Mass Transfer in Porous Media,28,0.78,3.0,8.2,3.5,1.21,231,2021.0
+topic,NIT Jamshedpur,Optimal Power Flow Distribution,28,0.78,1.07,8.8,3.0,1.0,245,2023.0
+topic,NIT Jamshedpur,AI in cancer detection,28,0.78,1.15,12.2,2.5,1.91,341,2024.0
+topic,NIT Jamshedpur,Microgrid Control and Optimization,27,0.75,0.58,5.8,1.0,1.69,157,2024.0
+topic,NIT Jamshedpur,Welding Techniques and Residual Stresses,26,0.72,1.94,5.7,2.0,1.08,149,2023.5
+topic,NIT Jamshedpur,Gas Sensing Nanomaterials and Sensors,25,0.7,2.28,13.3,7.0,0.92,332,2023.0
+topic,NIT Jamshedpur,Biometric Identification and Security,24,0.67,2.52,12.1,7.0,1.6,290,2020.5
+topic,NIT Jamshedpur,Advanced Steganography and Watermarking Techniques,24,0.67,1.74,16.1,6.5,2.28,387,2020.5
+topic,NIT Jamshedpur,Metamaterials and Metasurfaces Applications,24,0.67,3.59,14.2,12.5,3.9,342,2023.0
+topic,NIT Jamshedpur,Natural Fiber Reinforced Composites,24,0.67,0.65,9.5,4.5,1.73,229,2023.0
+topic,NIT Jamshedpur,Heat Transfer and Optimization,23,0.64,0.92,2.8,1.0,0.51,65,2024.0
+topic,NIT Jamshedpur,Advancements in Semiconductor Devices and Circuit Design,23,0.64,0.33,8.9,4.0,1.01,204,2021.0
+topic,NIT Jamshedpur,Cryptography and Data Security,22,0.61,2.52,7.3,4.0,0.52,160,2021.0
+topic,NIT Jamshedpur,Electric Power System Optimization,22,0.61,0.98,7.5,4.5,1.4,164,2020.0
+topic,NIT Jamshedpur,Optimization and Mathematical Programming,22,0.61,3.5,20.7,8.0,1.58,456,2019.5
+topic,NIT Silchar,Advancements in Semiconductor Devices and Circuit Design,304,3.61,1.85,14.7,6.0,0.9,4479,2021.0
+topic,NIT Silchar,Antenna Design and Analysis,236,2.81,1.38,13.4,6.0,1.71,3161,2022.0
+topic,NIT Silchar,Advanced Photocatalysis Techniques,234,2.78,1.92,26.7,18.0,1.4,6244,2023.0
+topic,NIT Silchar,Frequency Control in Power Systems,189,2.25,1.71,25.2,9.0,1.92,4754,2021.0
+topic,NIT Silchar,Biodiesel Production and Applications,169,2.01,1.23,35.5,20.0,2.73,6003,2023.0
+topic,NIT Silchar,Microgrid Control and Optimization,137,1.63,1.25,18.5,8.0,2.23,2541,2022.0
+topic,NIT Silchar,Advanced Machining and Optimization Techniques,115,1.37,1.3,12.8,5.0,1.02,1467,2021.0
+topic,NIT Silchar,GaN-based semiconductor devices and materials,102,1.21,2.07,9.6,5.0,1.48,984,2022.0
+topic,NIT Silchar,Chaos control and synchronization,94,1.12,1.96,19.6,14.5,1.72,1844,2019.0
+topic,NIT Silchar,Heat Transfer and Optimization,90,1.07,1.54,16.7,8.0,1.54,1505,2020.0
+topic,NIT Silchar,Seismic Performance and Analysis,88,1.05,1.69,6.9,4.0,0.91,611,2022.0
+topic,NIT Silchar,Advanced MEMS and NEMS Technologies,86,1.02,1.87,10.5,4.5,0.75,901,2020.0
+topic,NIT Silchar,High voltage insulation and dielectric phenomena,83,0.99,1.96,9.7,5.0,1.04,809,2023.0
+topic,NIT Silchar,Geotechnical Engineering and Soil Stabilization,83,0.99,0.96,14.6,5.0,1.61,1210,2022.0
+topic,NIT Silchar,Hand Gesture Recognition Systems,83,0.99,1.71,14.4,7.0,2.72,1195,2022.0
+topic,NIT Silchar,Natural Fiber Reinforced Composites,82,0.97,0.95,16.6,11.0,1.34,1365,2022.0
+topic,NIT Silchar,Computational Fluid Dynamics and Aerodynamics,76,0.9,2.0,39.9,14.0,3.35,3033,2021.0
+topic,NIT Silchar,Advanced Control Systems Design,76,0.9,1.42,13.1,4.5,2.3,994,2023.0
+topic,NIT Silchar,Energy Harvesting in Wireless Networks,67,0.8,1.72,16.2,7.0,1.51,1086,2023.0
+topic,NIT Silchar,Advanced Memory and Neural Computing,66,0.78,1.43,16.1,6.0,1.2,1062,2021.0
+topic,NIT Silchar,Optimal Power Flow Distribution,65,0.77,1.06,8.6,3.0,0.76,561,2023.0
+topic,NIT Silchar,Multi-Criteria Decision Making,64,0.76,1.23,14.5,6.0,2.76,930,2023.0
+topic,NIT Silchar,Hydrological Forecasting Using AI,60,0.71,1.62,18.5,14.0,3.5,1112,2020.0
+topic,NIT Silchar,Electric Power System Optimization,60,0.71,1.14,12.9,5.5,1.18,774,2019.0
+topic,NIT Silchar,Natural Language Processing Techniques,56,0.67,1.84,10.3,5.0,1.5,578,2022.0
+topic,NIT Silchar,Retinal Imaging and Analysis,54,0.64,1.24,14.8,4.0,2.75,798,2023.0
+topic,NIT Silchar,Solar Thermal and Photovoltaic Systems,53,0.63,1.01,31.5,19.0,1.4,1668,2022.0
+topic,NIT Silchar,Wind Energy Research and Development,53,0.63,0.99,15.6,6.0,1.89,826,2021.0
+topic,NIT Silchar,Adsorption and biosorption for pollutant removal,53,0.63,0.95,38.7,19.0,2.56,2049,2022.0
+topic,NIT Silchar,Speech Recognition and Synthesis,52,0.62,1.96,7.7,5.0,1.04,398,2021.0
+topic,NIT Silchar,Metaheuristic Optimization Algorithms Research,52,0.62,1.44,20.0,6.0,1.57,1042,2021.5
+topic,NIT Silchar,Advanced machining processes and optimization,51,0.61,1.19,4.6,2.0,1.1,236,2022.0
+topic,NIT Silchar,TiO2 Photocatalysis and Solar Cells,51,0.61,1.65,9.5,5.0,0.68,485,2020.0
+topic,NIT Silchar,Power Quality and Harmonics,51,0.61,0.72,9.5,3.0,0.82,482,2021.0
+topic,NIT Silchar,Artificial Intelligence in Healthcare,51,0.61,1.21,8.1,2.0,1.93,415,2022.0
+topic,NIT Silchar,Microfluidic and Capillary Electrophoresis Applications,50,0.59,2.03,22.2,9.5,1.38,1108,2022.0
+topic,NIT Silchar,Advanced DC-DC Converters,50,0.59,0.69,3.8,2.0,1.2,189,2024.0
+topic,NIT Silchar,Perovskite Materials and Applications,50,0.59,1.33,10.7,7.0,0.81,535,2022.5
+topic,NIT Silchar,Electric Vehicles and Infrastructure,48,0.57,0.99,14.4,4.0,2.03,692,2023.0
+topic,NIT Silchar,Heat Transfer Mechanisms,47,0.56,0.44,17.6,4.0,1.68,825,2022.0

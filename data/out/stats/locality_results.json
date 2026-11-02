@@ -1,0 +1,4346 @@
+{
+ "home_state": {
+  "MANIT Bhopal": "Madhya Pradesh",
+  "NIT Jamshedpur": "Jharkhand",
+  "NIT Silchar": "Assam"
+ },
+ "partners_rebuilt_match_indian_connections_%": 97.2,
+ "by_cluster": [
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "CSIR",
+   "partners": 14,
+   "partner_links": 120,
+   "share_of_links_%": 4.3,
+   "distinct_papers": 72,
+   "share_of_papers_with_indian_partner_%": 3.8,
+   "top_partners": "Advanced Materials and Processes Research Institute (45); Council of Scientific and Industrial Research (29); Academy of Scientific and Innovative Research (22); Central Building Research Institute (6)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "Central university",
+   "partners": 23,
+   "partner_links": 117,
+   "share_of_links_%": 4.2,
+   "distinct_papers": 114,
+   "share_of_papers_with_indian_partner_%": 6.0,
+   "top_partners": "Guru Ghasidas Vishwavidyalaya (29); Banaras Hindu University (21); Aligarh Muslim University (11); University of Delhi (10)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "DAE",
+   "partners": 6,
+   "partner_links": 21,
+   "share_of_links_%": 0.8,
+   "distinct_papers": 15,
+   "share_of_papers_with_indian_partner_%": 0.8,
+   "top_partners": "Bhabha Atomic Research Centre (8); Saha Institute of Nuclear Physics (6); Homi Bhabha National Institute (3); Department of Atomic Energy (2)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "DRDO",
+   "partners": 3,
+   "partner_links": 3,
+   "share_of_links_%": 0.1,
+   "distinct_papers": 2,
+   "share_of_papers_with_indian_partner_%": 0.1,
+   "top_partners": "Defence Research and Development Organisation (1); Centre for Artificial Intelligence and Robotics (1); Defence Metallurgical Research Laboratory (1)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "Government lab/agency",
+   "partners": 21,
+   "partner_links": 49,
+   "share_of_links_%": 1.8,
+   "distinct_papers": 46,
+   "share_of_papers_with_indian_partner_%": 2.4,
+   "top_partners": "Government of Uttar Pradesh (9); Madhya Pradesh Council of Science and Technology (8); Central Power Research Institute (7); All India Council for Technical Education (5)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "ICAR",
+   "partners": 8,
+   "partner_links": 31,
+   "share_of_links_%": 1.1,
+   "distinct_papers": 19,
+   "share_of_papers_with_indian_partner_%": 1.0,
+   "top_partners": "Central Institute of Agricultural Engineering (13); Indian Council of Agricultural Research (7); National Institute of High Security Animal Diseases (4); Agricultural Research Center (2)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "ICMR",
+   "partners": 2,
+   "partner_links": 8,
+   "share_of_links_%": 0.3,
+   "distinct_papers": 4,
+   "share_of_papers_with_indian_partner_%": 0.2,
+   "top_partners": "ICMR National Institute for Research in Environmental Health (4); Indian Council of Medical Research (4)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "IIIT",
+   "partners": 14,
+   "partner_links": 146,
+   "share_of_links_%": 5.3,
+   "distinct_papers": 140,
+   "share_of_papers_with_indian_partner_%": 7.3,
+   "top_partners": "Indian Institute of Information Technology Bhopal (51); Indian Institute of Information Technology Design and Manufacturing Jabalpur (50); Indian Institute of Information Technology, Pune (11); Indian Institute of Information Technology, Nagpur (9)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "IISER",
+   "partners": 6,
+   "partner_links": 21,
+   "share_of_links_%": 0.8,
+   "distinct_papers": 21,
+   "share_of_papers_with_indian_partner_%": 1.1,
+   "top_partners": "Indian Institute of Science Education and Research, Bhopal (15); Indian Institute of Science Education and Research Mohali (2); Indian Institute of Science Education and Research Berhampur (1); Indian Institute of Science Education and Research Kolkata (1)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "IISc",
+   "partners": 1,
+   "partner_links": 15,
+   "share_of_links_%": 0.5,
+   "distinct_papers": 15,
+   "share_of_papers_with_indian_partner_%": 0.8,
+   "top_partners": "Indian Institute of Science Bangalore (15)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "IIT",
+   "partners": 22,
+   "partner_links": 355,
+   "share_of_links_%": 12.8,
+   "distinct_papers": 333,
+   "share_of_papers_with_indian_partner_%": 17.4,
+   "top_partners": "Indian Institute of Technology Roorkee (63); Indian Institute of Technology Delhi (51); Indian Institute of Technology Bombay (32); Indian Institute of Technology Kharagpur (30)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "ISRO",
+   "partners": 6,
+   "partner_links": 9,
+   "share_of_links_%": 0.3,
+   "distinct_papers": 6,
+   "share_of_papers_with_indian_partner_%": 0.3,
+   "top_partners": "Indian Space Research Organisation (4); Indian Institute of Remote Sensing (1); Physical Research Laboratory (1); Space Applications Centre (1)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "Industry",
+   "partners": 13,
+   "partner_links": 35,
+   "share_of_links_%": 1.3,
+   "distinct_papers": 35,
+   "share_of_papers_with_indian_partner_%": 1.8,
+   "top_partners": "STMicroelectronics (India) (6); Air India Limited (India) (4); Bharat Heavy Electricals (India) (4); Kirloskar Group (India) (4)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "Medical/health",
+   "partners": 10,
+   "partner_links": 38,
+   "share_of_links_%": 1.4,
+   "distinct_papers": 33,
+   "share_of_papers_with_indian_partner_%": 1.7,
+   "top_partners": "All India Institute of Medical Sciences Bhopal (20); Jawaharlal Nehru Cancer Hospital and Research Centre (4); All India Institute of Medical Sciences (3); All India Institute of Medical Sciences Raipur (3)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "NIT",
+   "partners": 25,
+   "partner_links": 318,
+   "share_of_links_%": 11.5,
+   "distinct_papers": 307,
+   "share_of_papers_with_indian_partner_%": 16.0,
+   "top_partners": "National Institute of Technology Raipur (85); National Institute of Technology Tiruchirappalli (22); National Institute of Technology Rourkela (21); National Institute of Technology Manipur (20)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "Other",
+   "partners": 12,
+   "partner_links": 41,
+   "share_of_links_%": 1.5,
+   "distinct_papers": 41,
+   "share_of_papers_with_indian_partner_%": 2.1,
+   "top_partners": "National Institute of Hydrology (16); Centre for Development of Advanced Computing (5); National Power Training Institute (4); Track2Training (4)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "Other university/college",
+   "partners": 275,
+   "partner_links": 1434,
+   "share_of_links_%": 51.8,
+   "distinct_papers": 1111,
+   "share_of_papers_with_indian_partner_%": 58.1,
+   "top_partners": "Rajiv Gandhi Technical University (67); Amity University (48); Manipal University Jaipur (48); University of Petroleum and Energy Studies (45)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "partner_cluster": "Premier science inst.",
+   "partners": 4,
+   "partner_links": 8,
+   "share_of_links_%": 0.3,
+   "distinct_papers": 8,
+   "share_of_papers_with_indian_partner_%": 0.4,
+   "top_partners": "Indian Association for the Cultivation of Science (4); Tata Institute of Social Sciences (2); Jawaharlal Nehru Centre for Advanced Scientific Research (1); S.N. Bose National Centre for Basic Sciences (1)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "CSIR",
+   "partners": 15,
+   "partner_links": 162,
+   "share_of_links_%": 6.3,
+   "distinct_papers": 115,
+   "share_of_papers_with_indian_partner_%": 6.8,
+   "top_partners": "National Metallurgical Laboratory (91); Council of Scientific and Industrial Research (33); Academy of Scientific and Innovative Research (13); Institute of Minerals and Materials Technology (5)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "Central university",
+   "partners": 19,
+   "partner_links": 64,
+   "share_of_links_%": 2.5,
+   "distinct_papers": 56,
+   "share_of_papers_with_indian_partner_%": 3.3,
+   "top_partners": "Banaras Hindu University (16); Guru Ghasidas Vishwavidyalaya (8); Central University of Tamil Nadu (6); Central University of Jharkhand (4)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "DAE",
+   "partners": 9,
+   "partner_links": 35,
+   "share_of_links_%": 1.4,
+   "distinct_papers": 22,
+   "share_of_papers_with_indian_partner_%": 1.3,
+   "top_partners": "Atomic Minerals Directorate for Exploration and Research (12); Department of Atomic Energy (9); Bhabha Atomic Research Centre (5); Raja Ramanna Centre for Advanced Technology (3)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "DRDO",
+   "partners": 4,
+   "partner_links": 26,
+   "share_of_links_%": 1.0,
+   "distinct_papers": 15,
+   "share_of_papers_with_indian_partner_%": 0.9,
+   "top_partners": "Defence Research and Development Organisation (14); Integrated Test Range (8); Scientific Analysis Group (3); Naval Science & Technological Laboratory (1)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "Government lab/agency",
+   "partners": 12,
+   "partner_links": 44,
+   "share_of_links_%": 1.7,
+   "distinct_papers": 44,
+   "share_of_papers_with_indian_partner_%": 2.6,
+   "top_partners": "India Meteorological Department (8); Sam Higginbottom Institute of Agriculture (7); Rajkiya Engineering College Azamgarh (6); Indian Institute of Water Management (4)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "ICAR",
+   "partners": 3,
+   "partner_links": 6,
+   "share_of_links_%": 0.2,
+   "distinct_papers": 4,
+   "share_of_papers_with_indian_partner_%": 0.2,
+   "top_partners": "Indian Council of Agricultural Research (3); Indian Agricultural Research Institute (2); Directorate of Weed Research (1)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "IIIT",
+   "partners": 10,
+   "partner_links": 119,
+   "share_of_links_%": 4.7,
+   "distinct_papers": 118,
+   "share_of_papers_with_indian_partner_%": 6.9,
+   "top_partners": "Indian Institute of Information Technology Ranchi (55); Indian Institute of Information Technology Design and Manufacturing Jabalpur (18); International Institute of Information Technology (16); Indian Institute of Information Technology Kalyani (9)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "IISER",
+   "partners": 4,
+   "partner_links": 6,
+   "share_of_links_%": 0.2,
+   "distinct_papers": 6,
+   "share_of_papers_with_indian_partner_%": 0.4,
+   "top_partners": "Indian Institute of Science Education and Research, Bhopal (3); Indian Institute of Science Education and Research Pune (1); Indian Institute of Science Education and Research, Tirupati (1); Indian Institute of Science Education and Research Kolkata (1)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "IISc",
+   "partners": 1,
+   "partner_links": 16,
+   "share_of_links_%": 0.6,
+   "distinct_papers": 16,
+   "share_of_papers_with_indian_partner_%": 0.9,
+   "top_partners": "Indian Institute of Science Bangalore (16)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "IIT",
+   "partners": 21,
+   "partner_links": 343,
+   "share_of_links_%": 13.4,
+   "distinct_papers": 320,
+   "share_of_papers_with_indian_partner_%": 18.8,
+   "top_partners": "Indian Institute of Technology Dhanbad (79); Indian Institute of Technology Kharagpur (52); Indian Institute of Technology Roorkee (33); Indian Institute of Technology BHU (25)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "ISRO",
+   "partners": 2,
+   "partner_links": 10,
+   "share_of_links_%": 0.4,
+   "distinct_papers": 9,
+   "share_of_papers_with_indian_partner_%": 0.5,
+   "top_partners": "Aryabhatta Research Institute of Observational Sciences (6); Physical Research Laboratory (4)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "Industry",
+   "partners": 14,
+   "partner_links": 71,
+   "share_of_links_%": 2.8,
+   "distinct_papers": 70,
+   "share_of_papers_with_indian_partner_%": 4.1,
+   "top_partners": "Tata Steel (India) (37); Tata Motors (India) (17); Tata Consultancy Services (India) (5); Oracle (India) (2)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "Medical/health",
+   "partners": 6,
+   "partner_links": 11,
+   "share_of_links_%": 0.4,
+   "distinct_papers": 8,
+   "share_of_papers_with_indian_partner_%": 0.5,
+   "top_partners": "All India Institute of Medical Sciences, Deoghar (4); All India Institute of Medical Sciences (3); Bangalore Medical Center (1); Bangalore Medical College and Research Institute (1)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "NIT",
+   "partners": 25,
+   "partner_links": 323,
+   "share_of_links_%": 12.7,
+   "distinct_papers": 307,
+   "share_of_papers_with_indian_partner_%": 18.1,
+   "top_partners": "Motilal Nehru National Institute of Technology (52); National Institute of Technology Patna (44); National Institute of Technology Sikkim (30); National Institute of Technology Rourkela (29)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "Other",
+   "partners": 8,
+   "partner_links": 16,
+   "share_of_links_%": 0.6,
+   "distinct_papers": 16,
+   "share_of_papers_with_indian_partner_%": 0.9,
+   "top_partners": "Indian Institute of Tropical Meteorology (5); Indo-US Science and Technology Forum (3); National Institute of Hydrology (2); Kalpavriksh (2)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "Other university/college",
+   "partners": 244,
+   "partner_links": 1293,
+   "share_of_links_%": 50.6,
+   "distinct_papers": 945,
+   "share_of_papers_with_indian_partner_%": 55.7,
+   "top_partners": "Vellore Institute of Technology University (69); Thapar Institute of Engineering & Technology (45); GLA University (38); KIIT University (33)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "partner_cluster": "Premier science inst.",
+   "partners": 3,
+   "partner_links": 8,
+   "share_of_links_%": 0.3,
+   "distinct_papers": 8,
+   "share_of_papers_with_indian_partner_%": 0.5,
+   "top_partners": "Indian Association for the Cultivation of Science (4); Indian Statistical Institute (2); Jawaharlal Nehru Centre for Advanced Scientific Research (2)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "CSIR",
+   "partners": 18,
+   "partner_links": 100,
+   "share_of_links_%": 2.3,
+   "distinct_papers": 70,
+   "share_of_papers_with_indian_partner_%": 2.3,
+   "top_partners": "North East Institute of Science and Technology (18); Council of Scientific and Industrial Research (18); Central Mechanical Engineering Research Institute (12); Academy of Scientific and Innovative Research (10)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "Central university",
+   "partners": 23,
+   "partner_links": 373,
+   "share_of_links_%": 8.6,
+   "distinct_papers": 358,
+   "share_of_papers_with_indian_partner_%": 11.5,
+   "top_partners": "Mizoram University (134); Assam University (76); Tezpur University (47); Jawaharlal Nehru University (20)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "DAE",
+   "partners": 5,
+   "partner_links": 9,
+   "share_of_links_%": 0.2,
+   "distinct_papers": 9,
+   "share_of_papers_with_indian_partner_%": 0.3,
+   "top_partners": "Bhabha Atomic Research Centre (3); Homi Bhabha National Institute (2); Saha Institute of Nuclear Physics (2); Dr. Homi Bhabha State University (1)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "DRDO",
+   "partners": 4,
+   "partner_links": 4,
+   "share_of_links_%": 0.1,
+   "distinct_papers": 3,
+   "share_of_papers_with_indian_partner_%": 0.1,
+   "top_partners": "Defence Institute of Advanced Technology (1); Defence Metallurgical Research Laboratory (1); Defence Research and Development Organisation (1); Microwave Tube Research & Development Centre (1)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "Government lab/agency",
+   "partners": 16,
+   "partner_links": 60,
+   "share_of_links_%": 1.4,
+   "distinct_papers": 58,
+   "share_of_papers_with_indian_partner_%": 1.9,
+   "top_partners": "Government of West Bengal (30); Ministry of Education (4); Gati Shakti Vishwavidyalaya (4); Government of Karnataka (3)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "ICAR",
+   "partners": 1,
+   "partner_links": 1,
+   "share_of_links_%": 0.0,
+   "distinct_papers": 1,
+   "share_of_papers_with_indian_partner_%": 0.0,
+   "top_partners": "Agricultural Research Service (1)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "IIIT",
+   "partners": 10,
+   "partner_links": 92,
+   "share_of_links_%": 2.1,
+   "distinct_papers": 90,
+   "share_of_papers_with_indian_partner_%": 2.9,
+   "top_partners": "Indian Institute of Information Technology Allahabad (53); Indian Institute of Information Technology Design and Manufacturing, Kurnool (13); Indian Institute of Information Technology Guwahati (7); Indian Institute of Information Technology Senapati, Manipur (6)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "IISER",
+   "partners": 6,
+   "partner_links": 13,
+   "share_of_links_%": 0.3,
+   "distinct_papers": 12,
+   "share_of_papers_with_indian_partner_%": 0.4,
+   "top_partners": "Indian Institute of Science Education and Research, Bhopal (4); Indian Institute of Science Education and Research Pune (3); Indian Institute of Science Education and Research Mohali (2); Indian Institute of Science Education and Research Kolkata (2)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "IISc",
+   "partners": 1,
+   "partner_links": 65,
+   "share_of_links_%": 1.5,
+   "distinct_papers": 65,
+   "share_of_papers_with_indian_partner_%": 2.1,
+   "top_partners": "Indian Institute of Science Bangalore (65)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "IIT",
+   "partners": 22,
+   "partner_links": 584,
+   "share_of_links_%": 13.5,
+   "distinct_papers": 546,
+   "share_of_papers_with_indian_partner_%": 17.6,
+   "top_partners": "Indian Institute of Technology Guwahati (137); Indian Institute of Technology Kharagpur (66); Indian Institute of Technology Delhi (54); Indian Institute of Technology Bombay (42)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "ISRO",
+   "partners": 3,
+   "partner_links": 5,
+   "share_of_links_%": 0.1,
+   "distinct_papers": 4,
+   "share_of_papers_with_indian_partner_%": 0.1,
+   "top_partners": "North Eastern Space Applications Centre (2); Indian Space Research Organisation (2); Department of Space (1)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "Industry",
+   "partners": 17,
+   "partner_links": 27,
+   "share_of_links_%": 0.6,
+   "distinct_papers": 27,
+   "share_of_papers_with_indian_partner_%": 0.9,
+   "top_partners": "Power Grid Corporation (India) (4); Jaypee Group (India) (3); Techno India Group (India) (3); Wipro (India) (2)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "Medical/health",
+   "partners": 12,
+   "partner_links": 48,
+   "share_of_links_%": 1.1,
+   "distinct_papers": 46,
+   "share_of_papers_with_indian_partner_%": 1.5,
+   "top_partners": "Silchar Medical College and Hospital (26); Gauhati Medical College and Hospital (6); RG Stone Urology & Laparoscopy Hospital (5); Medical College and Hospital, Kolkata (3)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "NIT",
+   "partners": 28,
+   "partner_links": 703,
+   "share_of_links_%": 16.2,
+   "distinct_papers": 661,
+   "share_of_papers_with_indian_partner_%": 21.3,
+   "top_partners": "National Institute of Technology Durgapur (100); National Institute of Technology Meghalaya (66); National Institute of Technology Rourkela (65); Malaviya National Institute of Technology Jaipur (56)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "Other",
+   "partners": 4,
+   "partner_links": 6,
+   "share_of_links_%": 0.1,
+   "distinct_papers": 6,
+   "share_of_papers_with_indian_partner_%": 0.2,
+   "top_partners": "Pandit Deendayal Upadhyaya Adarsha Mahavidyalaya (2); CR Rao Advanced Institute of Mathematics, Statistics and Computer Science (2); BRIC-National Agri-Food and Biomanufacturing Institute (1); Centre for Development of Advanced Computing (1)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "Other university/college",
+   "partners": 301,
+   "partner_links": 2212,
+   "share_of_links_%": 50.9,
+   "distinct_papers": 1742,
+   "share_of_papers_with_indian_partner_%": 56.2,
+   "top_partners": "Koneru Lakshmaiah Education Foundation (103); Vellore Institute of Technology University (93); Jadavpur University (73); Siksha O Anusandhan University (52)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "partner_cluster": "Premier science inst.",
+   "partners": 7,
+   "partner_links": 40,
+   "share_of_links_%": 0.9,
+   "distinct_papers": 38,
+   "share_of_papers_with_indian_partner_%": 1.2,
+   "top_partners": "S.N. Bose National Centre for Basic Sciences (24); Indian Statistical Institute (7); Indian Statistical Institute, Bangalore Centre (3); Jawaharlal Nehru Centre for Advanced Scientific Research (2)"
+  }
+ ],
+ "by_locality": [
+  {
+   "your_inst": "MANIT Bhopal",
+   "locality": "National body",
+   "partners": 20,
+   "partner_links": 112,
+   "share_of_links_%": 4.0,
+   "distinct_papers": 97,
+   "share_of_papers_with_indian_partner_%": 5.1,
+   "top_partners": "Council of Scientific and Industrial Research (29); Academy of Scientific and Innovative Research (22); National Institute of Technical Teachers’ Training and Research (13); Indian Council of Agricultural Research (7)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "locality": "Other region",
+   "partners": 258,
+   "partner_links": 1748,
+   "share_of_links_%": 63.1,
+   "distinct_papers": 1325,
+   "share_of_papers_with_indian_partner_%": 69.3,
+   "top_partners": "Indian Institute of Technology Roorkee (63); Indian Institute of Technology Delhi (51); Amity University (48); Manipal University Jaipur (48)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "locality": "Same region",
+   "partners": 6,
+   "partner_links": 140,
+   "share_of_links_%": 5.1,
+   "distinct_papers": 139,
+   "share_of_papers_with_indian_partner_%": 7.3,
+   "top_partners": "National Institute of Technology Raipur (85); Guru Ghasidas Vishwavidyalaya (29); Indian Institute of Technology Bhilai (15); Chhattisgarh Swami Vivekanand Technical University (6)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "locality": "Same state",
+   "partners": 36,
+   "partner_links": 540,
+   "share_of_links_%": 19.5,
+   "distinct_papers": 504,
+   "share_of_papers_with_indian_partner_%": 26.3,
+   "top_partners": "Rajiv Gandhi Technical University (67); Indian Institute of Information Technology Bhopal (51); Indian Institute of Information Technology Design and Manufacturing Jabalpur (50); Advanced Materials and Processes Research Institute (45)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "locality": "Unknown",
+   "partners": 145,
+   "partner_links": 229,
+   "share_of_links_%": 8.3,
+   "distinct_papers": 208,
+   "share_of_papers_with_indian_partner_%": 10.9,
+   "top_partners": "Presidency University (8); STMicroelectronics (India) (6); ICMR National Institute for Research in Environmental Health (4); Air India Limited (India) (4)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "locality": "National body",
+   "partners": 12,
+   "partner_links": 109,
+   "share_of_links_%": 4.3,
+   "distinct_papers": 91,
+   "share_of_papers_with_indian_partner_%": 5.4,
+   "top_partners": "Council of Scientific and Industrial Research (33); Tata Motors (India) (17); Defence Research and Development Organisation (14); Academy of Scientific and Innovative Research (13)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "locality": "Other region",
+   "partners": 214,
+   "partner_links": 1436,
+   "share_of_links_%": 56.2,
+   "distinct_papers": 1085,
+   "share_of_papers_with_indian_partner_%": 63.9,
+   "top_partners": "Vellore Institute of Technology University (69); Motilal Nehru National Institute of Technology (52); Thapar Institute of Engineering & Technology (45); GLA University (38)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "locality": "Same region",
+   "partners": 57,
+   "partner_links": 497,
+   "share_of_links_%": 19.5,
+   "distinct_papers": 414,
+   "share_of_papers_with_indian_partner_%": 24.4,
+   "top_partners": "Indian Institute of Technology Kharagpur (52); National Institute of Technology Patna (44); KIIT University (33); Jadavpur University (30)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "locality": "Same state",
+   "partners": 11,
+   "partner_links": 321,
+   "share_of_links_%": 12.6,
+   "distinct_papers": 308,
+   "share_of_papers_with_indian_partner_%": 18.1,
+   "top_partners": "National Metallurgical Laboratory (91); Indian Institute of Technology Dhanbad (79); Indian Institute of Information Technology Ranchi (55); Tata Steel (India) (37)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "locality": "Unknown",
+   "partners": 106,
+   "partner_links": 190,
+   "share_of_links_%": 7.4,
+   "distinct_papers": 166,
+   "share_of_papers_with_indian_partner_%": 9.8,
+   "top_partners": "National Institute of Technology (16); International Institute of Information Technology (16); Sanaka Educational Trust’s Group of Institutions (4); Centre for Materials for Electronics Technology (4)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "locality": "National body",
+   "partners": 17,
+   "partner_links": 54,
+   "share_of_links_%": 1.2,
+   "distinct_papers": 53,
+   "share_of_papers_with_indian_partner_%": 1.7,
+   "top_partners": "Council of Scientific and Industrial Research (18); Academy of Scientific and Innovative Research (10); Power Grid Corporation (India) (4); Government of Karnataka (3)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "locality": "Other region",
+   "partners": 281,
+   "partner_links": 3140,
+   "share_of_links_%": 72.3,
+   "distinct_papers": 2369,
+   "share_of_papers_with_indian_partner_%": 76.4,
+   "top_partners": "Koneru Lakshmaiah Education Foundation (103); National Institute of Technology Durgapur (100); Vellore Institute of Technology University (93); Jadavpur University (73)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "locality": "Same region",
+   "partners": 20,
+   "partner_links": 401,
+   "share_of_links_%": 9.2,
+   "distinct_papers": 387,
+   "share_of_papers_with_indian_partner_%": 12.5,
+   "top_partners": "Mizoram University (134); National Institute of Technology Meghalaya (66); National Institute of Technology Agartala (55); National Institute of Technology Nagaland (22)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "locality": "Same state",
+   "partners": 21,
+   "partner_links": 494,
+   "share_of_links_%": 11.4,
+   "distinct_papers": 451,
+   "share_of_papers_with_indian_partner_%": 14.5,
+   "top_partners": "Indian Institute of Technology Guwahati (137); Assam University (76); Tezpur University (47); Gauhati University (32)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "locality": "Unknown",
+   "partners": 139,
+   "partner_links": 253,
+   "share_of_links_%": 5.8,
+   "distinct_papers": 233,
+   "share_of_papers_with_indian_partner_%": 7.5,
+   "top_partners": "Indian Institute of Information Technology Design and Manufacturing, Kurnool (13); Maharaj Vijayaram Gajapathi Raj College of Engineering (6); National Institute of Technology (6); Mahatma Gandhi University (6)"
+  }
+ ],
+ "by_region": [
+  {
+   "your_inst": "MANIT Bhopal",
+   "region": "Central",
+   "partners": 42,
+   "partner_links": 680,
+   "share_of_links_%": 24.6,
+   "distinct_papers": 633,
+   "share_of_papers_with_indian_partner_%": 33.1,
+   "top_partners": "National Institute of Technology Raipur (85); Rajiv Gandhi Technical University (67); Indian Institute of Information Technology Bhopal (51); Indian Institute of Information Technology Design and Manufacturing Jabalpur (50)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "region": "East",
+   "partners": 32,
+   "partner_links": 202,
+   "share_of_links_%": 7.3,
+   "distinct_papers": 189,
+   "share_of_papers_with_indian_partner_%": 9.9,
+   "top_partners": "KIIT University (36); Indian Institute of Technology Kharagpur (30); Birla Institute of Technology, Mesra (23); National Institute of Technology Rourkela (21)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "region": "National (multi-site)",
+   "partners": 20,
+   "partner_links": 112,
+   "share_of_links_%": 4.0,
+   "distinct_papers": 97,
+   "share_of_papers_with_indian_partner_%": 5.1,
+   "top_partners": "Council of Scientific and Industrial Research (29); Academy of Scientific and Innovative Research (22); National Institute of Technical Teachers’ Training and Research (13); Indian Council of Agricultural Research (7)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "region": "North",
+   "partners": 115,
+   "partner_links": 921,
+   "share_of_links_%": 33.3,
+   "distinct_papers": 739,
+   "share_of_papers_with_indian_partner_%": 38.6,
+   "top_partners": "Indian Institute of Technology Roorkee (63); Indian Institute of Technology Delhi (51); Amity University (48); University of Petroleum and Energy Studies (45)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "region": "North-East",
+   "partners": 11,
+   "partner_links": 60,
+   "share_of_links_%": 2.2,
+   "distinct_papers": 60,
+   "share_of_papers_with_indian_partner_%": 3.1,
+   "top_partners": "National Institute of Technology Manipur (20); Indian Institute of Technology Guwahati (13); National Institute of Technology Meghalaya (7); North Eastern Regional Institute of Science and Technology (5)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "region": "South",
+   "partners": 63,
+   "partner_links": 367,
+   "share_of_links_%": 13.3,
+   "distinct_papers": 335,
+   "share_of_papers_with_indian_partner_%": 17.5,
+   "top_partners": "Manipal University Jaipur (48); Vellore Institute of Technology University (43); Manipal Academy of Higher Education (33); National Institute of Technology Tiruchirappalli (22)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "region": "Unknown",
+   "partners": 145,
+   "partner_links": 229,
+   "share_of_links_%": 8.3,
+   "distinct_papers": 208,
+   "share_of_papers_with_indian_partner_%": 10.9,
+   "top_partners": "Presidency University (8); STMicroelectronics (India) (6); ICMR National Institute for Research in Environmental Health (4); Air India Limited (India) (4)"
+  },
+  {
+   "your_inst": "MANIT Bhopal",
+   "region": "West",
+   "partners": 37,
+   "partner_links": 198,
+   "share_of_links_%": 7.2,
+   "distinct_papers": 190,
+   "share_of_papers_with_indian_partner_%": 9.9,
+   "top_partners": "Indian Institute of Technology Bombay (32); Pandit Deendayal Energy University (19); Visvesvaraya National Institute of Technology (17); Sardar Vallabhbhai National Institute of Technology Surat (12)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "region": "Central",
+   "partners": 15,
+   "partner_links": 87,
+   "share_of_links_%": 3.4,
+   "distinct_papers": 87,
+   "share_of_papers_with_indian_partner_%": 5.1,
+   "top_partners": "Indian Institute of Information Technology Design and Manufacturing Jabalpur (18); Indian Institute of Technology Indore (17); VIT Bhopal University (10); National Institute of Technology Raipur (10)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "region": "East",
+   "partners": 68,
+   "partner_links": 818,
+   "share_of_links_%": 32.0,
+   "distinct_papers": 701,
+   "share_of_papers_with_indian_partner_%": 41.3,
+   "top_partners": "National Metallurgical Laboratory (91); Indian Institute of Technology Dhanbad (79); Indian Institute of Information Technology Ranchi (55); Indian Institute of Technology Kharagpur (52)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "region": "National (multi-site)",
+   "partners": 12,
+   "partner_links": 109,
+   "share_of_links_%": 4.3,
+   "distinct_papers": 91,
+   "share_of_papers_with_indian_partner_%": 5.4,
+   "top_partners": "Council of Scientific and Industrial Research (33); Tata Motors (India) (17); Defence Research and Development Organisation (14); Academy of Scientific and Innovative Research (13)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "region": "North",
+   "partners": 94,
+   "partner_links": 712,
+   "share_of_links_%": 27.9,
+   "distinct_papers": 582,
+   "share_of_papers_with_indian_partner_%": 34.3,
+   "top_partners": "Motilal Nehru National Institute of Technology (52); Thapar Institute of Engineering & Technology (45); GLA University (38); Indian Institute of Technology Roorkee (33)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "region": "North-East",
+   "partners": 21,
+   "partner_links": 122,
+   "share_of_links_%": 4.8,
+   "distinct_papers": 114,
+   "share_of_papers_with_indian_partner_%": 6.7,
+   "top_partners": "National Institute of Technology Sikkim (30); National Institute of Technology Meghalaya (16); National Institute of Technology Manipur (13); National Institute of Technology Arunachal Pradesh (11)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "region": "South",
+   "partners": 57,
+   "partner_links": 426,
+   "share_of_links_%": 16.7,
+   "distinct_papers": 381,
+   "share_of_papers_with_indian_partner_%": 22.4,
+   "top_partners": "Vellore Institute of Technology University (69); Amrita Vishwa Vidyapeetham (31); Manipal University Jaipur (24); SR University (23)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "region": "Unknown",
+   "partners": 106,
+   "partner_links": 190,
+   "share_of_links_%": 7.4,
+   "distinct_papers": 166,
+   "share_of_papers_with_indian_partner_%": 9.8,
+   "top_partners": "National Institute of Technology (16); International Institute of Information Technology (16); Sanaka Educational Trust’s Group of Institutions (4); Centre for Materials for Electronics Technology (4)"
+  },
+  {
+   "your_inst": "NIT Jamshedpur",
+   "region": "West",
+   "partners": 27,
+   "partner_links": 89,
+   "share_of_links_%": 3.5,
+   "distinct_papers": 86,
+   "share_of_papers_with_indian_partner_%": 5.1,
+   "top_partners": "Indian Institute of Technology Bombay (11); Parul University (9); G H Raisoni University (7); Visvesvaraya National Institute of Technology (7)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "region": "Central",
+   "partners": 11,
+   "partner_links": 78,
+   "share_of_links_%": 1.8,
+   "distinct_papers": 78,
+   "share_of_papers_with_indian_partner_%": 2.5,
+   "top_partners": "Indian Institute of Technology Indore (36); National Institute of Technology Raipur (18); VIT Bhopal University (6); Indian Institute of Science Education and Research, Bhopal (4)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "region": "East",
+   "partners": 66,
+   "partner_links": 871,
+   "share_of_links_%": 20.1,
+   "distinct_papers": 771,
+   "share_of_papers_with_indian_partner_%": 24.9,
+   "top_partners": "National Institute of Technology Durgapur (100); Jadavpur University (73); Indian Institute of Technology Kharagpur (66); National Institute of Technology Rourkela (65)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "region": "National (multi-site)",
+   "partners": 17,
+   "partner_links": 54,
+   "share_of_links_%": 1.2,
+   "distinct_papers": 53,
+   "share_of_papers_with_indian_partner_%": 1.7,
+   "top_partners": "Council of Scientific and Industrial Research (18); Academy of Scientific and Innovative Research (10); Power Grid Corporation (India) (4); Government of Karnataka (3)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "region": "North",
+   "partners": 85,
+   "partner_links": 854,
+   "share_of_links_%": 19.7,
+   "distinct_papers": 741,
+   "share_of_papers_with_indian_partner_%": 23.9,
+   "top_partners": "Malaviya National Institute of Technology Jaipur (56); Indian Institute of Technology Delhi (54); Indian Institute of Information Technology Allahabad (53); University of Petroleum and Energy Studies (44)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "region": "North-East",
+   "partners": 41,
+   "partner_links": 895,
+   "share_of_links_%": 20.6,
+   "distinct_papers": 816,
+   "share_of_papers_with_indian_partner_%": 26.3,
+   "top_partners": "Indian Institute of Technology Guwahati (137); Mizoram University (134); Assam University (76); National Institute of Technology Meghalaya (66)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "region": "South",
+   "partners": 83,
+   "partner_links": 1075,
+   "share_of_links_%": 24.8,
+   "distinct_papers": 881,
+   "share_of_papers_with_indian_partner_%": 28.4,
+   "top_partners": "Koneru Lakshmaiah Education Foundation (103); Vellore Institute of Technology University (93); Indian Institute of Science Bangalore (65); Amrita Vishwa Vidyapeetham (47)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "region": "Unknown",
+   "partners": 139,
+   "partner_links": 253,
+   "share_of_links_%": 5.8,
+   "distinct_papers": 233,
+   "share_of_papers_with_indian_partner_%": 7.5,
+   "top_partners": "Indian Institute of Information Technology Design and Manufacturing, Kurnool (13); Maharaj Vijayaram Gajapathi Raj College of Engineering (6); National Institute of Technology (6); Mahatma Gandhi University (6)"
+  },
+  {
+   "your_inst": "NIT Silchar",
+   "region": "West",
+   "partners": 36,
+   "partner_links": 262,
+   "share_of_links_%": 6.0,
+   "distinct_papers": 248,
+   "share_of_papers_with_indian_partner_%": 8.0,
+   "top_partners": "Indian Institute of Technology Bombay (42); Parul University (36); Nirma University (25); Visvesvaraya National Institute of Technology (24)"
+  }
+ ],
+ "state_mapping_coverage_%_of_links": 93.0,
+ "collaboration_reach": [
+  {
+   "institution": "MANIT Bhopal",
+   "papers": 5759,
+   "with_other_indian_inst_%": 33.2,
+   "with_foreign_inst_%": 11.2,
+   "with_our_other_two_%": 0.3,
+   "own_institute_only_%": 62.0,
+   "distinct_indian_partners": 465,
+   "distinct_foreign_partners": 458
+  },
+  {
+   "institution": "NIT Jamshedpur",
+   "papers": 3594,
+   "with_other_indian_inst_%": 47.2,
+   "with_foreign_inst_%": 14.2,
+   "with_our_other_two_%": 1.1,
+   "own_institute_only_%": 46.0,
+   "distinct_indian_partners": 400,
+   "distinct_foreign_partners": 402
+  },
+  {
+   "institution": "NIT Silchar",
+   "papers": 8411,
+   "with_other_indian_inst_%": 36.9,
+   "with_foreign_inst_%": 14.7,
+   "with_our_other_two_%": 0.4,
+   "own_institute_only_%": 55.1,
+   "distinct_indian_partners": 478,
+   "distinct_foreign_partners": 644
+  }
+ ],
+ "peer_institutes": {
+  "MANIT Bhopal": {
+   "NIT": {
+    "partners": 25,
+    "partner_links": 318,
+    "top": [
+     [
+      "National Institute of Technology Raipur",
+      85,
+      "Same region"
+     ],
+     [
+      "National Institute of Technology Tiruchirappalli",
+      22,
+      "Other region"
+     ],
+     [
+      "National Institute of Technology Rourkela",
+      21,
+      "Other region"
+     ],
+     [
+      "National Institute of Technology Manipur",
+      20,
+      "Other region"
+     ],
+     [
+      "Visvesvaraya National Institute of Technology",
+      17,
+      "Other region"
+     ]
+    ]
+   },
+   "IIT": {
+    "partners": 22,
+    "partner_links": 355,
+    "top": [
+     [
+      "Indian Institute of Technology Roorkee",
+      63,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Technology Delhi",
+      51,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Technology Bombay",
+      32,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Technology Kharagpur",
+      30,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Technology BHU",
+      24,
+      "Other region"
+     ]
+    ]
+   },
+   "IIIT": {
+    "partners": 14,
+    "partner_links": 146,
+    "top": [
+     [
+      "Indian Institute of Information Technology Bhopal",
+      51,
+      "Same state"
+     ],
+     [
+      "Indian Institute of Information Technology Design and Manufacturing Jabalpur",
+      50,
+      "Same state"
+     ],
+     [
+      "Indian Institute of Information Technology, Pune",
+      11,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Information Technology, Nagpur",
+      9,
+      "Other region"
+     ],
+     [
+      "Atal Bihari Vajpayee Indian Institute of Information Technology and Management",
+      8,
+      "Same state"
+     ]
+    ]
+   },
+   "IISER": {
+    "partners": 6,
+    "partner_links": 21,
+    "top": [
+     [
+      "Indian Institute of Science Education and Research, Bhopal",
+      15,
+      "Same state"
+     ],
+     [
+      "Indian Institute of Science Education and Research Mohali",
+      2,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research Berhampur",
+      1,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research Kolkata",
+      1,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research Thiruvananthapuram",
+      1,
+      "Other region"
+     ]
+    ]
+   },
+   "IISc": {
+    "partners": 1,
+    "partner_links": 15,
+    "top": [
+     [
+      "Indian Institute of Science Bangalore",
+      15,
+      "Other region"
+     ]
+    ]
+   }
+  },
+  "NIT Jamshedpur": {
+   "NIT": {
+    "partners": 25,
+    "partner_links": 323,
+    "top": [
+     [
+      "Motilal Nehru National Institute of Technology",
+      52,
+      "Other region"
+     ],
+     [
+      "National Institute of Technology Patna",
+      44,
+      "Same region"
+     ],
+     [
+      "National Institute of Technology Sikkim",
+      30,
+      "Other region"
+     ],
+     [
+      "National Institute of Technology Rourkela",
+      29,
+      "Same region"
+     ],
+     [
+      "National Institute of Technology Srinagar",
+      24,
+      "Other region"
+     ]
+    ]
+   },
+   "IIT": {
+    "partners": 21,
+    "partner_links": 343,
+    "top": [
+     [
+      "Indian Institute of Technology Dhanbad",
+      79,
+      "Same state"
+     ],
+     [
+      "Indian Institute of Technology Kharagpur",
+      52,
+      "Same region"
+     ],
+     [
+      "Indian Institute of Technology Roorkee",
+      33,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Technology BHU",
+      25,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Technology Kanpur",
+      20,
+      "Other region"
+     ]
+    ]
+   },
+   "IIIT": {
+    "partners": 10,
+    "partner_links": 119,
+    "top": [
+     [
+      "Indian Institute of Information Technology Ranchi",
+      55,
+      "Same state"
+     ],
+     [
+      "Indian Institute of Information Technology Design and Manufacturing Jabalpur",
+      18,
+      "Other region"
+     ],
+     [
+      "International Institute of Information Technology",
+      16,
+      "Unknown"
+     ],
+     [
+      "Indian Institute of Information Technology Kalyani",
+      9,
+      "Same region"
+     ],
+     [
+      "Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram",
+      7,
+      "Other region"
+     ]
+    ]
+   },
+   "IISER": {
+    "partners": 4,
+    "partner_links": 6,
+    "top": [
+     [
+      "Indian Institute of Science Education and Research, Bhopal",
+      3,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research Pune",
+      1,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research, Tirupati",
+      1,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research Kolkata",
+      1,
+      "Same region"
+     ]
+    ]
+   },
+   "IISc": {
+    "partners": 1,
+    "partner_links": 16,
+    "top": [
+     [
+      "Indian Institute of Science Bangalore",
+      16,
+      "Other region"
+     ]
+    ]
+   }
+  },
+  "NIT Silchar": {
+   "NIT": {
+    "partners": 28,
+    "partner_links": 703,
+    "top": [
+     [
+      "National Institute of Technology Durgapur",
+      100,
+      "Other region"
+     ],
+     [
+      "National Institute of Technology Meghalaya",
+      66,
+      "Same region"
+     ],
+     [
+      "National Institute of Technology Rourkela",
+      65,
+      "Other region"
+     ],
+     [
+      "Malaviya National Institute of Technology Jaipur",
+      56,
+      "Other region"
+     ],
+     [
+      "National Institute of Technology Agartala",
+      55,
+      "Same region"
+     ]
+    ]
+   },
+   "IIT": {
+    "partners": 22,
+    "partner_links": 584,
+    "top": [
+     [
+      "Indian Institute of Technology Guwahati",
+      137,
+      "Same state"
+     ],
+     [
+      "Indian Institute of Technology Kharagpur",
+      66,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Technology Delhi",
+      54,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Technology Bombay",
+      42,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Technology Roorkee",
+      36,
+      "Other region"
+     ]
+    ]
+   },
+   "IIIT": {
+    "partners": 10,
+    "partner_links": 92,
+    "top": [
+     [
+      "Indian Institute of Information Technology Allahabad",
+      53,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Information Technology Design and Manufacturing, Kurnool",
+      13,
+      "Unknown"
+     ],
+     [
+      "Indian Institute of Information Technology Guwahati",
+      7,
+      "Same state"
+     ],
+     [
+      "Indian Institute of Information Technology Senapati, Manipur",
+      6,
+      "Same region"
+     ],
+     [
+      "Indian Institute of Information Technology Ranchi",
+      6,
+      "Other region"
+     ]
+    ]
+   },
+   "IISER": {
+    "partners": 6,
+    "partner_links": 13,
+    "top": [
+     [
+      "Indian Institute of Science Education and Research, Bhopal",
+      4,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research Pune",
+      3,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research Mohali",
+      2,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research Kolkata",
+      2,
+      "Other region"
+     ],
+     [
+      "Indian Institute of Science Education and Research Berhampur",
+      1,
+      "Other region"
+     ]
+    ]
+   },
+   "IISc": {
+    "partners": 1,
+    "partner_links": 65,
+    "top": [
+     [
+      "Indian Institute of Science Bangalore",
+      65,
+      "Other region"
+     ]
+    ]
+   }
+  }
+ },
+ "between_our_institutes": {
+  "joint_papers": {
+   "MANIT Bhopal & NIT Jamshedpur": 13,
+   "MANIT Bhopal & NIT Silchar": 4,
+   "NIT Jamshedpur & NIT Silchar": 27
+  },
+  "papers_with_all_three": 0,
+  "faculty_links": 33,
+  "faculty_pairs": [
+   {
+    "a": "Saikat Ranjan Maity",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Sunil Kumar",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 32
+   },
+   {
+    "a": "Saikat Ranjan Maity",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Krishna Murari Pandey",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 21
+   },
+   {
+    "a": "Saikat Ranjan Maity",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Sumit Bhowmik",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 13
+   },
+   {
+    "a": "Saikat Ranjan Maity",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Sudip Dey",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 12
+   },
+   {
+    "a": "Swagatadeb Sahoo",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Shahedul Haque Laskar",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 11
+   },
+   {
+    "a": "Ashish Das",
+    "inst_a": "MANIT Bhopal",
+    "b": "Shashi Bhushan Prasad",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 9
+   },
+   {
+    "a": "Saikat Ranjan Maity",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Bipul Das",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 8
+   },
+   {
+    "a": "Ashish Das",
+    "inst_a": "MANIT Bhopal",
+    "b": "RAJ BALLAV",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 5
+   },
+   {
+    "a": "Saikat Ranjan Maity",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Prosun Mandal",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 5
+   },
+   {
+    "a": "Saikat Ranjan Maity",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Ashish B. Deoghare",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 5
+   },
+   {
+    "a": "Subhash Singh",
+    "inst_a": "MANIT Bhopal",
+    "b": "Shashi Bhushan Prasad",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 4
+   },
+   {
+    "a": "Sanjay Srivastava",
+    "inst_a": "MANIT Bhopal",
+    "b": "SANJAY VAJPAI",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 3
+   },
+   {
+    "a": "Karunesh Kumar Shukla",
+    "inst_a": "MANIT Bhopal",
+    "b": "Vishesh Ranjan Kar",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 3
+   },
+   {
+    "a": "Vijay Bhaskar Semwal",
+    "inst_a": "MANIT Bhopal",
+    "b": "Akhilesh Kumar",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 3
+   },
+   {
+    "a": "Kunal Singh",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Kavicharan Mummaneni",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 3
+   },
+   {
+    "a": "Emon Barua",
+    "inst_a": "MANIT Bhopal",
+    "b": "Ashish B. Deoghare",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 2
+   },
+   {
+    "a": "C.Sasikumar",
+    "inst_a": "MANIT Bhopal",
+    "b": "SANJAY VAJPAI",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 2
+   },
+   {
+    "a": "Ashish Das",
+    "inst_a": "MANIT Bhopal",
+    "b": "Keshav Kumar Sharma",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 2
+   },
+   {
+    "a": "Ashish Das",
+    "inst_a": "MANIT Bhopal",
+    "b": "Mayuri Baruah",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 2
+   },
+   {
+    "a": "Saikat Ranjan Maity",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Chinmaya Kumar Sahoo",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 2
+   },
+   {
+    "a": "Sounak Kabasi",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Subhrajit Dutta",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 1
+   },
+   {
+    "a": "Manish Kumar Jha",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Saurabh Verma",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 1
+   },
+   {
+    "a": "Subhash Singh",
+    "inst_a": "MANIT Bhopal",
+    "b": "Amresh Kumar",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 1
+   },
+   {
+    "a": "Tikendra Nath Verma",
+    "inst_a": "MANIT Bhopal",
+    "b": "Sanja y",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 1
+   },
+   {
+    "a": "Subhash Singh",
+    "inst_a": "MANIT Bhopal",
+    "b": "Mayuri Baruah",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 1
+   },
+   {
+    "a": "Satish Pal Singh Rajput",
+    "inst_a": "MANIT Bhopal",
+    "b": "Arvind K Patel",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 1
+   },
+   {
+    "a": "Shailendra Kumar",
+    "inst_a": "MANIT Bhopal",
+    "b": "Omhari Gupta",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 1
+   },
+   {
+    "a": "Kunal Singh",
+    "inst_a": "NIT Jamshedpur",
+    "b": "Bijit Choudhuri",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 1
+   },
+   {
+    "a": "Gaurav Dwivedi",
+    "inst_a": "MANIT Bhopal",
+    "b": "Sanja y",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 1
+   },
+   {
+    "a": "M. Raju",
+    "inst_a": "MANIT Bhopal",
+    "b": "SREENU SREEKUMAR",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 1
+   },
+   {
+    "a": "Vijay Bhaskar Semwal",
+    "inst_a": "MANIT Bhopal",
+    "b": "Koushlendra Kumar Singh",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 1
+   },
+   {
+    "a": "Dheerendra Mishra",
+    "inst_a": "MANIT Bhopal",
+    "b": "Sumit Kumar Debnath",
+    "inst_b": "NIT Jamshedpur",
+    "joint_papers": 1
+   },
+   {
+    "a": "Siddhartha Deb Roy",
+    "inst_a": "MANIT Bhopal",
+    "b": "Lalit Chandra Saikia",
+    "inst_b": "NIT Silchar",
+    "joint_papers": 1
+   }
+  ]
+ },
+ "full_author_network": {
+  "nodes": 10153,
+  "edges": 31352,
+  "faculty_nodes": 762,
+  "other_indian_nodes": 5557,
+  "foreign_nodes": 2205,
+  "unknown_affiliation_nodes": 1629,
+  "largest_component_%": 93.6,
+  "louvain_communities": 198,
+  "louvain_modularity": 0.939,
+  "betweenness": "approximate, 1500 sampled sources"
+ },
+ "top_faculty_within_vs_outside": {
+  "MANIT Bhopal": {
+   "within": [
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Rajesh Purohit",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 131,
+     "coauthors_same_institute": 24,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 51,
+     "coauthors_foreign": 5,
+     "coauthors_unknown": 51,
+     "coauthors_outside_institute": 56,
+     "outside_share_%": 70.0,
+     "betweenness_full_network": 0.07938,
+     "betweenness_faculty_network": "0.10955"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Prashant V. Baredar",
+     "department": "Energy Science and Engineering",
+     "coauthors_total": 84,
+     "coauthors_same_institute": 19,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 38,
+     "coauthors_foreign": 10,
+     "coauthors_unknown": 17,
+     "coauthors_outside_institute": 48,
+     "outside_share_%": 71.6,
+     "betweenness_full_network": 0.05115,
+     "betweenness_faculty_network": "0.02605"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "SURESH KUMAR GAWRE",
+     "department": "Electrical Engineering",
+     "coauthors_total": 27,
+     "coauthors_same_institute": 17,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 4,
+     "coauthors_foreign": 2,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 6,
+     "outside_share_%": 26.1,
+     "betweenness_full_network": 0.03518,
+     "betweenness_faculty_network": "0.08985"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Vijay Bhaskar Semwal",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 81,
+     "coauthors_same_institute": 15,
+     "coauthors_our_other_two": 4,
+     "coauthors_other_indian": 43,
+     "coauthors_foreign": 13,
+     "coauthors_unknown": 6,
+     "coauthors_outside_institute": 60,
+     "outside_share_%": 80.0,
+     "betweenness_full_network": 0.09025,
+     "betweenness_faculty_network": "0.11797"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Nilay Khare",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 28,
+     "coauthors_same_institute": 14,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 10,
+     "coauthors_foreign": 1,
+     "coauthors_unknown": 3,
+     "coauthors_outside_institute": 11,
+     "outside_share_%": 44.0,
+     "betweenness_full_network": 0.01238,
+     "betweenness_faculty_network": "0.02632"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Sushma Gupta",
+     "department": "Electrical Engineering",
+     "coauthors_total": 27,
+     "coauthors_same_institute": 14,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 2,
+     "coauthors_foreign": 4,
+     "coauthors_unknown": 7,
+     "coauthors_outside_institute": 6,
+     "outside_share_%": 30.0,
+     "betweenness_full_network": 0.00557,
+     "betweenness_faculty_network": "0.0133"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "R. S. Rana",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 66,
+     "coauthors_same_institute": 13,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 24,
+     "coauthors_foreign": 1,
+     "coauthors_unknown": 28,
+     "coauthors_outside_institute": 25,
+     "outside_share_%": 65.8,
+     "betweenness_full_network": 0.01461,
+     "betweenness_faculty_network": "0.01749"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Deepak Singh Tomar",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 40,
+     "coauthors_same_institute": 13,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 14,
+     "coauthors_foreign": 2,
+     "coauthors_unknown": 11,
+     "coauthors_outside_institute": 16,
+     "outside_share_%": 55.2,
+     "betweenness_full_network": 0.00974,
+     "betweenness_faculty_network": "0.00497"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Gaurav Dwivedi",
+     "department": "Energy Science and Engineering",
+     "coauthors_total": 174,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 95,
+     "coauthors_foreign": 32,
+     "coauthors_unknown": 35,
+     "coauthors_outside_institute": 128,
+     "outside_share_%": 92.1,
+     "betweenness_full_network": 0.07664,
+     "betweenness_faculty_network": "0.02834"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Arvind Mittal",
+     "department": "Energy Science and Engineering",
+     "coauthors_total": 15,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 0,
+     "coauthors_foreign": 0,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 0,
+     "outside_share_%": 0.0,
+     "betweenness_full_network": 0.01738,
+     "betweenness_faculty_network": "0.0293"
+    }
+   ],
+   "outside": [
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Tikendra Nath Verma",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 210,
+     "coauthors_same_institute": 7,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 73,
+     "coauthors_foreign": 77,
+     "coauthors_unknown": 52,
+     "coauthors_outside_institute": 151,
+     "outside_share_%": 95.6,
+     "betweenness_full_network": 0.08161,
+     "betweenness_faculty_network": "0.03103"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Gaurav Dwivedi",
+     "department": "Energy Science and Engineering",
+     "coauthors_total": 174,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 95,
+     "coauthors_foreign": 32,
+     "coauthors_unknown": 35,
+     "coauthors_outside_institute": 128,
+     "outside_share_%": 92.1,
+     "betweenness_full_network": 0.07664,
+     "betweenness_faculty_network": "0.02834"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Kumarasamy Sudhakar",
+     "department": "Energy Science and Engineering",
+     "coauthors_total": 150,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 31,
+     "coauthors_foreign": 92,
+     "coauthors_unknown": 22,
+     "coauthors_outside_institute": 123,
+     "outside_share_%": 96.1,
+     "betweenness_full_network": 0.02754,
+     "betweenness_faculty_network": "0.00246"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Santanu Pakhira",
+     "department": "Physics",
+     "coauthors_total": 95,
+     "coauthors_same_institute": 0,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 37,
+     "coauthors_foreign": 58,
+     "coauthors_unknown": 0,
+     "coauthors_outside_institute": 95,
+     "outside_share_%": 100.0,
+     "betweenness_full_network": 0.01603,
+     "betweenness_faculty_network": "0.0"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "S. Suresh",
+     "department": "Chemical Engineering",
+     "coauthors_total": 91,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 45,
+     "coauthors_foreign": 33,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 78,
+     "outside_share_%": 89.7,
+     "betweenness_full_network": 0.03051,
+     "betweenness_faculty_network": "0.01216"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Sarvesh Pandey",
+     "department": "Chemistry",
+     "coauthors_total": 67,
+     "coauthors_same_institute": 0,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 49,
+     "coauthors_foreign": 13,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 63,
+     "outside_share_%": 100.0,
+     "betweenness_full_network": 0.00634,
+     "betweenness_faculty_network": "0.0"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Vijay Bhaskar Semwal",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 81,
+     "coauthors_same_institute": 15,
+     "coauthors_our_other_two": 4,
+     "coauthors_other_indian": 43,
+     "coauthors_foreign": 13,
+     "coauthors_unknown": 6,
+     "coauthors_outside_institute": 60,
+     "outside_share_%": 80.0,
+     "betweenness_full_network": 0.09025,
+     "betweenness_faculty_network": "0.11797"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Rajesh Purohit",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 131,
+     "coauthors_same_institute": 24,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 51,
+     "coauthors_foreign": 5,
+     "coauthors_unknown": 51,
+     "coauthors_outside_institute": 56,
+     "outside_share_%": 70.0,
+     "betweenness_full_network": 0.07938,
+     "betweenness_faculty_network": "0.10955"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "JYOTI MITTAL",
+     "department": "Chemistry",
+     "coauthors_total": 58,
+     "coauthors_same_institute": 1,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 29,
+     "coauthors_foreign": 24,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 53,
+     "outside_share_%": 98.1,
+     "betweenness_full_network": 0.00383,
+     "betweenness_faculty_network": "0.0"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Rajnish Kurchania",
+     "department": "Physics",
+     "coauthors_total": 60,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 28,
+     "coauthors_foreign": 23,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 51,
+     "outside_share_%": 91.1,
+     "betweenness_full_network": 0.01522,
+     "betweenness_faculty_network": "0.01002"
+    }
+   ],
+   "full_network_betweenness": [
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Vijay Bhaskar Semwal",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 81,
+     "coauthors_same_institute": 15,
+     "coauthors_our_other_two": 4,
+     "coauthors_other_indian": 43,
+     "coauthors_foreign": 13,
+     "coauthors_unknown": 6,
+     "coauthors_outside_institute": 60,
+     "outside_share_%": 80.0,
+     "betweenness_full_network": 0.09025,
+     "betweenness_faculty_network": "0.11797"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Tikendra Nath Verma",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 210,
+     "coauthors_same_institute": 7,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 73,
+     "coauthors_foreign": 77,
+     "coauthors_unknown": 52,
+     "coauthors_outside_institute": 151,
+     "outside_share_%": 95.6,
+     "betweenness_full_network": 0.08161,
+     "betweenness_faculty_network": "0.03103"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Rajesh Purohit",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 131,
+     "coauthors_same_institute": 24,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 51,
+     "coauthors_foreign": 5,
+     "coauthors_unknown": 51,
+     "coauthors_outside_institute": 56,
+     "outside_share_%": 70.0,
+     "betweenness_full_network": 0.07938,
+     "betweenness_faculty_network": "0.10955"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Gaurav Dwivedi",
+     "department": "Energy Science and Engineering",
+     "coauthors_total": 174,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 95,
+     "coauthors_foreign": 32,
+     "coauthors_unknown": 35,
+     "coauthors_outside_institute": 128,
+     "outside_share_%": 92.1,
+     "betweenness_full_network": 0.07664,
+     "betweenness_faculty_network": "0.02834"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Prashant V. Baredar",
+     "department": "Energy Science and Engineering",
+     "coauthors_total": 84,
+     "coauthors_same_institute": 19,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 38,
+     "coauthors_foreign": 10,
+     "coauthors_unknown": 17,
+     "coauthors_outside_institute": 48,
+     "outside_share_%": 71.6,
+     "betweenness_full_network": 0.05115,
+     "betweenness_faculty_network": "0.02605"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "SURESH KUMAR GAWRE",
+     "department": "Electrical Engineering",
+     "coauthors_total": 27,
+     "coauthors_same_institute": 17,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 4,
+     "coauthors_foreign": 2,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 6,
+     "outside_share_%": 26.1,
+     "betweenness_full_network": 0.03518,
+     "betweenness_faculty_network": "0.08985"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "S. Suresh",
+     "department": "Chemical Engineering",
+     "coauthors_total": 91,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 45,
+     "coauthors_foreign": 33,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 78,
+     "outside_share_%": 89.7,
+     "betweenness_full_network": 0.03051,
+     "betweenness_faculty_network": "0.01216"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Kumarasamy Sudhakar",
+     "department": "Energy Science and Engineering",
+     "coauthors_total": 150,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 31,
+     "coauthors_foreign": 92,
+     "coauthors_unknown": 22,
+     "coauthors_outside_institute": 123,
+     "outside_share_%": 96.1,
+     "betweenness_full_network": 0.02754,
+     "betweenness_faculty_network": "0.00246"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "Vijayshri Chaurasia",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 57,
+     "coauthors_same_institute": 7,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 27,
+     "coauthors_foreign": 8,
+     "coauthors_unknown": 15,
+     "coauthors_outside_institute": 35,
+     "outside_share_%": 83.3,
+     "betweenness_full_network": 0.02588,
+     "betweenness_faculty_network": "0.01155"
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "faculty_name": "M. M. Malik",
+     "department": "Physics",
+     "coauthors_total": 24,
+     "coauthors_same_institute": 8,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 10,
+     "coauthors_foreign": 1,
+     "coauthors_unknown": 5,
+     "coauthors_outside_institute": 11,
+     "outside_share_%": 57.9,
+     "betweenness_full_network": 0.02375,
+     "betweenness_faculty_network": "0.02232"
+    }
+   ]
+  },
+  "NIT Jamshedpur": {
+   "within": [
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Mani Kant Paswan",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 104,
+     "coauthors_same_institute": 15,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 78,
+     "coauthors_foreign": 3,
+     "coauthors_unknown": 8,
+     "coauthors_outside_institute": 81,
+     "outside_share_%": 84.4,
+     "betweenness_full_network": 0.05875,
+     "betweenness_faculty_network": "0.021"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Shashi Bhushan Prasad",
+     "department": "Production and Industrial Engineering",
+     "coauthors_total": 41,
+     "coauthors_same_institute": 10,
+     "coauthors_our_other_two": 2,
+     "coauthors_other_indian": 24,
+     "coauthors_foreign": 2,
+     "coauthors_unknown": 3,
+     "coauthors_outside_institute": 28,
+     "outside_share_%": 73.7,
+     "betweenness_full_network": 0.02338,
+     "betweenness_faculty_network": "0.02756"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Danish Ali Khan",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 22,
+     "coauthors_same_institute": 10,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 9,
+     "coauthors_foreign": 1,
+     "coauthors_unknown": 2,
+     "coauthors_outside_institute": 10,
+     "outside_share_%": 50.0,
+     "betweenness_full_network": 0.00842,
+     "betweenness_faculty_network": "0.01388"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Koushlendra Kumar Singh",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 59,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 28,
+     "coauthors_foreign": 17,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 46,
+     "outside_share_%": 83.6,
+     "betweenness_full_network": 0.0392,
+     "betweenness_faculty_network": "0.05803"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Satish Kumar",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 53,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 38,
+     "coauthors_foreign": 4,
+     "coauthors_unknown": 2,
+     "coauthors_outside_institute": 42,
+     "outside_share_%": 82.4,
+     "betweenness_full_network": 0.02764,
+     "betweenness_faculty_network": "0.06423"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Kumari Namrata",
+     "department": "Electrical Engineering",
+     "coauthors_total": 38,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 10,
+     "coauthors_foreign": 12,
+     "coauthors_unknown": 7,
+     "coauthors_outside_institute": 22,
+     "outside_share_%": 71.0,
+     "betweenness_full_network": 0.01681,
+     "betweenness_faculty_network": "0.01441"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Sanjay V. Kumar",
+     "department": "Civil Engineering",
+     "coauthors_total": 18,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 8,
+     "coauthors_foreign": 1,
+     "coauthors_unknown": 0,
+     "coauthors_outside_institute": 9,
+     "outside_share_%": 50.0,
+     "betweenness_full_network": 0.01299,
+     "betweenness_faculty_network": "0.01336"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "RAJ BALLAV",
+     "department": "Production and Industrial Engineering",
+     "coauthors_total": 13,
+     "coauthors_same_institute": 8,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 4,
+     "coauthors_foreign": 0,
+     "coauthors_unknown": 0,
+     "coauthors_outside_institute": 5,
+     "outside_share_%": 38.5,
+     "betweenness_full_network": 0.00475,
+     "betweenness_faculty_network": "0.01804"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Dharmendra Patel",
+     "department": "Production and Industrial Engineering",
+     "coauthors_total": 13,
+     "coauthors_same_institute": 8,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 2,
+     "coauthors_foreign": 1,
+     "coauthors_unknown": 2,
+     "coauthors_outside_institute": 3,
+     "outside_share_%": 27.3,
+     "betweenness_full_network": 0.00397,
+     "betweenness_faculty_network": "0.00768"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "AJAY KUMAR",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 50,
+     "coauthors_same_institute": 7,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 31,
+     "coauthors_foreign": 11,
+     "coauthors_unknown": 1,
+     "coauthors_outside_institute": 42,
+     "outside_share_%": 85.7,
+     "betweenness_full_network": 0.01542,
+     "betweenness_faculty_network": "0.01993"
+    }
+   ],
+   "outside": [
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Balram Ambade",
+     "department": "Chemistry",
+     "coauthors_total": 167,
+     "coauthors_same_institute": 1,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 71,
+     "coauthors_foreign": 84,
+     "coauthors_unknown": 11,
+     "coauthors_outside_institute": 155,
+     "outside_share_%": 99.4,
+     "betweenness_full_network": 0.03706,
+     "betweenness_faculty_network": "0.0"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Sunil Kumar",
+     "department": "Mathematics",
+     "coauthors_total": 129,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 23,
+     "coauthors_foreign": 91,
+     "coauthors_unknown": 10,
+     "coauthors_outside_institute": 114,
+     "outside_share_%": 95.8,
+     "betweenness_full_network": 0.04036,
+     "betweenness_faculty_network": "0.00516"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Veerpratap Meena",
+     "department": "Electrical Engineering",
+     "coauthors_total": 104,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 72,
+     "coauthors_foreign": 20,
+     "coauthors_unknown": 7,
+     "coauthors_outside_institute": 92,
+     "outside_share_%": 94.8,
+     "betweenness_full_network": 0.01771,
+     "betweenness_faculty_network": "0.00108"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Mani Kant Paswan",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 104,
+     "coauthors_same_institute": 15,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 78,
+     "coauthors_foreign": 3,
+     "coauthors_unknown": 8,
+     "coauthors_outside_institute": 81,
+     "outside_share_%": 84.4,
+     "betweenness_full_network": 0.05875,
+     "betweenness_faculty_network": "0.021"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Subrata Mahanta",
+     "department": "Chemistry",
+     "coauthors_total": 67,
+     "coauthors_same_institute": 2,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 54,
+     "coauthors_foreign": 7,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 61,
+     "outside_share_%": 96.8,
+     "betweenness_full_network": 0.01047,
+     "betweenness_faculty_network": "0.0"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Saikat Ranjan Maity",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 58,
+     "coauthors_same_institute": 0,
+     "coauthors_our_other_two": 8,
+     "coauthors_other_indian": 38,
+     "coauthors_foreign": 5,
+     "coauthors_unknown": 7,
+     "coauthors_outside_institute": 51,
+     "outside_share_%": 100.0,
+     "betweenness_full_network": 0.01472,
+     "betweenness_faculty_network": "0.01314"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Koushlendra Kumar Singh",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 59,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 28,
+     "coauthors_foreign": 17,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 46,
+     "outside_share_%": 83.6,
+     "betweenness_full_network": 0.0392,
+     "betweenness_faculty_network": "0.05803"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "AJAY KUMAR",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 50,
+     "coauthors_same_institute": 7,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 31,
+     "coauthors_foreign": 11,
+     "coauthors_unknown": 1,
+     "coauthors_outside_institute": 42,
+     "outside_share_%": 85.7,
+     "betweenness_full_network": 0.01542,
+     "betweenness_faculty_network": "0.01993"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Satish Kumar",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 53,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 38,
+     "coauthors_foreign": 4,
+     "coauthors_unknown": 2,
+     "coauthors_outside_institute": 42,
+     "outside_share_%": 82.4,
+     "betweenness_full_network": 0.02764,
+     "betweenness_faculty_network": "0.06423"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Jayendra Kumar",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 55,
+     "coauthors_same_institute": 4,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 25,
+     "coauthors_foreign": 14,
+     "coauthors_unknown": 11,
+     "coauthors_outside_institute": 40,
+     "outside_share_%": 90.9,
+     "betweenness_full_network": 0.00962,
+     "betweenness_faculty_network": "0.00207"
+    }
+   ],
+   "full_network_betweenness": [
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Mani Kant Paswan",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 104,
+     "coauthors_same_institute": 15,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 78,
+     "coauthors_foreign": 3,
+     "coauthors_unknown": 8,
+     "coauthors_outside_institute": 81,
+     "outside_share_%": 84.4,
+     "betweenness_full_network": 0.05875,
+     "betweenness_faculty_network": "0.021"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Sunil Kumar",
+     "department": "Mathematics",
+     "coauthors_total": 129,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 23,
+     "coauthors_foreign": 91,
+     "coauthors_unknown": 10,
+     "coauthors_outside_institute": 114,
+     "outside_share_%": 95.8,
+     "betweenness_full_network": 0.04036,
+     "betweenness_faculty_network": "0.00516"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Koushlendra Kumar Singh",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 59,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 28,
+     "coauthors_foreign": 17,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 46,
+     "outside_share_%": 83.6,
+     "betweenness_full_network": 0.0392,
+     "betweenness_faculty_network": "0.05803"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Balram Ambade",
+     "department": "Chemistry",
+     "coauthors_total": 167,
+     "coauthors_same_institute": 1,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 71,
+     "coauthors_foreign": 84,
+     "coauthors_unknown": 11,
+     "coauthors_outside_institute": 155,
+     "outside_share_%": 99.4,
+     "betweenness_full_network": 0.03706,
+     "betweenness_faculty_network": "0.0"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Sanja y",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 30,
+     "coauthors_same_institute": 6,
+     "coauthors_our_other_two": 2,
+     "coauthors_other_indian": 16,
+     "coauthors_foreign": 1,
+     "coauthors_unknown": 5,
+     "coauthors_outside_institute": 19,
+     "outside_share_%": 76.0,
+     "betweenness_full_network": 0.03045,
+     "betweenness_faculty_network": "0.05977"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Deepak Kumar",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 33,
+     "coauthors_same_institute": 2,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 23,
+     "coauthors_foreign": 2,
+     "coauthors_unknown": 5,
+     "coauthors_outside_institute": 26,
+     "outside_share_%": 92.9,
+     "betweenness_full_network": 0.02786,
+     "betweenness_faculty_network": "0.0"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Satish Kumar",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 53,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 38,
+     "coauthors_foreign": 4,
+     "coauthors_unknown": 2,
+     "coauthors_outside_institute": 42,
+     "outside_share_%": 82.4,
+     "betweenness_full_network": 0.02764,
+     "betweenness_faculty_network": "0.06423"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Shashi Bhushan Prasad",
+     "department": "Production and Industrial Engineering",
+     "coauthors_total": 41,
+     "coauthors_same_institute": 10,
+     "coauthors_our_other_two": 2,
+     "coauthors_other_indian": 24,
+     "coauthors_foreign": 2,
+     "coauthors_unknown": 3,
+     "coauthors_outside_institute": 28,
+     "outside_share_%": 73.7,
+     "betweenness_full_network": 0.02338,
+     "betweenness_faculty_network": "0.02756"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Basudeba Behera",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 20,
+     "coauthors_same_institute": 7,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 10,
+     "coauthors_foreign": 1,
+     "coauthors_unknown": 1,
+     "coauthors_outside_institute": 12,
+     "outside_share_%": 63.2,
+     "betweenness_full_network": 0.01912,
+     "betweenness_faculty_network": "0.0075"
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "faculty_name": "Veerpratap Meena",
+     "department": "Electrical Engineering",
+     "coauthors_total": 104,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 72,
+     "coauthors_foreign": 20,
+     "coauthors_unknown": 7,
+     "coauthors_outside_institute": 92,
+     "outside_share_%": 94.8,
+     "betweenness_full_network": 0.01771,
+     "betweenness_faculty_network": "0.00108"
+    }
+   ]
+  },
+  "NIT Silchar": {
+   "within": [
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Krishna Murari Pandey",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 66,
+     "coauthors_same_institute": 18,
+     "coauthors_our_other_two": 2,
+     "coauthors_other_indian": 19,
+     "coauthors_foreign": 10,
+     "coauthors_unknown": 17,
+     "coauthors_outside_institute": 31,
+     "outside_share_%": 63.3,
+     "betweenness_full_network": 0.03916,
+     "betweenness_faculty_network": "0.06539"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Biplab Das",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 82,
+     "coauthors_same_institute": 16,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 20,
+     "coauthors_foreign": 42,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 62,
+     "outside_share_%": 79.5,
+     "betweenness_full_network": 0.06109,
+     "betweenness_faculty_network": "0.04413"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Krishna Lal Baishnab",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 51,
+     "coauthors_same_institute": 16,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 21,
+     "coauthors_foreign": 6,
+     "coauthors_unknown": 8,
+     "coauthors_outside_institute": 27,
+     "outside_share_%": 62.8,
+     "betweenness_full_network": 0.02208,
+     "betweenness_faculty_network": "0.00941"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Fazal A. Talukdar",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 58,
+     "coauthors_same_institute": 13,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 18,
+     "coauthors_foreign": 21,
+     "coauthors_unknown": 6,
+     "coauthors_outside_institute": 39,
+     "outside_share_%": 75.0,
+     "betweenness_full_network": 0.01789,
+     "betweenness_faculty_network": "0.00466"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Rabul Hussain Laskar",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 72,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 43,
+     "coauthors_foreign": 7,
+     "coauthors_unknown": 10,
+     "coauthors_outside_institute": 51,
+     "outside_share_%": 82.3,
+     "betweenness_full_network": 0.05274,
+     "betweenness_faculty_network": "0.00859"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Binoy Krishna Roy",
+     "department": "Electrical Engineering",
+     "coauthors_total": 68,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 20,
+     "coauthors_foreign": 27,
+     "coauthors_unknown": 10,
+     "coauthors_outside_institute": 47,
+     "outside_share_%": 81.0,
+     "betweenness_full_network": 0.02033,
+     "betweenness_faculty_network": "0.03176"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Nidul Sinha",
+     "department": "Electrical Engineering",
+     "coauthors_total": 46,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 17,
+     "coauthors_foreign": 8,
+     "coauthors_unknown": 10,
+     "coauthors_outside_institute": 25,
+     "outside_share_%": 69.4,
+     "betweenness_full_network": 0.0228,
+     "betweenness_faculty_network": "0.04248"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Agnimitra Biswas",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 21,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 5,
+     "coauthors_foreign": 4,
+     "coauthors_unknown": 1,
+     "coauthors_outside_institute": 9,
+     "outside_share_%": 45.0,
+     "betweenness_full_network": 0.00847,
+     "betweenness_faculty_network": "0.01554"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Badal Soni",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 26,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 3,
+     "coauthors_foreign": 2,
+     "coauthors_unknown": 10,
+     "coauthors_outside_institute": 5,
+     "outside_share_%": 31.2,
+     "betweenness_full_network": 0.01478,
+     "betweenness_faculty_network": "0.00931"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Saroj Kr. Biswas",
+     "department": "Computer Science and Engineering",
+     "coauthors_total": 54,
+     "coauthors_same_institute": 10,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 36,
+     "coauthors_foreign": 1,
+     "coauthors_unknown": 7,
+     "coauthors_outside_institute": 37,
+     "outside_share_%": 78.7,
+     "betweenness_full_network": 0.02451,
+     "betweenness_faculty_network": "0.02364"
+    }
+   ],
+   "outside": [
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Samuel Lalthazuala Rokhum",
+     "department": "Chemistry",
+     "coauthors_total": 371,
+     "coauthors_same_institute": 7,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 166,
+     "coauthors_foreign": 176,
+     "coauthors_unknown": 22,
+     "coauthors_outside_institute": 342,
+     "outside_share_%": 98.0,
+     "betweenness_full_network": 0.08873,
+     "betweenness_faculty_network": "0.00503"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Koushik Guha",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 206,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 91,
+     "coauthors_foreign": 45,
+     "coauthors_unknown": 61,
+     "coauthors_outside_institute": 136,
+     "outside_share_%": 93.8,
+     "betweenness_full_network": 0.04106,
+     "betweenness_faculty_network": "0.02269"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Trupti Ranjan Lenka",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 149,
+     "coauthors_same_institute": 6,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 46,
+     "coauthors_foreign": 80,
+     "coauthors_unknown": 17,
+     "coauthors_outside_institute": 126,
+     "outside_share_%": 95.5,
+     "betweenness_full_network": 0.03115,
+     "betweenness_faculty_network": "0.00114"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Md. Ahmaruzzaman",
+     "department": "Chemistry",
+     "coauthors_total": 122,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 73,
+     "coauthors_foreign": 36,
+     "coauthors_unknown": 8,
+     "coauthors_outside_institute": 109,
+     "outside_share_%": 95.6,
+     "betweenness_full_network": 0.03278,
+     "betweenness_faculty_network": "0.00411"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Ashish Paramane",
+     "department": "Electrical Engineering",
+     "coauthors_total": 125,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 18,
+     "coauthors_foreign": 88,
+     "coauthors_unknown": 14,
+     "coauthors_outside_institute": 106,
+     "outside_share_%": 95.5,
+     "betweenness_full_network": 0.02456,
+     "betweenness_faculty_network": "0.00709"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Vinyas Mahesh",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 84,
+     "coauthors_same_institute": 3,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 58,
+     "coauthors_foreign": 16,
+     "coauthors_unknown": 7,
+     "coauthors_outside_institute": 74,
+     "outside_share_%": 96.1,
+     "betweenness_full_network": 0.02543,
+     "betweenness_faculty_network": "5e-05"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Biplab Das",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 82,
+     "coauthors_same_institute": 16,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 20,
+     "coauthors_foreign": 42,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 62,
+     "outside_share_%": 79.5,
+     "betweenness_full_network": 0.06109,
+     "betweenness_faculty_network": "0.04413"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Taimoor Khan",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 85,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 35,
+     "coauthors_foreign": 23,
+     "coauthors_unknown": 18,
+     "coauthors_outside_institute": 58,
+     "outside_share_%": 86.6,
+     "betweenness_full_network": 0.01368,
+     "betweenness_faculty_network": "0.00222"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Sudipta Halder",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 58,
+     "coauthors_same_institute": 6,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 28,
+     "coauthors_foreign": 24,
+     "coauthors_unknown": 0,
+     "coauthors_outside_institute": 52,
+     "outside_share_%": 89.7,
+     "betweenness_full_network": 0.0225,
+     "betweenness_faculty_network": "0.01529"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Subhrajit Dutta",
+     "department": "Civil Engineering",
+     "coauthors_total": 58,
+     "coauthors_same_institute": 4,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 30,
+     "coauthors_foreign": 21,
+     "coauthors_unknown": 2,
+     "coauthors_outside_institute": 52,
+     "outside_share_%": 92.9,
+     "betweenness_full_network": 0.01556,
+     "betweenness_faculty_network": "0.02625"
+    }
+   ],
+   "full_network_betweenness": [
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Samuel Lalthazuala Rokhum",
+     "department": "Chemistry",
+     "coauthors_total": 371,
+     "coauthors_same_institute": 7,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 166,
+     "coauthors_foreign": 176,
+     "coauthors_unknown": 22,
+     "coauthors_outside_institute": 342,
+     "outside_share_%": 98.0,
+     "betweenness_full_network": 0.08873,
+     "betweenness_faculty_network": "0.00503"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Biplab Das",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 82,
+     "coauthors_same_institute": 16,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 20,
+     "coauthors_foreign": 42,
+     "coauthors_unknown": 4,
+     "coauthors_outside_institute": 62,
+     "outside_share_%": 79.5,
+     "betweenness_full_network": 0.06109,
+     "betweenness_faculty_network": "0.04413"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Rabul Hussain Laskar",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 72,
+     "coauthors_same_institute": 11,
+     "coauthors_our_other_two": 1,
+     "coauthors_other_indian": 43,
+     "coauthors_foreign": 7,
+     "coauthors_unknown": 10,
+     "coauthors_outside_institute": 51,
+     "outside_share_%": 82.3,
+     "betweenness_full_network": 0.05274,
+     "betweenness_faculty_network": "0.00859"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Koushik Guha",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 206,
+     "coauthors_same_institute": 9,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 91,
+     "coauthors_foreign": 45,
+     "coauthors_unknown": 61,
+     "coauthors_outside_institute": 136,
+     "outside_share_%": 93.8,
+     "betweenness_full_network": 0.04106,
+     "betweenness_faculty_network": "0.02269"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Krishna Murari Pandey",
+     "department": "Mechanical Engineering",
+     "coauthors_total": 66,
+     "coauthors_same_institute": 18,
+     "coauthors_our_other_two": 2,
+     "coauthors_other_indian": 19,
+     "coauthors_foreign": 10,
+     "coauthors_unknown": 17,
+     "coauthors_outside_institute": 31,
+     "outside_share_%": 63.3,
+     "betweenness_full_network": 0.03916,
+     "betweenness_faculty_network": "0.06539"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Siddhartha S Dhar",
+     "department": "Chemistry",
+     "coauthors_total": 55,
+     "coauthors_same_institute": 6,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 39,
+     "coauthors_foreign": 4,
+     "coauthors_unknown": 6,
+     "coauthors_outside_institute": 43,
+     "outside_share_%": 87.8,
+     "betweenness_full_network": 0.03307,
+     "betweenness_faculty_network": "0.01423"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Md. Ahmaruzzaman",
+     "department": "Chemistry",
+     "coauthors_total": 122,
+     "coauthors_same_institute": 5,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 73,
+     "coauthors_foreign": 36,
+     "coauthors_unknown": 8,
+     "coauthors_outside_institute": 109,
+     "outside_share_%": 95.6,
+     "betweenness_full_network": 0.03278,
+     "betweenness_faculty_network": "0.00411"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Trupti Ranjan Lenka",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 149,
+     "coauthors_same_institute": 6,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 46,
+     "coauthors_foreign": 80,
+     "coauthors_unknown": 17,
+     "coauthors_outside_institute": 126,
+     "outside_share_%": 95.5,
+     "betweenness_full_network": 0.03115,
+     "betweenness_faculty_network": "0.00114"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "S. K. Tripathy",
+     "department": "Electronics and Communication Engineering",
+     "coauthors_total": 55,
+     "coauthors_same_institute": 6,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 20,
+     "coauthors_foreign": 26,
+     "coauthors_unknown": 3,
+     "coauthors_outside_institute": 46,
+     "outside_share_%": 88.5,
+     "betweenness_full_network": 0.02839,
+     "betweenness_faculty_network": "0.00751"
+    },
+    {
+     "institution": "NIT Silchar",
+     "faculty_name": "Jiwanjot Singh",
+     "department": "Electrical Engineering",
+     "coauthors_total": 21,
+     "coauthors_same_institute": 7,
+     "coauthors_our_other_two": 0,
+     "coauthors_other_indian": 6,
+     "coauthors_foreign": 8,
+     "coauthors_unknown": 0,
+     "coauthors_outside_institute": 14,
+     "outside_share_%": 66.7,
+     "betweenness_full_network": 0.02615,
+     "betweenness_faculty_network": "0.00607"
+    }
+   ]
+  }
+ },
+ "within_vs_outside_spearman": {
+  "MANIT Bhopal": 0.172,
+  "NIT Jamshedpur": 0.285,
+  "NIT Silchar": 0.479
+ },
+ "top_external_authors": [
+  {
+   "author": "Kuldeep Kumar Saxena",
+   "institution": "GLA University",
+   "country": "IN",
+   "faculty_connected": 9,
+   "our_institutes": "MANIT Bhopal; NIT Jamshedpur",
+   "coauthors_total": 35,
+   "betweenness_full_network": 0.0133,
+   "faculty": "Amit Telang; Arvind K Patel; C.Sasikumar; Gaurav Dwivedi; R. S. Rana; Rajesh Purohit"
+  },
+  {
+   "author": "T Dheepa",
+   "institution": "(no affiliation)",
+   "country": "",
+   "faculty_connected": 8,
+   "our_institutes": "NIT Silchar",
+   "coauthors_total": 45,
+   "betweenness_full_network": 0.0074,
+   "faculty": "Badal Soni; Laiphrakpam Dolendro Singh; Malaya Dutta Borah; P. Srinivasan; R. Murugan; Ramanujam E"
+  },
+  {
+   "author": "Taha Selim Ustun",
+   "institution": "National Institute of Advanced Industrial Science and Technology",
+   "country": "JP",
+   "faculty_connected": 8,
+   "our_institutes": "NIT Silchar",
+   "coauthors_total": 21,
+   "betweenness_full_network": 0.00611,
+   "faculty": "Arup Kumar Goswami; Avadh Pati; Dulal Chandra Das; Nabanita Adhikary; Nalin Behari Dev Choudhury; Nidul Sinha"
+  },
+  {
+   "author": "Lalit Kumar",
+   "institution": "Manipal University Jaipur",
+   "country": "",
+   "faculty_connected": 7,
+   "our_institutes": "MANIT Bhopal",
+   "coauthors_total": 8,
+   "betweenness_full_network": 0.00011,
+   "faculty": "Akhtar Rasool; Manasi Gyanchandani; Manish Pandey; Nilay Khare; Rajesh Wadhwani; Sanyam Shukla"
+  },
+  {
+   "author": "Gaurav Saini",
+   "institution": "Harcourt Butler Technical University",
+   "country": "IN",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal; NIT Jamshedpur",
+   "coauthors_total": 21,
+   "betweenness_full_network": 0.01806,
+   "faculty": "Gaurav Dwivedi; Jay Mant Jha; Kumari Namrata; Sanja y; Tikendra Nath Verma; Vishnu Prasad"
+  },
+  {
+   "author": "Mika E. T. Sillanpää",
+   "institution": "Duy Tan University",
+   "country": "VN",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal; NIT Silchar",
+   "coauthors_total": 27,
+   "betweenness_full_network": 0.01454,
+   "faculty": "Anil Kumar Sharma; Jay Mant Jha; Md. Ahmaruzzaman; Prabhakaran K K; Prashant V. Baredar; S. Suresh"
+  },
+  {
+   "author": "Virendra Pratap Singh",
+   "institution": "(no affiliation)",
+   "country": "",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal; NIT Silchar",
+   "coauthors_total": 18,
+   "betweenness_full_network": 0.00668,
+   "faculty": "Gajendra Dixit; Rajesh Purohit; Raman Nateriya; Ravi Kumar Dwivedi; Savita Dixit; Vinyas Mahesh"
+  },
+  {
+   "author": "Bhargav Appasani",
+   "institution": "KIIT University",
+   "country": "IN",
+   "faculty_connected": 6,
+   "our_institutes": "NIT Silchar",
+   "coauthors_total": 24,
+   "betweenness_full_network": 0.00577,
+   "faculty": "Avadh Pati; Devendra Singh Gurjar; Nabanita Adhikary; Prabina Pattanayak; Sunil Kumar Mishra; Vipin Chandra Pal"
+  },
+  {
+   "author": "Basil Kuriachen",
+   "institution": "(no affiliation)",
+   "country": "",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal; NIT Silchar",
+   "coauthors_total": 18,
+   "betweenness_full_network": 0.00516,
+   "faculty": "Gajendra Dixit; Rajesh Purohit; Raman Nateriya; Ravi Kumar Dwivedi; Savita Dixit; Vinyas Mahesh"
+  },
+  {
+   "author": "Mohan Lal Kolhe",
+   "institution": "University of Agder",
+   "country": "NO",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+   "coauthors_total": 42,
+   "betweenness_full_network": 0.00508,
+   "faculty": "Jaytrilok Choudhary; Kethavath Raghavendra Naik; N. P. Patidar; SREENU SREEKUMAR; Simanta Kumar Samal; Vasudev Dehalwar"
+  },
+  {
+   "author": "HARISH KUMAR SHARMA",
+   "institution": "GLA University",
+   "country": "IN",
+   "faculty_connected": 6,
+   "our_institutes": "NIT Jamshedpur",
+   "coauthors_total": 8,
+   "betweenness_full_network": 0.00415,
+   "faculty": "Amresh Kumar; Koushlendra Kumar Singh; Mani Kant Paswan; Satish Kumar; Shailesh Kumar Prasad; Shashi Bhushan Prasad"
+  },
+  {
+   "author": "Puneet Verma",
+   "institution": "Queensland University of Technology",
+   "country": "AU",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal",
+   "coauthors_total": 44,
+   "betweenness_full_network": 0.00383,
+   "faculty": "Anil Kumar; Archana Soni; Gaurav Dwivedi; Meena Agrawal; Prashant V. Baredar; Tikendra Nath Verma"
+  },
+  {
+   "author": "Anoop Kumar Shukla",
+   "institution": "Amity University",
+   "country": "IN",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal; NIT Jamshedpur",
+   "coauthors_total": 51,
+   "betweenness_full_network": 0.00351,
+   "faculty": "Gaurav Dwivedi; Gurveer Singh; Meena Agrawal; Prashant V. Baredar; Sanja y; Tikendra Nath Verma"
+  },
+  {
+   "author": "Jacopo Iannacci",
+   "institution": "Fondazione Bruno Kessler",
+   "country": "IT",
+   "faculty_connected": 6,
+   "our_institutes": "NIT Silchar",
+   "coauthors_total": 47,
+   "betweenness_full_network": 0.0025,
+   "faculty": "Brinda Bhowmick; Kavicharan Mummaneni; Koushik Guha; Krishna Lal Baishnab; Madhuchhanda Choudhury; Trupti Ranjan Lenka"
+  },
+  {
+   "author": "Raj Kumar Mistri",
+   "institution": "Indian Institute of Information Technology Ranchi",
+   "country": "IN",
+   "faculty_connected": 6,
+   "our_institutes": "NIT Jamshedpur; NIT Silchar",
+   "coauthors_total": 13,
+   "betweenness_full_network": 0.00215,
+   "faculty": "Fazal A. Talukdar; Ganesh Prasad; Prabina Pattanayak; RASHMI SINHA; Taimoor Khan; Wasim Arif"
+  },
+  {
+   "author": "Ramesh Kumar Verma",
+   "institution": "(no affiliation)",
+   "country": "",
+   "faculty_connected": 6,
+   "our_institutes": "NIT Jamshedpur; NIT Silchar",
+   "coauthors_total": 17,
+   "betweenness_full_network": 0.00081,
+   "faculty": "Akhilesh Kumar; Ashraf Hossain; Fazal A. Talukdar; Ganesh Prasad; Prabina Pattanayak; Taimoor Khan"
+  },
+  {
+   "author": "Shilpi Tomar",
+   "institution": "(no affiliation)",
+   "country": "",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal",
+   "coauthors_total": 11,
+   "betweenness_full_network": 0.00032,
+   "faculty": "Anoop Arya; Ashish Kumar Sahu; Manoj Arya; Priyanka Paliwal; Shweta Mehroliya; Sushma Gupta"
+  },
+  {
+   "author": "Pramod Sahu",
+   "institution": "Air India Limited (India)",
+   "country": "IN",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal",
+   "coauthors_total": 10,
+   "betweenness_full_network": 0.00024,
+   "faculty": "Pushyamitra Mishra; R. S. Rana; Rajesh Purohit; S. Suresh; Vilas Warudkar; Vishal Parashar"
+  },
+  {
+   "author": "Saraswati Rana",
+   "institution": "RKDF University",
+   "country": "IN",
+   "faculty_connected": 6,
+   "our_institutes": "MANIT Bhopal",
+   "coauthors_total": 7,
+   "betweenness_full_network": 0.00019,
+   "faculty": "Amit Suhane; Archana Nigrawal; R. S. Rana; Rajesh Purohit; S. Suresh; Sanjay Soni"
+  },
+  {
+   "author": "Sankar Chakma",
+   "institution": "Indian Institute of Science Education and Research, Bhopal",
+   "country": "IN",
+   "faculty_connected": 5,
+   "our_institutes": "MANIT Bhopal; NIT Silchar",
+   "coauthors_total": 14,
+   "betweenness_full_network": 0.00908,
+   "faculty": "Rajeev Parmar; Rupak Kishor; Samuel Lalthazuala Rokhum; Shanti Gopal Patra; Subhajit Patra"
+  }
+ ],
+ "institute_network": {
+  "nodes": 2032,
+  "edges": 11221,
+  "our_institutes": {
+   "MANIT Bhopal": {
+    "degree": 924,
+    "strength": 3886,
+    "betweenness_rank": 2
+   },
+   "NIT Jamshedpur": {
+    "degree": 803,
+    "strength": 3564,
+    "betweenness_rank": 3
+   },
+   "NIT Silchar": {
+    "degree": 1123,
+    "strength": 6504,
+    "betweenness_rank": 1
+   }
+  },
+  "top_indian_by_papers": [
+   {
+    "institution": "Vellore Institute of Technology University",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 205,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 154,
+    "strength": 427,
+    "betweenness": 0.00872,
+    "state": "Tamil Nadu"
+   },
+   {
+    "institution": "Indian Institute of Technology Guwahati",
+    "country": "IN",
+    "type": "education",
+    "cluster": "IIT",
+    "papers_with_us": 158,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 92,
+    "strength": 272,
+    "betweenness": 0.0044,
+    "state": "Assam"
+   },
+   {
+    "institution": "Indian Institute of Technology Kharagpur",
+    "country": "IN",
+    "type": "education",
+    "cluster": "IIT",
+    "papers_with_us": 148,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 107,
+    "strength": 283,
+    "betweenness": 0.00592,
+    "state": "West Bengal"
+   },
+   {
+    "institution": "Mizoram University",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Central university",
+    "papers_with_us": 138,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 39,
+    "strength": 210,
+    "betweenness": 0.00118,
+    "state": "Mizoram"
+   },
+   {
+    "institution": "Koneru Lakshmaiah Education Foundation",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 135,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 72,
+    "strength": 262,
+    "betweenness": 0.00263,
+    "state": "Andhra Pradesh"
+   },
+   {
+    "institution": "Indian Institute of Technology Dhanbad",
+    "country": "IN",
+    "type": "education",
+    "cluster": "IIT",
+    "papers_with_us": 133,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 72,
+    "strength": 236,
+    "betweenness": 0.00304,
+    "state": "Jharkhand"
+   },
+   {
+    "institution": "Indian Institute of Technology Roorkee",
+    "country": "IN",
+    "type": "education",
+    "cluster": "IIT",
+    "papers_with_us": 132,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 112,
+    "strength": 286,
+    "betweenness": 0.00658,
+    "state": "Uttarakhand"
+   },
+   {
+    "institution": "Indian Institute of Technology Delhi",
+    "country": "IN",
+    "type": "education",
+    "cluster": "IIT",
+    "papers_with_us": 123,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 61,
+    "strength": 219,
+    "betweenness": 0.00306,
+    "state": "Delhi"
+   },
+   {
+    "institution": "National Institute of Technology Durgapur",
+    "country": "IN",
+    "type": "education",
+    "cluster": "NIT",
+    "papers_with_us": 120,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 84,
+    "strength": 268,
+    "betweenness": 0.00253,
+    "state": "West Bengal"
+   },
+   {
+    "institution": "National Institute of Technology Rourkela",
+    "country": "IN",
+    "type": "education",
+    "cluster": "NIT",
+    "papers_with_us": 115,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 91,
+    "strength": 254,
+    "betweenness": 0.00266,
+    "state": "Odisha"
+   },
+   {
+    "institution": "KIIT University",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 114,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 68,
+    "strength": 201,
+    "betweenness": 0.00283,
+    "state": "Odisha"
+   },
+   {
+    "institution": "National Institute of Technology Raipur",
+    "country": "IN",
+    "type": "education",
+    "cluster": "NIT",
+    "papers_with_us": 113,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 56,
+    "strength": 184,
+    "betweenness": 0.00256,
+    "state": "Chhattisgarh"
+   },
+   {
+    "institution": "Motilal Nehru National Institute of Technology",
+    "country": "IN",
+    "type": "education",
+    "cluster": "NIT",
+    "papers_with_us": 110,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 50,
+    "strength": 187,
+    "betweenness": 0.00211,
+    "state": "Uttar Pradesh"
+   },
+   {
+    "institution": "Jadavpur University",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 104,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 71,
+    "strength": 221,
+    "betweenness": 0.00225,
+    "state": "West Bengal"
+   },
+   {
+    "institution": "University of Petroleum and Energy Studies",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 102,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 115,
+    "strength": 262,
+    "betweenness": 0.00493,
+    "state": "Uttarakhand"
+   }
+  ],
+  "top_foreign_by_papers": [
+   {
+    "institution": "Universiti Malaysia Pahang Al-Sultan Abdullah",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 134,
+    "linked_to": "MANIT Bhopal; NIT Silchar",
+    "degree": 51,
+    "strength": 259,
+    "betweenness": 0.00275,
+    "state": ""
+   },
+   {
+    "institution": "King Saud University",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 101,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 158,
+    "strength": 334,
+    "betweenness": 0.01189,
+    "state": ""
+   },
+   {
+    "institution": "Zhejiang University",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 74,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 34,
+    "strength": 127,
+    "betweenness": 0.00177,
+    "state": ""
+   },
+   {
+    "institution": "Khalifa University of Science and Technology",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 47,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 36,
+    "strength": 105,
+    "betweenness": 0.00045,
+    "state": ""
+   },
+   {
+    "institution": "New Jersey Institute of Technology",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 46,
+    "linked_to": "NIT Silchar",
+    "degree": 12,
+    "strength": 87,
+    "betweenness": 3e-05,
+    "state": ""
+   },
+   {
+    "institution": "Ajman University",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 45,
+    "linked_to": "NIT Jamshedpur; NIT Silchar",
+    "degree": 54,
+    "strength": 156,
+    "betweenness": 0.00203,
+    "state": ""
+   },
+   {
+    "institution": "King Khalid University",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 40,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 119,
+    "strength": 205,
+    "betweenness": 0.0061,
+    "state": ""
+   },
+   {
+    "institution": "Fondazione Bruno Kessler",
+    "country": "abroad",
+    "type": "facility",
+    "cluster": "Other",
+    "papers_with_us": 39,
+    "linked_to": "NIT Silchar",
+    "degree": 22,
+    "strength": 128,
+    "betweenness": 4e-05,
+    "state": ""
+   },
+   {
+    "institution": "University of Ulster",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 38,
+    "linked_to": "NIT Silchar",
+    "degree": 15,
+    "strength": 61,
+    "betweenness": 2e-05,
+    "state": ""
+   },
+   {
+    "institution": "UNSW Sydney",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 34,
+    "linked_to": "NIT Silchar",
+    "degree": 25,
+    "strength": 60,
+    "betweenness": 0.00012,
+    "state": ""
+   }
+  ],
+  "top_by_betweenness": [
+   {
+    "institution": "King Saud University",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 101,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 158,
+    "strength": 334,
+    "betweenness": 0.01189,
+    "state": ""
+   },
+   {
+    "institution": "Vellore Institute of Technology University",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 205,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 154,
+    "strength": 427,
+    "betweenness": 0.00872,
+    "state": "Tamil Nadu"
+   },
+   {
+    "institution": "Indian Institute of Technology Roorkee",
+    "country": "IN",
+    "type": "education",
+    "cluster": "IIT",
+    "papers_with_us": 132,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 112,
+    "strength": 286,
+    "betweenness": 0.00658,
+    "state": "Uttarakhand"
+   },
+   {
+    "institution": "King Khalid University",
+    "country": "abroad",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 40,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 119,
+    "strength": 205,
+    "betweenness": 0.0061,
+    "state": ""
+   },
+   {
+    "institution": "Indian Institute of Technology Kharagpur",
+    "country": "IN",
+    "type": "education",
+    "cluster": "IIT",
+    "papers_with_us": 148,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 107,
+    "strength": 283,
+    "betweenness": 0.00592,
+    "state": "West Bengal"
+   },
+   {
+    "institution": "Centre National de la Recherche Scientifique",
+    "country": "abroad",
+    "type": "government",
+    "cluster": "Government lab/agency",
+    "papers_with_us": 30,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 82,
+    "strength": 177,
+    "betweenness": 0.00588,
+    "state": ""
+   },
+   {
+    "institution": "Lovely Professional University",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 53,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 115,
+    "strength": 202,
+    "betweenness": 0.0052,
+    "state": "Punjab"
+   },
+   {
+    "institution": "University of Petroleum and Energy Studies",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 102,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 115,
+    "strength": 262,
+    "betweenness": 0.00493,
+    "state": "Uttarakhand"
+   },
+   {
+    "institution": "Indian Institute of Technology Kanpur",
+    "country": "IN",
+    "type": "education",
+    "cluster": "IIT",
+    "papers_with_us": 66,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 106,
+    "strength": 197,
+    "betweenness": 0.00467,
+    "state": "Uttar Pradesh"
+   },
+   {
+    "institution": "Chandigarh University",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 78,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 114,
+    "strength": 262,
+    "betweenness": 0.00458,
+    "state": "Punjab"
+   }
+  ]
+ },
+ "top_papers_within_vs_outside": {
+  "MANIT Bhopal": {
+   "within": [
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Simulation and performance analysis of 110 kWp grid-connected photovoltaic system for residential building in India: A comparative analysis of various PV technology",
+     "year": 2016,
+     "doi": "https://doi.org/10.1016/j.egyr.2016.04.001",
+     "citations_total": 211,
+     "cited_by_same_institute": 20,
+     "cited_by_our_other_two": 1,
+     "cited_from_outside_corpus": 190,
+     "outside_share_%": 90.0
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Class-specific extreme learning machine for handling binary class imbalance problem",
+     "year": 2018,
+     "doi": "https://doi.org/10.1016/j.neunet.2018.05.011",
+     "citations_total": 79,
+     "cited_by_same_institute": 20,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 59,
+     "outside_share_%": 74.7
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Nonlinear Oscillations of Particle-Reinforced Electro-Magneto-Viscoelastomer Actuators",
+     "year": 2021,
+     "doi": "https://doi.org/10.1115/1.4051911",
+     "citations_total": 65,
+     "cited_by_same_institute": 20,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 45,
+     "outside_share_%": 69.2
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Design, simulation and economic analysis of standalone roof top solar PV system in India",
+     "year": 2016,
+     "doi": "https://doi.org/10.1016/j.solener.2016.07.009",
+     "citations_total": 231,
+     "cited_by_same_institute": 19,
+     "cited_by_our_other_two": 1,
+     "cited_from_outside_corpus": 211,
+     "outside_share_%": 91.3
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Three-Dimensional Finite Element Model to Study Effect of RyR Calcium Channel, ER Leak and SERCA Pump on Calcium Distribution in Oocyte Cell",
+     "year": 2018,
+     "doi": "https://doi.org/10.1142/s0219876218500913",
+     "citations_total": 68,
+     "cited_by_same_institute": 18,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 50,
+     "outside_share_%": 73.5
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Exergetic assessment of BIPV module using parametric and photonic energy methods: A review",
+     "year": 2016,
+     "doi": "https://doi.org/10.1016/j.enbuild.2016.03.022",
+     "citations_total": 78,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 61,
+     "outside_share_%": 78.2
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Class-specific kernelized extreme learning machine for binary class imbalance learning",
+     "year": 2018,
+     "doi": "https://doi.org/10.1016/j.asoc.2018.10.011",
+     "citations_total": 46,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 29,
+     "outside_share_%": 63.0
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Computer aided diagnosis of glaucoma using discrete and empirical wavelet transform from fundus images",
+     "year": 2018,
+     "doi": "https://doi.org/10.1049/iet-ipr.2018.5297",
+     "citations_total": 76,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 59,
+     "outside_share_%": 77.6
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Multi-input CNN-GRU based human activity recognition using wearable sensors",
+     "year": 2021,
+     "doi": "https://doi.org/10.1007/s00607-021-00928-8",
+     "citations_total": 429,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 5,
+     "cited_from_outside_corpus": 407,
+     "outside_share_%": 94.9
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Pattern identification of different human joints for different human walking styles using inertial measurement unit (IMU) sensor",
+     "year": 2021,
+     "doi": "https://doi.org/10.1007/s10462-021-09979-x",
+     "citations_total": 191,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 3,
+     "cited_from_outside_corpus": 171,
+     "outside_share_%": 89.5
+    }
+   ],
+   "outside": [
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Hydrogen embrittlement in different materials: A review",
+     "year": 2018,
+     "doi": "https://doi.org/10.1016/j.ijhydene.2018.09.201",
+     "citations_total": 971,
+     "cited_by_same_institute": 9,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 962,
+     "outside_share_%": 99.1
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Floating photovoltaic power plant: A review",
+     "year": 2016,
+     "doi": "https://doi.org/10.1016/j.rser.2016.08.051",
+     "citations_total": 878,
+     "cited_by_same_institute": 16,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 862,
+     "outside_share_%": 98.2
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Solar–wind hybrid renewable energy system: A review",
+     "year": 2016,
+     "doi": "https://doi.org/10.1016/j.rser.2015.12.223",
+     "citations_total": 843,
+     "cited_by_same_institute": 8,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 835,
+     "outside_share_%": 99.1
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Analysis of k-Fold Cross-Validation over Hold-Out Validation on Colossal Datasets for Quality Classification",
+     "year": 2016,
+     "doi": "https://doi.org/10.1109/iacc.2016.25",
+     "citations_total": 709,
+     "cited_by_same_institute": 0,
+     "cited_by_our_other_two": 2,
+     "cited_from_outside_corpus": 707,
+     "outside_share_%": 99.7
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Sustainalism: An Integrated Socio-Economic-Environmental Model to Address Sustainable Development and Sustainability",
+     "year": 2023,
+     "doi": "https://doi.org/10.3390/su151310682",
+     "citations_total": 703,
+     "cited_by_same_institute": 2,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 701,
+     "outside_share_%": 99.7
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Tomato plant disease detection using transfer learning with C-GAN synthetic images",
+     "year": 2021,
+     "doi": "https://doi.org/10.1016/j.compag.2021.106279",
+     "citations_total": 652,
+     "cited_by_same_institute": 5,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 647,
+     "outside_share_%": 99.2
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Spirulina – From growth to nutritional product: A review",
+     "year": 2017,
+     "doi": "https://doi.org/10.1016/j.tifs.2017.09.010",
+     "citations_total": 525,
+     "cited_by_same_institute": 3,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 522,
+     "outside_share_%": 99.4
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Factors influencing Indian consumers' actual buying behaviour towards organic food products",
+     "year": 2017,
+     "doi": "https://doi.org/10.1016/j.jclepro.2017.08.106",
+     "citations_total": 504,
+     "cited_by_same_institute": 1,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 503,
+     "outside_share_%": 99.8
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Advances and Researches on Non Destructive Testing: A Review",
+     "year": 2018,
+     "doi": "https://doi.org/10.1016/j.matpr.2017.11.620",
+     "citations_total": 479,
+     "cited_by_same_institute": 1,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 478,
+     "outside_share_%": 99.8
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "title": "Recent advancement in BIPV product technologies: A review",
+     "year": 2017,
+     "doi": "https://doi.org/10.1016/j.enbuild.2017.02.015",
+     "citations_total": 471,
+     "cited_by_same_institute": 4,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 467,
+     "outside_share_%": 99.2
+    }
+   ]
+  },
+  "NIT Jamshedpur": {
+   "within": [
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "A study of behaviour for immune and tumor cells in immunogenetic tumour model with non-singular fractional derivative",
+     "year": 2020,
+     "doi": "https://doi.org/10.1016/j.chaos.2020.109619",
+     "citations_total": 344,
+     "cited_by_same_institute": 24,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 320,
+     "outside_share_%": 93.0
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "Scattering with Manning–Rosen potential in all partial waves",
+     "year": 2019,
+     "doi": "https://doi.org/10.1016/j.aop.2019.168044",
+     "citations_total": 38,
+     "cited_by_same_institute": 21,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 17,
+     "outside_share_%": 44.7
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "Off-shell Jost function for the Hulthén potential in all partial waves",
+     "year": 2019,
+     "doi": "https://doi.org/10.1063/1.5093115",
+     "citations_total": 28,
+     "cited_by_same_institute": 20,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 8,
+     "outside_share_%": 28.6
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "Similarities in a fifth-order evolution equation with and with no singular kernel",
+     "year": 2019,
+     "doi": "https://doi.org/10.1016/j.chaos.2019.109467",
+     "citations_total": 203,
+     "cited_by_same_institute": 18,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 185,
+     "outside_share_%": 91.1
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "A chaos study of tumor and effector cells in fractional tumor-immune model for cancer treatment",
+     "year": 2020,
+     "doi": "https://doi.org/10.1016/j.chaos.2020.110321",
+     "citations_total": 203,
+     "cited_by_same_institute": 18,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 185,
+     "outside_share_%": 91.1
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "An Automatic Lung Nodule Classification System Based on Hybrid Transfer Learning Approach",
+     "year": 2022,
+     "doi": "https://doi.org/10.1007/s42979-022-01167-0",
+     "citations_total": 37,
+     "cited_by_same_institute": 18,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 19,
+     "outside_share_%": 51.4
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "Two analytical methods for time-fractional nonlinear coupled Boussinesq–Burger’s equations arise in propagation of shallow water waves",
+     "year": 2016,
+     "doi": "https://doi.org/10.1007/s11071-016-2716-2",
+     "citations_total": 216,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 199,
+     "outside_share_%": 92.1
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "Implementation of all-optical NAND logic gate and half-adder using the micro-ring resonator structures",
+     "year": 2016,
+     "doi": "https://doi.org/10.1007/s11082-016-0747-z",
+     "citations_total": 33,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 16,
+     "outside_share_%": 48.5
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "Off-Shell Jost Solution for the Hulthén Potential",
+     "year": 2018,
+     "doi": "https://doi.org/10.1007/s00601-018-1380-0",
+     "citations_total": 20,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 3,
+     "outside_share_%": 15.0
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "A study of fractional Lotka‐Volterra population model using Haar wavelet and Adams‐Bashforth‐Moulton methods",
+     "year": 2020,
+     "doi": "https://doi.org/10.1002/mma.6297",
+     "citations_total": 312,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 295,
+     "outside_share_%": 94.6
+    }
+   ],
+   "outside": [
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "Per- and polyfluoroalkyl substances in water and wastewater: A critical review of their global occurrence and distribution",
+     "year": 2021,
+     "doi": "https://doi.org/10.1016/j.scitotenv.2021.151003",
+     "citations_total": 930,
+     "cited_by_same_institute": 0,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 930,
+     "outside_share_%": 100.0
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "The role and significance of Magnesium in modern day research-A review",
+     "year": 2021,
+     "doi": "https://doi.org/10.1016/j.jma.2021.05.012",
+     "citations_total": 699,
+     "cited_by_same_institute": 2,
+     "cited_by_our_other_two": 2,
+     "cited_from_outside_corpus": 695,
+     "outside_share_%": 99.4
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "A comprehensive survey on feature selection in the various fields of machine learning",
+     "year": 2021,
+     "doi": "https://doi.org/10.1007/s10489-021-02550-9",
+     "citations_total": 497,
+     "cited_by_same_institute": 7,
+     "cited_by_our_other_two": 1,
+     "cited_from_outside_corpus": 489,
+     "outside_share_%": 98.4
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "A theoretical study of the Caputo–Fabrizio fractional modeling for hearing loss due to Mumps virus with optimal control",
+     "year": 2021,
+     "doi": "https://doi.org/10.1016/j.chaos.2021.110668",
+     "citations_total": 376,
+     "cited_by_same_institute": 2,
+     "cited_by_our_other_two": 3,
+     "cited_from_outside_corpus": 371,
+     "outside_share_%": 98.7
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "Environmental impact of spent lithium ion batteries and green recycling perspectives by organic acids – A review",
+     "year": 2019,
+     "doi": "https://doi.org/10.1016/j.chemosphere.2019.125291",
+     "citations_total": 357,
+     "cited_by_same_institute": 0,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 357,
+     "outside_share_%": 100.0
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "A Comprehensive Review on CNTs and CNT-Reinforced Composites: Syntheses, Characteristics and Applications",
+     "year": 2020,
+     "doi": "https://doi.org/10.1016/j.mtcomm.2020.101546",
+     "citations_total": 327,
+     "cited_by_same_institute": 0,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 327,
+     "outside_share_%": 100.0
+    },
+    {
+     "institution": "MANIT Bhopal; NIT Jamshedpur",
+     "title": "A multibranch CNN-BiLSTM model for human activity recognition using wearable sensor data",
+     "year": 2021,
+     "doi": "https://doi.org/10.1007/s00371-021-02283-3",
+     "citations_total": 335,
+     "cited_by_same_institute": 1,
+     "cited_by_our_other_two": 14,
+     "cited_from_outside_corpus": 320,
+     "outside_share_%": 95.5
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "A study of behaviour for immune and tumor cells in immunogenetic tumour model with non-singular fractional derivative",
+     "year": 2020,
+     "doi": "https://doi.org/10.1016/j.chaos.2020.109619",
+     "citations_total": 344,
+     "cited_by_same_institute": 24,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 320,
+     "outside_share_%": 93.0
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "A study of fractional Lotka‐Volterra population model using Haar wavelet and Adams‐Bashforth‐Moulton methods",
+     "year": 2020,
+     "doi": "https://doi.org/10.1002/mma.6297",
+     "citations_total": 312,
+     "cited_by_same_institute": 17,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 295,
+     "outside_share_%": 94.6
+    },
+    {
+     "institution": "NIT Jamshedpur",
+     "title": "Application of ANN technique to predict the performance of solar collector systems - A review",
+     "year": 2018,
+     "doi": "https://doi.org/10.1016/j.rser.2018.01.001",
+     "citations_total": 299,
+     "cited_by_same_institute": 4,
+     "cited_by_our_other_two": 1,
+     "cited_from_outside_corpus": 294,
+     "outside_share_%": 98.3
+    }
+   ]
+  },
+  "NIT Silchar": {
+   "within": [
+    {
+     "institution": "NIT Silchar",
+     "title": "Exploiting waste: towards a sustainable production of biodiesel using Musa acuminata peel ash as a heterogeneous catalyst",
+     "year": 2018,
+     "doi": "https://doi.org/10.1039/c8gc00071a",
+     "citations_total": 253,
+     "cited_by_same_institute": 45,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 208,
+     "outside_share_%": 82.2
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Expeditious frequency control of solar photovoltaic/biogas/biodiesel generator based isolated renewable microgrid using grasshopper optimisation algorithm",
+     "year": 2018,
+     "doi": "https://doi.org/10.1049/iet-rpg.2018.5196",
+     "citations_total": 177,
+     "cited_by_same_institute": 44,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 133,
+     "outside_share_%": 75.1
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Photocatalytic performance of g-C3N4 based nanocomposites for effective degradation/removal of dyes from water and wastewater",
+     "year": 2021,
+     "doi": "https://doi.org/10.1016/j.materresbull.2021.111417",
+     "citations_total": 214,
+     "cited_by_same_institute": 44,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 170,
+     "outside_share_%": 79.4
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Waste snail shell derived heterogeneous catalyst for biodiesel production by the transesterification of soybean oil",
+     "year": 2018,
+     "doi": "https://doi.org/10.1039/c8ra02397b",
+     "citations_total": 313,
+     "cited_by_same_institute": 42,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 271,
+     "outside_share_%": 86.6
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Effect of variation of angle of attack on the performance of two-strut scramjet combustor",
+     "year": 2016,
+     "doi": "https://doi.org/10.1016/j.ijhydene.2016.04.048",
+     "citations_total": 178,
+     "cited_by_same_institute": 41,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 137,
+     "outside_share_%": 77.0
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Green and environmentally sustainable fabrication of SnS2 quantum dots/chitosan nanocomposite for enhanced photocatalytic performance: Effect of process variables, and water matrices",
+     "year": 2022,
+     "doi": "https://doi.org/10.1016/j.jhazmat.2022.130301",
+     "citations_total": 91,
+     "cited_by_same_institute": 37,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 54,
+     "outside_share_%": 59.3
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Bio-inspired sustainable synthesis of novel SnS2/biochar nanocomposite for adsorption coupled photodegradation of amoxicillin and congo red: Effects of reaction parameters, and water matrices",
+     "year": 2023,
+     "doi": "https://doi.org/10.1016/j.jenvman.2023.117496",
+     "citations_total": 82,
+     "cited_by_same_institute": 36,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 46,
+     "outside_share_%": 56.1
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "A novel Citrus sinensis peel ash coated magnetic nanoparticles as an easily recoverable solid catalyst for biodiesel production",
+     "year": 2020,
+     "doi": "https://doi.org/10.1016/j.fuel.2020.119447",
+     "citations_total": 191,
+     "cited_by_same_institute": 35,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 156,
+     "outside_share_%": 81.7
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Enhanced performance of a novel superparamagnetic g-C3N4/NiO/ZnO/Fe3O4 nanohybrid photocatalyst for removal of esomeprazole: Effects of reaction parameters, co-existing substances and water matrices",
+     "year": 2020,
+     "doi": "https://doi.org/10.1016/j.cej.2020.124969",
+     "citations_total": 143,
+     "cited_by_same_institute": 34,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 109,
+     "outside_share_%": 76.2
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Tin oxide based nanostructured materials: synthesis and potential applications",
+     "year": 2021,
+     "doi": "https://doi.org/10.1039/d1nr07040a",
+     "citations_total": 142,
+     "cited_by_same_institute": 34,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 108,
+     "outside_share_%": 76.1
+    }
+   ],
+   "outside": [
+    {
+     "institution": "NIT Silchar",
+     "title": "ZnO nanostructured materials and their potential applications: progress, challenges and perspectives",
+     "year": 2022,
+     "doi": "https://doi.org/10.1039/d1na00880c",
+     "citations_total": 1104,
+     "cited_by_same_institute": 6,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 1098,
+     "outside_share_%": 99.5
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Green synthesis of silver nanoparticles using plant extracts and their antimicrobial activities: a review of recent literature",
+     "year": 2021,
+     "doi": "https://doi.org/10.1039/d0ra09941d",
+     "citations_total": 802,
+     "cited_by_same_institute": 3,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 799,
+     "outside_share_%": 99.6
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Comparative Review of Energy Storage Systems, Their Roles, and Impacts on Future Power Systems",
+     "year": 2018,
+     "doi": "https://doi.org/10.1109/access.2018.2888497",
+     "citations_total": 530,
+     "cited_by_same_institute": 3,
+     "cited_by_our_other_two": 1,
+     "cited_from_outside_corpus": 526,
+     "outside_share_%": 99.2
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Plastics and microplastics: A threat to environment",
+     "year": 2019,
+     "doi": "https://doi.org/10.1016/j.eti.2019.100352",
+     "citations_total": 436,
+     "cited_by_same_institute": 0,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 436,
+     "outside_share_%": 100.0
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Smart farming using artificial intelligence: A review",
+     "year": 2023,
+     "doi": "https://doi.org/10.1016/j.engappai.2023.105899",
+     "citations_total": 397,
+     "cited_by_same_institute": 6,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 391,
+     "outside_share_%": 98.5
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "A review on potential usage of industrial waste materials for binding heavy metal ions from aqueous solutions",
+     "year": 2016,
+     "doi": "https://doi.org/10.1016/j.jwpe.2016.01.014",
+     "citations_total": 390,
+     "cited_by_same_institute": 3,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 387,
+     "outside_share_%": 99.2
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Widely used catalysts in biodiesel production: a review",
+     "year": 2020,
+     "doi": "https://doi.org/10.1039/d0ra07931f",
+     "citations_total": 390,
+     "cited_by_same_institute": 27,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 363,
+     "outside_share_%": 93.1
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Multimodal Sentiment Analysis: A Survey of Methods, Trends, and Challenges",
+     "year": 2023,
+     "doi": "https://doi.org/10.1145/3586075",
+     "citations_total": 364,
+     "cited_by_same_institute": 1,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 363,
+     "outside_share_%": 99.7
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "A review on analysis and development of solar flat plate collector",
+     "year": 2016,
+     "doi": "https://doi.org/10.1016/j.rser.2016.09.078",
+     "citations_total": 311,
+     "cited_by_same_institute": 0,
+     "cited_by_our_other_two": 2,
+     "cited_from_outside_corpus": 309,
+     "outside_share_%": 99.4
+    },
+    {
+     "institution": "NIT Silchar",
+     "title": "Multilevel thresholding using grey wolf optimizer for image segmentation",
+     "year": 2017,
+     "doi": "https://doi.org/10.1016/j.eswa.2017.04.029",
+     "citations_total": 311,
+     "cited_by_same_institute": 5,
+     "cited_by_our_other_two": 0,
+     "cited_from_outside_corpus": 306,
+     "outside_share_%": 98.4
+    }
+   ]
+  }
+ },
+ "citation_origin": {
+  "MANIT Bhopal": {
+   "citations": 90684,
+   "from_same_institute_%": 6.64,
+   "from_our_other_two_%": 0.46
+  },
+  "NIT Jamshedpur": {
+   "citations": 44061,
+   "from_same_institute_%": 8.31,
+   "from_our_other_two_%": 0.87
+  },
+  "NIT Silchar": {
+   "citations": 124894,
+   "from_same_institute_%": 13.75,
+   "from_our_other_two_%": 0.4
+  }
+ }
+}

@@ -1,0 +1,808 @@
+institution,faculty_name,department,papers,journal_papers,conference_papers,citations,h_index,q1_share_%,top_journal,first_year,last_year,designation,faculty_status,first_seen,last_seen,n_ids,match_quality,common_name
+MANIT Bhopal,Kumarasamy Sudhakar,Energy Science and Engineering,145,132,13,11714,56,62.1,Case Studies in Thermal Engineering,2016,2026,,current,,,4,override,True
+MANIT Bhopal,Tikendra Nath Verma,Mechanical Engineering,145,125,20,4256,37,68.8,Fuel,2020,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Prashant V. Baredar,Energy Science and Engineering,113,67,46,5818,36,58.2,Environmental Science and Pollution Research,2016,2026,Professor,current,,,2,full,False
+MANIT Bhopal,Gaurav Dwivedi,Energy Science and Engineering,127,82,45,3236,31,54.9,Energies,2019,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Rajesh Purohit,Mechanical Engineering,169,66,103,3272,30,10.6,Advances in Materials and Processing Technologies,2017,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,R. S. Rana,Mechanical Engineering,97,30,67,2872,28,24.1,Advances in Materials and Processing Technologies,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Anil Kumar,Energy Science and Engineering,34,32,2,2592,24,68.8,Renewable and Sustainable Energy Reviews,2016,2018,,former,2017.0,2021.0,1,exact,True
+MANIT Bhopal,Vijay Bhaskar Semwal,Computer Science and Engineering,87,46,41,2715,23,47.8,IEEE Sensors Journal,2019,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,JYOTI MITTAL,Chemistry,32,32,0,2788,21,31.2,Desalination and Water Treatment,2016,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Kamal Raj Pardasani,Mathematics; Bioinformatics,60,58,2,1558,21,10.3,The European Physical Journal Plus,2016,2026,,current,,,3,override,False
+MANIT Bhopal,Fozia Z. Haque,Physics,64,46,18,1629,20,28.3,Journal of Optics,2016,2026,Associate Professor,current,,,1,initials,False
+MANIT Bhopal,Sushma Gupta,Electrical Engineering,89,42,47,1810,18,33.3,Renewable energy focus,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Rajnish Kurchania,Physics,60,57,3,1032,18,26.3,Applied Physics A,2016,2026,Professor & Head,current,,,2,exact,False
+MANIT Bhopal,Sanyam Shukla,Computer Science and Engineering,71,40,31,1901,17,62.5,Expert Systems with Applications,2016,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Alok Mittal,Chemistry,24,24,0,1843,17,41.7,Desalination and Water Treatment,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Ramesh Kumar Nayak,Materials and Metallurgical Engineering,54,26,28,863,17,15.4,International Journal of Metalcasting,2019,2026,Associate Professor & HOD,current,,,3,exact,False
+MANIT Bhopal,Savita Nema,Electrical Engineering,54,24,30,1637,16,33.3,Electrical Engineering,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,M. M. Malik,Physics,51,41,10,1071,16,19.5,Optik,2016,2026,Professor (HAG),current,,,3,exact,False
+MANIT Bhopal,Alok Singh,Mechanical Engineering,32,22,10,994,16,68.2,International Journal of Metalcasting,2017,2026,Associate Professor,current,,,1,exact,True
+MANIT Bhopal,R.M.Sarviya,Mechanical Engineering,43,28,15,925,16,21.4,Energy Sources Part A Recovery Utilization and Environmental Effects,2016,2025,Professor,current,,,1,initials,False
+MANIT Bhopal,Dheeraj K. Agarwal,Electronics and Communication Engineering,56,25,31,869,16,24.0,IETE Journal of Research,2016,2026,Associate Professor & HOD,current,,,8,exact,False
+MANIT Bhopal,Vijayshri Chaurasia,Electronics and Communication Engineering,68,30,38,839,16,26.7,Signal Image and Video Processing,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Akhilesh Barve,Mechanical Engineering,28,25,3,678,16,48.0,Benchmarking An International Journal,2019,2025,Professor,current,,,1,exact,False
+MANIT Bhopal,M. K. Pradhan,Mechanical Engineering,45,17,28,757,15,0.0,Materials Research Express,2016,2023,,former,,,1,override,False
+MANIT Bhopal,Nenavath Sreenu,Management Studies,47,46,1,742,15,52.2,Engineering Construction & Architectural Management,2020,2026,Associate Professor & HOD,current,,,2,exact,False
+MANIT Bhopal,Priyanka Paliwal,Electrical Engineering,79,31,48,725,15,38.7,Arabian Journal for Science and Engineering,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Ashis Kumar Pradhan,Humanities and Social Sciences,37,37,0,565,15,59.5,Discover Sustainability,2020,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Sweta Jain,Computer Science and Engineering,49,27,22,1417,14,48.1,International Journal of Imaging Systems and Technology,2017,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Akhtar Rasool,Computer Science and Engineering,87,25,62,921,14,44.0,ETRI Journal,2018,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,S. Suresh,Chemical Engineering,35,31,4,873,14,41.9,Environmental Research,2016,2023,Associate Professor,current,,,1,initials,True
+MANIT Bhopal,Rajesh Wadhwani,Computer Science and Engineering,62,28,34,854,14,39.3,Wind Engineering,2016,2026,Associate Professor,current,,,3,override,False
+MANIT Bhopal,Savita Dixit,Chemistry,50,43,7,750,14,16.3,Journal of Tribology,2016,2026,HAG Professor,current,,,2,exact,False
+MANIT Bhopal,Atul Lanjewar,Mechanical Engineering,27,27,0,623,14,37.0,Environmental Science and Pollution Research,2016,2025,Professor,current,,,2,exact,False
+MANIT Bhopal,Pankaj Swarnkar,Electrical Engineering,57,20,37,519,14,5.0,Electrical Engineering,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Manasi Gyanchandani,Computer Science and Engineering,70,33,37,1154,13,48.5,Journal Of Big Data,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Rajesh Kumar Nema,Electrical Engineering,46,22,24,885,13,27.3,International Transactions on Electrical Energy Systems,2016,2026,Professor,current,,,2,override,True
+MANIT Bhopal,Jaytrilok Choudhary,Computer Science and Engineering,67,28,39,843,13,39.3,IEEE Access,2017,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Vilas Warudkar,Mechanical Engineering,37,23,14,808,13,34.8,International Journal of Ambient Energy,2017,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Ravi Kumar Dwivedi,Mechanical Engineering,48,27,21,800,13,7.4,Advances in Materials and Processing Technologies,2016,2025,,current,,,1,override,False
+MANIT Bhopal,Mitul Kumar Ahirwal,Computer Science and Engineering,64,37,27,578,13,40.5,Biomedical Signal Processing and Control,2019,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,R. K. Pateriya,Computer Science and Engineering,67,36,31,526,13,27.8,IEEE Access,2016,2026,Professor,current,,,3,exact,False
+MANIT Bhopal,Dheerendra Mishra,Mathematics,58,43,15,525,13,46.5,Journal of Information Security and Applications,2020,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,TARUN KUMAR GUPTA,Electronics and Communication Engineering,49,38,11,521,13,2.6,Silicon,2016,2024,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Deepak Kumar (Mechanical Engineering),Mechanical Engineering,58,47,11,505,13,42.6,International Journal of Applied Mechanics,2020,2026,Assistant Professor,current,,,3,override,False
+MANIT Bhopal,Tripta Thakur,Electrical Engineering,43,23,20,462,13,39.1,Advances in Science Technology and Engineering Systems Journal,2016,2024,Professor,current,,,1,exact,False
+MANIT Bhopal,Nilay Khare,Computer Science and Engineering,70,42,28,953,12,52.4,Journal Of Big Data,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Piyush Kumar Patel,Physics,28,20,8,799,12,35.0,Physica Scripta,2017,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Siraj Ahmed,Mechanical Engineering,30,23,7,700,12,21.7,International Journal of Ambient Energy,2017,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Amit Suhane,Mechanical Engineering,29,18,11,651,12,22.2,Journal of Tribology,2017,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Manish Pandey,Computer Science and Engineering,68,25,43,638,12,64.0,Cluster Computing,2017,2026,Associate Professor,current,,,7,exact,False
+MANIT Bhopal,Mohammad Taufik,Mechanical Engineering,59,35,24,550,12,20.0,International Journal on Interactive Design and Manufacturing (IJIDeM),2020,2026,:,current,,,3,exact,False
+MANIT Bhopal,SURESH KUMAR GAWRE,Electrical Engineering,63,9,54,538,12,44.4,Electric Power Systems Research,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Amit Ojha,Electrical Engineering,52,20,32,528,12,25.0,Electrical Engineering,2016,2026,AssociateProfessor,current,,,2,exact,False
+MANIT Bhopal,Shailendra Jain,Electrical Engineering,39,28,11,503,12,32.1,IETE Journal of Research,2016,2026,Professor (HAG),current,,,2,exact,False
+MANIT Bhopal,Shailendra Kumar,Electrical Engineering,50,23,27,428,12,73.9,IEEE Transactions on Industry Applications,2020,2025,,former,2021.0,2023.0,3,exact,True
+MANIT Bhopal,Amit Telang,Mechanical Engineering,24,19,5,427,12,10.5,Advances in Materials and Processing Technologies,2016,2023,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Dhirendra Pratap Singh,Computer Science and Engineering,69,28,41,665,11,42.9,IEEE Access,2017,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Arvind Mittal,Energy Science and Engineering,34,18,16,583,11,50.0,Electrical Engineering,2016,2026,Professor& (HOD),current,,,2,exact,False
+MANIT Bhopal,Rajesh Gupta,Mechanical Engineering,20,18,2,477,11,38.9,Energy Sources Part A Recovery Utilization and Environmental Effects,2016,2025,Professor,current,,,2,exact,False
+MANIT Bhopal,Meenu Chawla,Computer Science and Engineering,50,18,32,471,11,38.9,ETRI Journal,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Anoop Arya,Electrical Engineering,52,21,31,461,11,19.0,SN Computer Science,2016,2026,Associate Professor,current,,,3,exact,False
+MANIT Bhopal,Gajendra Dixit,Mechanical Engineering,23,18,5,331,11,27.8,Journal of Bio- and Tribo-Corrosion,2016,2025,,former,2017.0,2024.0,1,exact,False
+MANIT Bhopal,Sarvesh Pandey,Chemistry,26,25,1,322,11,80.0,Nanoscale,2024,2026,Assistant Professor,current,,,1,full,True
+MANIT Bhopal,H. L.Tiwari,Civil Engineering,40,31,9,273,11,19.4,ISH Journal of Hydraulic Engineering,2017,2026,Professor,current,,,2,initials,False
+MANIT Bhopal,R. K. Baghel,Electronics and Communication Engineering,41,20,21,266,11,5.0,Micro and Nanostructures,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Archana Soni,Energy Science and Engineering,29,13,16,910,10,46.2,Environmental Science and Pollution Research,2017,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,R. N. Yadav,Electronics and Communication Engineering,30,19,11,788,10,52.6,AEU - International Journal of Electronics and Communications,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Vishnu Prasad,Civil Engineering,42,26,16,566,10,24.0,International Journal of Advanced Research,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,N. P. Patidar,Electrical Engineering,56,21,35,498,10,42.9,Cleaner Engineering and Technology,2017,2026,Professor,current,,,2,override,True
+MANIT Bhopal,Deepak Singh Tomar,Computer Science and Engineering,59,30,29,482,10,36.7,IEEE Access,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Jyoti Singhai,Electronics and Communication Engineering,31,17,14,390,10,23.5,Multimedia Tools and Applications,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Jay Mant Jha,Chemical Engineering,16,16,0,361,10,25.0,Journal of Crystal Growth,2021,2025,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Satish Pal Singh Rajput,Mechanical Engineering,29,23,6,346,10,34.8,Energy Sources Part A Recovery Utilization and Environmental Effects,2016,2026,Professor (HAG),current,,,2,initials,False
+MANIT Bhopal,Bharatkumar K. Modhera,Chemical Engineering,27,22,5,319,10,40.9,Biomass Conversion and Biorefinery,2016,2026,Associate Professor,current,,,1,override,False
+MANIT Bhopal,Ruchi Khare,Civil Engineering,39,23,16,308,10,34.8,Water Resources Management,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Aditya Goel,Electronics and Communication Engineering,40,28,12,290,10,10.7,Journal of Optical Communications,2016,2026,Professor (HAG),current,,,2,exact,False
+MANIT Bhopal,Amit Bhagat,Computer Applications,30,19,11,289,10,36.8,IEEE Access,2016,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,C.Sasikumar,Materials and Metallurgical Engineering,45,29,16,288,10,24.1,Transactions of the Indian Institute of Metals,2016,2026,Associate Professor,current,,,1,initials,False
+MANIT Bhopal,J. L. Bhagoria,Mechanical Engineering,23,13,10,268,10,69.2,International Communications in Heat and Mass Transfer,2018,2026,Professor (HAG),current,,,2,exact,False
+MANIT Bhopal,Sanjay Srivastava,Materials and Metallurgical Engineering,31,26,5,260,10,15.4,Journal of Superconductivity and Novel Magnetism,2016,2026,Professor,current,,,2,override,True
+MANIT Bhopal,Rahul Kumar Chaurasiya,Electronics and Communication Engineering,48,18,30,222,10,44.4,International Journal of Ad Hoc and Ubiquitous Computing,2020,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Rishi Kumar Singh,Electrical Engineering,27,8,19,192,10,37.5,Computers & Electrical Engineering,2017,2026,Assistant Professor,current,,,3,exact,False
+MANIT Bhopal,Priyanka Verma,Management Studies,21,19,2,843,9,15.8,Global Business Review,2016,2025,Associate Professor,current,,,4,exact,False
+MANIT Bhopal,Bikrant Kesari,Management Studies,26,26,0,826,9,34.6,Global Business Review,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Chandan Kumar Verma,Mathematics; Bioinformatics,48,34,14,511,9,26.5,Operations Research Forum,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Ajay Pandey,Mechanical Engineering,26,20,6,479,9,15.0,Computer Methods in Biomechanics & Biomedical Engineering,2018,2026,Associate Professor,current,,,3,exact,False
+MANIT Bhopal,Kishan Dharavath,Civil Engineering,23,14,9,397,9,35.7,Construction and Building Materials,2016,2026,Associate Professor,current,,,3,override,False
+MANIT Bhopal,Kavita Khare,Electronics and Communication Engineering,51,25,26,304,9,12.0,International Journal of Numerical Modelling Electronic Networks Devices and Fields,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Vishal Parashar,Mechanical Engineering,21,11,10,290,9,27.3,Materials and Manufacturing Processes,2016,2025,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Meena Agrawal,Energy Science and Engineering,16,8,8,254,9,50.0,Environmental Science and Pollution Research,2016,2025,Associate Professor,current,,,1,exact,True
+MANIT Bhopal,Sunder Lal Pal,Chemical Engineering,24,22,2,254,9,27.3,Chemical Data Collections,2019,2026,Associate Professor & HOD,current,,,2,exact,False
+MANIT Bhopal,Ujjwal Kumar Kalla,Electrical Engineering,42,8,34,238,9,50.0,International Transactions on Electrical Energy Systems,2020,2022,,former,2021.0,2024.0,1,exact,False
+MANIT Bhopal,Arvind Kumar,Mechanical Engineering,11,11,0,227,9,18.2,Journal of Thermal Analysis and Calorimetry,2021,2026,Associate Professor,current,,,1,exact,True
+MANIT Bhopal,Varun Bajaj,Electronics and Communication Engineering,26,19,7,208,9,68.4,IEEE Sensors Journal,2024,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Namita Tiwari,Computer Science and Engineering,40,15,25,202,9,60.0,IEEE Access,2016,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,M. Raju,Electrical Engineering,30,8,22,188,9,12.5,Energies,2021,2026,Assistant Professor,current,,,1,initials,False
+MANIT Bhopal,Manish Vishwakarma,Mechanical Engineering,16,5,11,1844,8,60.0,International Journal of Hydrogen Energy,2017,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Ajay Verma,Mechanical Engineering,22,10,12,482,8,20.0,Proceedings of the Institution of Mechanical Engineers Part D Journal of Automobile Engineering,2017,2026,Associate Professor,current,,,4,exact,False
+MANIT Bhopal,M.S. Chauhan,Civil Engineering,28,25,3,482,8,40.0,Journal of Water and Climate Change,2016,2026,Professor & Head of the Department,current,,,1,initials,False
+MANIT Bhopal,Ramjeevan Singh Thakur,Computer Applications,24,19,5,356,8,0.0,International Journal of Engineering & Technology,2016,2021,,former,2018.0,2021.0,4,exact,False
+MANIT Bhopal,Jyoti Bharti,Computer Science and Engineering,43,18,25,351,8,16.7,IETE Journal of Research,2016,2026,Assistant Professor,current,,,3,exact,False
+MANIT Bhopal,Manisha Dubey,Electrical Engineering,32,15,17,309,8,21.4,CSI Transactions on ICT,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Rahul M Shrivastava,Biological Science and Engineering,21,20,1,295,8,5.0,PubMed,2016,2025,Professor,current,,,1,full,False
+MANIT Bhopal,Praveen Kaushik,Computer Science and Engineering,17,13,4,278,8,7.7,International Journal of Engineering & Technology,2017,2022,,former,2017.0,2024.0,1,exact,False
+MANIT Bhopal,Jyoti Rani,Physics,17,13,4,239,8,53.8,Ceramics International,2020,2026,Assistant Professor,current,,,3,exact,False
+MANIT Bhopal,Madhu Shandilya,Electronics and Communication Engineering,32,18,14,239,8,33.3,International Journal of Computer Applications,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Raman Nateriya,Civil Engineering,25,19,6,234,8,10.5,National Academy Science Letters,2017,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Sanjay Soni,Mechanical Engineering,19,6,13,220,8,16.7,Advanced Engineering Materials,2017,2023,,former,2017.0,2023.0,1,exact,False
+MANIT Bhopal,Giribabu Dyanamina,Electrical Engineering,41,11,30,219,8,27.3,International Journal of Circuit Theory and Applications,2019,2026,Associate Professor,current,,,3,exact,False
+MANIT Bhopal,Mukesh Kirar,Electrical Engineering,50,14,36,213,8,50.0,Energies,2016,2026,Associate Professor,current,,,1,full,False
+MANIT Bhopal,Sanjeev Singh,Electrical Engineering,50,12,38,208,8,16.7,International Journal of Ambient Energy,2020,2026,:,current,,,2,exact,True
+MANIT Bhopal,Bhavana P. Shrivastava,Electronics and Communication Engineering,22,13,9,182,8,30.8,Microelectronics Journal,2017,2026,,current,,,3,override,False
+MANIT Bhopal,Vaibhav Soni,Computer Science and Engineering,28,8,20,179,8,50.0,IEEE Transactions on Consumer Electronics,2022,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,C. Murali Krishna,Mechanical Engineering,26,13,13,168,8,15.4,Journal of the Chinese Institute of Engineers,2018,2026,Professor,current,,,1,initials,True
+MANIT Bhopal,Archana Nigrawal,Physics,21,9,12,112,8,11.1,Advanced Materials Proceedings,2017,2026,,current,,,1,override,False
+MANIT Bhopal,Lalita Gupta,Electronics and Communication Engineering,36,17,19,620,7,41.2,IEEE Access,2016,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Namita Srivastava,Mathematics; Bioinformatics,21,16,5,506,7,12.5,International Journal of Engineering & Technology,2016,2026,Professor (HAG),current,,,2,exact,False
+MANIT Bhopal,Vasudev Dehalwar,Computer Science and Engineering,33,10,23,374,7,60.0,Cluster Computing,2020,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Pushyamitra Mishra,Mechanical Engineering,23,11,12,285,7,0.0,Advanced Materials Letters,2016,2026,,former,2022.0,2023.0,2,exact,False
+MANIT Bhopal,Manmohan Kapshe,Architecture and Planning,12,11,1,256,7,63.6,Energy Policy,2017,2025,Professor (HAG),current,,,1,exact,False
+MANIT Bhopal,Rajput S. P. S,Civil Engineering,29,21,8,212,7,28.6,National Academy Science Letters,2018,2026,Associate Professor,current,,,1,override,False
+MANIT Bhopal,Pradeep Kumar Jain,Civil Engineering,18,12,6,187,7,25.0,National Academy Science Letters,2019,2026,Professor,current,,,3,exact,False
+MANIT Bhopal,Vikash Kumar,Mechanical Engineering,25,22,3,183,7,40.9,Renewable Energy,2020,2026,Assistant Professor,current,,,2,exact,True
+MANIT Bhopal,Gyaneshwar Singh Kushwaha,Management Studies,22,18,4,179,7,22.2,Applied Sciences,2016,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Ghanshyam Singh Thakur,Computer Applications,21,12,9,150,7,18.2,IETE Journal of Research,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Sukeshni Tirkey,Electronics and Communication Engineering,12,6,6,139,7,0.0,Micro and Nanostructures,2020,2025,,former,2021.0,2024.0,2,exact,False
+MANIT Bhopal,Kavita Dehalwar,Architecture and Planning,25,20,5,135,7,15.0,GeoJournal,2016,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Abhinav Varshney,Mechanical Engineering,14,13,1,124,7,46.2,Materials Science and Engineering A,2020,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Mahendra Kumar Choudhary,Civil Engineering,26,18,8,118,7,33.3,Journal of Water and Climate Change,2018,2026,Professor,current,,,3,exact,False
+MANIT Bhopal,Sanjay Sharma,Computer Applications,18,14,4,118,7,0.0,International Journal of Sensors Wireless Communications and Control,2016,2025,Professor,current,,,2,exact,True
+MANIT Bhopal,Shweta Mehroliya,Electrical Engineering,14,5,9,118,7,20.0,SN Computer Science,2021,2026,,current,,,1,override,False
+MANIT Bhopal,Mukul Kulshrestha,Civil Engineering,22,18,4,93,7,16.7,National Academy Science Letters,2016,2026,Professor (HAG),current,,,2,exact,False
+MANIT Bhopal,Laxmi Kumre,Electronics and Communication Engineering,21,11,10,209,6,9.1,Circuits Systems and Signal Processing,2017,2026,Associate Professor,current,,,1,full,False
+MANIT Bhopal,Ravi Kumar Mandava,Mechanical Engineering,23,10,13,177,6,10.0,Acta Polytechnica Hungarica,2021,2023,,former,2021.0,2023.0,1,exact,False
+MANIT Bhopal,Sri Khetwat Saritha,Computer Science and Engineering,39,9,30,171,6,22.2,Automatika,2016,2026,Associate Professor,current,,,3,exact,False
+MANIT Bhopal,K. R. Aharwal,Mechanical Engineering,15,8,7,163,6,37.5,Energy Sources Part A Recovery Utilization and Environmental Effects,2018,2026,Professor& (Head of The Department),current,,,1,initials,False
+MANIT Bhopal,Jai Prakash Jaiswal,Bioinformatics,27,27,0,162,6,7.4,Numerical Analysis and Applications,2016,2021,,former,2022.0,2024.0,1,initials,False
+MANIT Bhopal,Usha Chouhan,Mathematics; Bioinformatics,38,32,6,156,6,18.8,Bioscience Biotechnology Research Communications,2016,2026,Professor & Head (MBC),current,,,2,exact,False
+MANIT Bhopal,Pritikana Das,Civil Engineering,22,13,9,153,6,38.5,Innovative Infrastructure Solutions,2021,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Yogendra Kumar,Electrical Engineering,30,11,19,151,6,18.2,Asian Journal of Electrical Sciences,2016,2025,Professor,current,,,1,exact,True
+MANIT Bhopal,Bholanath Roy,Computer Science and Engineering,26,3,23,148,6,33.3,Earth Science Informatics,2021,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,J. S. Yadav,Electronics and Communication Engineering,18,9,9,145,6,11.1,Chemometrics and Intelligent Laboratory Systems,2016,2026,Professor,current,,,1,initials,True
+MANIT Bhopal,Vikas Poonia,Civil Engineering,15,15,0,126,6,86.7,Journal of Arid Environments,2018,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Ramkishor Anant,Materials and Metallurgical Engineering,25,21,4,119,6,23.8,Journal of Materials Engineering and Performance,2020,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Shivendra K Chaurasiya,Biological Science and Engineering,11,11,0,118,6,27.3,Frontiers in Cellular and Infection Microbiology,2017,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Surabhi Mehrotra,Architecture and Planning,20,15,5,117,6,46.7,Journal of the Indian Society of Remote Sensing,2019,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Sangeeta Nakhate,Electronics and Communication Engineering,35,13,22,104,6,7.7,IETE Technical Review,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Vinod Yadav,Mechanical Engineering,29,17,12,102,6,5.9,Advances in Materials and Processing Technologies,2020,2026,:,current,,,3,exact,False
+MANIT Bhopal,Priyanka Dhurvey,Civil Engineering,29,14,15,93,6,0.0,National Academy Science Letters,2017,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Rutuja M. Chavan,Civil Engineering,13,10,3,93,6,30.0,ISH Journal of Hydraulic Engineering,2020,2025,Assistant Professor,current,,,1,full,False
+MANIT Bhopal,Rampal Pandey,Chemistry,14,14,0,80,6,35.7,Journal of Molecular Structure,2024,2026,Associate Professor & (HOD),current,,,1,exact,False
+MANIT Bhopal,Arvind Rajawat,Electronics and Communication Engineering,20,16,4,71,6,0.0,IETE Technical Review,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,D. K. Raghuvanshi,Electronics and Communication Engineering,14,10,4,449,5,0.0,IET Communications,2017,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,S. K. Katiyar,Civil Engineering,12,11,1,195,5,9.1,Journal of the Indian Society of Remote Sensing,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Jyoti Sarup,Civil Engineering,14,11,3,158,5,18.2,Modeling Earth Systems and Environment,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Manish Kashyap,Electronics and Communication Engineering,15,9,6,158,5,22.2,Computer Methods in Biomechanics and Biomedical Engineering Imaging & Visualization,2022,2026,Assistant professor,current,,,1,exact,False
+MANIT Bhopal,Alpana Pandey,Electronics and Communication Engineering,23,10,13,143,5,0.0,Signal Image and Video Processing,2017,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Manoj Jha,Mathematics; Bioinformatics,21,16,5,138,5,18.8,Computational Economics,2017,2026,Associate Professor,current,,,4,exact,False
+MANIT Bhopal,Sumit H. Dhawane,Chemical Engineering,10,8,2,129,5,87.5,Biomass and Bioenergy,2020,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Vimlesh Kumar Soni,Mechanical Engineering,9,4,5,115,5,0.0,International Journal of Systems Assurance Engineering and Management,2017,2025,Professor,current,,,1,exact,False
+MANIT Bhopal,Pragati Agrawal,Computer Science and Engineering,22,7,15,89,5,42.9,Journal Of Big Data,2021,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Manoj Arya,Mechanical Engineering,25,14,11,85,5,42.9,Energy Sources Part A Recovery Utilization and Environmental Effects,2023,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Alka Bharat,Architecture and Planning,12,11,1,81,5,54.5,Journal of Urban Planning and Development,2022,2026,Professor (HAG),current,,,1,exact,False
+MANIT Bhopal,Pushpendra Kumar,Mathematics,26,9,17,80,5,33.3,Arabian Journal for Science and Engineering,2020,2026,Assistant Professor,current,,,1,exact,True
+MANIT Bhopal,Manjeet Singh Hora,Civil Engineering,15,8,7,76,5,37.5,Archives for Technical Sciences,2016,2025,Professor,current,,,1,exact,False
+MANIT Bhopal,Juned Raheem,Civil Engineering,11,6,5,64,5,0.0,National Academy Science Letters,2023,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Vijay Panchore,Mechanical Engineering,19,17,2,59,5,11.8,Polymers for Advanced Technologies,2021,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Ravindra D. Jilte,Energy Science and Engineering,5,5,0,227,4,60.0,Journal of Thermal Analysis and Calorimetry,2024,2025,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Vinita Mohindra,Humanities and Social Sciences,11,11,0,143,4,63.6,Sikh Formations,2018,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Jitendra Kumar,Computer Applications,13,9,4,129,4,77.8,Computers & Electrical Engineering,2024,2025,Assistant Professor (Gr-1),current,,,1,exact,True
+MANIT Bhopal,Rajnish Shrivastava,Civil Engineering,6,4,2,118,4,50.0,Renewable Energy,2016,2019,,former,2017.0,2017.0,1,exact,False
+MANIT Bhopal,Jay Kumar Jain,Computer Applications,22,14,8,100,4,15.4,Journal of Engineering Science and Technology Review,2016,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Atul Kumar,Electronics and Communication Engineering,15,10,5,98,4,40.0,IEEE Sensors Journal,2024,2026,Assistant Professor,current,,,1,exact,True
+MANIT Bhopal,Bivina G R,Civil Engineering,26,13,13,91,4,46.2,Transportation Research Part F Traffic Psychology and Behaviour,2021,2026,Assistant Professor,current,,,1,override,False
+MANIT Bhopal,Sudhanshu Kumar,Mechanical Engineering,19,12,7,81,4,8.3,Proceedings of the Institution of Mechanical Engineers Part E Journal of Process Mechanical Engineering,2019,2026,:,current,,,5,exact,False
+MANIT Bhopal,Sujoy Das,Bioinformatics; Computer Applications,11,9,2,77,4,22.2,International Journal of Information Retrieval Research,2016,2023,Professor,current,,,1,exact,False
+MANIT Bhopal,Mangesh Lodhe,Materials and Metallurgical Engineering,11,11,0,64,4,18.2,Advances in Applied Ceramics Structural Functional and Bioceramics,2020,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Kanchapogu Suresh,Chemical Engineering,7,2,5,63,4,0.0,Indian Chemical Engineer,2020,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Madhvi Shakya,Mathematics; Bioinformatics,12,10,2,62,4,0.0,Applied Mathematics,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Om Prakash Meena,Electronics and Communication Engineering,15,5,10,59,4,0.0,Applied Optics,2017,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Anuj Jaiswal,Architecture and Planning,13,6,7,58,4,0.0,Innovative Infrastructure Solutions,2023,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Khushhali M. Pandey,Biological Science and Engineering,23,22,1,46,4,13.6,Bioscience Biotechnology Research Communications,2016,2026,Associate Professor & Head of the Department,current,,,4,exact,False
+MANIT Bhopal,Siddhartha Rokade,Civil Engineering,19,11,8,46,4,36.4,Alexandria Engineering Journal,2018,2026,Professor,current,,,3,exact,False
+MANIT Bhopal,Rakesh Kumar,Civil Engineering,11,6,5,45,4,0.0,National Academy Science Letters,2016,2026,Professor,current,,,1,exact,True
+MANIT Bhopal,Amit Banerji,Management Studies,14,14,0,44,4,7.1,Journal of Scientific & Industrial Research,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,P. K. Agrawal,Civil Engineering,11,4,7,40,4,0.0,International Journal of Heavy Vehicle Systems,2016,2026,Professor,current,,,4,exact,False
+MANIT Bhopal,Amit Dubey,Chemistry,14,11,3,39,4,9.1,Journal of Porous Materials,2016,2026,Professor,current,,,4,exact,False
+MANIT Bhopal,Supriya Vyas,Architecture and Planning,10,10,0,38,4,50.0,International Journal of Advanced Research,2016,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Jayashree Baral,Materials and Metallurgical Engineering,11,7,4,37,4,14.3,Metallography Microstructure and Analysis,2022,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Abhay Sharma,Civil Engineering,7,5,2,33,4,0.0,National Academy Science Letters,2024,2025,Associate Professor,current,,,1,exact,True
+MANIT Bhopal,Subhankar Dutta,Mathematics,15,15,0,33,4,33.3,Journal of Applied Statistics,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Akhilesh Soni,Mechanical Engineering,10,4,6,496,3,50.0,Engineering Computations,2017,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Varsha Rokade,Management Studies,17,15,2,100,3,26.7,International Journal of Environmental Sciences,2016,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Rupak Kishor,Chemical Engineering,8,8,0,51,3,75.0,Environmental Science and Pollution Research,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Nitin Dindorker,Civil Engineering,14,6,8,50,3,33.3,National Academy Science Letters,2017,2026,,former,2017.0,2023.0,1,full,False
+MANIT Bhopal,Siddhartha Deb Roy,Electrical Engineering,15,4,11,50,3,50.0,IEEE Transactions on Industry Applications,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Dharmendar Kumar Sharma,Chemistry,4,4,0,49,3,75.0,Journal of Luminescence,2019,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Subhajit Patra,Chemical Engineering,6,5,1,37,3,0.0,Journal of The Institution of Engineers (India) Series E,2020,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Narendra Gajbhiye,Mechanical Engineering,16,9,7,32,3,11.1,Energy Sources Part A Recovery Utilization and Environmental Effects,2019,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Santanu Pakhira,Physics,11,11,0,29,3,100.0,Physical review. B./Physical review. B,2024,2026,Assistant Professor (Grade I),current,,,1,exact,False
+MANIT Bhopal,Pushpender Yadav,Humanities and Social Sciences,22,22,0,28,3,22.7,Indian Journal of Extension Education,2023,2026,Associate Professor & Head of the Department,current,,,1,exact,False
+MANIT Bhopal,Akash M Chandran,Chemical Engineering,7,7,0,26,3,85.7,ACS Applied Electronic Materials,2025,2026,Assistant Professor Grade-II,current,,,3,exact,False
+MANIT Bhopal,Krishna K Dhote,Architecture and Planning,7,6,1,25,3,0.0,Current Science,2016,2026,Professor (HAG) & HOD,current,,,1,initials,False
+MANIT Bhopal,Yogesh K. Garg,Architecture and Planning,10,9,1,25,3,22.2,Civil Engineering and Architecture,2020,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Rahul Tiwari,Architecture and Planning,13,5,8,22,3,0.0,International Review for Spatial Planning and Sustainable Development,2020,2026,Assistant Professor,current,,,3,exact,False
+MANIT Bhopal,Hasthi Venkateswarlu,Civil Engineering,11,7,4,21,3,42.9,Computers and Geotechnics,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Navneet Munoth,Architecture and Planning,10,9,1,20,3,11.1,Journal of The Institution of Engineers (India) Series A,2020,2026,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,RAMARAJAN R,Physics,6,6,0,20,3,83.3,ACS Applied Electronic Materials,2025,2026,Assistant Professor (Grade-II),current,,,1,initials,False
+MANIT Bhopal,Jitendra Adhikari,Mechanical Engineering,8,6,2,19,3,83.3,Advanced Theory and Simulations,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Rajeev Parmar,Chemical Engineering,8,6,2,18,3,33.3,Environmental Science and Pollution Research,2022,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Rekha Jain,Architecture and Planning,2,2,0,95,2,100.0,Building and Environment,2017,2017,,former,2017.0,2022.0,2,exact,False
+MANIT Bhopal,Anupama Sharma,Architecture and Planning,5,5,0,61,2,20.0,Asian Journal of Civil Engineering,2024,2025,Professor,current,,,2,exact,False
+MANIT Bhopal,Ajay Somkuwar,Electronics and Communication Engineering,12,10,2,42,2,0.0,Acoustics,2016,2026,Professor,current,,,1,full,False
+MANIT Bhopal,Kamal Singh,Civil Engineering,14,8,6,41,2,25.0,National Academy Science Letters,2023,2026,Associate Professor,current,,,5,exact,False
+MANIT Bhopal,NEHA PRANAV KOLHE,Architecture and Planning,6,6,0,30,2,80.0,Current Issues in Tourism,2016,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Anil Kumar Sharma,Civil Engineering,2,2,0,28,2,100.0,Sustainability,2022,2023,Professor,current,,,1,exact,True
+MANIT Bhopal,Nabendu Paul,Chemical Engineering,5,5,0,27,2,80.0,ACS Applied Materials & Interfaces,2024,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Ajay Thawait,Civil Engineering,4,4,0,25,2,75.0,Biomass and Bioenergy,2020,2026,Associate Professor,current,,,1,full,False
+MANIT Bhopal,Vivek Garg,Civil Engineering,9,7,2,25,2,28.6,National Academy Science Letters,2017,2026,Associate Professor,current,,,3,exact,False
+MANIT Bhopal,Preeti Onkar,Architecture and Planning,7,7,0,24,2,0.0,Current Science,2016,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Gurveer Singh,Energy Science and Engineering,5,3,2,21,2,33.3,Discover Sustainability,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Rajat Soni,Architecture and Planning,5,3,2,18,2,33.3,Environmental Reviews,2024,2026,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Vijaya Kumar Bulasara,Chemical Engineering,2,2,0,17,2,100.0,Process Safety and Environmental Protection,2020,2022,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Ameenur Rehman Siddiqui,Mechanical Engineering,3,0,3,16,2,,,2017,2024,,former,2017.0,2020.0,2,initials,False
+MANIT Bhopal,Rajesh Kumar Mahato,Civil Engineering,6,6,0,15,2,50.0,Journal of Hydraulic Engineering,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Vibhuti Chauhan,Electronics and Communication Engineering,2,2,0,15,2,0.0,International Journal of Numerical Modelling Electronic Networks Devices and Fields,2025,2025,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Sukanti Behera,Chemistry,3,3,0,14,2,66.7,Journal of Electroanalytical Chemistry,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Suneet Kaur,Civil Engineering,13,9,4,11,2,22.2,National Academy Science Letters,2017,2026,Associate Professor,current,,,4,exact,False
+MANIT Bhopal,Ashish Kumar Sahu,Computer Science and Engineering,6,1,5,10,2,100.0,Arabian Journal for Science and Engineering,2018,2026,Assistant Professor,current,,,4,exact,False
+MANIT Bhopal,Emon Barua,Mechanical Engineering,4,4,0,10,2,25.0,International Journal of Materials Research (formerly Zeitschrift fuer Metallkunde),2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Yadunath Pathak,Computer Science and Engineering,13,2,11,10,2,0.0,Discover Computing,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,S. K. Dubey,Civil Engineering,12,6,6,8,2,16.7,National Academy Science Letters,2017,2025,Professor,current,,,1,exact,True
+MANIT Bhopal,Soumya Mukherjee,Chemistry,10,8,2,8,2,12.5,Physical Chemistry Chemical Physics,2025,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Vinay Mohan Das,Architecture and Planning,6,5,1,7,2,40.0,Urban Water Journal,2022,2026,Professor,current,,,1,exact,False
+MANIT Bhopal,Arshi Parashar,Architecture and Planning,4,3,1,6,2,33.3,Cities & Health,2023,2025,Assistant Professor (Grade -I),current,,,1,exact,False
+MANIT Bhopal,Jagdish Singh,Architecture and Planning,3,3,0,6,2,0.0,Current Science,2016,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Charumitra Kapshe,Architecture and Planning,2,2,0,5,2,0.0,Ecology Environment and Conservation,2021,2022,Professor,current,,,1,exact,False
+MANIT Bhopal,Pankaj Kumar,Computer Science and Engineering,5,3,2,104,1,100.0,IEEE Transactions on Vehicular Technology,2019,2026,Assistant Professor,current,,,1,exact,True
+MANIT Bhopal,Deepak Kumar (Humanities and Social Sciences),Humanities and Social Sciences,6,2,4,18,1,50.0,Environmental Science and Pollution Research,2023,2026,Assistant Professor,current,,,3,override,False
+MANIT Bhopal,ANJALI DHENGLE,Humanities and Social Sciences,6,6,0,17,1,60.0,Asian Women,2023,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Shweta Bhandari,Computer Science and Engineering,3,1,2,17,1,100.0,Computers & Security,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Surendra Singh,Computer Science and Engineering,6,1,5,13,1,100.0,Knowledge-Based Systems,2024,2025,Assistant Professor,current,,,3,exact,False
+MANIT Bhopal,Kajal Mishra,Chemical Engineering,3,1,2,12,1,100.0,Food Research International,2024,2026,Assistant Professor Grade-II,current,,,2,exact,False
+MANIT Bhopal,Vicky Lalramsangi,Architecture and Planning,3,3,0,12,1,33.3,Environment and Urbanization Asia,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Anugrah Anilkumar Nagaich,Architecture and Planning,5,4,1,9,1,25.0,Architecture Structures and Construction,2021,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Kavita Gidwani,Energy Science and Engineering,2,1,1,9,1,100.0,Discover Sustainability,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Priyamitra Munoth,Civil Engineering,6,3,3,8,1,33.3,Earth Systems and Environment,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Kiran Singh,Biological Science and Engineering,1,1,0,7,1,0.0,Beni-Suef University Journal of Basic and Applied Sciences,2023,2023,,former,2017.0,2024.0,1,exact,False
+MANIT Bhopal,Kuldeep Singh Yadav,Mathematics,4,4,0,7,1,50.0,Acta Biotheoretica,2024,2026,Assistant Professor,current,,,2,initials,False
+MANIT Bhopal,Medipelly Rampavan,Computer Science and Engineering,2,1,1,7,1,100.0,Engineering Applications of Artificial Intelligence,2025,2025,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Dharmendra Pandey,Chemical Engineering,2,2,0,6,1,0.0,Chemical Physics Letters,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Nakul Dhagat,Architecture and Planning,2,2,0,6,1,50.0,INTERNATIONAL JOURNAL OF ARCHITECTURE AND INFRASTRUCTURE PLANNING,2020,2025,Professor,current,,,1,exact,False
+MANIT Bhopal,Manisha Singh,Computer Science and Engineering,2,2,0,5,1,50.0,Scientific Reports,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Neeraj Tiwari,Civil Engineering,7,2,5,5,1,0.0,National Academy Science Letters,2024,2025,Associate Professor,current,,,1,full,True
+MANIT Bhopal,Akash Sinha,Computer Science and Engineering,7,2,5,4,1,50.0,Biomedical Signal Processing and Control,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Bulbul Shukla,Architecture and Planning,2,1,1,4,1,100.0,Journal of Planning Literature,2022,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Harsangeet Kaur,Civil Engineering,2,1,1,4,1,0.0,Waste and Biomass Valorization,2023,2025,Associate Professor,current,,,1,exact,False
+MANIT Bhopal,Sandeep Patel,Electronics and Communication Engineering,4,0,4,4,1,,,2022,2026,Assistant Professor Grade - I,current,,,2,exact,False
+MANIT Bhopal,GUMPU SRINIVASULU,Electrical Engineering,12,4,8,3,1,0.0,National Academy Science Letters,2024,2026,Assistant Professor,current,,,4,exact,False
+MANIT Bhopal,Madan Dhanora,Humanities and Social Sciences,7,7,0,3,1,28.6,Millennial Asia,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Manmath Kumar Dash,Materials and Metallurgical Engineering,4,2,2,3,1,0.0,Metallurgical Research & Technology,2024,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Prabhakaran K K,Electrical Engineering,2,1,1,3,1,100.0,Environmental Science and Pollution Research,2023,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Rajshree Kamat,Architecture and Planning,7,4,3,3,1,25.0,Cities & Health,2017,2026,Associate Professor,current,,,3,exact,False
+MANIT Bhopal,Shuchi Srivastava,Management Studies,7,6,1,3,1,0.0,International Journal of Environmental Sciences,2024,2026,Professor,current,,,2,exact,False
+MANIT Bhopal,Suryakant Gautam,Electronics and Communication Engineering,5,1,4,3,1,100.0,IEEE Transactions on Instrumentation and Measurement,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Aningi Mokhalingam,Mechanical Engineering,1,1,0,2,1,100.0,Carbon,2025,2025,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Anjuli Jain,Humanities and Social Sciences,5,4,1,2,1,50.0,Cogent Arts and Humanities,2024,2026,Associate Professor,current,,,3,exact,False
+MANIT Bhopal,Chaduvula Hemanth,Electrical Engineering,5,2,3,2,1,100.0,Electric Power Systems Research,2024,2026,Assistant Professor,current,,,1,full,False
+MANIT Bhopal,Charu Parashar,Civil Engineering,2,1,1,2,1,0.0,IOSR Journal of Environmental Science Toxicology and Food Technology,2016,2024,,former,2017.0,2023.0,1,exact,False
+MANIT Bhopal,Jaideep Gupta,Energy Science and Engineering,1,0,1,2,1,,,2023,2023,Visiting Professor,current,,,1,exact,False
+MANIT Bhopal,Punjan Dohare,Electrical Engineering,5,1,4,2,1,0.0,Rapid Prototyping Journal,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,T. S. Bheemraj,Electrical Engineering,2,0,2,2,1,,,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Vivek Pratap Singh,Electronics and Communication Engineering,2,2,0,2,1,100.0,Advanced Science,2026,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Abhilash Gunti,Materials and Metallurgical Engineering,1,1,0,1,1,0.0,Journal of Materials Engineering and Performance,2024,2024,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Akanksha Gupta,Physics,1,1,0,1,1,0.0,Physics of Fluids,2025,2025,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Ashish Das,Mechanical Engineering,2,2,0,1,1,0.0,Proceedings of the Institution of Mechanical Engineers Part E Journal of Process Mechanical Engineering,2026,2026,Assistant Professor Grade-I,current,,,1,exact,False
+MANIT Bhopal,Ashutosh Sharma,Architecture and Planning,3,2,1,1,1,0.0,INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT,2017,2026,Professor,current,,,3,exact,False
+MANIT Bhopal,Bandaru Goutham Rajeev Gandhi,Civil Engineering,2,2,0,1,1,100.0,Advances in Water Resources,2024,2026,Assistant Professor,current,,,1,initials,False
+MANIT Bhopal,Gaurav Upadhyay,Electronics and Communication Engineering,6,0,6,1,1,,,2024,2025,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Harjinder Singh,Chemistry,2,2,0,1,1,0.0,New Journal of Chemistry,2025,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Hergovind Singh,Management Studies,1,1,0,1,1,0.0,Journal of Intellectual Property Rights,2024,2024,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Karunesh Kumar Shukla,Civil Engineering,2,2,0,1,1,0.0,Journal of The Institution of Engineers (India) Series C,2026,2026,Professor & Director,current,,,1,exact,False
+MANIT Bhopal,Manoja Kumar Behera,Electrical Engineering,1,0,1,1,1,,,2026,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Rahul Pal,Electronics and Communication Engineering,4,2,2,1,1,50.0,IEEE Communications Surveys & Tutorials,2024,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Subhash Singh,Physics,5,5,0,1,1,0.0,APL Electronic Devices,2025,2026,Assistant Professor,current,,,2,exact,False
+MANIT Bhopal,Akash Oraon,Materials and Metallurgical Engineering,2,2,0,0,0,0.0,Applied Physics A,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Akkala Subba Rao,Electronics and Communication Engineering,7,1,6,0,0,0.0,IETE Journal of Research,2021,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,K VISHWANATH,Materials and Metallurgical Engineering,1,1,0,0,0,0.0,Journal of Materials Engineering and Performance,2026,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Krishnan S,Mechanical Engineering,2,1,1,0,0,0.0,Acta Mechanica,2024,2026,Assistant Professor,current,,,2,initials,False
+MANIT Bhopal,N. Jayanth,Mechanical Engineering,1,0,1,0,0,,,2024,2024,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Ramesh Kumar Thakur,Computer Science and Engineering,6,2,4,0,0,50.0,IEEE Geoscience and Remote Sensing Letters,2024,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Saurabh Shukla,Electrical Engineering,1,0,1,0,0,,,2026,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Seemi Ahmed,Architecture and Planning,2,0,2,0,0,,,2024,2025,Associate Professor,current,,,2,exact,False
+MANIT Bhopal,Soumya Ranjan Guru,Mechanical Engineering,3,2,1,0,0,0.0,Journal of Polymer Research,2025,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Suman Das,Mathematics,1,1,0,0,0,100.0,International Journal of Systems Science,2026,2026,Assistant Professor,current,,,1,exact,False
+MANIT Bhopal,Vikram Garg,Computer Science and Engineering,3,0,3,0,0,,,2025,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Sunil Kumar,Mathematics,137,136,1,6433,42,36.0,Chaos Solitons & Fractals,2016,2026,Associate Professor,current,,,4,override,True
+NIT Jamshedpur,Balram Ambade,Chemistry,92,86,6,4686,34,54.7,Physics and Chemistry of the Earth Parts A/B/C,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,RASHMI SINHA,Electronics and Communication Engineering,83,54,29,963,20,9.3,Frequenz,2016,2026,Associate Professor,current,,,3,exact,False
+NIT Jamshedpur,Sanja y,Mechanical Engineering,53,30,23,1076,18,82.8,International Journal of Hydrogen Energy,2016,2025,Professor,current,,,1,override,False
+NIT Jamshedpur,Dilip Kumar (Computer Science and Engineering),Computer Science and Engineering,34,21,13,656,16,42.9,Multimedia Tools and Applications,2016,2026,Assistant Professor,current,,,1,override,False
+NIT Jamshedpur,Mani Kant Paswan,Mechanical Engineering,91,49,42,809,15,22.4,Mechanics Based Design of Structures and Machines,2016,2026,Professor,current,,,3,override,False
+NIT Jamshedpur,Chandrashekhar Azad,Computer Science and Engineering,54,21,33,1091,14,42.9,EAI Endorsed Transactions on Pervasive Health and Technology,2016,2026,Assistant Professor,current,,,3,exact,False
+NIT Jamshedpur,AJAY KUMAR,Electronics and Communication Engineering,55,35,20,839,14,22.9,Optical and Quantum Electronics,2016,2025,Assistant Professor,current,,,2,override,True
+NIT Jamshedpur,Sanjay V. Kumar,Civil Engineering,42,18,24,723,14,27.8,International Transactions on Electrical Energy Systems,2017,2026,Associate Professor,current,,,2,override,False
+NIT Jamshedpur,Vishesh Ranjan Kar,Mechanical Engineering,48,30,18,954,13,43.3,Mechanics Based Design of Structures and Machines,2019,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Satish Kumar,Mechanical Engineering,73,50,23,693,13,18.0,International Journal of Coal Preparation and Utilization,2018,2026,Professor,current,,,3,exact,True
+NIT Jamshedpur,BINOD KUMAR SINGH,Computer Science and Engineering,47,30,17,684,13,23.3,Multimedia Tools and Applications,2017,2026,Associate Professor,current,,,1,exact,True
+NIT Jamshedpur,Veerpratap Meena,Electrical Engineering,37,28,9,598,13,57.1,Scientific Reports,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Ashok Kumar Akella,Electrical Engineering,46,23,23,583,13,21.7,Environmental Progress & Sustainable Energy,2016,2025,,former,2016.0,2019.0,2,exact,False
+NIT Jamshedpur,Niranjan Kumar,Electrical Engineering,69,27,42,478,13,33.3,IEEE Systems Journal,2016,2025,Professor,current,,,1,exact,True
+NIT Jamshedpur,Radha Krishna Prasad,Mechanical Engineering,16,16,0,1193,12,37.5,Archives of Thermodynamics,2016,2019,,former,2016.0,2019.0,2,exact,False
+NIT Jamshedpur,Raj Nandkeolyar,Mathematics,47,41,6,774,12,9.8,Pramana,2018,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Koushlendra Kumar Singh,Computer Science and Engineering,74,33,41,603,12,45.5,SN Computer Science,2017,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Ramayan Singh,Mathematics,20,19,1,589,12,10.5,Indian Journal of Physics,2016,2024,Professor,former,2016.0,2024.0,2,exact,False
+NIT Jamshedpur,Rajat Tripathi,Mathematics,28,27,1,546,12,0.0,Indian Journal of Physics,2017,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Ujjwal Laha,Physics,70,70,0,471,12,1.4,Pramana,2016,2026,Professor,current,,,1,initials,False
+NIT Jamshedpur,Kumari Namrata,Electrical Engineering,75,26,49,442,12,42.3,International Journal of Emerging Electric Power Systems,2016,2026,Associate Professor,current,,,5,exact,False
+NIT Jamshedpur,KANIKA PRASAD,Production and Industrial Engineering,27,21,6,395,12,47.6,Waste Management & Research The Journal for a Sustainable Circular Economy,2017,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Shashi Bhushan Prasad,Production and Industrial Engineering,37,25,12,1101,11,24.0,International Journal on Interactive Design and Manufacturing (IJIDeM),2016,2026,Professor,current,,,2,exact,False
+NIT Jamshedpur,Prabha Chand,Mechanical Engineering,26,24,2,788,11,37.5,International Journal of Heat and Technology,2016,2026,Professor,current,,,1,exact,False
+NIT Jamshedpur,Tarni Mandal,Mathematics,32,26,6,501,11,0.0,International Journal of Operational Research,2016,2025,,former,2016.0,2021.0,4,exact,False
+NIT Jamshedpur,Mayank Srivastava,Electronics and Communication Engineering,65,42,23,421,11,9.5,Journal of Electrical Engineering,2017,2026,Assistant Professor,current,,,1,exact,True
+NIT Jamshedpur,Arun Kumar Singh,Electrical Engineering,31,16,15,412,11,18.8,IETE Journal of Research,2016,2025,,former,2016.0,2020.0,1,exact,True
+NIT Jamshedpur,Swagatadeb Sahoo,Electronics and Communication Engineering,37,26,11,372,11,19.2,Journal of Materials Science Materials in Electronics,2019,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Vinay Kumar,Computer Science and Engineering,18,16,2,366,11,56.2,IEEE Transactions on Computational Social Systems,2020,2025,,former,2019.0,2021.0,1,exact,True
+NIT Jamshedpur,Deepak Kumar,Mechanical Engineering,34,26,8,279,11,19.2,Journal of The Institution of Engineers (India) Series D,2020,2026,Assistant Professor,current,,,2,exact,True
+NIT Jamshedpur,Kunal Singh,Electronics and Communication Engineering,35,30,5,275,11,0.0,Micro and Nanostructures,2019,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Dharmendra Patel,Production and Industrial Engineering,22,18,4,264,11,33.3,Waste Management & Research The Journal for a Sustainable Circular Economy,2016,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,SUBRATA DUTTA,Computer Science and Engineering,26,18,8,226,11,33.3,Wireless Personal Communications,2018,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Subhash Singh,Production and Industrial Engineering,21,11,10,1068,10,36.4,Vacuum,2018,2021,,former,2019.0,2021.0,1,exact,False
+NIT Jamshedpur,Chintalacheruvu Madhusudana Rao,Civil Engineering,22,17,5,370,10,17.6,Earth Science Informatics,2017,2026,Associate Professor,current,,,3,full,False
+NIT Jamshedpur,Somenath Mondal,Civil Engineering,25,14,11,342,10,21.4,Asian Journal of Civil Engineering,2020,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Omhari Gupta,Electrical Engineering,76,34,42,333,10,20.6,Electric Power Components and Systems,2018,2026,Assistant Professor,current,,,1,override,False
+NIT Jamshedpur,Awdhesh K Choudhary,Civil Engineering,43,25,18,309,10,48.0,Geosynthetics International,2017,2026,Assistant Professor,current,,,3,initials,False
+NIT Jamshedpur,Ashish Das,Production and Industrial Engineering,23,13,10,289,10,0.0,Materials Today Communications,2019,2023,,former,2019.0,2021.0,1,exact,True
+NIT Jamshedpur,DK Yadav,Computer Science and Engineering,31,24,7,268,10,12.5,International Journal of Systems Assurance Engineering and Management,2016,2026,Professor,current,,,1,initials,True
+NIT Jamshedpur,DINESH KUMAR (Production and Industrial Engineering),Production and Industrial Engineering,16,15,1,253,10,53.3,Operations Management Research,2020,2026,Assistant Professor,current,,,3,override,False
+NIT Jamshedpur,Nagendra Kumar,Electronics and Communication Engineering,34,25,9,435,9,36.0,Annals of Telecommunications,2018,2026,Assistant Professor,current,,,4,exact,False
+NIT Jamshedpur,Danish Ali Khan,Computer Science and Engineering,41,28,13,359,9,25.0,Journal of King Saud University - Computer and Information Sciences,2017,2026,Professor,current,,,4,exact,False
+NIT Jamshedpur,Tapas Das,Chemistry,22,22,0,350,9,9.1,ChemistrySelect,2019,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Arvind Choubey,Electronics and Communication Engineering,19,12,7,285,9,8.3,Indian Journal of Science and Technology,2016,2019,,former,2017.0,2021.0,1,exact,False
+NIT Jamshedpur,RAJ BALLAV,Production and Industrial Engineering,26,19,7,247,9,21.1,AIJR Abstracts,2017,2026,Professor,current,,,3,exact,False
+NIT Jamshedpur,Uday Kumar,Physics,26,17,9,236,9,23.5,Indian Journal of Pure & Applied Physics,2019,2026,Assistant Professor,current,,,3,exact,False
+NIT Jamshedpur,Amresh Kumar,Production and Industrial Engineering,26,23,3,216,9,13.0,Materials and Manufacturing Processes,2016,2026,Professor,current,,,2,exact,False
+NIT Jamshedpur,Surajit Kundu,Electronics and Communication Engineering,60,31,29,207,9,6.5,International Journal of Communication Systems,2022,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Snehasis Kundu,Mathematics,26,26,0,206,9,38.5,Environmental Fluid Mechanics,2019,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Akhilesh Kumar,Electronics and Communication Engineering,26,17,9,573,8,17.6,Journal of Electrical Engineering,2021,2026,HOD,current,,,2,exact,True
+NIT Jamshedpur,Jayendra Kumar,Electronics and Communication Engineering,33,14,19,309,8,35.7,IEEE Sensors Journal,2016,2025,Assistant Professor,current,,,1,exact,True
+NIT Jamshedpur,Alekha Kumar Mishra,Computer Science and Engineering,26,8,18,264,8,62.5,ACM Transactions on Sensor Networks,2018,2026,Assistant Professor,current,,,1,exact,True
+NIT Jamshedpur,SANJAY VAJPAI,Metallurgical and Materials Engineering,13,13,0,254,8,38.5,Materials Science and Engineering A,2018,2024,Assistant Professor,current,,,1,full,False
+NIT Jamshedpur,Laljee Prasad,Mechanical Engineering,19,17,2,246,8,17.6,Journal of the Brazilian Society of Mechanical Sciences and Engineering,2016,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Sumit Kumar Debnath,Mathematics,34,30,4,243,8,46.7,Journal of Information Security and Applications,2019,2026,Assistant Professor,former,2019.0,2024.0,1,exact,False
+NIT Jamshedpur,Basudeba Behera,Electronics and Communication Engineering,39,24,15,236,8,16.7,Ferroelectrics,2018,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Krishna Bihari Yadav,Electrical Engineering,54,20,34,229,8,10.0,Computers & Electrical Engineering,2016,2026,Professor,current,,,5,exact,False
+NIT Jamshedpur,Parmanand Kumar,Mechanical Engineering,17,12,5,202,8,0.0,Proceedings of the Institution of Mechanical Engineers Part C Journal of Mechanical Engineering Science,2016,2024,Associate Professor,current,,,3,exact,False
+NIT Jamshedpur,Ram Vinoy Sharma,Mechanical Engineering,27,18,9,197,8,5.6,Heat Transfer,2016,2026,Professor,current,,,2,exact,False
+NIT Jamshedpur,JITENDRA KUMAR,Electrical Engineering,40,17,23,191,8,23.5,Arabian Journal for Science and Engineering,2019,2026,Assistant Professor,current,,,1,exact,True
+NIT Jamshedpur,AMIT PRAKASH,Electronics and Communication Engineering,38,26,12,184,8,0.0,Wireless Personal Communications,2019,2026,Associate Professor,current,,,3,exact,False
+NIT Jamshedpur,Mahendra Kumar Gupta,Mathematics,17,11,6,180,8,54.5,Archives of Control Sciences,2018,2025,,former,2019.0,2021.0,1,exact,False
+NIT Jamshedpur,Basanta Bhowmik,Electronics and Communication Engineering,24,19,5,311,7,21.1,Journal of Electronic Materials,2018,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Krishna Deo Prasad Singh,Mechanical Engineering,14,8,6,245,7,25.0,International Energy Journal,2018,2026,Associate Professor,current,,,2,override,False
+NIT Jamshedpur,Abdhesh Kumar Sinha,Civil Engineering,21,9,12,236,7,22.2,Asian Journal of Civil Engineering,2018,2026,Associate Professor,current,,,2,exact,False
+NIT Jamshedpur,M A Hassan,Mechanical Engineering,18,18,0,223,7,27.8,Energy Sources Part A Recovery Utilization and Environmental Effects,2020,2026,Associate Professor,current,,,1,exact,True
+NIT Jamshedpur,Mrutyunjay Rout,Electronics and Communication Engineering,28,14,14,196,7,7.1,Asian Journal of Civil Engineering,2019,2026,,former,2019.0,2021.0,3,exact,False
+NIT Jamshedpur,Jitesh Pradhan,Computer Science and Engineering,27,15,12,189,7,66.7,IEEE Transactions on Consumer Electronics,2023,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Rabindra Nath Mahanty,Electrical Engineering,32,18,14,176,7,44.4,Electric Power Systems Research,2017,2026,Professor,current,,,3,exact,False
+NIT Jamshedpur,Ashok Kumar Mehta,Computer Applications,20,10,10,174,7,0.0,EAI Endorsed Transactions on Pervasive Health and Technology,2018,2025,,former,2016.0,2021.0,3,exact,False
+NIT Jamshedpur,Keshav Kumar Sharma,Civil Engineering,33,20,13,166,7,30.0,Scientific Reports,2018,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,ANIL KUMAR CHOUDHARY,Civil Engineering,22,10,12,147,7,20.0,Geomechanics and Geoengineering,2018,2026,Professor,current,,,2,exact,False
+NIT Jamshedpur,Ashok Kumar (Metallurgical and Materials Engineering),Metallurgical and Materials Engineering,18,9,9,130,7,11.1,Journal of Materials Engineering and Performance,2017,2026,Professor,current,,,2,override,False
+NIT Jamshedpur,Ranjit Prasad,Metallurgical and Materials Engineering,16,14,2,127,7,28.6,Transactions of the Indian Institute of Metals,2017,2024,,former,2016.0,2021.0,1,exact,False
+NIT Jamshedpur,Vineet Sahoo,Mechanical Engineering,19,11,8,115,7,0.0,Mechanics Based Design of Structures and Machines,2018,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Shiva Nand Singh,Electronics and Communication Engineering,17,12,5,111,7,0.0,AEU - International Journal of Electronics and Communications,2016,2025,,former,2019.0,2021.0,1,exact,True
+NIT Jamshedpur,Vijay Kumar Dalla,Mechanical Engineering,26,14,12,101,7,14.3,Automation and Remote Control,2018,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Ashok Kumar Barik,Mechanical Engineering,13,12,1,86,7,50.0,Numerical Heat Transfer Part A Applications,2022,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Dulari Hansdah,Mechanical Engineering,13,9,4,268,6,33.3,International Journal of Coal Preparation and Utilization,2020,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Bhaskar Mondal,Computer Science and Engineering,8,5,3,219,6,0.0,Annals of Computer Science and Information Systems,2016,2019,ad-hoc,former,2016.0,2018.0,2,exact,False
+NIT Jamshedpur,B Ramachandra Reddy,Computer Science and Engineering,22,10,12,180,6,40.0,Journal of Intelligent & Fuzzy Systems,2022,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Shashank Pandey,Mechanical Engineering,24,15,9,178,6,20.0,Mechanics Based Design of Structures and Machines,2020,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Manish Kumar Jha,"Humanities, Social Sciences and Management",21,18,3,158,6,22.2,International Journal of Entrepreneurship and Small Business,2022,2026,Associate Professor,current,,,4,exact,False
+NIT Jamshedpur,Ananta Kumar Atta,Chemistry,14,14,0,122,6,7.1,Synthesis,2024,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Sourav Das,Mathematics,19,19,0,109,6,5.3,Axioms,2020,2026,Assistant Professor,current,,,2,exact,True
+NIT Jamshedpur,Subhadeep Metya,Civil Engineering,28,12,16,109,6,41.7,Scientific Reports,2019,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Sudhanshu Shekhar Pati,Chemistry,22,21,1,108,6,28.6,ChemistrySelect,2017,2026,Assistant Professor,current,,,3,exact,False
+NIT Jamshedpur,Ram Krishna,Metallurgical and Materials Engineering,19,13,6,104,6,46.2,Carbon letters,2022,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,VIRENDRA KUMAR,Civil Engineering,24,13,11,99,6,23.1,Journal of Structural Fire Engineering,2018,2026,Professor,current,,,5,exact,False
+NIT Jamshedpur,Mayuri Baruah,Production and Industrial Engineering,16,14,2,96,6,28.6,AIJR Abstracts,2020,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Kuntal Maji,Production and Industrial Engineering,16,14,2,91,6,21.4,Progress in Additive Manufacturing,2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Alok Priyadarshi,Electrical Engineering,31,9,22,88,6,33.3,Computers & Electrical Engineering,2020,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Umesh Kumar Sinha,Electrical Engineering,29,14,15,88,6,21.4,Advanced Theory and Simulations,2016,2026,,former,2016.0,2020.0,1,exact,True
+NIT Jamshedpur,Anand Mukut Tigga,Production and Industrial Engineering,8,5,3,84,6,20.0,Indian Journal of Science and Technology,2016,2022,,former,2016.0,2019.0,1,exact,False
+NIT Jamshedpur,Pranab Kumar Kundu,Mechanical Engineering,16,11,5,69,6,9.1,Journal of Thermophysics and Heat Transfer,2024,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Rina Sahu,Metallurgical and Materials Engineering,24,18,6,507,5,33.3,Transactions of the Indian Institute of Metals,2016,2026,Associate Professor,current,,,3,exact,False
+NIT Jamshedpur,Shalendra Kumar,Mechanical Engineering,18,12,6,140,5,8.3,International Journal on Interactive Design and Manufacturing (IJIDeM),2016,2025,,former,2016.0,2021.0,3,exact,False
+NIT Jamshedpur,Buddhadeb Pradhan,Computer Applications,5,5,0,130,5,80.0,ACM Transactions on Internet Technology,2020,2022,ad-hoc,former,2021.0,2021.0,1,exact,False
+NIT Jamshedpur,Dilip Kumar Shaw,Computer Science and Engineering,15,12,3,129,5,33.3,Expert Systems with Applications,2017,2025,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Akanksha Shukla,"Humanities, Social Sciences and Management",18,16,2,113,5,18.8,International Journal of Entrepreneurship and Small Business,2019,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Amarnath Thakur,Electrical Engineering,14,8,6,105,5,0.0,Bulletin of Electrical Engineering and Informatics,2016,2023,,former,2016.0,2019.0,1,exact,False
+NIT Jamshedpur,Mrityunjay Kumar Sinha,Mechanical Engineering,27,18,9,98,5,16.7,Journal of Engineering Thermophysics,2016,2026,,former,2016.0,2021.0,4,exact,False
+NIT Jamshedpur,Naresh Prasad,Mechanical Engineering,14,10,4,96,5,20.0,Automation and Remote Control,2016,2026,Assistant Professor,current,,,3,exact,False
+NIT Jamshedpur,MADHU SINGH,Electrical Engineering,32,11,21,85,5,0.0,International Journal of Power Electronics and Drive Systems/International Journal of Electrical and Computer Engineering,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Jamshedpur,Ashok Kumar Jha,Production and Industrial Engineering,9,7,2,73,5,42.9,British Food Journal,2022,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Madhuri Seeram,Civil Engineering,10,6,4,73,5,16.7,Asian Journal of Civil Engineering,2021,2025,Associate Professor,current,,,1,full,False
+NIT Jamshedpur,Anil Prasad,Mechanical Engineering,17,15,2,71,5,20.0,Journal of Failure Analysis and Prevention,2016,2026,Associate Professor,current,,,1,full,False
+NIT Jamshedpur,Tushar Banerjee,Production and Industrial Engineering,13,7,6,68,5,28.6,Journal of Materials Engineering and Performance,2019,2026,Assistant Professor,current,,,3,exact,False
+NIT Jamshedpur,Gopa Bhaumik,Computer Science and Engineering,12,7,5,62,5,71.4,Biomedical Signal Processing and Control,2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Subrata Mahanta,Chemistry,9,9,0,260,4,55.6,New Journal of Chemistry,2021,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Rajiv Ranjan Suman,Computer Science and Engineering,7,4,3,163,4,25.0,IEEE Transactions on Computational Social Systems,2018,2022,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Sripati Jha,Mathematics,5,5,0,161,4,20.0,Advances in Mathematical Physics,2017,2023,,former,2016.0,2021.0,1,exact,False
+NIT Jamshedpur,Prakash Sarkar,Metallurgical and Materials Engineering,9,8,1,116,4,37.5,Monthly Notices of the Royal Astronomical Society,2017,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Dinesh Kumar (Computer Science and Engineering),Computer Science and Engineering,13,7,6,99,4,28.6,Discover Computing,2022,2026,Assistant Professor,current,,,3,override,False
+NIT Jamshedpur,Naveen Kumar Veldurthi,Chemistry,15,14,1,93,4,21.4,ChemistrySelect,2018,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Ashok Kumar Mandal,Mechanical Engineering,9,6,3,60,4,100.0,International Journal of Non-Linear Mechanics,2019,2026,Assistant Professor,current,,,4,exact,False
+NIT Jamshedpur,ANANYO BHATTACHARYA,Electrical Engineering,29,6,23,59,4,33.3,Electrical Engineering,2019,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Sangeeta Kumari,Civil Engineering,9,7,2,59,4,0.0,Acta Geophysica,2019,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Hira Lal Yadav,Physics,17,12,5,55,4,16.7,Optik,2018,2025,Professor,current,,,3,exact,False
+NIT Jamshedpur,Saikat Ranjan Maity,Mechanical Engineering,18,14,4,51,4,14.3,Journal of Materials Engineering and Performance,2024,2026,Associate Professor,current,,,2,exact,False
+NIT Jamshedpur,Prashant Kumar,Electronics and Communication Engineering,14,3,11,49,4,0.0,ETRI Journal,2019,2026,Assistant Professor,current,,,1,exact,True
+NIT Jamshedpur,Renu Kumari,Metallurgical and Materials Engineering,21,14,7,49,4,21.4,Journal of Materials Engineering and Performance,2019,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Saroj Kumar Sarangi,Mechanical Engineering,16,14,2,47,4,0.0,Silicon,2024,2026,Professor,current,,,1,exact,False
+NIT Jamshedpur,Binay Kumar,Metallurgical and Materials Engineering,9,9,0,41,4,0.0,Micro and Nanostructures,2021,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Aravind Gali,Metallurgical and Materials Engineering,5,5,0,34,4,40.0,Bulletin of Materials Science,2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Goutam Sutradhar,Mechanical Engineering,9,6,3,34,4,16.7,Environmental Progress & Sustainable Energy,2023,2025,Professor,current,,,1,exact,False
+NIT Jamshedpur,Madan Mohan Prasad,Civil Engineering,3,2,1,260,3,100.0,Construction and Building Materials,2018,2019,,former,2016.0,2019.0,3,initials,False
+NIT Jamshedpur,Shailesh Kumar Prasad,Chemistry,8,7,1,106,3,14.3,AIJR Abstracts,2017,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Surya Prakash,Electrical Engineering,11,4,7,89,3,75.0,IEEE Journal of Emerging and Selected Topics in Power Electronics,2024,2026,Assistant Professor,current,,,3,exact,False
+NIT Jamshedpur,Brajkishor Prasad,Civil Engineering,13,6,7,52,3,33.3,Construction and Building Materials,2018,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Bipin Kumar,Mechanical Engineering,9,5,4,50,3,0.0,Journal of Vibration Engineering & Technologies,2018,2024,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Shwati Sudha,"Humanities, Social Sciences and Management",8,7,1,38,3,14.3,"Advances in economics, business and management research/Advances in Economics, Business and Management Research",2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Karunesh Kumar Shukla,Civil Engineering,7,6,1,34,3,0.0,Proceedings of the Institution of Mechanical Engineers Part L Journal of Materials Design and Applications,2021,2022,,former,2018.0,2021.0,1,exact,False
+NIT Jamshedpur,Neha Agnihotri,Physics,4,4,0,32,3,50.0,Journal of Electronic Materials,2024,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Sunil Kumar Gouda,Computer Applications,3,3,0,29,3,0.0,International Journal of Information Technology,2022,2022,ad-hoc,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Kaushik Das,Electronics and Communication Engineering,8,5,3,28,3,20.0,Bioinformatics Advances,2024,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Arun Kumar,Electrical Engineering,15,8,7,27,3,25.0,Metallurgical Research & Technology,2019,2026,,current,,,2,override,True
+NIT Jamshedpur,Ravi Bhushan,Electrical Engineering,18,8,10,27,3,25.0,Wind Engineering,2023,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Abhijit Dey,Mechanical Engineering,16,16,0,24,3,31.2,Canadian Metallurgical Quarterly,2025,2026,Assistant Professor,current,,,3,exact,False
+NIT Jamshedpur,Rajendra Prasad Singh,Metallurgical and Materials Engineering,4,4,0,24,3,0.0,Heat and Mass Transfer,2016,2018,,former,2016.0,2021.0,1,exact,False
+NIT Jamshedpur,Poulami Maji,Metallurgical and Materials Engineering,9,6,3,23,3,50.0,Materials Today Communications,2021,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Sabyasachi Biswas,Civil Engineering,5,1,4,20,3,0.0,Current Science,2019,2022,,former,2019.0,2021.0,1,exact,False
+NIT Jamshedpur,Samiran Chakraborty,Mathematics,10,10,0,18,3,60.0,Mathematics and Computers in Simulation,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Sandip Mandal,Chemistry,2,2,0,114,2,50.0,Applied Surface Science,2016,2017,ad-hoc,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Sushil Kumar Gupta,Electrical Engineering,5,3,2,37,2,0.0,International Journal of Systems Assurance Engineering and Management,2022,2025,Associate Professor,current,,,1,exact,True
+NIT Jamshedpur,Hari Shankar Prasad,Mathematics,5,5,0,31,2,0.0,Computational Mathematics and Mathematical Physics,2020,2024,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Kamal Pal,Production and Industrial Engineering,6,5,1,28,2,40.0,Arabian Journal for Science and Engineering,2024,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,MALAY NIRAJ,Mechanical Engineering,3,1,2,25,2,0.0,Sadhana,2016,2016,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Bharat Bhushan Jha,Metallurgical and Materials Engineering,4,4,0,24,2,0.0,AIJR Abstracts,2021,2023,,former,2021.0,2021.0,1,exact,False
+NIT Jamshedpur,Rakesh Pratap Singh,Civil Engineering,7,4,3,23,2,25.0,Arabian Journal of Geosciences,2022,2026,,former,2016.0,2021.0,1,exact,False
+NIT Jamshedpur,Rinku Kumar Gouda,Mechanical Engineering,8,6,2,21,2,33.3,Heat and Mass Transfer,2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Deepak Rai,Computer Science and Engineering,7,3,4,18,2,66.7,Expert Systems with Applications,2025,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Suresh Prasad Sharma,Mechanical Engineering,2,2,0,18,2,0.0,International Energy Journal,2017,2018,,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Monalisa Mandal,Metallurgical and Materials Engineering,4,4,0,16,2,25.0,Journal of Materials Engineering and Performance,2023,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Chandra Mouli,Computer Applications,5,1,4,14,2,0.0,International Journal of Grid and Utility Computing,2019,2020,,former,2019.0,2019.0,1,exact,False
+NIT Jamshedpur,Kethavath Raghavendra Naik,Electrical Engineering,12,4,8,14,2,50.0,Applied Soft Computing,2024,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Shakti Prasad,Mathematics,15,15,0,14,2,13.3,Boletim da Sociedade Paranaense de Matemática,2024,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Debashis Maji,Electronics and Communication Engineering,2,2,0,13,2,0.0,Journal of Micromechanics and Microengineering,2016,2017,ad-hoc,former,2016.0,2017.0,1,exact,False
+NIT Jamshedpur,Hari Narayan Singh,Mechanical Engineering,2,2,0,13,2,0.0,Archives of Thermodynamics,2019,2020,,former,2016.0,2019.0,2,initials,False
+NIT Jamshedpur,Akhileshwar Kumar Singh,Civil Engineering,4,2,2,12,2,0.0,International Journal of Geotechnical Engineering,2023,2026,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Ritesh Kumar,Computer Science and Engineering,2,0,2,12,2,,,2022,2022,,former,2021.0,2021.0,1,full,False
+NIT Jamshedpur,SHAILESH KUMAR JHA,Mechanical Engineering,2,2,0,11,2,50.0,Applied Acoustics,2022,2023,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Shashi Ranjan Pandey,Civil Engineering,3,1,2,11,2,100.0,International Journal of Concrete Structures and Materials,2016,2026,,former,2016.0,2021.0,2,exact,False
+NIT Jamshedpur,Debshri Swargiary,Civil Engineering,4,2,2,10,2,0.0,Iranian Journal of Science and Technology Transactions of Civil Engineering,2023,2024,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Sounak Kabasi,Civil Engineering,5,5,0,10,2,40.0,Mechanics Research Communications,2025,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Titas Kumar Mukhopadhyay,Chemistry,13,13,0,10,2,0.0,New Journal of Chemistry,2025,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Arvind K Patel,Mechanical Engineering,5,5,0,9,2,0.0,Heat and Mass Transfer,2023,2026,Assistant Professor,current,,,2,full,False
+NIT Jamshedpur,Prahlad Prasad,Civil Engineering,6,5,1,8,2,20.0,Asian Journal of Civil Engineering,2022,2026,Associate Professor,current,,,3,exact,False
+NIT Jamshedpur,Rajashree Nayak,Electronics and Communication Engineering,10,6,4,8,2,33.3,Computers & Electrical Engineering,2024,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Ratnesh Kumar,Mechanical Engineering,1,1,0,36,1,0.0,Transactions of FAMENA,2017,2017,ad-hoc,former,2017.0,2018.0,1,exact,False
+NIT Jamshedpur,Shubhankar Chakarborty,Mechanical Engineering,7,1,6,36,1,100.0,International Journal of Multiphase Flow,2017,2024,ad-hoc,former,2017.0,2018.0,1,full,False
+NIT Jamshedpur,Rawesh Kumar,Chemistry,2,2,0,29,1,50.0,Molecular Catalysis,2017,2018,ad-hoc,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Jayakrushna Sahoo,Computer Applications,1,1,0,23,1,0.0,Journal of Information and Optimization Sciences,2017,2017,ad-hoc,former,2017.0,2017.0,1,exact,False
+NIT Jamshedpur,Jichil Majhi,Metallurgical and Materials Engineering,2,2,0,22,1,100.0,Journal of Alloys and Compounds,2022,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Dindayal Mahto,Computer Applications,1,1,0,21,1,0.0,Nonlinear Engineering,2018,2018,ad-hoc,former,2016.0,2018.0,1,full,False
+NIT Jamshedpur,Mohd Naseem,Computer Applications,1,1,0,21,1,0.0,International Journal of Communication Systems,2016,2016,ad-hoc,former,2016.0,2017.0,1,exact,False
+NIT Jamshedpur,Smruti Patre,"Humanities, Social Sciences and Management",1,1,0,21,1,0.0,South Asian Journal of Human Resources Management,2016,2016,ad-hoc,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Sudhanshu Kumar Jha,Computer Applications,1,1,0,18,1,0.0,Journal of Information and Optimization Sciences,2017,2017,ad-hoc,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Mayukh Sarkar,Computer Science and Engineering,3,1,2,17,1,100.0,IEEE Transactions on Consumer Electronics,2024,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Diwakar Tripathi,Computer Science and Engineering,5,2,3,14,1,100.0,PLoS ONE,2025,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,SUSHIL KUMAR,"Humanities, Social Sciences and Management",7,7,0,13,1,71.4,Contemporary Voice of Dalit,2025,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Kuldip Kumar Sahu,Production and Industrial Engineering,1,0,1,12,1,,,2017,2017,ad-hoc,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Ajay Kumar Singh,Physics,3,2,1,10,1,0.0,Indian Journal of Pure & Applied Physics,2022,2025,Associate Professor,current,,,3,exact,False
+NIT Jamshedpur,Debalina Chakaravarty,"Humanities, Social Sciences and Management",1,1,0,10,1,0.0,MOJ Ecology & Environmental Sciences,2017,2017,ad-hoc,former,2016.0,2018.0,1,full,False
+NIT Jamshedpur,MOUMITA MONDAL,Chemistry,3,3,0,9,1,0.0,ChemistrySelect,2018,2025,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Sourav Pradhan,Mathematics,1,1,0,9,1,0.0,International Journal of Operational Research,2020,2020,ad-hoc,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Simanchal Kar,Production and Industrial Engineering,1,1,0,8,1,0.0,Transactions of the IMF,2020,2020,,former,2019.0,2019.0,1,exact,False
+NIT Jamshedpur,Gunda Yoganjaneyulu,Production and Industrial Engineering,3,3,0,7,1,33.3,International Journal of Material Forming,2024,2025,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Amit Majumder,Computer Science and Engineering,3,1,2,6,1,0.0,Journal of Intelligent & Fuzzy Systems,2024,2025,Assistant Professor,current,,,1,exact,True
+NIT Jamshedpur,Mahesh Kumar Agrawal,Metallurgical and Materials Engineering,2,1,1,6,1,0.0,International Journal of Engineering and Technology,2017,2018,,former,2016.0,2020.0,1,exact,False
+NIT Jamshedpur,Prabhat Kumar,Chemistry,1,0,1,6,1,,,2022,2022,Assistant Professor,current,,,1,exact,True
+NIT Jamshedpur,Shubham Tripathi,Production and Industrial Engineering,2,2,0,6,1,0.0,Heat and Mass Transfer,2024,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Simanta Kumar Samal,Electrical Engineering,12,2,10,6,1,50.0,Applied Soft Computing,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Soumik Biswas,Mathematics,1,0,1,6,1,,,2022,2022,ad-hoc,former,2016.0,2016.0,1,full,False
+NIT Jamshedpur,Vijay Bhaskar Semwal,Computer Science and Engineering,1,0,1,6,1,,,2016,2016,ad-hoc,former,2016.0,2016.0,1,exact,False
+NIT Jamshedpur,Nitin Chandra,Physics,1,1,0,5,1,100.0,Annals of Physics,2017,2017,ad-hoc,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Rakesh Kumar,Computer Science and Engineering,2,1,1,5,1,100.0,IEEE Access,2026,2026,Assistant Professor,current,,,1,exact,True
+NIT Jamshedpur,Ratnesh Kumar Mishra,Mathematics,6,4,2,5,1,25.0,WSEAS TRANSACTIONS ON MATHEMATICS,2021,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Sajjan Kumar Paswan,Civil Engineering,2,0,2,5,1,,,2021,2025,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Alok Kumar Ray,Mechanical Engineering,6,5,1,4,1,20.0,Applied Thermal Engineering,2025,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Maninder Kapoor,"Humanities, Social Sciences and Management",2,2,0,4,1,0.0,International Journal of Arts and Technology,2021,2024,,former,2016.0,2021.0,1,exact,False
+NIT Jamshedpur,Rajeev Ranjan,Physics,6,2,4,4,1,0.0,Bulletin of Materials Science,2018,2023,Associate Professor,current,,,2,exact,True
+NIT Jamshedpur,Rajiv Bhushan,"Humanities, Social Sciences and Management",6,5,1,4,1,0.0,International Journal of Applied Systemic Studies,2020,2025,Associate Professor,current,,,1,exact,False
+NIT Jamshedpur,Rajiv Kumar,Electronics and Communication Engineering,5,2,3,4,1,0.0,Analog Integrated Circuits and Signal Processing,2016,2025,ad-hoc,former,2016.0,2018.0,4,exact,False
+NIT Jamshedpur,Ashok Kumar Khan,Civil Engineering,5,0,5,3,1,,,2020,2021,,former,2016.0,2019.0,1,exact,False
+NIT Jamshedpur,Yamuna Prasad Yadav,Physics,1,1,0,3,1,0.0,Desalination and Water Treatment,2016,2016,,former,2016.0,2020.0,1,initials,False
+NIT Jamshedpur,Manthirikul Sandeep,Civil Engineering,2,1,1,2,1,0.0,Innovative Infrastructure Solutions,2025,2025,Assistant Professor,current,,,1,full,False
+NIT Jamshedpur,Sankar Kumar Roy,Mechanical Engineering,1,1,0,2,1,0.0,Engineering Research Express,2025,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Sri Krishna Sudhamsu Kambhammettu,Mechanical Engineering,5,3,2,2,1,0.0,Defence Science Journal,2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,AMIT BANSODE,"Humanities, Social Sciences and Management",1,1,0,1,1,0.0,Contemporary Voice of Dalit,2026,2026,Assistant Professor,current,,,1,full,False
+NIT Jamshedpur,Munendra Singh,Electronics and Communication Engineering,3,2,1,1,1,100.0,Expert Systems with Applications,2025,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Neha Jaiswal,"Humanities, Social Sciences and Management",4,0,4,1,1,,,2025,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Abhishek Majhi,Physics,1,1,0,0,0,0.0,International Journal of Theoretical Physics,2025,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Amit Patel,Metallurgical and Materials Engineering,1,0,1,0,0,,,2025,2025,Assistant Professor,current,,,1,full,False
+NIT Jamshedpur,Anushree Dutta,Metallurgical and Materials Engineering,1,1,0,0,0,100.0,Intermetallics,2026,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Arjun Kumar,Electronics and Communication Engineering,1,0,1,0,0,,,2026,2026,Assistant Professor,current,,,1,exact,True
+NIT Jamshedpur,Ashwinee Kumar,Metallurgical and Materials Engineering,1,0,1,0,0,,,2026,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Bibekananda kundu,Physics,1,1,0,0,0,0.0,International Journal of Theoretical Physics,2025,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Chandan Kumar,Computer Applications,1,1,0,0,0,0.0,Integration,2026,2026,ad-hoc,former,2016.0,2018.0,1,exact,False
+NIT Jamshedpur,Chandra Shekhar Choudhary,Metallurgical and Materials Engineering,2,0,2,0,0,,,2024,2024,,former,2016.0,2021.0,1,exact,False
+NIT Jamshedpur,Chandradeep Singh,Electronics and Communication Engineering,1,0,1,0,0,,,2026,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,J Jayapal,Civil Engineering,4,1,3,0,0,0.0,National Academy Science Letters,2025,2026,Assistant Professor,current,,,1,override,False
+NIT Jamshedpur,Nidhi Kushwaha,Computer Science and Engineering,4,1,3,0,0,0.0,Frequenz,2025,2026,Assistant Professor,current,,,2,exact,False
+NIT Jamshedpur,Nigam Prakash,Civil Engineering,1,1,0,0,0,0.0,"International journal of advance research, ideas and innovations in technology",2018,2018,Associate Professor,current,,,1,full,False
+NIT Jamshedpur,Pampa Howladar,Computer Science and Engineering,2,0,2,0,0,,,2026,2026,Assistant Professor,current,,,1,full,False
+NIT Jamshedpur,Partha Duley,Metallurgical and Materials Engineering,1,1,0,0,0,100.0,Materials Chemistry and Physics,2026,2026,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Prashanta Kumar Khandai,Physics,1,0,1,0,0,,,2017,2017,ad-hoc,former,2016.0,2017.0,1,initials,False
+NIT Jamshedpur,Rabi Shaw,Computer Science and Engineering,1,1,0,0,0,0.0,Annals of Computer Science and Information Systems,2017,2017,ad-hoc,former,2017.0,2018.0,1,exact,False
+NIT Jamshedpur,Shubhranshu Kumar Tiwary,Electrical Engineering,2,0,2,0,0,,,2025,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Sneha Mishra,"Humanities, Social Sciences and Management",2,2,0,0,0,0.0,Journal of Engineering and Applied Sciences,2018,2023,ad-hoc,former,2016.0,2018.0,2,exact,False
+NIT Jamshedpur,Supriyo Das,Electrical Engineering,6,2,4,0,0,0.0,ECTI Transactions on Electrical Engineering Electronics and Communications,2024,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Suravi Pal,Civil Engineering,1,1,0,0,0,100.0,International Journal for Numerical and Analytical Methods in Geomechanics,2025,2025,Assistant Professor,current,,,1,exact,False
+NIT Jamshedpur,Susmita Datta,Production and Industrial Engineering,2,1,1,0,0,0.0,Journal of Composite Materials,2026,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Md. Ahmaruzzaman,Chemistry,276,271,5,10624,54,62.7,Scientific Reports,2016,2026,Professor,current,,,3,exact,False
+NIT Silchar,Samuel Lalthazuala Rokhum,Chemistry,186,184,2,7193,47,63.6,Renewable Energy,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Krishna Murari Pandey,Mechanical Engineering,211,110,101,6132,43,44.5,International Journal of Hydrogen Energy,2016,2026,,former,2016.0,2025.0,3,exact,False
+NIT Silchar,Lalit Chandra Saikia,Electrical Engineering,169,83,86,3941,36,45.8,IETE Journal of Research,2016,2026,Professor,current,,,5,exact,False
+NIT Silchar,Sukumar Pati,Mechanical Engineering,151,112,39,3445,36,51.8,Proceedings of the Institution of Mechanical Engineers Part E Journal of Process Mechanical Engineering,2016,2026,Associate Professor,current,,,3,exact,False
+NIT Silchar,Biplab Das,Mechanical Engineering,148,120,28,3235,34,51.7,Applied Thermal Engineering,2016,2026,Associate Professor,current,,,7,exact,False
+NIT Silchar,Binoy Krishna Roy,Electrical Engineering,177,103,74,3183,33,41.7,Chaos Solitons & Fractals,2016,2026,Professor,current,,,1,exact,False
+NIT Silchar,Siddhartha S Dhar,Chemistry,98,93,5,2514,31,40.9,Inorganic Chemistry Communications,2016,2026,Professor,current,,,3,exact,False
+NIT Silchar,Brinda Bhowmick,Electronics and Communication Engineering,166,138,28,2912,29,11.6,Silicon,2016,2026,Professor,current,,,1,exact,False
+NIT Silchar,Taimoor Khan,Electronics and Communication Engineering,161,99,62,2552,29,27.3,AEU - International Journal of Electronics and Communications,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Saroj Kr. Biswas,Computer Science and Engineering,184,84,100,3509,28,32.5,Multimedia Tools and Applications,2016,2026,Associate Professor,current,,,6,exact,False
+NIT Silchar,Nidul Sinha,Electrical Engineering,101,64,37,2566,27,39.7,International Journal of Electrical Power & Energy Systems,2016,2026,Professor (HAG),current,,,2,exact,False
+NIT Silchar,Promod Kumar Patowari,Mechanical Engineering,124,76,48,2364,27,36.8,Materials and Manufacturing Processes,2016,2026,Professor,current,,,2,exact,False
+NIT Silchar,Sumit Bhowmik,Mechanical Engineering,112,76,36,2179,27,26.3,Arabian Journal for Science and Engineering,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Sudip Dey,Mechanical Engineering,106,71,35,1972,26,46.5,Composite Structures,2016,2026,Associate Professor,current,,,3,override,True
+NIT Silchar,Saikat Ranjan Maity,Mechanical Engineering,106,59,47,2017,25,32.2,Ceramics International,2017,2025,Associate Professor (On Lien),current,,,1,exact,False
+NIT Silchar,Tripti Goel,Electronics and Communication Engineering,88,58,30,1930,25,62.1,Applied Soft Computing,2018,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Pitambar R Randive,Mechanical Engineering,78,61,17,1582,25,60.7,International Journal of Hydrogen Energy,2017,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Rabul Hussain Laskar,Electronics and Communication Engineering,193,114,79,2311,24,33.6,Multimedia Tools and Applications,2016,2026,Professor,current,,,1,exact,False
+NIT Silchar,Trupti Ranjan Lenka,Electronics and Communication Engineering,186,124,62,2193,24,12.9,International Journal of Numerical Modelling Electronic Networks Devices and Fields,2016,2026,Associate Professor,current,,,3,exact,False
+NIT Silchar,Agnimitra Biswas,Mechanical Engineering,106,80,26,1912,24,35.0,Energy Sources Part A Recovery Utilization and Environmental Effects,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Srimanta Baishya,Electronics and Communication Engineering,142,113,29,1845,24,5.3,Silicon,2016,2026,Professor (HAG),current,,,2,exact,False
+NIT Silchar,Pranjit Barman,Chemistry,81,81,0,1584,24,21.0,Inorganic Chemistry Communications,2016,2026,Professor,current,,,3,exact,False
+NIT Silchar,Sudipta Halder,Mechanical Engineering,65,49,16,1574,24,32.7,Materials Chemistry and Physics,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Dulal Chandra Das,Electrical Engineering,86,51,35,2014,23,45.1,IET Renewable Power Generation,2017,2026,Associate Professor,current,,,1,exact,True
+NIT Silchar,Pukhrambam Puspa Devi,Electronics and Communication Engineering,64,43,21,1600,23,16.3,Optical and Quantum Electronics,2019,2026,Assistant Professor,current,,,6,exact,False
+NIT Silchar,Arup Kumar Goswami,Electrical Engineering,133,59,74,2221,22,62.7,IEEE Transactions on Industry Applications,2016,2026,Professor,current,,,2,exact,False
+NIT Silchar,R. Murugan,Electronics and Communication Engineering,103,54,49,1667,22,55.6,Applied Soft Computing,2018,2026,Assistant Professor (on lien),current,,,3,exact,True
+NIT Silchar,Rahul Dev Misra,Mechanical Engineering,75,58,17,1642,22,48.3,Applied Thermal Engineering,2016,2026,Professor,current,,,3,override,False
+NIT Silchar,Ashish B. Deoghare,Mechanical Engineering,70,39,31,1347,22,28.2,Arabian Journal for Science and Engineering,2017,2026,Associate Professor,current,,,1,initials,False
+NIT Silchar,Saurabh Chaudhury,Electrical Engineering,76,47,29,1379,21,10.6,ECS Journal of Solid State Science and Technology,2016,2026,Professor,current,,,3,exact,False
+NIT Silchar,Vinyas Mahesh,Mechanical Engineering,74,74,0,1244,21,13.5,Polymer Composites,2021,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Koushik Guha,Electronics and Communication Engineering,199,122,77,1545,20,8.3,Microsystem Technologies,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Fazal A. Talukdar,Electronics and Communication Engineering,103,60,43,1210,20,31.7,Microsystem Technologies,2016,2026,Professor (HAG),current,,,1,initials,False
+NIT Silchar,Ashish Paramane,Electrical Engineering,107,91,16,1149,20,64.8,IEEE Transactions on Dielectrics and Electrical Insulation,2021,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Badal Soni,Computer Science and Engineering,84,40,44,1303,19,52.5,Multimedia Tools and Applications,2017,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Ripon Patgiri,Computer Science and Engineering,93,37,56,1283,19,47.2,International Journal of Advanced Computer Science and Applications,2016,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Dipankar Bhanja,Mechanical Engineering,86,61,25,1073,19,50.8,International Journal of Thermal Sciences,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Dillip Kumar Ghose,Civil Engineering,51,24,27,1071,19,12.5,ISH Journal of Hydraulic Engineering,2017,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Saptarshi Roy,Chemistry,42,42,0,1069,19,71.4,Inorganic Chemistry Communications,2022,2026,,current,,,1,override,False
+NIT Silchar,Partha Pakray,Computer Science and Engineering,103,47,56,966,19,29.8,Journal of Intelligent & Fuzzy Systems,2017,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Rajat Gupta,Mechanical Engineering,33,26,7,1230,18,42.3,Acta Astronautica,2017,2025,,former,2016.0,2025.0,2,exact,False
+NIT Silchar,Ranjith G. Nair,Physics,61,48,13,1197,18,60.4,International Journal of Hydrogen Energy,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Sumita Debbarma,Mechanical Engineering,35,23,12,1009,18,73.9,International Journal of Hydrogen Energy,2017,2026,Assistant Professor (Gr. I),current,,,2,exact,False
+NIT Silchar,Subhrajit Dutta,Civil Engineering,70,53,17,931,18,58.5,ASCE-ASME Journal of Risk and Uncertainty in Engineering Systems Part A Civil Engineering,2019,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Sushant Negi,Mechanical Engineering,57,46,11,1172,17,23.9,Journal of Reinforced Plastics and Composites,2020,2026,Assistant Professor (G-I),current,,,1,exact,False
+NIT Silchar,Pinki Roy,Computer Science and Engineering,49,31,18,1114,17,19.4,Concurrency and Computation Practice and Experience,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,D Koteswara Raju,Electrical Engineering,28,26,2,1006,17,46.2,International Journal of Energy Research,2018,2024,,former,2025.0,2025.0,1,initials,False
+NIT Silchar,Asim Roy,Physics,51,39,12,970,17,66.7,Applied Physics Letters,2016,2026,Professor,current,,,2,exact,False
+NIT Silchar,Ujjal Chakraborty,Electronics and Communication Engineering,66,49,17,933,17,8.2,International Journal of RF and Microwave Computer-Aided Engineering,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Shahedul Haque Laskar,Electronics and Instrumentation Engineering,48,26,22,695,17,30.8,Journal of Materials Science Materials in Electronics,2018,2025,Professor,current,,,1,exact,False
+NIT Silchar,Gautam Choubey,Mechanical Engineering,41,27,14,1540,16,44.4,International Journal of Hydrogen Energy,2016,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Biswajit Purkayastha,Computer Science and Engineering,79,34,45,1350,16,33.3,Multimedia Tools and Applications,2016,2025,,former,2016.0,2025.0,1,exact,False
+NIT Silchar,Nalin Behari Dev Choudhury,Electrical Engineering,93,41,52,1219,16,46.3,Arabian Journal for Science and Engineering,2016,2026,Professor,current,,,2,exact,False
+NIT Silchar,Pijus Kanti De,Mathematics,46,32,14,1072,16,37.5,Journal of Industrial Integration and Management,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Malaya Dutta Borah,Computer Science and Engineering,63,24,39,955,16,54.2,ACM Computing Surveys,2019,2026,"Assistant Professor, Grade-I",current,,,1,exact,False
+NIT Silchar,Ram Kumar Karsh,Electronics and Communication Engineering,71,22,49,803,16,40.9,Multimedia Tools and Applications,2016,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Sujit Nath,Mechanical Engineering,81,55,26,767,16,41.8,International Journal of Thermal Sciences,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Dalton Meitei Thounaojam,Computer Science and Engineering,54,29,25,726,16,34.5,Multimedia Tools and Applications,2016,2025,Assistant Professor (on lien),current,,,1,exact,False
+NIT Silchar,Kaushal Kumar Sharma,Mechanical Engineering,46,24,22,718,16,20.8,Energy Sources Part A Recovery Utilization and Environmental Effects,2018,2025,,former,2016.0,2025.0,3,exact,False
+NIT Silchar,Sunil Kumar,Mechanical Engineering,37,20,17,671,16,40.0,Advances in Materials and Processing Technologies,2019,2023,,current,,,1,override,False
+NIT Silchar,Wasim Arif,Electronics and Communication Engineering,90,45,45,965,15,24.4,Wireless Personal Communications,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Krishna Lal Baishnab,Electronics and Communication Engineering,97,58,39,843,15,12.1,Microsystem Technologies,2016,2026,"Professor (on deputation: Principal, BVEC Sribhumi)",current,,,2,exact,False
+NIT Silchar,Arnab Nandi,Electronics and Communication Engineering,70,48,22,610,15,29.2,AEU - International Journal of Electronics and Communications,2016,2026,Associate Professor,current,,,3,exact,False
+NIT Silchar,Sudipta Chakraborty,Electronics and Instrumentation Engineering,58,28,30,546,15,53.6,International Journal of Systems Science,2020,2026,Assistant Professor,current,,,4,exact,False
+NIT Silchar,Prashant Kumar Tiwari,Electrical Engineering,33,18,15,1228,14,72.2,IET Generation Transmission & Distribution,2016,2020,,former,2016.0,2025.0,1,exact,False
+NIT Silchar,Thoudam Doren Singh,Computer Science and Engineering,44,23,21,950,14,39.1,Multimedia Tools and Applications,2018,2025,"Assistant Professor, Grade-I (on lien)",current,,,2,exact,False
+NIT Silchar,Monowar Hussain,Civil Engineering,34,23,11,752,14,34.8,International Journal of Geosynthetics and Ground Engineering,2016,2026,Associate Professor,current,,,3,exact,False
+NIT Silchar,Banani Basu,Electronics and Communication Engineering,74,53,21,595,14,34.0,AEU - International Journal of Electronics and Communications,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Upendra Kumar,Civil Engineering,22,18,4,960,13,22.2,Desalination and Water Treatment,2017,2026,Professor,current,,,1,exact,False
+NIT Silchar,Devendra Singh Gurjar,Electronics and Communication Engineering,72,35,37,747,13,45.7,Physical Communication,2019,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Suganya Devi K,Computer Science and Engineering,62,33,29,735,13,48.5,Concurrency and Computation Practice and Experience,2019,2026,Associate Professor,current,,,4,override,False
+NIT Silchar,Ranjay Hazra,Electronics and Instrumentation Engineering,58,27,31,703,13,59.3,IEEE Transactions on Consumer Electronics,2018,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Arjun Sil,Civil Engineering,73,66,7,691,13,31.8,Natural Hazards Research,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Ashraf Hossain,Electronics and Communication Engineering,66,44,22,630,13,22.7,Wireless Personal Communications,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,S. K. Tripathy,Electronics and Communication Engineering,57,36,21,629,13,25.0,Optik,2017,2026,Associate Professor,current,,,1,initials,False
+NIT Silchar,Ashim Kanti Dey,Civil Engineering,50,31,19,545,13,22.6,Geotechnical and Geological Engineering,2016,2026,Professor (HAG),current,,,2,exact,False
+NIT Silchar,Rajeeb Dey,Electrical Engineering,52,26,26,495,13,42.3,IET Systems Biology,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Avijit Chowdhury,Physics,32,18,14,307,13,33.3,Journal of Applied Physics,2018,2023,,former,2016.0,2023.0,3,exact,False
+NIT Silchar,Munmun Khanra,Electronics and Instrumentation Engineering,34,17,17,595,12,88.2,Journal of Energy Storage,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Kedar Nath Das,Mathematics,51,30,21,588,12,60.0,International Journal of Systems Assurance Engineering and Management,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Kavicharan Mummaneni,Electronics and Communication Engineering,68,40,28,582,12,10.0,Physica Scripta,2019,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Prabina Pattanayak,Electronics and Communication Engineering,62,49,13,555,12,18.4,Wireless Personal Communications,2019,2026,Assistant Professor (on lien),current,,,1,exact,False
+NIT Silchar,Jyoti Prakash Mishra,Electrical Engineering,39,26,13,460,12,38.5,International Journal of Circuit Theory and Applications,2017,2026,Professor,current,,,1,exact,False
+NIT Silchar,Prasanta Roy,Electrical Engineering,42,19,23,426,12,31.6,Transactions of the Institute of Measurement and Control,2016,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Rupak Dutta,Physics,31,20,11,367,12,80.0,Physical review. D/Physical review. D.,2016,2025,Associate Professor,current,,,3,exact,False
+NIT Silchar,Bijit Choudhuri,Electronics and Communication Engineering,44,35,9,326,12,14.3,Microelectronics Journal,2020,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,P. Srinivasan,Physics,38,30,8,539,11,26.7,Journal of Materials Science Materials in Electronics,2018,2026,Associate Professor,current,,,4,exact,False
+NIT Silchar,Anupam Biswas,Computer Science and Engineering,48,20,28,509,11,75.0,Expert Systems with Applications,2020,2025,Assistant Professor Grade-I,current,,,3,exact,False
+NIT Silchar,Aminul Islam Laskar,Civil Engineering,24,23,1,494,11,69.6,Arabian Journal for Science and Engineering,2016,2025,Professor (HAG),current,,,1,exact,False
+NIT Silchar,Laiphrakpam Dolendro Singh,Computer Science and Engineering,37,22,15,391,11,54.5,Journal of Information Security and Applications,2019,2026,"Assistant Professor, Grade-I",current,,,3,exact,False
+NIT Silchar,Briti Sundar Sil,Civil Engineering,28,20,8,375,11,25.0,Acta Geophysica,2017,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Naresh Babu Muppalaneni,Computer Science and Engineering,49,17,32,366,11,41.2,Engineering Applications of Artificial Intelligence,2019,2026,,current,,,2,exact,False
+NIT Silchar,Abhishek Paul,Mechanical Engineering,34,23,11,365,11,52.2,Fuel,2018,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Samir Kumar Borgohain,Computer Science and Engineering,29,17,12,318,11,43.8,Expert Systems with Applications,2018,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Biswa Nath Ghosh,Chemistry,35,35,0,317,11,20.0,Journal of Molecular Structure,2019,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Chayan Bhattacharjee,Electrical Engineering,21,14,7,403,10,21.4,Electric Power Components and Systems,2016,2025,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Rajdeep Dasgupta,Electronics and Instrumentation Engineering,23,17,6,332,10,52.9,Journal of Energy Storage,2018,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Pankaj Biswas,Mathematics,49,34,15,303,10,35.3,Physica Scripta,2018,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Khwairakpam Lakshman Singh,Civil Engineering,30,22,8,298,10,31.8,Innovative Infrastructure Solutions,2018,2026,Associate Professor,current,,,2,override,False
+NIT Silchar,Rajesh Saha,Electronics and Communication Engineering,52,45,7,293,10,13.3,Micro and Nanostructures,2017,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Satyabrata Choudhury,Civil Engineering,42,25,17,290,10,28.0,Innovative Infrastructure Solutions,2017,2025,,former,2016.0,2022.0,1,exact,False
+NIT Silchar,Debjit Bhowmik,Civil Engineering,32,19,13,286,10,36.8,Geotechnical and Geological Engineering,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Robin Khosla,Electronics and Communication Engineering,13,11,2,286,10,36.4,IEEE Transactions on Electron Devices,2019,2024,,former,2019.0,2025.0,1,exact,False
+NIT Silchar,Madhuchhanda Choudhury,Electronics and Communication Engineering,28,18,10,241,10,33.3,Circuits Systems and Signal Processing,2017,2024,,former,2016.0,2025.0,2,exact,False
+NIT Silchar,Chinmaya Kumar Sahoo,Mechanical Engineering,33,21,12,235,10,33.3,Proceedings of the Institution of Mechanical Engineers Part E Journal of Process Mechanical Engineering,2020,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Simanchal Kar,Mechanical Engineering,27,18,9,510,9,11.1,Journal of Coatings Technology and Research,2019,2026,Assistant Professor,current,,,4,exact,False
+NIT Silchar,Mokaddes Ali Ahmed,Civil Engineering,47,25,22,427,9,25.0,Innovative Infrastructure Solutions,2016,2025,Professor (HAG),current,,,3,exact,False
+NIT Silchar,Tanmoy Malakar,Electrical Engineering,38,23,15,406,9,39.1,Applied Soft Computing,2016,2025,Associate Professor,current,,,1,exact,False
+NIT Silchar,Juthika Mahanta,Mathematics,29,22,7,401,9,63.6,Applied Soft Computing,2019,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Ganesh Prasad,Electronics and Communication Engineering,49,29,20,318,9,55.2,AEU - International Journal of Electronics and Communications,2016,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Amritesh Kumar,Electrical Engineering,64,17,47,285,9,58.8,International Journal of Circuit Theory and Applications,2018,2026,Assistant Professor,current,,,4,exact,False
+NIT Silchar,N. Shaemningwar Moyon,Chemistry,16,16,0,284,9,37.5,ChemistrySelect,2022,2026,Assistant Professor Gr-I,current,,,1,exact,False
+NIT Silchar,Parthajit Roy,Civil Engineering,22,17,5,278,9,17.6,ISH Journal of Hydraulic Engineering,2017,2025,Professor,current,,,1,exact,False
+NIT Silchar,Saumya R. Mohapatra,Physics,24,18,6,277,9,83.3,ACS Applied Materials & Interfaces,2018,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Saheli Ray,Electrical Engineering,30,15,15,260,9,46.7,Computers & Electrical Engineering,2020,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Lakshmi Vara Prasad. M,Civil Engineering,36,17,19,251,9,23.5,Iranian Journal of Science and Technology Transactions of Civil Engineering,2016,2026,Associate Professor,current,,,3,initials,False
+NIT Silchar,Manas Kumar Bera,Electronics and Instrumentation Engineering,24,12,12,250,9,75.0,European Journal of Control,2018,2023,,former,2017.0,2025.0,1,exact,False
+NIT Silchar,Yogesh Singh,Mechanical Engineering,42,19,23,250,9,15.8,Engineering Research Express,2020,2025,Assistant Professor,current,,,2,exact,True
+NIT Silchar,Subrat Kumar Barik,Physics,19,18,1,207,9,0.0,Journal of Materials Science Materials in Electronics,2016,2024,Associate Professor,current,,,3,exact,False
+NIT Silchar,Biswarup Ganguly,Electrical Engineering,32,11,21,165,9,72.7,Electric Power Systems Research,2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Raj Kumar Biswas,Electrical Engineering,18,8,10,162,9,12.5,Archives of Control Sciences,2016,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Lintu Roy,Mechanical Engineering,15,12,3,255,8,27.3,Proceedings of the Institution of Mechanical Engineers Part J Journal of Engineering Tribology,2016,2023,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Mausumi Sen,Mathematics,51,46,5,244,8,13.0,Boletim da Sociedade Paranaense de Matemática,2016,2026,Professor,current,,,2,exact,False
+NIT Silchar,Swapna Mansani,Electrical Engineering,45,16,29,223,8,43.8,Electrical Engineering,2020,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Baban H Shambharkar,Chemistry,8,8,0,220,8,50.0,RSC Advances,2016,2020,,former,2025.0,2025.0,1,exact,False
+NIT Silchar,Partha Kayal,Electrical Engineering,41,24,17,218,8,41.7,Computers & Electrical Engineering,2020,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Nirmalendu Debnath,Civil Engineering,27,14,13,199,8,42.9,Journal of Vibration Engineering & Technologies,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Jiwanjot Singh,Electrical Engineering,27,13,14,189,8,23.1,International Journal of Circuit Theory and Applications,2019,2025,,former,2020.0,2025.0,1,exact,False
+NIT Silchar,Bipul Das,Mechanical Engineering,36,21,15,176,8,33.3,Proceedings of the Institution of Mechanical Engineers Part E Journal of Process Mechanical Engineering,2019,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Arun Kumar Sunaniya,Electronics and Instrumentation Engineering,22,16,6,341,7,31.2,Microprocessors and Microsystems,2016,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Subhasis Panda,Physics,17,15,2,268,7,53.3,Physical review. B./Physical review. B,2019,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Nirmala Soren,Electrical Engineering,15,9,6,204,7,22.2,Energy Sources Part A Recovery Utilization and Environmental Effects,2016,2020,,former,2016.0,2025.0,1,exact,False
+NIT Silchar,Prashanth J,Civil Engineering,20,11,9,192,7,10.0,Innovative Infrastructure Solutions,2018,2024,Associate Professor,current,,,2,override,False
+NIT Silchar,Avadh Pati,Electrical Engineering,39,16,23,189,7,62.5,Arabian Journal for Science and Engineering,2018,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Sudarsan Sahoo,Electronics and Instrumentation Engineering,29,12,17,181,7,25.0,International Journal of Biomedical Engineering and Technology,2019,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Praveen Kumar Gupta,Mathematics,27,17,10,153,7,17.6,Chaos An Interdisciplinary Journal of Nonlinear Science,2016,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Vipin Chandra Pal,Electronics and Instrumentation Engineering,38,17,21,149,7,17.6,International Journal of Automation and Control,2019,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,A.K. Barbhuiya,Civil Engineering,16,15,1,144,7,13.3,Geomorphology,2017,2025,Professor,current,,,3,exact,False
+NIT Silchar,Ramanujam E,Computer Science and Engineering,31,14,17,139,7,35.7,IEEE Multimedia,2022,2026,Assistant Professor – Grade II,current,,,3,override,False
+NIT Silchar,Nabanita Adhikary,Electrical Engineering,30,12,18,134,7,66.7,Computers & Electrical Engineering,2022,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Gurudas Das,Humanities and Social Sciences,23,23,0,131,7,26.1,Journal of Rural Development,2016,2026,,former,2016.0,2024.0,1,exact,False
+NIT Silchar,Shanti Gopal Patra,Chemistry,25,25,0,121,7,44.0,Advanced Theory and Simulations,2024,2026,Assistant Professor Grade II,current,,,1,initials,False
+NIT Silchar,B. Hema Sundar Raju,Mathematics,20,16,4,117,7,18.8,International Journal of Ambient Energy,2018,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Santanu Roy,Mathematics,15,13,2,253,6,7.7,Annals of the University of Craiova Mathematics and Computer Science Series,2016,2026,Professor,current,,,1,exact,False
+NIT Silchar,Jupitara Hazarika,Electronics and Instrumentation Engineering,27,13,14,239,6,38.5,International Journal of Biomedical Engineering and Technology,2018,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Kulkarni Vihangraj Vijaykumar,Civil Engineering,9,8,1,196,6,62.5,ChemistrySelect,2021,2025,Assistant Professor (on lien),current,,,1,full,False
+NIT Silchar,Shyamapada Mukherjee,Computer Science and Engineering,31,11,20,181,6,18.2,Journal of Circuits Systems and Computers,2016,2024,,former,2025.0,2025.0,2,exact,False
+NIT Silchar,Amit Kumar Das,Civil Engineering,17,11,6,169,6,54.5,Advances in Civil Engineering Materials,2019,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Shyamosree Pal,Computer Science and Engineering,18,12,6,161,6,41.7,Expert Systems with Applications,2016,2026,"Assistant Professor, Grade-I",current,,,1,exact,False
+NIT Silchar,Gaurav Singh Baghel,Electronics and Communication Engineering,35,24,11,158,6,8.3,AEU - International Journal of Electronics and Communications,2020,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,M. V. Swati,Electronics and Communication Engineering,26,20,6,153,6,15.0,IEEE Transactions on Plasma Science,2020,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Susmita Ghosh,Civil Engineering,14,10,4,142,6,10.0,ISH Journal of Hydraulic Engineering,2018,2026,Associate Professor,current,,,3,exact,False
+NIT Silchar,Anish Kumar Saha,Computer Science and Engineering,23,15,8,138,6,6.7,Physica A Statistical Mechanics and its Applications,2020,2026,"Assistant Professor, Grade-I",current,,,1,exact,False
+NIT Silchar,Abhishek Midya,Electronics and Instrumentation Engineering,8,5,3,133,6,20.0,IEEE Journal of Biomedical and Health Informatics,2016,2017,,former,2016.0,2017.0,1,exact,False
+NIT Silchar,Shivendra Kumar Pandey,Electronics and Instrumentation Engineering,21,11,10,113,6,27.3,Semiconductor Science and Technology,2020,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Rama Koteswara Rao Kondasani,Management Studies,13,13,0,108,6,69.2,Tourism Review,2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Ujwala Baruah,Computer Science and Engineering,22,13,9,102,6,61.5,Arabian Journal for Science and Engineering,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Sreejith. S,Electrical Engineering,18,11,7,100,6,45.5,Arabian Journal for Science and Engineering,2022,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Pannalal Choudhury,Mechanical Engineering,12,5,7,97,6,60.0,Polymer Composites,2017,2025,,former,2016.0,2025.0,1,exact,False
+NIT Silchar,Lalu Seban,Electronics and Instrumentation Engineering,15,7,8,93,6,28.6,Environmental Progress & Sustainable Energy,2016,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Saurabh Verma,Management Studies,17,17,0,92,6,17.6,Journal of Scientific & Industrial Research,2018,2026,Assistant Professor Grade-I,current,,,5,exact,False
+NIT Silchar,Santan Kumar,Mathematics,21,18,3,87,6,33.3,Archive of Applied Mechanics,2023,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Vivekanandan S,Electrical Engineering,24,12,12,84,6,25.0,Ain Shams Engineering Journal,2022,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Suprava Jena,Civil Engineering,24,18,6,81,6,38.9,Innovative Infrastructure Solutions,2020,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Bijan Kumar Roy,Civil Engineering,18,9,9,75,6,44.4,International Journal of Engineering,2017,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Ruma Rano,Chemistry,16,11,5,311,5,63.6,Energy Sources Part A Recovery Utilization and Environmental Effects,2016,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Anup Kumar Sharma,Electronics and Instrumentation Engineering,15,9,6,175,5,22.2,Bulletin of Materials Science,2021,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Prashanta Kumar Paul,Electronics and Communication Engineering,7,5,2,152,5,0.0,Applied Artificial Intelligence,2017,2020,,former,2016.0,2025.0,1,exact,False
+NIT Silchar,SREENU SREEKUMAR,Electrical Engineering,36,16,20,126,5,37.5,Electrical Engineering,2022,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Chandrajit Choudhury,Electronics and Communication Engineering,10,4,6,115,5,50.0,Expert Systems with Applications,2017,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Avishek Ray,Humanities and Social Sciences,42,42,0,112,5,45.2,Globalisation Societies and Education,2016,2026,Associate Professor,current,,,3,exact,False
+NIT Silchar,Paramita Sarkar,Electronics and Communication Engineering,12,8,4,109,5,25.0,Journal of Information and Optimization Sciences,2017,2026,Assistant Professor Gr-II,current,,,2,exact,False
+NIT Silchar,Subrata Bera,Mathematics,14,6,8,88,5,50.0,Physics of Fluids,2017,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Parthasarathi Choudhury,Civil Engineering,18,15,3,85,5,20.0,International Journal of Sediment Research,2016,2025,Professor (HAG),current,,,1,exact,False
+NIT Silchar,Somnath Santra,Mechanical Engineering,17,15,2,67,5,60.0,Physics of Fluids,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Tauhidur Rahman,Civil Engineering,9,5,4,54,5,40.0,Bulletin of the Seismological Society of America,2016,2025,Associate Professor,current,,,1,exact,False
+NIT Silchar,Dhruba Jyoti Bora,Electronics and Instrumentation Engineering,8,5,3,117,4,40.0,IET Systems Biology,2018,2026,Assistant Professor (Gr- II),current,,,1,exact,False
+NIT Silchar,Binoti Patro,Management Studies,5,5,0,111,4,20.0,Vision The Journal of Business Perspective,2021,2026,Assistant Professor Grade- I,current,,,1,exact,False
+NIT Silchar,Nirmali Borthakur,Civil Engineering,16,6,10,95,4,16.7,Arabian Journal for Science and Engineering,2017,2025,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Dibakar Chakraborty,Civil Engineering,6,6,0,87,4,50.0,Hydrological Sciences Journal,2020,2023,Professor,current,,,1,full,False
+NIT Silchar,Parbin Sultana,Civil Engineering,14,9,5,68,4,0.0,Indian geotechnical journal,2018,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Sumitra Sharma,Mechanical Engineering,12,9,3,67,4,11.1,Proceedings of the Institution of Mechanical Engineers Part L Journal of Materials Design and Applications,2019,2026,Assistant Professor Grade II,current,,,1,exact,False
+NIT Silchar,Prosun Mandal,Mechanical Engineering,13,11,2,62,4,18.2,Surface Review and Letters,2022,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Md. Maqbul,Mathematics,11,8,3,53,4,37.5,Differential Equations and Dynamical Systems,2017,2026,Assistant Professor (Grade-I),current,,,1,exact,False
+NIT Silchar,Asha Rani M. A,Electrical Engineering,24,7,17,47,4,14.3,Contemporary Mathematics,2020,2025,Assistant Professor,current,,,3,override,False
+NIT Silchar,Koena Mukherjee,Electronics and Instrumentation Engineering,23,7,16,43,4,28.6,Ocean Engineering,2019,2026,Assistant Professor (on lien),current,,,2,exact,False
+NIT Silchar,Ujjwal Kanti Paul,Management Studies,5,5,0,41,4,20.0,International Journal of Fruit Science,2016,2017,,former,2017.0,2017.0,1,exact,False
+NIT Silchar,Alfa Bisoi,Mechanical Engineering,18,10,8,36,4,0.0,Journal of Vibration Engineering & Technologies,2020,2026,Assistant Professor Grade II,current,,,1,exact,False
+NIT Silchar,Pradip Deb Roy,Mechanical Engineering,10,4,6,30,4,25.0,Arabian Journal for Science and Engineering,2018,2025,Assistant Professor Gr I,current,,,1,exact,False
+NIT Silchar,Sunilkumar D,Mechanical Engineering,20,15,5,29,4,6.7,Journal of Materials Engineering and Performance,2024,2026,Assistant Professor,current,,,2,override,False
+NIT Silchar,Sushovan Chatterjee,Mechanical Engineering,3,3,0,355,3,33.3,Proceedings of the Institution of Mechanical Engineers Part D Journal of Automobile Engineering,2016,2018,,former,2016.0,2018.0,1,exact,False
+NIT Silchar,Jyotirmoy Haloi,Civil Engineering,5,5,0,75,3,40.0,Innovative Infrastructure Solutions,2017,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Chukhu Chunka,Computer Science and Engineering,11,5,6,59,3,40.0,IEEE Sensors Journal,2023,2026,"Assistant Professor, Grade-II",current,,,1,exact,False
+NIT Silchar,Ambika Kuity,Civil Engineering,11,3,8,56,3,33.3,International Journal of Pavement Research and Technology,2020,2026,Assistant Professor (on Lien),current,,,2,exact,False
+NIT Silchar,Madhumita Paul,Electronics and Communication Engineering,4,1,3,55,3,100.0,Neural Computing and Applications,2019,2021,,former,2016.0,2022.0,1,exact,False
+NIT Silchar,Risha Mal,Electrical Engineering,6,2,4,44,3,50.0,Energy Conversion and Management,2021,2024,Assistant Professor (on lien),current,,,1,exact,False
+NIT Silchar,Kalyan Chakraborty,Mechanical Engineering,19,3,16,40,3,33.3,International Journal of Emerging Technology and Advanced Engineering,2020,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Tanaya Nayak,Management Studies,5,5,0,40,3,40.0,Benchmarking An International Journal,2023,2026,Assistant Professor Grade II,current,,,2,exact,False
+NIT Silchar,Subhajit Das,Civil Engineering,5,3,2,32,3,0.0,Microprocessors and Microsystems,2019,2022,Assistant Professor,current,,,1,exact,True
+NIT Silchar,Rajeev Nayan Gupta,Mechanical Engineering,17,10,7,31,3,10.0,International Journal of Materials Engineering Innovation,2020,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Snehasish Nandy,Physics,13,13,0,30,3,92.3,Physical review. B./Physical review. B,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Tapan Pradhan,Electrical Engineering,8,8,0,29,3,50.0,IEEE Sensors Journal,2021,2024,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Dipanjan Mukherjee,Civil Engineering,5,5,0,21,3,0.0,Discover Applied Sciences,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Papri Sutar,Chemistry,4,4,0,20,3,75.0,ChemPlusChem,2024,2026,Assistant Professor Grade II,current,,,1,exact,False
+NIT Silchar,Soma Panja,Management Studies,13,13,0,20,3,0.0,Vision The Journal of Business Perspective,2019,2026,Associate Professor,current,,,1,exact,False
+NIT Silchar,Himanshu Karan,Electronics and Communication Engineering,10,8,2,19,3,37.5,Materials Science and Engineering B,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Pabitra Rajbongshi,Civil Engineering,4,3,1,18,3,0.0,Journal of The Institution of Engineers (India) Series A,2016,2018,,former,2016.0,2017.0,2,exact,False
+NIT Silchar,Ambrish Devanshu,Electrical Engineering,10,4,6,17,3,25.0,IEEE Transactions on Plasma Science,2022,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Ashoke Kumar Sinha,Electrical Engineering,5,5,0,15,3,40.0,IET Generation Transmission & Distribution,2017,2017,,former,2016.0,2017.0,2,initials,False
+NIT Silchar,Ashim Kumar Das,Management Studies,8,8,0,12,3,0.0,Vision The Journal of Business Perspective,2018,2025,Associate Professor,current,,,1,exact,False
+NIT Silchar,Olympa Baro,Civil Engineering,9,2,7,38,2,50.0,Geomatics Natural Hazards and Risk,2020,2025,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Purushottam Kumar Singh,Mechanical Engineering,16,11,5,33,2,27.3,Asian Journal of Civil Engineering,2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Binita Nath,Mechanical Engineering,6,4,2,27,2,50.0,Energy & Fuels,2023,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Subhadeep Biswas,Civil Engineering,6,6,0,26,2,16.7,Analytical Methods,2024,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Swagatadeb Sahoo,Electronics and Instrumentation Engineering,4,1,3,20,2,0.0,Pramana,2016,2019,,former,2017.0,2018.0,1,exact,False
+NIT Silchar,Subhadip Biswas,Civil Engineering,10,9,1,14,2,11.1,Innovative Infrastructure Solutions,2023,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Atanu Sahu,Civil Engineering,21,9,12,13,2,33.3,Applied Acoustics,2020,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Avijit Das,Mathematics,6,6,0,12,2,66.7,Communications in Nonlinear Science and Numerical Simulation,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Arup Bhattacharjee,Computer Science and Engineering,8,3,5,10,2,50.0,IEEE Transactions on Wireless Communications,2016,2026,"Assistant Professor, Grade-I",current,,,1,exact,False
+NIT Silchar,Pallab Das,Civil Engineering,9,4,5,10,2,50.0,Civil Engineering and Architecture,2017,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Debayan Sarkar,Electrical Engineering,14,1,13,9,2,0.0,Measurement Digitalization,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Kelvin Mutum,Management Studies,4,4,0,9,2,0.0,Indian Journal of Finance,2018,2020,,former,2016.0,2016.0,1,exact,False
+NIT Silchar,Pantha Kanti Nath,Computer Science and Engineering,2,2,0,9,2,0.0,Photonic Network Communications,2020,2022,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Partha Saha,Electronics and Communication Engineering,2,2,0,9,2,0.0,International Journal of Speech Technology,2016,2016,Assistant Professor Gr-II,current,,,1,exact,False
+NIT Silchar,Srikanth Allamsetty,Electrical Engineering,5,2,3,9,2,50.0,IEEE Transactions on Learning Technologies,2022,2024,,former,2025.0,2025.0,1,exact,False
+NIT Silchar,Abhijt Chakraborty,Management Studies,7,7,0,8,2,0.0,International Journal of Business,2018,2025,,former,2017.0,2017.0,1,full,False
+NIT Silchar,Aparajita Dutta,Computer Science and Engineering,7,2,5,8,2,50.0,EMBO Molecular Medicine,2024,2026,"Assistant Professor, Grade-II",current,,,2,exact,False
+NIT Silchar,Dinamani Biswal,Humanities and Social Sciences,4,4,0,7,2,50.0,Journal of Health Management,2025,2025,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Ojing Siram,Mechanical Engineering,2,2,0,7,2,50.0,Journal of Renewable and Sustainable Energy,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Reena Sanasam,Humanities and Social Sciences,2,2,0,5,2,0.0,Forum for Linguistic Studies,2024,2025,Associate Professor,current,,,1,exact,False
+NIT Silchar,Susmita Rabha,Physics,3,3,0,5,2,66.7,Applied Physics Reviews,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Ravi Kumar Gupta,Mechanical Engineering,1,1,0,93,1,100.0,Rapid Prototyping Journal,2016,2016,,former,2016.0,2025.0,1,exact,False
+NIT Silchar,Neha Kumari,Humanities and Social Sciences,2,1,1,33,1,0.0,Physica A Statistical Mechanics and its Applications,2023,2023,Assistant Professor (Gr. II),current,,,1,exact,False
+NIT Silchar,Nandini Roy,Physics,1,1,0,27,1,0.0,Microelectronic Engineering,2016,2016,,former,2018.0,2024.0,1,exact,False
+NIT Silchar,Pankaj Chaturvedi,Physics,1,1,0,12,1,100.0,The European Physical Journal C,2023,2023,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Amitava Ray,Mechanical Engineering,1,1,0,10,1,0.0,International Journal of Energy Optimization and Engineering,2016,2016,,former,2016.0,2016.0,1,exact,False
+NIT Silchar,Dinesh P,Civil Engineering,1,0,1,10,1,,,2021,2021,Assistant Professor,current,,,1,initials,False
+NIT Silchar,Biswanath Dey,Computer Science and Engineering,5,1,4,9,1,0.0,International journal of Computer Networks & Communications,2018,2026,Assistant Professor,current,,,3,exact,False
+NIT Silchar,Jishan Mehedi,Electronics and Communication Engineering,1,0,1,9,1,,,2016,2016,,former,2016.0,2018.0,1,exact,False
+NIT Silchar,Abhijit Ghosh,Management Studies,1,1,0,8,1,0.0,Indian Journal of Physics,2016,2016,,former,2016.0,2016.0,1,initials,False
+NIT Silchar,Darpahari Das,Mechanical Engineering,2,0,2,6,1,,,2021,2025,,former,2016.0,2025.0,1,exact,False
+NIT Silchar,Debasish Dutta,Mechanical Engineering,2,2,0,6,1,0.0,Australian Journal of Mechanical Engineering,2016,2017,,former,2016.0,2016.0,1,exact,False
+NIT Silchar,Dibya Nandan Mishra,Management Studies,3,2,1,5,1,0.0,International Journal of Quality & Reliability Management,2025,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Sujit Kumar Pattanayak,Mechanical Engineering,5,0,5,5,1,,,2020,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Vivek Kumar Pathak,Management Studies,1,1,0,5,1,0.0,Indian Journal of Marketing,2018,2018,,former,2016.0,2016.0,1,exact,False
+NIT Silchar,Dibyakusum Ray,Humanities and Social Sciences,3,3,0,4,1,33.3,Rupkatha Journal on Interdisciplinary Studies in Humanities,2016,2017,,former,2017.0,2020.0,1,exact,False
+NIT Silchar,Biswajit Sahoo,Electrical Engineering,5,1,4,3,1,100.0,IEEE Journal of Emerging and Selected Topics in Industrial Electronics,2025,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Debasish Nath,Electronics and Instrumentation Engineering,4,0,4,3,1,,,2019,2026,Assistant Professor (Gr- II),current,,,2,exact,False
+NIT Silchar,Parikshit Saikia,Computer Science and Engineering,6,0,6,3,1,,,2023,2026,"Assistant Professor, Grade-II",current,,,1,exact,False
+NIT Silchar,Rajarshi Pramanik,Civil Engineering,3,2,1,3,1,50.0,Georisk Assessment and Management of Risk for Engineered Systems and Geohazards,2024,2024,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Shankar. K,Electronics and Instrumentation Engineering,4,2,2,3,1,50.0,Arabian Journal for Science and Engineering,2023,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Sucharita Chakraborty,Electronics and Communication Engineering,3,1,2,3,1,100.0,IEEE Wireless Communications Letters,2024,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Anangsha Alammyan,Civil Engineering,1,0,1,2,1,,,2021,2021,,former,2020.0,2022.0,1,exact,False
+NIT Silchar,Ankush Kumar,Civil Engineering,4,3,1,2,1,0.0,International Journal of Disaster Resilience in the Built Environment,2024,2026,Assistant Professor (Gr. II),current,,,2,exact,False
+NIT Silchar,Arijit Jana,Mathematics,6,6,0,2,1,0.0,The Ramanujan Journal,2025,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Debbrota Paul Chowdhury,Computer Science and Engineering,4,0,4,2,1,,,2024,2025,"Assistant Professor, Grade-II",current,,,1,exact,False
+NIT Silchar,Mallikarjuna Balimidi,Electrical Engineering,7,0,7,2,1,,,2024,2026,Assistant Professor,current,,,2,exact,False
+NIT Silchar,Panchali Bhattacharya,Humanities and Social Sciences,1,1,0,2,1,,Educational Administration Theory and Practices,2024,2024,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Nilanjan Roy,Chemistry,2,2,0,1,1,100.0,Inorganic Chemistry,2026,2026,Assistant Professor (Gr-II),current,,,1,exact,False
+NIT Silchar,Umakanta Majhi,Computer Science and Engineering,3,1,2,1,1,0.0,International Journal of Computer Applications,2016,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Aryaman Sensarma,Mathematics,2,2,0,0,0,0.0,Infinite Dimensional Analysis Quantum Probability and Related Topics,2025,2025,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Bhupali Dutta,Civil Engineering,4,1,3,0,0,100.0,Journal of Transportation Engineering Part B Pavements,2026,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Bijan Nath,Mathematics,1,1,0,0,0,0.0,Boletim da Sociedade Paranaense de Matemática,2024,2024,Associate Professor,current,,,1,exact,False
+NIT Silchar,Debtanay Das,Mechanical Engineering,1,1,0,0,0,0.0,Welding in the World,2026,2026,Assistant Professor (Gr. II),current,,,1,exact,False
+NIT Silchar,Madhumita Banerjee,Electronics and Communication Engineering,2,0,2,0,0,,,2025,2026,Associate Professor,current,,,2,exact,False
+NIT Silchar,Moirangthem Biken Singh,Computer Science and Engineering,3,3,0,0,0,66.7,ACM Transactions on Cyber-Physical Systems,2026,2026,Assistant Professor (Gr. II),current,,,1,exact,False
+NIT Silchar,Nitesh Ahir,Civil Engineering,1,0,1,0,0,,,2023,2023,Assistant Professor,current,,,1,override,False
+NIT Silchar,Partha Das,Civil Engineering,2,2,0,0,0,100.0,Canadian Geotechnical Journal,2018,2026,Assistant Professor (Gr. II),current,,,2,exact,False
+NIT Silchar,Pravin P S,Electronics and Instrumentation Engineering,3,0,3,0,0,,,2026,2026,,former,2025.0,2025.0,1,exact,False
+NIT Silchar,Ramakrishna Manchi,Mathematics,2,2,0,0,0,100.0,Diamond and Related Materials,2026,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Shashi Kumar G K,Humanities and Social Sciences,3,1,2,0,0,0.0,Journal of Narrative and Language Studies,2024,2025,Assistant Professor,current,,,2,initials,False
+NIT Silchar,Shubham Senapati,Management Studies,2,2,0,0,0,50.0,Journal of Quality Assurance in Hospitality & Tourism,2026,2026,Assistant Professor Gr-II,current,,,1,exact,False
+NIT Silchar,Sumallya Mukhopadhyay,Humanities and Social Sciences,1,1,0,0,0,100.0,Interventions,2026,2026,Assistant Professor,current,,,1,exact,False
+NIT Silchar,Sunil Kumar Mishra,Electrical Engineering,1,1,0,0,0,100.0,IET Smart Grid,2026,2026,Assistant Professor (Gr- II),current,,,1,initials,False
+NIT Silchar,Ujjal Protim Dutta,Humanities and Social Sciences,1,1,0,0,0,100.0,Discover Sustainability,2026,2026,Assistant Professor,current,,,1,exact,False

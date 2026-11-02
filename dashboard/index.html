@@ -262,48 +262,48 @@ td .t { font-weight: 500; color: var(--ink); } td .s { color: var(--muted); font
         </div>
         <div class="grid g5" id="kpis"></div>
         <div class="grid g3 mt">
-          <div class="card span2"><div class="card-h"><div><h2>Papers per year</h2><p>2026 is a partial year</p></div></div><div class="chart" id="ov-trend"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Journal quartile share</h2><p>Share of journal papers</p></div></div><div class="chart" id="ov-q"></div></div>
+          <div class="card span2"><div class="card-h"><div><h2>How has output changed over the years?</h2><p>2026 is a partial year</p></div></div><div class="chart" id="ov-trend"></div></div>
+          <div class="card"><div class="card-h"><div><h2>How large is the Q1 share of journal papers?</h2><p>Share of journal papers</p></div></div><div class="chart" id="ov-q"></div></div>
         </div>
-        <div class="card mt"><div class="card-h"><div><h2>Institute scorecard</h2><p>Key metrics side by side</p></div></div><div id="ov-table"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>How do the three institutes compare at a glance?</h2><p>Key metrics side by side</p></div></div><div id="ov-table"></div></div>
       </section>
 
       <!-- PUBLICATIONS -->
       <section class="tab" id="tab-pubs">
-        <div class="page-head"><div class="eyebrow">02 — Publications</div><h1>What we publish, <em>and where</em></h1><p class="lede">Output, venue quality and research areas, 2016–2026.</p></div>
+        <div class="page-head"><div class="eyebrow">02 — Publications</div><h1>What the institutes publish, <em>and where</em></h1><p class="lede">Output, venue quality and research areas, 2016–2026.</p></div>
         <div class="grid g2">
-          <div class="card"><div class="card-h"><div><h2>Annual output</h2><p>Journal vs conference papers</p></div><div class="seg" id="trendMode"><button data-v="line" class="on">Lines</button><button data-v="stack">By type</button></div></div><div class="chart" id="pb-trend"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Q1 share of journal papers by year</h2><p>Is quality rising alongside volume?</p></div></div><div class="chart" id="pb-q1y"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Journal quartile distribution</h2><p>Q1 to Q4, % of journal papers</p></div><div class="seg" id="qMode"><button data-v="bar" class="on">Stacked</button><button data-v="pie">Donut</button></div></div><div class="chart" id="pb-q"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Conference papers by venue rank</h2><p>CORE 2023 rank where the conference is listed, otherwise the Scopus quartile of the proceedings</p></div></div><div class="chart" id="pb-conf"></div><div id="pb-core"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Research areas</h2><p>Papers by field</p></div></div><div class="chart tall" id="pb-fields"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Field impact</h2><p>Papers vs mean citations per field</p></div></div><div class="chart tall" id="pb-fieldimpact"></div></div>
+          <div class="card"><div class="card-h"><div><h2>How many papers does each institute publish each year?</h2><p>Journal vs conference papers</p></div><div class="seg" id="trendMode"><button data-v="line" class="on">Lines</button><button data-v="stack">By type</button></div></div><div class="chart" id="pb-trend"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Is the Q1 share rising over the years?</h2><p>Is quality rising alongside volume?</p></div></div><div class="chart" id="pb-q1y"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Which journal quartiles do the institutes’ papers appear in?</h2><p>Q1 to Q4, % of journal papers</p></div><div class="seg" id="qMode"><button data-v="bar" class="on">Stacked</button><button data-v="pie">Donut</button></div></div><div class="chart" id="pb-q"></div></div>
+          <div class="card"><div class="card-h"><div><h2>How good are the conferences the institutes publish in?</h2><p>CORE 2023 rank where the conference is listed, otherwise the Scopus quartile of the proceedings</p></div></div><div class="chart" id="pb-conf"></div><div id="pb-core"></div></div>
+          <div class="card"><div class="card-h"><div><h2>What are the research areas?</h2><p>Papers by field</p></div></div><div class="chart tall" id="pb-fields"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Which fields get the most citations?</h2><p>Papers vs mean citations per field</p></div></div><div class="chart tall" id="pb-fieldimpact"></div></div>
         </div>
-        <div class="card mt"><div class="card-h"><div><h2>Top journals</h2><p>Most frequent journals per institute (top 5 in bold)</p></div></div><div class="grid g3" id="pb-journals"></div></div>
-        <div class="card mt"><div class="card-h"><div><h2>Conference venues</h2><p>Where conference papers appear</p></div><div class="seg" id="venMode"><button data-v="named" class="on">Named conferences</button><button data-v="series">Proceedings series</button></div></div><p class="explain" id="pb-vennote"></p><div class="grid g3" id="pb-venues"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>Which journals do the institutes publish in most?</h2><p>Most frequent journals per institute (top 5 in bold). Choose 10 or 20, or filter by research field →</p></div><select class="pbField" aria-label="Research field"></select><label class="note">Show top <select id="pbTop"><option value="10">10</option><option value="20">20</option></select></label></div><div class="grid g3" id="pb-journals"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>Where do the institutes’ conference papers appear?</h2><p>Where conference papers appear. Filter by research field →</p></div><select class="pbField" aria-label="Research field"></select><div class="seg" id="venMode"><button data-v="named" class="on">Named conferences</button><button data-v="series">Proceedings series</button></div></div><p class="explain" id="pb-vennote"></p><div class="grid g3" id="pb-venues"></div></div>
       </section>
 
       <!-- FACULTY -->
       <section class="tab" id="tab-faculty">
-        <div class="page-head"><div class="eyebrow">03 — Faculty</div><h1>The people <em>behind the papers</em></h1><p class="lede">823 verified faculty, current and former.</p></div>
+        <div class="page-head"><div class="eyebrow">03 — Faculty</div><h1>The people <em>behind the papers</em></h1><p class="lede"><span id="facCount">800</span> verified faculty, current and former.</p></div>
         <div class="grid g3">
-          <div class="card"><div class="card-h"><div><h2>h-index distribution</h2><p>Faculty per h-index band</p></div></div><div class="chart" id="fc-h"></div></div>
-          <div class="card span2"><div class="card-h"><div><h2>Top-10 leaderboard</h2><p>Top 10 by the selected measure</p></div><div class="seg" id="lbMetric"><button data-v="h" class="on">h-index</button><button data-v="c">Citations</button><button data-v="p">Papers</button><button data-v="btw">Betweenness</button></div></div><div class="chart" id="fc-lb"></div></div>
+          <div class="card"><div class="card-h"><div><h2>How are h-index values spread across faculty?</h2><p>Faculty per h-index band</p></div></div><div class="chart" id="fc-h"></div></div>
+          <div class="card span2"><div class="card-h"><div><h2>Who are the top 10 faculty?</h2><p>Top 10 by the selected measure</p></div><div class="seg" id="lbMetric"><button data-v="h" class="on">h-index</button><button data-v="c">Citations</button><button data-v="p">Papers</button><button data-v="btw">Betweenness</button></div></div><div class="chart" id="fc-lb"></div></div>
         </div>
-        <div class="card mt"><div class="card-h"><div><h2>Faculty performance table</h2><p>Search, sort and filter every faculty member</p></div></div><div id="fc-table"></div></div>
-        <div class="card mt"><div class="card-h"><div><h2>Departments</h2><p>Papers per faculty member vs Q1 share</p></div></div><div class="chart tall" id="fc-dept"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>How does each faculty member perform?</h2><p>Search, sort and filter every faculty member</p></div></div><div id="fc-table"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>How do departments compare?</h2><p>Papers per faculty member vs Q1 share</p></div></div><div class="chart tall" id="fc-dept"></div></div>
       </section>
 
       <!-- PAPERS -->
       <section class="tab" id="tab-papers">
         <div class="page-head"><div class="eyebrow">04 — Papers</div><h1>The work <em>that travels</em></h1><p class="lede">Most-cited papers, the top 30, and every paper in the corpus.</p></div>
         <div class="grid g2">
-          <div class="card"><div class="card-h"><div><h2>Top 10 most-cited papers</h2><p>By total citations</p></div></div><div id="pp-top10"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Top-30 deep dive</h2><p>The 30 most-cited papers per institute</p></div></div><div class="chart short" id="pp-t30chart"></div><div id="pp-t30sum"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Which 10 papers are cited most?</h2><p>By total citations</p></div></div><div id="pp-top10"></div></div>
+          <div class="card"><div class="card-h"><div><h2>What do the 30 most-cited papers have in common?</h2><p>The 30 most-cited papers per institute</p></div></div><div class="chart short" id="pp-t30chart"></div><div id="pp-t30sum"></div></div>
         </div>
-        <div class="card mt"><div class="card-h"><div><h2>Top-30 papers</h2><p>Venue quality and lead faculty author</p></div></div><div id="pp-t30"></div></div>
-        <div class="card mt" id="explorerCard"><div class="card-h"><div><h2>Paper explorer</h2><p id="pp-exnote">All papers. Filters set by chart clicks appear here.</p></div></div><div id="pp-ex"></div></div>
-        <div class="card mt"><div class="card-h"><div><h2>Papers with more than 10 authors</h2><p>Large-team papers compared with the rest</p></div></div><div id="pp-hyper"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>Which 30 papers are cited most?</h2><p>Venue quality and lead faculty author</p></div></div><div id="pp-t30"></div></div>
+        <div class="card mt" id="explorerCard"><div class="card-h"><div><h2>Can I search and filter every paper?</h2><p id="pp-exnote">All papers. Filters set by chart clicks appear here.</p></div></div><div id="pp-ex"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>How much do large author teams matter?</h2><p>Large-team papers compared with the rest</p></div></div><div id="pp-hyper"></div></div>
       </section>
 
       <!-- CITATION NETWORK -->
@@ -314,9 +314,9 @@ td .t { font-weight: 500; color: var(--ink); } td .s { color: var(--muted); font
           <div class="cn-panel">
             <div class="cn-row"><span class="cn-k">Show</span>
               <label>Top <input type="range" id="cnN" min="50" max="2000" step="50" value="500"><b id="cnNv" class="num">500</b> papers by PageRank</label>
-              <label>Cited at least <input type="range" id="cnMin" min="0" max="20" value="0"><b id="cnMinv" class="num">0</b>× by our papers</label>
+              <label>Cited at least <input type="range" id="cnMin" min="0" max="20" value="0"><b id="cnMinv" class="num">0</b>× by the institutes’ papers</label>
               <label>View <select id="cnView"><option value="linked">Linked papers</option><option value="lcc">Largest connected component</option><option value="small">Small isolated clusters (2–15 papers)</option><option value="all">All, including unlinked papers</option><option value="ego1">Ego network: selected paper, 1 hop</option><option value="ego2">Ego network: selected paper, 2 hops</option></select></label>
-              <label>Links <select id="cnLinks"><option value="all">All citations</option><option value="within">Within one institute</option><option value="between">Between our institutes</option></select></label>
+              <label>Links <select id="cnLinks"><option value="all">All citations</option><option value="within">Within one institute</option><option value="between">Between the three institutes</option><option value="self">Self-citations only (share an author)</option><option value="noself">Without self-citations</option></select></label>
             </div>
             <div class="cn-row"><span class="cn-k">Filter</span>
               <label>Type <select id="cnType"><option value="">Journal + conference</option><option value="0">Journal papers</option><option value="1">Conference papers</option></select></label>
@@ -330,6 +330,7 @@ td .t { font-weight: 500; color: var(--ink); } td .s { color: var(--muted); font
             <div class="cn-row"><span class="cn-k">Display</span>
               <label>Size by <select id="cnSize"><option value="pr">PageRank</option><option value="in">In-degree</option><option value="c">Total citations</option><option value="btw">Betweenness (bridge papers)</option></select></label>
               <label>Colour by <select id="cnColor"><option value="inst">Institute</option><option value="field">Research field</option><option value="q">Quartile</option><option value="year">Publication year</option></select></label>
+              <label><input type="checkbox" id="cnStar" checked> Mark the standouts</label>
               <button class="btn" id="cnReset">Reset filters</button>
             </div>
             <div class="cn-active" id="cnActive"></div>
@@ -337,12 +338,12 @@ td .t { font-weight: 500; color: var(--ink); } td .s { color: var(--muted); font
           <div class="net-wrap" id="cn-wrap"><svg id="cn-svg"></svg><div class="legend" id="cn-legend"></div><div class="net-stats" id="cn-stats"></div><div class="net-hint">Scroll to zoom · drag to pan</div></div>
         </div>
         <div class="grid g3 mt">
-          <div class="card span2"><div class="card-h"><div><h2>PageRank top 10</h2><p>Most influential papers in the network</p></div></div><div id="cn-top"></div></div>
-          <div class="card"><div class="card-h"><div><h2>In-degree distribution</h2><p>How often papers are cited by our other papers</p></div></div><div class="chart" id="cn-indeg"></div></div>
+          <div class="card span2"><div class="card-h"><div><h2>Which papers matter most inside the citation network?</h2><p>Most influential papers in the network</p></div></div><div id="cn-top"></div></div>
+          <div class="card"><div class="card-h"><div><h2>How many papers are cited often by the institutes’ own papers?</h2><p>In-degree: how many papers in the set cite each paper</p></div></div><div class="chart" id="cn-indeg"></div></div>
         </div>
         <div class="grid g2 mt">
-          <div class="card"><div class="card-h"><div><h2>Cross-institute citation flow</h2><p>Rows cite columns</p></div><div class="seg" id="flowMode"><button data-v="all" class="on">All</button><button data-v="cross">Cross only</button></div></div><div class="chart" id="cn-flow"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Network structure</h2><p>Density, clustering and components</p></div></div><div id="cn-macro"></div></div>
+          <div class="card"><div class="card-h"><div><h2>How often do the three institutes cite each other?</h2><p>Row = citing institute, column = cited institute. A paper shared by two institutes counts for both.</p></div><div class="seg" id="flowUnit"><button data-v="n" class="on">Links</button><button data-v="pct">Row %</button></div><div class="seg" id="flowMode"><button data-v="all" class="on">All</button><button data-v="cross">Cross only</button></div></div><div class="chart" id="cn-flow"></div></div>
+          <div class="card"><div class="card-h"><div><h2>How is the citation network structured?</h2><p>Density, clustering and components</p></div></div><div id="cn-macro"></div></div>
         </div>
       </section>
 
@@ -353,8 +354,12 @@ td .t { font-weight: 500; color: var(--ink); } td .s { color: var(--muted); font
           <div class="net-controls">
             <label>Colour by <select id="fnColor"><option value="lv">Louvain community</option><option value="inst">Institute</option><option value="dept">Department</option><option value="kc">k-core</option></select></label>
             <label>Size by <select id="fnSize"><option value="deg">Collaborators</option><option value="h">h-index</option><option value="btw">Betweenness</option><option value="p">Papers</option><option value="eig">Eigenvector</option></select></label>
+            <label>Show links <select id="fnLinks"><option value="all">All links</option><option value="between">Only between institutes</option><option value="within">Only within one institute</option></select></label>
             <label>Min joint papers <input type="range" id="fnW" min="1" max="10" value="1"><b id="fnWv" class="num">1</b></label>
+            <label>Show top <select id="fnTop"><option value="0">All</option><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="50">50</option><option value="100">100</option></select></label>
             <label><input type="checkbox" id="fnIso" checked> Hide isolated</label>
+            <label><input type="checkbox" id="fnCross" checked> Highlight links between institutes</label>
+            <label><input type="checkbox" id="fnStar" checked> Mark the standouts</label>
             <label><input type="checkbox" id="fnLab" checked> Labels</label>
             <label><input type="text" id="fnFind" list="facList" placeholder="Find a faculty member…" style="width:210px"></label>
             <datalist id="facList"></datalist>
@@ -363,61 +368,62 @@ td .t { font-weight: 500; color: var(--ink); } td .s { color: var(--muted); font
           <div class="net-wrap" id="fn-wrap" style="height:700px"><svg id="fn-svg"></svg><div class="legend" id="fn-legend"></div><div class="net-stats" id="fn-stats"></div><div class="net-hint">Click the legend to highlight</div></div>
         </div>
         <div class="grid g2 mt">
-          <div class="card"><div class="card-h"><div><h2>Communities</h2><p>Largest research communities</p></div></div><div id="fn-comms"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Brokers: highest betweenness</h2><p>Faculty who bridge separate groups</p></div></div><div id="fn-brokers"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Bridge authors</h2><p>Links to other Indian institutes</p></div></div><div class="chart tall" id="fn-bridges"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Network metrics</h2><p>Structure at a glance</p></div></div><div id="fn-metrics"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Which research communities do faculty form?</h2><p>Largest research communities</p></div></div><div id="fn-comms"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Who are the brokers that connect the network?</h2><p>Faculty who bridge separate groups</p></div></div><div id="fn-brokers"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Who links the different research groups?</h2><p>Links to other Indian institutes</p></div></div><div class="chart tall" id="fn-bridges"></div></div>
+          <div class="card"><div class="card-h"><div><h2>What do the network numbers say?</h2><p>Structure at a glance</p></div></div><div id="fn-metrics"></div></div>
         </div>
       </section>
 
       <!-- REACH & LOCALITY -->
       <section class="tab" id="tab-reach">
-        <div class="page-head"><div class="eyebrow">07 — Reach &amp; locality</div><h1>Near or far: <em>who we work with</em></h1><p class="lede">Peer NITs and IITs, labs, universities and partners abroad, and where they are.</p></div>
+        <div class="page-head"><div class="eyebrow">07 — Reach &amp; locality</div><h1>Near or far: <em>who the institutes work with</em></h1><p class="lede">Peer NITs and IITs, labs, universities and partners abroad, and where those partners are.</p></div>
         <div class="grid g4" id="rc-kpis"></div>
-        <div class="card mt"><div class="card-h"><div><h2>Institute collaboration network</h2><p>Our three institutes and the Indian (and foreign) institutes they co-author with</p></div></div>
-          <p class="explain">The three large circles are our institutes, fixed in a triangle. Every other circle is a partner institute, pulled towards the institutes it publishes with. Partners in the middle work with more than one of ours. The dashed lines show how many papers our three write together.</p>
+        <div class="card mt"><div class="card-h"><div><h2>How are the institutes and their partners linked?</h2><p>MANIT, NIT Jamshedpur and NIT Silchar and the Indian (and foreign) institutes that co-author with any of these three</p></div></div>
+          <p class="explain">The three large circles are MANIT, NIT Jamshedpur and NIT Silchar, fixed in a triangle. Every other circle is a partner institute, pulled towards the institutes it publishes with. Partners in the middle work with more than one of the three institutes. The dashed lines show how many papers the three institutes write together.</p>
           <div class="net-controls">
             <label>Partners <select id="inPart"><option value="peer">Peer institutes (NIT, IIT, IIIT, IISER, IISc)</option><option value="labs">Peers + national labs (CSIR, DAE, DRDO, ISRO, ICAR)</option><option value="india" selected>All Indian partners</option><option value="world">Indian + abroad</option></select></label>
             <label>Min joint papers <input type="range" id="inMin" min="1" max="40" value="8"><b id="inMinv" class="num">8</b></label>
-            <label>Colour by <select id="inColor"><option value="type">Partner type</option><option value="loc">Distance from home state</option><option value="shared">Shared by how many of ours</option></select></label>
+            <label>Colour by <select id="inColor"><option value="type">Partner type</option><option value="loc">Distance from home state</option><option value="shared">Shared by how many of the three institutes</option></select></label>
             <label><input type="checkbox" id="inLab" checked> Labels</label>
+            <label><input type="checkbox" id="inStar" checked> Mark the standouts</label>
             <button class="btn" id="inReset">Reset view</button>
           </div>
           <div class="net-wrap" id="in-wrap" style="height:680px"><svg id="in-svg"></svg><div class="legend" id="in-legend"></div><div class="net-stats" id="in-stats"></div><div class="net-hint">Scroll to zoom · drag to pan</div></div>
         </div>
-        <div class="card mt"><div class="card-h"><div><h2>How connected are the three?</h2><p>Direct links between MANIT, NIT Jamshedpur and NIT Silchar, and the partners they share</p></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>How connected are the three institutes?</h2><p>Direct links between MANIT, NIT Jamshedpur and NIT Silchar, and the partners that two or more of these institutes share</p></div></div>
           <div class="grid g2"><div id="rc-pairs"></div><div class="chart" id="rc-upset"></div></div>
           <div id="rc-betweenlist"></div>
         </div>
         <div class="grid g2 mt">
           <div class="card"><div class="card-h"><div><h2>How local is collaboration?</h2><p>Partner links by distance from home</p></div></div><div class="chart" id="rc-loc"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Partner types</h2><p>Joint-paper links from each institute to each type of Indian partner</p></div></div><div class="chart tall" id="rc-sankey"></div></div>
-          <div class="card span2"><div class="card-h"><div><h2>Partner links by region and state</h2><p>Where partners are</p></div><div class="seg" id="rcGeo"><button data-v="region" class="on">Region</button><button data-v="state">State</button></div></div><div class="chart" id="rc-region"></div></div>
-          <div class="card span2"><div class="card-h"><div><h2>Peer-institute links over time</h2><p>Joint papers per year with other NITs, IITs, IIITs, IISERs and IISc</p></div></div><div class="chart" id="rc-trend"></div></div>
+          <div class="card"><div class="card-h"><div><h2>What types of partners do the institutes work with?</h2><p>Joint-paper links from each institute to each type of Indian partner. Totals are about 2% lower than the Reach tab, which also corrects wrong OpenAlex country codes (e.g. NIT Hamirpur coded as Bangladesh).</p></div></div><div class="chart tall" id="rc-sankey"></div></div>
+          <div class="card span2"><div class="card-h"><div><h2>Which regions and states do partners come from?</h2><p>Where partners are</p></div><div class="seg" id="rcGeo"><button data-v="region" class="on">Region</button><button data-v="state">State</button></div></div><div class="chart" id="rc-region"></div></div>
+          <div class="card span2"><div class="card-h"><div><h2>Are links with peer institutes growing?</h2><p>Joint papers per year with other NITs, IITs, IIITs, IISERs and IISc</p></div></div><div class="chart" id="rc-trend"></div></div>
         </div>
-        <div class="card mt"><div class="card-h"><div><h2>Peer institutes: other NITs, IITs, IIITs, IISERs and IISc</h2><p>Institutes like ours, outside our group</p></div></div><div id="rc-peers"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>Which peer institutes (NITs, IITs, IIITs, IISERs, IISc) do the institutes work with?</h2><p>Institutes like MANIT, NITJ and NITS, outside the three</p></div></div><div id="rc-peers"></div></div>
         <div class="grid g2 mt">
-          <div class="card"><div class="card-h"><div><h2>Within vs outside: every faculty member</h2><p>Co-authors inside vs outside the institute</p></div></div><p class="explain">Each dot is one faculty member. Further right = more co-authors in their own institute. Higher = more co-authors elsewhere (our other two institutes, other Indian institutes, abroad). Dots above the dotted line work more outside than inside. Dot size = papers.</p><div class="chart tall" id="rc-scatter"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Highest nodes</h2><p>Top 10 by view</p></div><div class="seg" id="rcTop"><button data-v="within" class="on">Within</button><button data-v="outside">Outside</button><button data-v="btw">Full-network broker</button></div></div><div id="rc-topfac"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Top outside authors</h2><p>Collaborators linked to many of our faculty</p></div></div><div id="rc-ext"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Top outside institutes</h2><p>By shared papers or betweenness</p></div><div class="seg" id="rcInst"><button data-v="IN" class="on">India</button><button data-v="abroad">Abroad</button><button data-v="btw">Betweenness</button></div></div><div class="chart tall" id="rc-inst"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Where citations come from</h2><p>Same institute, our other two, or outside</p></div></div><div class="chart short" id="rc-cit"></div><div id="rc-citnote"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Most-cited papers: inside vs outside</h2><p>Top papers by where citations come from</p></div><div class="seg" id="rcCit"><button data-v="within" class="on">Within</button><button data-v="outside">Outside</button></div></div><div id="rc-citpapers"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Does each faculty member work more inside or outside?</h2><p>Co-authors inside vs outside the institute</p></div></div><p class="explain">Each dot is one faculty member. Further right = more co-authors in the faculty member’s own institute. Higher = more co-authors elsewhere (the other two institutes, other Indian institutes, abroad). Dots above the dotted line work more outside than inside. Dot size = papers.</p><div class="chart tall" id="rc-scatter"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Which faculty work most with outsiders?</h2><p>Top 10 by view</p></div><div class="seg" id="rcTop"><button data-v="within" class="on">Within</button><button data-v="outside">Outside</button><button data-v="btw">Full-network broker</button></div></div><div id="rc-topfac"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Which outside authors work with the institutes most?</h2><p>Collaborators linked to many faculty of the three institutes</p></div></div><div id="rc-ext"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Which outside institutes work with the institutes most?</h2><p>By shared papers or betweenness</p></div><div class="seg" id="rcInst"><button data-v="IN" class="on">India</button><button data-v="abroad">Abroad</button><button data-v="btw">Betweenness</button></div></div><div class="chart tall" id="rc-inst"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Where do the institutes’ citations come from?</h2><p>Same institute, the other two institutes, or outside</p></div></div><div class="chart short" id="rc-cit"></div><div id="rc-citnote"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Do the most-cited papers come from inside or outside collaborations?</h2><p>Top papers by where citations come from</p></div><div class="seg" id="rcCit"><button data-v="within" class="on">Within</button><button data-v="outside">Outside</button></div></div><div id="rc-citpapers"></div></div>
         </div>
-        <div class="card mt"><div class="card-h"><div><h2>Partner explorer</h2><p>Every Indian partner institute</p></div></div><div id="rc-all"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>Who are the outside partners, one by one?</h2><p>Every Indian partner institute</p></div></div><div id="rc-all"></div></div>
       </section>
 
       <!-- FLOWS -->
       <section class="tab" id="tab-flows">
-        <div class="page-head"><div class="eyebrow">08 — Citation flows</div><h1>Who cites us, <em>and whom we cite</em></h1><p class="lede">Citations exchanged with other Indian institutes.</p></div>
+        <div class="page-head"><div class="eyebrow">08 — Citation flows</div><h1>Who cites the institutes, <em>and whom the institutes cite</em></h1><p class="lede">Citations exchanged with other Indian institutes.</p></div>
         <div class="grid g2">
-          <div class="card"><div class="card-h"><div><h2>Impact ratio by year</h2><p>Citations received ÷ citations given</p></div></div><div class="chart" id="fl-ratio"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Citation velocity</h2><p>Citations per paper per year, by cohort</p></div></div><div class="chart" id="fl-vel"></div></div>
-          <div class="card span2"><div class="card-h"><div><h2>Flow by institute cluster</h2><p>Incoming vs outgoing, by institute type</p></div></div><div class="chart" id="fl-cluster"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Who cites us most</h2><p>Top citing Indian institutes</p></div></div><div class="chart tall" id="fl-in"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Whom we cite most</h2><p>Top cited Indian institutes</p></div></div><div class="chart tall" id="fl-out"></div></div>
-          <div class="card span2"><div class="card-h"><div><h2>Indian partner institutes</h2><p>Joint papers with other Indian institutes</p></div></div><div class="chart tall" id="fl-partners"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Partner types: papers and citations</h2><p>Joint papers and citations in both directions, by exact partner type</p></div></div><div class="chart tall" id="fl-types"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Do the institutes receive more citations than the institutes give?</h2><p>Citations received ÷ citations given</p></div></div><div class="chart" id="fl-ratio"></div></div>
+          <div class="card"><div class="card-h"><div><h2>How fast do papers collect citations?</h2><p>Citations per paper per year, by cohort</p></div></div><div class="chart" id="fl-vel"></div></div>
+          <div class="card span2"><div class="card-h"><div><h2>What kinds of institutes cite the three institutes, and which do the institutes cite?</h2><p>Incoming vs outgoing, by institute type</p></div></div><div class="chart" id="fl-cluster"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Who cites the institutes most?</h2><p>Top citing Indian institutes</p></div></div><div class="chart tall" id="fl-in"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Whom do the institutes cite most?</h2><p>Top cited Indian institutes</p></div></div><div class="chart tall" id="fl-out"></div></div>
+          <div class="card span2"><div class="card-h"><div><h2>Which Indian institutes do the institutes publish with most?</h2><p>Joint papers with other Indian institutes</p></div></div><div class="chart tall" id="fl-partners"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Which partner types give and receive the most citations?</h2><p>Joint papers and citations in both directions, by exact partner type</p></div></div><div class="chart tall" id="fl-types"></div></div>
           <div class="card"><div class="card-h"><div><h2>Does topic similarity predict collaboration?</h2><p>Each dot is one of an institute's top 25 partners</p></div></div><p class="explain" id="fl-jacnote"></p><div class="chart tall" id="fl-jac"></div></div>
         </div>
       </section>
@@ -427,10 +433,10 @@ td .t { font-weight: 500; color: var(--ink); } td .s { color: var(--muted); font
         <div class="page-head"><div class="eyebrow">09 — Data &amp; method</div><h1>How the data <em>was built</em></h1><p class="lede">From the OpenAlex download to a verified faculty corpus.</p></div>
         <div class="pipe" id="pipe"></div>
         <div class="grid g2 mt">
-          <div class="card"><div class="card-h"><div><h2>Corpus funnel</h2><p>Records left after each step, and the share of the original download</p></div></div><div class="chart" id="md-funnel"></div></div>
-          <div class="card"><div class="card-h"><div><h2>Where quartiles come from</h2><p>Source of each venue quartile</p></div></div><div class="chart" id="md-qsrc"></div></div>
+          <div class="card"><div class="card-h"><div><h2>How was the paper set built?</h2><p>Records left after each step, and the share of the original download</p></div></div><div class="chart" id="md-funnel"></div></div>
+          <div class="card"><div class="card-h"><div><h2>Where do the quartile labels come from?</h2><p>Source of each venue quartile</p></div></div><div class="chart" id="md-qsrc"></div></div>
         </div>
-        <div class="card mt"><div class="card-h"><div><h2>Known limits</h2></div></div><div id="limits"></div></div>
+        <div class="card mt"><div class="card-h"><div><h2>What are the limits of this data?</h2></div></div><div id="limits"></div></div>
       </section>
       <footer class="site-foot"><span>Research Atlas · DPCN Assignment 2 · Group 15 · MANIT Bhopal, NIT Jamshedpur, NIT Silchar</span><span>Data: OpenAlex, SCImago, Scopus CiteScore, CORE 2023 · Press <kbd class="k2">?</kbd> for shortcuts</span></footer>
     </div>
@@ -444,6 +450,7 @@ td .t { font-weight: 500; color: var(--ink); } td .s { color: var(--muted); font
 </aside>
 <div class="tip" id="tip"></div>
 
+<script>window.__startHash = location.hash.slice(1);</script>
 <script src="data.js"></script>
 <div class="cmdk-scrim" id="cmdk"><div class="cmdk" role="dialog" aria-label="Command palette">
   <div class="cmdk-in"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="cmdkIn" placeholder="Type a page, faculty name, paper title, partner institute or action…" autocomplete="off"><kbd class="k2">Esc</kbd></div>
@@ -454,5 +461,10 @@ td .t { font-weight: 500; color: var(--ink); } td .s { color: var(--muted); font
 <div class="toasts" id="toasts"></div>
 <script src="app.js"></script>
 <script src="ui.js"></script>
+<script src="extras.js"></script>
+<script src="more.js"></script>
+<script src="standouts.js"></script>
+<script src="captions.js"></script>
+<script src="simulator.js"></script>
 </body>
 </html>

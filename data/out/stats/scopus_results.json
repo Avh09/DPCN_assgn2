@@ -1,0 +1,56 @@
+{
+ "MANIT Bhopal": {
+  "scopus_docs": 7187,
+  "openalex_docs": 6846,
+  "scopus_found_in_ours_%": 84.7,
+  "openalex_found_in_scopus_%": 85.4,
+  "scopus_only": 1099,
+  "scopus_only_by_type": {
+   "Book Chapter": 455,
+   "Article": 286,
+   "Conference Paper": 277,
+   "Book": 36,
+   "Erratum": 23,
+   "Review": 13,
+   "Editorial": 7,
+   "Letter": 2
+  },
+  "scopus_only_citations": 13646
+ },
+ "NIT Jamshedpur": {
+  "scopus_docs": 4711,
+  "openalex_docs": 4175,
+  "scopus_found_in_ours_%": 84.3,
+  "openalex_found_in_scopus_%": 92.3,
+  "scopus_only": 738,
+  "scopus_only_by_type": {
+   "Conference Paper": 280,
+   "Book Chapter": 215,
+   "Article": 178,
+   "Erratum": 22,
+   "Book": 18,
+   "Editorial": 15,
+   "Review": 10
+  },
+  "scopus_only_citations": 3370
+ },
+ "NIT Silchar": {
+  "scopus_docs": 10095,
+  "openalex_docs": 8914,
+  "scopus_found_in_ours_%": 85.8,
+  "openalex_found_in_scopus_%": 94.7,
+  "scopus_only": 1438,
+  "scopus_only_by_type": {
+   "Conference Paper": 592,
+   "Book Chapter": 484,
+   "Article": 286,
+   "Book": 34,
+   "Erratum": 25,
+   "Review": 11,
+   "Editorial": 4,
+   "Retracted": 1,
+   "Note": 1
+  },
+  "scopus_only_citations": 7286
+ }
+}

@@ -1,0 +1,9 @@
+[server]
+maxMessageSize = 200
+
+[theme]
+base = "dark"
+backgroundColor = "#0b0a0f"
+
+[client]
+toolbarMode = "minimal"

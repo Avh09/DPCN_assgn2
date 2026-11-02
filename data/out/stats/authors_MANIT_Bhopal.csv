@@ -1,0 +1,498 @@
+institution,author_id,author,orcid,papers,years_active,first_year,last_year,total_citations,h_index,main_field,is_core_author
+MANIT Bhopal,A5007836080,Rajesh Purohit,https://orcid.org/0000-0001-6702-4662,169,10,2017,2026,3272,30,Engineering,True
+MANIT Bhopal,A5018744688,Tikendra Nath Verma,https://orcid.org/0000-0002-1156-0412,142,7,2020,2026,4253,37,Engineering,True
+MANIT Bhopal,A5108044051,Kumarasamy Sudhakar,https://orcid.org/0000-0002-4867-2362,137,10,2016,2025,11137,54,Energy,True
+MANIT Bhopal,A5084382021,Gaurav Dwivedi,https://orcid.org/0000-0003-3245-8529,126,8,2019,2026,3234,31,Engineering,True
+MANIT Bhopal,A5054847739,Prashant Baredar,https://orcid.org/0000-0002-8690-0741,108,11,2016,2026,5818,36,Engineering,True
+MANIT Bhopal,A5064062259,Vijay Bhaskar Semwal,https://orcid.org/0000-0003-0767-6057,87,8,2019,2026,2715,23,Computer Science,True
+MANIT Bhopal,A5101674107,Sushma Gupta,https://orcid.org/0000-0002-5382-4383,86,11,2016,2026,1806,18,Engineering,True
+MANIT Bhopal,A5078144626,Akhtar Rasool,https://orcid.org/0000-0001-9964-2414,85,9,2018,2026,918,14,Computer Science,True
+MANIT Bhopal,A5007128984,Priyanka Paliwal,https://orcid.org/0000-0002-1093-3766,78,10,2016,2026,724,15,Engineering,True
+MANIT Bhopal,A5109844045,R.S. Rana,,74,10,2016,2026,2507,26,Engineering,True
+MANIT Bhopal,A5042467735,Sanyam Shukla,https://orcid.org/0000-0001-6652-9132,71,11,2016,2026,1901,17,Computer Science,True
+MANIT Bhopal,A5030501294,Nilay Khare,https://orcid.org/0000-0003-0450-9157,70,11,2016,2026,953,12,Computer Science,True
+MANIT Bhopal,A5023852902,Manasi Gyanchandani,https://orcid.org/0000-0003-3127-1770,68,11,2016,2026,1154,13,Computer Science,True
+MANIT Bhopal,A5061120057,Vijayshri Chaurasia,https://orcid.org/0000-0002-3347-5630,68,11,2016,2026,839,16,Computer Science,True
+MANIT Bhopal,A5032170911,Jaytrilok Choudhary,https://orcid.org/0000-0002-8200-7403,67,10,2017,2026,843,13,Computer Science,True
+MANIT Bhopal,A5054880944,Dhirendra Pratap Singh,https://orcid.org/0000-0001-5519-3928,67,10,2017,2026,663,11,Computer Science,True
+MANIT Bhopal,A5041506920,Rajesh Kumar Pateriya,https://orcid.org/0000-0001-7163-0024,64,11,2016,2026,526,13,Computer Science,True
+MANIT Bhopal,A5065486002,Mitul Kumar Ahirwal,https://orcid.org/0000-0001-5346-7008,64,8,2019,2026,578,13,Neuroscience,True
+MANIT Bhopal,A5085089279,Fozia Zia Haque,https://orcid.org/0000-0002-4999-6887,64,11,2016,2026,1629,20,Materials Science,True
+MANIT Bhopal,A5061499948,Suresh Kumar Gawre,https://orcid.org/0000-0002-4451-9141,62,10,2016,2026,515,11,Engineering,True
+MANIT Bhopal,A5027528362,Rajnish Kurchania,https://orcid.org/0000-0003-1562-9568,59,11,2016,2026,1031,18,Materials Science,True
+MANIT Bhopal,A5074527311,Deepak Singh Tomar,https://orcid.org/0000-0001-9025-1679,59,11,2016,2026,482,10,Computer Science,True
+MANIT Bhopal,A5026452888,Kamal Raj Pardasani,https://orcid.org/0000-0002-0256-7217,58,11,2016,2026,1558,21,"Biochemistry, Genetics and Molecular Biology",True
+MANIT Bhopal,A5010912349,Dheerendra Mishra,https://orcid.org/0000-0001-8115-6397,57,7,2020,2026,524,13,Computer Science,True
+MANIT Bhopal,A5056100976,Mohammad Taufik,https://orcid.org/0000-0002-8706-8942,57,7,2020,2026,550,12,Engineering,True
+MANIT Bhopal,A5057510037,Rajesh Wadhvani,https://orcid.org/0000-0002-2048-997X,57,11,2016,2026,840,14,Engineering,True
+MANIT Bhopal,A5045017090,Pankaj Swarnkar,https://orcid.org/0000-0002-7214-536X,56,9,2016,2026,509,14,Engineering,True
+MANIT Bhopal,A5100702991,Deepak Kumar,https://orcid.org/0000-0001-9048-8828,56,7,2020,2026,505,13,Engineering,True
+MANIT Bhopal,A5089562654,Savita Nema,https://orcid.org/0000-0002-9570-6078,54,11,2016,2026,1637,16,Engineering,True
+MANIT Bhopal,A5101884159,Manish Pandey,https://orcid.org/0000-0002-6804-7150,53,10,2017,2026,630,12,Computer Science,True
+MANIT Bhopal,A5074865705,Amit Ojha,https://orcid.org/0000-0002-5060-3577,51,11,2016,2026,528,12,Engineering,True
+MANIT Bhopal,A5083830820,Kavita Khare,https://orcid.org/0000-0002-7704-7646,51,11,2016,2026,304,9,Engineering,True
+MANIT Bhopal,A5009599535,Mukesh Kumar Kirar,https://orcid.org/0000-0002-8486-2550,50,9,2016,2026,213,8,Engineering,True
+MANIT Bhopal,A5040120692,Anoop Arya,https://orcid.org/0000-0002-9735-511X,50,10,2016,2026,458,11,Engineering,True
+MANIT Bhopal,A5078079341,Meenu Chawla,https://orcid.org/0000-0001-7832-8346,50,11,2016,2026,471,11,Computer Science,True
+MANIT Bhopal,A5033235977,Manzar M. Malik,https://orcid.org/0000-0002-6506-6452,49,10,2016,2026,1058,16,Materials Science,True
+MANIT Bhopal,A5033819723,Tarun Kumar Gupta,https://orcid.org/0000-0002-4335-1420,49,9,2016,2024,521,13,Engineering,True
+MANIT Bhopal,A5039417714,Rahul Kumar Chaurasiya,https://orcid.org/0000-0002-0911-0869,48,7,2020,2026,222,10,Computer Science,True
+MANIT Bhopal,A5069469512,Ravi Kumar Dwivedi,https://orcid.org/0000-0002-0019-3661,48,10,2016,2025,800,13,Engineering,True
+MANIT Bhopal,A5100736812,Shailendra Kumar,https://orcid.org/0000-0002-0132-0538,47,5,2020,2024,422,12,Engineering,True
+MANIT Bhopal,A5005632902,Nenavath Sreenu,https://orcid.org/0000-0002-8535-1293,46,7,2020,2026,718,14,"Economics, Econometrics and Finance",True
+MANIT Bhopal,A5080732535,Chandrabalan Sasikumar,https://orcid.org/0000-0003-0949-0176,45,10,2016,2026,288,10,Engineering,True
+MANIT Bhopal,A5090230502,M. K. Pradhan,https://orcid.org/0000-0002-2718-7181,45,8,2016,2023,757,15,Engineering,True
+MANIT Bhopal,A5010884528,Ramesh Kumar Nayak,https://orcid.org/0000-0002-4468-0912,44,8,2019,2026,782,17,Engineering,True
+MANIT Bhopal,A5033023758,Chandan Kumar Verma,https://orcid.org/0000-0001-7122-7745,44,10,2016,2026,511,9,Decision Sciences,True
+MANIT Bhopal,A5043071085,Sweta Jain,https://orcid.org/0000-0002-0365-5876,44,8,2017,2025,1416,14,Computer Science,True
+MANIT Bhopal,A5100610090,Sanjeev Singh,https://orcid.org/0000-0003-4298-5701,44,6,2020,2025,207,8,Engineering,True
+MANIT Bhopal,A5007195737,Tripta Thakur,https://orcid.org/0000-0002-3735-2398,43,9,2016,2024,462,13,Engineering,True
+MANIT Bhopal,A5018232677,Rishindra Mohan Sarviya,https://orcid.org/0000-0001-7249-7288,43,10,2016,2025,925,16,Engineering,True
+MANIT Bhopal,A5057682450,Ruchi Khare,https://orcid.org/0000-0001-9464-324X,43,10,2016,2026,392,10,Engineering,True
+MANIT Bhopal,A5080670230,Ujjwal Kumar Kalla,https://orcid.org/0000-0003-3407-7033,42,3,2020,2022,238,9,Engineering,True
+MANIT Bhopal,A5024127048,Vishnu Prasad,https://orcid.org/0000-0001-7430-5390,41,9,2016,2025,565,10,Engineering,True
+MANIT Bhopal,A5043401934,Dheeraj Agrawal,https://orcid.org/0000-0001-9196-4830,41,11,2016,2026,733,14,Medicine,True
+MANIT Bhopal,A5038650263,Namita Tiwari,https://orcid.org/0000-0001-6355-9459,40,10,2016,2026,202,9,Computer Science,True
+MANIT Bhopal,A5044450960,R. K. Baghel,https://orcid.org/0000-0001-8836-5300,40,10,2016,2026,260,11,Engineering,True
+MANIT Bhopal,A5064960914,Giribabu Dyanamina,https://orcid.org/0000-0002-4292-3992,39,7,2019,2026,208,8,Engineering,True
+MANIT Bhopal,A5066574787,Hari Lal Tiwari,https://orcid.org/0000-0002-6817-6999,39,9,2017,2026,273,11,Environmental Science,True
+MANIT Bhopal,A5087954217,Jyoti Bharti,https://orcid.org/0000-0003-0237-9029,38,11,2016,2026,334,8,Computer Science,True
+MANIT Bhopal,A5002163459,Ashis Kumar Pradhan,https://orcid.org/0000-0003-0876-805X,37,7,2020,2026,565,15,"Economics, Econometrics and Finance",True
+MANIT Bhopal,A5033858041,Sri Khetwat Saritha,https://orcid.org/0000-0002-6139-8978,37,9,2016,2026,168,6,Computer Science,True
+MANIT Bhopal,A5034932738,Vilas Warudkar,https://orcid.org/0000-0003-3273-1185,37,10,2017,2026,808,13,Engineering,True
+MANIT Bhopal,A5038684358,Usha Chouhan,https://orcid.org/0000-0001-6546-1738,37,11,2016,2026,154,6,"Biochemistry, Genetics and Molecular Biology",True
+MANIT Bhopal,A5090001638,Shailendra Jain,https://orcid.org/0000-0002-3391-1711,37,10,2016,2026,503,12,Engineering,True
+MANIT Bhopal,A5031312635,Lalita Gupta,https://orcid.org/0000-0002-6317-0563,36,10,2016,2026,620,7,Computer Science,True
+MANIT Bhopal,A5100667837,Sundaramurthy Suresh,https://orcid.org/0000-0002-1424-9259,35,8,2016,2023,873,14,Engineering,True
+MANIT Bhopal,A5102765471,Rajesh Nema,https://orcid.org/0000-0003-2519-7551,35,9,2016,2025,591,13,Engineering,True
+MANIT Bhopal,A5022603456,Anil Kumar,https://orcid.org/0000-0002-2846-4347,34,3,2016,2018,2592,24,Agricultural and Biological Sciences,True
+MANIT Bhopal,A5044146748,Sangeeta Nakhate,https://orcid.org/0000-0002-9844-0949,34,11,2016,2026,104,6,Engineering,True
+MANIT Bhopal,A5024132117,Savita Dixit,https://orcid.org/0000-0002-4630-0645,33,8,2016,2025,610,11,Materials Science,True
+MANIT Bhopal,A5089843731,Vasudev Dehalwar,https://orcid.org/0000-0002-0965-1542,33,7,2020,2026,374,7,Computer Science,True
+MANIT Bhopal,A5101475554,Arvind Mittal,https://orcid.org/0000-0003-2981-9899,33,10,2016,2026,568,10,Engineering,True
+MANIT Bhopal,A5103119013,N. P. Patidar,https://orcid.org/0009-0009-3232-0723,33,8,2017,2025,149,7,Engineering,True
+MANIT Bhopal,A5017811320,Aditya Goel,https://orcid.org/0000-0002-3469-9273,32,10,2016,2026,290,10,Engineering,True
+MANIT Bhopal,A5017844316,Madhu Shandilya,https://orcid.org/0009-0009-3874-456X,32,9,2016,2026,239,8,Computer Science,True
+MANIT Bhopal,A5041004629,Jyoti Mittal,https://orcid.org/0000-0001-6910-3815,32,10,2016,2026,2788,21,Environmental Science,True
+MANIT Bhopal,A5101826137,Alok Singh,https://orcid.org/0000-0002-3785-1189,32,7,2017,2026,994,16,Engineering,True
+MANIT Bhopal,A5037347792,Pushpendra Kumar,https://orcid.org/0000-0001-7555-2625,31,9,2018,2026,316,7,Computer Science,True
+MANIT Bhopal,A5083375784,Jyoti Singhai,https://orcid.org/0000-0002-7096-9269,31,11,2016,2026,390,10,Computer Science,True
+MANIT Bhopal,A5019342905,Amit Bhagat,https://orcid.org/0000-0003-3704-2469,30,9,2016,2026,289,10,Computer Science,True
+MANIT Bhopal,A5030232349,More Raju,https://orcid.org/0000-0002-7246-5654,30,6,2021,2026,188,9,Engineering,True
+MANIT Bhopal,NAME:yogendra kumar,Yogendra Kumar,https://orcid.org/0000-0003-1486-8356,30,10,2016,2025,151,6,Engineering,True
+MANIT Bhopal,A5038532273,Siraj Ahmed,https://orcid.org/0000-0003-2248-5646,29,7,2017,2025,700,12,Engineering,True
+MANIT Bhopal,A5042798145,Priyanka Dhurvey,https://orcid.org/0000-0003-4840-7144,29,8,2017,2026,93,6,Engineering,True
+MANIT Bhopal,A5052329817,Amit Suhane,https://orcid.org/0000-0001-9712-3602,29,8,2017,2026,651,12,Engineering,True
+MANIT Bhopal,A5065530636,Ram Narayan Yadav,https://orcid.org/0000-0002-3635-5925,29,10,2016,2026,788,10,Computer Science,True
+MANIT Bhopal,A5068539618,Sarvesh P. S. Rajput,https://orcid.org/0000-0003-1619-7103,29,7,2018,2026,212,7,Engineering,True
+MANIT Bhopal,A5078071310,Archana Soni,https://orcid.org/0000-0002-5091-165X,29,7,2017,2026,910,10,Engineering,True
+MANIT Bhopal,A5013103708,S.P.S. Rajput,https://orcid.org/0000-0002-9347-7267,28,10,2016,2026,338,10,Engineering,True
+MANIT Bhopal,A5018824781,Manisha Dubey,https://orcid.org/0009-0001-4745-0805,28,8,2016,2025,309,8,Engineering,True
+MANIT Bhopal,A5039065444,Piyush Kumar Patel,https://orcid.org/0000-0002-6687-3678,28,8,2017,2026,799,12,Engineering,True
+MANIT Bhopal,A5056430818,Akhilesh Barve,https://orcid.org/0000-0002-9924-0332,28,6,2019,2025,678,16,"Business, Management and Accounting",True
+MANIT Bhopal,A5057386663,Mrityunjay Singh Chauhan,,28,10,2016,2026,482,8,Environmental Science,True
+MANIT Bhopal,A5016815937,J. P. Jaiswal,https://orcid.org/0000-0003-4308-2280,27,6,2016,2021,162,6,Mathematics,True
+MANIT Bhopal,A5053995311,Bharat Modhera,https://orcid.org/0000-0001-6044-1746,27,9,2016,2026,319,10,Engineering,True
+MANIT Bhopal,A5087358758,Vaibhav Soni,https://orcid.org/0000-0002-6472-5938,27,5,2022,2026,179,8,Computer Science,True
+MANIT Bhopal,A5002925456,Atul Lanjewar,https://orcid.org/0000-0002-0433-8151,26,9,2016,2025,616,14,Engineering,True
+MANIT Bhopal,A5014667345,Bholanath Roy,https://orcid.org/0000-0001-5590-7804,26,6,2021,2026,148,6,Computer Science,True
+MANIT Bhopal,A5017545304,Chimata Murali Krishna,https://orcid.org/0000-0001-5891-6546,26,6,2018,2026,168,8,Engineering,True
+MANIT Bhopal,A5035944817,Sarvesh Kumar Pandey,https://orcid.org/0000-0002-6315-8118,26,3,2024,2026,322,11,Engineering,True
+MANIT Bhopal,A5059215546,Varun Bajaj,https://orcid.org/0000-0002-8721-1219,26,3,2024,2026,208,9,Neuroscience,True
+MANIT Bhopal,A5112236855,G. R. Bivina,https://orcid.org/0000-0002-9923-3386,26,6,2021,2026,91,4,Social Sciences,True
+MANIT Bhopal,A5041133074,Rishi Kumar Singh,https://orcid.org/0000-0001-7632-2899,25,8,2017,2026,191,10,Engineering,True
+MANIT Bhopal,A5005344048,Mahendra Kumar Choudhary,https://orcid.org/0000-0003-3862-6562,24,7,2018,2026,115,7,Environmental Science,True
+MANIT Bhopal,A5048708524,Ramkishor Anant,https://orcid.org/0000-0002-9288-8830,24,7,2020,2026,114,6,Engineering,True
+MANIT Bhopal,A5065027430,Manoj Arya,https://orcid.org/0000-0002-9235-2534,24,4,2023,2026,79,4,Engineering,True
+MANIT Bhopal,A5065761121,Raman Nateriya,https://orcid.org/0000-0003-1741-2290,24,9,2017,2026,226,8,Engineering,True
+MANIT Bhopal,A5074381212,Alok Mittal,https://orcid.org/0000-0002-7037-0977,24,11,2016,2026,1843,17,Environmental Science,True
+MANIT Bhopal,A5083743131,Vikash Kumar,https://orcid.org/0000-0002-5015-2761,24,6,2020,2026,183,7,Engineering,True
+MANIT Bhopal,A5017658242,Bikrant Kesari,https://orcid.org/0000-0003-3363-3421,23,9,2016,2026,826,9,"Business, Management and Accounting",True
+MANIT Bhopal,A5044039623,Ajay Pandey,https://orcid.org/0000-0002-2445-8863,23,8,2018,2025,480,9,Medicine,True
+MANIT Bhopal,A5046871980,Sunder Lal Pal,https://orcid.org/0000-0002-3787-9085,23,7,2019,2026,254,9,Engineering,True
+MANIT Bhopal,A5051336940,Amit Telang,,23,8,2016,2023,414,11,Engineering,True
+MANIT Bhopal,A5065565354,N. P. Patidar,https://orcid.org/0000-0003-2863-2977,23,8,2018,2026,349,8,Engineering,True
+MANIT Bhopal,A5075248800,Gajendra Dixit,,23,9,2016,2025,331,11,Engineering,True
+MANIT Bhopal,A5076648731,Ravi Kumar Mandava,https://orcid.org/0000-0001-6186-9138,23,3,2021,2023,177,6,Engineering,True
+MANIT Bhopal,A5079515429,Alpana Pandey,https://orcid.org/0000-0001-6285-0914,23,8,2017,2026,143,5,Computer Science,True
+MANIT Bhopal,A5079989430,Vinod Yadav,https://orcid.org/0000-0002-6507-6175,23,5,2020,2024,100,6,Engineering,True
+MANIT Bhopal,A5111033199,Ravindra Singh Rana,,23,7,2017,2026,365,8,Engineering,True
+MANIT Bhopal,A5008448755,Pushyamitra Mishra,https://orcid.org/0000-0003-1409-9315,22,9,2016,2026,272,7,Engineering,True
+MANIT Bhopal,A5052366435,Pushpender Yadav,https://orcid.org/0000-0001-6926-4803,22,3,2023,2026,28,3,Social Sciences,True
+MANIT Bhopal,A5075700674,Gyaneshwar Singh Kushwaha,https://orcid.org/0000-0002-6048-0662,22,9,2016,2026,179,7,"Business, Management and Accounting",True
+MANIT Bhopal,A5081633803,J.L. Bhagoria,https://orcid.org/0000-0002-4958-8699,22,8,2018,2026,268,10,Engineering,True
+MANIT Bhopal,A5027261314,Laxmi Pradhan Kumre,https://orcid.org/0000-0003-1652-8187,21,8,2017,2026,209,6,Engineering,True
+MANIT Bhopal,A5037336479,Kavita Dehalwar,https://orcid.org/0000-0002-9466-5710,21,5,2016,2026,103,5,Social Sciences,True
+MANIT Bhopal,A5039694404,Pragati Agrawal,https://orcid.org/0000-0003-1284-7965,21,6,2021,2026,86,5,Computer Science,True
+MANIT Bhopal,A5040867644,Vishal Parashar,https://orcid.org/0000-0002-2396-0712,21,8,2016,2025,290,9,Engineering,True
+MANIT Bhopal,A5045680982,Archana Nigrawal,https://orcid.org/0000-0002-2820-1563,21,8,2017,2026,112,8,Materials Science,True
+MANIT Bhopal,A5048507138,Rahul Shrivastava,https://orcid.org/0000-0002-8544-5046,21,9,2016,2025,295,8,"Biochemistry, Genetics and Molecular Biology",True
+MANIT Bhopal,A5075551656,Jay Kumar Jain,https://orcid.org/0000-0002-9590-0006,21,5,2016,2026,100,4,Computer Science,True
+MANIT Bhopal,A5088106735,Pritikana Das,https://orcid.org/0000-0002-8274-6513,21,6,2021,2026,152,6,Engineering,True
+MANIT Bhopal,A5057233791,Arvind Rajawat,https://orcid.org/0000-0002-7803-6543,20,8,2016,2026,71,6,Computer Science,True
+MANIT Bhopal,A5066546260,Surabhi Mehrotra,https://orcid.org/0000-0002-6301-6603,20,8,2019,2026,117,6,Environmental Science,True
+MANIT Bhopal,A5090510208,Ghanshyam Singh Thakur,https://orcid.org/0000-0003-3530-9270,20,8,2016,2026,150,7,Computer Science,True
+MANIT Bhopal,A5015203693,Ramjeevan Singh Thakur,https://orcid.org/0000-0002-0195-7440,19,6,2016,2021,352,8,Computer Science,True
+MANIT Bhopal,A5016214796,Mukul Kulshrestha,https://orcid.org/0000-0002-3917-6324,19,7,2016,2026,93,7,Environmental Science,True
+MANIT Bhopal,A5031005993,Bhavana P. Shrivastava,https://orcid.org/0000-0003-4281-4240,19,8,2017,2026,169,7,Engineering,True
+MANIT Bhopal,A5033027664,Jigyendra Sen Yadav,https://orcid.org/0000-0002-4250-291X,19,11,2016,2026,145,6,Computer Science,True
+MANIT Bhopal,A5041580037,Vijay Panchore,https://orcid.org/0000-0001-9041-9451,19,6,2021,2026,59,5,Engineering,True
+MANIT Bhopal,A5062537355,Sanjay Soni,,19,7,2017,2023,220,8,Engineering,True
+MANIT Bhopal,A5064777550,Namita Srivastava,https://orcid.org/0000-0002-8119-5086,19,8,2016,2026,505,7,Decision Sciences,True
+MANIT Bhopal,A5051034719,Rajesh Gupta,https://orcid.org/0000-0001-5407-5372,18,7,2016,2025,459,10,Chemical Engineering,True
+MANIT Bhopal,A5103593402,Sanjay Srivastava,,18,9,2016,2026,165,7,Materials Science,True
+MANIT Bhopal,A5045496333,Siddhartha Rokade,https://orcid.org/0000-0003-1415-365X,17,7,2018,2026,46,4,Engineering,True
+MANIT Bhopal,A5048615209,Praveen Kaushik,https://orcid.org/0000-0001-6706-0735,17,5,2017,2022,278,8,Computer Science,True
+MANIT Bhopal,A5100667460,Sanjay Sharma,https://orcid.org/0009-0007-8225-4512,17,6,2016,2024,118,7,Computer Science,True
+MANIT Bhopal,A5101802815,Savita Dixit,https://orcid.org/0000-0002-1884-9040,17,6,2021,2026,140,6,Materials Science,True
+MANIT Bhopal,A5033578914,Varsha Rokade,https://orcid.org/0000-0003-3590-589X,16,7,2016,2026,100,3,"Business, Management and Accounting",True
+MANIT Bhopal,A5048387116,Khushhali  Menaria Pandey,https://orcid.org/0000-0002-3015-4364,16,8,2016,2025,45,4,"Biochemistry, Genetics and Molecular Biology",True
+MANIT Bhopal,A5060874410,Jay Mant Jha,https://orcid.org/0000-0001-6495-2631,16,5,2021,2025,361,10,Engineering,True
+MANIT Bhopal,A5079213264,Meena Agrawal,https://orcid.org/0000-0002-5412-6763,16,9,2016,2025,254,9,Engineering,True
+MANIT Bhopal,A5101785655,Pradeep Jain,https://orcid.org/0000-0001-7962-8199,16,6,2019,2026,184,7,Engineering,True
+MANIT Bhopal,A5110443015,D. Kishan,,16,6,2016,2026,309,5,Engineering,True
+MANIT Bhopal,A5007493204,Vikas Poonia,https://orcid.org/0000-0001-5819-3747,15,4,2018,2026,126,6,Environmental Science,True
+MANIT Bhopal,A5012487492,Manish Kashyap,https://orcid.org/0000-0001-6951-8447,15,5,2022,2026,158,5,Computer Science,True
+MANIT Bhopal,A5013067939,Subhankar Dutta,https://orcid.org/0000-0002-7808-4377,15,3,2024,2026,33,4,Mathematics,True
+MANIT Bhopal,A5027602373,Manjeet Singh Hora,https://orcid.org/0000-0003-4566-2908,15,7,2016,2025,76,5,Engineering,True
+MANIT Bhopal,A5050877932,Siddhartha Deb Roy,https://orcid.org/0000-0003-4266-2152,15,3,2024,2026,50,3,Engineering,True
+MANIT Bhopal,A5067005405,Manish Vishwakarma,https://orcid.org/0000-0002-4209-3036,15,8,2017,2025,1844,8,Materials Science,True
+MANIT Bhopal,A5081187299,Kashi Ram Aharwal,https://orcid.org/0000-0002-4307-8372,15,8,2018,2026,163,6,Engineering,True
+MANIT Bhopal,A5081212488,Narendra Laxman Gajbhiye,https://orcid.org/0000-0003-0530-417X,15,5,2019,2025,30,3,Engineering,True
+MANIT Bhopal,A5100918578,Atul Kumar,https://orcid.org/0000-0002-2237-0200,15,3,2024,2026,98,4,Engineering,True
+MANIT Bhopal,A5031847941,Shweta Mehroliya,https://orcid.org/0000-0001-5559-4086,14,5,2021,2026,118,7,Engineering,True
+MANIT Bhopal,A5035181746,Om Prakash Meena,https://orcid.org/0000-0002-0885-8584,14,5,2017,2024,59,4,Materials Science,True
+MANIT Bhopal,A5054304542,Rampal Pandey,https://orcid.org/0000-0003-1685-7474,14,3,2024,2026,80,6,Chemistry,True
+MANIT Bhopal,A5063007517,Nitin Dindorkar,,14,7,2017,2026,50,3,Engineering,True
+MANIT Bhopal,A5078229574,Jyoti Sarup,https://orcid.org/0000-0003-3975-5681,14,7,2016,2026,158,5,Environmental Science,True
+MANIT Bhopal,A5013830964,Rutuja Chavan,https://orcid.org/0000-0003-4957-768X,13,5,2020,2025,93,6,Environmental Science,True
+MANIT Bhopal,A5016524668,Yadunath Pathak,https://orcid.org/0000-0002-4062-7858,13,3,2024,2026,10,2,Computer Science,True
+MANIT Bhopal,A5020517285,Amit Banerji,https://orcid.org/0000-0002-2565-8736,13,8,2016,2026,44,4,"Business, Management and Accounting",True
+MANIT Bhopal,A5021497533,Sudhanshu Kumar,https://orcid.org/0000-0002-8410-0521,13,7,2019,2026,73,3,Engineering,True
+MANIT Bhopal,A5038146323,Jitendra Kumar,https://orcid.org/0000-0002-2938-6432,13,2,2024,2025,129,4,Computer Science,False
+MANIT Bhopal,A5079862227,Abhinav Varshney,https://orcid.org/0000-0002-9102-3878,13,7,2020,2026,114,6,Engineering,True
+MANIT Bhopal,A5082561677,Jyoti Rani,https://orcid.org/0000-0001-9541-7471,13,6,2020,2026,229,8,Engineering,True
+MANIT Bhopal,A5101487818,Sanjay Srivastava,https://orcid.org/0000-0001-6535-0712,13,6,2016,2025,95,7,Materials Science,True
+MANIT Bhopal,NAME:priyanka verma,Priyanka Verma,,13,4,2016,2019,814,8,"Business, Management and Accounting",True
+MANIT Bhopal,A5018986786,Alka Bharat,https://orcid.org/0000-0003-2421-1884,12,5,2022,2026,81,5,Environmental Science,True
+MANIT Bhopal,A5020422856,Shivendra Kumar Chaurasiya,https://orcid.org/0000-0001-6129-8881,12,8,2017,2026,171,7,Medicine,True
+MANIT Bhopal,A5026654655,S. K. Dubey,https://orcid.org/0000-0003-3421-6945,12,5,2017,2025,8,2,Engineering,True
+MANIT Bhopal,A5057564341,Ajay Kumar Somkuwar,https://orcid.org/0000-0001-7852-3870,12,8,2016,2026,42,2,Computer Science,True
+MANIT Bhopal,A5070259036,Manmohan Kapshe,https://orcid.org/0000-0003-0555-8882,12,7,2017,2025,256,7,Environmental Science,True
+MANIT Bhopal,A5101653368,Manoj Kumar Jha,https://orcid.org/0000-0002-8990-043X,12,6,2018,2025,75,5,Decision Sciences,True
+MANIT Bhopal,A5010569861,Vinita Mohindra,https://orcid.org/0000-0002-3155-5856,11,5,2018,2026,143,4,Arts and Humanities,True
+MANIT Bhopal,A5017479062,Madhvi Shakya,https://orcid.org/0000-0001-6408-4002,11,7,2016,2026,42,3,"Biochemistry, Genetics and Molecular Biology",True
+MANIT Bhopal,A5033889095,Juned Raheem,https://orcid.org/0000-0002-8739-0595,11,4,2023,2026,64,5,Engineering,True
+MANIT Bhopal,A5039861554,Mangesh Lodhe,https://orcid.org/0000-0003-4072-0822,11,5,2020,2026,64,4,Materials Science,True
+MANIT Bhopal,A5042093785,Sukeshni Tirkey,https://orcid.org/0000-0001-6930-0069,11,4,2020,2025,139,7,Engineering,True
+MANIT Bhopal,A5052051562,Sunil Kumar Katiyar,https://orcid.org/0000-0002-8364-472X,11,7,2016,2026,193,5,Engineering,True
+MANIT Bhopal,A5063644198,Santanu Pakhira,https://orcid.org/0000-0001-6371-9811,11,3,2024,2026,29,3,Materials Science,True
+MANIT Bhopal,A5063765998,R. K. Nema,https://orcid.org/0000-0002-6634-6464,11,7,2016,2026,294,3,Engineering,True
+MANIT Bhopal,A5072377323,Hasthi Venkateswarlu,https://orcid.org/0009-0008-1383-2670,11,2,2025,2026,21,3,Engineering,False
+MANIT Bhopal,A5076519711,Jayashree Baral,https://orcid.org/0000-0001-7285-0811,11,5,2022,2026,37,4,Engineering,True
+MANIT Bhopal,A5081740210,Arvind Kumar,https://orcid.org/0000-0003-0495-199X,11,5,2021,2026,227,9,Engineering,True
+MANIT Bhopal,A5083669395,Ajay Kumar Verma,https://orcid.org/0000-0001-8006-8475,11,7,2017,2026,269,6,"Business, Management and Accounting",True
+MANIT Bhopal,A5085293711,Rahul Tiwari,https://orcid.org/0000-0002-7574-4149,11,6,2020,2026,21,3,Social Sciences,True
+MANIT Bhopal,A5100428871,Rakesh Kumar,https://orcid.org/0000-0001-6674-4035,11,7,2016,2026,45,4,Engineering,True
+MANIT Bhopal,A5103269395,Sujoy Das,https://orcid.org/0000-0003-2495-6691,11,5,2016,2023,77,4,Computer Science,True
+MANIT Bhopal,A5112614724,Deepak Kumar Raghuvanshi,,11,5,2017,2025,449,5,Engineering,True
+MANIT Bhopal,A5036567044,Akhilesh Soni,https://orcid.org/0000-0003-0521-5257,10,5,2017,2026,496,3,Engineering,True
+MANIT Bhopal,A5049665993,Navneet Munoth,https://orcid.org/0000-0003-2704-1403,10,6,2020,2026,20,3,Arts and Humanities,True
+MANIT Bhopal,A5051770401,Supriya Vyas,https://orcid.org/0000-0003-1965-2343,10,6,2016,2026,38,4,Environmental Science,True
+MANIT Bhopal,A5053787282,Anuj Jaiswal,https://orcid.org/0000-0001-9562-9298,10,4,2023,2026,54,4,Social Sciences,True
+MANIT Bhopal,A5009215334,Vimlesh Kumar Soni,https://orcid.org/0000-0002-0877-9130,9,5,2017,2025,115,5,"Business, Management and Accounting",False
+MANIT Bhopal,A5066410507,Sumit H. Dhawane,https://orcid.org/0000-0002-0680-6801,9,5,2020,2026,124,5,Engineering,False
+MANIT Bhopal,A5102928505,Suneet Kaur,https://orcid.org/0000-0003-2510-4976,9,6,2016,2025,10,2,Engineering,False
+MANIT Bhopal,A5103175904,Yogesh Kumar Garg,https://orcid.org/0000-0003-4207-0544,9,5,2020,2026,24,3,Engineering,False
+MANIT Bhopal,NAME:ramesh kumar nayak,Ramesh Kumar Nayak,https://orcid.org/0000-0002-5515-8986,9,4,2020,2025,81,3,Engineering,False
+MANIT Bhopal,A5073196595,Rajeev Parmar,https://orcid.org/0000-0001-5810-7917,8,4,2022,2026,18,3,Environmental Science,False
+MANIT Bhopal,A5073547747,Jitendra Adhikari,https://orcid.org/0000-0001-9728-5644,8,3,2024,2026,19,3,Engineering,False
+MANIT Bhopal,A5077135063,Rupak Kishor,https://orcid.org/0000-0002-5178-7697,8,2,2025,2026,51,3,Environmental Science,False
+MANIT Bhopal,A5118899728,Soumya Mukherjee,https://orcid.org/0009-0006-8563-920X,8,2,2025,2026,8,2,Physics and Astronomy,False
+MANIT Bhopal,A5125709699,Aditya Goel,,8,2,2025,2026,0,0,Engineering,False
+MANIT Bhopal,NAME:ajay verma,Ajay Verma,,8,4,2020,2026,24,3,Engineering,False
+MANIT Bhopal,NAME:amit dubey,Amit Dubey,,8,6,2016,2025,35,4,Materials Science,False
+MANIT Bhopal,A5004729152,Krishna Kumar Dhote,https://orcid.org/0000-0002-3145-4801,7,6,2016,2026,25,3,Social Sciences,False
+MANIT Bhopal,A5008115207,Preeti Onkar,https://orcid.org/0000-0002-7967-8433,7,5,2016,2026,24,2,Social Sciences,False
+MANIT Bhopal,A5011397760,Neeraj Kumar Tiwari,https://orcid.org/0000-0003-3844-9244,7,2,2024,2025,5,1,Engineering,False
+MANIT Bhopal,A5056131165,Akash Sinha,https://orcid.org/0000-0002-4577-6123,7,2,2025,2026,4,1,Computer Science,False
+MANIT Bhopal,A5057044841,Kanchapogu Suresh,https://orcid.org/0000-0001-8122-3289,7,6,2020,2026,63,4,Environmental Science,False
+MANIT Bhopal,A5060763885,Madan Dhanora,https://orcid.org/0000-0003-3023-3086,7,3,2024,2026,3,1,"Business, Management and Accounting",False
+MANIT Bhopal,A5089607013,Abhay Sharma,https://orcid.org/0000-0001-7069-3621,7,2,2024,2025,33,4,Engineering,False
+MANIT Bhopal,A5091438109,Akkala Subba Rao,,7,5,2021,2026,0,0,Engineering,False
+MANIT Bhopal,A5000282910,Rajesh Kumar Mahato,https://orcid.org/0000-0002-0334-2693,6,3,2024,2026,15,2,Environmental Science,False
+MANIT Bhopal,A5016820477,Anjali Dhengle,https://orcid.org/0000-0003-3361-2372,6,3,2023,2026,17,1,Environmental Science,False
+MANIT Bhopal,A5023822652,Gaurav Upadhyay,https://orcid.org/0000-0002-1842-3277,6,2,2024,2025,1,1,Engineering,False
+MANIT Bhopal,A5031417375,Vinay Mohan Das,https://orcid.org/0000-0002-5501-2872,6,4,2022,2026,7,2,Engineering,False
+MANIT Bhopal,A5037097263,Priyamitra Munoth,https://orcid.org/0000-0002-2786-8366,6,3,2024,2026,8,1,Environmental Science,False
+MANIT Bhopal,A5048990404,Ramesh Kumar Thakur,https://orcid.org/0000-0002-3086-2811,6,3,2024,2026,0,0,Computer Science,False
+MANIT Bhopal,A5065102244,Neha Pranav Kolhe,https://orcid.org/0000-0001-6981-5863,6,5,2016,2026,30,2,Social Sciences,False
+MANIT Bhopal,A5089316200,Ramarajan Ramanathan,https://orcid.org/0009-0002-3728-6797,6,2,2025,2026,20,3,Energy,False
+MANIT Bhopal,A5089579008,Gumpu Srinivasulu,,6,3,2024,2026,1,1,Engineering,False
+MANIT Bhopal,A5091597412,Rajnish Shrivastava,https://orcid.org/0000-0001-8654-206X,6,3,2016,2019,118,4,Engineering,False
+MANIT Bhopal,A5101972912,Vivek Garg,https://orcid.org/0000-0002-9538-307X,6,3,2024,2026,25,2,Engineering,False
+MANIT Bhopal,A5102727123,Subhajit Patra,https://orcid.org/0000-0002-8946-0091,6,4,2020,2026,37,3,Environmental Science,False
+MANIT Bhopal,A5121032740,Manoj Jha,https://orcid.org/0000-0002-8990-043X,6,2,2025,2026,5,2,Decision Sciences,False
+MANIT Bhopal,A5128360316,Sanjeev Singh,https://orcid.org/0000-0003-4298-5701,6,2,2025,2026,1,1,Engineering,False
+MANIT Bhopal,A5028148341,Priyanka Verma,https://orcid.org/0000-0002-2153-893X,5,3,2021,2023,28,3,Computer Science,False
+MANIT Bhopal,A5034465151,Gurveer Singh,https://orcid.org/0000-0001-7564-4917,5,3,2024,2026,21,2,Engineering,False
+MANIT Bhopal,A5035268953,Rajshree Kamat,https://orcid.org/0000-0002-4029-9225,5,5,2017,2026,2,1,Environmental Science,False
+MANIT Bhopal,A5037833249,Suryakant Gautam,https://orcid.org/0000-0001-8579-9832,5,2,2025,2026,3,1,Engineering,False
+MANIT Bhopal,A5057241730,Ravindra D. Jilte,https://orcid.org/0000-0003-3383-8179,5,2,2024,2025,227,4,Engineering,False
+MANIT Bhopal,A5058982730,Punjan Dohare,https://orcid.org/0000-0002-2952-1366,5,2,2025,2026,2,1,Engineering,False
+MANIT Bhopal,A5060242509,Kamal Jeet Singh,https://orcid.org/0000-0002-9987-4829,5,3,2023,2025,40,2,Engineering,False
+MANIT Bhopal,A5069170425,Hemanth Chaduvula,https://orcid.org/0000-0001-5376-992X,5,3,2024,2026,2,1,Engineering,False
+MANIT Bhopal,A5101414494,Pankaj Kumar,https://orcid.org/0000-0003-2101-8667,5,2,2019,2026,104,1,Computer Science,False
+MANIT Bhopal,A5101605829,Anupama Sharma,https://orcid.org/0000-0001-8006-0895,5,2,2024,2025,61,2,Engineering,False
+MANIT Bhopal,A5121450698,Sweta Jain,,5,1,2026,2026,1,1,Computer Science,False
+MANIT Bhopal,A5130387939,Khushhali M. Pandey,https://orcid.org/0000-0002-3015-4364,5,1,2026,2026,1,1,Medicine,False
+MANIT Bhopal,A5130978241,P. K. Agrawal,https://orcid.org/0000-0003-1284-7965,5,1,2026,2026,1,1,Computer Science,False
+MANIT Bhopal,A5140473046,Prashant Baredar,,5,2,2018,2026,0,0,Engineering,False
+MANIT Bhopal,NAME:dheeraj agarwal,Dheeraj Agarwal,,5,4,2017,2025,37,3,Engineering,False
+MANIT Bhopal,NAME:manish pandey,Manish Pandey,,5,2,2025,2026,8,2,Computer Science,False
+MANIT Bhopal,A5005399472,Subhash Singh,https://orcid.org/0000-0003-3726-896X,4,2,2025,2026,1,1,Engineering,False
+MANIT Bhopal,A5012756857,Ajay Kumar Thawait,,4,4,2020,2026,25,2,Environmental Science,False
+MANIT Bhopal,A5026030700,Anugrah Anilkumar Nagaich,https://orcid.org/0000-0001-6405-1585,4,4,2021,2026,9,1,Engineering,False
+MANIT Bhopal,A5043156812,Emon Barua,https://orcid.org/0000-0002-6746-4278,4,2,2025,2026,10,2,Engineering,False
+MANIT Bhopal,A5045084969,Akash M. Chandran,https://orcid.org/0000-0002-2432-497X,4,2,2025,2026,19,3,Engineering,False
+MANIT Bhopal,A5047924123,Arshi Parashar,https://orcid.org/0000-0002-1483-5223,4,2,2023,2025,6,2,Engineering,False
+MANIT Bhopal,A5069069663,Rajat Soni,https://orcid.org/0000-0003-3666-6608,4,3,2024,2026,18,2,Environmental Science,False
+MANIT Bhopal,A5074502641,Nabendu Paul,https://orcid.org/0000-0001-7340-7571,4,3,2024,2026,27,2,Engineering,False
+MANIT Bhopal,A5075074973,Shuchi Srivastava,https://orcid.org/0000-0003-4352-8158,4,2,2025,2026,1,1,Arts and Humanities,False
+MANIT Bhopal,A5100012418,Chandan Kumar Verma,,4,2,2025,2026,0,0,Psychology,False
+MANIT Bhopal,A5101650366,Dharmendar Kumar Sharma,https://orcid.org/0000-0003-4843-3457,4,4,2019,2026,49,3,Engineering,False
+MANIT Bhopal,A5102193647,Manisha Dubey,,4,4,2021,2026,0,0,Engineering,False
+MANIT Bhopal,A5102988375,Kishan Dharavath,https://orcid.org/0000-0003-1058-3548,4,4,2016,2025,57,3,Engineering,False
+MANIT Bhopal,A5108147549,Kamal Singh,,4,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5109286582,Gumpu Srinivasulu,,4,2,2025,2026,2,1,Engineering,False
+MANIT Bhopal,A5109467291,Dheraj Kumar Agarwal,,4,4,2020,2026,16,1,Engineering,False
+MANIT Bhopal,A5134969026,Anjuli Jain,https://orcid.org/0009-0004-5934-3793,4,2,2024,2026,2,1,Arts and Humanities,False
+MANIT Bhopal,NAME:jyoti bharti,Jyoti Bharti,,4,2,2025,2026,8,2,Computer Science,False
+MANIT Bhopal,NAME:k. sudhakar,K. Sudhakar,https://orcid.org/0000-0002-4867-2362,4,3,2016,2025,569,4,Energy,False
+MANIT Bhopal,NAME:kavita dehalwar,Kavita Dehalwar,https://orcid.org/0000-0002-9466-5710,4,2,2019,2025,32,3,Social Sciences,False
+MANIT Bhopal,NAME:p.k. agarwal,P.K. Agarwal,,4,3,2017,2024,31,3,Social Sciences,False
+MANIT Bhopal,NAME:rajesh wadhvani,Rajesh Wadhvani,https://orcid.org/0000-0002-2048-997X,4,2,2022,2025,12,2,Computer Science,False
+MANIT Bhopal,A5008346286,K.S. Yadav,https://orcid.org/0000-0002-5438-5749,3,3,2024,2026,7,1,Mathematics,False
+MANIT Bhopal,A5021990756,Sudhanshu Kumar,,3,2,2024,2025,8,2,Engineering,False
+MANIT Bhopal,A5027182561,Soumya Ranjan Guru,https://orcid.org/0000-0003-0035-1209,3,2,2025,2026,0,0,Engineering,False
+MANIT Bhopal,A5031624168,Rahul Pal,https://orcid.org/0000-0002-4384-5156,3,2,2025,2026,1,1,Engineering,False
+MANIT Bhopal,A5035848453,Deepak Kumar,https://orcid.org/0000-0001-5280-843X,3,2,2025,2026,0,0,Computer Science,False
+MANIT Bhopal,A5044856013,Dharavath Kishan,https://orcid.org/0000-0002-2140-4181,3,3,2018,2025,31,2,Engineering,False
+MANIT Bhopal,A5087019956,Sukanti Behera,https://orcid.org/0000-0003-3917-780X,3,3,2024,2026,14,2,Energy,False
+MANIT Bhopal,A5102724757,Shweta Bhandari,https://orcid.org/0000-0002-2701-9866,3,2,2025,2026,17,1,Computer Science,False
+MANIT Bhopal,A5102801989,Surendra Singh,https://orcid.org/0000-0001-9114-607X,3,2,2024,2025,13,1,Computer Science,False
+MANIT Bhopal,A5104034634,Sandeep Kumar Patel,,3,2,2022,2023,4,1,Engineering,False
+MANIT Bhopal,A5111323413,Shuchi Srivastava,https://orcid.org/0009-0002-2617-1046,3,2,2024,2025,2,1,Decision Sciences,False
+MANIT Bhopal,A5114401952,Vicky Lalramsangi,https://orcid.org/0000-0002-3792-4544,3,2,2025,2026,12,1,Engineering,False
+MANIT Bhopal,A5122571066,Suneet Kaur,,3,1,2026,2026,1,1,Engineering,False
+MANIT Bhopal,A5122709919,Sushma Gupta,,3,1,2026,2026,4,2,Engineering,False
+MANIT Bhopal,A5122808927,Jyoti Rani,,3,1,2026,2026,4,1,Materials Science,False
+MANIT Bhopal,A5123909662,Manish Pandey,,3,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5126919996,Bikrant Kesari,,3,1,2026,2026,0,0,"Business, Management and Accounting",False
+MANIT Bhopal,A5129214021,Kamal Singh,https://orcid.org/0000-0003-3840-0352,3,1,2026,2026,1,1,Engineering,False
+MANIT Bhopal,A5130009967,D.K Raghuvanshi,,3,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5133007493,Ajay Pandey,https://orcid.org/0000-0002-2445-8863,3,1,2026,2026,0,0,Medicine,False
+MANIT Bhopal,A5133024012,V. Yadav,,3,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5133164786,Sudhakar Kumarasamy,,3,1,2026,2026,0,0,Energy,False
+MANIT Bhopal,A5135751850,Amit Dubey,,3,1,2026,2026,0,0,Materials Science,False
+MANIT Bhopal,A5137019232,Mukul Kulshrestha,,3,2,2025,2026,0,0,Engineering,False
+MANIT Bhopal,A5138809572,Manish Pandey,,3,1,2026,2026,0,0,Computer Science,False
+MANIT Bhopal,NAME:anuj jaiswal,Anuj Jaiswal,https://orcid.org/0000-0001-9562-9298,3,2,2024,2025,4,1,Social Sciences,False
+MANIT Bhopal,NAME:tikendra nath verma,Tikendra Nath Verma,https://orcid.org/0000-0001-7818-1663,3,1,2025,2025,3,1,Engineering,False
+MANIT Bhopal,NAME:v. yadav,V. Yadav,,3,2,2024,2026,2,1,Engineering,False
+MANIT Bhopal,NAME:vikram garg,Vikram Garg,,3,2,2025,2026,0,0,Computer Science,False
+MANIT Bhopal,A5000014787,Medipelly Rampavan,https://orcid.org/0000-0002-7611-3744,2,1,2025,2025,7,1,Computer Science,False
+MANIT Bhopal,A5004476213,Ashish Das,https://orcid.org/0000-0002-4099-1035,2,1,2026,2026,1,1,Materials Science,False
+MANIT Bhopal,A5006605757,Kavita Gidwani,,2,2,2025,2026,9,1,"Economics, Econometrics and Finance",False
+MANIT Bhopal,A5015519318,Charu Parashar,,2,2,2016,2024,2,1,Engineering,False
+MANIT Bhopal,A5017236879,A.R. Siddiqui,https://orcid.org/0009-0005-9025-3099,2,2,2017,2018,16,2,Engineering,False
+MANIT Bhopal,A5021442524,B. G. Rajeev Gandhi,https://orcid.org/0000-0002-1090-528X,2,2,2024,2026,1,1,Engineering,False
+MANIT Bhopal,A5028075085,R.S. Thakur,,2,2,2017,2018,4,1,Computer Science,False
+MANIT Bhopal,A5035479354,Anil Kumar Sharma,https://orcid.org/0000-0001-9809-4700,2,2,2022,2023,28,2,Agricultural and Biological Sciences,False
+MANIT Bhopal,A5037436980,Manoj K. Jha,https://orcid.org/0000-0001-7351-4764,2,2,2017,2024,58,2,"Biochemistry, Genetics and Molecular Biology",False
+MANIT Bhopal,A5039240468,T. S. Bheemraj,https://orcid.org/0000-0001-5182-5529,2,2,2025,2026,2,1,Engineering,False
+MANIT Bhopal,A5040242633,Ashish Kumar Sahu,https://orcid.org/0000-0003-4731-961X,2,1,2026,2026,0,0,Computer Science,False
+MANIT Bhopal,A5040536632,Harsangeet Kaur,,2,2,2023,2025,4,1,Engineering,False
+MANIT Bhopal,A5044886542,Mansi Gyanchandani,https://orcid.org/0000-0003-3127-1770,2,1,2026,2026,0,0,Computer Science,False
+MANIT Bhopal,A5060507037,Vijaya Kumar Bulasara,https://orcid.org/0000-0002-0644-3318,2,2,2020,2022,17,2,Environmental Science,False
+MANIT Bhopal,A5060749376,Charumitra Kapshe,https://orcid.org/0000-0002-2724-8466,2,2,2021,2022,5,2,Engineering,False
+MANIT Bhopal,A5061617183,Akash Oraon,https://orcid.org/0000-0002-7156-7157,2,2,2025,2026,0,0,Materials Science,False
+MANIT Bhopal,A5065951273,Dheeraj Kumar Agarwal,,2,1,2023,2023,4,2,Computer Science,False
+MANIT Bhopal,A5072948556,Ashish k. Sahu,https://orcid.org/0000-0003-4731-961X,2,2,2022,2026,7,2,Computer Science,False
+MANIT Bhopal,A5083166847,Vibhuti Chauhan,https://orcid.org/0000-0003-4954-1214,2,1,2025,2025,15,2,Engineering,False
+MANIT Bhopal,A5085051984,Nakul Dhagat,https://orcid.org/0000-0001-6356-6683,2,2,2020,2025,6,1,"Economics, Econometrics and Finance",False
+MANIT Bhopal,A5085265977,Manmath Kumar Dash,https://orcid.org/0000-0003-3639-2803,2,2,2024,2026,3,1,Materials Science,False
+MANIT Bhopal,A5089845634,Bulbul Shukla,https://orcid.org/0000-0002-3036-3369,2,2,2022,2026,4,1,Environmental Science,False
+MANIT Bhopal,A5100626168,Ajay Verma,https://orcid.org/0000-0002-3464-8820,2,2,2017,2018,189,2,Engineering,False
+MANIT Bhopal,A5100693824,Manisha Singh,https://orcid.org/0009-0006-1342-7726,2,2,2025,2026,5,1,Computer Science,False
+MANIT Bhopal,A5100785603,Vivek Pratap Singh,https://orcid.org/0000-0001-7206-6023,2,1,2026,2026,2,1,Engineering,False
+MANIT Bhopal,A5101480715,Karunesh Kumar Shukla,https://orcid.org/0000-0002-7070-8712,2,1,2026,2026,1,1,Engineering,False
+MANIT Bhopal,A5101587500,Ajay Kumar Pandey,https://orcid.org/0000-0003-1064-139X,2,2,2017,2026,0,0,"Biochemistry, Genetics and Molecular Biology",False
+MANIT Bhopal,A5101721624,Deepak Kumar,https://orcid.org/0000-0001-9048-8828,2,2,2023,2026,16,1,Computer Science,False
+MANIT Bhopal,A5101946937,Vivek Garg,https://orcid.org/0000-0001-9381-7172,2,2,2017,2024,0,0,Engineering,False
+MANIT Bhopal,A5103270932,Amit Dubey,https://orcid.org/0000-0002-8005-4169,2,2,2025,2026,1,1,Physics and Astronomy,False
+MANIT Bhopal,A5117290879,Priyanka Verma,https://orcid.org/0000-0001-6446-606X,2,1,2025,2025,1,1,"Business, Management and Accounting",False
+MANIT Bhopal,A5118703906,Akash M. Chandran,https://orcid.org/0000-0002-2432-497X,2,1,2026,2026,7,1,Energy,False
+MANIT Bhopal,A5123710868,Surendra Singh,,2,1,2025,2025,0,0,Computer Science,False
+MANIT Bhopal,A5123746992,Namita Srivastava,,2,1,2026,2026,1,1,Decision Sciences,False
+MANIT Bhopal,A5128352459,Shailendra Kumar,https://orcid.org/0000-0002-0132-0538,2,1,2022,2022,6,1,Energy,False
+MANIT Bhopal,A5140961493,Soumya Mukherjee,,2,1,2026,2026,0,0,Materials Science,False
+MANIT Bhopal,A5141203639,Manish Pandey,,2,1,2026,2026,0,0,Computer Science,False
+MANIT Bhopal,A5143954778,Manmath Kumar Dash,,2,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5155494597,R.S. Thakur,,2,1,2016,2016,0,0,Computer Science,False
+MANIT Bhopal,A5156286592,RK Pateriya,,2,1,2025,2025,0,0,Computer Science,False
+MANIT Bhopal,NAME:a. jain,A. Jain,,2,2,2018,2023,43,2,Agricultural and Biological Sciences,False
+MANIT Bhopal,NAME:akhtar rasool,Akhtar Rasool,,2,2,2023,2025,3,1,Computer Science,False
+MANIT Bhopal,NAME:bhawna p. shrivastava,Bhawna P. Shrivastava,,2,2,2017,2024,12,2,Engineering,False
+MANIT Bhopal,NAME:dharmendra pandey,Dharmendra Pandey,https://orcid.org/0000-0002-6541-5894,2,2,2024,2026,6,1,Energy,False
+MANIT Bhopal,NAME:dhirendra pratap singh,Dhirendra Pratap Singh,,2,1,2025,2025,2,1,Computer Science,False
+MANIT Bhopal,NAME:jagdish singh,Jagdish Singh,https://orcid.org/0000-0001-6013-2927,2,2,2016,2025,6,2,Agricultural and Biological Sciences,False
+MANIT Bhopal,NAME:k. mishra,K. Mishra,,2,1,2024,2024,12,1,Agricultural and Biological Sciences,False
+MANIT Bhopal,NAME:rajesh gupta,Rajesh Gupta,,2,2,2024,2025,18,2,Engineering,False
+MANIT Bhopal,NAME:shailendra jain,Shailendra Jain,,2,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5001211014,Joyti Bharti,,1,1,2016,2016,9,1,Computer Science,False
+MANIT Bhopal,A5001417775,Krishnan Suresh,https://orcid.org/0000-0002-9688-9697,1,1,2024,2024,0,0,Engineering,False
+MANIT Bhopal,A5002746061,Jyoti Rani,https://orcid.org/0000-0001-6334-4642,1,1,2025,2025,6,1,Materials Science,False
+MANIT Bhopal,A5010159541,Rajshree Kamat,,1,1,2022,2022,0,0,Social Sciences,False
+MANIT Bhopal,A5011925762,Ashutosh Sharma,https://orcid.org/0000-0002-4990-5252,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,A5012794152,Deepak Kumar,https://orcid.org/0000-0003-2409-9706,1,1,2025,2025,1,1,Computer Science,False
+MANIT Bhopal,A5013679365,Dheeraj Agrawal,,1,1,2026,2026,0,0,Agricultural and Biological Sciences,False
+MANIT Bhopal,A5017293369,Rahul Kumar Pal,,1,1,2024,2024,0,0,Engineering,False
+MANIT Bhopal,A5017352124,Jaideep Gupta,,1,1,2023,2023,2,1,Decision Sciences,False
+MANIT Bhopal,A5019011333,Manoja Kumar Behera,https://orcid.org/0000-0002-1660-7101,1,1,2026,2026,1,1,Engineering,False
+MANIT Bhopal,A5025995967,RK Baghel,,1,1,2023,2023,6,1,Materials Science,False
+MANIT Bhopal,A5027345646,Deepak Kumar,https://orcid.org/0000-0003-2082-1036,1,1,2025,2025,1,1,Social Sciences,False
+MANIT Bhopal,A5031497862,Khetwat Saritha,,1,1,2021,2021,2,1,Computer Science,False
+MANIT Bhopal,A5035658875,Kajal Mishra,https://orcid.org/0000-0002-9665-8565,1,1,2026,2026,0,0,Materials Science,False
+MANIT Bhopal,A5042553756,Abhilash Gunti,https://orcid.org/0000-0001-8483-8545,1,1,2024,2024,1,1,Engineering,False
+MANIT Bhopal,A5044048588,K.S. Yadav,,1,1,2025,2025,0,0,Medicine,False
+MANIT Bhopal,A5044361202,Krishnan Suryanarayanan,,1,1,2026,2026,0,0,Computer Science,False
+MANIT Bhopal,A5045681745,Rajesh Wadhwani,,1,1,2026,2026,2,1,Computer Science,False
+MANIT Bhopal,A5046574731,Suresh Kumar Gaware,,1,1,2020,2020,23,1,Materials Science,False
+MANIT Bhopal,A5049725607,Jagdish Prasad Singh,https://orcid.org/0000-0002-1447-785X,1,1,2026,2026,0,0,Environmental Science,False
+MANIT Bhopal,A5050306334,K.M. Pandey,https://orcid.org/0000-0002-3015-4364,1,1,2025,2025,0,0,Medicine,False
+MANIT Bhopal,A5051795264,Sangeeta Nakhte,,1,1,2016,2016,0,0,Engineering,False
+MANIT Bhopal,A5053255749,Prabhakaran Krishnakumar,,1,1,2023,2023,3,1,Engineering,False
+MANIT Bhopal,A5053740103,Vaibhav Soni,,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,A5054559319,Pankaj Swarnakar,,1,1,2021,2021,10,1,Engineering,False
+MANIT Bhopal,A5059678527,Seemi Ahmed,,1,1,2025,2025,0,0,Social Sciences,False
+MANIT Bhopal,A5061858745,P. K. Jain,,1,1,2024,2024,2,1,Engineering,False
+MANIT Bhopal,A5062068505,Subhash Singh,https://orcid.org/0000-0002-4874-4805,1,1,2026,2026,0,0,Environmental Science,False
+MANIT Bhopal,A5062238482,Akanksha Gupta,https://orcid.org/0000-0002-8221-2570,1,1,2025,2025,1,1,Physics and Astronomy,False
+MANIT Bhopal,A5066795314,Mohammad Taufik,https://orcid.org/0000-0001-7243-552X,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5072520935,Raman Nateria,,1,1,2017,2017,8,1,Engineering,False
+MANIT Bhopal,A5082623399,Aningi Mokhalingam,https://orcid.org/0000-0002-2008-936X,1,1,2025,2025,2,1,Materials Science,False
+MANIT Bhopal,A5083919443,Anoop Ayra,,1,1,2018,2018,2,1,Engineering,False
+MANIT Bhopal,A5084513412,N. Jayanth,,1,1,2024,2024,0,0,Engineering,False
+MANIT Bhopal,A5087710342,Rahul Kumar Tiwari,https://orcid.org/0000-0002-8214-9268,1,1,2021,2021,0,0,Engineering,False
+MANIT Bhopal,A5090712353,Saritha Khetawat,,1,1,2021,2021,1,1,Agricultural and Biological Sciences,False
+MANIT Bhopal,A5092102068,Sreenivasulu Gumpu,https://orcid.org/0000-0001-6610-5612,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5092567361,Giribabu Dyanmina,,1,1,2023,2023,7,1,Engineering,False
+MANIT Bhopal,A5094304462,Sukeshni Trikey,,1,1,2024,2024,0,0,Engineering,False
+MANIT Bhopal,A5097633557,Ahmed Seemi,,1,1,2024,2024,0,0,Engineering,False
+MANIT Bhopal,A5101132892,Hergovind Singh,,1,1,2024,2024,1,1,"Business, Management and Accounting",False
+MANIT Bhopal,A5102309539,Dr Dheeraj Agarwal,,1,1,2018,2018,0,0,Engineering,False
+MANIT Bhopal,A5104031151,Gumpu Sreenivasulu,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5104035907,Kamal Nain Singh,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5104092680,Dyanamina Giribabu,,1,1,2022,2022,4,1,Engineering,False
+MANIT Bhopal,A5113701791,Siddhartha Rokade,,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,A5113817184,Prof. Ashutosh Sharma,,1,1,2017,2017,1,1,Engineering,False
+MANIT Bhopal,A5115563928,A. R. Siddiqui,,1,1,2024,2024,0,0,Engineering,False
+MANIT Bhopal,A5115593550,Kiran Singh,https://orcid.org/0000-0002-1600-7210,1,1,2023,2023,7,1,"Biochemistry, Genetics and Molecular Biology",False
+MANIT Bhopal,A5121504099,Yogesh K. Garg,,1,1,2025,2025,1,1,Social Sciences,False
+MANIT Bhopal,A5121751088,Vishnu Prasad,,1,1,2026,2026,1,1,Engineering,False
+MANIT Bhopal,A5121833126,Ashutosh Sharma,,1,1,2026,2026,0,0,Social Sciences,False
+MANIT Bhopal,A5121966877,Hari Lal Tiwari,,1,1,2026,2026,0,0,Agricultural and Biological Sciences,False
+MANIT Bhopal,A5122380588,Ramesh Nayak,https://orcid.org/0000-0002-4468-0912,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5125000810,R.N. Yadav,,1,1,2025,2025,0,0,Computer Science,False
+MANIT Bhopal,A5125108457,S.K. Katiyar,,1,1,2026,2026,2,1,Engineering,False
+MANIT Bhopal,A5126115768,SUNDAR LAL PAL,,1,1,2026,2026,0,0,Environmental Science,False
+MANIT Bhopal,A5126463871,Siraj Ahmed,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5129778356,O.P. Meena,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5129983627,Deepak Kumar,https://orcid.org/0000-0001-9048-8828,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5130069414,Bhavana P. Shrivastava,,1,1,2026,2026,1,1,Medicine,False
+MANIT Bhopal,A5132584986,Shailendra Kumar,https://orcid.org/0000-0002-0132-0538,1,1,2025,2025,0,0,Energy,False
+MANIT Bhopal,A5133061182,Manish Vishwakarma,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5133312546,Sudhanshu Kumar,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5133506004,M. M. Malik,,1,1,2026,2026,0,0,Environmental Science,False
+MANIT Bhopal,A5133530779,Nabendu Paul,,1,1,2026,2026,0,0,Environmental Science,False
+MANIT Bhopal,A5133669344,Harjinder Singh,https://orcid.org/0000-0002-9203-427X,1,1,2026,2026,1,1,Energy,False
+MANIT Bhopal,A5134369499,Jiwan lal Bhagoria,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5135441843,Saurabh Shukla,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5135857245,Surendra Singh,,1,1,2025,2025,0,0,Computer Science,False
+MANIT Bhopal,A5135895681,Amit Ojha,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5136210483,Prabhakaran KK,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5136532134,Rishi Kumar Singh,,1,1,2026,2026,0,0,Computer Science,False
+MANIT Bhopal,A5138681341,Jay Kumar Jain,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5138693664,Manish Pandey,,1,1,2026,2026,0,0,Medicine,False
+MANIT Bhopal,A5139225566,Suman Das,,1,1,2026,2026,0,0,Decision Sciences,False
+MANIT Bhopal,A5140508195,Ajay Verma,,1,1,2026,2026,0,0,Decision Sciences,False
+MANIT Bhopal,A5140884198,Manish Pandey,,1,1,2026,2026,0,0,Computer Science,False
+MANIT Bhopal,A5143947172,Sudhanshu Kumar,,1,1,2026,2026,0,0,Engineering,False
+MANIT Bhopal,A5147419962,Sandeep Patel,,1,1,2026,2026,0,0,Computer Science,False
+MANIT Bhopal,A5152913686,M K Choudhary,,1,1,2019,2019,0,0,Environmental Science,False
+MANIT Bhopal,A5154408916,Sanjay Sharma,,1,1,2025,2025,0,0,Computer Science,False
+MANIT Bhopal,A5154742749,K.R. Pardasani,,1,1,2016,2016,0,0,Neuroscience,False
+MANIT Bhopal,A5155472688,ANUGRAH ANILKUMAR NAGAICH,,1,1,2025,2025,0,0,Environmental Science,False
+MANIT Bhopal,A5155874722,R.K. Pateriya,,1,1,2017,2017,0,0,Computer Science,False
+MANIT Bhopal,A5157491756,DR. K.R. PARDASANI,,1,1,2022,2022,0,0,Decision Sciences,False
+MANIT Bhopal,A5157668844,G. S. Thakur,,1,1,2026,2026,0,0,Medicine,False
+MANIT Bhopal,A5157987070,Akash M. Chandran,,1,1,2026,2026,0,0,Energy,False
+MANIT Bhopal,NAME:a. dubey,A. Dubey,,1,1,2020,2020,3,1,Materials Science,False
+MANIT Bhopal,NAME:a. telang,A. Telang,,1,1,2023,2023,13,1,Engineering,False
+MANIT Bhopal,NAME:a. varshney,A. Varshney,,1,1,2023,2023,10,1,Engineering,False
+MANIT Bhopal,NAME:aashish sahu,Aashish Sahu,,1,1,2018,2018,3,1,"Business, Management and Accounting",False
+MANIT Bhopal,NAME:amit banerji,Amit Banerji,,1,1,2024,2024,0,0,"Business, Management and Accounting",False
+MANIT Bhopal,NAME:anjuli jain,Anjuli Jain,,1,1,2025,2025,0,0,Social Sciences,False
+MANIT Bhopal,NAME:anoop arya,Anoop Arya,,1,1,2025,2025,1,1,Engineering,False
+MANIT Bhopal,NAME:anupama sharma,Anupama Sharma,,1,1,2025,2025,0,0,Computer Science,False
+MANIT Bhopal,NAME:arvind mittal,Arvind Mittal,,1,1,2022,2022,15,1,Engineering,False
+MANIT Bhopal,NAME:ashish kumar sahu,Ashish Kumar Sahu,,1,1,2026,2026,0,0,Social Sciences,False
+MANIT Bhopal,NAME:atul lanjewar,Atul Lanjewar,https://orcid.org/0000-0001-9344-5946,1,1,2022,2022,7,1,Engineering,False
+MANIT Bhopal,NAME:dheeraj k agarwal,Dheeraj K Agarwal,,1,1,2021,2021,17,1,Medicine,False
+MANIT Bhopal,NAME:dheeraj k. agarwal,Dheeraj K. Agarwal,,1,1,2017,2017,62,1,Agricultural and Biological Sciences,False
+MANIT Bhopal,NAME:dheerendra mishra,Dheerendra Mishra,https://orcid.org/0000-0001-8115-6397,1,1,2025,2025,1,1,Computer Science,False
+MANIT Bhopal,NAME:dr. p.k. agarwal,Dr. P.K. Agarwal,,1,1,2020,2020,5,1,Engineering,False
+MANIT Bhopal,NAME:dr. priyanka verma,Dr. Priyanka Verma,,1,1,2018,2018,0,0,"Business, Management and Accounting",False
+MANIT Bhopal,NAME:gaurav dwivedi,Gaurav Dwivedi,,1,1,2025,2025,2,1,Engineering,False
+MANIT Bhopal,NAME:harjinder singh,Harjinder Singh,,1,1,2025,2025,0,0,Materials Science,False
+MANIT Bhopal,NAME:jain rekha,Jain Rekha,,1,1,2017,2017,44,1,Engineering,False
+MANIT Bhopal,NAME:k. vishwanath,K. Vishwanath,https://orcid.org/0000-0001-5285-8592,1,1,2026,2026,0,0,Materials Science,False
+MANIT Bhopal,NAME:kamal singh,Kamal Singh,https://orcid.org/0000-0003-3840-0352,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,NAME:khushhali menaria pandey,Khushhali Menaria Pandey,,1,1,2026,2026,0,0,Chemistry,False
+MANIT Bhopal,NAME:kumarasamy sudhakar,Kumarasamy Sudhakar,,1,1,2024,2024,8,1,Computer Science,False
+MANIT Bhopal,NAME:m. k. choudhary,M. K. Choudhary,,1,1,2024,2024,3,1,Agricultural and Biological Sciences,False
+MANIT Bhopal,NAME:m.m. malik,M.M. Malik,,1,1,2022,2022,13,1,Materials Science,False
+MANIT Bhopal,NAME:madhvi shakya,Madhvi Shakya,,1,1,2021,2021,20,1,Medicine,False
+MANIT Bhopal,NAME:manoj arya,Manoj Arya,,1,1,2025,2025,6,1,Engineering,False
+MANIT Bhopal,NAME:manoj jha,Manoj Jha,,1,1,2023,2023,0,0,Medicine,False
+MANIT Bhopal,NAME:mohammad taufik,Mohammad Taufik,,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,NAME:narendra gajbhiye,Narendra Gajbhiye,,1,1,2026,2026,2,1,Engineering,False
+MANIT Bhopal,NAME:nenavath sreenu,Nenavath Sreenu,https://orcid.org/0000-0003-1000-5019,1,1,2020,2020,24,1,"Economics, Econometrics and Finance",False
+MANIT Bhopal,NAME:p. k. agarwal,P. K. Agarwal,,1,1,2016,2016,3,1,Engineering,False
+MANIT Bhopal,NAME:pradeep kumar jain,Pradeep Kumar Jain,,1,1,2025,2025,1,1,Engineering,False
+MANIT Bhopal,NAME:pragati agrawal,Pragati Agrawal,https://orcid.org/0000-0003-1284-7965,1,1,2021,2021,3,1,Engineering,False
+MANIT Bhopal,NAME:pritikana das,Pritikana Das,https://orcid.org/0000-0002-8274-6513,1,1,2025,2025,1,1,Social Sciences,False
+MANIT Bhopal,NAME:priyanka paliwal,Priyanka Paliwal,,1,1,2025,2025,1,1,Engineering,False
+MANIT Bhopal,NAME:pushyamitra mishra,Pushyamitra Mishra,,1,1,2018,2018,13,1,Decision Sciences,False
+MANIT Bhopal,NAME:r. khare,R. Khare,,1,1,2024,2024,0,0,Agricultural and Biological Sciences,False
+MANIT Bhopal,NAME:r.s. thakur,R.S. Thakur,,1,1,2016,2016,0,0,"Biochemistry, Genetics and Molecular Biology",False
+MANIT Bhopal,NAME:rahul tiwari,Rahul Tiwari,,1,1,2022,2022,1,1,Social Sciences,False
+MANIT Bhopal,NAME:rajat soni,Rajat Soni,,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,NAME:rajnish kurchania,Rajnish Kurchania,,1,1,2025,2025,1,1,Materials Science,False
+MANIT Bhopal,NAME:rajshree kamat,Rajshree Kamat,https://orcid.org/0000-0002-4029-9225,1,1,2025,2025,1,1,Environmental Science,False
+MANIT Bhopal,NAME:ramkishor anant,Ramkishor Anant,,1,1,2025,2025,5,1,Engineering,False
+MANIT Bhopal,NAME:rekha jain,Rekha Jain,,1,1,2017,2017,51,1,Engineering,False
+MANIT Bhopal,NAME:rishi kumar singh,Rishi Kumar Singh,https://orcid.org/0000-0003-3518-3815,1,1,2025,2025,1,1,Engineering,False
+MANIT Bhopal,NAME:s. kaur,S. Kaur,,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,NAME:s.p.s. rajput,S.P.S. Rajput,,1,1,2025,2025,8,1,Engineering,False
+MANIT Bhopal,NAME:shivendra k. chaurasiya,Shivendra K. Chaurasiya,https://orcid.org/0000-0001-6129-8881,1,1,2025,2025,2,1,Engineering,False
+MANIT Bhopal,NAME:siddhartha rokade,Siddhartha Rokade,https://orcid.org/0000-0003-1415-365X,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,NAME:sudhanshu kumar,Sudhanshu Kumar,https://orcid.org/0000-0002-8410-0521,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,NAME:sumit h. dhawane,Sumit H. Dhawane,https://orcid.org/0000-0002-0680-6801,1,1,2025,2025,5,1,Engineering,False
+MANIT Bhopal,NAME:suneet kaur,Suneet Kaur,,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,NAME:usha chauhan,Usha Chauhan,,1,1,2016,2016,2,1,Computer Science,False
+MANIT Bhopal,NAME:varsha rokade,VARSHA ROKADE,,1,1,2024,2024,0,0,"Business, Management and Accounting",False
+MANIT Bhopal,NAME:vijayshri chaurasia,Vijayshri Chaurasia,,1,1,2016,2016,42,1,Computer Science,False
+MANIT Bhopal,NAME:vikash kumar,Vikash Kumar,https://orcid.org/0000-0002-5015-2761,1,1,2025,2025,0,0,Engineering,False
+MANIT Bhopal,NAME:vivek garg,Vivek Garg,,1,1,2024,2024,0,0,Engineering,False

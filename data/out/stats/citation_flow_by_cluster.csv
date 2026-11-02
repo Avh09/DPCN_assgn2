@@ -1,0 +1,73 @@
+your_inst,direction,cluster,citations,share_%
+MANIT Bhopal,incoming,University/college,36131,76.2
+MANIT Bhopal,incoming,NIT,4480,9.4
+MANIT Bhopal,incoming,IIT,3238,6.8
+MANIT Bhopal,incoming,Other,1083,2.3
+MANIT Bhopal,incoming,Government lab/agency,846,1.8
+MANIT Bhopal,incoming,IIIT,652,1.4
+MANIT Bhopal,incoming,Medical/health,237,0.5
+MANIT Bhopal,incoming,CSIR,219,0.5
+MANIT Bhopal,incoming,Industry,158,0.3
+MANIT Bhopal,incoming,Premier science inst.,144,0.3
+MANIT Bhopal,incoming,IISER,126,0.3
+MANIT Bhopal,incoming,DAE,122,0.3
+MANIT Bhopal,outgoing,University/college,27167,51.8
+MANIT Bhopal,outgoing,IIT,10719,20.4
+MANIT Bhopal,outgoing,NIT,6362,12.1
+MANIT Bhopal,outgoing,Other,2844,5.4
+MANIT Bhopal,outgoing,Government lab/agency,1189,2.3
+MANIT Bhopal,outgoing,IIIT,1111,2.1
+MANIT Bhopal,outgoing,Premier science inst.,871,1.7
+MANIT Bhopal,outgoing,CSIR,709,1.4
+MANIT Bhopal,outgoing,Medical/health,544,1.0
+MANIT Bhopal,outgoing,DAE,376,0.7
+MANIT Bhopal,outgoing,Industry,362,0.7
+MANIT Bhopal,outgoing,IISER,181,0.3
+NIT Jamshedpur,incoming,University/college,18594,72.9
+NIT Jamshedpur,incoming,NIT,2687,10.5
+NIT Jamshedpur,incoming,IIT,1943,7.6
+NIT Jamshedpur,incoming,Other,713,2.8
+NIT Jamshedpur,incoming,Government lab/agency,524,2.1
+NIT Jamshedpur,incoming,IIIT,377,1.5
+NIT Jamshedpur,incoming,CSIR,157,0.6
+NIT Jamshedpur,incoming,Premier science inst.,150,0.6
+NIT Jamshedpur,incoming,Industry,119,0.5
+NIT Jamshedpur,incoming,DAE,113,0.4
+NIT Jamshedpur,incoming,Medical/health,91,0.4
+NIT Jamshedpur,incoming,IISER,53,0.2
+NIT Jamshedpur,outgoing,University/college,19535,52.3
+NIT Jamshedpur,outgoing,IIT,7609,20.4
+NIT Jamshedpur,outgoing,NIT,4423,11.8
+NIT Jamshedpur,outgoing,Other,2255,6.0
+NIT Jamshedpur,outgoing,Government lab/agency,838,2.2
+NIT Jamshedpur,outgoing,Premier science inst.,599,1.6
+NIT Jamshedpur,outgoing,IIIT,536,1.4
+NIT Jamshedpur,outgoing,CSIR,489,1.3
+NIT Jamshedpur,outgoing,DAE,439,1.2
+NIT Jamshedpur,outgoing,Industry,315,0.8
+NIT Jamshedpur,outgoing,Medical/health,176,0.5
+NIT Jamshedpur,outgoing,IISER,146,0.4
+NIT Silchar,incoming,University/college,53176,73.1
+NIT Silchar,incoming,NIT,8920,12.3
+NIT Silchar,incoming,IIT,5747,7.9
+NIT Silchar,incoming,Other,1710,2.4
+NIT Silchar,incoming,Government lab/agency,925,1.3
+NIT Silchar,incoming,IIIT,810,1.1
+NIT Silchar,incoming,Premier science inst.,409,0.6
+NIT Silchar,incoming,Medical/health,282,0.4
+NIT Silchar,incoming,CSIR,232,0.3
+NIT Silchar,incoming,Industry,193,0.3
+NIT Silchar,incoming,DAE,160,0.2
+NIT Silchar,incoming,IISER,145,0.2
+NIT Silchar,outgoing,University/college,43525,54.5
+NIT Silchar,outgoing,IIT,15959,20.0
+NIT Silchar,outgoing,NIT,9808,12.3
+NIT Silchar,outgoing,Other,3912,4.9
+NIT Silchar,outgoing,Premier science inst.,1465,1.8
+NIT Silchar,outgoing,Government lab/agency,1406,1.8
+NIT Silchar,outgoing,IIIT,1144,1.4
+NIT Silchar,outgoing,CSIR,736,0.9
+NIT Silchar,outgoing,Medical/health,534,0.7
+NIT Silchar,outgoing,DAE,528,0.7
+NIT Silchar,outgoing,Industry,509,0.6
+NIT Silchar,outgoing,IISER,326,0.4

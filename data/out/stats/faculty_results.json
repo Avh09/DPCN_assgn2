@@ -1,0 +1,323 @@
+{
+ "MANIT Bhopal": {
+  "faculty_listed_today": 305,
+  "faculty_matched": 296,
+  "matched_current": 278,
+  "matched_former": 18,
+  "median_h_current_only": 6.0,
+  "h_index": {
+   "median": 6.0,
+   "p75": 10.0,
+   "p90": 14.0,
+   "max": 56,
+   "h_20_or_more": 11
+  },
+  "h_index_histogram": {
+   "0-0": 11,
+   "1-5": 133,
+   "6-10": 87,
+   "11-15": 42,
+   "16-20": 13,
+   "21-30": 6,
+   "31-100": 4
+  },
+  "core_authors_for_comparison": {
+   "number": 199,
+   "median_h": 8.0
+  },
+  "papers_with_a_faculty_author_%": 100.0,
+  "top5_by_h_index": [
+   {
+    "faculty_name": "Kumarasamy Sudhakar",
+    "faculty_status": "current",
+    "department": "Energy Science and Engineering",
+    "h_index": 56,
+    "papers": 145,
+    "citations": 11714
+   },
+   {
+    "faculty_name": "Tikendra Nath Verma",
+    "faculty_status": "current",
+    "department": "Mechanical Engineering",
+    "h_index": 37,
+    "papers": 145,
+    "citations": 4256
+   },
+   {
+    "faculty_name": "Prashant V. Baredar",
+    "faculty_status": "current",
+    "department": "Energy Science and Engineering",
+    "h_index": 36,
+    "papers": 113,
+    "citations": 5818
+   },
+   {
+    "faculty_name": "Gaurav Dwivedi",
+    "faculty_status": "current",
+    "department": "Energy Science and Engineering",
+    "h_index": 31,
+    "papers": 127,
+    "citations": 3236
+   },
+   {
+    "faculty_name": "Rajesh Purohit",
+    "faculty_status": "current",
+    "department": "Mechanical Engineering",
+    "h_index": 30,
+    "papers": 169,
+    "citations": 3272
+   }
+  ],
+  "top_departments_by_papers": [
+   {
+    "department": "Mechanical Engineering",
+    "faculty_matched": 46,
+    "papers": 1120,
+    "median_h_index": 8.0,
+    "q1_share_%": 34.5
+   },
+   {
+    "department": "Computer Science and Engineering",
+    "faculty_matched": 32,
+    "papers": 849,
+    "median_h_index": 8.0,
+    "q1_share_%": 40.0
+   },
+   {
+    "department": "Electrical Engineering",
+    "faculty_matched": 29,
+    "papers": 793,
+    "median_h_index": 9.0,
+    "q1_share_%": 33.8
+   },
+   {
+    "department": "Electronics and Communication Engineering",
+    "faculty_matched": 31,
+    "papers": 645,
+    "median_h_index": 6.0,
+    "q1_share_%": 21.6
+   },
+   {
+    "department": "Civil Engineering",
+    "faculty_matched": 39,
+    "papers": 507,
+    "median_h_index": 4.0,
+    "q1_share_%": 28.8
+   }
+  ]
+ },
+ "NIT Jamshedpur": {
+  "faculty_listed_today": 185,
+  "faculty_matched": 235,
+  "matched_current": 173,
+  "matched_former": 62,
+  "median_h_current_only": 5.0,
+  "h_index": {
+   "median": 4.0,
+   "p75": 8.0,
+   "p90": 11.0,
+   "max": 42,
+   "h_20_or_more": 3
+  },
+  "h_index_histogram": {
+   "0-0": 21,
+   "1-5": 117,
+   "6-10": 63,
+   "11-15": 29,
+   "16-20": 3,
+   "21-30": 0,
+   "31-100": 2
+  },
+  "core_authors_for_comparison": {
+   "number": 125,
+   "median_h": 8.0
+  },
+  "papers_with_a_faculty_author_%": 100.0,
+  "top5_by_h_index": [
+   {
+    "faculty_name": "Sunil Kumar",
+    "faculty_status": "current",
+    "department": "Mathematics",
+    "h_index": 42,
+    "papers": 137,
+    "citations": 6433
+   },
+   {
+    "faculty_name": "Balram Ambade",
+    "faculty_status": "current",
+    "department": "Chemistry",
+    "h_index": 34,
+    "papers": 92,
+    "citations": 4686
+   },
+   {
+    "faculty_name": "RASHMI SINHA",
+    "faculty_status": "current",
+    "department": "Electronics and Communication Engineering",
+    "h_index": 20,
+    "papers": 83,
+    "citations": 963
+   },
+   {
+    "faculty_name": "Sanja y",
+    "faculty_status": "current",
+    "department": "Mechanical Engineering",
+    "h_index": 18,
+    "papers": 53,
+    "citations": 1076
+   },
+   {
+    "faculty_name": "Dilip Kumar (Computer Science and Engineering)",
+    "faculty_status": "current",
+    "department": "Computer Science and Engineering",
+    "h_index": 16,
+    "papers": 34,
+    "citations": 656
+   }
+  ],
+  "top_departments_by_papers": [
+   {
+    "department": "Mechanical Engineering",
+    "faculty_matched": 39,
+    "papers": 665,
+    "median_h_index": 5.0,
+    "q1_share_%": 26.0
+   },
+   {
+    "department": "Electrical Engineering",
+    "faculty_matched": 22,
+    "papers": 615,
+    "median_h_index": 5.5,
+    "q1_share_%": 27.9
+   },
+   {
+    "department": "Electronics and Communication Engineering",
+    "faculty_matched": 23,
+    "papers": 581,
+    "median_h_index": 8.0,
+    "q1_share_%": 15.1
+   },
+   {
+    "department": "Computer Science and Engineering",
+    "faculty_matched": 26,
+    "papers": 443,
+    "median_h_index": 5.0,
+    "q1_share_%": 38.5
+   },
+   {
+    "department": "Mathematics",
+    "faculty_matched": 16,
+    "papers": 386,
+    "median_h_index": 7.0,
+    "q1_share_%": 26.5
+   }
+  ]
+ },
+ "NIT Silchar": {
+  "faculty_listed_today": 254,
+  "faculty_matched": 276,
+  "matched_current": 237,
+  "matched_former": 39,
+  "median_h_current_only": 7.0,
+  "h_index": {
+   "median": 7.0,
+   "p75": 13.25,
+   "p90": 22.0,
+   "max": 54,
+   "h_20_or_more": 35
+  },
+  "h_index_histogram": {
+   "0-0": 15,
+   "1-5": 95,
+   "6-10": 70,
+   "11-15": 35,
+   "16-20": 29,
+   "21-30": 24,
+   "31-100": 8
+  },
+  "core_authors_for_comparison": {
+   "number": 200,
+   "median_h": 10.0
+  },
+  "papers_with_a_faculty_author_%": 100.0,
+  "top5_by_h_index": [
+   {
+    "faculty_name": "Md. Ahmaruzzaman",
+    "faculty_status": "current",
+    "department": "Chemistry",
+    "h_index": 54,
+    "papers": 276,
+    "citations": 10624
+   },
+   {
+    "faculty_name": "Samuel Lalthazuala Rokhum",
+    "faculty_status": "current",
+    "department": "Chemistry",
+    "h_index": 47,
+    "papers": 186,
+    "citations": 7193
+   },
+   {
+    "faculty_name": "Krishna Murari Pandey",
+    "faculty_status": "former",
+    "department": "Mechanical Engineering",
+    "h_index": 43,
+    "papers": 211,
+    "citations": 6132
+   },
+   {
+    "faculty_name": "Lalit Chandra Saikia",
+    "faculty_status": "current",
+    "department": "Electrical Engineering",
+    "h_index": 36,
+    "papers": 169,
+    "citations": 3941
+   },
+   {
+    "faculty_name": "Sukumar Pati",
+    "faculty_status": "current",
+    "department": "Mechanical Engineering",
+    "h_index": 36,
+    "papers": 151,
+    "citations": 3445
+   }
+  ],
+  "top_departments_by_papers": [
+   {
+    "department": "Electronics and Communication Engineering",
+    "faculty_matched": 37,
+    "papers": 1870,
+    "median_h_index": 13.0,
+    "q1_share_%": 21.0
+   },
+   {
+    "department": "Mechanical Engineering",
+    "faculty_matched": 46,
+    "papers": 1669,
+    "median_h_index": 9.5,
+    "q1_share_%": 37.7
+   },
+   {
+    "department": "Electrical Engineering",
+    "faculty_matched": 38,
+    "papers": 1471,
+    "median_h_index": 8.5,
+    "q1_share_%": 43.8
+   },
+   {
+    "department": "Computer Science and Engineering",
+    "faculty_matched": 28,
+    "papers": 945,
+    "median_h_index": 9.0,
+    "q1_share_%": 38.1
+   },
+   {
+    "department": "Civil Engineering",
+    "faculty_matched": 44,
+    "papers": 774,
+    "median_h_index": 5.5,
+    "q1_share_%": 32.7
+   }
+  ]
+ }
+}

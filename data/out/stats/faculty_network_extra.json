@@ -1,0 +1,50 @@
+[
+ {
+  "scope": "all three institutes",
+  "faculty": 800,
+  "links": 1203,
+  "largest_component_faculty": 608,
+  "diameter_largest_component": 20,
+  "avg_shortest_path_largest_component": 7.593,
+  "degree_assortativity": 0.095,
+  "h_index_assortativity": 0.213,
+  "max_k_core": 5,
+  "faculty_in_max_core": 9
+ },
+ {
+  "scope": "MANIT Bhopal",
+  "faculty": 296,
+  "links": 483,
+  "largest_component_faculty": 235,
+  "diameter_largest_component": 16,
+  "avg_shortest_path_largest_component": 5.279,
+  "degree_assortativity": 0.077,
+  "h_index_assortativity": 0.202,
+  "max_k_core": 4,
+  "faculty_in_max_core": 56
+ },
+ {
+  "scope": "NIT Jamshedpur",
+  "faculty": 230,
+  "links": 236,
+  "largest_component_faculty": 140,
+  "diameter_largest_component": 10,
+  "avg_shortest_path_largest_component": 4.704,
+  "degree_assortativity": -0.045,
+  "h_index_assortativity": 0.141,
+  "max_k_core": 3,
+  "faculty_in_max_core": 39
+ },
+ {
+  "scope": "NIT Silchar",
+  "faculty": 274,
+  "links": 451,
+  "largest_component_faculty": 224,
+  "diameter_largest_component": 12,
+  "avg_shortest_path_largest_component": 5.052,
+  "degree_assortativity": 0.073,
+  "h_index_assortativity": 0.104,
+  "max_k_core": 5,
+  "faculty_in_max_core": 9
+ }
+]

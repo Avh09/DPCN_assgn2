@@ -1,0 +1,7 @@
+.openalex_key
+data/raw/
+__pycache__/
+.venv/
+.~lock*
+
+.streamlit/secrets.toml

@@ -1,0 +1,1373 @@
+[
+ {
+  "tab": "overview",
+  "title": "Productivity: size or output per faculty?",
+  "text": "NITS has the most papers (8,411); per research-active faculty member NITS is first (MANIT 19.5, NITJ 15.6, NITS 30.7 papers per faculty), so size and output per faculty member agree.",
+  "evidence": {
+   "papers": {
+    "MANIT Bhopal": 5759,
+    "NIT Jamshedpur": 3594,
+    "NIT Silchar": 8411
+   },
+   "papers_per_active_faculty": {
+    "MANIT Bhopal": 19.46,
+    "NIT Jamshedpur": 15.63,
+    "NIT Silchar": 30.7
+   }
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "overview",
+  "title": "Impact depends on the measure",
+  "text": "Mean citations per paper is highest at MANIT (15.8), the median is highest at NITS (5) and the median field-weighted impact (FWCI, 1 = world average) at NITS (0.82). A mean ahead of the median means a few very highly cited papers lift the average.",
+  "evidence": {
+   "mean": {
+    "MANIT Bhopal": 15.75,
+    "NIT Jamshedpur": 12.26,
+    "NIT Silchar": 14.85
+   },
+   "median": {
+    "MANIT Bhopal": 4.0,
+    "NIT Jamshedpur": 4.0,
+    "NIT Silchar": 5.0
+   },
+   "fwci_median": {
+    "MANIT Bhopal": 0.727,
+    "NIT Jamshedpur": 0.671,
+    "NIT Silchar": 0.821
+   },
+   "fwci_mean": {
+    "MANIT Bhopal": 1.98,
+    "NIT Jamshedpur": 1.684,
+    "NIT Silchar": 1.731
+   }
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "overview",
+  "title": "Institute h-index and size",
+  "text": "MANIT has the highest institute h-index (118). h-index grows with the number of papers; drawing the same number of papers (3,594) from each institute gives mean h-indices of MANIT 100.3, NITS 87.6, NITJ 84.0, so the ordering survives size normalisation.",
+  "evidence": {
+   "observed": {
+    "MANIT Bhopal": 118,
+    "NIT Jamshedpur": 84,
+    "NIT Silchar": 112
+   },
+   "equal_size_mean": {
+    "MANIT Bhopal": 100.3,
+    "NIT Jamshedpur": 84.0,
+    "NIT Silchar": 87.6
+   },
+   "percentiles": {
+    "MANIT Bhopal": {
+     "50": 4.0,
+     "75": 14.0,
+     "90": 36.19999999999982,
+     "95": 66.0,
+     "99": 188.26000000000022
+    },
+    "NIT Jamshedpur": {
+     "50": 4.0,
+     "75": 11.0,
+     "90": 28.0,
+     "95": 49.0,
+     "99": 138.28000000000065
+    },
+    "NIT Silchar": {
+     "50": 5.0,
+     "75": 17.0,
+     "90": 39.0,
+     "95": 60.0,
+     "99": 131.0
+    }
+   }
+  },
+  "kind": "observation",
+  "caveat": "h-index counts only the 2016-2026 papers of verified faculty.",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "overview",
+  "title": "Journal quality",
+  "text": "NITS has the highest Q1 share of ranked journal papers (36.8%). Q1 share = Q1 journal papers / journal papers with a quartile (MANIT 1,191/3,584, NITJ 630/2,398, NITS 2,006/5,453); ranking coverage is at least 99.8% of journal papers.",
+  "evidence": {
+   "q1_share": {
+    "MANIT Bhopal": 33.2,
+    "NIT Jamshedpur": 26.3,
+    "NIT Silchar": 36.8
+   },
+   "coverage": {
+    "MANIT Bhopal": 99.8,
+    "NIT Jamshedpur": 100.0,
+    "NIT Silchar": 99.8
+   }
+  },
+  "kind": "observation",
+  "caveat": "Some quartiles are estimated from venue statistics (see Methodology); conference ranks are reported separately.",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "overview",
+  "title": "Growth",
+  "text": "NITJ grew most between 2016-2020 and 2021-2025 (+174%), from the smallest base (854 papers). Others: MANIT +102%, NITS +102%.",
+  "evidence": {
+   "growth_%": {
+    "MANIT Bhopal": 102.1,
+    "NIT Jamshedpur": 174.5,
+    "NIT Silchar": 101.8
+   }
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "publications",
+  "title": "Q1 share over time",
+  "text": "Q1 share of ranked journal papers, 2016-17 -> 2024-25: MANIT 23% -> 41%; NITJ 26% -> 26%; NITS 34% -> 42%. Q1 share rose at MANIT, NITS; NITJ is flat. 2026 is excluded (partial year).",
+  "evidence": {
+   "q1_share_2016_17_to_2024_25": {
+    "MANIT Bhopal": [
+     22.8,
+     40.7
+    ],
+    "NIT Jamshedpur": [
+     26.2,
+     26.4
+    ],
+    "NIT Silchar": [
+     33.8,
+     42.0
+    ]
+   }
+  },
+  "kind": "observation",
+  "caveat": "Historical papers use the quartile of the journal in the paper's year where available (SCImago per year); Scopus CiteScore quartiles use the nearest available year.",
+  "period": "2016-2025"
+ },
+ {
+  "tab": "publications",
+  "title": "Conference share",
+  "text": "The conference share of papers stays within MANIT 24-45%; NITJ 20-45%; NITS 23-40% of papers in a given year (2016-2025).",
+  "evidence": {
+   "conference_share_range_%": {
+    "MANIT Bhopal": {
+     "min": 23.8,
+     "max": 44.6
+    },
+    "NIT Jamshedpur": {
+     "min": 20.3,
+     "max": 45.0
+    },
+    "NIT Silchar": {
+     "min": 23.1,
+     "max": 39.6
+    }
+   }
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2025"
+ },
+ {
+  "tab": "publications",
+  "title": "Conference rankings",
+  "text": "Of 6,302 conference papers, 3,476 have an identifiable conference and 2,826 appear only as a publisher series (Lecture Notes, AIP, Materials Today Proceedings). CORE ranks exist for 32 papers (B 20, C 12); there is no CORE A* or A paper among faculty papers. The unfiltered download holds 3 CORE A*/A conference papers that were identified (EMNLP 2023; two EACL 2026 Findings papers); none has a verified faculty author (the authors of these papers from the three institutes are students or visitors). Conferences hidden behind a publisher series cannot be ranked, so this count is a lower bound.",
+  "evidence": {
+   "conference_ranking": {
+    "conference_papers_unfiltered": 7279,
+    "named_conference": 4089,
+    "generic_series": 3190,
+    "core_ranked": {
+     "": 7215,
+     "B": 22,
+     "C": 15,
+     "National: USA": 9,
+     "TBR": 7,
+     "National:India": 4,
+     "A": 2,
+     "A*": 1,
+     "unranked": 1,
+     "National: India": 1,
+     "Regional": 1,
+     "National: japan": 1
+    },
+    "a_star_a_papers": 3,
+    "a_star_a_with_any_faculty_author": 0,
+    "a_star_a_without_faculty": 3,
+    "named_not_in_core": 4025,
+    "in_final_corpus": {
+     "conference_papers": 6302,
+     "named_conference": 3476,
+     "generic_series": 2826,
+     "core_ranked": {
+      "B": 20,
+      "C": 12
+     }
+    }
+   }
+  },
+  "kind": "observation",
+  "caveat": "CORE ranks computer-science conferences only; most conference papers here are engineering conferences, so absence of A*/A reflects the field mix as well as quality.",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "publications",
+  "title": "Quartile and citations",
+  "text": "For journal papers published 2016-2021 the median citations are about 43 for Q1 and 3 for Q4 journals; conference papers have a median of 1. The gap is shown as an association; journal quartile is not a direct measure of a paper's quality, and field and publication year differ between groups.",
+  "evidence": {
+   "median_citations": {
+    "Q1": 43.0,
+    "Q4": 3.0
+   },
+   "conference_median": 1.0
+  },
+  "kind": "observation",
+  "caveat": "Compare within fields (Methodology) before drawing conclusions.",
+  "period": "2016-2021 papers"
+ },
+ {
+  "tab": "publications",
+  "title": "Relative specialisation",
+  "text": "Fields where an institute publishes most above its share of the combined corpus (location quotient): NITJ Mathematics (2.4x); MANIT Social Sciences (1.7x); MANIT Agricultural and Biological Sciences (1.5x).",
+  "evidence": {
+   "top_location_quotients": [
+    {
+     "institution": "NIT Jamshedpur",
+     "name": "Mathematics",
+     "papers": 148,
+     "location_quotient": 2.39
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "name": "Social Sciences",
+     "papers": 129,
+     "location_quotient": 1.73
+    },
+    {
+     "institution": "MANIT Bhopal",
+     "name": "Agricultural and Biological Sciences",
+     "papers": 122,
+     "location_quotient": 1.54
+    }
+   ]
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "faculty",
+  "title": "Citation concentration",
+  "text": "Faculty citation Gini (full counting): MANIT 0.73, NITJ 0.72, NITS 0.71. The top 10% of faculty hold 57% (MANIT), 56% (NITJ), 53% (NITS) of citations; fractional counting (citations split among verified faculty authors) gives Gini 0.73, 0.74, 0.72.",
+  "evidence": {
+   "MANIT Bhopal": {
+    "gini_full": 0.726,
+    "gini_fractional": 0.727,
+    "top1_5_10_share": [
+     19.0,
+     43.5,
+     56.8
+    ],
+    "top_faculty": [
+     {
+      "name": "Kumarasamy Sudhakar",
+      "citations": 11714,
+      "share_%": 10.2
+     },
+     {
+      "name": "Prashant V. Baredar",
+      "citations": 5818,
+      "share_%": 5.1
+     },
+     {
+      "name": "Tikendra Nath Verma",
+      "citations": 4256,
+      "share_%": 3.7
+     }
+    ]
+   },
+   "NIT Jamshedpur": {
+    "gini_full": 0.723,
+    "gini_fractional": 0.736,
+    "top1_5_10_share": [
+     25.2,
+     42.4,
+     56.2
+    ],
+    "top_faculty": [
+     {
+      "name": "Sunil Kumar",
+      "citations": 6433,
+      "share_%": 13.2
+     },
+     {
+      "name": "Balram Ambade",
+      "citations": 4686,
+      "share_%": 9.6
+     },
+     {
+      "name": "Radha Krishna Prasad",
+      "citations": 1193,
+      "share_%": 2.4
+     }
+    ]
+   },
+   "NIT Silchar": {
+    "gini_full": 0.707,
+    "gini_fractional": 0.718,
+    "top1_5_10_share": [
+     15.3,
+     36.1,
+     52.7
+    ],
+    "top_faculty": [
+     {
+      "name": "Md. Ahmaruzzaman",
+      "citations": 10624,
+      "share_%": 6.8
+     },
+     {
+      "name": "Samuel Lalthazuala Rokhum",
+      "citations": 7193,
+      "share_%": 4.6
+     },
+     {
+      "name": "Krishna Murari Pandey",
+      "citations": 6132,
+      "share_%": 3.9
+     }
+    ]
+   }
+  },
+  "kind": "observation",
+  "caveat": "Gini over verified faculty with at least one paper; one shared highly cited paper counts fully for each faculty author in full counting.",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "faculty",
+  "title": "Reliance on single researchers",
+  "text": "The largest single contributor to citations at each institute: MANIT Kumarasamy Sudhakar (10.2%); NITJ Sunil Kumar (13.2%); NITS Md. Ahmaruzzaman (6.8%).",
+  "evidence": {
+   "MANIT Bhopal": [
+    {
+     "name": "Kumarasamy Sudhakar",
+     "citations": 11714,
+     "share_%": 10.2
+    },
+    {
+     "name": "Prashant V. Baredar",
+     "citations": 5818,
+     "share_%": 5.1
+    },
+    {
+     "name": "Tikendra Nath Verma",
+     "citations": 4256,
+     "share_%": 3.7
+    }
+   ],
+   "NIT Jamshedpur": [
+    {
+     "name": "Sunil Kumar",
+     "citations": 6433,
+     "share_%": 13.2
+    },
+    {
+     "name": "Balram Ambade",
+     "citations": 4686,
+     "share_%": 9.6
+    },
+    {
+     "name": "Radha Krishna Prasad",
+     "citations": 1193,
+     "share_%": 2.4
+    }
+   ],
+   "NIT Silchar": [
+    {
+     "name": "Md. Ahmaruzzaman",
+     "citations": 10624,
+     "share_%": 6.8
+    },
+    {
+     "name": "Samuel Lalthazuala Rokhum",
+     "citations": 7193,
+     "share_%": 4.6
+    },
+    {
+     "name": "Krishna Murari Pandey",
+     "citations": 6132,
+     "share_%": 3.9
+    }
+   ]
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "faculty",
+  "title": "Connectivity and impact",
+  "text": "Across 800 faculty, the number of faculty collaborators and mean field-weighted impact are moderately associated (Spearman 0.32, p 5.2e-20); controlling for number of papers the association is 0.08 (p 0.028). This is an association, not evidence that collaborating raises impact.",
+  "evidence": {
+   "n": 800,
+   "spearman_degree_vs_mean_fwci": [
+    0.316,
+    5.2e-20
+   ],
+   "spearman_distinct_coauthors_all_vs_mean_fwci": [
+    0.349,
+    2.7e-24
+   ],
+   "spearman_degree_vs_citations": [
+    0.672,
+    3.8e-106
+   ],
+   "spearman_betweenness_vs_mean_fwci": [
+    0.253,
+    4.2e-13
+   ],
+   "partial_degree_vs_mean_fwci_controlling_papers": [
+    0.078,
+    0.028
+   ],
+   "partial_distinct_coauthors_all_vs_mean_fwci_controlling_papers": [
+    0.02,
+    0.57
+   ],
+   "note": "association, not causation; productivity is controlled by rank-residuals; field mix and career stage are not controlled (career stage is not available)"
+  },
+  "kind": "possible explanation",
+  "caveat": "Field mix and career stage are not controlled; career stage is not available in the data.",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "papers",
+  "title": "Review articles",
+  "text": "Papers whose type is review or whose title says review/survey/overview: MANIT 10.8% of papers but 26.8% of citations (16 of the top 30); NITJ 5.5% of papers but 14.4% of citations (7 of the top 30); NITS 5.6% of papers but 14.1% of citations (13 of the top 30). The strict OpenAlex 'review' type alone is under 1% of papers, so most such papers are identified from titles.",
+  "evidence": [
+   {
+    "institution": "MANIT Bhopal",
+    "group": "review (strict: OpenAlex type)",
+    "papers": 23,
+    "share_of_papers_%": 0.4,
+    "citations": 458,
+    "share_of_citations_%": 0.5,
+    "mean_citations": 19.9,
+    "median_citations": 4.0,
+    "mean_fwci": 1.07,
+    "median_year": 2025.0,
+    "in_top30": 0
+   },
+   {
+    "institution": "MANIT Bhopal",
+    "group": "review-like (broad: type or title words)",
+    "papers": 624,
+    "share_of_papers_%": 10.8,
+    "citations": 24291,
+    "share_of_citations_%": 26.8,
+    "mean_citations": 38.9,
+    "median_citations": 9.0,
+    "mean_fwci": 2.94,
+    "median_year": 2022.0,
+    "in_top30": 16
+   },
+   {
+    "institution": "MANIT Bhopal",
+    "group": "not review",
+    "papers": 5135,
+    "share_of_papers_%": 89.2,
+    "citations": 66393,
+    "share_of_citations_%": 73.2,
+    "mean_citations": 12.9,
+    "median_citations": 4.0,
+    "mean_fwci": 1.86,
+    "median_year": 2023.0,
+    "in_top30": 14
+   },
+   {
+    "institution": "NIT Jamshedpur",
+    "group": "review (strict: OpenAlex type)",
+    "papers": 11,
+    "share_of_papers_%": 0.3,
+    "citations": 154,
+    "share_of_citations_%": 0.3,
+    "mean_citations": 14.0,
+    "median_citations": 4.0,
+    "mean_fwci": 1.04,
+    "median_year": 2025.0,
+    "in_top30": 0
+   },
+   {
+    "institution": "NIT Jamshedpur",
+    "group": "review-like (broad: type or title words)",
+    "papers": 197,
+    "share_of_papers_%": 5.5,
+    "citations": 6344,
+    "share_of_citations_%": 14.4,
+    "mean_citations": 32.2,
+    "median_citations": 8.0,
+    "mean_fwci": 2.62,
+    "median_year": 2022.0,
+    "in_top30": 7
+   },
+   {
+    "institution": "NIT Jamshedpur",
+    "group": "not review",
+    "papers": 3397,
+    "share_of_papers_%": 94.5,
+    "citations": 37717,
+    "share_of_citations_%": 85.6,
+    "mean_citations": 11.1,
+    "median_citations": 3.0,
+    "mean_fwci": 1.63,
+    "median_year": 2023.0,
+    "in_top30": 23
+   },
+   {
+    "institution": "NIT Silchar",
+    "group": "review (strict: OpenAlex type)",
+    "papers": 14,
+    "share_of_papers_%": 0.2,
+    "citations": 393,
+    "share_of_citations_%": 0.3,
+    "mean_citations": 28.1,
+    "median_citations": 4.0,
+    "mean_fwci": 1.03,
+    "median_year": 2023.0,
+    "in_top30": 0
+   },
+   {
+    "institution": "NIT Silchar",
+    "group": "review-like (broad: type or title words)",
+    "papers": 474,
+    "share_of_papers_%": 5.6,
+    "citations": 17630,
+    "share_of_citations_%": 14.1,
+    "mean_citations": 37.2,
+    "median_citations": 10.0,
+    "mean_fwci": 3.49,
+    "median_year": 2022.0,
+    "in_top30": 13
+   },
+   {
+    "institution": "NIT Silchar",
+    "group": "not review",
+    "papers": 7937,
+    "share_of_papers_%": 94.4,
+    "citations": 107264,
+    "share_of_citations_%": 85.9,
+    "mean_citations": 13.5,
+    "median_citations": 5.0,
+    "mean_fwci": 1.63,
+    "median_year": 2022.0,
+    "in_top30": 17
+   }
+  ],
+  "kind": "observation",
+  "caveat": "A title word is not proof of a review article; both definitions are shown in the Papers tab.",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "papers",
+  "title": "Large author teams",
+  "text": "63 papers have more than 10 authors (0.4% of papers). Their mean citations are 30.6 versus 14.5, 67% versus 33% of their ranked journal papers are Q1, and 86% versus 14% include a foreign author. They are too few to move any institute-level figure.",
+  "evidence": [
+   {
+    "team_size": "10 or fewer",
+    "institution": "all",
+    "papers": 17657,
+    "mean_citations": 14.5,
+    "median_citations": 4.0,
+    "mean_fwci": 1.8,
+    "journal_Q1_share_%": 33.3,
+    "international_collaboration_%": 13.5,
+    "conference_share_%": 35.7
+   },
+   {
+    "team_size": "more than 10 authors",
+    "institution": "all",
+    "papers": 63,
+    "mean_citations": 30.6,
+    "median_citations": 13.0,
+    "mean_fwci": 2.63,
+    "journal_Q1_share_%": 66.7,
+    "international_collaboration_%": 85.7,
+    "conference_share_%": 4.8
+   }
+  ],
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "citations",
+  "title": "What the internal citation network measures",
+  "text": "87.8% of the 28,040 citation links between the three institutes' papers are author self-citations (a shared verified faculty author), 8.6% are same-institute citations by other authors and 3.6% go between the three institutes. In-corpus in-degree and PageRank therefore describe research groups building on their own work, not influence across institutes.",
+  "evidence": {
+   "overall": {
+    "author_self": 24625,
+    "same_institute_other_author": 2401,
+    "between_our_institutes": 1014
+   },
+   "MANIT Bhopal": {
+    "author_self": 5323,
+    "same_institute_other_author": 759,
+    "between_our_institutes": 354
+   },
+   "NIT Jamshedpur": {
+    "author_self": 3451,
+    "same_institute_other_author": 347,
+    "between_our_institutes": 247
+   },
+   "NIT Silchar": {
+    "author_self": 15939,
+    "same_institute_other_author": 1316,
+    "between_our_institutes": 413
+   }
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "citations",
+  "title": "PageRank favours older papers",
+  "text": "39 of the 50 highest-PageRank papers were published in 2016-2018 and 0 after 2022, although later years have more papers. Older papers have had longer to be cited; the dashboard therefore also ranks each paper within its publication year.",
+  "evidence": {
+   "top50_by_year": {
+    "2016": 24,
+    "2017": 9,
+    "2018": 6,
+    "2019": 3,
+    "2020": 5,
+    "2021": 2,
+    "2022": 1
+   }
+  },
+  "kind": "possible explanation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "citations",
+  "title": "Between-institute citation share",
+  "text": "1,043 of 28,040 in-corpus links (3.7%) connect papers with no institute in common.",
+  "evidence": {
+   "flow_matrix_row_pct": {
+    "MANIT Bhopal": {
+     "MANIT Bhopal": 93.8,
+     "NIT Jamshedpur": 2.6,
+     "NIT Silchar": 3.6
+    },
+    "NIT Jamshedpur": {
+     "MANIT Bhopal": 3.4,
+     "NIT Jamshedpur": 90.4,
+     "NIT Silchar": 6.2
+    },
+    "NIT Silchar": {
+     "MANIT Bhopal": 1.4,
+     "NIT Jamshedpur": 1.2,
+     "NIT Silchar": 97.3
+    }
+   }
+  },
+  "kind": "observation",
+  "caveat": "Row = citing institute; joint papers count for every institute they belong to.",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "coauthorship",
+  "title": "Structure",
+  "text": "The verified-faculty network has 800 faculty and 1,203 links; 152 faculty have no link to another verified faculty member (they may still collaborate with students or outside authors). The largest component holds 76.0% of faculty; average path length 7.593, diameter 20.",
+  "evidence": {
+   "whole_network": {
+    "nodes": 800,
+    "edges": 1203,
+    "isolated_faculty": 152,
+    "density": 0.0038,
+    "avg_collaborators": 3.01,
+    "avg_clustering": 0.186,
+    "largest_component_%": 76.0,
+    "cross_department_edges_%": 23.9,
+    "cross_institute_edges": 33,
+    "louvain": {
+     "communities": 35,
+     "modularity": 0.866,
+     "communities_not_internally_connected": 0
+    },
+    "leiden": {
+     "communities": 37,
+     "modularity": 0.864
+    },
+    "assortativity_by_institute": 0.957,
+    "assortativity_by_department": 0.728
+   },
+   "structure": {
+    "scope": "all three institutes",
+    "faculty": 800,
+    "links": 1203,
+    "largest_component_faculty": 608,
+    "diameter_largest_component": 20,
+    "avg_shortest_path_largest_component": 7.593,
+    "degree_assortativity": 0.095,
+    "h_index_assortativity": 0.213,
+    "max_k_core": 5,
+    "faculty_in_max_core": 9
+   }
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "coauthorship",
+  "title": "Communities follow departments",
+  "text": "Louvain finds 35 communities (modularity 0.866); agreement with formal departments (NMI) is MANIT 0.637, NITJ 0.578, NITS 0.695. Only 33 links cross institutes.",
+  "evidence": {
+   "MANIT Bhopal": {
+    "NMI": 0.637,
+    "ARI": 0.413,
+    "departments": 17
+   },
+   "NIT Jamshedpur": {
+    "NMI": 0.578,
+    "ARI": 0.358,
+    "departments": 12
+   },
+   "NIT Silchar": {
+    "NMI": 0.695,
+    "ARI": 0.633,
+    "departments": 11
+   }
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "resilience",
+  "title": "Fragile under targeted loss",
+  "text": "Removing faculty at random breaks the combined network's largest component to half its original size only after 24% of faculty are gone; removing the highest-betweenness faculty first needs 4% (2% when betweenness is recomputed after each removal). Fragility index (1 - R20 targeted/random, betweenness): MANIT 0.28, NITJ 0.63, NITS 0.31; NITJ depends most on a few bridge researchers.",
+  "evidence": {
+   "summary": {
+    "all": {
+     "random": {
+      "R20": 0.6477,
+      "collapse_at": 0.24
+     },
+     "degree": {
+      "R20": 0.3945,
+      "collapse_at": 0.1,
+      "fragility_index": 0.3909
+     },
+     "betweenness": {
+      "R20": 0.2737,
+      "collapse_at": 0.04,
+      "fragility_index": 0.5774
+     },
+     "betweenness_adaptive": {
+      "R20": 0.1162,
+      "collapse_at": 0.02,
+      "fragility_index": 0.8205
+     },
+     "degree_null": {
+      "R20": 0.4946,
+      "collapse_at": 0.12
+     },
+     "betweenness_null": {
+      "R20": 0.5262,
+      "collapse_at": 0.12
+     }
+    },
+    "MANIT Bhopal": {
+     "random": {
+      "R20": 0.6668,
+      "collapse_at": 0.26
+     },
+     "degree": {
+      "R20": 0.5162,
+      "collapse_at": 0.12,
+      "fragility_index": 0.2258
+     },
+     "betweenness": {
+      "R20": 0.4779,
+      "collapse_at": 0.1,
+      "fragility_index": 0.2833
+     },
+     "betweenness_adaptive": {
+      "R20": 0.2409,
+      "collapse_at": 0.06,
+      "fragility_index": 0.6387
+     },
+     "degree_null": {
+      "R20": 0.5595,
+      "collapse_at": 0.14
+     },
+     "betweenness_null": {
+      "R20": 0.5728,
+      "collapse_at": 0.14
+     }
+    },
+    "NIT Jamshedpur": {
+     "random": {
+      "R20": 0.5199,
+      "collapse_at": 0.14
+     },
+     "degree": {
+      "R20": 0.1802,
+      "collapse_at": 0.02,
+      "fragility_index": 0.6534
+     },
+     "betweenness": {
+      "R20": 0.1922,
+      "collapse_at": 0.04,
+      "fragility_index": 0.6304
+     },
+     "betweenness_adaptive": {
+      "R20": 0.1302,
+      "collapse_at": 0.02,
+      "fragility_index": 0.7495
+     },
+     "degree_null": {
+      "R20": 0.2693,
+      "collapse_at": 0.06
+     },
+     "betweenness_null": {
+      "R20": 0.2913,
+      "collapse_at": 0.06
+     }
+    },
+    "NIT Silchar": {
+     "random": {
+      "R20": 0.7084,
+      "collapse_at": 0.3
+     },
+     "degree": {
+      "R20": 0.571,
+      "collapse_at": 0.14,
+      "fragility_index": 0.194
+     },
+     "betweenness": {
+      "R20": 0.4861,
+      "collapse_at": 0.12,
+      "fragility_index": 0.3138
+     },
+     "betweenness_adaptive": {
+      "R20": 0.2633,
+      "collapse_at": 0.06,
+      "fragility_index": 0.6283
+     },
+     "degree_null": {
+      "R20": 0.5717,
+      "collapse_at": 0.14
+     },
+     "betweenness_null": {
+      "R20": 0.5798,
+      "collapse_at": 0.14
+     }
+    }
+   }
+  },
+  "kind": "observation",
+  "caveat": "A structural simulation on the verified-faculty graph; removing a node does not mean a faculty member leaves.",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "resilience",
+  "title": "Wiring beyond the degree sequence",
+  "text": "Targeted betweenness attacks on degree-preserving random rewirings give R20 0.53 against 0.27 on the real network, so the real network is more fragile than its degree sequence alone implies.",
+  "evidence": {
+   "real_R20": 0.2737,
+   "null_R20": 0.5262
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "collaborations",
+  "title": "Predicting new collaborations",
+  "text": "Trained on 2016-2019 history and tested on 2023-2025 outcomes from 2022 features, the best model ranks the true new links with average precision 0.052 against a base rate of 0.0016 (32x) and finds 13% true links among its top 100 pairs. Network features, department/institute structure and topic similarity each contribute; the output is a ranking score, not a probability (calibration check failed).",
+  "evidence": {
+   "metrics": {
+    "common neighbours": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0147,
+     "roc_auc": 0.6244,
+     "ap_lift_over_base_rate": 8.9,
+     "precision@50": 0.08,
+     "recall@50": 0.0163,
+     "precision@100": 0.06,
+     "recall@100": 0.0244,
+     "precision@500": 0.048,
+     "recall@500": 0.0976
+    },
+    "Adamic-Adar": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0163,
+     "roc_auc": 0.6246,
+     "ap_lift_over_base_rate": 9.9,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.03,
+     "recall@100": 0.0122,
+     "precision@500": 0.06,
+     "recall@500": 0.122
+    },
+    "Jaccard (neighbours)": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0136,
+     "roc_auc": 0.6245,
+     "ap_lift_over_base_rate": 8.2,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.04,
+     "recall@100": 0.0163,
+     "precision@500": 0.06,
+     "recall@500": 0.122
+    },
+    "preferential attachment": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0025,
+     "roc_auc": 0.601,
+     "ap_lift_over_base_rate": 1.5,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.0,
+     "recall@100": 0.0,
+     "precision@500": 0.004,
+     "recall@500": 0.0081
+    },
+    "topic cosine": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0052,
+     "roc_auc": 0.7547,
+     "ap_lift_over_base_rate": 3.2,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.01,
+     "recall@100": 0.0041,
+     "precision@500": 0.006,
+     "recall@500": 0.0122
+    },
+    "topic weighted Jaccard": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0055,
+     "roc_auc": 0.7583,
+     "ap_lift_over_base_rate": 3.3,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.01,
+     "recall@100": 0.0041,
+     "precision@500": 0.006,
+     "recall@500": 0.0122
+    },
+    "shortest path (closer = higher)": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0153,
+     "roc_auc": 0.7465,
+     "ap_lift_over_base_rate": 9.3,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.03,
+     "recall@100": 0.0122,
+     "precision@500": 0.03,
+     "recall@500": 0.061
+    },
+    "logistic regression": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0524,
+     "roc_auc": 0.9501,
+     "ap_lift_over_base_rate": 31.8,
+     "precision@50": 0.16,
+     "recall@50": 0.0325,
+     "precision@100": 0.13,
+     "recall@100": 0.0528,
+     "precision@500": 0.066,
+     "recall@500": 0.1341
+    },
+    "random forest": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0325,
+     "roc_auc": 0.9239,
+     "ap_lift_over_base_rate": 19.7,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.05,
+     "recall@100": 0.0203,
+     "precision@500": 0.048,
+     "recall@500": 0.0976
+    }
+   },
+   "ablation": {
+    "network features only": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0104,
+     "roc_auc": 0.6153,
+     "ap_lift_over_base_rate": 6.3,
+     "precision@50": 0.08,
+     "recall@50": 0.0163,
+     "precision@100": 0.07,
+     "recall@100": 0.0285,
+     "precision@500": 0.028,
+     "recall@500": 0.0569
+    },
+    "research features only": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0014,
+     "roc_auc": 0.4416,
+     "ap_lift_over_base_rate": 0.8,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.0,
+     "recall@100": 0.0,
+     "precision@500": 0.002,
+     "recall@500": 0.0041
+    },
+    "structure + activity only": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0253,
+     "roc_auc": 0.9142,
+     "ap_lift_over_base_rate": 15.3,
+     "precision@50": 0.04,
+     "recall@50": 0.0081,
+     "precision@100": 0.04,
+     "recall@100": 0.0163,
+     "precision@500": 0.03,
+     "recall@500": 0.061
+    },
+    "all features": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0325,
+     "roc_auc": 0.9239,
+     "ap_lift_over_base_rate": 19.7,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.05,
+     "recall@100": 0.0203,
+     "precision@500": 0.048,
+     "recall@500": 0.0976
+    }
+   },
+   "calibration": {
+    "logistic regression": {
+     "bins": [
+      {
+       "mean_predicted": 8e-05,
+       "observed_rate": 0.0,
+       "n": 29842
+      },
+      {
+       "mean_predicted": 0.00018,
+       "observed_rate": 0.0,
+       "n": 29842
+      },
+      {
+       "mean_predicted": 0.0003,
+       "observed_rate": 7e-05,
+       "n": 29843
+      },
+      {
+       "mean_predicted": 0.00152,
+       "observed_rate": 0.00064,
+       "n": 29841
+      },
+      {
+       "mean_predicted": 0.0173,
+       "observed_rate": 0.00754,
+       "n": 29843
+      }
+     ],
+     "slope": 0.439,
+     "brier": 0.00181,
+     "probabilities_reported": false
+    },
+    "random forest": {
+     "bins": [
+      {
+       "mean_predicted": 0.00106,
+       "observed_rate": 0.0,
+       "n": 28687
+      },
+      {
+       "mean_predicted": 0.00107,
+       "observed_rate": 0.0,
+       "n": 30408
+      },
+      {
+       "mean_predicted": 0.00109,
+       "observed_rate": 7e-05,
+       "n": 30431
+      },
+      {
+       "mean_predicted": 0.00119,
+       "observed_rate": 0.00101,
+       "n": 29842
+      },
+      {
+       "mean_predicted": 0.00482,
+       "observed_rate": 0.00717,
+       "n": 29843
+      }
+     ],
+     "slope": 1.862,
+     "brier": 0.00162,
+     "probabilities_reported": false
+    }
+   }
+  },
+  "kind": "observation",
+  "caveat": "New links are rare; absolute precision is low even though it is far above chance.",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "collaborations",
+  "title": "Predicting repeat collaborations",
+  "text": "For pairs that already co-authored, the random forest reaches average precision 0.58 (base rate 0.33) and ROC-AUC 0.73; its calibrated probabilities pass the calibration check (slope 1.01). Recency of the last joint paper and the strength of shared collaborator groups matter most.",
+  "evidence": {
+   "metrics": {
+    "common neighbours": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.347,
+     "roc_auc": 0.4972,
+     "ap_lift_over_base_rate": 1.0,
+     "precision@50": 0.46,
+     "recall@50": 0.1031,
+     "precision@100": 0.36,
+     "recall@100": 0.1614,
+     "precision@500": 0.338,
+     "recall@500": 0.7578
+    },
+    "Adamic-Adar": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.3513,
+     "roc_auc": 0.4976,
+     "ap_lift_over_base_rate": 1.1,
+     "precision@50": 0.38,
+     "recall@50": 0.0852,
+     "precision@100": 0.33,
+     "recall@100": 0.148,
+     "precision@500": 0.338,
+     "recall@500": 0.7578
+    },
+    "Jaccard (neighbours)": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.3861,
+     "roc_auc": 0.514,
+     "ap_lift_over_base_rate": 1.2,
+     "precision@50": 0.42,
+     "recall@50": 0.0942,
+     "precision@100": 0.42,
+     "recall@100": 0.1883,
+     "precision@500": 0.338,
+     "recall@500": 0.7578
+    },
+    "preferential attachment": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.2993,
+     "roc_auc": 0.4432,
+     "ap_lift_over_base_rate": 0.9,
+     "precision@50": 0.22,
+     "recall@50": 0.0493,
+     "precision@100": 0.26,
+     "recall@100": 0.1166,
+     "precision@500": 0.316,
+     "recall@500": 0.7085
+    },
+    "topic cosine": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.4036,
+     "roc_auc": 0.5836,
+     "ap_lift_over_base_rate": 1.2,
+     "precision@50": 0.4,
+     "recall@50": 0.0897,
+     "precision@100": 0.36,
+     "recall@100": 0.1614,
+     "precision@500": 0.366,
+     "recall@500": 0.8206
+    },
+    "topic weighted Jaccard": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.4073,
+     "roc_auc": 0.5902,
+     "ap_lift_over_base_rate": 1.2,
+     "precision@50": 0.4,
+     "recall@50": 0.0897,
+     "precision@100": 0.42,
+     "recall@100": 0.1883,
+     "precision@500": 0.364,
+     "recall@500": 0.8161
+    },
+    "logistic regression": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.5655,
+     "roc_auc": 0.7649,
+     "ap_lift_over_base_rate": 1.7,
+     "precision@50": 0.68,
+     "recall@50": 0.1525,
+     "precision@100": 0.63,
+     "recall@100": 0.2825,
+     "precision@500": 0.42,
+     "recall@500": 0.9417
+    },
+    "random forest": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.5762,
+     "roc_auc": 0.7317,
+     "ap_lift_over_base_rate": 1.7,
+     "precision@50": 0.66,
+     "recall@50": 0.148,
+     "precision@100": 0.7,
+     "recall@100": 0.3139,
+     "precision@500": 0.39,
+     "recall@500": 0.8744
+    }
+   },
+   "importance": {
+    "years_since_last_joint": 0.2253,
+    "joint_papers_hist": 0.0909,
+    "field_cosine": 0.0811,
+    "recent_papers_min": 0.0757,
+    "log_papers_min": 0.0699,
+    "adamic_adar": 0.061,
+    "topic_weighted_jaccard": 0.0593,
+    "resource_allocation": 0.0592,
+    "pref_attachment": 0.0546,
+    "topic_cosine": 0.051,
+    "recent_papers_max": 0.0496,
+    "log_papers_max": 0.0435,
+    "jaccard_neighbours": 0.0277,
+    "common_neighbours": 0.0201,
+    "shared_subfields": 0.0183,
+    "same_department": 0.0129,
+    "hop_distance": 0.0,
+    "same_community": 0.0,
+    "same_institute": 0.0,
+    "institute_pair_joint_papers_hist": 0.0
+   }
+  },
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "reach",
+  "title": "How far do collaborations reach?",
+  "text": "Share of papers with another Indian institute / a foreign partner: MANIT 33% / 11%; NITJ 47% / 14%; NITS 37% / 15%. Distinct partner institutes: MANIT 465 Indian, 458 foreign; NITJ 400 Indian, 402 foreign; NITS 478 Indian, 644 foreign.",
+  "evidence": [
+   {
+    "institution": "MANIT Bhopal",
+    "papers": 5759,
+    "with_other_indian_inst_%": 33.2,
+    "with_foreign_inst_%": 11.2,
+    "with_our_other_two_%": 0.3,
+    "own_institute_only_%": 62.0,
+    "distinct_indian_partners": 465,
+    "distinct_foreign_partners": 458
+   },
+   {
+    "institution": "NIT Jamshedpur",
+    "papers": 3594,
+    "with_other_indian_inst_%": 47.2,
+    "with_foreign_inst_%": 14.2,
+    "with_our_other_two_%": 1.1,
+    "own_institute_only_%": 46.0,
+    "distinct_indian_partners": 400,
+    "distinct_foreign_partners": 402
+   },
+   {
+    "institution": "NIT Silchar",
+    "papers": 8411,
+    "with_other_indian_inst_%": 36.9,
+    "with_foreign_inst_%": 14.7,
+    "with_our_other_two_%": 0.4,
+    "own_institute_only_%": 55.1,
+    "distinct_indian_partners": 478,
+    "distinct_foreign_partners": 644
+   }
+  ],
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ },
+ {
+  "tab": "flows",
+  "title": "Citation flows with other Indian institutes",
+  "text": "In/out ratio (citations received from / given to other Indian institutes): MANIT 0.79, NITJ 0.61, NITS 0.81. A ratio below 1 means the institute cites other Indian institutes more than it is cited by those institutes, which is common for institutes that read widely; it is not a quality ranking.",
+  "evidence": [
+   {
+    "your_inst": "MANIT Bhopal",
+    "year": "2016-2026",
+    "in_cites": 28449,
+    "out_cites": 35858,
+    "in_over_out": 0.793
+   },
+   {
+    "your_inst": "NIT Jamshedpur",
+    "year": "2016-2026",
+    "in_cites": 15333,
+    "out_cites": 24983,
+    "in_over_out": 0.614
+   },
+   {
+    "your_inst": "NIT Silchar",
+    "year": "2016-2026",
+    "in_cites": 44878,
+    "out_cites": 55127,
+    "in_over_out": 0.814
+   }
+  ],
+  "kind": "observation",
+  "caveat": "",
+  "period": "2016-2026 (2026 partial)"
+ }
+]

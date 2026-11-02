@@ -1,0 +1,31 @@
+institution,faculty_name,department,collaborators,collaborators_other_inst,degree_centrality,betweenness,community_leiden,papers,h_index
+MANIT Bhopal,Vijay Bhaskar Semwal,Computer Science and Engineering,17.0,2.0,0.02128,0.11797,9.0,87,23
+MANIT Bhopal,Rajesh Purohit,Mechanical Engineering,25.0,0.0,0.03129,0.10955,0.0,169,30
+MANIT Bhopal,SURESH KUMAR GAWRE,Electrical Engineering,15.0,0.0,0.01877,0.08985,7.0,63,12
+NIT Jamshedpur,Kunal Singh,Electronics and Communication Engineering,7.0,2.0,0.00876,0.08102,1.0,35,11
+MANIT Bhopal,Vimlesh Kumar Soni,Mechanical Engineering,4.0,0.0,0.00501,0.06968,0.0,9,5
+MANIT Bhopal,Emon Barua,Mechanical Engineering,2.0,1.0,0.0025,0.06919,4.0,4,2
+NIT Silchar,Ashish B. Deoghare,Mechanical Engineering,3.0,2.0,0.00375,0.06874,4.0,70,22
+NIT Silchar,Krishna Murari Pandey,Mechanical Engineering,17.0,1.0,0.02128,0.06539,4.0,211,43
+NIT Jamshedpur,Shiva Nand Singh,Electronics and Communication Engineering,6.0,0.0,0.00751,0.06509,2.0,17,7
+NIT Jamshedpur,Satish Kumar,Mechanical Engineering,9.0,0.0,0.01126,0.06423,3.0,73,13
+NIT Jamshedpur,Sanja y,Mechanical Engineering,8.0,2.0,0.01001,0.05977,3.0,53,18
+NIT Jamshedpur,Koushlendra Kumar Singh,Computer Science and Engineering,9.0,1.0,0.01126,0.05803,2.0,74,12
+NIT Silchar,Shahedul Haque Laskar,Electronics and Instrumentation Engineering,5.0,1.0,0.00626,0.05265,13.0,48,17
+NIT Jamshedpur,Swagatadeb Sahoo,Electronics and Communication Engineering,2.0,1.0,0.0025,0.05255,13.0,37,11
+NIT Jamshedpur,Shalendra Kumar,Mechanical Engineering,5.0,0.0,0.00626,0.0521,3.0,18,5
+NIT Silchar,Kavicharan Mummaneni,Electronics and Communication Engineering,4.0,1.0,0.00501,0.05134,1.0,68,12
+NIT Silchar,Biplab Das,Mechanical Engineering,16.0,0.0,0.02003,0.04413,4.0,148,34
+NIT Jamshedpur,Akhilesh Kumar,Electronics and Communication Engineering,4.0,1.0,0.00501,0.04403,2.0,26,8
+NIT Silchar,Nidul Sinha,Electrical Engineering,11.0,0.0,0.01377,0.04248,10.0,101,27
+NIT Silchar,Lalit Chandra Saikia,Electrical Engineering,6.0,1.0,0.00751,0.03963,10.0,169,36
+MANIT Bhopal,GUMPU SRINIVASULU,Electrical Engineering,4.0,0.0,0.00501,0.03875,7.0,12,1
+MANIT Bhopal,Siddhartha Deb Roy,Electrical Engineering,2.0,1.0,0.0025,0.03824,7.0,15,3
+MANIT Bhopal,N. P. Patidar,Electrical Engineering,8.0,0.0,0.01001,0.03697,7.0,56,10
+NIT Silchar,Ashraf Hossain,Electronics and Communication Engineering,8.0,0.0,0.01001,0.03392,1.0,66,13
+NIT Silchar,Binoy Krishna Roy,Electrical Engineering,11.0,0.0,0.01377,0.03176,13.0,177,33
+MANIT Bhopal,Tikendra Nath Verma,Mechanical Engineering,7.0,1.0,0.00876,0.03103,0.0,145,37
+NIT Silchar,Tanmoy Malakar,Electrical Engineering,5.0,0.0,0.00626,0.03066,10.0,38,9
+MANIT Bhopal,M. Raju,Electrical Engineering,5.0,1.0,0.00626,0.02984,7.0,30,9
+NIT Jamshedpur,AMIT PRAKASH,Electronics and Communication Engineering,7.0,0.0,0.00876,0.02973,2.0,38,8
+NIT Jamshedpur,Omhari Gupta,Electrical Engineering,7.0,1.0,0.00876,0.02962,8.0,76,10

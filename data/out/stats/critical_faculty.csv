@@ -1,0 +1,184 @@
+scope,faculty_name,institution,department,degree,betweenness,participation_dept,participation_community,community_leiden,articulation_point,lcc_fraction_after,lcc_change_pp,efficiency_after_rel,efficiency_loss_%,components_after
+all,Vijay Bhaskar Semwal,MANIT Bhopal,Computer Science and Engineering,17,37609.40315,0.609,0.6021,9,False,0.7588,-0.12,0.9686,3.14,167
+all,Rajesh Purohit,MANIT Bhopal,Mechanical Engineering,25,34925.04454,0.4672,0.2848,0,True,0.7575,-0.25,0.9739,2.61,168
+all,Kunal Singh,NIT Jamshedpur,Electronics and Communication Engineering,7,25828.18438,0.7347,0.5714,1,True,0.7562,-0.38,0.9749,2.51,168
+all,Mani Kant Paswan,NIT Jamshedpur,Mechanical Engineering,12,6695.58718,0.2917,0.4028,3,True,0.7512,-0.88,0.9754,2.46,171
+all,Koushlendra Kumar Singh,NIT Jamshedpur,Computer Science and Engineering,9,18498.6886,0.642,0.4938,2,False,0.7588,-0.12,0.9775,2.25,167
+all,Vimlesh Kumar Soni,MANIT Bhopal,Mechanical Engineering,4,22214.64066,0.0,0.375,0,False,0.7588,-0.12,0.9826,1.74,167
+all,Emon Barua,MANIT Bhopal,Mechanical Engineering,2,22057.12954,0.5,0.5,4,False,0.7588,-0.12,0.9838,1.62,167
+all,Ashish B. Deoghare,NIT Silchar,Mechanical Engineering,3,21914.86442,0.6667,0.0,4,False,0.7588,-0.12,0.9839,1.61,167
+all,Sanja y,NIT Jamshedpur,Mechanical Engineering,8,19055.62455,0.6875,0.5312,3,False,0.7588,-0.12,0.9841,1.59,167
+all,Krishna Murari Pandey,NIT Silchar,Mechanical Engineering,17,20845.5277,0.1107,0.2076,4,True,0.7575,-0.25,0.9849,1.51,168
+all,Biplab Das,NIT Silchar,Mechanical Engineering,16,14070.05398,0.4141,0.3281,4,True,0.7575,-0.25,0.9849,1.51,168
+all,SURESH KUMAR GAWRE,MANIT Bhopal,Electrical Engineering,15,28645.61459,0.4356,0.24,7,False,0.7588,-0.12,0.9849,1.51,167
+all,Kumari Namrata,NIT Jamshedpur,Electrical Engineering,9,4592.68497,0.716,0.0,8,True,0.755,-0.5,0.9853,1.47,169
+all,Shiva Nand Singh,NIT Jamshedpur,Electronics and Communication Engineering,6,20750.91209,0.0,0.5,2,False,0.7588,-0.12,0.9862,1.38,167
+all,Satish Kumar,NIT Jamshedpur,Mechanical Engineering,9,20477.80195,0.716,0.4938,3,False,0.7588,-0.12,0.9865,1.35,167
+all,Shashi Bhushan Prasad,NIT Jamshedpur,Production and Industrial Engineering,11,8786.73157,0.6446,0.1653,3,True,0.7562,-0.38,0.9867,1.33,169
+all,Shalendra Kumar,NIT Jamshedpur,Mechanical Engineering,5,16610.83992,0.56,0.32,3,True,0.7575,-0.25,0.9869,1.31,168
+all,Prashant V. Baredar,MANIT Bhopal,Energy Science and Engineering,19,8303.97804,0.6704,0.277,0,True,0.7575,-0.25,0.9877,1.23,168
+all,Wasim Arif,NIT Silchar,Electronics and Communication Engineering,10,2182.89552,0.18,0.0,1,True,0.755,-0.5,0.9881,1.19,170
+all,Nidul Sinha,NIT Silchar,Electrical Engineering,11,13543.4052,0.5124,0.5124,10,False,0.7588,-0.12,0.9883,1.17,167
+all,Shahedul Haque Laskar,NIT Silchar,Electronics and Instrumentation Engineering,5,16785.35859,0.32,0.32,13,False,0.7588,-0.12,0.9887,1.13,167
+all,Binoy Krishna Roy,NIT Silchar,Electrical Engineering,11,10124.40406,0.5124,0.314,13,True,0.7575,-0.25,0.9887,1.13,168
+all,Swagatadeb Sahoo,NIT Jamshedpur,Electronics and Communication Engineering,2,16752.21871,0.5,0.5,13,False,0.7588,-0.12,0.9888,1.12,167
+all,AMIT PRAKASH,NIT Jamshedpur,Electronics and Communication Engineering,7,9479.13955,0.4082,0.2449,2,True,0.7575,-0.25,0.9889,1.11,168
+all,Akhilesh Kumar,NIT Jamshedpur,Electronics and Communication Engineering,4,14036.20709,0.75,0.625,2,False,0.7588,-0.12,0.9897,1.03,167
+all,Omhari Gupta,NIT Jamshedpur,Electrical Engineering,7,9441.5455,0.6122,0.449,8,False,0.7588,-0.12,0.99,1.0,167
+all,Sanjay V. Kumar,NIT Jamshedpur,Civil Engineering,10,4259.21004,0.56,0.46,8,True,0.7575,-0.25,0.9902,0.98,168
+all,Ram Kumar Karsh,NIT Silchar,Electronics and Communication Engineering,10,1768.25255,0.18,0.0,1,True,0.7562,-0.38,0.9909,0.91,169
+all,Kavicharan Mummaneni,NIT Silchar,Electronics and Communication Engineering,4,16367.42397,0.375,0.0,1,False,0.7588,-0.12,0.9913,0.87,167
+all,Agnimitra Biswas,NIT Silchar,Mechanical Engineering,11,4953.63822,0.4298,0.4298,4,True,0.7575,-0.25,0.9913,0.87,168
+all,Tikendra Nath Verma,MANIT Bhopal,Mechanical Engineering,7,9892.5625,0.6939,0.6122,0,False,0.7588,-0.12,0.9914,0.86,167
+all,Gaurav Dwivedi,MANIT Bhopal,Energy Science and Engineering,11,9034.42754,0.6446,0.314,0,False,0.7588,-0.12,0.9915,0.85,167
+all,RAJ BALLAV,NIT Jamshedpur,Production and Industrial Engineering,10,5751.86194,0.34,0.18,3,True,0.7575,-0.25,0.9915,0.85,168
+all,Arvind Mittal,MANIT Bhopal,Energy Science and Engineering,11,9340.8847,0.6116,0.562,7,False,0.7588,-0.12,0.9916,0.84,167
+all,Ashraf Hossain,NIT Silchar,Electronics and Communication Engineering,8,10813.53459,0.2188,0.2188,1,False,0.7588,-0.12,0.9922,0.78,167
+all,Badal Soni,NIT Silchar,Computer Science and Engineering,11,2969.0671,0.4298,0.3967,11,True,0.7575,-0.25,0.9923,0.77,168
+all,Nilay Khare,MANIT Bhopal,Computer Science and Engineering,14,8391.28273,0.2449,0.2449,9,False,0.7588,-0.12,0.9923,0.77,167
+all,Saroj Kr. Biswas,NIT Silchar,Computer Science and Engineering,10,7537.44102,0.54,0.54,11,False,0.7588,-0.12,0.9925,0.75,167
+all,Lalit Chandra Saikia,NIT Silchar,Electrical Engineering,6,12633.29091,0.2778,0.2778,10,False,0.7588,-0.12,0.9928,0.72,167
+all,Sushma Gupta,MANIT Bhopal,Electrical Engineering,14,4240.88969,0.1327,0.0,7,False,0.7588,-0.12,0.9932,0.68,167
+all,Tanmoy Malakar,NIT Silchar,Electrical Engineering,5,9774.35207,0.32,0.56,10,False,0.7588,-0.12,0.9932,0.68,167
+all,GUMPU SRINIVASULU,MANIT Bhopal,Electrical Engineering,4,12352.92826,0.0,0.0,7,False,0.7588,-0.12,0.9935,0.65,167
+all,M. Raju,MANIT Bhopal,Electrical Engineering,5,9512.78956,0.32,0.32,7,False,0.7588,-0.12,0.9937,0.63,167
+all,Siddhartha Deb Roy,MANIT Bhopal,Electrical Engineering,2,12192.18717,0.5,0.5,7,False,0.7588,-0.12,0.994,0.6,167
+all,N. P. Patidar,MANIT Bhopal,Electrical Engineering,8,11786.42642,0.2188,0.0,7,False,0.7588,-0.12,0.9948,0.52,167
+all,Krishna Lal Baishnab,NIT Silchar,Electronics and Communication Engineering,16,2999.68227,0.1172,0.1172,1,False,0.7588,-0.12,0.9951,0.49,167
+all,Rabul Hussain Laskar,NIT Silchar,Electronics and Communication Engineering,11,2737.31865,0.2975,0.2975,1,False,0.7588,-0.12,0.9953,0.47,167
+all,R. S. Rana,MANIT Bhopal,Mechanical Engineering,13,5575.22879,0.3905,0.142,0,False,0.7588,-0.12,0.9953,0.47,167
+all,Deepak Singh Tomar,MANIT Bhopal,Computer Science and Engineering,12,1584.46612,0.1528,0.1528,9,False,0.7588,-0.12,0.9954,0.46,167
+all,Vaibhav Soni,MANIT Bhopal,Computer Science and Engineering,10,874.88327,0.18,0.18,9,False,0.7588,-0.12,0.9956,0.44,167
+all,Fazal A. Talukdar,NIT Silchar,Electronics and Communication Engineering,13,1485.09719,0.142,0.0,1,False,0.7588,-0.12,0.9959,0.41,167
+all,Ripon Patgiri,NIT Silchar,Computer Science and Engineering,10,1395.47271,0.0,0.0,11,False,0.7588,-0.12,0.9963,0.37,167
+all,Arnab Nandi,NIT Silchar,Electronics and Communication Engineering,10,527.59175,0.0,0.0,1,False,0.7588,-0.12,0.9964,0.36,167
+MANIT Bhopal,Kamal Singh,MANIT Bhopal,Civil Engineering,5,3467.48602,0.32,0.56,16,True,0.7432,-5.07,0.9223,7.77,57
+MANIT Bhopal,Rajesh Purohit,MANIT Bhopal,Mechanical Engineering,25,7449.60851,0.4672,0.2848,0,True,0.7872,-0.68,0.9318,6.82,57
+MANIT Bhopal,Manmohan Kapshe,MANIT Bhopal,Architecture and Planning,3,2240.0,0.4444,0.6667,17,True,0.7568,-3.72,0.9423,5.77,57
+MANIT Bhopal,H. L.Tiwari,MANIT Bhopal,Civil Engineering,7,2691.25631,0.449,0.2449,0,True,0.7703,-2.36,0.9481,5.19,59
+MANIT Bhopal,Vinay Mohan Das,MANIT Bhopal,Architecture and Planning,2,2025.0,0.0,0.0,17,True,0.7601,-3.38,0.95,5.0,57
+MANIT Bhopal,Manish Pandey,MANIT Bhopal,Computer Science and Engineering,7,1843.38061,0.2449,0.0,9,True,0.7635,-3.04,0.9515,4.85,57
+MANIT Bhopal,Yogesh K. Garg,MANIT Bhopal,Architecture and Planning,7,1828.0,0.0,0.0,17,True,0.7635,-3.04,0.9545,4.55,59
+MANIT Bhopal,Rajnish Kurchania,MANIT Bhopal,Physics,6,1207.82811,0.2778,0.0,5,True,0.7736,-2.03,0.9584,4.16,58
+MANIT Bhopal,Amit Bhagat,MANIT Bhopal,Computer Applications,2,1589.0,0.5,0.5,9,True,0.7669,-2.7,0.9599,4.01,57
+MANIT Bhopal,Prashant V. Baredar,MANIT Bhopal,Energy Science and Engineering,19,3223.41545,0.6704,0.277,0,True,0.7872,-0.68,0.9649,3.51,57
+MANIT Bhopal,SURESH KUMAR GAWRE,MANIT Bhopal,Electrical Engineering,15,5359.50342,0.4356,0.24,7,False,0.7905,-0.34,0.9653,3.47,56
+MANIT Bhopal,Chandan Kumar Verma,MANIT Bhopal,Mathematics; Bioinformatics,4,1376.0,0.375,0.375,19,True,0.7703,-2.36,0.9656,3.44,58
+MANIT Bhopal,Priyanka Dhurvey,MANIT Bhopal,Civil Engineering,8,1111.96434,0.375,0.2188,0,True,0.7804,-1.35,0.9675,3.25,59
+MANIT Bhopal,Vijay Bhaskar Semwal,MANIT Bhopal,Computer Science and Engineering,15,4223.92804,0.609,0.6021,9,False,0.7905,-0.34,0.9688,3.12,56
+MANIT Bhopal,Siddhartha Rokade,MANIT Bhopal,Civil Engineering,5,1699.5,0.32,0.0,16,True,0.777,-1.69,0.9716,2.84,58
+MANIT Bhopal,Anuj Jaiswal,MANIT Bhopal,Architecture and Planning,3,1146.66667,0.4444,0.0,16,True,0.7736,-2.03,0.9727,2.73,57
+MANIT Bhopal,Kishan Dharavath,MANIT Bhopal,Civil Engineering,5,3281.74423,0.56,0.72,12,False,0.7905,-0.34,0.9731,2.69,56
+MANIT Bhopal,M. M. Malik,MANIT Bhopal,Physics,8,3053.72553,0.75,0.5625,5,False,0.7905,-0.34,0.9734,2.66,56
+MANIT Bhopal,S. Suresh,MANIT Bhopal,Chemical Engineering,9,1303.69533,0.7654,0.3457,0,True,0.7872,-0.68,0.9744,2.56,57
+MANIT Bhopal,Arvind Mittal,MANIT Bhopal,Energy Science and Engineering,11,3262.36227,0.6116,0.562,7,False,0.7905,-0.34,0.9767,2.33,56
+MANIT Bhopal,Raman Nateriya,MANIT Bhopal,Civil Engineering,5,2466.77943,0.48,0.0,0,False,0.7905,-0.34,0.9775,2.25,56
+MANIT Bhopal,R. K. Pateriya,MANIT Bhopal,Computer Science and Engineering,9,1216.50348,0.3704,0.1975,9,True,0.7872,-0.68,0.978,2.2,57
+MANIT Bhopal,Nilay Khare,MANIT Bhopal,Computer Science and Engineering,14,2433.71886,0.2449,0.2449,9,False,0.7905,-0.34,0.9787,2.13,56
+MANIT Bhopal,Shailendra Jain,MANIT Bhopal,Electrical Engineering,8,891.26991,0.4062,0.2188,7,True,0.7872,-0.68,0.9802,1.98,57
+MANIT Bhopal,TARUN KUMAR GUPTA,MANIT Bhopal,Electronics and Communication Engineering,6,1764.23491,0.5,0.2778,5,False,0.7905,-0.34,0.9811,1.89,56
+MANIT Bhopal,Fozia Z. Haque,MANIT Bhopal,Physics,6,1960.86891,0.5,0.2778,5,False,0.7905,-0.34,0.9827,1.73,56
+MANIT Bhopal,Tikendra Nath Verma,MANIT Bhopal,Mechanical Engineering,6,1433.40866,0.6939,0.6122,0,False,0.7905,-0.34,0.9827,1.73,56
+MANIT Bhopal,Sushma Gupta,MANIT Bhopal,Electrical Engineering,14,1103.1295,0.1327,0.0,7,False,0.7905,-0.34,0.9827,1.73,56
+MANIT Bhopal,Amit Ojha,MANIT Bhopal,Electrical Engineering,7,1545.98613,0.6122,0.449,7,False,0.7905,-0.34,0.9831,1.69,56
+MANIT Bhopal,Vijayshri Chaurasia,MANIT Bhopal,Electronics and Communication Engineering,7,1312.1788,0.4082,0.4082,5,False,0.7905,-0.34,0.9832,1.68,56
+MANIT Bhopal,Ashis Kumar Pradhan,MANIT Bhopal,Humanities and Social Sciences,8,1223.58925,0.5938,0.2188,0,False,0.7905,-0.34,0.9835,1.65,56
+MANIT Bhopal,Gaurav Dwivedi,MANIT Bhopal,Energy Science and Engineering,10,897.58287,0.6446,0.314,0,False,0.7905,-0.34,0.9857,1.43,56
+MANIT Bhopal,Sanyam Shukla,MANIT Bhopal,Computer Science and Engineering,7,1013.11534,0.2449,0.2449,9,False,0.7905,-0.34,0.9859,1.41,56
+MANIT Bhopal,Rajesh Kumar Nema,MANIT Bhopal,Electrical Engineering,9,843.98352,0.1975,0.1975,7,False,0.7905,-0.34,0.9865,1.35,56
+MANIT Bhopal,Sri Khetwat Saritha,MANIT Bhopal,Computer Science and Engineering,5,1180.6064,0.32,0.32,9,False,0.7905,-0.34,0.9865,1.35,56
+MANIT Bhopal,Archana Nigrawal,MANIT Bhopal,Physics,5,1127.85927,0.64,0.48,5,False,0.7905,-0.34,0.9865,1.35,56
+MANIT Bhopal,Savita Nema,MANIT Bhopal,Electrical Engineering,7,492.90677,0.2449,0.2449,7,False,0.7905,-0.34,0.987,1.3,56
+MANIT Bhopal,Alok Singh,MANIT Bhopal,Mechanical Engineering,7,453.9676,0.0,0.0,0,False,0.7905,-0.34,0.9874,1.26,56
+MANIT Bhopal,R. S. Rana,MANIT Bhopal,Mechanical Engineering,13,709.30092,0.3905,0.142,0,False,0.7905,-0.34,0.9876,1.24,56
+MANIT Bhopal,J. S. Yadav,MANIT Bhopal,Electronics and Communication Engineering,8,812.43008,0.0,0.0,5,False,0.7905,-0.34,0.9876,1.24,56
+MANIT Bhopal,Deepak Singh Tomar,MANIT Bhopal,Computer Science and Engineering,12,571.76668,0.1528,0.1528,9,False,0.7905,-0.34,0.988,1.2,56
+MANIT Bhopal,Pankaj Swarnkar,MANIT Bhopal,Electrical Engineering,8,262.7776,0.0,0.0,7,False,0.7905,-0.34,0.9885,1.15,56
+MANIT Bhopal,Mitul Kumar Ahirwal,MANIT Bhopal,Computer Science and Engineering,7,794.07813,0.0,0.0,9,False,0.7905,-0.34,0.9886,1.14,56
+MANIT Bhopal,Vaibhav Soni,MANIT Bhopal,Computer Science and Engineering,10,319.16488,0.18,0.18,9,False,0.7905,-0.34,0.9886,1.14,56
+MANIT Bhopal,Sanjeev Singh,MANIT Bhopal,Electrical Engineering,8,265.35314,0.2188,0.0,7,False,0.7905,-0.34,0.9887,1.13,56
+MANIT Bhopal,Anoop Arya,MANIT Bhopal,Electrical Engineering,9,200.84894,0.3704,0.0,7,False,0.7905,-0.34,0.9891,1.09,56
+MANIT Bhopal,N. P. Patidar,MANIT Bhopal,Electrical Engineering,8,556.04604,0.2188,0.0,7,False,0.7905,-0.34,0.9891,1.09,56
+MANIT Bhopal,Manisha Dubey,MANIT Bhopal,Electrical Engineering,8,474.432,0.2188,0.0,7,False,0.7905,-0.34,0.9896,1.04,56
+MANIT Bhopal,Priyanka Paliwal,MANIT Bhopal,Electrical Engineering,9,121.13153,0.1975,0.0,7,False,0.7905,-0.34,0.9901,0.99,56
+NIT Jamshedpur,Mani Kant Paswan,NIT Jamshedpur,Mechanical Engineering,12,1486.22078,0.2917,0.4028,3,True,0.5783,-3.04,0.8965,10.35,78
+NIT Jamshedpur,Amresh Kumar,NIT Jamshedpur,Production and Industrial Engineering,5,1494.31034,0.6667,0.2778,3,True,0.5826,-2.61,0.9284,7.16,75
+NIT Jamshedpur,Kumari Namrata,NIT Jamshedpur,Electrical Engineering,9,952.83922,0.716,0.0,8,True,0.5913,-1.74,0.9356,6.44,76
+NIT Jamshedpur,Koushlendra Kumar Singh,NIT Jamshedpur,Computer Science and Engineering,8,2079.43908,0.642,0.4938,2,False,0.6043,-0.43,0.9356,6.44,74
+NIT Jamshedpur,Niranjan Kumar,NIT Jamshedpur,Electrical Engineering,7,1164.35327,0.5714,0.2449,8,True,0.5957,-1.3,0.94,6.0,76
+NIT Jamshedpur,Shailesh Kumar Prasad,NIT Jamshedpur,Chemistry,5,767.29784,0.64,0.32,2,True,0.5913,-1.74,0.9417,5.83,76
+NIT Jamshedpur,Satish Kumar,NIT Jamshedpur,Mechanical Engineering,9,2482.00987,0.716,0.4938,3,False,0.6043,-0.43,0.9432,5.68,74
+NIT Jamshedpur,Shashi Bhushan Prasad,NIT Jamshedpur,Production and Industrial Engineering,9,1306.12559,0.6446,0.1653,3,True,0.5957,-1.3,0.9464,5.36,76
+NIT Jamshedpur,Sanjay V. Kumar,NIT Jamshedpur,Civil Engineering,10,1195.29716,0.56,0.46,8,True,0.6,-0.87,0.948,5.2,75
+NIT Jamshedpur,RAJ BALLAV,NIT Jamshedpur,Production and Industrial Engineering,9,1629.74789,0.34,0.18,3,True,0.6,-0.87,0.9489,5.11,75
+NIT Jamshedpur,Jitesh Pradhan,NIT Jamshedpur,Computer Science and Engineering,7,440.7381,0.0,0.0,2,True,0.5913,-1.74,0.9495,5.05,76
+NIT Jamshedpur,BINOD KUMAR SINGH,NIT Jamshedpur,Computer Science and Engineering,6,653.84632,0.0,0.0,2,True,0.5913,-1.74,0.9496,5.04,76
+NIT Jamshedpur,Shubham Tripathi,NIT Jamshedpur,Production and Industrial Engineering,2,540.0,0.5,0.0,3,True,0.587,-2.17,0.9509,4.91,75
+NIT Jamshedpur,Basudeba Behera,NIT Jamshedpur,Electronics and Communication Engineering,7,674.23342,0.2449,0.2449,2,True,0.5957,-1.3,0.9528,4.72,75
+NIT Jamshedpur,Mrityunjay Kumar Sinha,NIT Jamshedpur,Mechanical Engineering,6,618.90618,0.6111,0.2778,2,True,0.5957,-1.3,0.955,4.5,76
+NIT Jamshedpur,Danish Ali Khan,NIT Jamshedpur,Computer Science and Engineering,9,912.75249,0.3704,0.0,2,True,0.6,-0.87,0.9558,4.42,75
+NIT Jamshedpur,AMIT PRAKASH,NIT Jamshedpur,Electronics and Communication Engineering,7,801.87471,0.4082,0.2449,2,True,0.6,-0.87,0.9597,4.03,75
+NIT Jamshedpur,Kunal Singh,NIT Jamshedpur,Electronics and Communication Engineering,5,347.20119,0.7347,0.5714,1,True,0.5957,-1.3,0.9604,3.96,75
+NIT Jamshedpur,KANIKA PRASAD,NIT Jamshedpur,Production and Industrial Engineering,6,398.27994,0.5,0.0,3,True,0.5957,-1.3,0.9613,3.87,76
+NIT Jamshedpur,Shalendra Kumar,NIT Jamshedpur,Mechanical Engineering,5,648.17857,0.56,0.32,3,True,0.6,-0.87,0.9621,3.79,75
+NIT Jamshedpur,Krishna Deo Prasad Singh,NIT Jamshedpur,Mechanical Engineering,4,590.49402,0.625,0.625,8,True,0.6,-0.87,0.9629,3.71,75
+NIT Jamshedpur,AJAY KUMAR,NIT Jamshedpur,Electronics and Communication Engineering,6,1052.73714,0.5,0.2778,2,False,0.6043,-0.43,0.9651,3.49,74
+NIT Jamshedpur,Dharmendra Patel,NIT Jamshedpur,Production and Industrial Engineering,7,583.28016,0.2449,0.2449,3,True,0.6,-0.87,0.9652,3.48,75
+NIT Jamshedpur,Sunil Kumar,NIT Jamshedpur,Mathematics,5,494.00649,0.8,0.32,2,True,0.6,-0.87,0.9655,3.45,75
+NIT Jamshedpur,Mrutyunjay Rout,NIT Jamshedpur,Electronics and Communication Engineering,5,870.36441,0.48,0.48,15,False,0.6043,-0.43,0.9672,3.28,74
+NIT Jamshedpur,Keshav Kumar Sharma,NIT Jamshedpur,Civil Engineering,6,1063.53721,0.449,0.4082,15,False,0.6043,-0.43,0.9674,3.26,74
+NIT Jamshedpur,Shiva Nand Singh,NIT Jamshedpur,Electronics and Communication Engineering,6,390.04628,0.0,0.5,2,True,0.6,-0.87,0.9683,3.17,75
+NIT Jamshedpur,Subhadeep Metya,NIT Jamshedpur,Civil Engineering,6,457.73172,0.0,0.0,15,True,0.6,-0.87,0.9708,2.92,75
+NIT Jamshedpur,Omhari Gupta,NIT Jamshedpur,Electrical Engineering,6,853.99313,0.6122,0.449,8,False,0.6043,-0.43,0.9718,2.82,74
+NIT Jamshedpur,Abdhesh Kumar Sinha,NIT Jamshedpur,Civil Engineering,7,698.52799,0.2449,0.0,15,False,0.6043,-0.43,0.9721,2.79,74
+NIT Jamshedpur,Sanja y,NIT Jamshedpur,Mechanical Engineering,6,693.20187,0.6875,0.5312,3,False,0.6043,-0.43,0.974,2.6,74
+NIT Jamshedpur,VIRENDRA KUMAR,NIT Jamshedpur,Civil Engineering,5,193.67048,0.0,0.0,15,True,0.6,-0.87,0.975,2.5,75
+NIT Jamshedpur,Mayank Srivastava,NIT Jamshedpur,Electronics and Communication Engineering,4,584.8015,0.375,0.375,2,False,0.6043,-0.43,0.9758,2.42,74
+NIT Jamshedpur,DK Yadav,NIT Jamshedpur,Computer Science and Engineering,4,536.50011,0.5,0.0,2,False,0.6043,-0.43,0.9761,2.39,74
+NIT Jamshedpur,Veerpratap Meena,NIT Jamshedpur,Electrical Engineering,5,116.84921,0.0,0.0,8,False,0.6043,-0.43,0.9837,1.63,74
+NIT Jamshedpur,Somenath Mondal,NIT Jamshedpur,Civil Engineering,5,80.23254,0.0,0.0,15,False,0.6043,-0.43,0.9858,1.42,74
+NIT Silchar,Mausumi Sen,NIT Silchar,Mathematics,8,3183.08692,0.75,0.7812,1,True,0.7956,-2.19,0.9416,5.84,52
+NIT Silchar,Biplab Das,NIT Silchar,Mechanical Engineering,16,5474.82591,0.4141,0.3281,4,True,0.8102,-0.73,0.9516,4.84,50
+NIT Silchar,Krishna Murari Pandey,NIT Silchar,Mechanical Engineering,16,2761.53162,0.1107,0.2076,4,True,0.8066,-1.09,0.9565,4.35,51
+NIT Silchar,Nidul Sinha,NIT Silchar,Electrical Engineering,11,3943.02998,0.5124,0.5124,10,False,0.8139,-0.36,0.9632,3.68,49
+NIT Silchar,Sudip Dey,NIT Silchar,Mechanical Engineering,4,1510.90156,0.72,0.56,4,True,0.8029,-1.46,0.9658,3.42,50
+NIT Silchar,Satyabrata Choudhury,NIT Silchar,Civil Engineering,6,1737.61877,0.0,0.0,6,True,0.8029,-1.46,0.9671,3.29,50
+NIT Silchar,Binoy Krishna Roy,NIT Silchar,Electrical Engineering,11,2647.73876,0.5124,0.314,13,True,0.8102,-0.73,0.9674,3.26,50
+NIT Silchar,Wasim Arif,NIT Silchar,Electronics and Communication Engineering,10,769.907,0.18,0.0,1,True,0.8029,-1.46,0.968,3.2,52
+NIT Silchar,Ram Kumar Karsh,NIT Silchar,Electronics and Communication Engineering,10,768.63203,0.18,0.0,1,True,0.8066,-1.09,0.9734,2.66,51
+NIT Silchar,Subhrajit Dutta,NIT Silchar,Civil Engineering,4,2992.52498,0.56,0.32,6,False,0.8139,-0.36,0.9742,2.58,49
+NIT Silchar,Asim Roy,NIT Silchar,Physics,8,1671.71555,0.4062,0.2188,14,True,0.8102,-0.73,0.9744,2.56,50
+NIT Silchar,Agnimitra Biswas,NIT Silchar,Mechanical Engineering,11,1295.566,0.4298,0.4298,4,True,0.8102,-0.73,0.9747,2.53,50
+NIT Silchar,Badal Soni,NIT Silchar,Computer Science and Engineering,11,1358.19723,0.4298,0.3967,11,True,0.8102,-0.73,0.9755,2.45,50
+NIT Silchar,Ashim Kanti Dey,NIT Silchar,Civil Engineering,5,1496.35544,0.0,0.0,6,True,0.8066,-1.09,0.9759,2.41,51
+NIT Silchar,Koena Mukherjee,NIT Silchar,Electronics and Instrumentation Engineering,5,2387.48545,0.72,0.64,4,False,0.8139,-0.36,0.9761,2.39,49
+NIT Silchar,S. K. Tripathy,NIT Silchar,Electronics and Communication Engineering,7,1393.35783,0.449,0.2449,1,True,0.8102,-0.73,0.9764,2.36,50
+NIT Silchar,Dulal Chandra Das,NIT Silchar,Electrical Engineering,7,2880.2811,0.4082,0.6531,10,False,0.8139,-0.36,0.9765,2.35,49
+NIT Silchar,Sukumar Pati,NIT Silchar,Mechanical Engineering,7,1000.76967,0.4082,0.449,4,True,0.8102,-0.73,0.9766,2.34,50
+NIT Silchar,Saroj Kr. Biswas,NIT Silchar,Computer Science and Engineering,10,2006.92521,0.54,0.54,11,False,0.8139,-0.36,0.9793,2.07,49
+NIT Silchar,A.K. Barbhuiya,NIT Silchar,Civil Engineering,5,1182.2844,0.32,0.32,6,True,0.8102,-0.73,0.9802,1.98,50
+NIT Silchar,Rajeeb Dey,NIT Silchar,Electrical Engineering,5,1920.46135,0.72,0.56,13,False,0.8139,-0.36,0.9804,1.96,49
+NIT Silchar,Ranjay Hazra,NIT Silchar,Electronics and Instrumentation Engineering,7,1122.81419,0.5714,0.6122,1,False,0.8139,-0.36,0.9807,1.93,49
+NIT Silchar,Brinda Bhowmick,NIT Silchar,Electronics and Communication Engineering,9,1529.58918,0.1975,0.1975,1,False,0.8139,-0.36,0.9811,1.89,49
+NIT Silchar,Aminul Islam Laskar,NIT Silchar,Civil Engineering,5,1135.90724,0.0,0.0,6,True,0.8102,-0.73,0.9816,1.84,50
+NIT Silchar,Siddhartha S Dhar,NIT Silchar,Chemistry,6,1504.34328,0.7778,0.2778,14,False,0.8139,-0.36,0.9816,1.84,49
+NIT Silchar,Sudarsan Sahoo,NIT Silchar,Electronics and Instrumentation Engineering,9,1190.06112,0.3704,0.4938,13,False,0.8139,-0.36,0.9818,1.82,49
+NIT Silchar,Ashraf Hossain,NIT Silchar,Electronics and Communication Engineering,8,1618.374,0.2188,0.2188,1,False,0.8139,-0.36,0.9819,1.81,49
+NIT Silchar,Sujit Nath,NIT Silchar,Mechanical Engineering,6,1719.71409,0.4444,0.2778,4,False,0.8139,-0.36,0.9826,1.74,49
+NIT Silchar,R. Murugan,NIT Silchar,Electronics and Communication Engineering,8,1474.32936,0.6562,0.375,1,False,0.8139,-0.36,0.9827,1.73,49
+NIT Silchar,Krishna Lal Baishnab,NIT Silchar,Electronics and Communication Engineering,16,1836.17071,0.1172,0.1172,1,False,0.8139,-0.36,0.983,1.7,49
+NIT Silchar,Taimoor Khan,NIT Silchar,Electronics and Communication Engineering,9,266.9325,0.1975,0.0,1,True,0.8102,-0.73,0.9832,1.68,50
+NIT Silchar,Avijit Chowdhury,NIT Silchar,Physics,6,1474.85465,0.5,0.2778,14,False,0.8139,-0.36,0.9838,1.62,49
+NIT Silchar,Dalton Meitei Thounaojam,NIT Silchar,Computer Science and Engineering,9,1381.53376,0.1975,0.1975,11,False,0.8139,-0.36,0.9838,1.62,49
+NIT Silchar,Sudipta Halder,NIT Silchar,Mechanical Engineering,6,1157.47338,0.6111,0.4444,14,False,0.8139,-0.36,0.985,1.5,49
+NIT Silchar,Rabul Hussain Laskar,NIT Silchar,Electronics and Communication Engineering,11,849.38363,0.2975,0.2975,1,False,0.8139,-0.36,0.986,1.4,49
+NIT Silchar,Samuel Lalthazuala Rokhum,NIT Silchar,Chemistry,7,563.54205,0.4898,0.2449,14,False,0.8139,-0.36,0.9865,1.35,49
+NIT Silchar,Fazal A. Talukdar,NIT Silchar,Electronics and Communication Engineering,13,654.01147,0.142,0.0,1,False,0.8139,-0.36,0.9869,1.31,49
+NIT Silchar,Srimanta Baishya,NIT Silchar,Electronics and Communication Engineering,8,457.1288,0.0,0.0,1,False,0.8139,-0.36,0.9878,1.22,49
+NIT Silchar,Promod Kumar Patowari,NIT Silchar,Mechanical Engineering,7,340.84429,0.0,0.0,4,False,0.8139,-0.36,0.9885,1.15,49
+NIT Silchar,Ripon Patgiri,NIT Silchar,Computer Science and Engineering,10,481.63645,0.0,0.0,11,False,0.8139,-0.36,0.9885,1.15,49
+NIT Silchar,Arnab Nandi,NIT Silchar,Electronics and Communication Engineering,10,420.64902,0.0,0.0,1,False,0.8139,-0.36,0.9886,1.14,49
+NIT Silchar,Koushik Guha,NIT Silchar,Electronics and Communication Engineering,9,465.39057,0.1975,0.1975,1,False,0.8139,-0.36,0.9887,1.13,49
+NIT Silchar,Devendra Singh Gurjar,NIT Silchar,Electronics and Communication Engineering,9,275.09916,0.1975,0.0,1,False,0.8139,-0.36,0.9892,1.08,49
+NIT Silchar,Ganesh Prasad,NIT Silchar,Electronics and Communication Engineering,9,243.76793,0.1975,0.0,1,False,0.8139,-0.36,0.9892,1.08,49
+NIT Silchar,Prabina Pattanayak,NIT Silchar,Electronics and Communication Engineering,8,100.51947,0.0,0.0,1,False,0.8139,-0.36,0.9896,1.04,49

@@ -1,0 +1,62 @@
+{
+ "institute": "NIT Jamshedpur",
+ "top30_by_year": {
+  "2016": 2,
+  "2018": 2,
+  "2019": 4,
+  "2020": 14,
+  "2021": 6,
+  "2022": 1,
+  "2024": 1
+ },
+ "top30_by_field": {
+  "Mathematics": 12,
+  "Engineering": 6,
+  "Environmental Science": 3,
+  "Medicine": 3,
+  "Computer Science": 2,
+  "Materials Science": 2,
+  "Energy": 1,
+  "Agricultural and Biological Sciences": 1
+ },
+ "top30_by_subfield": {
+  "Modeling and Simulation": 12,
+  "Public Health, Environmental and Occupational Health": 3,
+  "Mechanical Engineering": 3,
+  "Health, Toxicology and Mutagenesis": 2,
+  "Computer Vision and Pattern Recognition": 2,
+  "Biomaterials": 1,
+  "Environmental Chemistry": 1,
+  "Renewable Energy, Sustainability and the Environment": 1
+ },
+ "top30_faculty_involvement": {
+  "Sunil Kumar": 15,
+  "Balram Ambade": 4,
+  "Radha Krishna Prasad": 2,
+  "AJAY KUMAR": 2,
+  "Vishesh Ranjan Kar": 2,
+  "Shashi Bhushan Prasad": 1
+ },
+ "lead_faculty": "Sunil Kumar",
+ "with_vs_without_lead_faculty": {
+  "all": {
+   "papers": 3594,
+   "citations": 44061,
+   "h": 84,
+   "median_cit": 4.0
+  },
+  "without_lead": {
+   "papers": 3457,
+   "citations": 37628,
+   "h": 74,
+   "median_cit": 3.0
+  },
+  "lead_share_of_citations_%": 14.6
+ },
+ "year_2020": {
+  "papers": 309,
+  "citations": 7868,
+  "share_of_institute_citations_%": 17.9,
+  "top30_from_2020": 14
+ }
+}

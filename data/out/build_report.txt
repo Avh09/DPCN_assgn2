@@ -1,0 +1,20 @@
+Unique works downloaded: 23372
+Types before cleaning: {'article': 13889, 'conference-paper': 5740, 'review': 57, 'book': 87, 'book-chapter': 2428, 'data-paper': 4, 'other': 153, 'preprint': 722, 'conference-abstract': 16, 'erratum': 47, 'reference-entry': 16, 'editorial': 17, 'software': 12, 'retraction': 29, 'paratext': 66, 'letter': 4, 'book-review': 5, 'peer-review': 39, 'dataset': 34, 'supplementary-materials': 4, 'dissertation': 2, 'report': 1}
+Dropped 142 non-research items (['erratum', 'paratext', 'retraction'])
+Dropped 11 duplicate DOIs
+Dropped 2724 non journal/conference items: {'book-chapter': 1539, 'preprint': 719, 'other': 153, 'book': 87, 'article': 71, 'peer-review': 39, 'dataset': 34, 'editorial': 17, 'conference-abstract': 16, 'reference-entry': 16, 'software': 12, 'book-review': 5, 'conference-paper': 4, 'data-paper': 4, 'supplementary-materials': 4, 'dissertation': 2, 'review': 1, 'report': 1}
+Merged 126 duplicate records of the same paper (see data/out/duplicate_audit.csv)
+Papers kept: 20369
+Papers with no author matched to our institutes (lineage mismatch): 1
+Papers per type: {'journal': 13090, 'conference': 7279}
+OpenAlex types of papers labelled 'other': {}
+Papers without DOI: 157
+Papers without journal/source: 1068
+Papers per year: {2016: 802, 2017: 948, 2018: 1173, 2019: 1162, 2020: 1712, 2021: 2141, 2022: 2460, 2023: 2456, 2024: 2710, 2025: 2723, 2026: 2082}
+Authorship rows: 71580; rows from our institutes: 44985
+Papers per institute (a paper counts for each of our institutes on it):
+  MANIT Bhopal: 6872
+  NIT Jamshedpur: 4315
+  NIT Silchar: 9254
+Distinct our-institute author IDs: 8243
+Draft rows (paper x author x institute): 44993

@@ -1,0 +1,801 @@
+faculty_name,institution,department,faculty_status,collaborators,joint_papers,degree_centrality,betweenness,clustering,community_louvain,community_leiden,collaborators_other_dept,collaborators_other_inst
+Vijay Bhaskar Semwal,MANIT Bhopal,Computer Science and Engineering,current,17,46,0.02128,0.11797,0.11,6,9,6,2
+Rajesh Purohit,MANIT Bhopal,Mechanical Engineering,current,25,128,0.03129,0.10955,0.08,0,0,7,0
+SURESH KUMAR GAWRE,MANIT Bhopal,Electrical Engineering,current,15,32,0.01877,0.08985,0.19,7,7,4,0
+Kunal Singh,NIT Jamshedpur,Electronics and Communication Engineering,current,7,15,0.00876,0.08102,0.143,1,1,3,2
+Vimlesh Kumar Soni,MANIT Bhopal,Mechanical Engineering,current,4,4,0.00501,0.06968,0.5,0,0,0,0
+Emon Barua,MANIT Bhopal,Mechanical Engineering,current,2,3,0.0025,0.06919,0.0,2,4,0,1
+Ashish B. Deoghare,NIT Silchar,Mechanical Engineering,current,3,15,0.00375,0.06874,0.333,2,4,0,2
+Krishna Murari Pandey,NIT Silchar,Mechanical Engineering,former,17,133,0.02128,0.06539,0.096,2,4,0,1
+Shiva Nand Singh,NIT Jamshedpur,Electronics and Communication Engineering,former,6,12,0.00751,0.06509,0.067,1,2,0,0
+Satish Kumar,NIT Jamshedpur,Mechanical Engineering,current,9,17,0.01126,0.06423,0.139,3,3,5,0
+Sanja y,NIT Jamshedpur,Mechanical Engineering,current,8,18,0.01001,0.05977,0.179,3,3,3,2
+Koushlendra Kumar Singh,NIT Jamshedpur,Computer Science and Engineering,current,9,14,0.01126,0.05803,0.139,1,2,3,1
+Shahedul Haque Laskar,NIT Silchar,Electronics and Instrumentation Engineering,current,5,21,0.00626,0.05265,0.2,12,13,1,1
+Swagatadeb Sahoo,NIT Jamshedpur,Electronics and Communication Engineering,current,2,12,0.0025,0.05255,0.0,12,13,1,1
+Shalendra Kumar,NIT Jamshedpur,Mechanical Engineering,former,5,15,0.00626,0.0521,0.1,1,3,2,0
+Kavicharan Mummaneni,NIT Silchar,Electronics and Communication Engineering,current,4,31,0.00501,0.05134,0.167,4,1,0,1
+Biplab Das,NIT Silchar,Mechanical Engineering,current,16,92,0.02003,0.04413,0.15,2,4,4,0
+Akhilesh Kumar,NIT Jamshedpur,Electronics and Communication Engineering,current,4,12,0.00501,0.04403,0.0,1,2,3,1
+Nidul Sinha,NIT Silchar,Electrical Engineering,current,11,57,0.01377,0.04248,0.145,10,10,4,0
+Lalit Chandra Saikia,NIT Silchar,Electrical Engineering,current,6,21,0.00751,0.03963,0.2,10,10,0,1
+GUMPU SRINIVASULU,MANIT Bhopal,Electrical Engineering,current,4,11,0.00501,0.03875,0.5,7,7,0,0
+Siddhartha Deb Roy,MANIT Bhopal,Electrical Engineering,current,2,4,0.0025,0.03824,0.0,7,7,0,1
+N. P. Patidar,MANIT Bhopal,Electrical Engineering,current,8,15,0.01001,0.03697,0.321,7,7,1,0
+Ashraf Hossain,NIT Silchar,Electronics and Communication Engineering,current,8,30,0.01001,0.03392,0.357,4,1,1,0
+Binoy Krishna Roy,NIT Silchar,Electrical Engineering,current,11,39,0.01377,0.03176,0.055,12,13,4,0
+Tikendra Nath Verma,MANIT Bhopal,Mechanical Engineering,current,7,53,0.00876,0.03103,0.095,0,0,3,1
+Tanmoy Malakar,NIT Silchar,Electrical Engineering,current,5,6,0.00626,0.03066,0.1,10,10,1,0
+M. Raju,MANIT Bhopal,Electrical Engineering,current,5,11,0.00626,0.02984,0.4,7,7,0,1
+AMIT PRAKASH,NIT Jamshedpur,Electronics and Communication Engineering,current,7,26,0.00876,0.02973,0.095,1,2,2,0
+Omhari Gupta,NIT Jamshedpur,Electrical Engineering,current,7,9,0.00876,0.02962,0.143,11,8,2,1
+Arvind Mittal,MANIT Bhopal,Energy Science and Engineering,current,11,29,0.01377,0.0293,0.236,7,7,8,0
+SREENU SREEKUMAR,NIT Silchar,Electrical Engineering,current,2,3,0.0025,0.02912,0.0,10,10,0,1
+Gaurav Dwivedi,MANIT Bhopal,Energy Science and Engineering,current,11,69,0.01377,0.02834,0.218,0,0,5,1
+Manisha Dubey,MANIT Bhopal,Electrical Engineering,current,8,20,0.01001,0.02785,0.357,7,7,1,0
+Shashi Bhushan Prasad,NIT Jamshedpur,Production and Industrial Engineering,current,11,37,0.01377,0.02756,0.182,3,3,5,2
+Kamal Singh,MANIT Bhopal,Civil Engineering,current,5,7,0.00626,0.02729,0.1,16,16,1,0
+Raman Nateriya,MANIT Bhopal,Civil Engineering,current,5,9,0.00626,0.02674,0.2,0,0,3,0
+Nilay Khare,MANIT Bhopal,Computer Science and Engineering,current,14,64,0.01752,0.02632,0.22,6,9,2,0
+Subhrajit Dutta,NIT Silchar,Civil Engineering,current,5,11,0.00626,0.02625,0.1,8,6,1,1
+Prashant V. Baredar,MANIT Bhopal,Energy Science and Engineering,current,19,78,0.02378,0.02605,0.099,0,0,11,0
+Bijit Choudhuri,NIT Silchar,Electronics and Communication Engineering,current,4,28,0.00501,0.02555,0.333,4,1,0,1
+H. L.Tiwari,MANIT Bhopal,Civil Engineering,current,7,14,0.00876,0.02523,0.048,0,0,2,0
+Brinda Bhowmick,NIT Silchar,Electronics and Communication Engineering,current,9,98,0.01126,0.02504,0.222,4,1,1,0
+Saroj Kr. Biswas,NIT Silchar,Computer Science and Engineering,current,10,107,0.01252,0.02364,0.2,9,11,4,0
+Prashant Kumar,NIT Jamshedpur,Electronics and Communication Engineering,current,3,6,0.00375,0.02346,0.0,15,15,1,0
+Shailendra Kumar,MANIT Bhopal,Electrical Engineering,former,6,25,0.00751,0.02285,0.467,7,7,1,1
+Amresh Kumar,NIT Jamshedpur,Production and Industrial Engineering,current,6,19,0.00751,0.02285,0.267,3,3,3,1
+Koena Mukherjee,NIT Silchar,Electronics and Instrumentation Engineering,current,5,7,0.00626,0.02282,0.1,2,4,4,0
+Koushik Guha,NIT Silchar,Electronics and Communication Engineering,current,9,83,0.01126,0.02269,0.278,4,1,1,0
+Kishan Dharavath,MANIT Bhopal,Civil Engineering,current,5,9,0.00626,0.02237,0.0,6,12,2,0
+M. M. Malik,MANIT Bhopal,Physics,current,8,28,0.01001,0.02232,0.071,5,5,5,0
+Sudarsan Sahoo,NIT Silchar,Electronics and Instrumentation Engineering,current,9,15,0.01126,0.0219,0.083,12,13,2,0
+Mani Kant Paswan,NIT Jamshedpur,Mechanical Engineering,current,12,33,0.01502,0.021,0.061,3,3,2,0
+Mausumi Sen,NIT Silchar,Mathematics,current,8,13,0.01001,0.02024,0.0,2,1,5,0
+AJAY KUMAR,NIT Jamshedpur,Electronics and Communication Engineering,current,6,25,0.00751,0.01993,0.133,1,2,2,0
+Asim Roy,NIT Silchar,Physics,current,8,18,0.01001,0.0193,0.25,13,14,2,0
+Mrutyunjay Rout,NIT Jamshedpur,Electronics and Communication Engineering,former,5,14,0.00626,0.01883,0.1,15,15,2,0
+Manmohan Kapshe,MANIT Bhopal,Architecture and Planning,current,3,3,0.00375,0.01873,0.333,17,17,2,0
+Rajeeb Dey,NIT Silchar,Electrical Engineering,current,5,16,0.00626,0.01847,0.1,12,13,3,0
+RAJ BALLAV,NIT Jamshedpur,Production and Industrial Engineering,current,10,29,0.01252,0.01804,0.2,3,3,2,1
+Sudip Dey,NIT Silchar,Mechanical Engineering,current,5,31,0.00626,0.01753,0.1,2,4,2,1
+R. S. Rana,MANIT Bhopal,Mechanical Engineering,current,13,90,0.01627,0.01749,0.205,0,0,3,0
+Manish Pandey,MANIT Bhopal,Computer Science and Engineering,current,7,67,0.00876,0.01699,0.286,6,9,1,0
+Vinay Mohan Das,MANIT Bhopal,Architecture and Planning,current,2,2,0.0025,0.01688,0.0,17,17,0,0
+Dulal Chandra Das,NIT Silchar,Electrical Engineering,current,7,30,0.00876,0.01575,0.143,10,10,2,0
+Agnimitra Biswas,NIT Silchar,Mechanical Engineering,current,11,83,0.01377,0.01554,0.127,2,4,3,0
+Sudipta Halder,NIT Silchar,Mechanical Engineering,current,6,20,0.00751,0.01529,0.133,13,14,3,0
+Niranjan Kumar,NIT Jamshedpur,Electrical Engineering,current,7,15,0.00876,0.01527,0.048,11,8,3,0
+Yogesh K. Garg,MANIT Bhopal,Architecture and Planning,current,7,10,0.00876,0.01509,0.095,17,17,0,0
+Amit Bhagat,MANIT Bhopal,Computer Applications,current,2,3,0.0025,0.01503,0.0,6,9,2,0
+Abdhesh Kumar Sinha,NIT Jamshedpur,Civil Engineering,current,7,18,0.00876,0.01487,0.238,15,15,1,0
+Kumari Namrata,NIT Jamshedpur,Electrical Engineering,current,9,20,0.01126,0.01441,0.083,11,8,5,0
+Siddhartha S Dhar,NIT Silchar,Chemistry,current,6,21,0.00751,0.01423,0.133,13,14,4,0
+Siddhartha Rokade,MANIT Bhopal,Civil Engineering,current,5,18,0.00626,0.01411,0.0,16,16,1,0
+Sri Khetwat Saritha,MANIT Bhopal,Computer Science and Engineering,current,5,23,0.00626,0.01409,0.2,6,9,1,0
+Manas Kumar Bera,NIT Silchar,Electronics and Instrumentation Engineering,former,4,5,0.00501,0.01398,0.333,12,13,3,0
+Dalton Meitei Thounaojam,NIT Silchar,Computer Science and Engineering,current,9,38,0.01126,0.01395,0.306,9,11,1,0
+Danish Ali Khan,NIT Jamshedpur,Computer Science and Engineering,current,9,24,0.01126,0.01388,0.139,1,2,2,0
+Sanjay V. Kumar,NIT Jamshedpur,Civil Engineering,current,10,20,0.01252,0.01336,0.111,11,8,8,0
+Satyabrata Choudhury,NIT Silchar,Civil Engineering,former,6,22,0.00751,0.01331,0.067,8,6,0,0
+Jyoti Singhai,MANIT Bhopal,Electronics and Communication Engineering,current,5,9,0.00626,0.01331,0.1,5,5,1,0
+Sushma Gupta,MANIT Bhopal,Electrical Engineering,current,14,65,0.01752,0.0133,0.242,7,7,1,0
+Chandan Kumar Verma,MANIT Bhopal,Mathematics,current,4,12,0.00501,0.01321,0.167,19,19,1,0
+Mrityunjay Kumar Sinha,NIT Jamshedpur,Mechanical Engineering,former,6,11,0.00751,0.0132,0.0,1,2,3,0
+Rajesh Kumar Nema,MANIT Bhopal,Electrical Engineering,current,9,38,0.01126,0.01319,0.417,7,7,1,0
+Saikat Ranjan Maity,NIT Jamshedpur,Mechanical Engineering,current,8,98,0.01001,0.01314,0.179,2,4,0,8
+S. Suresh,MANIT Bhopal,Chemical Engineering,current,9,12,0.01126,0.01216,0.111,0,0,7,0
+TARUN KUMAR GUPTA,MANIT Bhopal,Electronics and Communication Engineering,current,6,19,0.00751,0.01209,0.133,5,5,2,0
+Avijit Chowdhury,NIT Silchar,Physics,former,6,14,0.00751,0.0118,0.2,13,14,2,0
+Alok Singh,MANIT Bhopal,Mechanical Engineering,current,7,20,0.00876,0.01178,0.238,0,0,0,0
+A.K. Barbhuiya,NIT Silchar,Civil Engineering,current,5,7,0.00626,0.0117,0.1,8,6,1,0
+Vijayshri Chaurasia,MANIT Bhopal,Electronics and Communication Engineering,current,7,31,0.00876,0.01155,0.143,5,5,2,0
+Ashim Kanti Dey,NIT Silchar,Civil Engineering,current,5,9,0.00626,0.01152,0.0,8,6,0,0
+Ashis Kumar Pradhan,MANIT Bhopal,Humanities and Social Sciences,current,8,14,0.01001,0.01131,0.214,18,0,5,0
+Amit Ojha,MANIT Bhopal,Electrical Engineering,current,7,35,0.00876,0.01119,0.333,7,7,3,0
+Jupitara Hazarika,NIT Silchar,Electronics and Instrumentation Engineering,current,6,18,0.00751,0.01103,0.267,12,13,0,0
+Mohammad Taufik,MANIT Bhopal,Mechanical Engineering,current,6,15,0.00751,0.01087,0.2,0,0,1,0
+Rajdeep Dasgupta,NIT Silchar,Electronics and Instrumentation Engineering,current,4,20,0.00501,0.01075,0.167,13,14,1,0
+Archana Nigrawal,MANIT Bhopal,Physics,current,5,18,0.00626,0.01063,0.2,5,5,3,0
+Keshav Kumar Sharma,NIT Jamshedpur,Civil Engineering,current,7,21,0.00876,0.01024,0.19,15,15,2,1
+Manoj Arya,MANIT Bhopal,Mechanical Engineering,current,7,15,0.00876,0.01018,0.333,7,7,5,0
+Rajnish Kurchania,MANIT Bhopal,Physics,current,6,11,0.00751,0.01002,0.2,5,5,1,0
+DK Yadav,NIT Jamshedpur,Computer Science and Engineering,current,4,13,0.00501,0.0098,0.167,1,2,2,0
+Aminul Islam Laskar,NIT Silchar,Civil Engineering,current,5,7,0.00626,0.00954,0.0,8,6,0,0
+Anuj Jaiswal,MANIT Bhopal,Architecture and Planning,current,3,5,0.00375,0.00945,0.0,16,16,2,0
+BINOD KUMAR SINGH,NIT Jamshedpur,Computer Science and Engineering,current,6,9,0.00751,0.00943,0.067,1,2,0,0
+Krishna Lal Baishnab,NIT Silchar,Electronics and Communication Engineering,current,16,102,0.02003,0.00941,0.225,4,1,1,0
+Priyanka Dhurvey,MANIT Bhopal,Civil Engineering,current,8,12,0.01001,0.00932,0.036,0,0,2,0
+Badal Soni,NIT Silchar,Computer Science and Engineering,current,11,45,0.01377,0.00931,0.109,9,11,3,0
+Mitul Kumar Ahirwal,MANIT Bhopal,Computer Science and Engineering,current,7,17,0.00876,0.00921,0.429,6,9,0,0
+Deepak Kumar (Mechanical Engineering),MANIT Bhopal,Mechanical Engineering,current,5,13,0.00626,0.00918,0.3,0,0,1,0
+Manish Vishwakarma,MANIT Bhopal,Mechanical Engineering,current,4,8,0.00501,0.00882,0.167,0,0,1,0
+Yogesh Singh,NIT Silchar,Mechanical Engineering,current,4,14,0.00501,0.00874,0.0,2,4,1,0
+Fozia Z. Haque,MANIT Bhopal,Physics,current,6,22,0.00751,0.00863,0.2,5,5,2,0
+Rabul Hussain Laskar,NIT Silchar,Electronics and Communication Engineering,current,11,59,0.01377,0.00859,0.182,4,1,2,0
+Sujit Nath,NIT Silchar,Mechanical Engineering,current,6,71,0.00751,0.00854,0.267,2,4,2,0
+Saumya R. Mohapatra,NIT Silchar,Physics,current,6,10,0.00751,0.00854,0.133,13,14,4,0
+R. K. Pateriya,MANIT Bhopal,Computer Science and Engineering,current,9,40,0.01126,0.00836,0.167,6,9,2,0
+Ajay Pandey,MANIT Bhopal,Mechanical Engineering,current,5,12,0.00626,0.00829,0.3,0,0,2,0
+Sukumar Pati,NIT Silchar,Mechanical Engineering,current,7,89,0.00876,0.00824,0.095,2,4,2,0
+Pitambar R Randive,NIT Silchar,Mechanical Engineering,current,6,70,0.00751,0.00823,0.267,2,4,2,0
+Ranjay Hazra,NIT Silchar,Electronics and Instrumentation Engineering,current,7,10,0.00876,0.00798,0.143,4,1,5,0
+Debjit Bhowmik,NIT Silchar,Civil Engineering,current,2,7,0.0025,0.00791,0.0,8,6,1,0
+Dharmendra Patel,NIT Jamshedpur,Production and Industrial Engineering,current,7,24,0.00876,0.00768,0.238,3,3,1,0
+Kavita Dehalwar,MANIT Bhopal,Architecture and Planning,current,3,5,0.00375,0.00758,0.0,16,16,0,0
+Shubham Tripathi,NIT Jamshedpur,Production and Industrial Engineering,current,2,2,0.0025,0.00757,0.0,3,3,1,0
+S. K. Tripathy,NIT Silchar,Electronics and Communication Engineering,current,7,42,0.00876,0.00751,0.143,4,1,2,0
+Basudeba Behera,NIT Jamshedpur,Electronics and Communication Engineering,current,7,8,0.00876,0.0075,0.095,1,2,1,0
+Ram Vinoy Sharma,NIT Jamshedpur,Mechanical Engineering,current,3,10,0.00375,0.00741,0.333,1,3,1,0
+Sanyam Shukla,MANIT Bhopal,Computer Science and Engineering,current,7,50,0.00876,0.00711,0.238,6,9,1,0
+Ashish Paramane,NIT Silchar,Electrical Engineering,current,5,14,0.00626,0.00709,0.1,10,10,1,0
+Pankaj Kumar,MANIT Bhopal,Computer Science and Engineering,current,4,4,0.00501,0.00702,0.167,7,7,3,0
+Jyoti Bharti,MANIT Bhopal,Computer Science and Engineering,current,7,24,0.00876,0.0069,0.381,6,9,0,0
+Wasim Arif,NIT Silchar,Electronics and Communication Engineering,current,10,24,0.01252,0.00685,0.2,4,1,1,0
+Lintu Roy,NIT Silchar,Mechanical Engineering,current,2,9,0.0025,0.00679,0.0,2,4,1,0
+R. Murugan,NIT Silchar,Electronics and Communication Engineering,current,8,84,0.01001,0.00672,0.286,9,1,4,0
+Shailesh Kumar Prasad,NIT Jamshedpur,Chemistry,current,5,7,0.00626,0.00672,0.1,1,2,3,0
+Anup Kumar Sharma,NIT Silchar,Electronics and Instrumentation Engineering,current,5,5,0.00626,0.00671,0.1,2,4,2,0
+Sudipta Chakraborty,NIT Silchar,Electronics and Instrumentation Engineering,current,6,26,0.00751,0.00667,0.2,12,13,2,0
+Sanjay Soni,MANIT Bhopal,Mechanical Engineering,former,6,23,0.00751,0.0066,0.333,0,0,2,0
+Pritikana Das,MANIT Bhopal,Civil Engineering,current,4,7,0.00501,0.00655,0.167,16,16,2,0
+Monowar Hussain,NIT Silchar,Civil Engineering,current,4,17,0.00501,0.00654,0.0,8,6,0,0
+Sweta Jain,MANIT Bhopal,Computer Science and Engineering,current,5,28,0.00626,0.00634,0.2,6,9,0,0
+Arup Kumar Goswami,NIT Silchar,Electrical Engineering,current,6,54,0.00751,0.00619,0.267,10,10,0,0
+R. N. Yadav,MANIT Bhopal,Electronics and Communication Engineering,current,4,17,0.00501,0.00615,0.167,5,5,1,0
+Nenavath Sreenu,MANIT Bhopal,Management Studies,current,5,12,0.00626,0.00613,0.2,18,0,2,0
+Jitesh Pradhan,NIT Jamshedpur,Computer Science and Engineering,current,7,11,0.00876,0.00607,0.238,1,2,0,0
+Jiwanjot Singh,NIT Silchar,Electrical Engineering,former,6,11,0.00751,0.00607,0.267,10,10,1,0
+Nalin Behari Dev Choudhury,NIT Silchar,Electrical Engineering,current,5,29,0.00626,0.00605,0.4,10,10,0,0
+M.S. Chauhan,MANIT Bhopal,Civil Engineering,current,4,13,0.00501,0.00601,0.0,14,12,2,0
+Mokaddes Ali Ahmed,NIT Silchar,Civil Engineering,current,4,10,0.00501,0.00597,0.0,8,6,1,0
+J. S. Yadav,MANIT Bhopal,Electronics and Communication Engineering,current,8,14,0.01001,0.00588,0.107,5,5,0,0
+R. K. Baghel,MANIT Bhopal,Electronics and Communication Engineering,current,6,15,0.00751,0.00583,0.067,5,5,0,0
+Mukesh Kirar,MANIT Bhopal,Electrical Engineering,current,5,21,0.00626,0.00581,0.4,7,7,0,0
+Narendra Gajbhiye,MANIT Bhopal,Mechanical Engineering,current,3,8,0.00375,0.00569,0.0,7,7,0,0
+Amit Dubey,MANIT Bhopal,Chemistry,current,3,7,0.00375,0.00569,0.0,5,5,1,0
+Rajat Tripathi,NIT Jamshedpur,Mathematics,current,2,12,0.0025,0.00568,0.0,3,3,1,0
+Krishna Deo Prasad Singh,NIT Jamshedpur,Mechanical Engineering,current,4,4,0.00501,0.00559,0.0,1,8,2,0
+Ram Kumar Karsh,NIT Silchar,Electronics and Communication Engineering,current,10,40,0.01252,0.00555,0.178,4,1,1,0
+Subhadeep Metya,NIT Jamshedpur,Civil Engineering,current,6,16,0.00751,0.00553,0.2,15,15,0,0
+Savita Dixit,MANIT Bhopal,Chemistry,current,4,17,0.00501,0.00541,0.167,0,0,3,0
+Rajat Gupta,NIT Silchar,Mechanical Engineering,former,7,27,0.00876,0.00539,0.286,2,4,1,0
+KANIKA PRASAD,NIT Jamshedpur,Production and Industrial Engineering,current,6,16,0.00751,0.00533,0.2,3,3,2,0
+Parthajit Roy,NIT Silchar,Civil Engineering,current,4,15,0.00501,0.00528,0.0,8,6,0,0
+Sunil Kumar,NIT Jamshedpur,Mathematics,current,5,16,0.00626,0.00516,0.1,1,2,4,0
+Jay Mant Jha,MANIT Bhopal,Chemical Engineering,current,3,5,0.00375,0.00516,0.0,0,0,2,0
+Saheli Ray,NIT Silchar,Electrical Engineering,current,4,12,0.00501,0.00516,0.167,10,10,0,0
+Nagendra Kumar,NIT Jamshedpur,Electronics and Communication Engineering,current,2,4,0.0025,0.00513,0.0,1,2,0,0
+Samuel Lalthazuala Rokhum,NIT Silchar,Chemistry,current,7,21,0.00876,0.00503,0.143,13,14,3,0
+Shailendra Jain,MANIT Bhopal,Electrical Engineering,current,8,30,0.01001,0.00501,0.321,7,7,2,0
+Deepak Singh Tomar,MANIT Bhopal,Computer Science and Engineering,current,12,34,0.01502,0.00497,0.318,6,9,1,0
+Archana Soni,MANIT Bhopal,Energy Science and Engineering,current,5,26,0.00626,0.00492,0.5,0,0,1,0
+Bijan Kumar Roy,NIT Silchar,Civil Engineering,current,3,4,0.00375,0.00485,0.333,8,6,1,0
+Namita Srivastava,MANIT Bhopal,Mathematics,current,4,18,0.00501,0.00474,0.333,19,19,1,0
+Yadunath Pathak,MANIT Bhopal,Computer Science and Engineering,current,3,10,0.00375,0.00473,0.333,6,9,0,0
+D Koteswara Raju,NIT Silchar,Electrical Engineering,former,4,13,0.00501,0.00469,0.0,10,10,1,0
+Fazal A. Talukdar,NIT Silchar,Electronics and Communication Engineering,current,13,110,0.01627,0.00466,0.244,4,1,1,0
+Srimanta Baishya,NIT Silchar,Electronics and Communication Engineering,current,8,83,0.01001,0.00458,0.25,4,1,0,0
+Sunilkumar D,NIT Silchar,Mechanical Engineering,current,4,5,0.00501,0.00456,0.0,10,10,1,0
+D. K. Raghuvanshi,MANIT Bhopal,Electronics and Communication Engineering,current,5,9,0.00626,0.00441,0.2,5,5,0,0
+Ripon Patgiri,NIT Silchar,Computer Science and Engineering,current,10,42,0.01252,0.00438,0.222,9,11,0,0
+Vijay Panchore,MANIT Bhopal,Mechanical Engineering,current,4,8,0.00501,0.00436,0.167,0,0,0,0
+Shanti Gopal Patra,NIT Silchar,Chemistry,current,7,10,0.00876,0.00434,0.19,13,14,5,0
+Sushant Negi,NIT Silchar,Mechanical Engineering,current,6,33,0.00751,0.00431,0.267,2,4,1,0
+M. K. Pradhan,MANIT Bhopal,Mechanical Engineering,former,2,2,0.0025,0.0043,0.0,6,12,0,0
+Pragati Agrawal,MANIT Bhopal,Computer Science and Engineering,current,7,13,0.00876,0.00426,0.238,6,9,1,0
+Md. Ahmaruzzaman,NIT Silchar,Chemistry,current,5,52,0.00626,0.00411,0.0,13,14,2,0
+Raj Kumar Biswas,NIT Silchar,Electrical Engineering,current,3,3,0.00375,0.00409,0.333,12,13,2,0
+Vishal Parashar,MANIT Bhopal,Mechanical Engineering,current,5,10,0.00626,0.00406,0.4,0,0,1,0
+Swapna Mansani,NIT Silchar,Electrical Engineering,current,6,25,0.00751,0.00405,0.2,10,10,0,0
+Kavita Khare,MANIT Bhopal,Electronics and Communication Engineering,current,5,15,0.00626,0.00401,0.2,5,5,2,0
+Gyaneshwar Singh Kushwaha,MANIT Bhopal,Management Studies,current,3,9,0.00375,0.00399,0.333,18,0,1,0
+MADHU SINGH,NIT Jamshedpur,Electrical Engineering,current,4,7,0.00501,0.00399,0.0,11,8,0,0
+Laiphrakpam Dolendro Singh,NIT Silchar,Computer Science and Engineering,current,7,28,0.00876,0.00392,0.19,9,11,1,0
+Somnath Santra,NIT Silchar,Mechanical Engineering,current,2,2,0.0025,0.00391,0.0,8,6,0,0
+Sunder Lal Pal,MANIT Bhopal,Chemical Engineering,current,4,7,0.00501,0.0039,0.0,14,12,2,0
+C.Sasikumar,MANIT Bhopal,Materials and Metallurgical Engineering,current,5,10,0.00626,0.00389,0.1,14,12,2,1
+Nabanita Adhikary,NIT Silchar,Electrical Engineering,current,6,16,0.00751,0.0038,0.133,12,13,1,0
+Rakesh Kumar,MANIT Bhopal,Civil Engineering,current,2,2,0.0025,0.0038,0.0,16,16,0,0
+Bikrant Kesari,MANIT Bhopal,Management Studies,current,2,3,0.0025,0.0038,0.0,18,21,0,0
+J. L. Bhagoria,MANIT Bhopal,Mechanical Engineering,current,5,16,0.00626,0.0038,0.3,0,0,1,0
+Supriya Vyas,MANIT Bhopal,Architecture and Planning,current,2,5,0.0025,0.0038,0.0,16,16,0,0
+Ashim Kumar Das,NIT Silchar,Management Studies,current,3,6,0.00375,0.0038,0.0,2,24,1,0
+Pallab Das,NIT Silchar,Civil Engineering,current,2,5,0.0025,0.0038,0.0,8,6,0,0
+Santanu Roy,NIT Silchar,Mathematics,current,2,7,0.0025,0.0038,0.0,24,26,0,0
+Gaurav Upadhyay,MANIT Bhopal,Electronics and Communication Engineering,current,2,2,0.0025,0.0038,0.0,5,5,0,0
+Ramayan Singh,NIT Jamshedpur,Mathematics,former,3,15,0.00375,0.0038,0.0,3,3,0,0
+Vishesh Ranjan Kar,NIT Jamshedpur,Mechanical Engineering,current,4,18,0.00501,0.0038,0.167,3,3,1,1
+ANIL KUMAR CHOUDHARY,NIT Jamshedpur,Civil Engineering,current,4,14,0.00501,0.0038,0.333,15,15,0,0
+Manasi Gyanchandani,MANIT Bhopal,Computer Science and Engineering,current,6,60,0.00751,0.00368,0.267,6,9,0,0
+Rahul Dev Misra,NIT Silchar,Mechanical Engineering,current,7,41,0.00876,0.00358,0.381,2,4,0,0
+Alok Priyadarshi,NIT Jamshedpur,Electrical Engineering,current,3,13,0.00375,0.00357,0.0,11,8,1,0
+Pukhrambam Puspa Devi,NIT Silchar,Electronics and Communication Engineering,current,4,23,0.00501,0.00348,0.167,4,1,1,0
+Savita Nema,MANIT Bhopal,Electrical Engineering,current,7,42,0.00876,0.00344,0.381,7,7,1,0
+Suganya Devi K,NIT Silchar,Computer Science and Engineering,current,6,27,0.00751,0.0034,0.2,9,11,2,0
+Nitin Dindorker,MANIT Bhopal,Civil Engineering,former,3,12,0.00375,0.00327,0.0,6,12,0,0
+Biswajit Purkayastha,NIT Silchar,Computer Science and Engineering,former,6,87,0.00751,0.00325,0.467,9,11,1,0
+Arun Kumar Sunaniya,NIT Silchar,Electronics and Instrumentation Engineering,current,4,8,0.00501,0.00322,0.0,12,4,1,0
+Rajesh Saha,NIT Silchar,Electronics and Communication Engineering,current,4,40,0.00501,0.00318,0.5,4,1,0,0
+Bholanath Roy,MANIT Bhopal,Computer Science and Engineering,current,6,21,0.00751,0.00314,0.533,6,9,0,0
+Rabindra Nath Mahanty,NIT Jamshedpur,Electrical Engineering,current,4,20,0.00501,0.00312,0.333,11,8,1,0
+Vinod Yadav,MANIT Bhopal,Mechanical Engineering,current,5,16,0.00626,0.0029,0.4,0,0,1,0
+Anoop Arya,MANIT Bhopal,Electrical Engineering,current,9,61,0.01126,0.00289,0.417,7,7,2,0
+Mayank Srivastava,NIT Jamshedpur,Electronics and Communication Engineering,current,4,9,0.00501,0.00287,0.167,1,2,1,0
+Rahul Tiwari,MANIT Bhopal,Architecture and Planning,current,3,3,0.00375,0.00285,0.0,17,17,0,0
+Rupak Kishor,MANIT Bhopal,Chemical Engineering,current,4,5,0.00501,0.00285,0.333,14,12,1,0
+Ashok Kumar Mehta,NIT Jamshedpur,Computer Applications,former,3,12,0.00375,0.00285,0.0,1,2,2,0
+Sumit H. Dhawane,MANIT Bhopal,Chemical Engineering,current,3,6,0.00375,0.00285,0.0,14,12,3,0
+Arjun Sil,NIT Silchar,Civil Engineering,current,4,14,0.00501,0.00284,0.0,8,6,0,0
+Gaurav Singh Baghel,NIT Silchar,Electronics and Communication Engineering,current,6,32,0.00751,0.00279,0.2,4,1,0,0
+Partha Pakray,NIT Silchar,Computer Science and Engineering,current,5,7,0.00626,0.00278,0.0,9,11,2,0
+Vaibhav Soni,MANIT Bhopal,Computer Science and Engineering,current,10,27,0.01252,0.00274,0.311,6,9,1,0
+Gautam Choubey,NIT Silchar,Mechanical Engineering,current,5,21,0.00626,0.00267,0.4,2,4,0,0
+Prabha Chand,NIT Jamshedpur,Mechanical Engineering,current,4,6,0.00501,0.00266,0.0,11,8,2,0
+Samir Kumar Borgohain,NIT Silchar,Computer Science and Engineering,current,6,20,0.00751,0.00265,0.2,9,11,0,0
+Chandrashekhar Azad,NIT Jamshedpur,Computer Science and Engineering,current,3,20,0.00375,0.00263,0.0,1,2,2,0
+Bipul Das,NIT Silchar,Mechanical Engineering,current,3,10,0.00375,0.00258,0.0,2,4,0,1
+Prashanth J,NIT Silchar,Civil Engineering,current,4,8,0.00501,0.00257,0.0,8,6,0,0
+Ashish Das,MANIT Bhopal,Mechanical Engineering,current,4,18,0.00501,0.00254,0.667,3,3,4,4
+Hira Lal Yadav,NIT Jamshedpur,Physics,current,3,7,0.00375,0.00252,0.0,1,3,2,0
+VIRENDRA KUMAR,NIT Jamshedpur,Civil Engineering,current,5,15,0.00626,0.00251,0.3,15,15,0,0
+Kumarasamy Sudhakar,MANIT Bhopal,Energy Science and Engineering,current,5,23,0.00626,0.00246,0.3,0,0,3,0
+Ajay Verma,MANIT Bhopal,Mechanical Engineering,current,2,3,0.0025,0.00246,0.0,6,12,1,0
+M A Hassan,NIT Jamshedpur,Mechanical Engineering,current,3,7,0.00375,0.00245,0.333,3,3,0,0
+Vishnu Prasad,MANIT Bhopal,Civil Engineering,current,4,27,0.00501,0.00244,0.167,14,12,0,0
+Avadh Pati,NIT Silchar,Electrical Engineering,current,6,23,0.00751,0.00244,0.2,12,13,2,0
+Shankar. K,NIT Silchar,Electronics and Instrumentation Engineering,current,2,2,0.0025,0.00239,0.0,9,13,1,0
+Ramesh Kumar Nayak,MANIT Bhopal,Materials and Metallurgical Engineering,current,3,3,0.00375,0.00227,0.0,14,12,2,0
+Prasanta Roy,NIT Silchar,Electrical Engineering,current,4,19,0.00501,0.00223,0.333,12,13,1,0
+Taimoor Khan,NIT Silchar,Electronics and Communication Engineering,current,9,57,0.01126,0.00222,0.361,4,1,1,0
+Munmun Khanra,NIT Silchar,Electronics and Instrumentation Engineering,current,3,3,0.00375,0.00221,0.0,2,4,1,0
+Vilas Warudkar,MANIT Bhopal,Mechanical Engineering,current,5,35,0.00626,0.00219,0.5,0,0,2,0
+Binita Nath,NIT Silchar,Mechanical Engineering,current,2,3,0.0025,0.00214,0.0,8,6,1,0
+Madhu Shandilya,MANIT Bhopal,Electronics and Communication Engineering,current,4,27,0.00501,0.00214,0.167,5,5,0,0
+Pushyamitra Mishra,MANIT Bhopal,Mechanical Engineering,former,6,10,0.00751,0.00214,0.333,0,0,2,0
+Devendra Singh Gurjar,NIT Silchar,Electronics and Communication Engineering,current,9,19,0.01126,0.00214,0.472,4,1,1,0
+Rahul M Shrivastava,MANIT Bhopal,Biological Science and Engineering,current,2,2,0.0025,0.00212,0.0,14,12,2,0
+Dilip Kumar (Computer Science and Engineering),NIT Jamshedpur,Computer Science and Engineering,current,3,3,0.00375,0.00209,0.0,1,2,2,0
+Jayendra Kumar,NIT Jamshedpur,Electronics and Communication Engineering,current,2,3,0.0025,0.00207,0.0,1,2,0,0
+Amit Suhane,MANIT Bhopal,Mechanical Engineering,current,7,24,0.00876,0.00199,0.381,0,0,0,0
+Jyoti Prakash Mishra,NIT Silchar,Electrical Engineering,current,4,22,0.00501,0.00197,0.167,12,13,0,0
+Meenu Chawla,MANIT Bhopal,Computer Science and Engineering,current,4,37,0.00501,0.00194,0.167,6,9,0,0
+Anil Prasad,NIT Jamshedpur,Mechanical Engineering,current,3,9,0.00375,0.00193,0.0,3,3,0,0
+Satish Pal Singh Rajput,MANIT Bhopal,Mechanical Engineering,current,3,7,0.00375,0.00192,0.0,0,0,0,1
+Alok Mittal,MANIT Bhopal,Chemistry,current,2,17,0.0025,0.0019,0.0,0,28,0,0
+Naresh Prasad,NIT Jamshedpur,Mechanical Engineering,current,2,7,0.0025,0.0019,0.0,3,3,0,0
+Sudhanshu Shekhar Pati,NIT Jamshedpur,Chemistry,current,2,14,0.0025,0.0019,0.0,1,2,0,0
+Pradeep Kumar Jain,MANIT Bhopal,Civil Engineering,current,2,3,0.0025,0.0019,0.0,16,16,0,0
+Chintalacheruvu Madhusudana Rao,NIT Jamshedpur,Civil Engineering,current,2,4,0.0025,0.0019,0.0,15,15,1,0
+Atul Kumar,MANIT Bhopal,Electronics and Communication Engineering,current,2,2,0.0025,0.0019,0.0,5,5,0,0
+Manjeet Singh Hora,MANIT Bhopal,Civil Engineering,current,2,4,0.0025,0.0019,0.0,0,0,0,0
+Suprava Jena,NIT Silchar,Civil Engineering,current,2,7,0.0025,0.0019,0.0,8,6,0,0
+Amit Banerji,MANIT Bhopal,Management Studies,current,2,5,0.0025,0.0019,0.0,18,21,0,0
+Atanu Sahu,NIT Silchar,Civil Engineering,current,2,3,0.0025,0.0019,0.0,8,6,1,0
+Risha Mal,NIT Silchar,Electrical Engineering,current,2,2,0.0025,0.0019,0.0,10,10,1,0
+Parthasarathi Choudhury,NIT Silchar,Civil Engineering,current,2,9,0.0025,0.0019,0.0,8,6,0,0
+Parmanand Kumar,NIT Jamshedpur,Mechanical Engineering,current,2,4,0.0025,0.0019,0.0,3,3,0,0
+SUBRATA DUTTA,NIT Jamshedpur,Computer Science and Engineering,current,2,2,0.0025,0.0019,0.0,1,2,1,0
+NEHA PRANAV KOLHE,MANIT Bhopal,Architecture and Planning,current,2,5,0.0025,0.0019,0.0,16,16,0,0
+Sunil Kumar,NIT Silchar,Mechanical Engineering,current,4,35,0.00501,0.0019,0.5,2,4,0,1
+Dheerendra Mishra,MANIT Bhopal,Mathematics,current,2,5,0.0025,0.0019,0.0,19,19,0,1
+Kedar Nath Das,NIT Silchar,Mathematics,current,2,7,0.0025,0.0019,0.0,24,26,1,0
+Madhvi Shakya,MANIT Bhopal,Mathematics,current,2,4,0.0025,0.0019,0.0,19,19,0,0
+Khushhali M. Pandey,MANIT Bhopal,Biological Science and Engineering,current,2,2,0.0025,0.0019,0.0,0,0,2,0
+K. R. Aharwal,MANIT Bhopal,Mechanical Engineering,current,2,5,0.0025,0.0019,0.0,7,7,0,0
+Soumya Mukherjee,MANIT Bhopal,Chemistry,current,2,6,0.0025,0.0019,0.0,5,5,0,0
+Vikas Poonia,MANIT Bhopal,Civil Engineering,current,2,3,0.0025,0.0019,0.0,0,0,0,0
+Sanjeev Singh,MANIT Bhopal,Electrical Engineering,current,8,26,0.01001,0.00188,0.429,7,7,1,0
+Subrat Kumar Barik,NIT Silchar,Physics,current,2,4,0.0025,0.00187,0.0,12,13,1,0
+Shyamosree Pal,NIT Silchar,Computer Science and Engineering,current,4,9,0.00501,0.00186,0.5,9,11,0,0
+Saurabh Chaudhury,NIT Silchar,Electrical Engineering,current,4,15,0.00501,0.0017,0.0,4,1,2,0
+Priyanka Paliwal,MANIT Bhopal,Electrical Engineering,current,9,42,0.01126,0.00167,0.417,7,7,1,0
+Arnab Nandi,NIT Silchar,Electronics and Communication Engineering,current,10,69,0.01252,0.00165,0.333,4,1,0,0
+Pankaj Swarnkar,MANIT Bhopal,Electrical Engineering,current,8,22,0.01001,0.00162,0.429,7,7,0,0
+Prahlad Prasad,NIT Jamshedpur,Civil Engineering,current,2,2,0.0025,0.00161,0.0,15,15,0,0
+Ganesh Prasad,NIT Silchar,Electronics and Communication Engineering,current,9,43,0.01126,0.0016,0.528,4,1,1,0
+Mayuri Baruah,NIT Jamshedpur,Production and Industrial Engineering,current,6,15,0.00751,0.0016,0.333,3,3,3,2
+Somenath Mondal,NIT Jamshedpur,Civil Engineering,current,5,6,0.00626,0.00151,0.3,15,15,0,0
+Upendra Kumar,NIT Silchar,Civil Engineering,current,3,4,0.00375,0.00149,0.0,8,6,0,0
+Yogendra Kumar,MANIT Bhopal,Electrical Engineering,current,7,12,0.00876,0.00145,0.524,7,7,1,0
+Ramkishor Anant,MANIT Bhopal,Materials and Metallurgical Engineering,current,3,4,0.00375,0.00144,0.0,14,12,1,0
+Aditya Goel,MANIT Bhopal,Electronics and Communication Engineering,current,3,11,0.00375,0.00142,0.333,5,5,0,0
+Ramanujam E,NIT Silchar,Computer Science and Engineering,current,4,6,0.00501,0.00142,0.333,9,11,1,0
+Subhasis Panda,NIT Silchar,Physics,current,5,14,0.00626,0.00139,0.4,13,14,2,0
+Asha Rani M. A,NIT Silchar,Electrical Engineering,current,2,3,0.0025,0.00138,0.0,10,10,0,0
+Amritesh Kumar,NIT Silchar,Electrical Engineering,current,5,21,0.00626,0.00138,0.1,12,13,0,0
+Vasudev Dehalwar,MANIT Bhopal,Computer Science and Engineering,current,6,26,0.00751,0.00136,0.533,6,9,0,0
+Dipankar Bhanja,NIT Silchar,Mechanical Engineering,current,6,74,0.00751,0.00136,0.4,2,4,0,0
+Sangeeta Nakhate,MANIT Bhopal,Electronics and Communication Engineering,current,4,9,0.00501,0.00133,0.167,5,5,0,0
+Darpahari Das,NIT Silchar,Mechanical Engineering,former,3,3,0.00375,0.00131,0.667,2,4,0,0
+Sumit Bhowmik,NIT Silchar,Mechanical Engineering,current,7,39,0.00876,0.00131,0.381,2,4,0,1
+N. Shaemningwar Moyon,NIT Silchar,Chemistry,current,3,10,0.00375,0.00127,0.333,13,14,0,0
+Promod Kumar Patowari,NIT Silchar,Mechanical Engineering,current,7,49,0.00876,0.00123,0.238,2,4,0,0
+Ashish Kumar Sahu,MANIT Bhopal,Computer Science and Engineering,current,4,4,0.00501,0.00122,0.167,7,7,3,0
+Lalu Seban,NIT Silchar,Electronics and Instrumentation Engineering,current,3,4,0.00375,0.00118,0.0,13,13,2,0
+Jayashree Baral,MANIT Bhopal,Materials and Metallurgical Engineering,current,2,3,0.0025,0.00117,0.0,14,12,1,0
+Akkala Subba Rao,MANIT Bhopal,Electronics and Communication Engineering,current,2,3,0.0025,0.00115,0.0,5,5,0,0
+Siraj Ahmed,MANIT Bhopal,Mechanical Engineering,current,5,32,0.00626,0.00114,0.3,0,0,1,0
+Trupti Ranjan Lenka,NIT Silchar,Electronics and Communication Engineering,current,6,54,0.00751,0.00114,0.467,4,1,0,0
+Ruchi Khare,MANIT Bhopal,Civil Engineering,current,4,28,0.00501,0.00113,0.167,14,12,1,0
+Prabina Pattanayak,NIT Silchar,Electronics and Communication Engineering,current,8,42,0.01001,0.00111,0.679,4,1,0,0
+Mahendra Kumar Choudhary,MANIT Bhopal,Civil Engineering,current,3,14,0.00375,0.00111,0.333,14,12,0,0
+Dhirendra Pratap Singh,MANIT Bhopal,Computer Science and Engineering,current,7,86,0.00876,0.00108,0.476,6,9,1,0
+Laxmi Kumre,MANIT Bhopal,Electronics and Communication Engineering,current,5,10,0.00626,0.00108,0.3,5,5,0,0
+Veerpratap Meena,NIT Jamshedpur,Electrical Engineering,current,5,7,0.00626,0.00108,0.2,11,8,0,0
+Juthika Mahanta,NIT Silchar,Mathematics,current,2,6,0.0025,0.00102,0.0,13,14,2,0
+Naresh Babu Muppalaneni,NIT Silchar,Computer Science and Engineering,current,5,14,0.00626,0.00101,0.2,9,11,0,0
+Ashoke Kumar Sinha,NIT Silchar,Electrical Engineering,former,2,2,0.0025,0.001,0.0,10,10,0,0
+Jaytrilok Choudhary,MANIT Bhopal,Computer Science and Engineering,current,6,85,0.00751,0.001,0.6,6,9,1,0
+Krishna Bihari Yadav,NIT Jamshedpur,Electrical Engineering,current,2,12,0.0025,0.001,0.0,11,8,0,0
+Vivekanandan S,NIT Silchar,Electrical Engineering,current,2,3,0.0025,0.00098,0.0,10,10,1,0
+Brajkishor Prasad,NIT Jamshedpur,Civil Engineering,current,4,11,0.00501,0.00098,0.333,15,15,0,0
+Pankaj Biswas,NIT Silchar,Mathematics,current,3,24,0.00375,0.00097,0.333,2,4,3,0
+R.M.Sarviya,MANIT Bhopal,Mechanical Engineering,current,5,10,0.00626,0.00096,0.2,0,0,2,0
+Manoj Jha,MANIT Bhopal,Mathematics,current,3,11,0.00375,0.00095,0.667,19,19,1,0
+Arshi Parashar,MANIT Bhopal,Architecture and Planning,current,3,3,0.00375,0.00095,0.333,17,17,0,0
+Rajeev Parmar,MANIT Bhopal,Chemical Engineering,current,4,7,0.00501,0.00094,0.167,14,12,1,0
+Dulari Hansdah,NIT Jamshedpur,Mechanical Engineering,current,2,5,0.0025,0.00094,0.0,3,3,0,0
+Awdhesh K Choudhary,NIT Jamshedpur,Civil Engineering,current,4,18,0.00501,0.00093,0.5,15,15,0,0
+Kethavath Raghavendra Naik,NIT Jamshedpur,Electrical Engineering,current,3,4,0.00375,0.00092,0.333,11,8,0,0
+Rishi Kumar Singh,MANIT Bhopal,Electrical Engineering,current,5,6,0.00626,0.00091,0.2,7,7,2,0
+P. Srinivasan,NIT Silchar,Physics,current,3,24,0.00375,0.00087,0.333,9,11,2,0
+Sanjay Srivastava,MANIT Bhopal,Materials and Metallurgical Engineering,current,4,9,0.00501,0.00087,0.167,14,12,2,1
+Chandrajit Choudhury,NIT Silchar,Electronics and Communication Engineering,current,4,5,0.00501,0.00082,0.333,4,1,1,0
+Usha Chouhan,MANIT Bhopal,Mathematics,current,2,3,0.0025,0.00082,0.0,6,12,2,0
+Om Prakash Meena,MANIT Bhopal,Electronics and Communication Engineering,current,3,3,0.00375,0.00081,0.0,5,5,0,0
+Tripti Goel,NIT Silchar,Electronics and Communication Engineering,current,7,74,0.00876,0.00077,0.333,9,1,1,0
+Ranjith G. Nair,NIT Silchar,Physics,current,3,8,0.00375,0.00073,0.333,13,14,1,0
+Arvind Choubey,NIT Jamshedpur,Electronics and Communication Engineering,former,3,15,0.00375,0.00068,0.333,1,2,1,0
+Lalita Gupta,MANIT Bhopal,Electronics and Communication Engineering,current,4,18,0.00501,0.00068,0.167,5,5,0,0
+Madhuri Seeram,NIT Jamshedpur,Civil Engineering,current,3,4,0.00375,0.00054,0.333,15,15,0,0
+Pranjit Barman,NIT Silchar,Chemistry,current,2,5,0.0025,0.00052,0.0,8,6,2,0
+Piyush Kumar Patel,MANIT Bhopal,Physics,current,3,13,0.00375,0.0005,0.0,5,5,1,0
+Tarni Mandal,NIT Jamshedpur,Mathematics,former,4,13,0.00501,0.0005,0.167,1,2,4,0
+Ruma Rano,NIT Silchar,Chemistry,current,2,12,0.0025,0.00048,0.0,13,14,1,0
+RASHMI SINHA,NIT Jamshedpur,Electronics and Communication Engineering,current,3,15,0.00375,0.00048,0.0,1,2,1,0
+DINESH KUMAR (Production and Industrial Engineering),NIT Jamshedpur,Production and Industrial Engineering,current,3,12,0.00375,0.00047,0.667,3,3,0,0
+Shweta Bhandari,MANIT Bhopal,Computer Science and Engineering,current,3,4,0.00375,0.00045,0.333,6,9,0,0
+Giribabu Dyanamina,MANIT Bhopal,Electrical Engineering,current,4,5,0.00501,0.00045,0.5,7,7,0,0
+Mallikarjuna Balimidi,NIT Silchar,Electrical Engineering,current,2,2,0.0025,0.00042,0.0,10,10,0,0
+Bhavana P. Shrivastava,MANIT Bhopal,Electronics and Communication Engineering,current,3,7,0.00375,0.00042,0.333,5,5,0,0
+Anupam Biswas,NIT Silchar,Computer Science and Engineering,current,3,11,0.00375,0.0004,0.667,9,11,0,0
+Shivendra Kumar Pandey,NIT Silchar,Electronics and Instrumentation Engineering,current,2,2,0.0025,0.00039,0.0,12,4,0,0
+Chayan Bhattacharjee,NIT Silchar,Electrical Engineering,current,3,8,0.00375,0.00036,0.0,12,13,0,0
+Akhilesh Soni,MANIT Bhopal,Mechanical Engineering,current,4,7,0.00501,0.00035,0.5,0,0,0,0
+Juned Raheem,MANIT Bhopal,Civil Engineering,current,2,3,0.0025,0.00033,0.0,0,0,0,0
+Sumita Debbarma,NIT Silchar,Mechanical Engineering,current,4,20,0.00501,0.00031,0.333,2,4,0,0
+Gurveer Singh,MANIT Bhopal,Energy Science and Engineering,current,4,5,0.00501,0.0003,0.833,0,0,1,0
+Kavita Gidwani,MANIT Bhopal,Energy Science and Engineering,current,4,5,0.00501,0.0003,0.833,0,0,1,0
+Deepak Kumar (Humanities and Social Sciences),MANIT Bhopal,Humanities and Social Sciences,current,3,3,0.00375,0.0003,0.333,18,0,1,0
+Akhtar Rasool,MANIT Bhopal,Computer Science and Engineering,current,6,44,0.00751,0.00029,0.4,6,9,0,0
+Kaushal Kumar Sharma,NIT Silchar,Mechanical Engineering,former,2,43,0.0025,0.00029,0.0,2,4,0,0
+Ravi Kumar Dwivedi,MANIT Bhopal,Mechanical Engineering,current,4,20,0.00501,0.00028,0.5,0,0,0,0
+Sushil Kumar Gupta,NIT Jamshedpur,Electrical Engineering,current,2,4,0.0025,0.00028,0.0,11,8,1,0
+Abhinav Varshney,MANIT Bhopal,Mechanical Engineering,current,2,2,0.0025,0.00028,0.0,0,0,1,0
+Amit Kumar Das,NIT Silchar,Civil Engineering,current,3,11,0.00375,0.00026,0.0,8,6,0,0
+Suneet Kaur,MANIT Bhopal,Civil Engineering,current,2,9,0.0025,0.00026,0.0,6,12,1,0
+Rutuja M. Chavan,MANIT Bhopal,Civil Engineering,current,2,4,0.0025,0.00026,0.0,0,0,0,0
+Shweta Mehroliya,MANIT Bhopal,Electrical Engineering,current,6,24,0.00751,0.00023,0.6,7,7,2,0
+Madhuchhanda Choudhury,NIT Silchar,Electronics and Communication Engineering,former,4,18,0.00501,0.00023,0.5,4,1,0,0
+Chinmaya Kumar Sahoo,NIT Silchar,Mechanical Engineering,current,3,10,0.00375,0.00023,0.0,2,4,0,1
+Arup Bhattacharjee,NIT Silchar,Computer Science and Engineering,current,3,3,0.00375,0.00022,0.333,9,11,1,0
+Chukhu Chunka,NIT Silchar,Computer Science and Engineering,current,2,8,0.0025,0.00022,0.0,9,11,0,0
+Abhishek Paul,NIT Silchar,Mechanical Engineering,current,2,7,0.0025,0.00021,0.0,2,4,0,0
+Praveen Kaushik,MANIT Bhopal,Computer Science and Engineering,former,2,4,0.0025,0.0002,0.0,6,9,0,0
+Shyamapada Mukherjee,NIT Silchar,Computer Science and Engineering,former,2,2,0.0025,0.0002,0.0,9,11,0,0
+Sukeshni Tirkey,MANIT Bhopal,Electronics and Communication Engineering,former,3,11,0.00375,0.00019,0.333,5,5,0,0
+Rahul Kumar Chaurasiya,MANIT Bhopal,Electronics and Communication Engineering,current,3,5,0.00375,0.00018,0.0,5,5,0,0
+Mangesh Lodhe,MANIT Bhopal,Materials and Metallurgical Engineering,current,2,3,0.0025,0.00017,0.0,14,12,1,0
+Ujwala Baruah,NIT Silchar,Computer Science and Engineering,current,4,13,0.00501,0.00016,0.5,9,11,3,0
+Prashanta Kumar Paul,NIT Silchar,Electronics and Communication Engineering,former,3,14,0.00375,0.00016,0.667,4,1,0,0
+Gajendra Dixit,MANIT Bhopal,Mechanical Engineering,former,3,12,0.00375,0.00014,0.667,0,0,2,0
+Subhash Singh,MANIT Bhopal,Physics,current,3,6,0.00375,0.00013,0.667,3,3,3,3
+Alekha Kumar Mishra,NIT Jamshedpur,Computer Science and Engineering,current,3,4,0.00375,0.00013,0.333,1,2,0,0
+Ujjwal Kumar Kalla,MANIT Bhopal,Electrical Engineering,former,4,21,0.00501,0.00011,0.667,7,7,1,0
+Jyoti Rani,MANIT Bhopal,Physics,current,3,12,0.00375,0.00011,0.333,5,5,0,0
+Ujjal Chakraborty,NIT Silchar,Electronics and Communication Engineering,current,3,10,0.00375,0.00011,0.333,4,1,0,0
+Simanta Kumar Samal,NIT Jamshedpur,Electrical Engineering,current,2,5,0.0025,0.00011,0.0,11,8,0,0
+Surya Prakash,NIT Jamshedpur,Electrical Engineering,current,2,3,0.0025,0.0001,0.0,11,8,0,0
+Partha Kayal,NIT Silchar,Electrical Engineering,current,2,11,0.0025,0.0001,0.0,10,10,0,0
+Paramita Sarkar,NIT Silchar,Electronics and Communication Engineering,current,4,18,0.00501,9e-05,0.667,4,1,0,0
+Manish Kashyap,MANIT Bhopal,Electronics and Communication Engineering,current,2,2,0.0025,9e-05,0.0,5,5,0,0
+Robin Khosla,NIT Silchar,Electronics and Communication Engineering,former,2,3,0.0025,8e-05,0.0,4,1,0,0
+Charu Parashar,MANIT Bhopal,Civil Engineering,former,2,2,0.0025,8e-05,0.0,0,0,1,0
+Vinyas Mahesh,NIT Silchar,Mechanical Engineering,current,3,6,0.00375,5e-05,0.667,2,4,0,0
+Ram Krishna,NIT Jamshedpur,Metallurgical and Materials Engineering,current,4,8,0.00501,5e-05,0.167,20,18,2,0
+Shuchi Srivastava,MANIT Bhopal,Management Studies,current,3,6,0.00375,5e-05,0.333,18,0,1,0
+Rajiv Ranjan Suman,NIT Jamshedpur,Computer Science and Engineering,current,3,5,0.00375,5e-05,0.333,1,2,1,0
+Rajesh Wadhwani,MANIT Bhopal,Computer Science and Engineering,current,4,47,0.00501,3e-05,0.667,6,9,0,0
+Arun Kumar,NIT Jamshedpur,Electrical Engineering,current,3,4,0.00375,3e-05,0.0,20,18,3,0
+Banani Basu,NIT Silchar,Electronics and Communication Engineering,current,4,60,0.00501,3e-05,0.667,4,1,0,0
+Ravi Kumar Mandava,MANIT Bhopal,Mechanical Engineering,former,2,2,0.0025,3e-05,0.0,0,0,0,0
+Arvind Rajawat,MANIT Bhopal,Electronics and Communication Engineering,current,2,7,0.0025,3e-05,0.0,5,5,0,0
+Biswa Nath Ghosh,NIT Silchar,Chemistry,current,2,4,0.0025,2e-05,0.0,13,14,0,0
+Akhileshwar Kumar Singh,NIT Jamshedpur,Civil Engineering,current,2,2,0.0025,2e-05,0.0,15,15,0,0
+Titas Kumar Mukhopadhyay,NIT Jamshedpur,Chemistry,current,4,7,0.00501,2e-05,0.167,21,20,0,0
+Malaya Dutta Borah,NIT Silchar,Computer Science and Engineering,current,4,15,0.00501,2e-05,0.5,9,11,0,0
+Tripta Thakur,MANIT Bhopal,Electrical Engineering,current,4,20,0.00501,2e-05,0.667,7,7,0,0
+Ranjit Prasad,NIT Jamshedpur,Metallurgical and Materials Engineering,former,3,9,0.00375,2e-05,0.333,20,18,0,0
+Bivina G R,MANIT Bhopal,Civil Engineering,current,2,8,0.0025,1e-05,0.0,16,16,0,0
+Rakesh Pratap Singh,NIT Jamshedpur,Civil Engineering,former,3,6,0.00375,1e-05,0.667,15,15,0,0
+P. K. Agrawal,MANIT Bhopal,Civil Engineering,current,1,2,0.00125,0.0,0.0,16,16,0,0
+Abhay Sharma,MANIT Bhopal,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Navneet Munoth,MANIT Bhopal,Architecture and Planning,current,2,5,0.0025,0.0,0.0,22,25,0,0
+Subhankar Dutta,MANIT Bhopal,Mathematics,current,1,1,0.00125,0.0,0.0,19,19,0,0
+Hasthi Venkateswarlu,MANIT Bhopal,Civil Engineering,current,1,1,0.00125,0.0,0.0,6,12,0,0
+Krishna K Dhote,MANIT Bhopal,Architecture and Planning,current,1,2,0.00125,0.0,0.0,16,16,0,0
+Akash M Chandran,MANIT Bhopal,Chemical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Santanu Pakhira,MANIT Bhopal,Physics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Khwairakpam Lakshman Singh,NIT Silchar,Civil Engineering,current,1,3,0.00125,0.0,0.0,8,6,0,0
+Simanchal Kar,NIT Silchar,Mechanical Engineering,current,2,22,0.0025,0.0,1.0,2,4,1,0
+Subhajit Patra,MANIT Bhopal,Chemical Engineering,current,2,4,0.0025,0.0,1.0,14,12,0,0
+Lakshmi Vara Prasad. M,NIT Silchar,Civil Engineering,current,1,1,0.00125,0.0,0.0,8,6,0,0
+Vikash Kumar,MANIT Bhopal,Mechanical Engineering,current,1,3,0.00125,0.0,0.0,0,0,0,0
+Briti Sundar Sil,NIT Silchar,Civil Engineering,current,1,2,0.00125,0.0,0.0,2,4,1,0
+Dharmendar Kumar Sharma,MANIT Bhopal,Chemistry,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Pushpender Yadav,MANIT Bhopal,Humanities and Social Sciences,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Uday Kumar,NIT Jamshedpur,Physics,current,1,14,0.00125,0.0,0.0,1,2,1,0
+Surajit Kundu,NIT Jamshedpur,Electronics and Communication Engineering,current,2,2,0.0025,0.0,1.0,1,2,0,0
+Snehasis Kundu,NIT Jamshedpur,Mathematics,current,1,2,0.00125,0.0,0.0,1,2,0,0
+Ghanshyam Singh Thakur,MANIT Bhopal,Computer Applications,current,1,1,0.00125,0.0,0.0,26,32,0,0
+Ashok Kumar Akella,NIT Jamshedpur,Electrical Engineering,former,2,10,0.0025,0.0,1.0,11,8,0,0
+Radha Krishna Prasad,NIT Jamshedpur,Mechanical Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Mukul Kulshrestha,MANIT Bhopal,Civil Engineering,current,1,3,0.00125,0.0,0.0,0,0,0,0
+Jai Prakash Jaiswal,MANIT Bhopal,Bioinformatics,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Baban H Shambharkar,NIT Silchar,Chemistry,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Nirmalendu Debnath,NIT Silchar,Civil Engineering,current,2,5,0.0025,0.0,1.0,8,6,0,0
+Nirmala Soren,NIT Silchar,Electrical Engineering,former,1,2,0.00125,0.0,0.0,4,1,1,0
+C. Murali Krishna,MANIT Bhopal,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,7,7,0,0
+Vipin Chandra Pal,NIT Silchar,Electronics and Instrumentation Engineering,current,2,25,0.0025,0.0,1.0,12,13,1,0
+Kanchapogu Suresh,MANIT Bhopal,Chemical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Vineet Sahoo,NIT Jamshedpur,Mechanical Engineering,current,1,2,0.00125,0.0,0.0,3,3,0,0
+SANJAY VAJPAI,NIT Jamshedpur,Metallurgical and Materials Engineering,current,2,5,0.0025,0.0,1.0,14,12,2,2
+Laljee Prasad,NIT Jamshedpur,Mechanical Engineering,current,1,2,0.00125,0.0,0.0,3,3,0,0
+Sumit Kumar Debnath,NIT Jamshedpur,Mathematics,former,1,1,0.00125,0.0,0.0,19,19,0,1
+Ramjeevan Singh Thakur,MANIT Bhopal,Computer Applications,former,1,1,0.00125,0.0,0.0,26,32,0,0
+Arun Kumar Singh,NIT Jamshedpur,Electrical Engineering,former,2,8,0.0025,0.0,1.0,11,8,1,0
+Vikram Garg,MANIT Bhopal,Computer Science and Engineering,current,1,1,0.00125,0.0,0.0,0,0,1,0
+Balram Ambade,NIT Jamshedpur,Chemistry,current,1,1,0.00125,0.0,0.0,15,15,1,0
+RAMARAJAN R,MANIT Bhopal,Physics,current,1,3,0.00125,0.0,0.0,5,5,0,0
+Rajput S. P. S,MANIT Bhopal,Civil Engineering,current,1,8,0.00125,0.0,0.0,16,16,0,0
+Praveen Kumar Gupta,NIT Silchar,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Rajat Soni,MANIT Bhopal,Architecture and Planning,current,2,2,0.0025,0.0,0.0,17,17,0,0
+Vijaya Kumar Bulasara,MANIT Bhopal,Chemical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ameenur Rehman Siddiqui,MANIT Bhopal,Mechanical Engineering,former,2,4,0.0025,0.0,1.0,0,0,0,0
+Rajesh Kumar Mahato,MANIT Bhopal,Civil Engineering,current,1,1,0.00125,0.0,0.0,29,33,0,0
+Vibhuti Chauhan,MANIT Bhopal,Electronics and Communication Engineering,current,2,3,0.0025,0.0,1.0,5,5,0,0
+Sukanti Behera,MANIT Bhopal,Chemistry,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Varsha Rokade,MANIT Bhopal,Management Studies,current,1,3,0.00125,0.0,0.0,18,21,0,0
+Prashant Kumar Tiwari,NIT Silchar,Electrical Engineering,former,1,25,0.00125,0.0,0.0,10,10,0,0
+Thoudam Doren Singh,NIT Silchar,Computer Science and Engineering,current,2,2,0.0025,0.0,1.0,9,11,0,0
+Amit Telang,MANIT Bhopal,Mechanical Engineering,current,2,14,0.0025,0.0,1.0,0,0,0,0
+Rajesh Gupta,MANIT Bhopal,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,7,7,0,0
+Akash Oraon,MANIT Bhopal,Materials and Metallurgical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Saptarshi Roy,NIT Silchar,Chemistry,current,1,40,0.00125,0.0,0.0,13,14,0,0
+Pinki Roy,NIT Silchar,Computer Science and Engineering,current,3,3,0.00375,0.0,1.0,9,11,0,0
+Pijus Kanti De,NIT Silchar,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+S. K. Dubey,MANIT Bhopal,Civil Engineering,current,1,1,0.00125,0.0,0.0,28,27,0,0
+Jagdish Singh,MANIT Bhopal,Architecture and Planning,current,1,1,0.00125,0.0,0.0,16,16,0,0
+Charumitra Kapshe,MANIT Bhopal,Architecture and Planning,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+ANJALI DHENGLE,MANIT Bhopal,Humanities and Social Sciences,current,2,2,0.0025,0.0,1.0,18,0,0,0
+Surendra Singh,MANIT Bhopal,Computer Science and Engineering,current,2,2,0.0025,0.0,1.0,0,0,2,0
+Kajal Mishra,MANIT Bhopal,Chemical Engineering,current,2,3,0.0025,0.0,1.0,0,0,2,0
+Vicky Lalramsangi,MANIT Bhopal,Architecture and Planning,current,2,4,0.0025,0.0,1.0,17,17,0,0
+Ashok Kumar Barik,NIT Jamshedpur,Mechanical Engineering,current,1,2,0.00125,0.0,0.0,1,2,0,0
+Dillip Kumar Ghose,NIT Silchar,Civil Engineering,current,2,5,0.0025,0.0,0.0,8,6,0,0
+Jitendra Adhikari,MANIT Bhopal,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Atul Lanjewar,MANIT Bhopal,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,0,0,0,0
+Tapas Das,NIT Jamshedpur,Chemistry,current,2,5,0.0025,0.0,1.0,21,20,0,0
+K VISHWANATH,MANIT Bhopal,Materials and Metallurgical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Krishnan S,MANIT Bhopal,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+N. Jayanth,MANIT Bhopal,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ramesh Kumar Thakur,MANIT Bhopal,Computer Science and Engineering,current,1,3,0.00125,0.0,0.0,6,9,0,0
+Saurabh Shukla,MANIT Bhopal,Electrical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Seemi Ahmed,MANIT Bhopal,Architecture and Planning,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Soumya Ranjan Guru,MANIT Bhopal,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Rajshree Kamat,MANIT Bhopal,Architecture and Planning,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Preeti Onkar,MANIT Bhopal,Architecture and Planning,current,1,1,0.00125,0.0,0.0,22,25,0,0
+Mahendra Kumar Gupta,NIT Jamshedpur,Mathematics,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Basanta Bhowmik,NIT Jamshedpur,Electronics and Communication Engineering,current,2,2,0.0025,0.0,1.0,1,1,1,0
+Ashok Kumar (Metallurgical and Materials Engineering),NIT Jamshedpur,Metallurgical and Materials Engineering,current,1,2,0.00125,0.0,0.0,20,18,1,0
+Sarvesh Pandey,MANIT Bhopal,Chemistry,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Rupak Dutta,NIT Silchar,Physics,current,2,5,0.0025,0.0,1.0,12,13,2,0
+Anupama Sharma,MANIT Bhopal,Architecture and Planning,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ajay Somkuwar,MANIT Bhopal,Electronics and Communication Engineering,current,2,2,0.0025,0.0,1.0,5,5,0,0
+Anil Kumar Sharma,MANIT Bhopal,Civil Engineering,current,1,2,0.00125,0.0,0.0,0,0,1,0
+Nabendu Paul,MANIT Bhopal,Chemical Engineering,current,2,2,0.0025,0.0,1.0,14,5,1,0
+Ajay Thawait,MANIT Bhopal,Civil Engineering,current,1,3,0.00125,0.0,0.0,14,12,1,0
+Vivek Garg,MANIT Bhopal,Civil Engineering,current,1,1,0.00125,0.0,0.0,28,27,0,0
+JITENDRA KUMAR,NIT Jamshedpur,Electrical Engineering,current,1,9,0.00125,0.0,0.0,11,8,0,0
+Ojing Siram,NIT Silchar,Mechanical Engineering,current,2,2,0.0025,0.0,1.0,2,4,0,0
+Reena Sanasam,NIT Silchar,Humanities and Social Sciences,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Susmita Rabha,NIT Silchar,Physics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ravi Kumar Gupta,NIT Silchar,Mechanical Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Neha Kumari,NIT Silchar,Humanities and Social Sciences,current,1,2,0.00125,0.0,0.0,9,11,1,0
+Nandini Roy,NIT Silchar,Physics,former,1,1,0.00125,0.0,0.0,13,14,0,0
+Pravin P S,NIT Silchar,Electronics and Instrumentation Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Pantha Kanti Nath,NIT Silchar,Computer Science and Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Partha Saha,NIT Silchar,Electronics and Communication Engineering,current,2,3,0.0025,0.0,1.0,4,1,1,0
+Srikanth Allamsetty,NIT Silchar,Electrical Engineering,former,2,2,0.0025,0.0,1.0,10,10,0,0
+Abhijt Chakraborty,NIT Silchar,Management Studies,former,1,4,0.00125,0.0,0.0,2,24,0,0
+Sanjay Sharma,MANIT Bhopal,Computer Applications,current,1,3,0.00125,0.0,0.0,27,29,0,0
+Madhumita Paul,NIT Silchar,Electronics and Communication Engineering,former,2,8,0.0025,0.0,1.0,4,1,0,0
+Kalyan Chakraborty,NIT Silchar,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,2,4,0,0
+Tanaya Nayak,NIT Silchar,Management Studies,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Subhajit Das,NIT Silchar,Civil Engineering,current,1,5,0.00125,0.0,0.0,12,4,1,0
+Rajeev Nayan Gupta,NIT Silchar,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Snehasish Nandy,NIT Silchar,Physics,current,3,5,0.00375,0.0,1.0,13,14,1,0
+Tapan Pradhan,NIT Silchar,Electrical Engineering,current,1,8,0.00125,0.0,0.0,10,10,0,0
+Dipanjan Mukherjee,NIT Silchar,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Papri Sutar,NIT Silchar,Chemistry,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Soma Panja,NIT Silchar,Management Studies,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Himanshu Karan,NIT Silchar,Electronics and Communication Engineering,current,1,3,0.00125,0.0,0.0,4,1,0,0
+Aparajita Dutta,NIT Silchar,Computer Science and Engineering,current,2,3,0.0025,0.0,1.0,9,11,0,0
+Raj Nandkeolyar,NIT Jamshedpur,Mathematics,current,1,2,0.00125,0.0,0.0,3,3,0,0
+Ujjwal Laha,NIT Jamshedpur,Physics,current,2,2,0.0025,0.0,0.0,23,23,1,0
+Suman Das,MANIT Bhopal,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+JYOTI MITTAL,MANIT Bhopal,Chemistry,current,1,15,0.00125,0.0,0.0,0,28,0,0
+Kamal Raj Pardasani,MANIT Bhopal,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Umakanta Majhi,NIT Silchar,Computer Science and Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Aryaman Sensarma,NIT Silchar,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Bhupali Dutta,NIT Silchar,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Bijan Nath,NIT Silchar,Mathematics,current,1,1,0.00125,0.0,0.0,2,1,0,0
+Debtanay Das,NIT Silchar,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Madhumita Banerjee,NIT Silchar,Electronics and Communication Engineering,current,1,2,0.00125,0.0,0.0,4,1,0,0
+Sujit Kumar Pattanayak,NIT Silchar,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,2,4,0,0
+Nitesh Ahir,NIT Silchar,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Partha Das,NIT Silchar,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Debayan Sarkar,NIT Silchar,Electrical Engineering,current,2,4,0.0025,0.0,1.0,10,10,0,0
+Kelvin Mutum,NIT Silchar,Management Studies,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Debbrota Paul Chowdhury,NIT Silchar,Computer Science and Engineering,current,1,1,0.00125,0.0,0.0,9,11,0,0
+Panchali Bhattacharya,NIT Silchar,Humanities and Social Sciences,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Olympa Baro,NIT Silchar,Civil Engineering,current,1,1,0.00125,0.0,0.0,10,10,1,0
+Shashi Kumar G K,NIT Silchar,Humanities and Social Sciences,current,1,2,0.00125,0.0,0.0,8,6,1,0
+Shubham Senapati,NIT Silchar,Management Studies,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sumallya Mukhopadhyay,NIT Silchar,Humanities and Social Sciences,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sunil Kumar Mishra,NIT Silchar,Electrical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Moirangthem Biken Singh,NIT Silchar,Computer Science and Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Vinita Mohindra,MANIT Bhopal,Humanities and Social Sciences,current,2,6,0.0025,0.0,1.0,18,0,1,0
+Jitendra Kumar,MANIT Bhopal,Computer Applications,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Rajnish Shrivastava,MANIT Bhopal,Civil Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Jay Kumar Jain,MANIT Bhopal,Computer Applications,current,1,3,0.00125,0.0,0.0,27,29,0,0
+Ramakrishna Manchi,NIT Silchar,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sreejith. S,NIT Silchar,Electrical Engineering,current,3,11,0.00375,0.0,1.0,10,10,0,0
+Pannalal Choudhury,NIT Silchar,Mechanical Engineering,former,2,13,0.0025,0.0,1.0,13,14,0,0
+Saurabh Verma,NIT Silchar,Management Studies,current,1,1,0.00125,0.0,0.0,34,30,1,1
+Santan Kumar,NIT Silchar,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Avishek Ray,NIT Silchar,Humanities and Social Sciences,current,2,2,0.0025,0.0,1.0,25,22,1,0
+Gurudas Das,NIT Silchar,Humanities and Social Sciences,former,2,6,0.0025,0.0,1.0,25,22,1,0
+Pabitra Rajbongshi,NIT Silchar,Civil Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Kulkarni Vihangraj Vijaykumar,NIT Silchar,Civil Engineering,current,1,4,0.00125,0.0,0.0,13,14,1,0
+M. V. Swati,NIT Silchar,Electronics and Communication Engineering,current,1,17,0.00125,0.0,0.0,4,1,0,0
+Susmita Ghosh,NIT Silchar,Civil Engineering,current,1,2,0.00125,0.0,0.0,8,6,0,0
+Anish Kumar Saha,NIT Silchar,Computer Science and Engineering,current,2,6,0.0025,0.0,1.0,9,11,0,0
+Abhishek Midya,NIT Silchar,Electronics and Instrumentation Engineering,former,1,1,0.00125,0.0,0.0,4,1,1,0
+Biswarup Ganguly,NIT Silchar,Electrical Engineering,current,1,2,0.00125,0.0,0.0,10,10,0,0
+Sudhanshu Kumar,MANIT Bhopal,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,0,0,0,0
+Sujoy Das,MANIT Bhopal,Bioinformatics,current,2,3,0.0025,0.0,1.0,19,19,2,0
+Bhaskar Mondal,NIT Jamshedpur,Computer Science and Engineering,former,2,8,0.0025,0.0,1.0,1,2,1,0
+Vinay Kumar,NIT Jamshedpur,Computer Science and Engineering,former,2,5,0.0025,0.0,1.0,1,2,0,0
+Deepak Kumar,NIT Jamshedpur,Mechanical Engineering,current,1,4,0.00125,0.0,0.0,3,3,0,0
+B. Hema Sundar Raju,NIT Silchar,Mathematics,current,1,5,0.00125,0.0,0.0,2,4,1,0
+Ambrish Devanshu,NIT Silchar,Electrical Engineering,current,2,2,0.0025,0.0,1.0,10,10,0,0
+Nirmali Borthakur,NIT Silchar,Civil Engineering,current,1,2,0.00125,0.0,0.0,8,6,0,0
+Dibakar Chakraborty,NIT Silchar,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Parbin Sultana,NIT Silchar,Civil Engineering,current,1,4,0.00125,0.0,0.0,8,6,0,0
+Sumitra Sharma,NIT Silchar,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,10,10,0,0
+Prosun Mandal,NIT Silchar,Mechanical Engineering,current,1,5,0.00125,0.0,0.0,2,4,0,1
+Md. Maqbul,NIT Silchar,Mathematics,current,1,2,0.00125,0.0,0.0,4,1,1,0
+Ujjwal Kanti Paul,NIT Silchar,Management Studies,former,2,6,0.0025,0.0,1.0,25,22,2,0
+Alfa Bisoi,NIT Silchar,Mechanical Engineering,current,1,6,0.00125,0.0,0.0,2,4,0,0
+Pradip Deb Roy,NIT Silchar,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,24,26,1,0
+Sushovan Chatterjee,NIT Silchar,Mechanical Engineering,former,2,3,0.0025,0.0,1.0,13,14,1,0
+Ravindra D. Jilte,MANIT Bhopal,Energy Science and Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ambika Kuity,NIT Silchar,Civil Engineering,current,1,2,0.00125,0.0,0.0,8,6,0,0
+Subrata Bera,NIT Silchar,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Tauhidur Rahman,NIT Silchar,Civil Engineering,current,1,1,0.00125,0.0,0.0,8,6,0,0
+Dhruba Jyoti Bora,NIT Silchar,Electronics and Instrumentation Engineering,current,1,6,0.00125,0.0,0.0,13,14,0,0
+Binoti Patro,NIT Silchar,Management Studies,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Dheeraj K. Agarwal,MANIT Bhopal,Electronics and Communication Engineering,current,2,3,0.0025,0.0,1.0,5,5,0,0
+Akhilesh Barve,MANIT Bhopal,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Rama Koteswara Rao Kondasani,NIT Silchar,Management Studies,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Alpana Pandey,MANIT Bhopal,Electronics and Communication Engineering,current,1,2,0.00125,0.0,0.0,5,5,0,0
+Alka Bharat,MANIT Bhopal,Architecture and Planning,current,1,1,0.00125,0.0,0.0,17,17,0,0
+Pushpendra Kumar,MANIT Bhopal,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Jyotirmoy Haloi,NIT Silchar,Civil Engineering,current,1,2,0.00125,0.0,0.0,8,6,0,0
+Rawesh Kumar,NIT Jamshedpur,Chemistry,former,1,1,0.00125,0.0,0.0,1,2,0,0
+Jayakrushna Sahoo,NIT Jamshedpur,Computer Applications,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Jichil Majhi,NIT Jamshedpur,Metallurgical and Materials Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Dindayal Mahto,NIT Jamshedpur,Computer Applications,former,2,2,0.0025,0.0,1.0,3,2,2,0
+Mohd Naseem,NIT Jamshedpur,Computer Applications,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Smruti Patre,NIT Jamshedpur,"Humanities, Social Sciences and Management",former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Hari Shankar Prasad,NIT Jamshedpur,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Kamal Pal,NIT Jamshedpur,Production and Industrial Engineering,current,1,1,0.00125,0.0,0.0,3,3,0,0
+MALAY NIRAJ,NIT Jamshedpur,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,1,3,0,0
+Bharat Bhushan Jha,NIT Jamshedpur,Metallurgical and Materials Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Rinku Kumar Gouda,NIT Jamshedpur,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Manish Kumar Jha,NIT Jamshedpur,"Humanities, Social Sciences and Management",current,1,1,0.00125,0.0,0.0,34,30,1,1
+Suresh Prasad Sharma,NIT Jamshedpur,Mechanical Engineering,former,1,1,0.00125,0.0,0.0,1,8,0,0
+Monalisa Mandal,NIT Jamshedpur,Metallurgical and Materials Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Chandra Mouli,NIT Jamshedpur,Computer Applications,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Shakti Prasad,NIT Jamshedpur,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Debashis Maji,NIT Jamshedpur,Electronics and Communication Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Hari Narayan Singh,NIT Jamshedpur,Mechanical Engineering,former,1,2,0.00125,0.0,0.0,3,3,0,0
+Ritesh Kumar,NIT Jamshedpur,Computer Science and Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Bipin Kumar,NIT Jamshedpur,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Shwati Sudha,NIT Jamshedpur,"Humanities, Social Sciences and Management",current,1,2,0.00125,0.0,0.0,3,3,1,0
+Neha Agnihotri,NIT Jamshedpur,Physics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sunil Kumar Gouda,NIT Jamshedpur,Computer Applications,former,1,3,0.00125,0.0,0.0,1,2,0,0
+Deepak Rai,NIT Jamshedpur,Computer Science and Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Neha Jaiswal,NIT Jamshedpur,"Humanities, Social Sciences and Management",current,1,2,0.00125,0.0,0.0,30,34,0,0
+Sudhanshu Kumar Jha,NIT Jamshedpur,Computer Applications,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Mayukh Sarkar,NIT Jamshedpur,Computer Science and Engineering,current,1,1,0.00125,0.0,0.0,1,2,0,0
+Diwakar Tripathi,NIT Jamshedpur,Computer Science and Engineering,current,2,2,0.0025,0.0,1.0,1,2,0,0
+SUSHIL KUMAR,NIT Jamshedpur,"Humanities, Social Sciences and Management",current,1,1,0.00125,0.0,0.0,32,35,0,0
+Kuldip Kumar Sahu,NIT Jamshedpur,Production and Industrial Engineering,former,1,1,0.00125,0.0,0.0,3,3,0,0
+Ajay Kumar Singh,NIT Jamshedpur,Physics,current,1,3,0.00125,0.0,0.0,1,3,0,0
+Debalina Chakaravarty,NIT Jamshedpur,"Humanities, Social Sciences and Management",former,0,0,0.0,0.0,0.0,-1,-1,0,0
+MOUMITA MONDAL,NIT Jamshedpur,Chemistry,current,1,1,0.00125,0.0,0.0,21,20,0,0
+Sourav Pradhan,NIT Jamshedpur,Mathematics,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Gunda Yoganjaneyulu,NIT Jamshedpur,Production and Industrial Engineering,current,2,2,0.0025,0.0,1.0,3,3,0,0
+Shubhankar Chakarborty,NIT Jamshedpur,Mechanical Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Mahesh Kumar Agrawal,NIT Jamshedpur,Metallurgical and Materials Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Prabhat Kumar,NIT Jamshedpur,Chemistry,current,2,2,0.0025,0.0,1.0,11,8,2,0
+Soumik Biswas,NIT Jamshedpur,Mathematics,former,2,2,0.0025,0.0,1.0,11,8,2,0
+Nitin Chandra,NIT Jamshedpur,Physics,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+SHAILESH KUMAR JHA,NIT Jamshedpur,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Shashi Ranjan Pandey,NIT Jamshedpur,Civil Engineering,former,1,1,0.00125,0.0,0.0,15,15,0,0
+Debshri Swargiary,NIT Jamshedpur,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sounak Kabasi,NIT Jamshedpur,Civil Engineering,current,1,1,0.00125,0.0,0.0,8,6,0,1
+Arvind K Patel,NIT Jamshedpur,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,0,0,0,1
+Rajashree Nayak,NIT Jamshedpur,Electronics and Communication Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ratnesh Kumar,NIT Jamshedpur,Mechanical Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Amit Majumder,NIT Jamshedpur,Computer Science and Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Arijit Jana,NIT Silchar,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Vivek Kumar Pathak,NIT Silchar,Management Studies,former,1,1,0.00125,0.0,0.0,2,24,0,0
+Dibyakusum Ray,NIT Silchar,Humanities and Social Sciences,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ujjal Protim Dutta,NIT Silchar,Humanities and Social Sciences,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Shivendra K Chaurasiya,MANIT Bhopal,Biological Science and Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Surabhi Mehrotra,MANIT Bhopal,Architecture and Planning,current,2,3,0.0025,0.0,1.0,17,17,0,0
+Rampal Pandey,MANIT Bhopal,Chemistry,current,1,1,0.00125,0.0,0.0,5,5,0,0
+S. K. Katiyar,MANIT Bhopal,Civil Engineering,current,1,3,0.00125,0.0,0.0,14,12,0,0
+Jyoti Sarup,MANIT Bhopal,Civil Engineering,current,1,1,0.00125,0.0,0.0,0,0,0,0
+Dinamani Biswal,NIT Silchar,Humanities and Social Sciences,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Purushottam Kumar Singh,NIT Silchar,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Kaushik Das,NIT Jamshedpur,Electronics and Communication Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Subhadip Biswas,NIT Silchar,Civil Engineering,current,1,3,0.00125,0.0,0.0,8,6,0,0
+Avijit Das,NIT Silchar,Mathematics,current,1,2,0.00125,0.0,0.0,2,1,0,0
+Pankaj Chaturvedi,NIT Silchar,Physics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Amitava Ray,NIT Silchar,Mechanical Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Dinesh P,NIT Silchar,Civil Engineering,current,1,1,0.00125,0.0,0.0,12,13,1,0
+Biswanath Dey,NIT Silchar,Computer Science and Engineering,current,1,1,0.00125,0.0,0.0,9,11,0,0
+Jishan Mehedi,NIT Silchar,Electronics and Communication Engineering,former,1,1,0.00125,0.0,0.0,4,1,0,0
+Abhijit Ghosh,NIT Silchar,Management Studies,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Debasish Dutta,NIT Silchar,Mechanical Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Dibya Nandan Mishra,NIT Silchar,Management Studies,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Nilanjan Roy,NIT Silchar,Chemistry,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Subhadeep Biswas,NIT Silchar,Civil Engineering,current,1,1,0.00125,0.0,0.0,13,14,1,0
+Ravi Bhushan,NIT Jamshedpur,Electrical Engineering,current,2,2,0.0025,0.0,1.0,11,8,1,0
+Abhijit Dey,NIT Jamshedpur,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Rajendra Prasad Singh,NIT Jamshedpur,Metallurgical and Materials Engineering,former,1,3,0.00125,0.0,0.0,20,18,0,0
+Poulami Maji,NIT Jamshedpur,Metallurgical and Materials Engineering,current,1,1,0.00125,0.0,0.0,20,18,1,0
+Sabyasachi Biswas,NIT Jamshedpur,Civil Engineering,former,2,5,0.0025,0.0,1.0,15,15,1,0
+Samiran Chakraborty,NIT Jamshedpur,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sandip Mandal,NIT Jamshedpur,Chemistry,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sripati Jha,NIT Jamshedpur,Mathematics,former,1,2,0.00125,0.0,0.0,3,3,0,0
+Prakash Sarkar,NIT Jamshedpur,Metallurgical and Materials Engineering,current,1,1,0.00125,0.0,0.0,23,23,1,0
+Dinesh Kumar (Computer Science and Engineering),NIT Jamshedpur,Computer Science and Engineering,current,1,4,0.00125,0.0,0.0,1,2,1,0
+Naveen Kumar Veldurthi,NIT Jamshedpur,Chemistry,current,1,11,0.00125,0.0,0.0,1,2,0,0
+Ankush Kumar,NIT Silchar,Civil Engineering,current,1,3,0.00125,0.0,0.0,8,6,0,0
+ANANYO BHATTACHARYA,NIT Jamshedpur,Electrical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sangeeta Kumari,NIT Jamshedpur,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Renu Kumari,NIT Jamshedpur,Metallurgical and Materials Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Saroj Kumar Sarangi,NIT Jamshedpur,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Binay Kumar,NIT Jamshedpur,Metallurgical and Materials Engineering,current,2,7,0.0025,0.0,1.0,1,1,2,0
+Aravind Gali,NIT Jamshedpur,Metallurgical and Materials Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Biswajit Sahoo,NIT Silchar,Electrical Engineering,current,1,2,0.00125,0.0,0.0,12,13,0,0
+Debasish Nath,NIT Silchar,Electronics and Instrumentation Engineering,current,2,2,0.0025,0.0,1.0,12,13,0,0
+Parikshit Saikia,NIT Silchar,Computer Science and Engineering,current,1,1,0.00125,0.0,0.0,9,11,0,0
+Rajarshi Pramanik,NIT Silchar,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sucharita Chakraborty,NIT Silchar,Electronics and Communication Engineering,current,1,1,0.00125,0.0,0.0,4,1,0,0
+Anangsha Alammyan,NIT Silchar,Civil Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ashok Kumar Mandal,NIT Jamshedpur,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Harsangeet Kaur,MANIT Bhopal,Civil Engineering,current,1,1,0.00125,0.0,0.0,0,0,0,0
+Sandeep Patel,MANIT Bhopal,Electronics and Communication Engineering,current,2,3,0.0025,0.0,1.0,7,7,2,0
+Madan Dhanora,MANIT Bhopal,Humanities and Social Sciences,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Manmath Kumar Dash,MANIT Bhopal,Materials and Metallurgical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Prabhakaran K K,MANIT Bhopal,Electrical Engineering,current,1,1,0.00125,0.0,0.0,0,0,1,0
+Varun Bajaj,MANIT Bhopal,Electronics and Communication Engineering,current,1,1,0.00125,0.0,0.0,5,5,0,0
+Namita Tiwari,MANIT Bhopal,Computer Science and Engineering,current,1,29,0.00125,0.0,0.0,6,9,0,0
+Bharatkumar K. Modhera,MANIT Bhopal,Chemical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Shubhranshu Kumar Tiwary,NIT Jamshedpur,Electrical Engineering,current,1,1,0.00125,0.0,0.0,11,8,0,0
+Suryakant Gautam,MANIT Bhopal,Electronics and Communication Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Aningi Mokhalingam,MANIT Bhopal,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Munendra Singh,NIT Jamshedpur,Electronics and Communication Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Chaduvula Hemanth,MANIT Bhopal,Electrical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Jaideep Gupta,MANIT Bhopal,Energy Science and Engineering,current,2,2,0.0025,0.0,1.0,6,9,2,0
+Punjan Dohare,MANIT Bhopal,Electrical Engineering,current,2,3,0.0025,0.0,1.0,7,7,0,0
+T. S. Bheemraj,MANIT Bhopal,Electrical Engineering,current,2,2,0.0025,0.0,1.0,7,7,1,0
+Vivek Pratap Singh,MANIT Bhopal,Electronics and Communication Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Abhilash Gunti,MANIT Bhopal,Materials and Metallurgical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Akanksha Gupta,MANIT Bhopal,Physics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ashutosh Sharma,MANIT Bhopal,Architecture and Planning,current,2,2,0.0025,0.0,1.0,16,16,2,0
+Bandaru Goutham Rajeev Gandhi,MANIT Bhopal,Civil Engineering,current,1,1,0.00125,0.0,0.0,29,33,0,0
+Sneha Mishra,NIT Jamshedpur,"Humanities, Social Sciences and Management",former,1,1,0.00125,0.0,0.0,1,2,1,0
+Supriyo Das,NIT Jamshedpur,Electrical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Anjuli Jain,MANIT Bhopal,Humanities and Social Sciences,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+B Ramachandra Reddy,NIT Jamshedpur,Computer Science and Engineering,current,3,7,0.00375,0.0,1.0,1,2,0,0
+Shashank Pandey,NIT Jamshedpur,Mechanical Engineering,current,1,7,0.00125,0.0,0.0,3,3,0,0
+Anil Kumar,MANIT Bhopal,Energy Science and Engineering,former,2,5,0.0025,0.0,1.0,0,0,1,0
+Ananta Kumar Atta,NIT Jamshedpur,Chemistry,current,1,1,0.00125,0.0,0.0,21,20,0,0
+Sourav Das,NIT Jamshedpur,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Kuntal Maji,NIT Jamshedpur,Production and Industrial Engineering,current,1,1,0.00125,0.0,0.0,3,3,0,0
+Harjinder Singh,MANIT Bhopal,Chemistry,current,1,1,0.00125,0.0,0.0,5,5,0,0
+Hergovind Singh,MANIT Bhopal,Management Studies,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Karunesh Kumar Shukla,MANIT Bhopal,Civil Engineering,current,1,3,0.00125,0.0,0.0,3,3,1,1
+Manoja Kumar Behera,MANIT Bhopal,Electrical Engineering,current,1,1,0.00125,0.0,0.0,7,7,0,0
+Rahul Pal,MANIT Bhopal,Electronics and Communication Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Bulbul Shukla,MANIT Bhopal,Architecture and Planning,current,2,2,0.0025,0.0,1.0,17,17,0,0
+Rekha Jain,MANIT Bhopal,Architecture and Planning,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Arvind Kumar,MANIT Bhopal,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Priyamitra Munoth,MANIT Bhopal,Civil Engineering,current,1,1,0.00125,0.0,0.0,0,0,0,0
+Kiran Singh,MANIT Bhopal,Biological Science and Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Kuldeep Singh Yadav,MANIT Bhopal,Mathematics,current,1,1,0.00125,0.0,0.0,0,0,1,0
+Medipelly Rampavan,MANIT Bhopal,Computer Science and Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Dharmendra Pandey,MANIT Bhopal,Chemical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Nakul Dhagat,MANIT Bhopal,Architecture and Planning,current,1,1,0.00125,0.0,0.0,17,17,0,0
+Manisha Singh,MANIT Bhopal,Computer Science and Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Neeraj Tiwari,MANIT Bhopal,Civil Engineering,current,1,2,0.00125,0.0,0.0,0,0,0,0
+Akash Sinha,MANIT Bhopal,Computer Science and Engineering,current,3,5,0.00375,0.0,1.0,6,9,0,0
+Anugrah Anilkumar Nagaich,MANIT Bhopal,Architecture and Planning,current,1,4,0.00125,0.0,0.0,22,25,0,0
+Tushar Banerjee,NIT Jamshedpur,Production and Industrial Engineering,current,1,7,0.00125,0.0,0.0,3,3,0,0
+Gopa Bhaumik,NIT Jamshedpur,Computer Science and Engineering,current,1,1,0.00125,0.0,0.0,11,8,1,0
+Subrata Mahanta,NIT Jamshedpur,Chemistry,current,2,6,0.0025,0.0,1.0,21,20,0,0
+Vijay Kumar Dalla,NIT Jamshedpur,Mechanical Engineering,current,1,4,0.00125,0.0,0.0,3,3,0,0
+Nigam Prakash,NIT Jamshedpur,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Pampa Howladar,NIT Jamshedpur,Computer Science and Engineering,current,1,2,0.00125,0.0,0.0,33,31,0,0
+Partha Duley,NIT Jamshedpur,Metallurgical and Materials Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Prashanta Kumar Khandai,NIT Jamshedpur,Physics,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Rabi Shaw,NIT Jamshedpur,Computer Science and Engineering,former,1,1,0.00125,0.0,0.0,1,2,0,0
+Rakesh Kumar,NIT Jamshedpur,Computer Science and Engineering,current,2,2,0.0025,0.0,1.0,1,2,0,0
+Ratnesh Kumar Mishra,NIT Jamshedpur,Mathematics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Suravi Pal,NIT Jamshedpur,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Alok Kumar Ray,NIT Jamshedpur,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,11,8,0,0
+Maninder Kapoor,NIT Jamshedpur,"Humanities, Social Sciences and Management",former,1,1,0.00125,0.0,0.0,31,36,0,0
+Rajeev Ranjan,NIT Jamshedpur,Physics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Rajiv Bhushan,NIT Jamshedpur,"Humanities, Social Sciences and Management",current,1,1,0.00125,0.0,0.0,31,36,0,0
+Rajiv Kumar,NIT Jamshedpur,Electronics and Communication Engineering,former,1,1,0.00125,0.0,0.0,11,8,1,0
+Ashok Kumar Khan,NIT Jamshedpur,Civil Engineering,former,1,1,0.00125,0.0,0.0,15,15,0,0
+Yamuna Prasad Yadav,NIT Jamshedpur,Physics,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Manthirikul Sandeep,NIT Jamshedpur,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sankar Kumar Roy,NIT Jamshedpur,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Sri Krishna Sudhamsu Kambhammettu,NIT Jamshedpur,Mechanical Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+AMIT BANSODE,NIT Jamshedpur,"Humanities, Social Sciences and Management",current,1,1,0.00125,0.0,0.0,32,35,0,0
+Sajjan Kumar Paswan,NIT Jamshedpur,Civil Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Susmita Datta,NIT Jamshedpur,Production and Industrial Engineering,current,2,2,0.0025,0.0,1.0,3,3,0,0
+Priyanka Verma,MANIT Bhopal,Management Studies,current,1,4,0.00125,0.0,0.0,6,9,1,0
+Meena Agrawal,MANIT Bhopal,Energy Science and Engineering,current,2,6,0.0025,0.0,1.0,0,0,0,0
+Abhishek Majhi,NIT Jamshedpur,Physics,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Amit Patel,NIT Jamshedpur,Metallurgical and Materials Engineering,current,1,1,0.00125,0.0,0.0,3,3,1,0
+Anushree Dutta,NIT Jamshedpur,Metallurgical and Materials Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Arjun Kumar,NIT Jamshedpur,Electronics and Communication Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Ashwinee Kumar,NIT Jamshedpur,Metallurgical and Materials Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Bibekananda kundu,NIT Jamshedpur,Physics,current,1,1,0.00125,0.0,0.0,23,23,0,0
+Chandan Kumar,NIT Jamshedpur,Computer Applications,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Chandra Shekhar Choudhary,NIT Jamshedpur,Metallurgical and Materials Engineering,former,2,4,0.0025,0.0,1.0,20,18,0,0
+Ashok Kumar Jha,NIT Jamshedpur,Production and Industrial Engineering,current,2,5,0.0025,0.0,1.0,3,3,0,0
+J Jayapal,NIT Jamshedpur,Civil Engineering,current,2,2,0.0025,0.0,1.0,15,15,0,0
+Nidhi Kushwaha,NIT Jamshedpur,Computer Science and Engineering,current,1,2,0.00125,0.0,0.0,33,31,0,0
+Goutam Sutradhar,NIT Jamshedpur,Mechanical Engineering,current,1,1,0.00125,0.0,0.0,20,18,1,0
+Madan Mohan Prasad,NIT Jamshedpur,Civil Engineering,former,1,3,0.00125,0.0,0.0,11,8,0,0
+Umesh Kumar Sinha,NIT Jamshedpur,Electrical Engineering,former,1,2,0.00125,0.0,0.0,11,8,0,0
+Anand Mukut Tigga,NIT Jamshedpur,Production and Industrial Engineering,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Pranab Kumar Kundu,NIT Jamshedpur,Mechanical Engineering,current,1,2,0.00125,0.0,0.0,1,2,0,0
+Rina Sahu,NIT Jamshedpur,Metallurgical and Materials Engineering,current,0,0,0.0,0.0,0.0,-1,-1,0,0
+Buddhadeb Pradhan,NIT Jamshedpur,Computer Applications,former,0,0,0.0,0.0,0.0,-1,-1,0,0
+Dilip Kumar Shaw,NIT Jamshedpur,Computer Science and Engineering,current,1,1,0.00125,0.0,0.0,1,2,0,0
+Akanksha Shukla,NIT Jamshedpur,"Humanities, Social Sciences and Management",current,1,2,0.00125,0.0,0.0,30,34,0,0
+Amarnath Thakur,NIT Jamshedpur,Electrical Engineering,former,1,2,0.00125,0.0,0.0,11,8,0,0
+Chandradeep Singh,NIT Jamshedpur,Electronics and Communication Engineering,current,2,2,0.0025,0.0,1.0,1,2,0,0

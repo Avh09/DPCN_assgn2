@@ -1,0 +1,4 @@
+openalex_work_id,core_rank,conference,venue,our_authors,faculty_authors,non_faculty_authors,author_roles
+W4389523752,A*,Empirical Methods in Natural Language Processing,Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing,2,0,2,"probable_scholar_or_visitor, unclear"
+W7140117928,A,European Association for Computational Linguistics (EACL),Findings of the Association for Computational Linguistics: EACL 2026,1,0,1,probable_scholar_or_visitor
+W7140121105,A,European Association for Computational Linguistics (EACL),Findings of the Association for Computational Linguistics: EACL 2026,1,0,1,probable_scholar_or_visitor

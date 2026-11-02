@@ -1,0 +1,53 @@
+your_inst,partner_cluster,partners,partner_links,share_of_links_%,distinct_papers,share_of_papers_with_indian_partner_%,top_partners
+MANIT Bhopal,CSIR,14,120,4.3,72,3.8,Advanced Materials and Processes Research Institute (45); Council of Scientific and Industrial Research (29); Academy of Scientific and Innovative Research (22); Central Building Research Institute (6)
+MANIT Bhopal,Central university,23,117,4.2,114,6.0,Guru Ghasidas Vishwavidyalaya (29); Banaras Hindu University (21); Aligarh Muslim University (11); University of Delhi (10)
+MANIT Bhopal,DAE,6,21,0.8,15,0.8,Bhabha Atomic Research Centre (8); Saha Institute of Nuclear Physics (6); Homi Bhabha National Institute (3); Department of Atomic Energy (2)
+MANIT Bhopal,DRDO,3,3,0.1,2,0.1,Defence Research and Development Organisation (1); Centre for Artificial Intelligence and Robotics (1); Defence Metallurgical Research Laboratory (1)
+MANIT Bhopal,Government lab/agency,21,49,1.8,46,2.4,Government of Uttar Pradesh (9); Madhya Pradesh Council of Science and Technology (8); Central Power Research Institute (7); All India Council for Technical Education (5)
+MANIT Bhopal,ICAR,8,31,1.1,19,1.0,Central Institute of Agricultural Engineering (13); Indian Council of Agricultural Research (7); National Institute of High Security Animal Diseases (4); Agricultural Research Center (2)
+MANIT Bhopal,ICMR,2,8,0.3,4,0.2,ICMR National Institute for Research in Environmental Health (4); Indian Council of Medical Research (4)
+MANIT Bhopal,IIIT,14,146,5.3,140,7.3,"Indian Institute of Information Technology Bhopal (51); Indian Institute of Information Technology Design and Manufacturing Jabalpur (50); Indian Institute of Information Technology, Pune (11); Indian Institute of Information Technology, Nagpur (9)"
+MANIT Bhopal,IISER,6,21,0.8,21,1.1,"Indian Institute of Science Education and Research, Bhopal (15); Indian Institute of Science Education and Research Mohali (2); Indian Institute of Science Education and Research Berhampur (1); Indian Institute of Science Education and Research Kolkata (1)"
+MANIT Bhopal,IISc,1,15,0.5,15,0.8,Indian Institute of Science Bangalore (15)
+MANIT Bhopal,IIT,22,355,12.8,333,17.4,Indian Institute of Technology Roorkee (63); Indian Institute of Technology Delhi (51); Indian Institute of Technology Bombay (32); Indian Institute of Technology Kharagpur (30)
+MANIT Bhopal,ISRO,6,9,0.3,6,0.3,Indian Space Research Organisation (4); Indian Institute of Remote Sensing (1); Physical Research Laboratory (1); Space Applications Centre (1)
+MANIT Bhopal,Industry,13,35,1.3,35,1.8,STMicroelectronics (India) (6); Air India Limited (India) (4); Bharat Heavy Electricals (India) (4); Kirloskar Group (India) (4)
+MANIT Bhopal,Medical/health,10,38,1.4,33,1.7,All India Institute of Medical Sciences Bhopal (20); Jawaharlal Nehru Cancer Hospital and Research Centre (4); All India Institute of Medical Sciences (3); All India Institute of Medical Sciences Raipur (3)
+MANIT Bhopal,NIT,25,318,11.5,307,16.0,National Institute of Technology Raipur (85); National Institute of Technology Tiruchirappalli (22); National Institute of Technology Rourkela (21); National Institute of Technology Manipur (20)
+MANIT Bhopal,Other,12,41,1.5,41,2.1,National Institute of Hydrology (16); Centre for Development of Advanced Computing (5); National Power Training Institute (4); Track2Training (4)
+MANIT Bhopal,Other university/college,275,1434,51.8,1111,58.1,Rajiv Gandhi Technical University (67); Amity University (48); Manipal University Jaipur (48); University of Petroleum and Energy Studies (45)
+MANIT Bhopal,Premier science inst.,4,8,0.3,8,0.4,Indian Association for the Cultivation of Science (4); Tata Institute of Social Sciences (2); Jawaharlal Nehru Centre for Advanced Scientific Research (1); S.N. Bose National Centre for Basic Sciences (1)
+NIT Jamshedpur,CSIR,15,162,6.3,115,6.8,National Metallurgical Laboratory (91); Council of Scientific and Industrial Research (33); Academy of Scientific and Innovative Research (13); Institute of Minerals and Materials Technology (5)
+NIT Jamshedpur,Central university,19,64,2.5,56,3.3,Banaras Hindu University (16); Guru Ghasidas Vishwavidyalaya (8); Central University of Tamil Nadu (6); Central University of Jharkhand (4)
+NIT Jamshedpur,DAE,9,35,1.4,22,1.3,Atomic Minerals Directorate for Exploration and Research (12); Department of Atomic Energy (9); Bhabha Atomic Research Centre (5); Raja Ramanna Centre for Advanced Technology (3)
+NIT Jamshedpur,DRDO,4,26,1.0,15,0.9,Defence Research and Development Organisation (14); Integrated Test Range (8); Scientific Analysis Group (3); Naval Science & Technological Laboratory (1)
+NIT Jamshedpur,Government lab/agency,12,44,1.7,44,2.6,India Meteorological Department (8); Sam Higginbottom Institute of Agriculture (7); Rajkiya Engineering College Azamgarh (6); Indian Institute of Water Management (4)
+NIT Jamshedpur,ICAR,3,6,0.2,4,0.2,Indian Council of Agricultural Research (3); Indian Agricultural Research Institute (2); Directorate of Weed Research (1)
+NIT Jamshedpur,IIIT,10,119,4.7,118,6.9,Indian Institute of Information Technology Ranchi (55); Indian Institute of Information Technology Design and Manufacturing Jabalpur (18); International Institute of Information Technology (16); Indian Institute of Information Technology Kalyani (9)
+NIT Jamshedpur,IISER,4,6,0.2,6,0.4,"Indian Institute of Science Education and Research, Bhopal (3); Indian Institute of Science Education and Research Pune (1); Indian Institute of Science Education and Research, Tirupati (1); Indian Institute of Science Education and Research Kolkata (1)"
+NIT Jamshedpur,IISc,1,16,0.6,16,0.9,Indian Institute of Science Bangalore (16)
+NIT Jamshedpur,IIT,21,343,13.4,320,18.8,Indian Institute of Technology Dhanbad (79); Indian Institute of Technology Kharagpur (52); Indian Institute of Technology Roorkee (33); Indian Institute of Technology BHU (25)
+NIT Jamshedpur,ISRO,2,10,0.4,9,0.5,Aryabhatta Research Institute of Observational Sciences (6); Physical Research Laboratory (4)
+NIT Jamshedpur,Industry,14,71,2.8,70,4.1,Tata Steel (India) (37); Tata Motors (India) (17); Tata Consultancy Services (India) (5); Oracle (India) (2)
+NIT Jamshedpur,Medical/health,6,11,0.4,8,0.5,"All India Institute of Medical Sciences, Deoghar (4); All India Institute of Medical Sciences (3); Bangalore Medical Center (1); Bangalore Medical College and Research Institute (1)"
+NIT Jamshedpur,NIT,25,323,12.7,307,18.1,Motilal Nehru National Institute of Technology (52); National Institute of Technology Patna (44); National Institute of Technology Sikkim (30); National Institute of Technology Rourkela (29)
+NIT Jamshedpur,Other,8,16,0.6,16,0.9,Indian Institute of Tropical Meteorology (5); Indo-US Science and Technology Forum (3); National Institute of Hydrology (2); Kalpavriksh (2)
+NIT Jamshedpur,Other university/college,244,1293,50.6,945,55.7,Vellore Institute of Technology University (69); Thapar Institute of Engineering & Technology (45); GLA University (38); KIIT University (33)
+NIT Jamshedpur,Premier science inst.,3,8,0.3,8,0.5,Indian Association for the Cultivation of Science (4); Indian Statistical Institute (2); Jawaharlal Nehru Centre for Advanced Scientific Research (2)
+NIT Silchar,CSIR,18,100,2.3,70,2.3,North East Institute of Science and Technology (18); Council of Scientific and Industrial Research (18); Central Mechanical Engineering Research Institute (12); Academy of Scientific and Innovative Research (10)
+NIT Silchar,Central university,23,373,8.6,358,11.5,Mizoram University (134); Assam University (76); Tezpur University (47); Jawaharlal Nehru University (20)
+NIT Silchar,DAE,5,9,0.2,9,0.3,Bhabha Atomic Research Centre (3); Homi Bhabha National Institute (2); Saha Institute of Nuclear Physics (2); Dr. Homi Bhabha State University (1)
+NIT Silchar,DRDO,4,4,0.1,3,0.1,Defence Institute of Advanced Technology (1); Defence Metallurgical Research Laboratory (1); Defence Research and Development Organisation (1); Microwave Tube Research & Development Centre (1)
+NIT Silchar,Government lab/agency,16,60,1.4,58,1.9,Government of West Bengal (30); Ministry of Education (4); Gati Shakti Vishwavidyalaya (4); Government of Karnataka (3)
+NIT Silchar,ICAR,1,1,0.0,1,0.0,Agricultural Research Service (1)
+NIT Silchar,IIIT,10,92,2.1,90,2.9,"Indian Institute of Information Technology Allahabad (53); Indian Institute of Information Technology Design and Manufacturing, Kurnool (13); Indian Institute of Information Technology Guwahati (7); Indian Institute of Information Technology Senapati, Manipur (6)"
+NIT Silchar,IISER,6,13,0.3,12,0.4,"Indian Institute of Science Education and Research, Bhopal (4); Indian Institute of Science Education and Research Pune (3); Indian Institute of Science Education and Research Mohali (2); Indian Institute of Science Education and Research Kolkata (2)"
+NIT Silchar,IISc,1,65,1.5,65,2.1,Indian Institute of Science Bangalore (65)
+NIT Silchar,IIT,22,584,13.5,546,17.6,Indian Institute of Technology Guwahati (137); Indian Institute of Technology Kharagpur (66); Indian Institute of Technology Delhi (54); Indian Institute of Technology Bombay (42)
+NIT Silchar,ISRO,3,5,0.1,4,0.1,North Eastern Space Applications Centre (2); Indian Space Research Organisation (2); Department of Space (1)
+NIT Silchar,Industry,17,27,0.6,27,0.9,Power Grid Corporation (India) (4); Jaypee Group (India) (3); Techno India Group (India) (3); Wipro (India) (2)
+NIT Silchar,Medical/health,12,48,1.1,46,1.5,"Silchar Medical College and Hospital (26); Gauhati Medical College and Hospital (6); RG Stone Urology & Laparoscopy Hospital (5); Medical College and Hospital, Kolkata (3)"
+NIT Silchar,NIT,28,703,16.2,661,21.3,National Institute of Technology Durgapur (100); National Institute of Technology Meghalaya (66); National Institute of Technology Rourkela (65); Malaviya National Institute of Technology Jaipur (56)
+NIT Silchar,Other,4,6,0.1,6,0.2,"Pandit Deendayal Upadhyaya Adarsha Mahavidyalaya (2); CR Rao Advanced Institute of Mathematics, Statistics and Computer Science (2); BRIC-National Agri-Food and Biomanufacturing Institute (1); Centre for Development of Advanced Computing (1)"
+NIT Silchar,Other university/college,301,2212,50.9,1742,56.2,Koneru Lakshmaiah Education Foundation (103); Vellore Institute of Technology University (93); Jadavpur University (73); Siksha O Anusandhan University (52)
+NIT Silchar,Premier science inst.,7,40,0.9,38,1.2,"S.N. Bose National Centre for Basic Sciences (24); Indian Statistical Institute (7); Indian Statistical Institute, Bangalore Centre (3); Jawaharlal Nehru Centre for Advanced Scientific Research (2)"

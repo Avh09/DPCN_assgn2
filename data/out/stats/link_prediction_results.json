@@ -1,0 +1,612 @@
+{
+ "design": "Can research-topic similarity and network structure predict future faculty collaborations? (temporal link prediction)\n\nDesign, so that nothing from the future leaks into the features:\n  features at year T use only papers up to T (collab_model.py);\n  the label of a pair is whether the two faculty co-author at least one paper in the next 3 years;\n  candidate faculty are those with a paper in the 3 years up to T (activity is known at T, not afterwards);\n  TRAIN  T = 2019, outcome 2020-2022          TEST  T = 2022, outcome 2023-2025 (2026 is a partial year and is not used)\nTwo different tasks, never mixed:\n  new       pairs with NO joint paper up to T: will they start collaborating?   (rare positives)\n  repeat    pairs with at least one joint paper up to T: will they collaborate again?\nModels: single-feature baselines (common neighbours, Adamic-Adar, Jaccard, preferential attachment, topic similarity),\nlogistic regression (standardised, class-balanced), random forest (balanced). Metrics suited to rare positives: average\nprecision (vs the base rate), precision@K and recall@K, ROC-AUC as a supplement. Probabilities are reported only if the\ncalibrated model passes a calibration check on the TEST window (slope 0.7-1.3 of observed on predicted); otherwise the\noutput is a ranking score.\nForward-looking output: models refit on both windows and applied to features at T = 2025, ranking pairs that have not\ncollaborated yet. This ranking has been validated only through the temporal test above, not for 2026 onwards.",
+ "tasks": {
+  "new": {
+   "train": {
+    "T": 2019,
+    "outcome": "2020-2022",
+    "pairs": 102946,
+    "positives": 235
+   },
+   "test": {
+    "T": 2022,
+    "outcome": "2023-2025",
+    "pairs": 149211,
+    "positives": 246
+   },
+   "metrics": {
+    "common neighbours": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0147,
+     "roc_auc": 0.6244,
+     "ap_lift_over_base_rate": 8.9,
+     "precision@50": 0.08,
+     "recall@50": 0.0163,
+     "precision@100": 0.06,
+     "recall@100": 0.0244,
+     "precision@500": 0.048,
+     "recall@500": 0.0976
+    },
+    "Adamic-Adar": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0163,
+     "roc_auc": 0.6246,
+     "ap_lift_over_base_rate": 9.9,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.03,
+     "recall@100": 0.0122,
+     "precision@500": 0.06,
+     "recall@500": 0.122
+    },
+    "Jaccard (neighbours)": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0136,
+     "roc_auc": 0.6245,
+     "ap_lift_over_base_rate": 8.2,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.04,
+     "recall@100": 0.0163,
+     "precision@500": 0.06,
+     "recall@500": 0.122
+    },
+    "preferential attachment": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0025,
+     "roc_auc": 0.601,
+     "ap_lift_over_base_rate": 1.5,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.0,
+     "recall@100": 0.0,
+     "precision@500": 0.004,
+     "recall@500": 0.0081
+    },
+    "topic cosine": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0052,
+     "roc_auc": 0.7547,
+     "ap_lift_over_base_rate": 3.2,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.01,
+     "recall@100": 0.0041,
+     "precision@500": 0.006,
+     "recall@500": 0.0122
+    },
+    "topic weighted Jaccard": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0055,
+     "roc_auc": 0.7583,
+     "ap_lift_over_base_rate": 3.3,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.01,
+     "recall@100": 0.0041,
+     "precision@500": 0.006,
+     "recall@500": 0.0122
+    },
+    "shortest path (closer = higher)": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0153,
+     "roc_auc": 0.7465,
+     "ap_lift_over_base_rate": 9.3,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.03,
+     "recall@100": 0.0122,
+     "precision@500": 0.03,
+     "recall@500": 0.061
+    },
+    "logistic regression": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0524,
+     "roc_auc": 0.9501,
+     "ap_lift_over_base_rate": 31.8,
+     "precision@50": 0.16,
+     "recall@50": 0.0325,
+     "precision@100": 0.13,
+     "recall@100": 0.0528,
+     "precision@500": 0.066,
+     "recall@500": 0.1341
+    },
+    "random forest": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0325,
+     "roc_auc": 0.9239,
+     "ap_lift_over_base_rate": 19.7,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.05,
+     "recall@100": 0.0203,
+     "precision@500": 0.048,
+     "recall@500": 0.0976
+    }
+   },
+   "calibration": {
+    "logistic regression": {
+     "bins": [
+      {
+       "mean_predicted": 8e-05,
+       "observed_rate": 0.0,
+       "n": 29842
+      },
+      {
+       "mean_predicted": 0.00018,
+       "observed_rate": 0.0,
+       "n": 29842
+      },
+      {
+       "mean_predicted": 0.0003,
+       "observed_rate": 7e-05,
+       "n": 29843
+      },
+      {
+       "mean_predicted": 0.00152,
+       "observed_rate": 0.00064,
+       "n": 29841
+      },
+      {
+       "mean_predicted": 0.0173,
+       "observed_rate": 0.00754,
+       "n": 29843
+      }
+     ],
+     "slope": 0.439,
+     "brier": 0.00181,
+     "probabilities_reported": false
+    },
+    "random forest": {
+     "bins": [
+      {
+       "mean_predicted": 0.00106,
+       "observed_rate": 0.0,
+       "n": 28687
+      },
+      {
+       "mean_predicted": 0.00107,
+       "observed_rate": 0.0,
+       "n": 30408
+      },
+      {
+       "mean_predicted": 0.00109,
+       "observed_rate": 7e-05,
+       "n": 30431
+      },
+      {
+       "mean_predicted": 0.00119,
+       "observed_rate": 0.00101,
+       "n": 29842
+      },
+      {
+       "mean_predicted": 0.00482,
+       "observed_rate": 0.00717,
+       "n": 29843
+      }
+     ],
+     "slope": 1.862,
+     "brier": 0.00162,
+     "probabilities_reported": false
+    }
+   },
+   "rf_importance": {
+    "same_department": 0.3338,
+    "same_institute": 0.2095,
+    "topic_cosine": 0.0619,
+    "log_papers_max": 0.0587,
+    "recent_papers_max": 0.0561,
+    "topic_weighted_jaccard": 0.0502,
+    "field_cosine": 0.0473,
+    "log_papers_min": 0.0312,
+    "pref_attachment": 0.0304,
+    "hop_distance": 0.0285,
+    "recent_papers_min": 0.0259,
+    "institute_pair_joint_papers_hist": 0.0251,
+    "shared_subfields": 0.0229,
+    "same_community": 0.0093,
+    "adamic_adar": 0.004,
+    "resource_allocation": 0.0021,
+    "jaccard_neighbours": 0.002,
+    "common_neighbours": 0.001
+   },
+   "lr_coefficients_standardised": {
+    "same_institute": 1.588,
+    "adamic_adar": -0.749,
+    "resource_allocation": 0.67,
+    "same_department": 0.565,
+    "topic_weighted_jaccard": 0.33,
+    "shared_subfields": 0.306,
+    "log_papers_max": 0.234,
+    "log_papers_min": -0.224,
+    "common_neighbours": 0.22,
+    "institute_pair_joint_papers_hist": -0.163,
+    "jaccard_neighbours": -0.147,
+    "same_community": 0.134,
+    "recent_papers_min": 0.096,
+    "field_cosine": -0.092,
+    "pref_attachment": -0.087,
+    "topic_cosine": -0.067,
+    "hop_distance": 0.067,
+    "recent_papers_max": -0.018
+   },
+   "ablation_random_forest": {
+    "network features only": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0104,
+     "roc_auc": 0.6153,
+     "ap_lift_over_base_rate": 6.3,
+     "precision@50": 0.08,
+     "recall@50": 0.0163,
+     "precision@100": 0.07,
+     "recall@100": 0.0285,
+     "precision@500": 0.028,
+     "recall@500": 0.0569
+    },
+    "research features only": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0014,
+     "roc_auc": 0.4416,
+     "ap_lift_over_base_rate": 0.8,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.0,
+     "recall@100": 0.0,
+     "precision@500": 0.002,
+     "recall@500": 0.0041
+    },
+    "structure + activity only": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0253,
+     "roc_auc": 0.9142,
+     "ap_lift_over_base_rate": 15.3,
+     "precision@50": 0.04,
+     "recall@50": 0.0081,
+     "precision@100": 0.04,
+     "recall@100": 0.0163,
+     "precision@500": 0.03,
+     "recall@500": 0.061
+    },
+    "all features": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0325,
+     "roc_auc": 0.9239,
+     "ap_lift_over_base_rate": 19.7,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.05,
+     "recall@100": 0.0203,
+     "precision@500": 0.048,
+     "recall@500": 0.0976
+    }
+   }
+  },
+  "repeat": {
+   "train": {
+    "T": 2019,
+    "outcome": "2020-2022",
+    "pairs": 339,
+    "positives": 138
+   },
+   "test": {
+    "T": 2022,
+    "outcome": "2023-2025",
+    "pairs": 667,
+    "positives": 223
+   },
+   "metrics": {
+    "common neighbours": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.347,
+     "roc_auc": 0.4972,
+     "ap_lift_over_base_rate": 1.0,
+     "precision@50": 0.46,
+     "recall@50": 0.1031,
+     "precision@100": 0.36,
+     "recall@100": 0.1614,
+     "precision@500": 0.338,
+     "recall@500": 0.7578
+    },
+    "Adamic-Adar": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.3513,
+     "roc_auc": 0.4976,
+     "ap_lift_over_base_rate": 1.1,
+     "precision@50": 0.38,
+     "recall@50": 0.0852,
+     "precision@100": 0.33,
+     "recall@100": 0.148,
+     "precision@500": 0.338,
+     "recall@500": 0.7578
+    },
+    "Jaccard (neighbours)": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.3861,
+     "roc_auc": 0.514,
+     "ap_lift_over_base_rate": 1.2,
+     "precision@50": 0.42,
+     "recall@50": 0.0942,
+     "precision@100": 0.42,
+     "recall@100": 0.1883,
+     "precision@500": 0.338,
+     "recall@500": 0.7578
+    },
+    "preferential attachment": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.2993,
+     "roc_auc": 0.4432,
+     "ap_lift_over_base_rate": 0.9,
+     "precision@50": 0.22,
+     "recall@50": 0.0493,
+     "precision@100": 0.26,
+     "recall@100": 0.1166,
+     "precision@500": 0.316,
+     "recall@500": 0.7085
+    },
+    "topic cosine": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.4036,
+     "roc_auc": 0.5836,
+     "ap_lift_over_base_rate": 1.2,
+     "precision@50": 0.4,
+     "recall@50": 0.0897,
+     "precision@100": 0.36,
+     "recall@100": 0.1614,
+     "precision@500": 0.366,
+     "recall@500": 0.8206
+    },
+    "topic weighted Jaccard": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.4073,
+     "roc_auc": 0.5902,
+     "ap_lift_over_base_rate": 1.2,
+     "precision@50": 0.4,
+     "recall@50": 0.0897,
+     "precision@100": 0.42,
+     "recall@100": 0.1883,
+     "precision@500": 0.364,
+     "recall@500": 0.8161
+    },
+    "logistic regression": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.5655,
+     "roc_auc": 0.7649,
+     "ap_lift_over_base_rate": 1.7,
+     "precision@50": 0.68,
+     "recall@50": 0.1525,
+     "precision@100": 0.63,
+     "recall@100": 0.2825,
+     "precision@500": 0.42,
+     "recall@500": 0.9417
+    },
+    "random forest": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.5762,
+     "roc_auc": 0.7317,
+     "ap_lift_over_base_rate": 1.7,
+     "precision@50": 0.66,
+     "recall@50": 0.148,
+     "precision@100": 0.7,
+     "recall@100": 0.3139,
+     "precision@500": 0.39,
+     "recall@500": 0.8744
+    }
+   },
+   "calibration": {
+    "logistic regression": {
+     "bins": [
+      {
+       "mean_predicted": 0.18512,
+       "observed_rate": 0.08209,
+       "n": 134
+      },
+      {
+       "mean_predicted": 0.32585,
+       "observed_rate": 0.14286,
+       "n": 133
+      },
+      {
+       "mean_predicted": 0.42047,
+       "observed_rate": 0.30075,
+       "n": 133
+      },
+      {
+       "mean_predicted": 0.49027,
+       "observed_rate": 0.52632,
+       "n": 133
+      },
+      {
+       "mean_predicted": 0.59458,
+       "observed_rate": 0.6194,
+       "n": 134
+      }
+     ],
+     "slope": 1.433,
+     "brier": 0.19216,
+     "probabilities_reported": false
+    },
+    "random forest": {
+     "bins": [
+      {
+       "mean_predicted": 0.21222,
+       "observed_rate": 0.15672,
+       "n": 134
+      },
+      {
+       "mean_predicted": 0.32355,
+       "observed_rate": 0.17293,
+       "n": 133
+      },
+      {
+       "mean_predicted": 0.43565,
+       "observed_rate": 0.27068,
+       "n": 133
+      },
+      {
+       "mean_predicted": 0.57596,
+       "observed_rate": 0.39098,
+       "n": 133
+      },
+      {
+       "mean_predicted": 0.72081,
+       "observed_rate": 0.6791,
+       "n": 134
+      }
+     ],
+     "slope": 1.014,
+     "brier": 0.20277,
+     "probabilities_reported": true
+    }
+   },
+   "rf_importance": {
+    "years_since_last_joint": 0.2253,
+    "joint_papers_hist": 0.0909,
+    "field_cosine": 0.0811,
+    "recent_papers_min": 0.0757,
+    "log_papers_min": 0.0699,
+    "adamic_adar": 0.061,
+    "topic_weighted_jaccard": 0.0593,
+    "resource_allocation": 0.0592,
+    "pref_attachment": 0.0546,
+    "topic_cosine": 0.051,
+    "recent_papers_max": 0.0496,
+    "log_papers_max": 0.0435,
+    "jaccard_neighbours": 0.0277,
+    "common_neighbours": 0.0201,
+    "shared_subfields": 0.0183,
+    "same_department": 0.0129,
+    "hop_distance": 0.0,
+    "same_community": 0.0,
+    "same_institute": 0.0,
+    "institute_pair_joint_papers_hist": 0.0
+   },
+   "lr_coefficients_standardised": {
+    "years_since_last_joint": -0.777,
+    "jaccard_neighbours": -0.65,
+    "common_neighbours": 0.511,
+    "log_papers_min": 0.481,
+    "pref_attachment": -0.387,
+    "field_cosine": 0.287,
+    "topic_cosine": -0.232,
+    "resource_allocation": -0.207,
+    "adamic_adar": 0.168,
+    "joint_papers_hist": 0.159,
+    "same_department": 0.142,
+    "recent_papers_max": 0.139,
+    "institute_pair_joint_papers_hist": 0.126,
+    "same_institute": -0.126,
+    "recent_papers_min": -0.111,
+    "log_papers_max": -0.109,
+    "shared_subfields": 0.089,
+    "same_community": -0.077,
+    "topic_weighted_jaccard": 0.065,
+    "hop_distance": 0.0
+   },
+   "ablation_random_forest": {
+    "network features only": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.5842,
+     "roc_auc": 0.755,
+     "ap_lift_over_base_rate": 1.7,
+     "precision@50": 0.72,
+     "recall@50": 0.1614,
+     "precision@100": 0.7,
+     "recall@100": 0.3139,
+     "precision@500": 0.41,
+     "recall@500": 0.9193
+    },
+    "research features only": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.3843,
+     "roc_auc": 0.5607,
+     "ap_lift_over_base_rate": 1.1,
+     "precision@50": 0.44,
+     "recall@50": 0.0987,
+     "precision@100": 0.39,
+     "recall@100": 0.1749,
+     "precision@500": 0.352,
+     "recall@500": 0.7892
+    },
+    "structure + activity only": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.3944,
+     "roc_auc": 0.5536,
+     "ap_lift_over_base_rate": 1.2,
+     "precision@50": 0.5,
+     "recall@50": 0.1121,
+     "precision@100": 0.44,
+     "recall@100": 0.1973,
+     "precision@500": 0.35,
+     "recall@500": 0.7848
+    },
+    "all features": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.5762,
+     "roc_auc": 0.7317,
+     "ap_lift_over_base_rate": 1.7,
+     "precision@50": 0.66,
+     "recall@50": 0.148,
+     "precision@100": 0.7,
+     "recall@100": 0.3139,
+     "precision@500": 0.39,
+     "recall@500": 0.8744
+    }
+   }
+  }
+ },
+ "forward_ranking": {
+  "history_to": 2025,
+  "candidate_pairs": 238762,
+  "note": "ranking score (mean of the two models' percentile ranks), not a probability"
+ }
+}

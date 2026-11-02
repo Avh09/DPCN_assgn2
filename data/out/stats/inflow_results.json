@@ -1,0 +1,281 @@
+{
+ "MANIT Bhopal": {
+  "citations_found": 91248,
+  "openalex_cited_by_total": 90684,
+  "citations_with_institute_info": 86570,
+  "resolved_%": 94.9,
+  "in_cites_from_other_indian_institutes": 28451,
+  "share_of_resolved_from_other_indian_%": 32.9,
+  "self_institute_citations_%": 8.2,
+  "out_cites_to_other_indian_institutes": 35858,
+  "impact_ratio_in_over_out": 0.79,
+  "distinct_indian_institutes_citing": 1698,
+  "papers_cited_by_another_indian_institute_%": 60.3,
+  "top10_citing_institutes": [
+   {
+    "citing_inst": "Vellore Institute of Technology University",
+    "cluster": "University/college",
+    "citations": 1101,
+    "citing_papers": 849
+   },
+   {
+    "citing_inst": "Saveetha University",
+    "cluster": "University/college",
+    "citations": 1066,
+    "citing_papers": 870
+   },
+   {
+    "citing_inst": "Lovely Professional University",
+    "cluster": "University/college",
+    "citations": 811,
+    "citing_papers": 596
+   },
+   {
+    "citing_inst": "SRM Institute of Science and Technology",
+    "cluster": "University/college",
+    "citations": 760,
+    "citing_papers": 601
+   },
+   {
+    "citing_inst": "Manipal Academy of Higher Education",
+    "cluster": "University/college",
+    "citations": 566,
+    "citing_papers": 407
+   },
+   {
+    "citing_inst": "Chandigarh University",
+    "cluster": "University/college",
+    "citations": 559,
+    "citing_papers": 437
+   },
+   {
+    "citing_inst": "Amity University",
+    "cluster": "University/college",
+    "citations": 544,
+    "citing_papers": 379
+   },
+   {
+    "citing_inst": "Chitkara University",
+    "cluster": "University/college",
+    "citations": 512,
+    "citing_papers": 423
+   },
+   {
+    "citing_inst": "Indian Institute of Technology Roorkee",
+    "cluster": "IIT",
+    "citations": 497,
+    "citing_papers": 336
+   },
+   {
+    "citing_inst": "University of Petroleum and Energy Studies",
+    "cluster": "University/college",
+    "citations": 491,
+    "citing_papers": 294
+   }
+  ],
+  "citations_by_cluster": {
+   "University/college": 36131,
+   "NIT": 4480,
+   "IIT": 3238,
+   "Other": 1083,
+   "Government lab/agency": 846,
+   "IIIT": 652,
+   "Medical/health": 237,
+   "CSIR": 219,
+   "Industry": 158,
+   "Premier science inst.": 144,
+   "IISER": 126,
+   "DAE": 122
+  },
+  "from_our_other_two_institutes": {
+   "NIT Silchar": 320,
+   "NIT Jamshedpur": 182
+  }
+ },
+ "NIT Jamshedpur": {
+  "citations_found": 44301,
+  "openalex_cited_by_total": 44061,
+  "citations_with_institute_info": 42540,
+  "resolved_%": 96.0,
+  "in_cites_from_other_indian_institutes": 15338,
+  "share_of_resolved_from_other_indian_%": 36.1,
+  "self_institute_citations_%": 10.6,
+  "out_cites_to_other_indian_institutes": 24983,
+  "impact_ratio_in_over_out": 0.61,
+  "distinct_indian_institutes_citing": 1314,
+  "papers_cited_by_another_indian_institute_%": 59.8,
+  "top10_citing_institutes": [
+   {
+    "citing_inst": "Vellore Institute of Technology University",
+    "cluster": "University/college",
+    "citations": 582,
+    "citing_papers": 439
+   },
+   {
+    "citing_inst": "Saveetha University",
+    "cluster": "University/college",
+    "citations": 516,
+    "citing_papers": 400
+   },
+   {
+    "citing_inst": "Lovely Professional University",
+    "cluster": "University/college",
+    "citations": 386,
+    "citing_papers": 288
+   },
+   {
+    "citing_inst": "Graphic Era University",
+    "cluster": "University/college",
+    "citations": 367,
+    "citing_papers": 217
+   },
+   {
+    "citing_inst": "SRM Institute of Science and Technology",
+    "cluster": "University/college",
+    "citations": 299,
+    "citing_papers": 251
+   },
+   {
+    "citing_inst": "Chandigarh University",
+    "cluster": "University/college",
+    "citations": 288,
+    "citing_papers": 202
+   },
+   {
+    "citing_inst": "National Institute of Technology Patna",
+    "cluster": "NIT",
+    "citations": 276,
+    "citing_papers": 176
+   },
+   {
+    "citing_inst": "Indian Institute of Technology Dhanbad",
+    "cluster": "IIT",
+    "citations": 272,
+    "citing_papers": 184
+   },
+   {
+    "citing_inst": "Chitkara University",
+    "cluster": "University/college",
+    "citations": 251,
+    "citing_papers": 198
+   },
+   {
+    "citing_inst": "National Institute Of Technology Silchar",
+    "cluster": "NIT",
+    "citations": 248,
+    "citing_papers": 162
+   }
+  ],
+  "citations_by_cluster": {
+   "University/college": 18594,
+   "NIT": 2687,
+   "IIT": 1943,
+   "Other": 713,
+   "Government lab/agency": 524,
+   "IIIT": 377,
+   "CSIR": 157,
+   "Premier science inst.": 150,
+   "Industry": 119,
+   "DAE": 113,
+   "Medical/health": 91,
+   "IISER": 53
+  },
+  "from_our_other_two_institutes": {
+   "NIT Silchar": 248,
+   "MANIT Bhopal": 198
+  }
+ },
+ "NIT Silchar": {
+  "citations_found": 125795,
+  "openalex_cited_by_total": 124894,
+  "citations_with_institute_info": 120792,
+  "resolved_%": 96.0,
+  "in_cites_from_other_indian_institutes": 44881,
+  "share_of_resolved_from_other_indian_%": 37.2,
+  "self_institute_citations_%": 16.3,
+  "out_cites_to_other_indian_institutes": 55127,
+  "impact_ratio_in_over_out": 0.81,
+  "distinct_indian_institutes_citing": 1709,
+  "papers_cited_by_another_indian_institute_%": 65.1,
+  "top10_citing_institutes": [
+   {
+    "citing_inst": "Vellore Institute of Technology University",
+    "cluster": "University/college",
+    "citations": 1725,
+    "citing_papers": 1115
+   },
+   {
+    "citing_inst": "Saveetha University",
+    "cluster": "University/college",
+    "citations": 1390,
+    "citing_papers": 1059
+   },
+   {
+    "citing_inst": "SRM Institute of Science and Technology",
+    "cluster": "University/college",
+    "citations": 1203,
+    "citing_papers": 842
+   },
+   {
+    "citing_inst": "Koneru Lakshmaiah Education Foundation",
+    "cluster": "University/college",
+    "citations": 984,
+    "citing_papers": 532
+   },
+   {
+    "citing_inst": "Mizoram University",
+    "cluster": "University/college",
+    "citations": 920,
+    "citing_papers": 270
+   },
+   {
+    "citing_inst": "Amrita Vishwa Vidyapeetham",
+    "cluster": "University/college",
+    "citations": 880,
+    "citing_papers": 435
+   },
+   {
+    "citing_inst": "National Institute of Technology Patna",
+    "cluster": "NIT",
+    "citations": 826,
+    "citing_papers": 414
+   },
+   {
+    "citing_inst": "Indian Institute of Technology Guwahati",
+    "cluster": "IIT",
+    "citations": 796,
+    "citing_papers": 407
+   },
+   {
+    "citing_inst": "VIT-AP University",
+    "cluster": "University/college",
+    "citations": 776,
+    "citing_papers": 353
+   },
+   {
+    "citing_inst": "National Institute of Technology Durgapur",
+    "cluster": "NIT",
+    "citations": 726,
+    "citing_papers": 288
+   }
+  ],
+  "citations_by_cluster": {
+   "University/college": 53176,
+   "NIT": 8920,
+   "IIT": 5747,
+   "Other": 1710,
+   "Government lab/agency": 925,
+   "IIIT": 810,
+   "Premier science inst.": 409,
+   "Medical/health": 282,
+   "CSIR": 232,
+   "Industry": 193,
+   "DAE": 160,
+   "IISER": 145
+  },
+  "from_our_other_two_institutes": {
+   "NIT Jamshedpur": 305,
+   "MANIT Bhopal": 295
+  }
+ }
+}

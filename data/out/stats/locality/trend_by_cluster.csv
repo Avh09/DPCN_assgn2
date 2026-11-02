@@ -1,0 +1,573 @@
+your_inst,year,partner_cluster,partner_links
+MANIT Bhopal,2016,Other university/college,49
+MANIT Bhopal,2016,Central university,0
+MANIT Bhopal,2016,DAE,2
+MANIT Bhopal,2016,NIT,10
+MANIT Bhopal,2016,ICAR,1
+MANIT Bhopal,2016,IIT,6
+MANIT Bhopal,2016,CSIR,1
+MANIT Bhopal,2016,Government lab/agency,1
+MANIT Bhopal,2016,IIIT,2
+MANIT Bhopal,2016,Other,1
+MANIT Bhopal,2016,Industry,3
+MANIT Bhopal,2016,Medical/health,3
+MANIT Bhopal,2016,ICMR,0
+MANIT Bhopal,2016,IISER,0
+MANIT Bhopal,2016,IISc,0
+MANIT Bhopal,2016,ISRO,3
+MANIT Bhopal,2016,DRDO,0
+MANIT Bhopal,2016,Premier science inst.,0
+MANIT Bhopal,2017,Other university/college,50
+MANIT Bhopal,2017,Central university,4
+MANIT Bhopal,2017,DAE,0
+MANIT Bhopal,2017,NIT,8
+MANIT Bhopal,2017,ICAR,0
+MANIT Bhopal,2017,IIT,10
+MANIT Bhopal,2017,CSIR,10
+MANIT Bhopal,2017,Government lab/agency,5
+MANIT Bhopal,2017,IIIT,0
+MANIT Bhopal,2017,Other,1
+MANIT Bhopal,2017,Industry,6
+MANIT Bhopal,2017,Medical/health,0
+MANIT Bhopal,2017,ICMR,0
+MANIT Bhopal,2017,IISER,0
+MANIT Bhopal,2017,IISc,0
+MANIT Bhopal,2017,ISRO,0
+MANIT Bhopal,2017,DRDO,0
+MANIT Bhopal,2017,Premier science inst.,0
+MANIT Bhopal,2018,Other university/college,49
+MANIT Bhopal,2018,Central university,4
+MANIT Bhopal,2018,DAE,0
+MANIT Bhopal,2018,NIT,6
+MANIT Bhopal,2018,ICAR,0
+MANIT Bhopal,2018,IIT,5
+MANIT Bhopal,2018,CSIR,14
+MANIT Bhopal,2018,Government lab/agency,0
+MANIT Bhopal,2018,IIIT,2
+MANIT Bhopal,2018,Other,3
+MANIT Bhopal,2018,Industry,2
+MANIT Bhopal,2018,Medical/health,0
+MANIT Bhopal,2018,ICMR,0
+MANIT Bhopal,2018,IISER,0
+MANIT Bhopal,2018,IISc,0
+MANIT Bhopal,2018,ISRO,2
+MANIT Bhopal,2018,DRDO,0
+MANIT Bhopal,2018,Premier science inst.,0
+MANIT Bhopal,2019,Other university/college,87
+MANIT Bhopal,2019,Central university,1
+MANIT Bhopal,2019,DAE,1
+MANIT Bhopal,2019,NIT,13
+MANIT Bhopal,2019,ICAR,0
+MANIT Bhopal,2019,IIT,8
+MANIT Bhopal,2019,CSIR,8
+MANIT Bhopal,2019,Government lab/agency,4
+MANIT Bhopal,2019,IIIT,2
+MANIT Bhopal,2019,Other,5
+MANIT Bhopal,2019,Industry,1
+MANIT Bhopal,2019,Medical/health,3
+MANIT Bhopal,2019,ICMR,0
+MANIT Bhopal,2019,IISER,1
+MANIT Bhopal,2019,IISc,0
+MANIT Bhopal,2019,ISRO,0
+MANIT Bhopal,2019,DRDO,0
+MANIT Bhopal,2019,Premier science inst.,0
+MANIT Bhopal,2020,Other university/college,121
+MANIT Bhopal,2020,Central university,5
+MANIT Bhopal,2020,DAE,3
+MANIT Bhopal,2020,NIT,41
+MANIT Bhopal,2020,ICAR,2
+MANIT Bhopal,2020,IIT,55
+MANIT Bhopal,2020,CSIR,8
+MANIT Bhopal,2020,Government lab/agency,2
+MANIT Bhopal,2020,IIIT,8
+MANIT Bhopal,2020,Other,5
+MANIT Bhopal,2020,Industry,2
+MANIT Bhopal,2020,Medical/health,8
+MANIT Bhopal,2020,ICMR,0
+MANIT Bhopal,2020,IISER,0
+MANIT Bhopal,2020,IISc,0
+MANIT Bhopal,2020,ISRO,0
+MANIT Bhopal,2020,DRDO,0
+MANIT Bhopal,2020,Premier science inst.,0
+MANIT Bhopal,2021,Other university/college,192
+MANIT Bhopal,2021,Central university,13
+MANIT Bhopal,2021,DAE,0
+MANIT Bhopal,2021,NIT,31
+MANIT Bhopal,2021,ICAR,2
+MANIT Bhopal,2021,IIT,55
+MANIT Bhopal,2021,CSIR,9
+MANIT Bhopal,2021,Government lab/agency,4
+MANIT Bhopal,2021,IIIT,9
+MANIT Bhopal,2021,Other,5
+MANIT Bhopal,2021,Industry,4
+MANIT Bhopal,2021,Medical/health,7
+MANIT Bhopal,2021,ICMR,0
+MANIT Bhopal,2021,IISER,0
+MANIT Bhopal,2021,IISc,0
+MANIT Bhopal,2021,ISRO,0
+MANIT Bhopal,2021,DRDO,0
+MANIT Bhopal,2021,Premier science inst.,0
+MANIT Bhopal,2022,Other university/college,190
+MANIT Bhopal,2022,Central university,15
+MANIT Bhopal,2022,DAE,1
+MANIT Bhopal,2022,NIT,41
+MANIT Bhopal,2022,ICAR,4
+MANIT Bhopal,2022,IIT,40
+MANIT Bhopal,2022,CSIR,16
+MANIT Bhopal,2022,Government lab/agency,10
+MANIT Bhopal,2022,IIIT,11
+MANIT Bhopal,2022,Other,5
+MANIT Bhopal,2022,Industry,5
+MANIT Bhopal,2022,Medical/health,3
+MANIT Bhopal,2022,ICMR,0
+MANIT Bhopal,2022,IISER,0
+MANIT Bhopal,2022,IISc,0
+MANIT Bhopal,2022,ISRO,1
+MANIT Bhopal,2022,DRDO,0
+MANIT Bhopal,2022,Premier science inst.,0
+MANIT Bhopal,2023,Other university/college,188
+MANIT Bhopal,2023,Central university,20
+MANIT Bhopal,2023,DAE,0
+MANIT Bhopal,2023,NIT,36
+MANIT Bhopal,2023,ICAR,7
+MANIT Bhopal,2023,IIT,30
+MANIT Bhopal,2023,CSIR,13
+MANIT Bhopal,2023,Government lab/agency,9
+MANIT Bhopal,2023,IIIT,22
+MANIT Bhopal,2023,Other,6
+MANIT Bhopal,2023,Industry,4
+MANIT Bhopal,2023,Medical/health,1
+MANIT Bhopal,2023,ICMR,0
+MANIT Bhopal,2023,IISER,1
+MANIT Bhopal,2023,IISc,2
+MANIT Bhopal,2023,ISRO,0
+MANIT Bhopal,2023,DRDO,0
+MANIT Bhopal,2023,Premier science inst.,0
+MANIT Bhopal,2024,Other university/college,195
+MANIT Bhopal,2024,Central university,19
+MANIT Bhopal,2024,DAE,3
+MANIT Bhopal,2024,NIT,57
+MANIT Bhopal,2024,ICAR,3
+MANIT Bhopal,2024,IIT,43
+MANIT Bhopal,2024,CSIR,6
+MANIT Bhopal,2024,Government lab/agency,4
+MANIT Bhopal,2024,IIIT,37
+MANIT Bhopal,2024,Other,5
+MANIT Bhopal,2024,Industry,5
+MANIT Bhopal,2024,Medical/health,3
+MANIT Bhopal,2024,ICMR,0
+MANIT Bhopal,2024,IISER,1
+MANIT Bhopal,2024,IISc,2
+MANIT Bhopal,2024,ISRO,1
+MANIT Bhopal,2024,DRDO,1
+MANIT Bhopal,2024,Premier science inst.,1
+MANIT Bhopal,2025,Other university/college,188
+MANIT Bhopal,2025,Central university,22
+MANIT Bhopal,2025,DAE,8
+MANIT Bhopal,2025,NIT,46
+MANIT Bhopal,2025,ICAR,3
+MANIT Bhopal,2025,IIT,47
+MANIT Bhopal,2025,CSIR,24
+MANIT Bhopal,2025,Government lab/agency,6
+MANIT Bhopal,2025,IIIT,30
+MANIT Bhopal,2025,Other,10
+MANIT Bhopal,2025,Industry,2
+MANIT Bhopal,2025,Medical/health,5
+MANIT Bhopal,2025,ICMR,4
+MANIT Bhopal,2025,IISER,10
+MANIT Bhopal,2025,IISc,6
+MANIT Bhopal,2025,ISRO,0
+MANIT Bhopal,2025,DRDO,1
+MANIT Bhopal,2025,Premier science inst.,3
+MANIT Bhopal,2026,Other university/college,127
+MANIT Bhopal,2026,Central university,14
+MANIT Bhopal,2026,DAE,3
+MANIT Bhopal,2026,NIT,29
+MANIT Bhopal,2026,ICAR,1
+MANIT Bhopal,2026,IIT,56
+MANIT Bhopal,2026,CSIR,11
+MANIT Bhopal,2026,Government lab/agency,5
+MANIT Bhopal,2026,IIIT,23
+MANIT Bhopal,2026,Other,3
+MANIT Bhopal,2026,Industry,1
+MANIT Bhopal,2026,Medical/health,5
+MANIT Bhopal,2026,ICMR,4
+MANIT Bhopal,2026,IISER,8
+MANIT Bhopal,2026,IISc,5
+MANIT Bhopal,2026,ISRO,2
+MANIT Bhopal,2026,DRDO,0
+MANIT Bhopal,2026,Premier science inst.,2
+NIT Jamshedpur,2016,IIT,3
+NIT Jamshedpur,2016,CSIR,5
+NIT Jamshedpur,2016,Other university/college,16
+NIT Jamshedpur,2016,Central university,2
+NIT Jamshedpur,2016,NIT,5
+NIT Jamshedpur,2016,IISc,0
+NIT Jamshedpur,2016,Other,0
+NIT Jamshedpur,2016,Government lab/agency,0
+NIT Jamshedpur,2016,ICAR,0
+NIT Jamshedpur,2016,IIIT,0
+NIT Jamshedpur,2016,ISRO,0
+NIT Jamshedpur,2016,Industry,1
+NIT Jamshedpur,2016,Medical/health,0
+NIT Jamshedpur,2016,DAE,0
+NIT Jamshedpur,2016,Premier science inst.,0
+NIT Jamshedpur,2016,DRDO,0
+NIT Jamshedpur,2016,IISER,0
+NIT Jamshedpur,2017,IIT,10
+NIT Jamshedpur,2017,CSIR,2
+NIT Jamshedpur,2017,Other university/college,12
+NIT Jamshedpur,2017,Central university,1
+NIT Jamshedpur,2017,NIT,2
+NIT Jamshedpur,2017,IISc,1
+NIT Jamshedpur,2017,Other,0
+NIT Jamshedpur,2017,Government lab/agency,0
+NIT Jamshedpur,2017,ICAR,0
+NIT Jamshedpur,2017,IIIT,2
+NIT Jamshedpur,2017,ISRO,0
+NIT Jamshedpur,2017,Industry,0
+NIT Jamshedpur,2017,Medical/health,0
+NIT Jamshedpur,2017,DAE,3
+NIT Jamshedpur,2017,Premier science inst.,0
+NIT Jamshedpur,2017,DRDO,0
+NIT Jamshedpur,2017,IISER,1
+NIT Jamshedpur,2018,IIT,25
+NIT Jamshedpur,2018,CSIR,3
+NIT Jamshedpur,2018,Other university/college,47
+NIT Jamshedpur,2018,Central university,2
+NIT Jamshedpur,2018,NIT,2
+NIT Jamshedpur,2018,IISc,1
+NIT Jamshedpur,2018,Other,3
+NIT Jamshedpur,2018,Government lab/agency,1
+NIT Jamshedpur,2018,ICAR,0
+NIT Jamshedpur,2018,IIIT,4
+NIT Jamshedpur,2018,ISRO,0
+NIT Jamshedpur,2018,Industry,1
+NIT Jamshedpur,2018,Medical/health,0
+NIT Jamshedpur,2018,DAE,0
+NIT Jamshedpur,2018,Premier science inst.,0
+NIT Jamshedpur,2018,DRDO,0
+NIT Jamshedpur,2018,IISER,1
+NIT Jamshedpur,2019,IIT,21
+NIT Jamshedpur,2019,CSIR,10
+NIT Jamshedpur,2019,Other university/college,61
+NIT Jamshedpur,2019,Central university,1
+NIT Jamshedpur,2019,NIT,10
+NIT Jamshedpur,2019,IISc,4
+NIT Jamshedpur,2019,Other,1
+NIT Jamshedpur,2019,Government lab/agency,0
+NIT Jamshedpur,2019,ICAR,0
+NIT Jamshedpur,2019,IIIT,4
+NIT Jamshedpur,2019,ISRO,0
+NIT Jamshedpur,2019,Industry,5
+NIT Jamshedpur,2019,Medical/health,0
+NIT Jamshedpur,2019,DAE,7
+NIT Jamshedpur,2019,Premier science inst.,2
+NIT Jamshedpur,2019,DRDO,0
+NIT Jamshedpur,2019,IISER,0
+NIT Jamshedpur,2020,IIT,40
+NIT Jamshedpur,2020,CSIR,1
+NIT Jamshedpur,2020,Other university/college,99
+NIT Jamshedpur,2020,Central university,1
+NIT Jamshedpur,2020,NIT,23
+NIT Jamshedpur,2020,IISc,0
+NIT Jamshedpur,2020,Other,1
+NIT Jamshedpur,2020,Government lab/agency,3
+NIT Jamshedpur,2020,ICAR,0
+NIT Jamshedpur,2020,IIIT,7
+NIT Jamshedpur,2020,ISRO,0
+NIT Jamshedpur,2020,Industry,6
+NIT Jamshedpur,2020,Medical/health,0
+NIT Jamshedpur,2020,DAE,7
+NIT Jamshedpur,2020,Premier science inst.,0
+NIT Jamshedpur,2020,DRDO,0
+NIT Jamshedpur,2020,IISER,0
+NIT Jamshedpur,2021,IIT,36
+NIT Jamshedpur,2021,CSIR,17
+NIT Jamshedpur,2021,Other university/college,146
+NIT Jamshedpur,2021,Central university,9
+NIT Jamshedpur,2021,NIT,31
+NIT Jamshedpur,2021,IISc,2
+NIT Jamshedpur,2021,Other,3
+NIT Jamshedpur,2021,Government lab/agency,4
+NIT Jamshedpur,2021,ICAR,2
+NIT Jamshedpur,2021,IIIT,5
+NIT Jamshedpur,2021,ISRO,2
+NIT Jamshedpur,2021,Industry,8
+NIT Jamshedpur,2021,Medical/health,1
+NIT Jamshedpur,2021,DAE,7
+NIT Jamshedpur,2021,Premier science inst.,0
+NIT Jamshedpur,2021,DRDO,1
+NIT Jamshedpur,2021,IISER,0
+NIT Jamshedpur,2022,IIT,24
+NIT Jamshedpur,2022,CSIR,11
+NIT Jamshedpur,2022,Other university/college,123
+NIT Jamshedpur,2022,Central university,3
+NIT Jamshedpur,2022,NIT,23
+NIT Jamshedpur,2022,IISc,2
+NIT Jamshedpur,2022,Other,1
+NIT Jamshedpur,2022,Government lab/agency,6
+NIT Jamshedpur,2022,ICAR,2
+NIT Jamshedpur,2022,IIIT,36
+NIT Jamshedpur,2022,ISRO,2
+NIT Jamshedpur,2022,Industry,4
+NIT Jamshedpur,2022,Medical/health,0
+NIT Jamshedpur,2022,DAE,0
+NIT Jamshedpur,2022,Premier science inst.,0
+NIT Jamshedpur,2022,DRDO,1
+NIT Jamshedpur,2022,IISER,0
+NIT Jamshedpur,2023,IIT,35
+NIT Jamshedpur,2023,CSIR,22
+NIT Jamshedpur,2023,Other university/college,184
+NIT Jamshedpur,2023,Central university,11
+NIT Jamshedpur,2023,NIT,42
+NIT Jamshedpur,2023,IISc,2
+NIT Jamshedpur,2023,Other,4
+NIT Jamshedpur,2023,Government lab/agency,4
+NIT Jamshedpur,2023,ICAR,1
+NIT Jamshedpur,2023,IIIT,18
+NIT Jamshedpur,2023,ISRO,3
+NIT Jamshedpur,2023,Industry,16
+NIT Jamshedpur,2023,Medical/health,2
+NIT Jamshedpur,2023,DAE,4
+NIT Jamshedpur,2023,Premier science inst.,0
+NIT Jamshedpur,2023,DRDO,3
+NIT Jamshedpur,2023,IISER,0
+NIT Jamshedpur,2024,IIT,54
+NIT Jamshedpur,2024,CSIR,25
+NIT Jamshedpur,2024,Other university/college,213
+NIT Jamshedpur,2024,Central university,10
+NIT Jamshedpur,2024,NIT,75
+NIT Jamshedpur,2024,IISc,0
+NIT Jamshedpur,2024,Other,3
+NIT Jamshedpur,2024,Government lab/agency,9
+NIT Jamshedpur,2024,ICAR,0
+NIT Jamshedpur,2024,IIIT,19
+NIT Jamshedpur,2024,ISRO,2
+NIT Jamshedpur,2024,Industry,5
+NIT Jamshedpur,2024,Medical/health,1
+NIT Jamshedpur,2024,DAE,3
+NIT Jamshedpur,2024,Premier science inst.,0
+NIT Jamshedpur,2024,DRDO,2
+NIT Jamshedpur,2024,IISER,0
+NIT Jamshedpur,2025,IIT,60
+NIT Jamshedpur,2025,CSIR,37
+NIT Jamshedpur,2025,Other university/college,221
+NIT Jamshedpur,2025,Central university,15
+NIT Jamshedpur,2025,NIT,74
+NIT Jamshedpur,2025,IISc,4
+NIT Jamshedpur,2025,Other,3
+NIT Jamshedpur,2025,Government lab/agency,13
+NIT Jamshedpur,2025,ICAR,0
+NIT Jamshedpur,2025,IIIT,11
+NIT Jamshedpur,2025,ISRO,1
+NIT Jamshedpur,2025,Industry,13
+NIT Jamshedpur,2025,Medical/health,5
+NIT Jamshedpur,2025,DAE,2
+NIT Jamshedpur,2025,Premier science inst.,5
+NIT Jamshedpur,2025,DRDO,12
+NIT Jamshedpur,2025,IISER,4
+NIT Jamshedpur,2026,IIT,35
+NIT Jamshedpur,2026,CSIR,29
+NIT Jamshedpur,2026,Other university/college,171
+NIT Jamshedpur,2026,Central university,9
+NIT Jamshedpur,2026,NIT,36
+NIT Jamshedpur,2026,IISc,0
+NIT Jamshedpur,2026,Other,1
+NIT Jamshedpur,2026,Government lab/agency,4
+NIT Jamshedpur,2026,ICAR,0
+NIT Jamshedpur,2026,IIIT,13
+NIT Jamshedpur,2026,ISRO,0
+NIT Jamshedpur,2026,Industry,12
+NIT Jamshedpur,2026,Medical/health,2
+NIT Jamshedpur,2026,DAE,2
+NIT Jamshedpur,2026,Premier science inst.,1
+NIT Jamshedpur,2026,DRDO,4
+NIT Jamshedpur,2026,IISER,0
+NIT Silchar,2016,Other university/college,48
+NIT Silchar,2016,Central university,23
+NIT Silchar,2016,Medical/health,5
+NIT Silchar,2016,IISc,1
+NIT Silchar,2016,IIT,13
+NIT Silchar,2016,NIT,28
+NIT Silchar,2016,IIIT,0
+NIT Silchar,2016,Government lab/agency,2
+NIT Silchar,2016,Premier science inst.,1
+NIT Silchar,2016,CSIR,0
+NIT Silchar,2016,Other,0
+NIT Silchar,2016,ICAR,0
+NIT Silchar,2016,Industry,0
+NIT Silchar,2016,IISER,1
+NIT Silchar,2016,ISRO,0
+NIT Silchar,2016,DAE,2
+NIT Silchar,2016,DRDO,0
+NIT Silchar,2017,Other university/college,49
+NIT Silchar,2017,Central university,34
+NIT Silchar,2017,Medical/health,2
+NIT Silchar,2017,IISc,2
+NIT Silchar,2017,IIT,20
+NIT Silchar,2017,NIT,23
+NIT Silchar,2017,IIIT,0
+NIT Silchar,2017,Government lab/agency,1
+NIT Silchar,2017,Premier science inst.,0
+NIT Silchar,2017,CSIR,5
+NIT Silchar,2017,Other,0
+NIT Silchar,2017,ICAR,0
+NIT Silchar,2017,Industry,1
+NIT Silchar,2017,IISER,1
+NIT Silchar,2017,ISRO,0
+NIT Silchar,2017,DAE,0
+NIT Silchar,2017,DRDO,0
+NIT Silchar,2018,Other university/college,82
+NIT Silchar,2018,Central university,28
+NIT Silchar,2018,Medical/health,2
+NIT Silchar,2018,IISc,1
+NIT Silchar,2018,IIT,23
+NIT Silchar,2018,NIT,28
+NIT Silchar,2018,IIIT,0
+NIT Silchar,2018,Government lab/agency,8
+NIT Silchar,2018,Premier science inst.,0
+NIT Silchar,2018,CSIR,2
+NIT Silchar,2018,Other,0
+NIT Silchar,2018,ICAR,0
+NIT Silchar,2018,Industry,1
+NIT Silchar,2018,IISER,0
+NIT Silchar,2018,ISRO,0
+NIT Silchar,2018,DAE,0
+NIT Silchar,2018,DRDO,0
+NIT Silchar,2019,Other university/college,101
+NIT Silchar,2019,Central university,28
+NIT Silchar,2019,Medical/health,4
+NIT Silchar,2019,IISc,0
+NIT Silchar,2019,IIT,37
+NIT Silchar,2019,NIT,31
+NIT Silchar,2019,IIIT,0
+NIT Silchar,2019,Government lab/agency,7
+NIT Silchar,2019,Premier science inst.,1
+NIT Silchar,2019,CSIR,6
+NIT Silchar,2019,Other,0
+NIT Silchar,2019,ICAR,0
+NIT Silchar,2019,Industry,2
+NIT Silchar,2019,IISER,1
+NIT Silchar,2019,ISRO,0
+NIT Silchar,2019,DAE,2
+NIT Silchar,2019,DRDO,0
+NIT Silchar,2020,Other university/college,135
+NIT Silchar,2020,Central university,52
+NIT Silchar,2020,Medical/health,6
+NIT Silchar,2020,IISc,1
+NIT Silchar,2020,IIT,53
+NIT Silchar,2020,NIT,70
+NIT Silchar,2020,IIIT,2
+NIT Silchar,2020,Government lab/agency,3
+NIT Silchar,2020,Premier science inst.,0
+NIT Silchar,2020,CSIR,6
+NIT Silchar,2020,Other,1
+NIT Silchar,2020,ICAR,0
+NIT Silchar,2020,Industry,2
+NIT Silchar,2020,IISER,0
+NIT Silchar,2020,ISRO,1
+NIT Silchar,2020,DAE,0
+NIT Silchar,2020,DRDO,0
+NIT Silchar,2021,Other university/college,163
+NIT Silchar,2021,Central university,46
+NIT Silchar,2021,Medical/health,6
+NIT Silchar,2021,IISc,9
+NIT Silchar,2021,IIT,58
+NIT Silchar,2021,NIT,66
+NIT Silchar,2021,IIIT,5
+NIT Silchar,2021,Government lab/agency,2
+NIT Silchar,2021,Premier science inst.,2
+NIT Silchar,2021,CSIR,9
+NIT Silchar,2021,Other,1
+NIT Silchar,2021,ICAR,0
+NIT Silchar,2021,Industry,7
+NIT Silchar,2021,IISER,0
+NIT Silchar,2021,ISRO,0
+NIT Silchar,2021,DAE,0
+NIT Silchar,2021,DRDO,0
+NIT Silchar,2022,Other university/college,276
+NIT Silchar,2022,Central university,41
+NIT Silchar,2022,Medical/health,6
+NIT Silchar,2022,IISc,13
+NIT Silchar,2022,IIT,60
+NIT Silchar,2022,NIT,82
+NIT Silchar,2022,IIIT,17
+NIT Silchar,2022,Government lab/agency,5
+NIT Silchar,2022,Premier science inst.,10
+NIT Silchar,2022,CSIR,6
+NIT Silchar,2022,Other,1
+NIT Silchar,2022,ICAR,1
+NIT Silchar,2022,Industry,0
+NIT Silchar,2022,IISER,0
+NIT Silchar,2022,ISRO,0
+NIT Silchar,2022,DAE,0
+NIT Silchar,2022,DRDO,0
+NIT Silchar,2023,Other university/college,320
+NIT Silchar,2023,Central university,41
+NIT Silchar,2023,Medical/health,5
+NIT Silchar,2023,IISc,10
+NIT Silchar,2023,IIT,54
+NIT Silchar,2023,NIT,109
+NIT Silchar,2023,IIIT,17
+NIT Silchar,2023,Government lab/agency,8
+NIT Silchar,2023,Premier science inst.,7
+NIT Silchar,2023,CSIR,13
+NIT Silchar,2023,Other,1
+NIT Silchar,2023,ICAR,0
+NIT Silchar,2023,Industry,4
+NIT Silchar,2023,IISER,0
+NIT Silchar,2023,ISRO,3
+NIT Silchar,2023,DAE,1
+NIT Silchar,2023,DRDO,1
+NIT Silchar,2024,Other university/college,382
+NIT Silchar,2024,Central university,32
+NIT Silchar,2024,Medical/health,6
+NIT Silchar,2024,IISc,14
+NIT Silchar,2024,IIT,87
+NIT Silchar,2024,NIT,101
+NIT Silchar,2024,IIIT,17
+NIT Silchar,2024,Government lab/agency,6
+NIT Silchar,2024,Premier science inst.,9
+NIT Silchar,2024,CSIR,18
+NIT Silchar,2024,Other,0
+NIT Silchar,2024,ICAR,0
+NIT Silchar,2024,Industry,3
+NIT Silchar,2024,IISER,3
+NIT Silchar,2024,ISRO,1
+NIT Silchar,2024,DAE,2
+NIT Silchar,2024,DRDO,0
+NIT Silchar,2025,Other university/college,374
+NIT Silchar,2025,Central university,24
+NIT Silchar,2025,Medical/health,3
+NIT Silchar,2025,IISc,7
+NIT Silchar,2025,IIT,103
+NIT Silchar,2025,NIT,97
+NIT Silchar,2025,IIIT,26
+NIT Silchar,2025,Government lab/agency,6
+NIT Silchar,2025,Premier science inst.,2
+NIT Silchar,2025,CSIR,15
+NIT Silchar,2025,Other,3
+NIT Silchar,2025,ICAR,0
+NIT Silchar,2025,Industry,4
+NIT Silchar,2025,IISER,2
+NIT Silchar,2025,ISRO,0
+NIT Silchar,2025,DAE,2
+NIT Silchar,2025,DRDO,2
+NIT Silchar,2026,Other university/college,289
+NIT Silchar,2026,Central university,24
+NIT Silchar,2026,Medical/health,3
+NIT Silchar,2026,IISc,7
+NIT Silchar,2026,IIT,76
+NIT Silchar,2026,NIT,68
+NIT Silchar,2026,IIIT,8
+NIT Silchar,2026,Government lab/agency,8
+NIT Silchar,2026,Premier science inst.,7
+NIT Silchar,2026,CSIR,15
+NIT Silchar,2026,Other,3
+NIT Silchar,2026,ICAR,0
+NIT Silchar,2026,Industry,3
+NIT Silchar,2026,IISER,4
+NIT Silchar,2026,ISRO,0
+NIT Silchar,2026,DAE,1
+NIT Silchar,2026,DRDO,0

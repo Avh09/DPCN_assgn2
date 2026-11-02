@@ -1,0 +1,28 @@
+{
+ "n": 800,
+ "spearman_degree_vs_mean_fwci": [
+  0.316,
+  5.2e-20
+ ],
+ "spearman_distinct_coauthors_all_vs_mean_fwci": [
+  0.349,
+  2.7e-24
+ ],
+ "spearman_degree_vs_citations": [
+  0.672,
+  3.8e-106
+ ],
+ "spearman_betweenness_vs_mean_fwci": [
+  0.253,
+  4.2e-13
+ ],
+ "partial_degree_vs_mean_fwci_controlling_papers": [
+  0.078,
+  0.028
+ ],
+ "partial_distinct_coauthors_all_vs_mean_fwci_controlling_papers": [
+  0.02,
+  0.57
+ ],
+ "note": "association, not causation; productivity is controlled by rank-residuals; field mix and career stage are not controlled (career stage is not available)"
+}

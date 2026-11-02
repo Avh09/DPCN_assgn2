@@ -1,0 +1,88 @@
+action,institution,faculty_name,author_id,work_id,evidence
+assign,MANIT Bhopal,Deepak Kumar (Mechanical Engineering),A5100702991,,"ORCID 0000-0001-9048-8828: Asst Prof MANIT 2020-present, PhD Mechanical IIT Patna; papers on wear and actuators"
+assign,MANIT Bhopal,Deepak Kumar (Mechanical Engineering),A5129983627,,same ORCID 0000-0001-9048-8828
+assign,MANIT Bhopal,Deepak Kumar (Mechanical Engineering),A5101721624,,same ORCID 0000-0001-9048-8828 (its BRICS paper belongs to the Humanities Deepak Kumar: see work_assign)
+assign,MANIT Bhopal,Deepak Kumar (Humanities and Social Sciences),A5035848453,,titles on his Google Scholar profile (Asst Prof Humanities MANIT): ICT Enabled Learning; AI-Enabled Learning and Critical Thinking
+assign,MANIT Bhopal,Deepak Kumar (Humanities and Social Sciences),A5012794152,,title on his Google Scholar profile: IT-Enabled Inclusive Development (Blockchain)
+assign,MANIT Bhopal,Deepak Kumar (Humanities and Social Sciences),A5027345646,,title on his Google Scholar profile: Finding home away from home (Sikh Odyssey)
+work_assign,MANIT Bhopal,Deepak Kumar (Humanities and Social Sciences),A5101721624,W4379380851,BRICS clean-cooking-fuels paper is on his Google Scholar profile
+work_unassign,MANIT Bhopal,Ruchi Khare,A5057682450,W3008161235,"oral cancer paper: Ruchi Khare of Biological Science & Engg (Google Scholar), not the Civil professor"
+work_unassign,MANIT Bhopal,Ruchi Khare,A5057682450,W3092535817,SARS-CoV-2 review: Ruchi Khare of Biological Science & Engg (Google Scholar)
+work_unassign,MANIT Bhopal,Ruchi Khare,A5057682450,W3094917593,silver nanoparticles / venom paper: Ruchi Khare of Biological Science & Engg (Google Scholar)
+work_unassign,MANIT Bhopal,Ruchi Khare,A5057682450,W3188421286,SARS-CoV-2 RdRp inhibitor paper: Ruchi Khare of Biological Science & Engg (Google Scholar)
+work_unassign,MANIT Bhopal,Ruchi Khare,A5057682450,W4309886618,biosensors paper: Ruchi Khare of Biological Science & Engg (Google Scholar)
+assign,NIT Jamshedpur,Dinesh Kumar (Computer Science and Engineering),A5021506332,,titles on his Google Scholar profile (Asst Prof CSE NITJ): blockchain resource allocation in edge computing; ML for fog computing
+assign,NIT Jamshedpur,Dinesh Kumar (Computer Science and Engineering),A5074372757,,blockchain resource allocation in edge computing (his Scholar topic)
+assign,NIT Jamshedpur,Dinesh Kumar (Computer Science and Engineering),A5141060229,,federated learning and cloud scheduling (his Scholar topics)
+assign,NIT Jamshedpur,DINESH KUMAR (Production and Industrial Engineering),A5049211783,,titles on his Google Scholar profile (Asst Prof NITJ supply chain): two-warehouse perishable inventory papers
+assign,NIT Jamshedpur,DINESH KUMAR (Production and Industrial Engineering),A5101698482,,title on his Google Scholar profile: waste cooking oil biodiesel plant sustainability
+assign,NIT Jamshedpur,DINESH KUMAR (Production and Industrial Engineering),A5137820123,,two-warehouse inventory dispatching (his research line)
+assign,NIT Jamshedpur,Sanjay V. Kumar,A5100654328,,titles on his Google Scholar profile (Assoc Prof Civil NITJ): bamboo ferrocement slabs; fly-ash geopolymer concrete
+assign,NIT Jamshedpur,Dilip Kumar (Computer Science and Engineering),A5114514461,,NITJ faculty data dilip.cse@nitjsr.ac.in; record has 'Role of IoT in Smart Farming' from his Google Scholar profile
+assign,NIT Jamshedpur,Ashok Kumar (Metallurgical and Materials Engineering),A5016490586,,cyclic deformation / fatigue of SA333 steel: matches his Google Scholar topics (NITJ; fatigue; fracture)
+assign,NIT Jamshedpur,Ashok Kumar (Metallurgical and Materials Engineering),A5101510323,,low-cycle fatigue of SA333 steel: matches his Google Scholar topics
+unassign,NIT Jamshedpur,Munendra Singh,A5103173164,,record is mainly a geochemist at Univ. of Lucknow (ORCID 0000-0001-8006-6605); NITJ Munendra Singh works on MRI (Google Scholar)
+work_assign,NIT Jamshedpur,Munendra Singh,A5103173164,W7125586388,MRI reconstruction review fits the NITJ Munendra Singh (MRI / deep learning on Google Scholar)
+unassign,NIT Jamshedpur,,A5007241811,,"PhD scholar, confirmed on Google Scholar (was matched to former faculty Anand Kumar)"
+unassign,NIT Silchar,,A5060951329,,"PhD scholar, confirmed on Google Scholar (was matched to former faculty Sona Srivastava)"
+unassign,NIT Silchar,,A5046101659,,"PhD scholar, confirmed on Google Scholar (Soumya Sundar Pattanayak)"
+unassign,NIT Jamshedpur,,A5076681838,,"PhD at NIT Jamshedpur, now Asst Prof at G H Raisoni University (Google Scholar): not NITJ faculty"
+assign,NIT Silchar,Sudip Dey,A5067546383,,"'S. Dey' record: same topics (stochastic composites, FGM, graphene) and co-author R. R. Kumar as Sudip Dey's Google Scholar profile"
+assign,MANIT Bhopal,Rajput S. P. S,A5068539618,,OpenAlex author 'Sarvesh P. S. Rajput' (civil engg): 31 papers 2016-26 name MANIT; the page spelling 'Rajput S. P. S' did not match by name.
+assign,NIT Jamshedpur,J Jayapal,A5011857028,,"OpenAlex author 'Jayapal Jayarajan' (civil, granular piles): 5 papers name NIT Jamshedpur; page spelling 'J Jayapal' did not match."
+assign,NIT Silchar,Prashanth J,A5083219455,,"OpenAlex author 'J. Prashanth' (civil, vehicle-bridge interaction): 3 papers name NIT Silchar; page spelling 'Prashanth J'."
+assign,NIT Jamshedpur,Omhari Gupta,A5070571708,,"OpenAlex author 'Om Hari Gupta' (65 papers 2018-26, NITJ): nitjsr.ac.in profile EE111 Dr. Omhari Gupta, Asst Prof Electrical Engg since 2018; spelling 'Omhari' vs 'Om Hari'."
+assign,NIT Silchar,Sunilkumar D,A5037818662,,"OpenAlex author 'D. Sunilkumar' (mechanical, welding microstructure): 4 papers name NIT Silchar; page spelling 'Sunilkumar D'."
+assign,NIT Silchar,Nitesh Ahir,A5092648832,,"OpenAlex author 'A. Nitesh' (civil, blast response spectrum 2023) names NIT Silchar; name order differs from page 'Nitesh Ahir' (one paper: check)."
+assign,NIT Jamshedpur,Sanja y,A5100696206,,"OpenAlex author 'S. Sanjay' (51 papers 2016-25, SOFC / gas-turbine thermoeconomics): confirmed Professor, Mechanical Engg NITJ by the team; page entry 'Sanja y' (first letters lost in the scrape)."
+work_unassign,MANIT Bhopal,Ajay Pandey,A5101587500,W2947251519,"Dr. Ajay Pandey is Mechanical Engg (design, composites, biodegradable implants); this biology/medical paper is another Ajay Pandey's: 'Genome-wide comparative analysis of the codon usage pattern in Flavivi'"
+work_unassign,MANIT Bhopal,Ajay Pandey,A5044039623,W4248537522,"Dr. Ajay Pandey is Mechanical Engg (design, composites, biodegradable implants); this biology/medical paper is another Ajay Pandey's: 'An Understanding of Diabetes Mellitus Associated Complications, Treatm'"
+work_unassign,MANIT Bhopal,J. S. Yadav,A5033027664,W2808498095,Prof. J. S. Yadav (Jigyendra Sen Yadav) is ECE (signal / image processing); this brain-cell biology paper is another J. S. Yadav's: 'Stochastic model analysis for Hes1/MiR-9 brain cell division system'
+work_unassign,MANIT Bhopal,Suneet Kaur,A5102928505,W2525858956,"Dr. Suneet Kaur is Civil Engg (geotechnical, piles, bridges); this dye-adsorption chemistry paper is probably another Suneet Kaur's: 'Adsorption of Acid Blue-7 Dye from Aqueous Solution On to Teak Sawdust'"
+work_unassign,MANIT Bhopal,Shivendra K Chaurasiya,A5020422856,W2921280361,Dr. Shivendra K. Chaurasiya is Biological Science (mycobacteria); this materials / biohydrogen paper is another author's: 'Synthesis and Rational design of Europium and Lithium Doped Sodium Zin'
+work_unassign,MANIT Bhopal,Shivendra K Chaurasiya,NAME:shivendra k. chaurasiya,W7106793921,Dr. Shivendra K. Chaurasiya is Biological Science (mycobacteria); this materials / biohydrogen paper is another author's: 'Biohydrogen generation through dark fermentation of food waste and its'
+work_unassign,MANIT Bhopal,Pushpendra Kumar,A5037347792,W2795820093,"Dr. Pushpendra Kumar (Mathematics, from Jan 2019) works on fractional-order optical flow; this recommender / liver / query-expansion paper is another Pushpendra Kumar's: 'Recommendation system techniques and related issues: a survey'"
+work_unassign,MANIT Bhopal,Pushpendra Kumar,A5037347792,W2904277246,"Dr. Pushpendra Kumar (Mathematics, from Jan 2019) works on fractional-order optical flow; this recommender / liver / query-expansion paper is another Pushpendra Kumar's: 'A new approach for rating prediction system using collaborative filter'"
+work_unassign,MANIT Bhopal,Pushpendra Kumar,A5037347792,W2982376931,"Dr. Pushpendra Kumar (Mathematics, from Jan 2019) works on fractional-order optical flow; this recommender / liver / query-expansion paper is another Pushpendra Kumar's: 'Diagnosis of Liver Disorder Using Fuzzy Adaptive and Neighbor Weighted'"
+work_unassign,MANIT Bhopal,Pushpendra Kumar,A5037347792,W3001901357,"Dr. Pushpendra Kumar (Mathematics, from Jan 2019) works on fractional-order optical flow; this recommender / liver / query-expansion paper is another Pushpendra Kumar's: 'Liver disorder detection using variable- neighbor weighted fuzzy K nea'"
+work_unassign,MANIT Bhopal,Pushpendra Kumar,A5037347792,W4226150891,"Dr. Pushpendra Kumar (Mathematics, from Jan 2019) works on fractional-order optical flow; this recommender / liver / query-expansion paper is another Pushpendra Kumar's: 'WordNet Based Hybrid Model for Query Expansion'"
+work_unassign,MANIT Bhopal,Abhay Sharma,A5043447365,W2610248673,Dr. Abhay Sharma is Civil Engg (crumb-rubber concrete); this environmental paper is another Abhay Sharma's: 'A Review on Vermicomposting of Different Leaf Litters'
+work_unassign,MANIT Bhopal,Abhay Sharma,A5043447365,W3215441879,Dr. Abhay Sharma is Civil Engg (crumb-rubber concrete); this environmental paper is another Abhay Sharma's: 'Pre-COVID-19 pandemic: effects on air quality in the three cities of I'
+work_unassign,MANIT Bhopal,Anjuli Jain,NAME:a. jain,W2904319651,"Dr. Anjuli Jain is Humanities (English literature, drama pedagogy); this engineering paper is another Anjuli Jain's: 'Computational fluid dynamics simulation and energy analysis of domesti'"
+work_unassign,MANIT Bhopal,Anjuli Jain,NAME:a. jain,W4389896077,"Dr. Anjuli Jain is Humanities (English literature, drama pedagogy); this engineering paper is another Anjuli Jain's: 'Strategies for Improving Travel Time Performance of Multimodal Transpo'"
+work_unassign,NIT Jamshedpur,Rajeev Ranjan,NAME:r. ranjan,W2741585114,"Dr. Rajeev Ranjan is Physics (perovskites, GaN); this solar-thermal / lighting paper is another Rajeev Ranjan's: 'CFD based Analysis of a Solar Air Heater having Isosceles Right Triang'"
+work_unassign,NIT Jamshedpur,Rajeev Ranjan,NAME:rajeev ranjan,W2760452241,"Dr. Rajeev Ranjan is Physics (perovskites, GaN); this solar-thermal / lighting paper is another Rajeev Ranjan's: 'Topical Survey on Daylighting System'"
+work_unassign,NIT Jamshedpur,Rajeev Ranjan,NAME:rajeev ranjan,W3091211423,"Dr. Rajeev Ranjan is Physics (perovskites, GaN); this solar-thermal / lighting paper is another Rajeev Ranjan's: 'HYBRID GRIDS ANALYSIS WITH RENEWABLE ENERGY AND THERMAL ENERGY FOR STR'"
+assign,MANIT Bhopal,Kumarasamy Sudhakar,A5108044051,,Team/web check (sheet): OpenAlex record A5108044051 'Kumarasamy Sudhakar' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,Kamal Raj Pardasani,A5026452888,,Team/web check (sheet): OpenAlex record A5026452888 'Kamal Raj Pardasani' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,Ravi Kumar Dwivedi,A5069469512,,Team/web check (sheet): OpenAlex record A5069469512 'Ravi Kumar Dwivedi' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,M. K. Pradhan,A5090230502,,Team/web check (sheet): OpenAlex record A5090230502 'M. K. Pradhan' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,Bharatkumar K. Modhera,A5053995311,,Team/web check (sheet): OpenAlex record A5053995311 'Bharat Modhera' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,Bivina G R,A5112236855,,Team/web check (sheet): OpenAlex record A5112236855 'G. R. Bivina' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,Archana Nigrawal,A5045680982,,Team/web check (sheet): OpenAlex record A5045680982 'Archana Nigrawal' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,Bhavana P. Shrivastava,A5031005993,,Team/web check (sheet): OpenAlex record A5031005993 'Bhavana P. Shrivastava' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Jamshedpur,Mani Kant Paswan,A5004678208,,Team/web check (sheet): OpenAlex record A5004678208 'Manikant Paswan' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Jamshedpur,Sanjay V. Kumar,A5100785501,,Team/web check (sheet): OpenAlex record A5100785501 'Sanjay V. Kumar' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Silchar,Suganya Devi K,A5007608401,,Team/web check (sheet): OpenAlex record A5007608401 'K. Suganya Devi' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Silchar,Saptarshi Roy,A5113293391,,Team/web check (sheet): OpenAlex record A5113293391 'Saptarshi Roy' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Silchar,Sunil Kumar,A5087119327,,Team/web check (sheet): OpenAlex record A5087119327 'Sunil Kumar' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Silchar,Khwairakpam Lakshman Singh,A5018204800,,Team/web check (sheet): OpenAlex record A5018204800 'Kh. Lakshman Singh' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Silchar,Ramanujam E,A5021187610,,Team/web check (sheet): OpenAlex record A5021187610 'Elangovan Ramanujam' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,Kishan Dharavath,A5110443015,,Team/web check (sheet): OpenAlex record A5110443015 'D. Kishan' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,Shweta Mehroliya,A5031847941,,Team/web check (sheet): OpenAlex record A5031847941 'Shweta Mehroliya' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Jamshedpur,AJAY KUMAR,A5008191863,,Team/web check (sheet): OpenAlex record A5008191863 'Ajay Kumar' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Jamshedpur,Arun Kumar,A5101761887,,Team/web check (sheet): OpenAlex record A5101761887 'Arun Kumar' is faculty at this institute; verification recorded in faculty_final.csv
+assign,NIT Silchar,Asha Rani M. A,A5102953697,,Team/web check (sheet): OpenAlex record A5102953697 'M. A. Asha Rani' is faculty at this institute; verification recorded in faculty_final.csv
+assign,MANIT Bhopal,Rajesh Kumar Nema,A5063765998,,"Web check: 'R. K. Nema' is Prof. Rajesh Kumar Nema (Electrical Engg, MANIT): extra OpenAlex id"
+assign,NIT Silchar,Rahul Dev Misra,A5103267013,,"Web check: 'Rahul Misra' is Prof. Rahul Dev Misra (Mechanical, NITS): extra OpenAlex id (16 papers)"
+assign,NIT Silchar,Rahul Dev Misra,A5020303582,,Web check: 'Rahul Dev Misra' record (13 papers 2022-26) is the same Prof. Rahul Dev Misra
+assign,MANIT Bhopal,N. P. Patidar,A5065565354,,Verified in sheet (not checked): this OpenAlex record is N. P. Patidar
+assign,NIT Jamshedpur,Sunil Kumar,A5101927089,,Verified in sheet (not checked): this OpenAlex record is Sunil Kumar
+assign,MANIT Bhopal,Sanjay Srivastava,A5103593402,,Verified in sheet (manual: team check): this OpenAlex record is Sanjay Srivastava
+assign,NIT Jamshedpur,Krishna Deo Prasad Singh,A5121796482,,Verified in sheet (manual: team check): this OpenAlex record is Krishna Dev Prasad Singh
+unassign,NIT Jamshedpur,Amit Kumar,A5100709650,,"Web check: the real Dr. Amit Kumar (ECE, joined 2022) is not this OpenAlex record (atmospheric pollution papers 2019-23, a different Amit Kumar)"
+unassign,NIT Silchar,N. B. Singh,A5066035527,,"Web check: Prof. N. B. Singh (HOD Humanities) is not this record: all 10 papers are quantum computing, a different N. B. Singh"
+unassign,NIT Jamshedpur,Kundan Kumar,A5004552009,,Team check: marked 'no': this OpenAlex record is not the NITJ faculty member
+assign,MANIT Bhopal,Rajesh Wadhwani,A5057510037,,"Merged duplicate roster entries (name variants of one person, confirmed by the team, Nov 2026)"
+assign,MANIT Bhopal,Rajesh Wadhwani,NAME:rajesh wadhvani,,"Merged duplicate roster entries (name variants of one person, confirmed by the team, Nov 2026)"
+assign,MANIT Bhopal,Bhavana P. Shrivastava,NAME:bhawna p. shrivastava,,"Merged duplicate roster entries (name variants of one person, confirmed by the team, Nov 2026)"

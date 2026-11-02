@@ -1,0 +1,32 @@
+{
+ "edges_by_kind": {
+  "overall": {
+   "author_self": 24625,
+   "same_institute_other_author": 2401,
+   "between_our_institutes": 1014
+  },
+  "MANIT Bhopal": {
+   "author_self": 5323,
+   "same_institute_other_author": 759,
+   "between_our_institutes": 354
+  },
+  "NIT Jamshedpur": {
+   "author_self": 3451,
+   "same_institute_other_author": 347,
+   "between_our_institutes": 247
+  },
+  "NIT Silchar": {
+   "author_self": 15939,
+   "same_institute_other_author": 1316,
+   "between_our_institutes": 413
+  }
+ },
+ "definition": "author_self: citing and cited paper share a verified faculty author; same_institute_other_author: same institute, no shared faculty author; between_our_institutes: no institute in common",
+ "most_self_cited_paper": [
+  {
+   "title": "Photocatalytic performance of g-C3N4 based nanocomposites for effective degradation/removal of dyes from water and wastewater",
+   "in_degree": 44,
+   "in_self_citations": 44
+  }
+ ]
+}
