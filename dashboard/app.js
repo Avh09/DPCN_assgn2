@@ -144,10 +144,8 @@ $('#themeBtn').onclick = () => {
   const root = document.documentElement;
   const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
   root.dataset.theme = dark ? 'light' : 'dark';
-  try { localStorage.setItem('atlas-theme', root.dataset.theme); } catch (e) {}
   buildInstSeg(); Object.keys(RENDER).forEach(t => state.dirty.add(t)); renderTab(state.tab, true);
 };
-try { const t = localStorage.getItem('atlas-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
 
 const searchIdx = { fac: F.map((f, i) => [f.n.toLowerCase(), i]), pap: P.map((p, i) => [p[T.title].toLowerCase(), i]) };
 let resSel = 0, resItems = [];
