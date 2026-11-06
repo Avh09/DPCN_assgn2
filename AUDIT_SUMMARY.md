@@ -59,7 +59,7 @@ MANIT Bhopal  Anupama Sharma Architecture and Planning       Professor        cu
 ```text
 required columns present: True | group = ['15'] | years 2016-2026 | types ['conference', 'journal']
 DOIs in https://doi.org/ form: 100.0%
-empty cells (rows): {'issn': 3893, 'doi': 95, 'venue_h_index': 1064, 'venue_citedness': 1064, 'faculty_window': 20293, 'affiliation_note': 21628, 'paper_in_window': 20293, 'resolved_conference': 17536, 'core_rank': 21890, 'journal_cites_per_doc': 8539}
+empty cells (rows): {'issn': 3893, 'doi': 95, 'venue_h_index': 1064, 'venue_citedness': 1064, 'faculty_window': 20293, 'affiliation_note': 21628, 'paper_in_window': 20293, 'resolved_conference': 17536, 'core_rank': 21890, 'journal_cites_per_doc': 8539, 'journal_2yr_citedness_openalex': 8068, 'impact_estimate': 8065}
 duplicate (paper, faculty, institute) rows: 0 | duplicate DOIs among papers: 0
 ```
 
@@ -86,7 +86,7 @@ C             16
 `sjr_approx` = SCImago SJR recomputed, `scopus_citescore` = Scopus CiteScore percentile, `core` = CORE 2023, `estimated_openalex` / `estimated_publisher` = estimated (58% exact, 96% within one quartile when tested), `none` = Unranked.
 
 ```text
-high-impact flags (journal Q1 and SCImago citations/doc): Q1 and >5: 2293 papers, Q1 and >10: 377 papers
+high-impact flags (journal Q1 and the lower of SCImago citations/doc and OpenAlex 2-year citedness): Q1 and >5: 1896 papers, Q1 and >10: 231 papers
 ```
 
 ## Phase 3: networks
@@ -210,7 +210,7 @@ Q1_share_%                             81.5            80.0         73.3
 ranking_coverage_%                    100.0           100.0        100.0
 Q1_all_30_share_%                      73.3            80.0         73.3
 Q1_and_IF_gt5                            16              12           16
-Q1_and_IF_gt10                            2               4            3
+Q1_and_IF_gt10                            2               3            2
 median_venue_h_index                  261.0           128.0        243.5
 papers_with_faculty_h_20_plus            17              19           23
 median_max_faculty_h                   21.0            38.0         29.0
@@ -313,8 +313,8 @@ journal_Q1_%                      33.200          26.300       36.800
 journal_Q2_%                      34.300          40.000       39.600
 journal_Q3_%                      21.800          25.900       18.800
 journal_Q4_%                      10.700           7.800        4.700
-Q1_and_IF_gt5                    783.000         365.000     1151.000
-Q1_and_IF_gt10                   114.000          58.000      206.000
+Q1_and_IF_gt5                    638.000         288.000      973.000
+Q1_and_IF_gt10                    73.000          18.000      141.000
 papers_over_10_authors_%           0.380           0.360        0.330
 in_cites_from_other_indian     28449.000       15333.000    44878.000
 out_cites_to_other_indian      35858.000       24983.000    55127.000
@@ -387,67 +387,67 @@ tables (data/out/ and data/out/stats/):
   papers_enriched.csv
   scopus_comparison.csv
   scopus_only_papers.csv
-  stats/author_analysis.json
-  stats/author_brokers.csv
-  stats/authors_MANIT_Bhopal.csv
-  stats/authors_NIT_Jamshedpur.csv
-  stats/authors_NIT_Silchar.csv
-  stats/bridge_authors.csv
-  stats/citation_degree_distribution.csv
-  stats/citation_flow_by_cluster.csv
-  stats/citation_network_macro.json
-  stats/citation_node_metrics.csv
-  stats/citation_ratio.csv
-  stats/citation_sources.json
-  stats/citation_velocity.csv
-  stats/collab_candidates.csv
-  stats/conference_ranking.json
-  stats/core_a_star_a_papers.csv
-  stats/critical_faculty.csv
-  stats/department_stats.csv
-  stats/faculty_network_extra.json
-  stats/faculty_network_results.json
-  stats/faculty_node_metrics.csv
-  stats/faculty_performance.csv
-  stats/faculty_ranking_MANIT_Bhopal.csv
-  stats/faculty_ranking_NIT_Jamshedpur.csv
-  stats/faculty_ranking_NIT_Silchar.csv
-  stats/faculty_results.json
-  stats/h_index_distribution.csv
-  stats/hyper_authorship_performance.csv
-  stats/inflow_results.json
-  stats/institution_summary.csv
-  stats/key_findings.json
-  stats/link_prediction_results.json
-  stats/locality_results.json
-  stats/multi_author_10plus_papers.csv
-  stats/multi_author_reanalysis.csv
-  stats/network_results.json
-  stats/no_doi_candidates.csv
-  stats/outflow_results.json
-  stats/papers_per_year.csv
-  stats/partner_results.json
-  stats/publication_results.json
-  stats/resilience_curves.csv
-  stats/resilience_results.json
-  stats/scopus_results.json
-  stats/top10_cited_MANIT_Bhopal.csv
-  stats/top10_cited_NIT_Jamshedpur.csv
-  stats/top10_cited_NIT_Silchar.csv
-  stats/top30_papers_MANIT_Bhopal.csv
-  stats/top30_papers_NIT_Jamshedpur.csv
-  stats/top30_papers_NIT_Silchar.csv
-  stats/top30_summary.csv
-  stats/top_journals_MANIT_Bhopal.csv
-  stats/top_journals_NIT_Jamshedpur.csv
-  stats/top_journals_NIT_Silchar.csv
+  stats\author_analysis.json
+  stats\author_brokers.csv
+  stats\authors_MANIT_Bhopal.csv
+  stats\authors_NIT_Jamshedpur.csv
+  stats\authors_NIT_Silchar.csv
+  stats\bridge_authors.csv
+  stats\citation_degree_distribution.csv
+  stats\citation_flow_by_cluster.csv
+  stats\citation_network_macro.json
+  stats\citation_node_metrics.csv
+  stats\citation_ratio.csv
+  stats\citation_sources.json
+  stats\citation_velocity.csv
+  stats\collab_candidates.csv
+  stats\conference_ranking.json
+  stats\core_a_star_a_papers.csv
+  stats\critical_faculty.csv
+  stats\department_stats.csv
+  stats\faculty_network_extra.json
+  stats\faculty_network_results.json
+  stats\faculty_node_metrics.csv
+  stats\faculty_performance.csv
+  stats\faculty_ranking_MANIT_Bhopal.csv
+  stats\faculty_ranking_NIT_Jamshedpur.csv
+  stats\faculty_ranking_NIT_Silchar.csv
+  stats\faculty_results.json
+  stats\h_index_distribution.csv
+  stats\hyper_authorship_performance.csv
+  stats\inflow_results.json
+  stats\institution_summary.csv
+  stats\key_findings.json
+  stats\link_prediction_results.json
+  stats\locality_results.json
+  stats\multi_author_10plus_papers.csv
+  stats\multi_author_reanalysis.csv
+  stats\network_results.json
+  stats\no_doi_candidates.csv
+  stats\outflow_results.json
+  stats\papers_per_year.csv
+  stats\partner_results.json
+  stats\publication_results.json
+  stats\resilience_curves.csv
+  stats\resilience_results.json
+  stats\scopus_results.json
+  stats\top10_cited_MANIT_Bhopal.csv
+  stats\top10_cited_NIT_Jamshedpur.csv
+  stats\top10_cited_NIT_Silchar.csv
+  stats\top30_papers_MANIT_Bhopal.csv
+  stats\top30_papers_NIT_Jamshedpur.csv
+  stats\top30_papers_NIT_Silchar.csv
+  stats\top30_summary.csv
+  stats\top_journals_MANIT_Bhopal.csv
+  stats\top_journals_NIT_Jamshedpur.csv
+  stats\top_journals_NIT_Silchar.csv
   work_extras.csv
   work_topics.csv
 ```
 
 ## Known limits
 
-- Quartiles marked `estimated_*` are estimates, not official ranks. IF > 5 and IF > 10 use SCImago citations per document, not a journal impact factor.
+- Quartiles marked `estimated_*` are estimates, not official ranks. IF > 5 and IF > 10 use the lower of SCImago citations per document and OpenAlex 2-year mean citedness (cross-checked, since SCImago alone overstates new journals), not the Clarivate impact factor.
 - 86 rows (papers without DOI or venue) are Unranked; 95 rows have no DOI.
 - No paper in the data has more than 30 authors (OpenAlex download). Large collaborations may be missing: to be checked with `authors_count` filters.
 - Partner statistics (`partners.py`) and 5.8% of reference lists (`links.py refs`) need the OpenAlex daily budget and may be older than the rest.

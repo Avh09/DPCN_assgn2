@@ -2,11 +2,16 @@
 
 Adds to group15_data.csv (journal_cites_per_doc = the SCImago number behind the IF > 5 / > 10 flags):
   is_multi_author_10plus   TRUE if the paper has more than 10 authors (OpenAlex author count)
-  q1_impact_gt5            TRUE if the journal is Q1 and its citations per document is above 5
-  q1_impact_gt10           TRUE if the journal is Q1 and its citations per document is above 10
-SCImago has no journal impact factor. Its "avg_citations" column (citations per document over
-the last years) is the closest free number, so IF > 5 / IF > 10 are approximated with it. The
-quartile itself is approximate too (recomputed from SJR, see enrich.py). Say so in the report.
+  journal_2yr_citedness_openalex  OpenAlex 2-year mean citedness of the journal (impact-factor formula)
+  impact_estimate          the lower of journal_cites_per_doc and journal_2yr_citedness_openalex
+  impact_check             agree / sources disagree (...) / SCImago only / OpenAlex only / no data
+  q1_impact_gt5            TRUE if the journal is Q1 and impact_estimate is above 5
+  q1_impact_gt10           TRUE if the journal is Q1 and impact_estimate is above 10
+Neither source is the Clarivate impact factor (not free). SCImago's "avg_citations" (citations per
+document over 3 years) runs well above the IF for new or fast-growing journals, so on its own it
+flagged journals with a real IF of 3-6 as "IF > 10". It is cross-checked against OpenAlex's
+2-year mean citedness and the lower value is used. The quartile itself is approximate too
+(recomputed from SJR, see enrich.py). Say so in the report.
 
 Writes data/out/stats/top30_papers_<institute>.csv: the 30 most cited papers of each institute with
 the flags above and the best h-index among the institute's faculty authors of the paper.
@@ -89,17 +94,35 @@ def main():
     c = cites_per_doc()
     p["cpd"] = [lookup(c, a, b, y) if t == "journal" else float("nan")
                 for a, b, y, t in zip(p.issn, p.issn_all, p.year, p.type)]
+    # second opinion: OpenAlex 2-year mean citedness of the journal (same formula as the impact factor).
+    # SCImago's number is a 3-year citations per document and runs well above the real IF for new or
+    # fast-growing journals (e.g. a journal with IF ~3 shows 11+). Use the LOWER of the two, so a
+    # paper is flagged IF > 5 / > 10 only when both sources agree.
+    p["oa2y"] = pd.to_numeric(p.get("venue_citedness"), errors="coerce").where(p.type == "journal")
+    p["if_est"] = p[["cpd", "oa2y"]].min(axis=1)            # NaN-skipping: one source alone is used as is
+    disagree = lambda a, b: pd.notna(a) and pd.notna(b) and any((a > t) != (b > t) for t in (5, 10))
+    check = ["not a journal" if t != "journal" else "no data" if pd.isna(e) else
+             f"sources disagree (SCImago {a:.2f}, OpenAlex {b:.2f}); lower value used" if disagree(a, b) else
+             "SCImago only" if pd.isna(b) else "OpenAlex only" if pd.isna(a) else "agree"
+             for t, a, b, e in zip(p.type, p.cpd, p.oa2y, p.if_est)]
     q1 = p.quartile.eq("Q1")
     flags = pd.DataFrame({"openalex_work_id": p.openalex_work_id,
                           "journal_cites_per_doc": p.cpd.round(2),
+                          "journal_2yr_citedness_openalex": p.oa2y.round(2),
+                          "impact_estimate": p.if_est.round(2),
+                          "impact_check": check,
                           "is_multi_author_10plus": ["TRUE" if n > 10 else "FALSE" for n in p.n_authors],
-                          "q1_impact_gt5": ["TRUE" if a and v > 5 else "FALSE" for a, v in zip(q1, p.cpd.fillna(0))],
-                          "q1_impact_gt10": ["TRUE" if a and v > 10 else "FALSE" for a, v in zip(q1, p.cpd.fillna(0))]})
+                          "q1_impact_gt5": ["TRUE" if a and v > 5 else "FALSE" for a, v in zip(q1, p.if_est.fillna(0))],
+                          "q1_impact_gt10": ["TRUE" if a and v > 10 else "FALSE" for a, v in zip(q1, p.if_est.fillna(0))]})
+    old = (q1 & (p.cpd.fillna(0) > 10)).sum(), (q1 & (p.cpd.fillna(0) > 5)).sum()
+    print(f"IF cross-check: SCImago alone would flag >10: {old[0]}, >5: {old[1]}; "
+          f"after OpenAlex check >10: {int((flags.q1_impact_gt10 == 'TRUE').sum())}, >5: {int((flags.q1_impact_gt5 == 'TRUE').sum())}; "
+          f"papers where the sources disagree: {sum(c.startswith('sources disagree') for c in check)}")
     m = pd.read_csv(OUT / "group15_data.csv", dtype=str, keep_default_na=False)
     m = m.drop(columns=[x for x in flags.columns[1:] if x in m.columns]).merge(flags, on="openalex_work_id", how="left")
     m.to_csv(OUT / "group15_data.csv", index=False)
     print("papers with >10 authors:", int((flags.is_multi_author_10plus == "TRUE").sum()),
-          "| Q1 and cites/doc > 5:", int((flags.q1_impact_gt5 == "TRUE").sum()),
+          "| Q1 and IF estimate > 5:", int((flags.q1_impact_gt5 == "TRUE").sum()),
           "| > 10:", int((flags.q1_impact_gt10 == "TRUE").sum()), "(of", len(flags), "papers)")
 
     # top 30 per institute, with the best faculty h-index among the paper's faculty authors
@@ -113,7 +136,9 @@ def main():
             title=("title", "first"), year=("year", "first"), journal_name=("journal_name", "first"), type=("type", "first"),
             quartile=("quartile", "first"), citations=("citations_n", "first"), doi=("doi", "first"),
             faculty_authors=("faculty_name", lambda s: "; ".join(sorted({x for x in s if x}))),
-            journal_cites_per_doc=("journal_cites_per_doc", "first"), venue_h_index=("venue_h_index", "first"),
+            journal_cites_per_doc=("journal_cites_per_doc", "first"),
+            journal_2yr_citedness_openalex=("journal_2yr_citedness_openalex", "first"), impact_estimate=("impact_estimate", "first"),
+            impact_check=("impact_check", "first"), venue_h_index=("venue_h_index", "first"),
             quartile_source=("quartile_source", "first"), max_faculty_h_index=("h", "max"), is_multi_author_10plus=("is_multi_author_10plus", "first"),
             q1_impact_gt5=("q1_impact_gt5", "first"), q1_impact_gt10=("q1_impact_gt10", "first"))
         top = paper.sort_values("citations", ascending=False).head(30).reset_index()

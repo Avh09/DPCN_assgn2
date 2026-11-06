@@ -86,7 +86,7 @@ authors that are not faculty (PhD scholars, staff, visitors, collaborators who p
     block("quartile / rank by source (papers):\n" + pd.crosstab(qs.type, qs.quartile_source).to_string() + "\n\nquartile values:\n" + qs.quartile.value_counts().to_string())
     w("`sjr_approx` = SCImago SJR recomputed, `scopus_citescore` = Scopus CiteScore percentile, `core` = CORE 2023, "
       "`estimated_openalex` / `estimated_publisher` = estimated (58% exact, 96% within one quartile when tested), `none` = Unranked.", "")
-    block(f"high-impact flags (journal Q1 and SCImago citations/doc): Q1 and >5: {int((qs.q1_impact_gt5 == 'TRUE').sum())} papers, "
+    block(f"high-impact flags (journal Q1 and the lower of SCImago citations/doc and OpenAlex 2-year citedness): Q1 and >5: {int((qs.q1_impact_gt5 == 'TRUE').sum())} papers, "
           f"Q1 and >10: {int((qs.q1_impact_gt10 == 'TRUE').sum())} papers")
 
     # ------------------------------------------------------------------ phase 3
@@ -150,7 +150,7 @@ authors that are not faculty (PhD scholars, staff, visitors, collaborators who p
               if f.stat().st_size < 30_000_000))
 
     w("## Known limits", "",
-      "- Quartiles marked `estimated_*` are estimates, not official ranks. IF > 5 and IF > 10 use SCImago citations per document, not a journal impact factor.",
+      "- Quartiles marked `estimated_*` are estimates, not official ranks. IF > 5 and IF > 10 use the lower of SCImago citations per document and OpenAlex 2-year mean citedness (cross-checked, since SCImago alone overstates new journals), not the Clarivate impact factor.",
       f"- {int((m.quartile == 'Unranked').sum())} rows (papers without DOI or venue) are Unranked; {int(m.doi.eq('').sum())} rows have no DOI.",
       "- No paper in the data has more than 30 authors (OpenAlex download). Large collaborations may be missing: to be checked with `authors_count` filters.",
       "- Partner statistics (`partners.py`) and 5.8% of reference lists (`links.py refs`) need the OpenAlex daily budget and may be older than the rest.")

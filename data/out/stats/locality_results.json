@@ -1612,7 +1612,7 @@
   "foreign_nodes": 2205,
   "unknown_affiliation_nodes": 1629,
   "largest_component_%": 93.6,
-  "louvain_communities": 198,
+  "louvain_communities": 199,
   "louvain_modularity": 0.939,
   "betweenness": "approximate, 1500 sampled sources"
  },
@@ -3229,7 +3229,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 154,
     "strength": 427,
-    "betweenness": 0.00872,
+    "betweenness": 0.0088,
     "state": "Tamil Nadu"
    },
    {
@@ -3241,7 +3241,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 92,
     "strength": 272,
-    "betweenness": 0.0044,
+    "betweenness": 0.00451,
     "state": "Assam"
    },
    {
@@ -3253,7 +3253,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 107,
     "strength": 283,
-    "betweenness": 0.00592,
+    "betweenness": 0.006,
     "state": "West Bengal"
    },
    {
@@ -3265,7 +3265,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 39,
     "strength": 210,
-    "betweenness": 0.00118,
+    "betweenness": 0.00121,
     "state": "Mizoram"
    },
    {
@@ -3277,7 +3277,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 72,
     "strength": 262,
-    "betweenness": 0.00263,
+    "betweenness": 0.00271,
     "state": "Andhra Pradesh"
    },
    {
@@ -3301,7 +3301,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 112,
     "strength": 286,
-    "betweenness": 0.00658,
+    "betweenness": 0.00635,
     "state": "Uttarakhand"
    },
    {
@@ -3313,7 +3313,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 61,
     "strength": 219,
-    "betweenness": 0.00306,
+    "betweenness": 0.00304,
     "state": "Delhi"
    },
    {
@@ -3325,7 +3325,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 84,
     "strength": 268,
-    "betweenness": 0.00253,
+    "betweenness": 0.0026,
     "state": "West Bengal"
    },
    {
@@ -3337,7 +3337,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 91,
     "strength": 254,
-    "betweenness": 0.00266,
+    "betweenness": 0.00258,
     "state": "Odisha"
    },
    {
@@ -3349,7 +3349,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 68,
     "strength": 201,
-    "betweenness": 0.00283,
+    "betweenness": 0.00272,
     "state": "Odisha"
    },
    {
@@ -3361,7 +3361,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 56,
     "strength": 184,
-    "betweenness": 0.00256,
+    "betweenness": 0.00258,
     "state": "Chhattisgarh"
    },
    {
@@ -3373,7 +3373,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 50,
     "strength": 187,
-    "betweenness": 0.00211,
+    "betweenness": 0.0021,
     "state": "Uttar Pradesh"
    },
    {
@@ -3385,7 +3385,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 71,
     "strength": 221,
-    "betweenness": 0.00225,
+    "betweenness": 0.00201,
     "state": "West Bengal"
    },
    {
@@ -3397,7 +3397,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 115,
     "strength": 262,
-    "betweenness": 0.00493,
+    "betweenness": 0.00474,
     "state": "Uttarakhand"
    }
   ],
@@ -3411,7 +3411,7 @@
     "linked_to": "MANIT Bhopal; NIT Silchar",
     "degree": 51,
     "strength": 259,
-    "betweenness": 0.00275,
+    "betweenness": 0.00282,
     "state": ""
    },
    {
@@ -3423,7 +3423,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 158,
     "strength": 334,
-    "betweenness": 0.01189,
+    "betweenness": 0.01155,
     "state": ""
    },
    {
@@ -3435,7 +3435,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 34,
     "strength": 127,
-    "betweenness": 0.00177,
+    "betweenness": 0.00174,
     "state": ""
    },
    {
@@ -3447,7 +3447,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 36,
     "strength": 105,
-    "betweenness": 0.00045,
+    "betweenness": 0.00043,
     "state": ""
    },
    {
@@ -3459,7 +3459,7 @@
     "linked_to": "NIT Silchar",
     "degree": 12,
     "strength": 87,
-    "betweenness": 3e-05,
+    "betweenness": 2e-05,
     "state": ""
    },
    {
@@ -3471,7 +3471,7 @@
     "linked_to": "NIT Jamshedpur; NIT Silchar",
     "degree": 54,
     "strength": 156,
-    "betweenness": 0.00203,
+    "betweenness": 0.00207,
     "state": ""
    },
    {
@@ -3483,7 +3483,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 119,
     "strength": 205,
-    "betweenness": 0.0061,
+    "betweenness": 0.00623,
     "state": ""
    },
    {
@@ -3533,7 +3533,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 158,
     "strength": 334,
-    "betweenness": 0.01189,
+    "betweenness": 0.01155,
     "state": ""
    },
    {
@@ -3545,7 +3545,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 154,
     "strength": 427,
-    "betweenness": 0.00872,
+    "betweenness": 0.0088,
     "state": "Tamil Nadu"
    },
    {
@@ -3557,7 +3557,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 112,
     "strength": 286,
-    "betweenness": 0.00658,
+    "betweenness": 0.00635,
     "state": "Uttarakhand"
    },
    {
@@ -3569,7 +3569,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 119,
     "strength": 205,
-    "betweenness": 0.0061,
+    "betweenness": 0.00623,
     "state": ""
    },
    {
@@ -3581,7 +3581,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 107,
     "strength": 283,
-    "betweenness": 0.00592,
+    "betweenness": 0.006,
     "state": "West Bengal"
    },
    {
@@ -3593,7 +3593,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 82,
     "strength": 177,
-    "betweenness": 0.00588,
+    "betweenness": 0.0059,
     "state": ""
    },
    {
@@ -3605,7 +3605,19 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 115,
     "strength": 202,
-    "betweenness": 0.0052,
+    "betweenness": 0.00521,
+    "state": "Punjab"
+   },
+   {
+    "institution": "Chandigarh University",
+    "country": "IN",
+    "type": "education",
+    "cluster": "Other university/college",
+    "papers_with_us": 78,
+    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
+    "degree": 114,
+    "strength": 262,
+    "betweenness": 0.00484,
     "state": "Punjab"
    },
    {
@@ -3617,7 +3629,7 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 115,
     "strength": 262,
-    "betweenness": 0.00493,
+    "betweenness": 0.00474,
     "state": "Uttarakhand"
    },
    {
@@ -3629,20 +3641,8 @@
     "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
     "degree": 106,
     "strength": 197,
-    "betweenness": 0.00467,
+    "betweenness": 0.00466,
     "state": "Uttar Pradesh"
-   },
-   {
-    "institution": "Chandigarh University",
-    "country": "IN",
-    "type": "education",
-    "cluster": "Other university/college",
-    "papers_with_us": 78,
-    "linked_to": "MANIT Bhopal; NIT Jamshedpur; NIT Silchar",
-    "degree": 114,
-    "strength": 262,
-    "betweenness": 0.00458,
-    "state": "Punjab"
    }
   ]
  },

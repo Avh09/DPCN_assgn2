@@ -4,7 +4,7 @@ const D = window.DATA;
 const I = D.insts, SHORT = ['MANIT', 'NITJ', 'NITS'];
 const P = D.papers, F = D.fac;
 // paper tuple fields
-const T = { title: 0, year: 1, type: 2, venue: 3, cites: 4, doi: 5, q: 6, field: 7, mask: 8, pr: 9, indeg: 10, outdeg: 11, iff: 12, multi: 13, inh: 14, ci: 15, cbi: 16, fwci: 17, vkind: 18, conf: 19, core: 20, subfield: 21, topic: 22, inSelf: 23, inSame: 24, inCross: 25, prYear: 26, wid: 27, review: 28, qsrc: 29, nref: 30, nauth: 31, ninst: 32, ncty: 33 };
+const T = { title: 0, year: 1, type: 2, venue: 3, cites: 4, doi: 5, q: 6, field: 7, mask: 8, pr: 9, indeg: 10, outdeg: 11, iff: 12, multi: 13, inh: 14, ci: 15, cbi: 16, fwci: 17, vkind: 18, conf: 19, core: 20, subfield: 21, topic: 22, inSelf: 23, inSame: 24, inCross: 25, prYear: 26, wid: 27, review: 28, qsrc: 29, nref: 30, nauth: 31, ninst: 32, ncty: 33, ifS: 34, ifO: 35 };
 const YEARS = d3.range(2016, 2027);
 
 const state = { inst: -1, tab: 'overview', dirty: new Set(), history: [] };
@@ -144,8 +144,10 @@ $('#themeBtn').onclick = () => {
   const root = document.documentElement;
   const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
   root.dataset.theme = dark ? 'light' : 'dark';
+  try { localStorage.setItem('atlas-theme', root.dataset.theme); } catch (e) {}
   buildInstSeg(); Object.keys(RENDER).forEach(t => state.dirty.add(t)); renderTab(state.tab, true);
 };
+try { const t = localStorage.getItem('atlas-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
 
 const searchIdx = { fac: F.map((f, i) => [f.n.toLowerCase(), i]), pap: P.map((p, i) => [p[T.title].toLowerCase(), i]) };
 let resSel = 0, resItems = [];
@@ -269,6 +271,15 @@ function openFaculty(fi) {
   $('#drComm') && ($('#drComm').onclick = () => { closeDrawer(); focusCommunity(f.lv); });
 }
 
+// Journal impact: SCImago citations/doc vs OpenAlex 2-year mean citedness. The IF flag uses the lower one.
+function ifNote(x) {
+  const s = x[T.ifS], o = x[T.ifO];
+  if (x[T.type] || (s == null && o == null)) return '';
+  const f = v => v == null ? 'n/a' : (+v).toFixed(2);
+  const off = s != null && o != null && [5, 10].some(t => (s > t) !== (o > t));
+  return `<div class="note">Journal impact: SCImago cites/doc ${f(s)} · OpenAlex 2-year citedness ${f(o)}${off ? ' · <b>sources disagree, the lower value is used for the IF flag</b>' : ''}</div>`;
+}
+
 function openPaper(pi) {
   const x = P[pi], fs = D.pfac[pi], out = citesOut[pi], inn = citesIn[pi];
   const sortC = a => a.slice().sort((p, q) => P[q][T.cites] - P[p][T.cites]);
@@ -276,6 +287,7 @@ function openPaper(pi) {
     <div class="chips">${instNames(x[T.mask]).map(instChip).join('')}<span class="chip">${x[T.type] ? 'Conference' : 'Journal'}</span>${qChip(x[T.q])}${x[T.iff] ? `<span class="chip">Q1 · IF &gt; ${x[T.iff] === 2 ? 10 : 5}</span>` : ''}${x[T.multi] ? '<span class="chip">&gt;10 authors</span>' : ''}</div>
     <h3>${esc(x[T.title])}</h3>
     <div class="note">${esc(x[T.venue] || '—')} · ${x[T.year]} · ${esc(x[T.field])}</div>
+    ${ifNote(x)}
     ${x[T.nauth] ? `<div class="note">${x[T.nauth]} author${x[T.nauth] > 1 ? 's' : ''} · ${x[T.ninst]} institution${x[T.ninst] === 1 ? '' : 's'} · ${x[T.ncty]} countr${x[T.ncty] === 1 ? 'y' : 'ies'}${x[T.fwci] != null ? ` · FWCI ${(+x[T.fwci]).toFixed(2)}` : ''}</div>` : ''}
     <div style="margin-top:10px">${x[T.doi] ? `<a class="btn" href="${esc(x[T.doi])}" target="_blank" rel="noopener">Open DOI ↗</a>` : '<span class="note">No DOI</span>'}</div>
     <h4>Impact</h4>
@@ -675,7 +687,7 @@ function renderPapers() {
       { key: 'i', label: 'Inst.', v: r => r.i, html: r => instChip(r.i) },
       { key: 'quartile', label: 'Q', v: r => r.quartile, html: r => qChip(r.quartile) },
       { key: 'citations', label: 'Cites', num: 1, v: r => +r.citations, html: r => fmt(+r.citations) },
-      { key: 'jcd', label: 'Cites/doc', num: 1, v: r => +r.journal_cites_per_doc || null, html: r => r.journal_cites_per_doc || '—' },
+      { key: 'jcd', label: 'IF estimate', num: 1, v: r => +r.impact_estimate || null, html: r => r.impact_estimate ? `<span title="SCImago cites/doc ${esc(r.journal_cites_per_doc || 'n/a')} · OpenAlex 2-year citedness ${esc(r.journal_2yr_citedness_openalex || 'n/a')}">${esc(r.impact_estimate)}${(r.impact_check || '').startsWith('sources disagree') ? ' <span class="note">*</span>' : ''}</span>` : '—' },
       { key: 'if', label: 'IF flag', v: r => r.q1_impact_gt10 === 'TRUE' ? 2 : r.q1_impact_gt5 === 'TRUE' ? 1 : 0, html: r => r.q1_impact_gt10 === 'TRUE' ? '<span class="chip">&gt;10</span>' : r.q1_impact_gt5 === 'TRUE' ? '<span class="chip">&gt;5</span>' : '' },
       { key: 'mh', label: 'Best author h', num: 1, v: r => +r.max_faculty_h_index },
       { key: 'doi', label: '', v: r => r.doi, html: r => doiLink(r.doi) },
@@ -1207,7 +1219,7 @@ function renderMethod() {
   plot('md-qsrc', [{ type: 'bar', orientation: 'h', y: src.map(s => s[0]).reverse(), x: src.map(s => s[1]).reverse(), marker: { color: css('--c1') }, text: src.map(s => fmt(s[1])).reverse(), textposition: 'outside', cliponaxis: false, textfont: { color: css('--ink2') }, hovertemplate: '%{y}: %{x:,} paper rows<extra></extra>' }],
     { margin: { l: lm(src.map(s => s[0])), r: 50, t: 4, b: 44 }, bargap: .3, xaxis: { type: 'log', title: { text: 'Paper rows ranked this way (log scale)' } } });
   $('#limits').innerHTML = `<ul style="margin:0;padding-left:18px;color:var(--ink2)">
-    <li>Quartiles marked "estimated" are not official ranks (tested: 58% exact, 96% within one quartile). IF &gt; 5 / &gt; 10 use SCImago citations per document, not the Clarivate impact factor.</li>
+    <li>Quartiles marked "estimated" are not official ranks (tested: 58% exact, 96% within one quartile). IF &gt; 5 / &gt; 10 are not the Clarivate impact factor (not free). They use the lower of SCImago citations per document and OpenAlex 2-year mean citedness: SCImago alone runs well above the real IF for new or fast-growing journals, so a paper is flagged only when both sources clear the threshold. A * in the top-30 table marks journals where the two sources disagree.</li>
     <li>2026 is a partial year. Recent papers have had less time to collect citations, so compare yearly ratios with care.</li>
     <li>Affiliation-based counting: a paper counts for an institute when a verified faculty member lists it. Faculty who publish under another affiliation are partly missed.</li>
     <li>Most conference papers appear in book series (for example Springer Lecture Notes). Few of these venues are in the CORE list, so CORE ranks are rare.</li>

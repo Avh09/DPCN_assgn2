@@ -117,6 +117,8 @@ for r in rd(OUT / "group15_data.csv"):
             num(m.get("in_self_citations"), int, 0), num(m.get("in_same_institute_other_author"), int, 0), num(m.get("in_between_our_institutes"), int, 0),
             num(m.get("pagerank_rank_in_year"), int), wid, 1 if (r["type"] == "review" or TITLE_REVIEW.search(r["title"])) else 0,
             r.get("quartile_source", ""), nref.get(wid, 0), nauth.get(wid, 0), len(_inst.get(wid, ())), len(_cty.get(wid, ())),
+            # 34-35: journal impact (SCImago cites/doc, OpenAlex 2-year citedness); flag uses the lower one
+            num(r.get("journal_cites_per_doc"), float), num(r.get("journal_2yr_citedness_openalex"), float),
         ])
         pfac.append([])
     p = pidx[wid]

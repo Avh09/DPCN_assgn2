@@ -350,7 +350,7 @@ def fig_top30():
                 ax.text(l + x / 2, k, int(x), ha="center", va="center", fontsize=9, color="white" if c in ("#1c4f96", "#2a78d6") else INK)
         left += v
     ax.set_yticks(range(len(INSTS)), INSTS); ax.invert_yaxis(); ax.set_xlabel("papers among the 30 most cited")
-    ax.set_title("Top 30 papers: journal quality (IF = SCImago cites per document)", fontsize=11)
+    ax.set_title("Top 30 papers: journal quality (IF = lower of SCImago cites/doc and OpenAlex 2-yr citedness)", fontsize=11)
     ax.legend(loc="lower center", bbox_to_anchor=(0.5, -0.32), ncol=2, fontsize=8)
     finish(fig, "13_top30_quality")
 
