@@ -7,6 +7,7 @@ Local run:   streamlit run dashboard/streamlit_app.py
 Streamlit Community Cloud: main file path = dashboard/streamlit_app.py (requirements in dashboard/requirements.txt)
 """
 import base64
+import hmac
 import json
 import re
 from pathlib import Path
@@ -16,11 +17,40 @@ import sys
 import streamlit as st
 import streamlit.components.v1 as components
 
+
+def check_password() -> bool:
+    """Shared-password gate for both pages. The password is the APP_PASSWORD secret
+    (Streamlit Cloud: App -> Settings -> Secrets; locally: .streamlit/secrets.toml, not committed)."""
+    if st.session_state.get("authenticated", False):
+        return True
+    try:
+        expected = st.secrets["APP_PASSWORD"]
+    except Exception:          # no secrets file / key missing (the exception type differs between Streamlit versions)
+        expected = ""
+    if not expected:          # fail closed: no password configured means nobody gets in
+        st.error("APP_PASSWORD is not set in the app's secrets, so the Research Atlas is locked.")
+        return False
+    st.title("Research Atlas – Login")
+    st.write("Enter the password to access the Research Atlas.")
+    with st.form("login_form"):
+        password = st.text_input("Password", type="password")
+        submitted = st.form_submit_button("Login")
+    if submitted:
+        if hmac.compare_digest(password.encode(), str(expected).encode()):
+            st.session_state["authenticated"] = True
+            st.rerun()
+        else:
+            st.error("Incorrect password.")
+    return False
+
+
 HERE = Path(__file__).parent
 ROOT = HERE.parent
 sys.path.insert(0, str(ROOT))          # the assistant package, config.py and collab_model.py live in the repository root
 
 st.set_page_config(page_title="Research Atlas · Group 15", page_icon="📊", layout="wide", initial_sidebar_state="collapsed")
+if not check_password():          # neither page loads until the visitor has logged in
+    st.stop()
 
 
 def _stamp() -> float:
