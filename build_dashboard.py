@@ -362,6 +362,12 @@ for r in rd(OUT / "papers_enriched.csv"):
     qs[QSRC.get(r.get("quartile_source", ""), "No ranking available")] += 1
 data["qsrc"] = sorted(qs.items(), key=lambda kv: -kv[1])
 data["group15Rows"] = sum(1 for _ in rd(OUT / "group15_data.csv"))
+# retracted / withdrawn papers taken out of the corpus by retractions.py (Methodology tab)
+if (ST / "retractions.json").exists():
+    data["retractions"] = json.loads((ST / "retractions.json").read_text(encoding="utf-8"))
+# faculty whose affiliation was checked by hand (affiliation_checks.py; Faculty tab)
+if (ST / "affiliation_checks.json").exists():
+    data["affiliationChecks"] = json.loads((ST / "affiliation_checks.json").read_text(encoding="utf-8"))
 data["dupMerged"] = merged
 
 DASH.mkdir(exist_ok=True)

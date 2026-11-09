@@ -2,14 +2,14 @@
  "fwci_places": {
   "all": {
    "baseline": {
-    "n": 17702,
+    "n": 17669,
     "mean": 1.8,
     "median": 0.76
    },
    "rows": [
     {
      "place": "India: Uttar Pradesh",
-     "n": 859,
+     "n": 857,
      "mean": 1.64,
      "median": 0.82,
      "lift": -0.16,
@@ -17,23 +17,23 @@
     },
     {
      "place": "India: Tamil Nadu",
-     "n": 714,
-     "mean": 1.93,
-     "median": 0.89,
-     "lift": 0.13,
-     "lift_median": 0.13
+     "n": 712,
+     "mean": 1.91,
+     "median": 0.88,
+     "lift": 0.11,
+     "lift_median": 0.12
     },
     {
      "place": "India: West Bengal",
-     "n": 704,
-     "mean": 1.68,
+     "n": 702,
+     "mean": 1.67,
      "median": 0.74,
-     "lift": -0.12,
+     "lift": -0.13,
      "lift_median": -0.02
     },
     {
      "place": "India: Madhya Pradesh",
-     "n": 616,
+     "n": 614,
      "mean": 2.09,
      "median": 0.8,
      "lift": 0.29,
@@ -41,7 +41,7 @@
     },
     {
      "place": "India: Assam",
-     "n": 496,
+     "n": 493,
      "mean": 1.59,
      "median": 0.81,
      "lift": -0.21,
@@ -57,26 +57,26 @@
     },
     {
      "place": "India: Odisha",
-     "n": 413,
-     "mean": 1.69,
-     "median": 0.83,
-     "lift": -0.11,
-     "lift_median": 0.07
+     "n": 410,
+     "mean": 1.7,
+     "median": 0.84,
+     "lift": -0.1,
+     "lift_median": 0.08
     },
     {
      "place": "India: Karnataka",
-     "n": 381,
-     "mean": 1.97,
+     "n": 379,
+     "mean": 1.96,
      "median": 0.82,
-     "lift": 0.17,
+     "lift": 0.16,
      "lift_median": 0.06
     },
     {
-     "place": "United States",
-     "n": 357,
-     "mean": 2.33,
+     "place": "US",
+     "n": 356,
+     "mean": 2.29,
      "median": 0.97,
-     "lift": 0.53,
+     "lift": 0.49,
      "lift_median": 0.21
     },
     {
@@ -89,15 +89,15 @@
     },
     {
      "place": "India: Maharashtra",
-     "n": 316,
-     "mean": 1.4,
+     "n": 315,
+     "mean": 1.39,
      "median": 0.58,
-     "lift": -0.4,
+     "lift": -0.41,
      "lift_median": -0.18
     },
     {
      "place": "India: Punjab",
-     "n": 312,
+     "n": 310,
      "mean": 2.1,
      "median": 0.96,
      "lift": 0.3,
@@ -105,7 +105,7 @@
     },
     {
      "place": "India: Andhra Pradesh",
-     "n": 310,
+     "n": 309,
      "mean": 1.31,
      "median": 0.71,
      "lift": -0.49,
@@ -121,14 +121,14 @@
     },
     {
      "place": "India: Rajasthan",
-     "n": 260,
+     "n": 258,
      "mean": 1.64,
      "median": 0.73,
      "lift": -0.16,
      "lift_median": -0.03
     },
     {
-     "place": "United Kingdom",
+     "place": "GB",
      "n": 252,
      "mean": 2.97,
      "median": 1.54,
@@ -136,23 +136,23 @@
      "lift_median": 0.78
     },
     {
-     "place": "Saudi Arabia",
-     "n": 250,
-     "mean": 3.16,
+     "place": "SA",
+     "n": 248,
+     "mean": 3.17,
      "median": 2.07,
-     "lift": 1.36,
+     "lift": 1.37,
      "lift_median": 1.31
     },
     {
-     "place": "China",
-     "n": 236,
-     "mean": 2.7,
+     "place": "CN",
+     "n": 234,
+     "mean": 2.65,
      "median": 1.06,
-     "lift": 0.9,
+     "lift": 0.85,
      "lift_median": 0.3
     },
     {
-     "place": "Malaysia",
+     "place": "MY",
      "n": 207,
      "mean": 4.57,
      "median": 1.99,
@@ -161,19 +161,19 @@
     },
     {
      "place": "India: Gujarat",
-     "n": 204,
-     "mean": 2.3,
-     "median": 0.78,
-     "lift": 0.5,
-     "lift_median": 0.02
+     "n": 203,
+     "mean": 2.29,
+     "median": 0.76,
+     "lift": 0.49,
+     "lift_median": 0.0
     },
     {
      "place": "India: Chhattisgarh",
-     "n": 184,
-     "mean": 2.19,
-     "median": 0.92,
-     "lift": 0.39,
-     "lift_median": 0.16
+     "n": 183,
+     "mean": 2.2,
+     "median": 0.94,
+     "lift": 0.4,
+     "lift_median": 0.18
     },
     {
      "place": "India: Telangana",
@@ -185,11 +185,11 @@
     },
     {
      "place": "India: Bihar",
-     "n": 171,
+     "n": 169,
      "mean": 1.95,
-     "median": 1.07,
+     "median": 0.97,
      "lift": 0.15,
-     "lift_median": 0.31
+     "lift_median": 0.21
     },
     {
      "place": "India: Mizoram",
@@ -200,7 +200,7 @@
      "lift_median": 0.05
     },
     {
-     "place": "Australia",
+     "place": "AU",
      "n": 132,
      "mean": 3.29,
      "median": 1.65,
@@ -208,7 +208,7 @@
      "lift_median": 0.89
     },
     {
-     "place": "Japan",
+     "place": "JP",
      "n": 129,
      "mean": 1.88,
      "median": 1.25,
@@ -216,7 +216,7 @@
      "lift_median": 0.49
     },
     {
-     "place": "Canada",
+     "place": "CA",
      "n": 126,
      "mean": 2.83,
      "median": 1.68,
@@ -224,12 +224,12 @@
      "lift_median": 0.92
     },
     {
-     "place": "United Arab Emirates",
-     "n": 123,
-     "mean": 2.71,
-     "median": 1.63,
-     "lift": 0.91,
-     "lift_median": 0.87
+     "place": "AE",
+     "n": 122,
+     "mean": 2.61,
+     "median": 1.59,
+     "lift": 0.81,
+     "lift_median": 0.83
     },
     {
      "place": "India: Meghalaya",
@@ -240,7 +240,7 @@
      "lift_median": 0.3
     },
     {
-     "place": "Italy",
+     "place": "IT",
      "n": 98,
      "mean": 2.34,
      "median": 0.81,
@@ -248,7 +248,7 @@
      "lift_median": 0.05
     },
     {
-     "place": "T\u00fcrkiye",
+     "place": "TR",
      "n": 89,
      "mean": 3.25,
      "median": 2.7,
@@ -264,20 +264,12 @@
      "lift_median": 0.13
     },
     {
-     "place": "South Korea",
-     "n": 82,
-     "mean": 2.32,
-     "median": 1.53,
-     "lift": 0.52,
-     "lift_median": 0.77
-    },
-    {
-     "place": "Bangladesh",
-     "n": 72,
-     "mean": 2.25,
-     "median": 1.18,
-     "lift": 0.45,
-     "lift_median": 0.42
+     "place": "KR",
+     "n": 81,
+     "mean": 2.16,
+     "median": 1.45,
+     "lift": 0.36,
+     "lift_median": 0.69
     },
     {
      "place": "India: Jammu & Kashmir",
@@ -288,6 +280,14 @@
      "lift_median": 0.12
     },
     {
+     "place": "BD",
+     "n": 70,
+     "mean": 2.27,
+     "median": 1.18,
+     "lift": 0.47,
+     "lift_median": 0.42
+    },
+    {
      "place": "India: Haryana",
      "n": 69,
      "mean": 2.3,
@@ -296,20 +296,20 @@
      "lift_median": 0.34
     },
     {
-     "place": "Vietnam",
-     "n": 66,
-     "mean": 3.61,
-     "median": 2.15,
-     "lift": 1.81,
-     "lift_median": 1.39
+     "place": "VN",
+     "n": 65,
+     "mean": 3.63,
+     "median": 2.12,
+     "lift": 1.83,
+     "lift_median": 1.36
     },
     {
-     "place": "Norway",
-     "n": 65,
-     "mean": 2.8,
-     "median": 0.98,
-     "lift": 1.0,
-     "lift_median": 0.22
+     "place": "NO",
+     "n": 64,
+     "mean": 2.61,
+     "median": 0.96,
+     "lift": 0.81,
+     "lift_median": 0.2
     },
     {
      "place": "India: Manipur",
@@ -320,7 +320,7 @@
      "lift_median": 0.23
     },
     {
-     "place": "France",
+     "place": "FR",
      "n": 61,
      "mean": 1.85,
      "median": 0.96,
@@ -331,14 +331,14 @@
   },
   "MANIT Bhopal": {
    "baseline": {
-    "n": 5755,
+    "n": 5742,
     "mean": 1.98,
     "median": 0.73
    },
    "rows": [
     {
      "place": "India: Madhya Pradesh",
-     "n": 499,
+     "n": 497,
      "mean": 1.79,
      "median": 0.74,
      "lift": -0.19,
@@ -346,14 +346,14 @@
     },
     {
      "place": "India: Uttar Pradesh",
-     "n": 319,
+     "n": 318,
      "mean": 1.9,
      "median": 0.98,
      "lift": -0.08,
      "lift_median": 0.25
     },
     {
-     "place": "Malaysia",
+     "place": "MY",
      "n": 149,
      "mean": 5.58,
      "median": 2.31,
@@ -370,11 +370,11 @@
     },
     {
      "place": "India: Chhattisgarh",
-     "n": 139,
+     "n": 138,
      "mean": 1.85,
-     "median": 0.89,
+     "median": 0.88,
      "lift": -0.13,
-     "lift_median": 0.16
+     "lift_median": 0.15
     },
     {
      "place": "India: Tamil Nadu",
@@ -425,16 +425,16 @@
      "lift_median": 0.6
     },
     {
-     "place": "Saudi Arabia",
-     "n": 79,
-     "mean": 2.58,
+     "place": "SA",
+     "n": 78,
+     "mean": 2.57,
      "median": 1.62,
-     "lift": 0.6,
+     "lift": 0.59,
      "lift_median": 0.89
     },
     {
      "place": "India: Gujarat",
-     "n": 67,
+     "n": 66,
      "mean": 3.15,
      "median": 0.56,
      "lift": 1.17,
@@ -449,7 +449,7 @@
      "lift_median": 0.37
     },
     {
-     "place": "United Kingdom",
+     "place": "GB",
      "n": 60,
      "mean": 3.84,
      "median": 1.79,
@@ -457,7 +457,7 @@
      "lift_median": 1.06
     },
     {
-     "place": "United States",
+     "place": "US",
      "n": 59,
      "mean": 2.35,
      "median": 0.47,
@@ -481,15 +481,7 @@
      "lift_median": 0.64
     },
     {
-     "place": "China",
-     "n": 43,
-     "mean": 3.34,
-     "median": 1.04,
-     "lift": 1.36,
-     "lift_median": 0.31
-    },
-    {
-     "place": "Australia",
+     "place": "AU",
      "n": 42,
      "mean": 3.91,
      "median": 2.3,
@@ -497,7 +489,15 @@
      "lift_median": 1.57
     },
     {
-     "place": "T\u00fcrkiye",
+     "place": "CN",
+     "n": 42,
+     "mean": 3.39,
+     "median": 1.04,
+     "lift": 1.41,
+     "lift_median": 0.31
+    },
+    {
+     "place": "TR",
      "n": 40,
      "mean": 3.21,
      "median": 2.79,
@@ -521,7 +521,7 @@
      "lift_median": 0.72
     },
     {
-     "place": "United Arab Emirates",
+     "place": "AE",
      "n": 33,
      "mean": 2.6,
      "median": 1.44,
@@ -529,7 +529,7 @@
      "lift_median": 0.71
     },
     {
-     "place": "Japan",
+     "place": "JP",
      "n": 26,
      "mean": 1.89,
      "median": 1.0,
@@ -537,7 +537,7 @@
      "lift_median": 0.27
     },
     {
-     "place": "Thailand",
+     "place": "TH",
      "n": 26,
      "mean": 5.41,
      "median": 2.38,
@@ -556,7 +556,7 @@
   },
   "NIT Jamshedpur": {
    "baseline": {
-    "n": 3589,
+    "n": 3582,
     "mean": 1.68,
     "median": 0.67
    },
@@ -571,15 +571,15 @@
     },
     {
      "place": "India: Uttar Pradesh",
-     "n": 269,
-     "mean": 1.68,
+     "n": 268,
+     "mean": 1.67,
      "median": 0.81,
-     "lift": 0.0,
+     "lift": -0.01,
      "lift_median": 0.14
     },
     {
      "place": "India: West Bengal",
-     "n": 201,
+     "n": 200,
      "mean": 1.34,
      "median": 0.73,
      "lift": -0.34,
@@ -595,27 +595,27 @@
     },
     {
      "place": "India: Odisha",
-     "n": 148,
+     "n": 147,
      "mean": 1.74,
-     "median": 0.8,
+     "median": 0.79,
      "lift": 0.06,
-     "lift_median": 0.13
+     "lift_median": 0.12
     },
     {
      "place": "India: Punjab",
-     "n": 107,
-     "mean": 2.54,
-     "median": 1.42,
-     "lift": 0.86,
-     "lift_median": 0.75
+     "n": 106,
+     "mean": 2.53,
+     "median": 1.38,
+     "lift": 0.85,
+     "lift_median": 0.71
     },
     {
-     "place": "Saudi Arabia",
-     "n": 106,
-     "mean": 3.88,
-     "median": 2.38,
-     "lift": 2.2,
-     "lift_median": 1.71
+     "place": "SA",
+     "n": 105,
+     "mean": 3.9,
+     "median": 2.43,
+     "lift": 2.22,
+     "lift_median": 1.76
     },
     {
      "place": "India: Uttarakhand",
@@ -627,11 +627,11 @@
     },
     {
      "place": "India: Bihar",
-     "n": 81,
-     "mean": 1.39,
-     "median": 0.88,
-     "lift": -0.29,
-     "lift_median": 0.21
+     "n": 80,
+     "mean": 1.38,
+     "median": 0.87,
+     "lift": -0.3,
+     "lift_median": 0.2
     },
     {
      "place": "India: Andhra Pradesh",
@@ -666,7 +666,7 @@
      "lift_median": -0.03
     },
     {
-     "place": "United States",
+     "place": "US",
      "n": 60,
      "mean": 2.68,
      "median": 1.03,
@@ -674,7 +674,7 @@
      "lift_median": 0.36
     },
     {
-     "place": "United Arab Emirates",
+     "place": "AE",
      "n": 59,
      "mean": 2.93,
      "median": 2.17,
@@ -706,7 +706,7 @@
      "lift_median": -0.07
     },
     {
-     "place": "United Kingdom",
+     "place": "GB",
      "n": 43,
      "mean": 2.14,
      "median": 0.87,
@@ -714,7 +714,7 @@
      "lift_median": 0.2
     },
     {
-     "place": "T\u00fcrkiye",
+     "place": "TR",
      "n": 32,
      "mean": 3.68,
      "median": 2.72,
@@ -730,7 +730,7 @@
      "lift_median": 0.67
     },
     {
-     "place": "Japan",
+     "place": "JP",
      "n": 31,
      "mean": 1.34,
      "median": 0.79,
@@ -738,15 +738,7 @@
      "lift_median": 0.12
     },
     {
-     "place": "India: Assam",
-     "n": 31,
-     "mean": 1.97,
-     "median": 0.75,
-     "lift": 0.29,
-     "lift_median": 0.08
-    },
-    {
-     "place": "China",
+     "place": "CN",
      "n": 30,
      "mean": 2.89,
      "median": 1.79,
@@ -754,7 +746,15 @@
      "lift_median": 1.12
     },
     {
-     "place": "Jordan",
+     "place": "India: Assam",
+     "n": 30,
+     "mean": 1.97,
+     "median": 0.63,
+     "lift": 0.29,
+     "lift_median": -0.04
+    },
+    {
+     "place": "JO",
      "n": 30,
      "mean": 4.03,
      "median": 3.24,
@@ -770,7 +770,7 @@
      "lift_median": -0.33
     },
     {
-     "place": "Egypt",
+     "place": "EG",
      "n": 29,
      "mean": 3.04,
      "median": 2.04,
@@ -797,14 +797,14 @@
   },
   "NIT Silchar": {
    "baseline": {
-    "n": 8402,
+    "n": 8389,
     "mean": 1.73,
     "median": 0.82
    },
    "rows": [
     {
      "place": "India: West Bengal",
-     "n": 457,
+     "n": 456,
      "mean": 1.91,
      "median": 0.76,
      "lift": 0.18,
@@ -812,7 +812,7 @@
     },
     {
      "place": "India: Assam",
-     "n": 451,
+     "n": 449,
      "mean": 1.56,
      "median": 0.8,
      "lift": -0.17,
@@ -820,11 +820,11 @@
     },
     {
      "place": "India: Tamil Nadu",
-     "n": 407,
-     "mean": 1.54,
-     "median": 0.78,
-     "lift": -0.19,
-     "lift_median": -0.04
+     "n": 405,
+     "mean": 1.5,
+     "median": 0.77,
+     "lift": -0.23,
+     "lift_median": -0.05
     },
     {
      "place": "India: Uttar Pradesh",
@@ -835,47 +835,47 @@
      "lift_median": -0.07
     },
     {
-     "place": "United States",
-     "n": 238,
-     "mean": 2.24,
+     "place": "US",
+     "n": 237,
+     "mean": 2.18,
      "median": 1.09,
-     "lift": 0.51,
+     "lift": 0.45,
      "lift_median": 0.27
     },
     {
      "place": "India: Karnataka",
-     "n": 237,
-     "mean": 1.39,
+     "n": 235,
+     "mean": 1.38,
      "median": 0.73,
-     "lift": -0.34,
+     "lift": -0.35,
      "lift_median": -0.09
     },
     {
      "place": "India: Andhra Pradesh",
-     "n": 202,
-     "mean": 1.11,
+     "n": 201,
+     "mean": 1.1,
      "median": 0.7,
-     "lift": -0.62,
+     "lift": -0.63,
      "lift_median": -0.12
     },
     {
      "place": "India: Odisha",
-     "n": 199,
-     "mean": 1.66,
+     "n": 197,
+     "mean": 1.67,
      "median": 0.74,
-     "lift": -0.07,
+     "lift": -0.06,
      "lift_median": -0.08
     },
     {
-     "place": "China",
-     "n": 163,
-     "mean": 2.49,
-     "median": 1.05,
-     "lift": 0.76,
-     "lift_median": 0.23
+     "place": "CN",
+     "n": 162,
+     "mean": 2.41,
+     "median": 1.02,
+     "lift": 0.68,
+     "lift_median": 0.2
     },
     {
-     "place": "United Kingdom",
+     "place": "GB",
      "n": 149,
      "mean": 2.85,
      "median": 1.69,
@@ -892,18 +892,18 @@
     },
     {
      "place": "India: Maharashtra",
-     "n": 135,
-     "mean": 1.26,
+     "n": 134,
+     "mean": 1.25,
      "median": 0.56,
-     "lift": -0.47,
+     "lift": -0.48,
      "lift_median": -0.26
     },
     {
      "place": "India: Rajasthan",
-     "n": 117,
-     "mean": 1.3,
+     "n": 115,
+     "mean": 1.31,
      "median": 0.62,
-     "lift": -0.43,
+     "lift": -0.42,
      "lift_median": -0.2
     },
     {
@@ -931,7 +931,7 @@
      "lift_median": 0.07
     },
     {
-     "place": "Canada",
+     "place": "CA",
      "n": 91,
      "mean": 2.76,
      "median": 1.79,
@@ -940,11 +940,11 @@
     },
     {
      "place": "India: Punjab",
-     "n": 91,
-     "mean": 1.74,
-     "median": 0.8,
-     "lift": 0.01,
-     "lift_median": -0.02
+     "n": 90,
+     "mean": 1.76,
+     "median": 0.81,
+     "lift": 0.03,
+     "lift_median": -0.01
     },
     {
      "place": "India: Meghalaya",
@@ -971,7 +971,7 @@
      "lift_median": -0.42
     },
     {
-     "place": "Italy",
+     "place": "IT",
      "n": 77,
      "mean": 1.33,
      "median": 0.66,
@@ -979,7 +979,7 @@
      "lift_median": -0.16
     },
     {
-     "place": "Japan",
+     "place": "JP",
      "n": 72,
      "mean": 2.11,
      "median": 1.62,
@@ -995,7 +995,7 @@
      "lift_median": 0.27
     },
     {
-     "place": "Saudi Arabia",
+     "place": "SA",
      "n": 66,
      "mean": 2.67,
      "median": 1.78,
@@ -1003,7 +1003,7 @@
      "lift_median": 0.96
     },
     {
-     "place": "Australia",
+     "place": "AU",
      "n": 66,
      "mean": 3.22,
      "median": 0.92,
@@ -1012,11 +1012,11 @@
     },
     {
      "place": "India: Bihar",
-     "n": 66,
-     "mean": 2.76,
-     "median": 1.37,
-     "lift": 1.03,
-     "lift_median": 0.55
+     "n": 65,
+     "mean": 2.77,
+     "median": 1.35,
+     "lift": 1.04,
+     "lift_median": 0.53
     },
     {
      "place": "India: Madhya Pradesh",
@@ -1027,7 +1027,7 @@
      "lift_median": 0.95
     },
     {
-     "place": "Bangladesh",
+     "place": "BD",
      "n": 45,
      "mean": 1.23,
      "median": 0.63,
@@ -1035,7 +1035,7 @@
      "lift_median": -0.19
     },
     {
-     "place": "Malaysia",
+     "place": "MY",
      "n": 44,
      "mean": 1.75,
      "median": 1.25,
@@ -1043,15 +1043,15 @@
      "lift_median": 0.43
     },
     {
-     "place": "South Korea",
-     "n": 44,
-     "mean": 2.24,
-     "median": 1.65,
-     "lift": 0.51,
-     "lift_median": 0.83
+     "place": "KR",
+     "n": 43,
+     "mean": 1.95,
+     "median": 1.6,
+     "lift": 0.22,
+     "lift_median": 0.78
     },
     {
-     "place": "Vietnam",
+     "place": "VN",
      "n": 40,
      "mean": 3.57,
      "median": 1.76,
@@ -1059,7 +1059,7 @@
      "lift_median": 0.94
     },
     {
-     "place": "Singapore",
+     "place": "SG",
      "n": 36,
      "mean": 2.23,
      "median": 1.16,
@@ -1067,20 +1067,20 @@
      "lift_median": 0.34
     },
     {
-     "place": "United Arab Emirates",
-     "n": 31,
-     "mean": 2.41,
-     "median": 1.4,
-     "lift": 0.68,
-     "lift_median": 0.58
-    },
-    {
-     "place": "France",
+     "place": "FR",
      "n": 31,
      "mean": 2.2,
      "median": 0.73,
      "lift": 0.47,
      "lift_median": -0.09
+    },
+    {
+     "place": "AE",
+     "n": 30,
+     "mean": 1.99,
+     "median": 1.31,
+     "lift": 0.26,
+     "lift_median": 0.49
     },
     {
      "place": "India: Manipur",
@@ -1091,7 +1091,7 @@
      "lift_median": 0.02
     },
     {
-     "place": "Serbia",
+     "place": "RS",
      "n": 28,
      "mean": 0.97,
      "median": 0.59,
@@ -1099,7 +1099,7 @@
      "lift_median": -0.23
     },
     {
-     "place": "Germany",
+     "place": "DE",
      "n": 27,
      "mean": 2.0,
      "median": 1.02,
@@ -1107,7 +1107,7 @@
      "lift_median": 0.2
     },
     {
-     "place": "Iran",
+     "place": "IR",
      "n": 26,
      "mean": 2.73,
      "median": 1.72,
@@ -1115,12 +1115,12 @@
      "lift_median": 0.9
     },
     {
-     "place": "Spain",
+     "place": "India: Jammu & Kashmir",
      "n": 26,
-     "mean": 4.32,
-     "median": 2.0,
-     "lift": 2.59,
-     "lift_median": 1.18
+     "mean": 2.45,
+     "median": 1.55,
+     "lift": 0.72,
+     "lift_median": 0.73
     }
    ]
   }
@@ -1909,18 +1909,18 @@
      "we_cite": 172
     },
     {
-     "name": "Indian Institute of Engineering Science and Technology, Shibpur",
-     "cluster": "University/college",
-     "private": false,
-     "cites_us": 61,
-     "we_cite": 238
-    },
-    {
      "name": "University of Burdwan",
      "cluster": "University/college",
      "private": false,
      "cites_us": 29,
      "we_cite": 270
+    },
+    {
+     "name": "Indian Institute of Engineering Science and Technology, Shibpur",
+     "cluster": "University/college",
+     "private": false,
+     "cites_us": 61,
+     "we_cite": 238
     },
     {
      "name": "Visva-Bharati University",
@@ -2484,309 +2484,309 @@
   "all": [
    {
     "code": "US",
-    "name": "United States",
-    "papers": 359
+    "name": "US",
+    "papers": 358
    },
    {
     "code": "GB",
-    "name": "United Kingdom",
+    "name": "GB",
     "papers": 252
    },
    {
     "code": "SA",
-    "name": "Saudi Arabia",
-    "papers": 250
+    "name": "SA",
+    "papers": 248
    },
    {
     "code": "CN",
-    "name": "China",
-    "papers": 236
+    "name": "CN",
+    "papers": 234
    },
    {
     "code": "MY",
-    "name": "Malaysia",
+    "name": "MY",
     "papers": 207
    },
    {
     "code": "AU",
-    "name": "Australia",
+    "name": "AU",
     "papers": 132
    },
    {
     "code": "JP",
-    "name": "Japan",
+    "name": "JP",
     "papers": 130
    },
    {
     "code": "CA",
-    "name": "Canada",
+    "name": "CA",
     "papers": 126
    },
    {
     "code": "AE",
-    "name": "United Arab Emirates",
-    "papers": 123
+    "name": "AE",
+    "papers": 122
    },
    {
     "code": "IT",
-    "name": "Italy",
+    "name": "IT",
     "papers": 98
    },
    {
     "code": "TR",
-    "name": "T\u00fcrkiye",
+    "name": "TR",
     "papers": 90
    },
    {
     "code": "KR",
-    "name": "South Korea",
-    "papers": 82
+    "name": "KR",
+    "papers": 81
    },
    {
     "code": "BD",
-    "name": "Bangladesh",
-    "papers": 72
+    "name": "BD",
+    "papers": 70
    },
    {
     "code": "NO",
-    "name": "Norway",
-    "papers": 66
+    "name": "NO",
+    "papers": 65
    },
    {
     "code": "VN",
-    "name": "Vietnam",
-    "papers": 66
+    "name": "VN",
+    "papers": 65
    }
   ],
   "MANIT Bhopal": [
    {
     "code": "MY",
-    "name": "Malaysia",
+    "name": "MY",
     "papers": 149
    },
    {
     "code": "SA",
-    "name": "Saudi Arabia",
-    "papers": 79
+    "name": "SA",
+    "papers": 78
    },
    {
     "code": "GB",
-    "name": "United Kingdom",
+    "name": "GB",
     "papers": 60
    },
    {
     "code": "US",
-    "name": "United States",
+    "name": "US",
     "papers": 59
    },
    {
-    "code": "CN",
-    "name": "China",
-    "papers": 43
+    "code": "AU",
+    "name": "AU",
+    "papers": 42
    },
    {
-    "code": "AU",
-    "name": "Australia",
+    "code": "CN",
+    "name": "CN",
     "papers": 42
    },
    {
     "code": "TR",
-    "name": "T\u00fcrkiye",
+    "name": "TR",
     "papers": 40
    },
    {
     "code": "AE",
-    "name": "United Arab Emirates",
+    "name": "AE",
     "papers": 33
    },
    {
     "code": "JP",
-    "name": "Japan",
+    "name": "JP",
     "papers": 27
    },
    {
     "code": "TH",
-    "name": "Thailand",
+    "name": "TH",
     "papers": 26
    },
    {
-    "code": "VN",
-    "name": "Vietnam",
-    "papers": 21
+    "code": "NO",
+    "name": "NO",
+    "papers": 20
    },
    {
-    "code": "NO",
-    "name": "Norway",
+    "code": "VN",
+    "name": "VN",
     "papers": 20
    },
    {
     "code": "KR",
-    "name": "South Korea",
+    "name": "KR",
     "papers": 20
    },
    {
     "code": "RU",
-    "name": "Russia",
+    "name": "RU",
     "papers": 19
    },
    {
     "code": "ET",
-    "name": "Ethiopia",
+    "name": "ET",
     "papers": 17
    }
   ],
   "NIT Jamshedpur": [
    {
     "code": "SA",
-    "name": "Saudi Arabia",
-    "papers": 106
+    "name": "SA",
+    "papers": 105
    },
    {
     "code": "US",
-    "name": "United States",
+    "name": "US",
     "papers": 60
    },
    {
     "code": "AE",
-    "name": "United Arab Emirates",
+    "name": "AE",
     "papers": 59
    },
    {
     "code": "GB",
-    "name": "United Kingdom",
+    "name": "GB",
     "papers": 43
    },
    {
     "code": "TR",
-    "name": "T\u00fcrkiye",
+    "name": "TR",
     "papers": 33
    },
    {
     "code": "JP",
-    "name": "Japan",
+    "name": "JP",
     "papers": 31
    },
    {
     "code": "JO",
-    "name": "Jordan",
+    "name": "JO",
     "papers": 30
    },
    {
     "code": "CN",
-    "name": "China",
+    "name": "CN",
     "papers": 30
    },
    {
     "code": "EG",
-    "name": "Egypt",
+    "name": "EG",
     "papers": 29
    },
    {
     "code": "AU",
-    "name": "Australia",
+    "name": "AU",
     "papers": 24
    },
    {
     "code": "NO",
-    "name": "Norway",
+    "name": "NO",
     "papers": 24
    },
    {
-    "code": "BD",
-    "name": "Bangladesh",
-    "papers": 20
-   },
-   {
     "code": "FR",
-    "name": "France",
+    "name": "FR",
     "papers": 20
    },
    {
     "code": "CA",
-    "name": "Canada",
+    "name": "CA",
     "papers": 19
    },
    {
+    "code": "BD",
+    "name": "BD",
+    "papers": 18
+   },
+   {
     "code": "KR",
-    "name": "South Korea",
+    "name": "KR",
     "papers": 18
    }
   ],
   "NIT Silchar": [
    {
     "code": "US",
-    "name": "United States",
-    "papers": 240
+    "name": "US",
+    "papers": 239
    },
    {
     "code": "CN",
-    "name": "China",
-    "papers": 163
+    "name": "CN",
+    "papers": 162
    },
    {
     "code": "GB",
-    "name": "United Kingdom",
+    "name": "GB",
     "papers": 149
    },
    {
     "code": "CA",
-    "name": "Canada",
+    "name": "CA",
     "papers": 91
    },
    {
     "code": "IT",
-    "name": "Italy",
+    "name": "IT",
     "papers": 77
    },
    {
     "code": "JP",
-    "name": "Japan",
+    "name": "JP",
     "papers": 72
    },
    {
     "code": "SA",
-    "name": "Saudi Arabia",
+    "name": "SA",
     "papers": 66
    },
    {
     "code": "AU",
-    "name": "Australia",
+    "name": "AU",
     "papers": 66
    },
    {
     "code": "BD",
-    "name": "Bangladesh",
+    "name": "BD",
     "papers": 45
    },
    {
-    "code": "KR",
-    "name": "South Korea",
+    "code": "MY",
+    "name": "MY",
     "papers": 44
    },
    {
-    "code": "MY",
-    "name": "Malaysia",
-    "papers": 44
+    "code": "KR",
+    "name": "KR",
+    "papers": 43
    },
    {
     "code": "VN",
-    "name": "Vietnam",
+    "name": "VN",
     "papers": 40
    },
    {
     "code": "SG",
-    "name": "Singapore",
+    "name": "SG",
     "papers": 36
    },
    {
     "code": "FR",
-    "name": "France",
+    "name": "FR",
     "papers": 31
    },
    {
     "code": "AE",
-    "name": "United Arab Emirates",
-    "papers": 31
+    "name": "AE",
+    "papers": 30
    }
   ]
  },
@@ -2803,8 +2803,8 @@
   {
    "name": "Upendra Rajak",
    "institute": "(no affiliation)",
-   "papers": 67,
-   "citations": 2300,
+   "papers": 66,
+   "citations": 2268,
    "ours": [
     "MANIT"
    ]
@@ -2924,8 +2924,8 @@
   {
    "name": "Dineshkumar Harursampath",
    "institute": "Indian Institute of Science Bangalore",
-   "papers": 30,
-   "citations": 627,
+   "papers": 29,
+   "citations": 616,
    "ours": [
     "NITS"
    ]
@@ -2968,21 +2968,21 @@
    ]
   },
   {
-   "name": "Mithilesh Atulkar",
-   "institute": "National Institute of Technology Raipur",
-   "papers": 26,
-   "citations": 234,
-   "ours": [
-    "MANIT"
-   ]
-  },
-  {
    "name": "Deepak Mishra",
    "institute": "UNSW Sydney",
    "papers": 26,
    "citations": 196,
    "ours": [
     "NITS"
+   ]
+  },
+  {
+   "name": "Mithilesh Atulkar",
+   "institute": "National Institute of Technology Raipur",
+   "papers": 25,
+   "citations": 222,
+   "ours": [
+    "MANIT"
    ]
   },
   {
@@ -3254,15 +3254,6 @@
    ]
   },
   {
-   "name": "Gurunathan Baskar",
-   "institute": "St. Joseph\u2019s College of Engineering",
-   "papers": 18,
-   "citations": 478,
-   "ours": [
-    "NITS"
-   ]
-  },
-  {
    "name": "Binod Kumar Kanaujia",
    "institute": "Jawaharlal Nehru University",
    "papers": 18,
@@ -3315,6 +3306,15 @@
    "citations": 691,
    "ours": [
     "MANIT"
+   ]
+  },
+  {
+   "name": "Gurunathan Baskar",
+   "institute": "St. Joseph\u2019s College of Engineering",
+   "papers": 17,
+   "citations": 393,
+   "ours": [
+    "NITS"
    ]
   },
   {
@@ -3492,16 +3492,6 @@
    ]
   },
   {
-   "name": "Joyeeta Singha",
-   "institute": "LNM Institute of Information Technology",
-   "papers": 15,
-   "citations": 158,
-   "ours": [
-    "MANIT",
-    "NITS"
-   ]
-  },
-  {
    "name": "Ranjita Das",
    "institute": "National Institute of Technology Agartala",
    "papers": 15,
@@ -3574,16 +3564,6 @@
    ]
   },
   {
-   "name": "Arivalagan Pugazhendhi",
-   "institute": "Ton Duc Thang University",
-   "papers": 14,
-   "citations": 980,
-   "ours": [
-    "MANIT",
-    "NITS"
-   ]
-  },
-  {
    "name": "Sethumathavan Vadivel",
    "institute": "PSG College of Technology",
    "papers": 14,
@@ -3621,6 +3601,16 @@
    ]
   },
   {
+   "name": "Joyeeta Singha",
+   "institute": "LNM Institute of Information Technology",
+   "papers": 14,
+   "citations": 156,
+   "ours": [
+    "MANIT",
+    "NITS"
+   ]
+  },
+  {
    "name": "Somnath Sarangi",
    "institute": "Indian Institute of Technology Patna",
    "papers": 14,
@@ -3636,6 +3626,16 @@
    "papers": 13,
    "citations": 2006,
    "ours": [
+    "NITS"
+   ]
+  },
+  {
+   "name": "Arivalagan Pugazhendhi",
+   "institute": "Ton Duc Thang University",
+   "papers": 13,
+   "citations": 948,
+   "ours": [
+    "MANIT",
     "NITS"
    ]
   },
@@ -3704,15 +3704,6 @@
    ]
   },
   {
-   "name": "Parthapratim Roy",
-   "institute": "Silchar Medical College and Hospital",
-   "papers": 13,
-   "citations": 318,
-   "ours": [
-    "NITS"
-   ]
-  },
-  {
    "name": "Yiwen Shi",
    "institute": "Zhejiang University",
    "papers": 13,
@@ -3722,30 +3713,12 @@
    ]
   },
   {
-   "name": "Rajeev Kumar Gupta",
-   "institute": "Pandit Deendayal Energy University",
-   "papers": 13,
-   "citations": 281,
-   "ours": [
-    "MANIT"
-   ]
-  },
-  {
    "name": "Shobha Lata Sinha",
    "institute": "National Institute of Technology Raipur",
    "papers": 13,
    "citations": 276,
    "ours": [
     "MANIT"
-   ]
-  },
-  {
-   "name": "Jashanpreet Singh",
-   "institute": "Chandigarh University",
-   "papers": 13,
-   "citations": 227,
-   "ours": [
-    "NITJ"
    ]
   },
   {
@@ -3935,6 +3908,15 @@
    ]
   },
   {
+   "name": "Parthapratim Roy",
+   "institute": "Silchar Medical College and Hospital",
+   "papers": 12,
+   "citations": 300,
+   "ours": [
+    "NITS"
+   ]
+  },
+  {
    "name": "L\u00e1szl\u00f3 Baranyi",
    "institute": "University of Miskolc",
    "papers": 12,
@@ -3953,12 +3935,30 @@
    ]
   },
   {
+   "name": "Rajeev Kumar Gupta",
+   "institute": "Pandit Deendayal Energy University",
+   "papers": 12,
+   "citations": 241,
+   "ours": [
+    "MANIT"
+   ]
+  },
+  {
    "name": "Jasha Momo H. An\u00e3l",
    "institute": "Indian Institute of Integrative Medicine",
    "papers": 12,
    "citations": 226,
    "ours": [
     "NITS"
+   ]
+  },
+  {
+   "name": "Jashanpreet Singh",
+   "institute": "Chandigarh University",
+   "papers": 12,
+   "citations": 218,
+   "ours": [
+    "NITJ"
    ]
   },
   {
@@ -3985,15 +3985,6 @@
    "institute": "National Institute of Technology Agartala",
    "papers": 12,
    "citations": 163,
-   "ours": [
-    "NITS"
-   ]
-  },
-  {
-   "name": "Nirupam Shome",
-   "institute": "Assam University",
-   "papers": 12,
-   "citations": 138,
    "ours": [
     "NITS"
    ]
@@ -4052,15 +4043,6 @@
    "citations": 44,
    "ours": [
     "NITJ"
-   ]
-  },
-  {
-   "name": "Krishanu Nath",
-   "institute": "Indian Institute of Technology Delhi",
-   "papers": 12,
-   "citations": 31,
-   "ours": [
-    "NITS"
    ]
   },
   {
@@ -4257,6 +4239,15 @@
    ]
   },
   {
+   "name": "Nirupam Shome",
+   "institute": "Assam University",
+   "papers": 11,
+   "citations": 134,
+   "ours": [
+    "NITS"
+   ]
+  },
+  {
    "name": "Sarmistha Neogy",
    "institute": "Jadavpur University",
    "papers": 11,
@@ -4369,6 +4360,15 @@
    "institute": "Nirma University",
    "papers": 11,
    "citations": 39,
+   "ours": [
+    "NITS"
+   ]
+  },
+  {
+   "name": "Krishanu Nath",
+   "institute": "Indian Institute of Technology Delhi",
+   "papers": 11,
+   "citations": 31,
    "ours": [
     "NITS"
    ]
@@ -4554,15 +4554,6 @@
    "citations": 106,
    "ours": [
     "NITJ"
-   ]
-  },
-  {
-   "name": "Richik Kashyap",
-   "institute": "Assam University",
-   "papers": 10,
-   "citations": 93,
-   "ours": [
-    "NITS"
    ]
   },
   {
@@ -4888,6 +4879,15 @@
    ]
   },
   {
+   "name": "Richik Kashyap",
+   "institute": "Assam University",
+   "papers": 9,
+   "citations": 89,
+   "ours": [
+    "NITS"
+   ]
+  },
+  {
    "name": "Daasari Surender",
    "institute": "Chaitanya",
    "papers": 9,
@@ -5112,15 +5112,6 @@
    "institute": "University of Trento",
    "papers": 9,
    "citations": 21,
-   "ours": [
-    "NITS"
-   ]
-  },
-  {
-   "name": "Rajiv Kumar Mishra",
-   "institute": "National Institute of Technology Rourkela",
-   "papers": 9,
-   "citations": 20,
    "ours": [
     "NITS"
    ]
@@ -5571,15 +5562,6 @@
    ]
   },
   {
-   "name": "Mohiul Islam",
-   "institute": "Vellore Institute of Technology University",
-   "papers": 8,
-   "citations": 77,
-   "ours": [
-    "NITS"
-   ]
-  },
-  {
    "name": "Rajveer Singh Lalawat",
    "institute": "Indian Institute of Information Technology Design and Manufacturing Jabalpur",
    "papers": 8,
@@ -5729,6 +5711,15 @@
    "institute": "(no affiliation)",
    "papers": 8,
    "citations": 26,
+   "ours": [
+    "NITS"
+   ]
+  },
+  {
+   "name": "Rajiv Kumar Mishra",
+   "institute": "National Institute of Technology Rourkela",
+   "papers": 8,
+   "citations": 20,
    "ours": [
     "NITS"
    ]
@@ -6280,15 +6271,6 @@
    ]
   },
   {
-   "name": "Harjot Singh Gill",
-   "institute": "Chandigarh University",
-   "papers": 7,
-   "citations": 72,
-   "ours": [
-    "NITJ"
-   ]
-  },
-  {
    "name": "Nishant Kumar",
    "institute": "Birla Institute of Technology and Science, Pilani",
    "papers": 7,
@@ -6380,6 +6362,15 @@
    ]
   },
   {
+   "name": "Mohiul Islam",
+   "institute": "Vellore Institute of Technology University",
+   "papers": 7,
+   "citations": 53,
+   "ours": [
+    "NITS"
+   ]
+  },
+  {
    "name": "Pulkit Singh",
    "institute": "National Institute of Technology Raipur",
    "papers": 7,
@@ -6452,6 +6443,15 @@
     "MANIT",
     "NITJ"
    ]
+  },
+  {
+   "name": "Nazrul Islam Khan",
+   "institute": "Netaji Subhas University of Technology",
+   "papers": 7,
+   "citations": 39,
+   "ours": [
+    "NITS"
+   ]
   }
  ],
  "pairs": [
@@ -6513,7 +6513,7 @@
    1,
    "Indian Institute of Technology Kanpur",
    11,
-   3.45
+   3.54
   ],
   [
    1,
@@ -6656,8 +6656,8 @@
   [
    1,
    "King Saud University",
-   15,
-   4.25
+   14,
+   4.3
   ],
   [
    0,
@@ -6765,7 +6765,7 @@
    0,
    "Rajiv Gandhi Technical University",
    48,
-   1.01
+   0.98
   ],
   [
    0,
@@ -6987,13 +6987,13 @@
    0,
    "National Institute of Technology Raipur",
    34,
-   1.53
+   1.54
   ],
   [
    0,
    "Duy Tan University",
-   3,
-   2.6
+   2,
+   2.61
   ],
   [
    0,
@@ -7167,13 +7167,13 @@
    2,
    "Silchar Medical College and Hospital",
    8,
-   3.79
+   3.87
   ],
   [
    2,
    "Indian Institute of Science Bangalore",
    26,
-   1.62
+   1.59
   ],
   [
    1,
@@ -7353,13 +7353,13 @@
    2,
    "National Institute of Technology Rourkela",
    35,
-   2.26
+   2.3
   ],
   [
    1,
    "University of Kalyani",
-   11,
-   3.11
+   10,
+   3.26
   ],
   [
    1,
@@ -7461,7 +7461,7 @@
    2,
    "Saveetha University",
    14,
-   1.23
+   1.16
   ],
   [
    2,
@@ -7623,7 +7623,7 @@
    2,
    "Assam University",
    35,
-   1.51
+   1.52
   ],
   [
    0,
@@ -7748,8 +7748,8 @@
   [
    2,
    "University of Wisconsin\u2013Madison",
-   4,
-   12.48
+   3,
+   11.84
   ],
   [
    2,
@@ -7857,7 +7857,7 @@
    2,
    "Dr. B. R. Ambedkar National Institute of Technology Jalandhar",
    11,
-   1.91
+   1.98
   ],
   [
    2,
@@ -8169,7 +8169,7 @@
    2,
    "St. Joseph\u2019s College of Engineering",
    7,
-   3.12
+   2.49
   ],
   [
    2,
@@ -8193,7 +8193,7 @@
    1,
    "Assam University",
    2,
-   2.36
+   2.53
   ],
   [
    1,
@@ -8205,7 +8205,7 @@
    1,
    "Bihar Agricultural University",
    1,
-   2.9
+   3.96
   ],
   [
    1,
@@ -8217,7 +8217,7 @@
    1,
    "Jadavpur University",
    16,
-   1.63
+   1.62
   ],
   [
    1,
@@ -8241,7 +8241,7 @@
    1,
    "Indian Institute of Water Management",
    1,
-   2.36
+   2.53
   ],
   [
    1,
@@ -8277,13 +8277,13 @@
    1,
    "Slovak University of Agriculture in Nitra",
    3,
-   2.7
+   3.13
   ],
   [
    1,
    "Bangladesh Wheat and Maize Research Institute",
    1,
-   2.7
+   3.13
   ],
   [
    0,
@@ -8517,7 +8517,7 @@
    0,
    "Madan Mohan Malaviya University of Technology",
    5,
-   1.57
+   1.38
   ],
   [
    0,
@@ -8744,8 +8744,8 @@
   [
    0,
    "Pandit Deendayal Energy University",
-   7,
-   7.71
+   6,
+   7.97
   ],
   [
    0,
@@ -8949,13 +8949,13 @@
    2,
    "National Institute of Technology Patna",
    16,
-   4.27
+   4.34
   ],
   [
    2,
    "Universidad Internacional de La Rioja",
-   2,
-   9.4
+   1,
+   16.73
   ],
   [
    2,
@@ -9064,48 +9064,6 @@
    "Indian Institute of Engineering Science and Technology, Shibpur",
    15,
    1.06
-  ],
-  [
-   2,
-   "Forest Products Laboratory",
-   1,
-   15.03
-  ],
-  [
-   2,
-   "Ajman University",
-   1,
-   8.44
-  ],
-  [
-   2,
-   "Noroff University College",
-   2,
-   8.44
-  ],
-  [
-   2,
-   "Lebanese American University",
-   3,
-   4.2
-  ],
-  [
-   2,
-   "Pohang University of Science and Technology",
-   1,
-   15.03
-  ],
-  [
-   2,
-   "T.K.M Institute of Technology",
-   1,
-   15.03
-  ],
-  [
-   2,
-   "Northwest A&F University",
-   1,
-   7.83
   ],
   [
    2,
@@ -9464,8 +9422,8 @@
   [
    2,
    "LNM Institute of Information Technology",
-   13,
-   1.25
+   12,
+   1.27
   ],
   [
    0,
@@ -9854,7 +9812,7 @@
   [
    0,
    "Indian Institute of Information Technology Bhopal",
-   26,
+   25,
    1.74
   ],
   [
@@ -10401,7 +10359,7 @@
    1,
    "Jashore University of Science and Technology",
    19,
-   3.3
+   3.95
   ],
   [
    1,
@@ -10522,6 +10480,24 @@
    "Maharaja Surajmal Institute of Technology",
    2,
    1.11
+  ],
+  [
+   2,
+   "Ajman University",
+   1,
+   1.84
+  ],
+  [
+   2,
+   "Noroff University College",
+   1,
+   1.84
+  ],
+  [
+   2,
+   "Lebanese American University",
+   3,
+   1.49
   ],
   [
    2,
@@ -11115,7 +11091,7 @@
    1,
    "Chandigarh University",
    14,
-   1.78
+   1.7
   ],
   [
    0,
@@ -12720,18 +12696,6 @@
    1.32
   ],
   [
-   0,
-   "King Abdulaziz City for Science and Technology",
-   1,
-   3.13
-  ],
-  [
-   0,
-   "Bolgatanga Technical University",
-   1,
-   3.13
-  ],
-  [
    2,
    "Jorhat Engineering College",
    2,
@@ -13162,12 +13126,6 @@
    "G.L. Bajaj Institute of Technology and Management Greater Noida",
    6,
    2.04
-  ],
-  [
-   2,
-   "Dr. B.C. Roy Engineering College",
-   2,
-   1.75
   ],
   [
    2,
@@ -13762,6 +13720,12 @@
    "Aalborg University",
    4,
    1.46
+  ],
+  [
+   2,
+   "Dr. B.C. Roy Engineering College",
+   2,
+   1.66
   ],
   [
    2,
@@ -14479,12 +14443,6 @@
   ],
   [
    2,
-   "Alliance University",
-   6,
-   0.64
-  ],
-  [
-   2,
    "Hindustan Institute of Technology and Science",
    3,
    1.8
@@ -15018,6 +14976,12 @@
    1.56
   ],
   [
+   2,
+   "Alliance University",
+   5,
+   0.36
+  ],
+  [
    1,
    "Naval Postgraduate School",
    1,
@@ -15208,30 +15172,6 @@
    "Zabol University",
    1,
    0.81
-  ],
-  [
-   1,
-   "Directorate of Weed Research",
-   1,
-   1.84
-  ],
-  [
-   1,
-   "Amity University Madhya Pradesh",
-   1,
-   1.84
-  ],
-  [
-   1,
-   "King Khalid University Hospital",
-   1,
-   1.84
-  ],
-  [
-   1,
-   "M.J.P. Rohilkhand University",
-   2,
-   2.74
   ],
   [
    1,
@@ -15790,12 +15730,6 @@
    "National Institute of Technology Calicut",
    3,
    0.52
-  ],
-  [
-   2,
-   "Dr. D.Y. Patil Vidyapeeth, Pune",
-   1,
-   3.2
   ],
   [
    2,
@@ -18522,6 +18456,12 @@
    0.22
   ],
   [
+   1,
+   "M.J.P. Rohilkhand University",
+   1,
+   3.64
+  ],
+  [
    0,
    "Kwame Nkrumah University of Science and Technology",
    1,
@@ -18830,6 +18770,12 @@
   [
    2,
    "Sz\u00e9chenyi Istv\u00e1n University",
+   1,
+   0.63
+  ],
+  [
+   2,
+   "Northwest A&F University",
    1,
    0.63
   ],
@@ -19978,12 +19924,6 @@
    "Sir Padampat Singhania University",
    1,
    3.48
-  ],
-  [
-   0,
-   "Southwest University",
-   1,
-   0.92
   ],
   [
    1,

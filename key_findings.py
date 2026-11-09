@@ -179,6 +179,29 @@ def main():
                      f". Distinct partner institutes: " + "; ".join(f"{SH[i]} {int(rr.at[i, 'distinct_indian_partners'])} Indian, {int(rr.at[i, 'distinct_foreign_partners'])} foreign" for i in INSTS) + ".", rr.reset_index().to_dict("records")))
     out.append(F("flows", "Citation flows with other Indian institutes", "In/out ratio (citations received from / given to other Indian institutes): " + ", ".join(f"{SH[i]} {ratio.at[i, 'in_over_out']:.2f}" for i in INSTS) +
                  ". A ratio below 1 means the institute cites other Indian institutes more than it is cited by those institutes, which is common for institutes that read widely; it is not a quality ranking.", ratio.reset_index().to_dict("records")))
+    # ------------------------------------------------------------- Data corrections (retractions.py, affiliation_checks.py)
+    if (ST / "retractions.json").exists():
+        rt = json.load(open(ST / "retractions.json"))
+        bi, cat = rt["by_institution"], rt["by_reason_category"]
+        own = cat.get("Plagiarism, duplication or data problems", 0)
+        batch = cat.get("Compromised peer review or editorial misconduct", 0)
+        out.append(F("overview", "Retracted papers are left out",
+                     f"{rt['papers_removed']} papers ({', '.join(f'{SH[i]} {bi[i]['papers']}' for i in INSTS if i in bi)}) have been retracted or withdrawn by their publishers, "
+                     f"and are not counted anywhere on this dashboard ({rt['citations_of_removed_papers']:,} citations). {own} were retracted for plagiarism, duplication or data problems; "
+                     f"{batch} came from publisher investigations of compromised peer review. The full list is in the Methodology tab.",
+                     {"by_institution": bi, "by_reason_category": cat},
+                     caveat="A retraction does not by itself mean the authors did something wrong; several dispute theirs."))
+    if (ST / "affiliation_checks.json").exists():
+        for a in json.load(open(ST / "affiliation_checks.json")):
+            h, k = a["institute_h_index"], list(a["institute_h_index"])
+            s = SH[a["institution"]]
+            out.append(F("faculty", f"{s}'s h-index and one researcher",
+                         f"{a['faculty']} has worked at {a['other_affiliation']} since {a['away_since']} and was at {s} before that; {a['papers_after_away_year_with_other_affiliation']} of his "
+                         f"{a['papers_after_away_year']} papers since then list both. He accounts for {a['share_of_institute_citations_%']}% of all {s} citations. "
+                         f"The {s} h-index is {h[k[0]]} with his papers, {h[k[1]]} counting only those up to {a['away_since']}, and {h[k[2]]} without them.",
+                         {"institute_h_index": h, "share_of_institute_citations_%": a["share_of_institute_citations_%"]},
+                         caveat=f"His papers carry {s}'s name, so they stay in the data."))
+
     (ST / "key_findings.json").write_text(json.dumps(out, indent=1, default=str))
     print(len(out), "findings")
     for f in out:

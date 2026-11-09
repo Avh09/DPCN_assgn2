@@ -1,11 +1,11 @@
 {
  "verdicts": [
-  "Headcount does not explain it: NITS has 274 research-active faculty, fewer than MANIT (296). Output per faculty does: 30.62 papers per person against 19.46 at MANIT and 15.5 at NITJ.",
-  "It is broad-based, not a few prolific people: the median faculty member at NITS has 23 papers against 18 at MANIT and 13 at NITJ.",
+  "Headcount does not explain it: NITS has 274 research-active faculty, fewer than MANIT (296). Output per faculty does: 30.57 papers per person against 19.41 at MANIT and 15.47 at NITJ.",
+  "It is broad-based, not a few prolific people: the median faculty member at NITS has 23 papers against 17 at MANIT and 13 at NITJ.",
   "Concentration: the top 10% of faculty hold 33.1% of paper credits at MANIT, 36.3% of paper credits at NITJ, 37.9% of paper credits at NITS (similar, so concentration is not what separates the three institutes).",
-  "Shared papers are not inflating it: splitting each paper between its faculty authors leaves NITS at 30.56 papers per faculty against 19.43 at MANIT and 15.41 at NITJ.",
-  "Team size (3.4-3.6 authors per paper) and conference share (33.2-37.6%) are similar across the three institutes, so these measures do not explain the gap.",
-  "Seniority: NITS has 10.6% professors against 26.7% at MANIT and 9.1% at NITJ, yet its professors average 86.7 papers each (MANIT 29.5, NITJ 37.2).",
+  "Shared papers are not inflating it: splitting each paper between its faculty authors leaves NITS at 30.52 papers per faculty against 19.38 at MANIT and 15.38 at NITJ.",
+  "Team size (3.4-3.6 authors per paper) and conference share (33.3-37.7%) are similar across the three institutes, so these measures do not explain the gap.",
+  "Seniority: NITS has 10.6% professors against 26.7% at MANIT and 9.1% at NITJ, yet its professors average 86.5 papers each (MANIT 29.4, NITJ 37.2).",
   "Like for like: NITS has the highest papers per faculty in 6 of the 8 departments that exist at all three institutes.",
   "NITS published the most papers in 10 of the 10 full years (2016-2025)."
  ],
@@ -15,9 +15,9 @@
    "label": "Papers (full counting)",
    "note": "How many papers",
    "values": {
-    "MANIT Bhopal": 5759,
-    "NIT Jamshedpur": 3564,
-    "NIT Silchar": 8389
+    "MANIT Bhopal": 5746,
+    "NIT Jamshedpur": 3558,
+    "NIT Silchar": 8376
    }
   },
   {
@@ -35,9 +35,9 @@
    "label": "Papers per active faculty",
    "note": "Output per person",
    "values": {
-    "MANIT Bhopal": 19.46,
-    "NIT Jamshedpur": 15.5,
-    "NIT Silchar": 30.62
+    "MANIT Bhopal": 19.41,
+    "NIT Jamshedpur": 15.47,
+    "NIT Silchar": 30.57
    }
   },
   {
@@ -45,7 +45,7 @@
    "label": "Median papers per faculty",
    "note": "Typical person; close to the mean = broad-based, far below = a few prolific people",
    "values": {
-    "MANIT Bhopal": 18.0,
+    "MANIT Bhopal": 17.0,
     "NIT Jamshedpur": 13.0,
     "NIT Silchar": 23.0
    }
@@ -65,9 +65,9 @@
    "label": "Papers per faculty, shared papers split between authors",
    "note": "Removes the advantage of co-authoring many papers with colleagues",
    "values": {
-    "MANIT Bhopal": 19.43,
-    "NIT Jamshedpur": 15.41,
-    "NIT Silchar": 30.56
+    "MANIT Bhopal": 19.38,
+    "NIT Jamshedpur": 15.38,
+    "NIT Silchar": 30.52
    }
   },
   {
@@ -95,8 +95,8 @@
    "label": "Conference papers (%)",
    "note": "Conferences are quicker to produce than journals",
    "values": {
-    "MANIT Bhopal": 37.6,
-    "NIT Jamshedpur": 33.2,
+    "MANIT Bhopal": 37.7,
+    "NIT Jamshedpur": 33.3,
     "NIT Silchar": 35.0
    }
   },
@@ -135,9 +135,9 @@
    "label": "Papers per professor",
    "note": "Output by rank",
    "values": {
-    "MANIT Bhopal": 29.5,
+    "MANIT Bhopal": 29.4,
     "NIT Jamshedpur": 37.2,
-    "NIT Silchar": 86.7
+    "NIT Silchar": 86.5
    }
   },
   {
@@ -145,9 +145,9 @@
    "label": "Papers per associate professor",
    "note": "",
    "values": {
-    "MANIT Bhopal": 33.3,
+    "MANIT Bhopal": 33.2,
     "NIT Jamshedpur": 25.3,
-    "NIT Silchar": 58.8
+    "NIT Silchar": 58.7
    }
   },
   {
@@ -171,11 +171,11 @@
     },
     "NIT Jamshedpur": {
      "faculty": 12,
-     "papers_per_faculty": 16.9
+     "papers_per_faculty": 16.8
     },
     "NIT Silchar": {
      "faculty": 12,
-     "papers_per_faculty": 65.8
+     "papers_per_faculty": 65.7
     }
    }
   },
@@ -184,7 +184,7 @@
    "values": {
     "MANIT Bhopal": {
      "faculty": 39,
-     "papers_per_faculty": 15.6
+     "papers_per_faculty": 15.5
     },
     "NIT Jamshedpur": {
      "faculty": 26,
@@ -201,11 +201,11 @@
    "values": {
     "MANIT Bhopal": {
      "faculty": 32,
-     "papers_per_faculty": 38.8
+     "papers_per_faculty": 38.6
     },
     "NIT Jamshedpur": {
      "faculty": 25,
-     "papers_per_faculty": 19.4
+     "papers_per_faculty": 19.3
     },
     "NIT Silchar": {
      "faculty": 28,
@@ -243,7 +243,7 @@
     },
     "NIT Silchar": {
      "faculty": 37,
-     "papers_per_faculty": 67.5
+     "papers_per_faculty": 67.3
     }
    }
   },
@@ -277,7 +277,7 @@
     },
     "NIT Silchar": {
      "faculty": 45,
-     "papers_per_faculty": 46.7
+     "papers_per_faculty": 46.6
     }
    }
   },
@@ -323,37 +323,37 @@
   "2019": {
    "MANIT Bhopal": 265,
    "NIT Jamshedpur": 194,
-   "NIT Silchar": 578
+   "NIT Silchar": 575
   },
   "2020": {
-   "MANIT Bhopal": 448,
+   "MANIT Bhopal": 446,
    "NIT Jamshedpur": 297,
-   "NIT Silchar": 792
+   "NIT Silchar": 789
   },
   "2021": {
-   "MANIT Bhopal": 600,
-   "NIT Jamshedpur": 402,
-   "NIT Silchar": 893
+   "MANIT Bhopal": 597,
+   "NIT Jamshedpur": 401,
+   "NIT Silchar": 892
   },
   "2022": {
-   "MANIT Bhopal": 622,
-   "NIT Jamshedpur": 443,
-   "NIT Silchar": 1098
+   "MANIT Bhopal": 620,
+   "NIT Jamshedpur": 442,
+   "NIT Silchar": 1096
   },
   "2023": {
-   "MANIT Bhopal": 684,
-   "NIT Jamshedpur": 476,
-   "NIT Silchar": 986
+   "MANIT Bhopal": 680,
+   "NIT Jamshedpur": 474,
+   "NIT Silchar": 985
   },
   "2024": {
-   "MANIT Bhopal": 708,
-   "NIT Jamshedpur": 521,
-   "NIT Silchar": 1115
+   "MANIT Bhopal": 707,
+   "NIT Jamshedpur": 519,
+   "NIT Silchar": 1114
   },
   "2025": {
-   "MANIT Bhopal": 792,
+   "MANIT Bhopal": 791,
    "NIT Jamshedpur": 491,
-   "NIT Silchar": 1043
+   "NIT Silchar": 1042
   }
  },
  "yearly_leader": {

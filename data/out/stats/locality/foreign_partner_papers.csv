@@ -340,7 +340,6 @@ NIT Jamshedpur,King Saud University,W4388416437
 NIT Jamshedpur,King Saud University,W4388440212
 NIT Jamshedpur,King Saud University,W4388441494
 NIT Jamshedpur,King Saud University,W4390926733
-NIT Jamshedpur,King Saud University,W4393071336
 NIT Jamshedpur,King Saud University,W4394988254
 NIT Jamshedpur,King Saud University,W4399034033
 NIT Jamshedpur,King Saud University,W4399348558
@@ -538,7 +537,6 @@ MANIT Bhopal,Duy Tan University,W3119481819
 MANIT Bhopal,Duy Tan University,W3215441879
 MANIT Bhopal,Duy Tan University,W4292731358
 MANIT Bhopal,Duy Tan University,W4310378718
-MANIT Bhopal,Duy Tan University,W4386170145
 MANIT Bhopal,Duy Tan University,W4387566848
 MANIT Bhopal,University of Brescia,W3191242891
 MANIT Bhopal,University of Brescia,W4282980307
@@ -931,7 +929,6 @@ NIT Silchar,University of Wisconsin–Madison,W4293824843
 NIT Silchar,University of Wisconsin–Madison,W4297201253
 NIT Silchar,University of Wisconsin–Madison,W4313472740
 NIT Silchar,University of Wisconsin–Madison,W4317795306
-NIT Silchar,University of Wisconsin–Madison,W4363672862
 NIT Silchar,William S. Middleton Memorial Veterans Hospital,W4293824843
 NIT Silchar,University of Saskatchewan,W2962897037
 NIT Silchar,University of Saskatchewan,W3092396444
@@ -1095,10 +1092,8 @@ NIT Silchar,Shandong Jianzhu University,W4402698068
 NIT Silchar,Shandong Jianzhu University,W4415385202
 NIT Silchar,Shandong Jianzhu University,W4416743857
 NIT Jamshedpur,Bangladesh Wheat and Maize Research Institute,W4390097212
-NIT Jamshedpur,Bangladesh Wheat and Maize Research Institute,W4393071336
 NIT Jamshedpur,Bangladesh Wheat and Maize Research Institute,W4396842611
 NIT Jamshedpur,Slovak University of Agriculture in Nitra,W4390097212
-NIT Jamshedpur,Slovak University of Agriculture in Nitra,W4393071336
 NIT Jamshedpur,Slovak University of Agriculture in Nitra,W4396842611
 NIT Jamshedpur,Czech University of Life Sciences Prague,W4390097212
 NIT Jamshedpur,Czech University of Life Sciences Prague,W4396842611
@@ -1378,7 +1373,6 @@ NIT Jamshedpur,Al-Balqa Applied University,W2585899097
 NIT Jamshedpur,Al-Balqa Applied University,W2940764745
 NIT Jamshedpur,Al-Balqa Applied University,W2971546887
 NIT Silchar,Universidad Internacional de La Rioja,W3207608548
-NIT Silchar,Universidad Internacional de La Rioja,W4285034620
 NIT Silchar,European Organization for Nuclear Research,W4303987476
 NIT Silchar,European Organization for Nuclear Research,W4405882258
 NIT Silchar,European Organization for Nuclear Research,W4406820272
@@ -1409,19 +1403,6 @@ NIT Silchar,Qatar University,W4411557258
 NIT Silchar,Qatar University,W4416250780
 NIT Jamshedpur,Southern University System,W4385075792
 NIT Jamshedpur,Southern University System,W4386689795
-NIT Silchar,Pohang University of Science and Technology,W4363672862
-NIT Silchar,Ajman University,W4363672862
-NIT Silchar,Ajman University,W4380051785
-NIT Silchar,Lebanese American University,W4363672862
-NIT Silchar,Lebanese American University,W4380051785
-NIT Silchar,Lebanese American University,W4385497321
-NIT Silchar,Lebanese American University,W4404007168
-NIT Silchar,Lebanese American University,W4404668327
-NIT Silchar,Noroff University College,W4363672862
-NIT Silchar,Noroff University College,W4380051785
-NIT Silchar,Forest Products Laboratory,W4363672862
-NIT Silchar,Northwest A&F University,W4313479390
-NIT Silchar,Northwest A&F University,W4363672862
 NIT Silchar,Guizhou University,W4307181647
 NIT Silchar,Guizhou University,W4321616427
 NIT Silchar,Guizhou University,W4382793859
@@ -1922,7 +1903,6 @@ NIT Jamshedpur,Auburn University,W4382983346
 NIT Jamshedpur,Jashore University of Science and Technology,W4382983346
 NIT Jamshedpur,Jashore University of Science and Technology,W4392247169
 NIT Jamshedpur,Jashore University of Science and Technology,W4396641448
-NIT Jamshedpur,Jashore University of Science and Technology,W4400520059
 NIT Jamshedpur,Jashore University of Science and Technology,W4414300662
 NIT Jamshedpur,University of Cambridge,W4382983346
 NIT Jamshedpur,National University of Ireland,W4382983346
@@ -1940,8 +1920,14 @@ NIT Silchar,Universitat Rovira i Virgili,W4303987476
 NIT Silchar,University of Nottingham Ningbo China,W4303987476
 MANIT Bhopal,Riphah International University,W4377023573
 NIT Silchar,Kongju National University,W4380051785
+NIT Silchar,Ajman University,W4380051785
+NIT Silchar,Lebanese American University,W4380051785
+NIT Silchar,Lebanese American University,W4385497321
+NIT Silchar,Lebanese American University,W4404007168
+NIT Silchar,Lebanese American University,W4404668327
 NIT Silchar,Middle East University,W4380051785
 NIT Silchar,Middle East University,W4403962683
+NIT Silchar,Noroff University College,W4380051785
 NIT Silchar,"City St George's, University of London",W4220684993
 NIT Silchar,"City St George's, University of London",W4224271536
 NIT Silchar,"City St George's, University of London",W4229378506
@@ -2592,7 +2578,6 @@ NIT Jamshedpur,Xuzhou University of Technology,W3208068609
 NIT Jamshedpur,ILMA University,W3208068609
 NIT Jamshedpur,Ecole des Hautes Etudes Commerciales du Nord,W3208068609
 NIT Silchar,University of Malaya,W2990206727
-MANIT Bhopal,King Abdulaziz City for Science and Technology,W4220967291
 NIT Silchar,RWTH Aachen University,W4316096691
 NIT Silchar,University of Central Florida,W2603544856
 NIT Jamshedpur,Universidad Autónoma de Guerrero,W2803786071
@@ -3123,7 +3108,6 @@ MANIT Bhopal,Universiti of Malaysia Sabah,W4226324902
 NIT Jamshedpur,Asian Institute of Technology,W4386187832
 NIT Silchar,Zabol University,W4388636093
 NIT Silchar,National Chung Hsing University,W4388636093
-NIT Jamshedpur,King Khalid University Hospital,W4393071336
 NIT Silchar,University of Trento,W4386387961
 NIT Silchar,University of Trento,W4386388269
 NIT Silchar,University of Trento,W4392838609
@@ -3711,6 +3695,7 @@ NIT Jamshedpur,Cracow University of Technology,W3164953032
 NIT Silchar,Auckland University of Technology,W3000755788
 NIT Silchar,Auckland University of Technology,W4221087562
 NIT Silchar,Széchenyi István University,W4313479390
+NIT Silchar,Northwest A&F University,W4313479390
 MANIT Bhopal,Schneider Electric (France),W4378191174
 MANIT Bhopal,Schneider Electric (France),W4378191320
 MANIT Bhopal,Schneider Electric (France),W4378191455
@@ -3872,7 +3857,6 @@ MANIT Bhopal,Slovak University of Technology in Bratislava,W2954851964
 MANIT Bhopal,"BGI Research, Sanya",W3135873831
 NIT Jamshedpur,Pulchowk Campus,W4293080056
 MANIT Bhopal,Munster Technological University,W4317183373
-MANIT Bhopal,Southwest University,W4383103054
 NIT Silchar,German Research Centre for Artificial Intelligence,W3198319522
 NIT Silchar,Saarland University,W3198319522
 NIT Silchar,Bandung Institute of Technology,W4213245401

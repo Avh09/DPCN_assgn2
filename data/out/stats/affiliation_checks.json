@@ -1,0 +1,94 @@
+[
+ {
+  "institution": "MANIT Bhopal",
+  "faculty": "Kumarasamy Sudhakar",
+  "checked": "2026-11-09",
+  "status": "Assistant Professor at MANIT's Energy Centre from 2010 to 2017; at Universiti Malaysia Pahang (UMPSA) since March 2017, Associate Professor since 2024.",
+  "away_since": 2017,
+  "other_affiliation": "Universiti Malaysia Pahang",
+  "evidence": "His ORCID record lists the MANIT post from June 2010 to February 2017, then Senior Lecturer at UMP from March 2017 and Associate Professor at UMPSA from April 2024. His 2021 CV on the UMPSA website calls the MANIT post 'on leave', and he is no longer listed on MANIT's Energy Science faculty page. He still prints MANIT next to UMP on most of his papers, for example DOI 10.1016/j.ijhydene.2021.01.020.",
+  "sources": [
+   "https://orcid.org/0000-0002-4867-2362",
+   "https://ftkma.umpsa.edu.my/media/attachments/2021/02/03/cv_sudhakar.pdf",
+   "https://ftkma.umpsa.edu.my/news/9-8-2021",
+   "https://vidwan.inflibnet.ac.in/profile/61759",
+   "https://www.manit.ac.in/content/energy",
+   "https://openalex.org/A5108044051"
+  ],
+  "papers": 145,
+  "citations": 11714,
+  "faculty_h_index": 56,
+  "rank_by_h_in_institute": 1,
+  "papers_after_away_year": 118,
+  "papers_after_away_year_with_other_affiliation": 114,
+  "share_of_institute_papers_%": 2.5,
+  "share_of_institute_citations_%": 12.9,
+  "institute_h_index": {
+   "all_papers": 118,
+   "his_papers_up_to_2017_only": 113,
+   "without_his_papers": 109
+  },
+  "institute_citations": {
+   "all_papers": 90499,
+   "his_papers_up_to_2017_only": 83113,
+   "without_his_papers": 78785
+  },
+  "by_year": [
+   {
+    "year": 2016,
+    "papers": 10,
+    "also_other_affiliation": 0
+   },
+   {
+    "year": 2017,
+    "papers": 17,
+    "also_other_affiliation": 14
+   },
+   {
+    "year": 2018,
+    "papers": 12,
+    "also_other_affiliation": 12
+   },
+   {
+    "year": 2019,
+    "papers": 12,
+    "also_other_affiliation": 12
+   },
+   {
+    "year": 2020,
+    "papers": 12,
+    "also_other_affiliation": 12
+   },
+   {
+    "year": 2021,
+    "papers": 25,
+    "also_other_affiliation": 25
+   },
+   {
+    "year": 2022,
+    "papers": 14,
+    "also_other_affiliation": 13
+   },
+   {
+    "year": 2023,
+    "papers": 12,
+    "also_other_affiliation": 12
+   },
+   {
+    "year": 2024,
+    "papers": 17,
+    "also_other_affiliation": 15
+   },
+   {
+    "year": 2025,
+    "papers": 11,
+    "also_other_affiliation": 10
+   },
+   {
+    "year": 2026,
+    "papers": 3,
+    "also_other_affiliation": 3
+   }
+  ]
+ }
+]

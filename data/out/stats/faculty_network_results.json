@@ -1,50 +1,50 @@
 {
  "whole_network": {
   "nodes": 800,
-  "edges": 1203,
+  "edges": 1201,
   "isolated_faculty": 152,
   "density": 0.0038,
-  "avg_collaborators": 3.01,
+  "avg_collaborators": 3.0,
   "avg_clustering": 0.186,
   "largest_component_%": 76.0,
-  "cross_department_edges_%": 23.9,
+  "cross_department_edges_%": 23.7,
   "cross_institute_edges": 33,
   "louvain": {
-   "communities": 35,
-   "modularity": 0.866,
+   "communities": 37,
+   "modularity": 0.867,
    "communities_not_internally_connected": 0
   },
   "leiden": {
-   "communities": 37,
-   "modularity": 0.864
+   "communities": 36,
+   "modularity": 0.866
   },
   "assortativity_by_institute": 0.957,
-  "assortativity_by_department": 0.728
+  "assortativity_by_department": 0.73
  },
  "MANIT Bhopal": {
   "nodes": 296,
-  "edges": 483,
+  "edges": 481,
   "isolated_faculty": 50,
-  "density": 0.0111,
-  "avg_collaborators": 3.26,
-  "avg_clustering": 0.203,
+  "density": 0.011,
+  "avg_collaborators": 3.25,
+  "avg_clustering": 0.204,
   "largest_component_%": 79.4,
-  "cross_department_edges_%": 23.6,
+  "cross_department_edges_%": 23.3,
   "cross_institute_edges": 0,
   "louvain": {
-   "communities": 16,
-   "modularity": 0.74
+   "communities": 17,
+   "modularity": 0.75
   },
   "leiden": {
-   "communities": 17,
-   "modularity": 0.742
+   "communities": 16,
+   "modularity": 0.746
   },
   "community_vs_department": {
-   "NMI": 0.637,
-   "ARI": 0.413,
+   "NMI": 0.641,
+   "ARI": 0.432,
    "departments": 17
   },
-  "assortativity_by_department": 0.731,
+  "assortativity_by_department": 0.735,
   "top5_collaborators": [
    {
     "faculty_name": "Rajesh Purohit",
@@ -56,7 +56,7 @@
     "faculty_name": "Prashant V. Baredar",
     "department": "Energy Science and Engineering",
     "collaborators": 19,
-    "joint_papers": 78
+    "joint_papers": 77
    },
    {
     "faculty_name": "Vijay Bhaskar Semwal",
@@ -81,35 +81,35 @@
    {
     "faculty_name": "Vijay Bhaskar Semwal",
     "department": "Computer Science and Engineering",
-    "betweenness": 0.11797,
+    "betweenness": 0.11852,
     "collaborators": 17,
     "collaborators_other_dept": 6
    },
    {
     "faculty_name": "Rajesh Purohit",
     "department": "Mechanical Engineering",
-    "betweenness": 0.10955,
+    "betweenness": 0.10961,
     "collaborators": 25,
     "collaborators_other_dept": 7
    },
    {
     "faculty_name": "SURESH KUMAR GAWRE",
     "department": "Electrical Engineering",
-    "betweenness": 0.08985,
+    "betweenness": 0.091,
     "collaborators": 15,
     "collaborators_other_dept": 4
    },
    {
     "faculty_name": "Vimlesh Kumar Soni",
     "department": "Mechanical Engineering",
-    "betweenness": 0.06968,
+    "betweenness": 0.06969,
     "collaborators": 4,
     "collaborators_other_dept": 0
    },
    {
     "faculty_name": "Emon Barua",
     "department": "Mechanical Engineering",
-    "betweenness": 0.06919,
+    "betweenness": 0.0692,
     "collaborators": 2,
     "collaborators_other_dept": 0
    }
@@ -126,16 +126,16 @@
   "cross_department_edges_%": 27.5,
   "cross_institute_edges": 0,
   "louvain": {
-   "communities": 18,
-   "modularity": 0.694
+   "communities": 19,
+   "modularity": 0.702
   },
   "leiden": {
    "communities": 19,
-   "modularity": 0.703
+   "modularity": 0.708
   },
   "community_vs_department": {
-   "NMI": 0.578,
-   "ARI": 0.358,
+   "NMI": 0.577,
+   "ARI": 0.339,
    "departments": 12
   },
   "assortativity_by_department": 0.686,
@@ -175,35 +175,35 @@
    {
     "faculty_name": "Kunal Singh",
     "department": "Electronics and Communication Engineering",
-    "betweenness": 0.08102,
+    "betweenness": 0.08101,
     "collaborators": 7,
     "collaborators_other_dept": 3
    },
    {
     "faculty_name": "Shiva Nand Singh",
     "department": "Electronics and Communication Engineering",
-    "betweenness": 0.06509,
+    "betweenness": 0.06498,
     "collaborators": 6,
     "collaborators_other_dept": 0
    },
    {
     "faculty_name": "Satish Kumar",
     "department": "Mechanical Engineering",
-    "betweenness": 0.06423,
+    "betweenness": 0.06435,
     "collaborators": 9,
     "collaborators_other_dept": 5
    },
    {
     "faculty_name": "Sanja y",
     "department": "Mechanical Engineering",
-    "betweenness": 0.05977,
+    "betweenness": 0.0598,
     "collaborators": 8,
     "collaborators_other_dept": 3
    },
    {
     "faculty_name": "Koushlendra Kumar Singh",
     "department": "Computer Science and Engineering",
-    "betweenness": 0.05803,
+    "betweenness": 0.05795,
     "collaborators": 9,
     "collaborators_other_dept": 3
    }
@@ -220,16 +220,16 @@
   "cross_department_edges_%": 20.8,
   "cross_institute_edges": 0,
   "louvain": {
-   "communities": 10,
-   "modularity": 0.748
+   "communities": 11,
+   "modularity": 0.755
   },
   "leiden": {
-   "communities": 11,
-   "modularity": 0.735
+   "communities": 10,
+   "modularity": 0.738
   },
   "community_vs_department": {
-   "NMI": 0.695,
-   "ARI": 0.633,
+   "NMI": 0.7,
+   "ARI": 0.652,
    "departments": 11
   },
   "assortativity_by_department": 0.754,
@@ -262,28 +262,28 @@
     "faculty_name": "Rabul Hussain Laskar",
     "department": "Electronics and Communication Engineering",
     "collaborators": 11,
-    "joint_papers": 59
+    "joint_papers": 58
    }
   ],
   "top5_brokers_betweenness": [
    {
     "faculty_name": "Ashish B. Deoghare",
     "department": "Mechanical Engineering",
-    "betweenness": 0.06874,
+    "betweenness": 0.06875,
     "collaborators": 3,
     "collaborators_other_dept": 0
    },
    {
     "faculty_name": "Krishna Murari Pandey",
     "department": "Mechanical Engineering",
-    "betweenness": 0.06539,
+    "betweenness": 0.0654,
     "collaborators": 17,
     "collaborators_other_dept": 0
    },
    {
     "faculty_name": "Shahedul Haque Laskar",
     "department": "Electronics and Instrumentation Engineering",
-    "betweenness": 0.05265,
+    "betweenness": 0.05258,
     "collaborators": 5,
     "collaborators_other_dept": 1
    },
@@ -297,7 +297,7 @@
    {
     "faculty_name": "Biplab Das",
     "department": "Mechanical Engineering",
-    "betweenness": 0.04413,
+    "betweenness": 0.04414,
     "collaborators": 16,
     "collaborators_other_dept": 4
    }
@@ -305,16 +305,16 @@
  },
  "largest_leiden_communities": [
   {
-   "size": 69,
+   "size": 64,
    "institutes": {
-    "MANIT Bhopal": 68,
+    "MANIT Bhopal": 63,
     "NIT Jamshedpur": 1
    },
    "departments": {
     "Mechanical Engineering": 31,
-    "Civil Engineering": 14,
     "Energy Science and Engineering": 8,
-    "Humanities and Social Sciences": 4
+    "Civil Engineering": 8,
+    "Management Studies": 6
    },
    "top_members": [
     "Rajesh Purohit",
@@ -323,33 +323,15 @@
    ]
   },
   {
-   "size": 48,
+   "size": 53,
    "institutes": {
-    "NIT Silchar": 45,
-    "NIT Jamshedpur": 3
-   },
-   "departments": {
-    "Electronics and Communication Engineering": 39,
-    "Mathematics": 4,
-    "Electronics and Instrumentation Engineering": 2,
-    "Electrical Engineering": 2
-   },
-   "top_members": [
-    "Fazal A. Talukdar",
-    "Krishna Lal Baishnab",
-    "Brinda Bhowmick"
-   ]
-  },
-  {
-   "size": 46,
-   "institutes": {
-    "NIT Jamshedpur": 46
+    "NIT Jamshedpur": 53
    },
    "departments": {
     "Computer Science and Engineering": 19,
-    "Electronics and Communication Engineering": 12,
-    "Chemistry": 4,
-    "Computer Applications": 3
+    "Electronics and Communication Engineering": 14,
+    "Mechanical Engineering": 6,
+    "Chemistry": 4
    },
    "top_members": [
     "AMIT PRAKASH",
@@ -358,35 +340,34 @@
    ]
   },
   {
-   "size": 44,
+   "size": 42,
    "institutes": {
-    "NIT Jamshedpur": 41,
-    "MANIT Bhopal": 3
+    "NIT Silchar": 42
    },
    "departments": {
-    "Mechanical Engineering": 19,
-    "Production and Industrial Engineering": 15,
-    "Mathematics": 4,
-    "Physics": 3
+    "Electronics and Communication Engineering": 37,
+    "Electronics and Instrumentation Engineering": 2,
+    "Electrical Engineering": 2,
+    "Mathematics": 1
    },
    "top_members": [
-    "Shashi Bhushan Prasad",
-    "Mani Kant Paswan",
-    "RAJ BALLAV"
+    "Fazal A. Talukdar",
+    "Krishna Lal Baishnab",
+    "Brinda Bhowmick"
    ]
   },
   {
-   "size": 42,
+   "size": 40,
    "institutes": {
-    "NIT Silchar": 40,
+    "NIT Silchar": 38,
     "MANIT Bhopal": 1,
     "NIT Jamshedpur": 1
    },
    "departments": {
-    "Mechanical Engineering": 33,
-    "Electronics and Instrumentation Engineering": 5,
+    "Mechanical Engineering": 35,
     "Mathematics": 2,
-    "Civil Engineering": 2
+    "Electronics and Instrumentation Engineering": 1,
+    "Civil Engineering": 1
    },
    "top_members": [
     "Krishna Murari Pandey",
@@ -395,20 +376,54 @@
    ]
   },
   {
-   "size": 39,
+   "size": 38,
    "institutes": {
-    "MANIT Bhopal": 39
+    "MANIT Bhopal": 38
    },
    "departments": {
     "Electronics and Communication Engineering": 27,
     "Physics": 7,
-    "Chemistry": 4,
-    "Chemical Engineering": 1
+    "Chemistry": 4
    },
    "top_members": [
     "Vijayshri Chaurasia",
     "M. M. Malik",
     "Madhu Shandilya"
+   ]
+  },
+  {
+   "size": 35,
+   "institutes": {
+    "NIT Jamshedpur": 32,
+    "MANIT Bhopal": 3
+   },
+   "departments": {
+    "Mechanical Engineering": 16,
+    "Production and Industrial Engineering": 14,
+    "Computer Applications": 1,
+    "Civil Engineering": 1
+   },
+   "top_members": [
+    "Shashi Bhushan Prasad",
+    "Mani Kant Paswan",
+    "RAJ BALLAV"
+   ]
+  },
+  {
+   "size": 35,
+   "institutes": {
+    "MANIT Bhopal": 35
+   },
+   "departments": {
+    "Electrical Engineering": 26,
+    "Mechanical Engineering": 5,
+    "Computer Science and Engineering": 2,
+    "Energy Science and Engineering": 1
+   },
+   "top_members": [
+    "Sushma Gupta",
+    "Anoop Arya",
+    "Savita Nema"
    ]
   },
   {
@@ -427,23 +442,6 @@
     "Satyabrata Choudhury",
     "Monowar Hussain",
     "Parthajit Roy"
-   ]
-  },
-  {
-   "size": 35,
-   "institutes": {
-    "MANIT Bhopal": 35
-   },
-   "departments": {
-    "Electrical Engineering": 26,
-    "Mechanical Engineering": 5,
-    "Computer Science and Engineering": 2,
-    "Electronics and Communication Engineering": 1
-   },
-   "top_members": [
-    "Sushma Gupta",
-    "Anoop Arya",
-    "Priyanka Paliwal"
    ]
   }
  ]

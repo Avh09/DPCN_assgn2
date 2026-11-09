@@ -71,8 +71,37 @@ def structure():
     return m
 
 
+def retractions(m):
+    print("\n== 1b. Retracted and withdrawn papers are out of the analysis corpus (retractions.py)")
+    ref = pd.read_csv(config.ROOT / "data" / "ref" / "retracted_papers.csv", dtype=str)
+    bad = set(ref.openalex_work_id)
+    ex = OUT / "work_extras.csv"
+    if ex.exists():
+        w = pd.read_csv(ex, dtype=str, usecols=["openalex_work_id", "is_retracted"])
+        flagged = set(w[w.is_retracted.str.lower() == "true"].openalex_work_id)
+        check("every paper OpenAlex flags as retracted is in data/ref/retracted_papers.csv (checked list)",
+              flagged <= bad, f"not yet checked: {sorted(flagged - bad)[:5]}", warn=True)
+        bad |= flagged
+    wid = m.openalex_work_id.str.split("/").str[-1]
+    check("group15_data.csv has no retracted or withdrawn paper", not wid.isin(bad).any(), f"{int(wid.isin(bad).sum())} rows")
+    p = pd.read_csv(OUT / "papers_enriched.csv", dtype=str, usecols=["openalex_work_id", "doi"])
+    check("papers_enriched.csv has no retracted or withdrawn paper", not p.openalex_work_id.isin(bad).any())
+    gone = set(pd.read_csv(OUT / "group15_retracted.csv", dtype=str).doi.dropna()) if (OUT / "group15_retracted.csv").exists() else set()
+    for f in ("citation_network.csv", "authorship_network.csv"):
+        d = pd.read_csv(OUT / f, dtype=str)
+        col = "paper_doi" if f.startswith("authorship") else None
+        hit = d[col].isin(gone).sum() if col else (d.source_doi.isin(gone) | d.target_doi.isin(gone)).sum()
+        check(f"{f} has no edge from a retracted or withdrawn paper", hit == 0, f"{int(hit)} edges")
+    k = OUT / "group15_retracted.csv"
+    check("removed papers are kept, flagged, in group15_retracted.csv",
+          k.exists() and set(pd.read_csv(k, dtype=str).openalex_work_id.str.split("/").str[-1]) >= set(ref.openalex_work_id))
+
+
 def citations(m):
     print("\n== 2. Citation flow: recomputed independently from the raw download")
+    if not (config.RAW_DIR / "links" / "citing.jsonl").exists():
+        check("citation-flow recheck skipped: data/raw/links/citing.jsonl not present (copy data/raw/ to run it)", False, warn=True)
+        return
     p = pd.read_csv(OUT / "papers_enriched.csv", usecols=["openalex_work_id", "our_institutes", "citations"])
     our = {w: set(o.split(";")) for w, o in zip(p.openalex_work_id, p.our_institutes) if isinstance(o, str)}
     own_names = {v["official_name"].lower(): k for k, v in config.INSTITUTES.items()}
@@ -165,6 +194,10 @@ def faculty(m):
     check("every correction states its evidence", ov.get("evidence", pd.Series(dtype=str)).astype(bool).all())
     perf = pd.read_csv(OUT / "stats" / "faculty_performance.csv")
     f = m[m.is_faculty == "TRUE"].copy()
+    # m is the unfiltered table: leave out the retracted / withdrawn papers that retractions.py took out of the corpus
+    rp = config.ROOT / "data" / "ref" / "retracted_papers.csv"
+    if rp.exists():
+        f = f[~f.openalex_work_id.str.split("/").str[-1].isin(set(pd.read_csv(rp, dtype=str).openalex_work_id))]
     f["citations"] = f.citations.astype(int)
     g = f.drop_duplicates(["institution", "faculty_name", "openalex_work_id"]).groupby(["institution", "faculty_name"])
     rec = pd.DataFrame({"p": g.size(), "c": g.citations.sum(), "h": g.citations.apply(h_index)}).reset_index()
@@ -225,6 +258,9 @@ def functions():
     check("NMI = 0 for independent groupings", abs(nmi([0, 0, 1, 1], [0, 1, 0, 1])) < 1e-9)
     check("ARI = 1 for the same grouping, -0.5 for the textbook example",
           abs(ari(a, b) - 1) < 1e-9 and abs(ari([0, 0, 1, 1], [0, 1, 0, 1]) + 0.5) < 1e-9)
+    if not (config.RAW_DIR / "links" / "subfields.json").exists():
+        check("weighted Jaccard recheck skipped: data/raw/links/subfields.json not present", False, warn=True)
+        return
     sub = json.loads((config.RAW_DIR / "links" / "subfields.json").read_text())
     det = pd.read_csv(OUT / "indian_connections_detailed.csv").dropna(subset=["weighted_jaccard"]).iloc[0]
     A, B = sub[config.INSTITUTES[det.your_inst]["openalex_id"]], sub[det.partner_id]
@@ -292,6 +328,7 @@ def live(m):
 
 def main():
     m = structure()
+    retractions(m)
     citations(m)
     # the faculty checks need every author row (group15_data.csv keeps faculty rows only): corpus_filter.py keeps the full table
     full = OUT / "all_authors" / "group15_data.csv"

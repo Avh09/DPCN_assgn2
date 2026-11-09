@@ -1,23 +1,23 @@
 {
  "edges_by_kind": {
   "overall": {
-   "author_self": 24625,
-   "same_institute_other_author": 2401,
-   "between_our_institutes": 1014
+   "author_self": 24563,
+   "same_institute_other_author": 2395,
+   "between_our_institutes": 1013
   },
   "MANIT Bhopal": {
-   "author_self": 5323,
-   "same_institute_other_author": 759,
+   "author_self": 5307,
+   "same_institute_other_author": 758,
    "between_our_institutes": 354
   },
   "NIT Jamshedpur": {
-   "author_self": 3451,
+   "author_self": 3441,
    "same_institute_other_author": 347,
-   "between_our_institutes": 247
+   "between_our_institutes": 246
   },
   "NIT Silchar": {
-   "author_self": 15939,
-   "same_institute_other_author": 1316,
+   "author_self": 15903,
+   "same_institute_other_author": 1311,
    "between_our_institutes": 413
   }
  },

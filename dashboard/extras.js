@@ -287,14 +287,68 @@ function methodExtra() {
   addSection('method', 'md-quality', card('How reliable is the data and what do terms mean?', 'Counts are computed from the final tables.', table(['Check', 'Value'], [
     ['Papers in corpus (verified faculty, 2016–2026)', fmt(P.length)], ['Papers without a DOI (kept; analysed by OpenAlex work ID)', fmt(P.filter(p => !p[T.doi]).length)],
     ['Duplicate records merged into one paper', fmt(D.dupMerged)], ['Faculty with department “Unknown department”', fmt(unk)], ['Papers with a field-weighted impact value', fmt(P.filter(p => p[T.fwci] != null).length)],
-    ['Conference papers with an identified conference', fmt(cr.in_final_corpus.named_conference) + ' of ' + fmt(cr.in_final_corpus.conference_papers)]])) +
+    ['Conference papers with an identified conference', fmt(cr.in_final_corpus.named_conference) + ' of ' + fmt(cr.in_final_corpus.conference_papers)],
+    ...(D.retractions ? [['Retracted or withdrawn papers (left out of all counts)', fmt(D.retractions.papers_removed) + ' papers (' + fmt(D.retractions.citations_of_removed_papers) + ' citations)']] : [])])) +
     `<div class="note-warn">Definitions. <b>Q1 share</b> = Q1 journal papers ÷ journal papers with a quartile; conferences use CORE ranks separately. <b>Within-corpus PageRank/in-degree</b> use only links between papers in this corpus. <b>Not calculated ≠ zero</b>: topic similarity is blank when a paper has no topic assignment. <b>2026</b> is a partial year in every time series. <b>Career h-index</b> is not computed; faculty h-index counts only 2016–2026 papers here.</div>`);
 }
 function F_unknown() { return D.fac.filter(f => f.d === 'Unknown department').length; }
 
+// ---------------------------------------------------------------- Faculty: one researcher on leave (affiliation_checks.py)
+function addAfterHead(tab, id, html) {
+  const sec = $('#tab-' + tab); if (!sec || $('#' + id)) return;
+  const d = document.createElement('div'); d.id = id; d.className = 'mt'; d.innerHTML = html;
+  const head = sec.querySelector('.page-head'); head ? head.after(d) : sec.prepend(d);
+}
+const srcName = u => /orcid\.org/.test(u) ? 'ORCID' : /cv_/.test(u) ? 'CV (UMPSA)' : /umpsa|ump\.edu/.test(u) ? 'UMPSA news' : /vidwan/.test(u) ? 'Vidwan profile' : /manit\.ac\.in/.test(u) ? 'MANIT faculty page' : /openalex\.org/.test(u) ? 'OpenAlex' : u.replace(/^https?:\/\/(www\.)?/, '').split('/')[0];
+
+function affiliationExtra() {
+  const C = D.affiliationChecks || [];
+  if (!C.length) return;
+  C.forEach((c, n) => {
+    const s = SH[I.indexOf(c.institution)] || c.institution, h = c.institute_h_index, ct = c.institute_citations, ks = Object.keys(h);
+    const label = { [ks[0]]: 'All papers', [ks[1]]: `His papers up to ${c.away_since} only`, [ks[2]]: 'Without his papers' };
+    const max = Math.max(...c.by_year.map(y => y.papers), 1);
+    const bars = c.by_year.map(y => `<div style="display:grid;grid-template-columns:44px 1fr 56px;gap:8px;align-items:center;font-size:12.5px">
+      <span class="num">${y.year}</span>
+      <span style="display:flex;height:12px;border-radius:3px;overflow:hidden;background:var(--rule,rgba(128,128,128,.15))">
+        <span title="Also lists ${esc(c.other_affiliation)}" style="width:${100 * y.also_other_affiliation / max}%;background:var(--warn,#d97706)"></span>
+        <span title="${esc(s)} only" style="width:${100 * (y.papers - y.also_other_affiliation) / max}%;background:var(--brand,#2563eb)"></span></span>
+      <span class="num">${y.papers}</span></div>`).join('');
+    addAfterHead('faculty', 'fc-affil' + (n ? n : ''), card(`How much does ${esc(s)}’s h-index rest on ${esc(c.faculty)}?`,
+      `${esc(c.status)} His papers carry ${esc(s)}’s name, so they stay in the data.`,
+      `<div class="kpis" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:4px 0 14px">` +
+        ks.map(k => `<div><div class="explain" style="margin:0">${label[k]}</div><div style="font-size:26px;font-weight:600" class="num">${fmt(h[k])}</div><div class="explain" style="margin:0">h-index · ${fmt(ct[k])} citations</div></div>`).join('') + `</div>` +
+      `<p class="explain">He has ${c['share_of_institute_papers_%']}% of ${esc(s)}’s papers but ${c['share_of_institute_citations_%']}% of its citations, and the highest h-index at the institute (${fmt(c.faculty_h_index)}). ` +
+      `Since ${c.away_since}, ${fmt(c.papers_after_away_year_with_other_affiliation)} of his ${fmt(c.papers_after_away_year)} papers also list ${esc(c.other_affiliation)}.</p>` +
+      `<div style="display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;margin:12px 0 6px;font-size:12.5px;color:var(--muted)">` +
+        `<span style="font-weight:600;color:var(--ink)">His papers per year</span>` +
+        `<span style="display:inline-flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:3px;background:var(--brand,#2563eb)"></span>Listed with ${esc(s)} only</span>` +
+        `<span style="display:inline-flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:3px;background:var(--warn,#d97706)"></span>Listed with ${esc(s)} and ${esc(c.other_affiliation)}</span></div>` +
+      `<div style="display:grid;gap:4px;max-width:560px;margin:0 0 12px">${bars}</div>` +
+      `<p class="explain">${esc(c.evidence)} Sources: ${c.sources.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(srcName(u))}</a>`).join(' · ')}.</p>`));
+  });
+}
+
+// ---------------------------------------------------------------- Method: retracted and withdrawn papers (retractions.py)
+function retractionsExtra() {
+  const R = D.retractions;
+  if (!R || !R.papers) return;
+  const cats = Object.entries(R.by_reason_category).sort((a, b) => b[1] - a[1]);
+  const rows = R.papers.map(p => [`${esc(p.title.replace(/^(RETRACTED( ARTICLE)?|Retracted|WITHDRAWN)\s*:\s*/i, ''))}${p.doi ? ` <a href="${esc(p.doi)}" target="_blank" rel="noopener">↗</a>` : ''}`,
+    esc(SH[I.indexOf(p.inst)] || p.inst), p.year, fmt(p.cites), esc(p.category), esc(p.faculty)]);
+  addSection('method', 'md-retracted', card('Which papers were retracted?',
+    `${fmt(R.papers_removed)} papers have been retracted or withdrawn by their publishers. They are left out of every count, h-index, ranking and network on this dashboard.`,
+    table(['Institute', 'Papers', 'Citations'], I.map(n => [n, fmt((R.by_institution[n] || {}).papers || 0), fmt((R.by_institution[n] || {}).citations || 0)])) +
+    table(['Reason', 'Papers'], cats.map(([k, v]) => [esc(k), fmt(v)])) +
+    `<details><summary>Show all ${fmt(R.papers_removed)} papers</summary>` +
+    `<div class="tbl-wrap"><table><thead><tr><th>Paper</th><th>Inst.</th><th class="r">Year</th><th class="r">Cites</th><th>Reason</th><th>Faculty author(s)</th></tr></thead><tbody>` +
+    rows.map(r => `<tr>${r.map((c, i) => `<td class="${[2, 3].includes(i) ? 'r num' : ''}">${c}</td>`).join('')}</tr>`).join('') + `</tbody></table></div></details>` +
+    `<div class="note-warn">A retraction does not by itself mean the authors did something wrong. Most of these came from publisher investigations of whole batches of papers, and several authors dispute their retraction. Reasons are taken from the Retraction Watch database and the publishers’ notices.</div>`));
+}
+
 // ---------------------------------------------------------------- wiring
 if ($('#facCount')) $('#facCount').textContent = fmt(D.fac.length);
-const wrap = { collab: () => { collabExtra(); moversExtra(); }, overview: () => { overviewExtra(); whyExtra(); instStrip(); }, pubs: pubsExtra, faculty: facultyExtra, papers: papersExtra, citnet: citnetExtra, method: methodExtra };
+const wrap = { collab: () => { collabExtra(); moversExtra(); }, overview: () => { overviewExtra(); whyExtra(); instStrip(); }, pubs: pubsExtra, faculty: () => { facultyExtra(); affiliationExtra(); }, papers: papersExtra, citnet: citnetExtra, method: () => { methodExtra(); retractionsExtra(); } };
 const original = { ...A.RENDER };
 Object.keys(wrap).forEach(tab => { const base = A.RENDER[tab]; A.RENDER[tab] = () => { base(); try { wrap[tab](); } catch (e) { console.error('extras', tab, e); } renderFindings(tab); }; });
 ['reach', 'flows'].forEach(tab => { const base = A.RENDER[tab]; A.RENDER[tab] = () => { base(); renderFindings(tab); }; });

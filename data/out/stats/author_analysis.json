@@ -3,8 +3,8 @@
   "faculty_listed": 296,
   "faculty_with_papers": 296,
   "faculty_without_papers": 0,
-  "papers_per_faculty_median": 18.0,
-  "papers_per_faculty_mean": 24.6,
+  "papers_per_faculty_median": 17.0,
+  "papers_per_faculty_mean": 24.5,
   "h_index_median": 6.0,
   "h_index_p90": 14.0,
   "h_index_max": 56,
@@ -12,7 +12,7 @@
   "top10_share_of_citations_%": 35.9,
   "top10_by_papers_share_of_papers_%": 15.6,
   "gini_papers_per_faculty": 0.499,
-  "gini_citations_per_faculty": 0.726,
+  "gini_citations_per_faculty": 0.727,
   "faculty_median_q1_share_%": 28.450000000000003,
   "top5_h_index": [
    {
@@ -24,14 +24,14 @@
    {
     "faculty_name": "Tikendra Nath Verma",
     "h_index": 37,
-    "papers": 145,
-    "citations": 4256
+    "papers": 144,
+    "citations": 4224
    },
    {
     "faculty_name": "Prashant V. Baredar",
     "h_index": 36,
-    "papers": 113,
-    "citations": 5818
+    "papers": 112,
+    "citations": 5803
    },
    {
     "faculty_name": "Gaurav Dwivedi",
@@ -61,8 +61,8 @@
    },
    {
     "faculty_name": "Tikendra Nath Verma",
-    "papers": 145,
-    "citations": 4256,
+    "papers": 144,
+    "citations": 4224,
     "h_index": 37
    },
    {
@@ -73,8 +73,8 @@
    },
    {
     "faculty_name": "Prashant V. Baredar",
-    "papers": 113,
-    "citations": 5818,
+    "papers": 112,
+    "citations": 5803,
     "h_index": 36
    }
   ],
@@ -87,14 +87,14 @@
    },
    {
     "faculty_name": "Prashant V. Baredar",
-    "citations": 5818,
-    "papers": 113,
+    "citations": 5803,
+    "papers": 112,
     "h_index": 36
    },
    {
     "faculty_name": "Tikendra Nath Verma",
-    "citations": 4256,
-    "papers": 145,
+    "citations": 4224,
+    "papers": 144,
     "h_index": 37
    },
    {
@@ -148,7 +148,7 @@
   "faculty_with_papers": 235,
   "faculty_without_papers": 0,
   "papers_per_faculty_median": 13.0,
-  "papers_per_faculty_mean": 17.8,
+  "papers_per_faculty_mean": 17.7,
   "h_index_median": 4.0,
   "h_index_p90": 11.0,
   "h_index_max": 42,
@@ -156,7 +156,7 @@
   "top10_share_of_citations_%": 38.6,
   "top10_by_papers_share_of_papers_%": 20.1,
   "gini_papers_per_faculty": 0.54,
-  "gini_citations_per_faculty": 0.723,
+  "gini_citations_per_faculty": 0.724,
   "faculty_median_q1_share_%": 20.0,
   "top5_h_index": [
    {
@@ -168,8 +168,8 @@
    {
     "faculty_name": "Balram Ambade",
     "h_index": 34,
-    "papers": 92,
-    "citations": 4686
+    "papers": 91,
+    "citations": 4679
    },
    {
     "faculty_name": "RASHMI SINHA",
@@ -186,8 +186,8 @@
    {
     "faculty_name": "Dilip Kumar (Computer Science and Engineering)",
     "h_index": 16,
-    "papers": 34,
-    "citations": 656
+    "papers": 33,
+    "citations": 647
    }
   ],
   "top5_papers": [
@@ -199,8 +199,8 @@
    },
    {
     "faculty_name": "Balram Ambade",
-    "papers": 92,
-    "citations": 4686,
+    "papers": 91,
+    "citations": 4679,
     "h_index": 34
    },
    {
@@ -231,8 +231,8 @@
    },
    {
     "faculty_name": "Balram Ambade",
-    "citations": 4686,
-    "papers": 92,
+    "citations": 4679,
+    "papers": 91,
     "h_index": 34
    },
    {
@@ -292,7 +292,7 @@
   "faculty_with_papers": 276,
   "faculty_without_papers": 0,
   "papers_per_faculty_median": 23.0,
-  "papers_per_faculty_mean": 38.0,
+  "papers_per_faculty_mean": 37.9,
   "h_index_median": 7.0,
   "h_index_p90": 22.0,
   "h_index_max": 54,
@@ -311,9 +311,9 @@
    },
    {
     "faculty_name": "Samuel Lalthazuala Rokhum",
-    "h_index": 47,
-    "papers": 186,
-    "citations": 7193
+    "h_index": 46,
+    "papers": 185,
+    "citations": 7108
    },
    {
     "faculty_name": "Krishna Murari Pandey",
@@ -355,15 +355,15 @@
    },
    {
     "faculty_name": "Rabul Hussain Laskar",
-    "papers": 193,
-    "citations": 2311,
+    "papers": 190,
+    "citations": 2281,
     "h_index": 24
    },
    {
-    "faculty_name": "Samuel Lalthazuala Rokhum",
+    "faculty_name": "Trupti Ranjan Lenka",
     "papers": 186,
-    "citations": 7193,
-    "h_index": 47
+    "citations": 2193,
+    "h_index": 24
    }
   ],
   "top5_citations": [
@@ -375,9 +375,9 @@
    },
    {
     "faculty_name": "Samuel Lalthazuala Rokhum",
-    "citations": 7193,
-    "papers": 186,
-    "h_index": 47
+    "citations": 7108,
+    "papers": 185,
+    "h_index": 46
    },
    {
     "faculty_name": "Krishna Murari Pandey",
@@ -435,31 +435,31 @@
   {
    "faculty_name": "Vijay Bhaskar Semwal",
    "institution": "MANIT Bhopal",
-   "betweenness": 0.11797,
+   "betweenness": 0.11852,
    "collaborators": 17.0
   },
   {
    "faculty_name": "Rajesh Purohit",
    "institution": "MANIT Bhopal",
-   "betweenness": 0.10955,
+   "betweenness": 0.10961,
    "collaborators": 25.0
   },
   {
    "faculty_name": "SURESH KUMAR GAWRE",
    "institution": "MANIT Bhopal",
-   "betweenness": 0.08985,
+   "betweenness": 0.091,
    "collaborators": 15.0
   },
   {
    "faculty_name": "Kunal Singh",
    "institution": "NIT Jamshedpur",
-   "betweenness": 0.08102,
+   "betweenness": 0.08101,
    "collaborators": 7.0
   },
   {
    "faculty_name": "Vimlesh Kumar Soni",
    "institution": "MANIT Bhopal",
-   "betweenness": 0.06968,
+   "betweenness": 0.06969,
    "collaborators": 4.0
   }
  ],

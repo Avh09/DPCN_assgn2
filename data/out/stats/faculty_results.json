@@ -40,16 +40,16 @@
     "faculty_status": "current",
     "department": "Mechanical Engineering",
     "h_index": 37,
-    "papers": 145,
-    "citations": 4256
+    "papers": 144,
+    "citations": 4224
    },
    {
     "faculty_name": "Prashant V. Baredar",
     "faculty_status": "current",
     "department": "Energy Science and Engineering",
     "h_index": 36,
-    "papers": 113,
-    "citations": 5818
+    "papers": 112,
+    "citations": 5803
    },
    {
     "faculty_name": "Gaurav Dwivedi",
@@ -72,37 +72,37 @@
    {
     "department": "Mechanical Engineering",
     "faculty_matched": 46,
-    "papers": 1120,
+    "papers": 1119,
     "median_h_index": 8.0,
-    "q1_share_%": 34.5
+    "q1_share_%": 34.4
    },
    {
     "department": "Computer Science and Engineering",
     "faculty_matched": 32,
-    "papers": 849,
+    "papers": 845,
     "median_h_index": 8.0,
-    "q1_share_%": 40.0
+    "q1_share_%": 40.1
    },
    {
     "department": "Electrical Engineering",
     "faculty_matched": 29,
-    "papers": 793,
+    "papers": 792,
     "median_h_index": 9.0,
-    "q1_share_%": 33.8
+    "q1_share_%": 33.9
    },
    {
     "department": "Electronics and Communication Engineering",
     "faculty_matched": 31,
-    "papers": 645,
+    "papers": 644,
     "median_h_index": 6.0,
-    "q1_share_%": 21.6
+    "q1_share_%": 21.7
    },
    {
     "department": "Civil Engineering",
     "faculty_matched": 39,
-    "papers": 507,
+    "papers": 503,
     "median_h_index": 4.0,
-    "q1_share_%": 28.8
+    "q1_share_%": 28.6
    }
   ]
  },
@@ -147,8 +147,8 @@
     "faculty_status": "current",
     "department": "Chemistry",
     "h_index": 34,
-    "papers": 92,
-    "citations": 4686
+    "papers": 91,
+    "citations": 4679
    },
    {
     "faculty_name": "RASHMI SINHA",
@@ -171,15 +171,15 @@
     "faculty_status": "current",
     "department": "Computer Science and Engineering",
     "h_index": 16,
-    "papers": 34,
-    "citations": 656
+    "papers": 33,
+    "citations": 647
    }
   ],
   "top_departments_by_papers": [
    {
     "department": "Mechanical Engineering",
     "faculty_matched": 39,
-    "papers": 665,
+    "papers": 664,
     "median_h_index": 5.0,
     "q1_share_%": 26.0
    },
@@ -200,9 +200,9 @@
    {
     "department": "Computer Science and Engineering",
     "faculty_matched": 26,
-    "papers": 443,
+    "papers": 442,
     "median_h_index": 5.0,
-    "q1_share_%": 38.5
+    "q1_share_%": 38.3
    },
    {
     "department": "Mathematics",
@@ -253,9 +253,9 @@
     "faculty_name": "Samuel Lalthazuala Rokhum",
     "faculty_status": "current",
     "department": "Chemistry",
-    "h_index": 47,
-    "papers": 186,
-    "citations": 7193
+    "h_index": 46,
+    "papers": 185,
+    "citations": 7108
    },
    {
     "faculty_name": "Krishna Murari Pandey",
@@ -286,37 +286,37 @@
    {
     "department": "Electronics and Communication Engineering",
     "faculty_matched": 37,
-    "papers": 1870,
+    "papers": 1864,
     "median_h_index": 13.0,
     "q1_share_%": 21.0
    },
    {
     "department": "Mechanical Engineering",
     "faculty_matched": 46,
-    "papers": 1669,
+    "papers": 1668,
     "median_h_index": 9.5,
     "q1_share_%": 37.7
    },
    {
     "department": "Electrical Engineering",
     "faculty_matched": 38,
-    "papers": 1471,
-    "median_h_index": 8.5,
-    "q1_share_%": 43.8
+    "papers": 1469,
+    "median_h_index": 8.0,
+    "q1_share_%": 43.9
    },
    {
     "department": "Computer Science and Engineering",
     "faculty_matched": 28,
-    "papers": 945,
+    "papers": 944,
     "median_h_index": 9.0,
-    "q1_share_%": 38.1
+    "q1_share_%": 38.0
    },
    {
     "department": "Civil Engineering",
     "faculty_matched": 44,
-    "papers": 774,
+    "papers": 773,
     "median_h_index": 5.5,
-    "q1_share_%": 32.7
+    "q1_share_%": 32.6
    }
   ]
  }

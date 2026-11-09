@@ -1,0 +1,396 @@
+{
+ "papers_removed": 33,
+ "citations_of_removed_papers": 537,
+ "by_status": {
+  "retracted": 32,
+  "withdrawn": 1
+ },
+ "by_reason_category": {
+  "Compromised peer review or editorial misconduct": 14,
+  "Garbled wording, generated text or image problems": 10,
+  "Plagiarism, duplication or data problems": 6,
+  "No reason available": 2,
+  "Unreliable results or references": 1
+ },
+ "by_institution": {
+  "MANIT Bhopal": {
+   "papers": 13,
+   "citations": 185
+  },
+  "NIT Jamshedpur": {
+   "papers": 7,
+   "citations": 66
+  },
+  "NIT Silchar": {
+   "papers": 13,
+   "citations": 286
+  }
+ },
+ "faculty_rows_removed": 40,
+ "source": "data/ref/retracted_papers.csv (Crossref, Retraction Watch database and publisher notices, checked 2026-11-08)",
+ "papers": [
+  {
+   "wid": "W4363672862",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED: A strategic review on sustainable approaches in municipal solid waste management and energy recovery: Role of artificial intelligence, economic stability and life cycle assessment",
+   "year": "2023",
+   "cites": 85,
+   "doi": "https://doi.org/10.1016/j.biortech.2023.129044",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Samuel Lalthazuala Rokhum"
+  },
+  {
+   "wid": "W4226429073",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED ARTICLE: Imputation of missing precipitation data using KNN, SOM, RF, and FNN",
+   "year": "2022",
+   "cites": 53,
+   "doi": "https://doi.org/10.1007/s00500-022-07029-4",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Dillip Kumar Ghose"
+  },
+  {
+   "wid": "W3156786002",
+   "inst": "MANIT Bhopal",
+   "title": "Handwritten Digit Recognition of MNIST dataset using Deep Learning state-of-the-art Artificial Neural Network (ANN) and Convolutional Neural Network (CNN)",
+   "year": "2021",
+   "cites": 47,
+   "doi": "https://doi.org/10.1109/esci50559.2021.9396870",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "Akhtar Rasool"
+  },
+  {
+   "wid": "W4220967291",
+   "inst": "MANIT Bhopal",
+   "title": "[Retracted] An Improved Secure Key Generation Using Enhanced Identity‐Based Encryption for Cloud Computing in Large‐Scale 5G",
+   "year": "2022",
+   "cites": 40,
+   "doi": "https://doi.org/10.1155/2022/7291250",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "R. K. Pateriya"
+  },
+  {
+   "wid": "W3041747145",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED ARTICLE: A Novel Adaptive Optimized Fast Blind Channel Estimation for Cyclic Prefix Assisted Space–Time Block Coded MIMO-OFDM Systems",
+   "year": "2020",
+   "cites": 33,
+   "doi": "https://doi.org/10.1007/s11277-020-07629-z",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Arnab Nandi"
+  },
+  {
+   "wid": "W4386170145",
+   "inst": "MANIT Bhopal",
+   "title": "RETRACTED: Effects of different biofuels and their mixtures with diesel fuel on diesel engine performance and exhausts",
+   "year": "2023",
+   "cites": 32,
+   "doi": "https://doi.org/10.1016/j.scitotenv.2023.166501",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Tikendra Nath Verma"
+  },
+  {
+   "wid": "W3210924584",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED ARTICLE: A review of hashing based image authentication techniques",
+   "year": "2021",
+   "cites": 24,
+   "doi": "https://doi.org/10.1007/s11042-021-11649-7",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "Rabul Hussain Laskar; Ram Kumar Karsh"
+  },
+  {
+   "wid": "W4285034620",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED ARTICLE: Audio-Visual Automatic Speech Recognition Towards Education for Disabilities",
+   "year": "2022",
+   "cites": 19,
+   "doi": "https://doi.org/10.1007/s10803-022-05654-4",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Pinki Roy"
+  },
+  {
+   "wid": "W3037599334",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED ARTICLE: An abnormality detection of retinal fundus images by deep convolutional neural networks",
+   "year": "2020",
+   "cites": 18,
+   "doi": "https://doi.org/10.1007/s11042-020-09217-6",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "R. Murugan"
+  },
+  {
+   "wid": "W2915872807",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED: Optimal control of fractional order singular system",
+   "year": "2019",
+   "cites": 16,
+   "doi": "https://doi.org/10.1177/0020720919833031",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Raj Kumar Biswas"
+  },
+  {
+   "wid": "W4291021417",
+   "inst": "MANIT Bhopal",
+   "title": "RETRACTED ARTICLE: A review on comparative study of Savonius wind turbine rotor performance parameters",
+   "year": "2022",
+   "cites": 15,
+   "doi": "https://doi.org/10.1007/s11356-022-22399-w",
+   "status": "retracted",
+   "category": "Plagiarism, duplication or data problems",
+   "faculty": "Meena Agrawal; Prashant V. Baredar"
+  },
+  {
+   "wid": "W4387780089",
+   "inst": "MANIT Bhopal",
+   "title": "RETRACTED: Multiencoder‐based federated intelligent deep learning model for brain tumor segmentation",
+   "year": "2023",
+   "cites": 14,
+   "doi": "https://doi.org/10.1002/ima.22981",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Deepak Singh Tomar; Rishi Kumar Singh; Vaibhav Soni"
+  },
+  {
+   "wid": "W3035718644",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED: A novel cascaded fuzzy PD-PI controller for load frequency study of solar-thermal/wind generator-based interconnected power system using grasshopper optimization algorithm",
+   "year": "2020",
+   "cites": 14,
+   "doi": "https://doi.org/10.1177/0020720920930365",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Nalin Behari Dev Choudhury"
+  },
+  {
+   "wid": "W4393071336",
+   "inst": "NIT Jamshedpur",
+   "title": "RETRACTED: An assessment of the impact of traditional rice cooking practice and eating habits on arsenic and iron transfer into the food chain of smallholders of Indo-Gangetic plain of South-Asia: Using AMMI and Monte-Carlo simulation model",
+   "year": "2024",
+   "cites": 14,
+   "doi": "https://doi.org/10.1016/j.heliyon.2024.e28296",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Subrata Mahanta"
+  },
+  {
+   "wid": "W4214850514",
+   "inst": "NIT Jamshedpur",
+   "title": "RETRACTED ARTICLE: Software cost estimation model based on fuzzy C-means and improved self adaptive differential evolution algorithm",
+   "year": "2022",
+   "cites": 13,
+   "doi": "https://doi.org/10.1007/s41870-022-00882-4",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "Ashok Kumar Mehta; Sunil Kumar Gouda"
+  },
+  {
+   "wid": "W3122759176",
+   "inst": "MANIT Bhopal",
+   "title": "RETRACTED ARTICLE: Estimation of swelling characteristics of expansive soils with influence of clay mineralogy",
+   "year": "2021",
+   "cites": 12,
+   "doi": "https://doi.org/10.1080/09064710.2021.1872696",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Pradeep Kumar Jain"
+  },
+  {
+   "wid": "W3172411342",
+   "inst": "MANIT Bhopal",
+   "title": "RETRACTED ARTICLE: Analytic hierarchy process-based automatic feature weight assignment method for content-based satellite image retrieval system",
+   "year": "2021",
+   "cites": 12,
+   "doi": "https://doi.org/10.1007/s00500-021-05937-5",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Mitul Kumar Ahirwal"
+  },
+  {
+   "wid": "W4408335657",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED: Improving physical, mechanical and interfacial properties of glass fiber composites using modified resin system with amine‐functionalized and silanized graphene nanoparticles",
+   "year": "2025",
+   "cites": 11,
+   "doi": "https://doi.org/10.1002/pc.29701",
+   "status": "retracted",
+   "category": "Plagiarism, duplication or data problems",
+   "faculty": "Vinyas Mahesh"
+  },
+  {
+   "wid": "W3205397045",
+   "inst": "NIT Jamshedpur",
+   "title": "RETRACTED ARTICLE: A Hybrid Approach using the Fuzzy Logic System and the Modified Genetic Algorithm for Prediction of Skin Cancer",
+   "year": "2021",
+   "cites": 9,
+   "doi": "https://doi.org/10.1007/s11063-021-10656-x",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "Ashok Kumar Mehta"
+  },
+  {
+   "wid": "W4388636946",
+   "inst": "NIT Jamshedpur",
+   "title": "RETRACTED ARTICLE: A comprehensive review on detection and classification of dementia using neuroimaging and machine learning",
+   "year": "2023",
+   "cites": 9,
+   "doi": "https://doi.org/10.1007/s11042-023-17288-4",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "Dilip Kumar (Computer Science and Engineering)"
+  },
+  {
+   "wid": "W4364379847",
+   "inst": "NIT Jamshedpur",
+   "title": "RETRACTED ARTICLE: Review on testing facilities assisting in development of numerical models for erosion calculation in centrifugal slurry pumps",
+   "year": "2023",
+   "cites": 9,
+   "doi": "https://doi.org/10.1007/s12008-023-01282-z",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Satish Kumar"
+  },
+  {
+   "wid": "W2982562865",
+   "inst": "NIT Silchar",
+   "title": "Retracted: An Automatic Localization of Microaneurysms in Retinal Fundus Images",
+   "year": "2019",
+   "cites": 7,
+   "doi": "https://doi.org/10.1109/icsss.2019.8882858",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "R. Murugan"
+  },
+  {
+   "wid": "W4400520059",
+   "inst": "NIT Jamshedpur",
+   "title": "RETRACTED: Sources and types of plastic caps and properties characterization of plastic ropes produced from different types of plastic caps",
+   "year": "2024",
+   "cites": 7,
+   "doi": "https://doi.org/10.1016/j.heliyon.2024.e34471",
+   "status": "retracted",
+   "category": "Unreliable results or references",
+   "faculty": "Balram Ambade"
+  },
+  {
+   "wid": "W3010873793",
+   "inst": "NIT Jamshedpur",
+   "title": "RETRACTED: Ecofriendly energy efficient welding of aluminium matrix composites for aerospace applications: A state of art review",
+   "year": "2020",
+   "cites": 5,
+   "doi": "https://doi.org/10.1016/j.matpr.2020.02.352",
+   "status": "retracted",
+   "category": "Plagiarism, duplication or data problems",
+   "faculty": "Ashish Das"
+  },
+  {
+   "wid": "W4383103054",
+   "inst": "MANIT Bhopal",
+   "title": "RETRACTED ARTICLE: Probabilistic dual hesitant Archimedean–Dombi operators for selection of sustainable materials",
+   "year": "2023",
+   "cites": 5,
+   "doi": "https://doi.org/10.1007/s00500-023-08679-8",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Raman Nateriya"
+  },
+  {
+   "wid": "W4404738650",
+   "inst": "NIT Silchar",
+   "title": "RETRACTED: Text-independent speaker identification using modified SincNet with robust features from suitable acoustic region and appropriate optimizer for raw audio analysis",
+   "year": "2024",
+   "cites": 4,
+   "doi": "https://doi.org/10.1016/j.compeleceng.2024.109915",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "Rabul Hussain Laskar"
+  },
+  {
+   "wid": "W4390741205",
+   "inst": "MANIT Bhopal",
+   "title": "RETRACTED ARTICLE: Homodyne detection based multiple-beam WDM FSO communication system under various environmental conditions",
+   "year": "2024",
+   "cites": 3,
+   "doi": "https://doi.org/10.1007/s11082-023-05835-0",
+   "status": "retracted",
+   "category": "Compromised peer review or editorial misconduct",
+   "faculty": "Aditya Goel"
+  },
+  {
+   "wid": "W4409769369",
+   "inst": "MANIT Bhopal",
+   "title": "Retracted: Assessing the Transit-Oriented Development and Travel Behavior of the Residents in Developing Countries: A Case of Delhi, India",
+   "year": "2025",
+   "cites": 3,
+   "doi": "https://doi.org/10.1061/jupddm.upeng-5468",
+   "status": "retracted",
+   "category": "No reason available",
+   "faculty": "Kavita Dehalwar"
+  },
+  {
+   "wid": "W3011755374",
+   "inst": "NIT Silchar",
+   "title": "Retracted: Facial Expression Recognition using Facial Features Detection using the Fusion of Classifiers: In a real-time scenario",
+   "year": "2019",
+   "cites": 2,
+   "doi": "https://doi.org/10.1109/iscon47742.2019.9036240",
+   "status": "retracted",
+   "category": "Garbled wording, generated text or image problems",
+   "faculty": "Rabul Hussain Laskar"
+  },
+  {
+   "wid": "W4385993431",
+   "inst": "MANIT Bhopal",
+   "title": "RETRACTED: Digital financial inclusion (DFI) can improve the economic growth: a study of India",
+   "year": "2023",
+   "cites": 2,
+   "doi": "https://doi.org/10.1108/jfm-01-2023-0011",
+   "status": "retracted",
+   "category": "Plagiarism, duplication or data problems",
+   "faculty": "Nenavath Sreenu"
+  },
+  {
+   "wid": "W3114797597",
+   "inst": "MANIT Bhopal",
+   "title": "Retracted: Uncontrolled Intersection Operational Assessment under Mixed Traffic Conditions",
+   "year": "2020",
+   "cites": 0,
+   "doi": "https://doi.org/10.1061/jtepbs.0000490",
+   "status": "retracted",
+   "category": "Plagiarism, duplication or data problems",
+   "faculty": "Rajput S. P. S; Siddhartha Rokade"
+  },
+  {
+   "wid": "W3213984509",
+   "inst": "MANIT Bhopal",
+   "title": "RETRACTED ARTICLE: Motorized Level of Service Classification for Urban Uncontrolled Intersections",
+   "year": "2020",
+   "cites": 0,
+   "doi": "https://doi.org/10.1007/s13177-020-00238-x",
+   "status": "retracted",
+   "category": "Plagiarism, duplication or data problems",
+   "faculty": "Rajput S. P. S; Siddhartha Rokade"
+  },
+  {
+   "wid": "W7126085318",
+   "inst": "NIT Silchar",
+   "title": "WITHDRAWN: Barrier Function-Based Robust Fixed-Time Leader-Follower Consensus With Variable Exponent",
+   "year": "2026",
+   "cites": 0,
+   "doi": "https://doi.org/10.2514/6.2026-1397",
+   "status": "withdrawn",
+   "category": "No reason available",
+   "faculty": "Sudipta Chakraborty"
+  }
+ ]
+}

@@ -15,11 +15,11 @@ MANIT Bhopal,Lebanese American University,LB,10,399
 MANIT Bhopal,University of St Andrews,GB,10,302
 MANIT Bhopal,Ton Duc Thang University,VN,9,819
 MANIT Bhopal,Düzce Üniversitesi,TR,9,558
-MANIT Bhopal,Duy Tan University,VN,8,392
 MANIT Bhopal,Yıldız Technical University,TR,8,286
 MANIT Bhopal,Taif University,SA,8,126
 MANIT Bhopal,University of Jordan,JO,8,40
 MANIT Bhopal,University of Science and Technology Beijing,CN,8,40
+MANIT Bhopal,Duy Tan University,VN,7,360
 MANIT Bhopal,Papua New Guinea University of Technology,PG,7,255
 MANIT Bhopal,United Arab Emirates University,AE,7,136
 MANIT Bhopal,University of Aizu,JP,7,74
@@ -255,7 +255,6 @@ MANIT Bhopal,Université de Saida Dr Moulay Tahar,DZ,1,41
 MANIT Bhopal,Laboratoire de Chimie Moléculaire et Thioorganique,FR,1,41
 MANIT Bhopal,Institute for Complex Systems,IT,1,41
 MANIT Bhopal,École Nationale Supérieure d'Ingénieurs de Caen,FR,1,41
-MANIT Bhopal,King Abdulaziz City for Science and Technology,SA,1,40
 MANIT Bhopal,Quy Nhon University,VN,1,38
 MANIT Bhopal,Wrocław University of Environmental and Life Sciences,PL,1,38
 MANIT Bhopal,University of Zurich,CH,1,38
@@ -375,7 +374,6 @@ MANIT Bhopal,Istituto di Nanotecnologia,IT,1,6
 MANIT Bhopal,United States Naval Research Laboratory,US,1,5
 MANIT Bhopal,"BGI Research, Sanya",CN,1,5
 MANIT Bhopal,Munster Technological University,IE,1,5
-MANIT Bhopal,Southwest University,CN,1,5
 MANIT Bhopal,Warsaw University of Life Sciences,PL,1,4
 MANIT Bhopal,Mendel University in Brno,CZ,1,4
 MANIT Bhopal,University of Pittsburgh at Johnstown,US,1,4
@@ -457,7 +455,7 @@ MANIT Bhopal,Tottori University,JP,1,0
 MANIT Bhopal,Hokkaido University,JP,1,0
 MANIT Bhopal,University of Toledo,US,1,0
 MANIT Bhopal,Instituto Nacional de Tecnologia,BR,1,0
-NIT Jamshedpur,King Saud University,SA,54,2776
+NIT Jamshedpur,King Saud University,SA,53,2762
 NIT Jamshedpur,Ajman University,AE,43,1023
 NIT Jamshedpur,University of Jordan,JO,24,712
 NIT Jamshedpur,Leeds Beckett University,GB,16,91
@@ -496,7 +494,6 @@ NIT Jamshedpur,China Medical University Hospital,TW,5,488
 NIT Jamshedpur,Université Sorbonne Paris Nord,FR,5,134
 NIT Jamshedpur,Southern University and Agricultural and Mechanical College,US,5,158
 NIT Jamshedpur,Universidad Carlos III de Madrid,ES,5,138
-NIT Jamshedpur,Jashore University of Science and Technology,BD,5,104
 NIT Jamshedpur,Technical University of Crete,GR,5,39
 NIT Jamshedpur,University of Kairouan,TN,5,74
 NIT Jamshedpur,Naval Postgraduate School,US,5,26
@@ -508,6 +505,7 @@ NIT Jamshedpur,Kyushu University,JP,4,126
 NIT Jamshedpur,Chaoyang University of Technology,TW,4,160
 NIT Jamshedpur,Al-Balqa Applied University,JO,4,305
 NIT Jamshedpur,Henan University,CN,4,71
+NIT Jamshedpur,Jashore University of Science and Technology,BD,4,97
 NIT Jamshedpur,King Khalid University,SA,4,64
 NIT Jamshedpur,University of Tabuk,SA,4,85
 NIT Jamshedpur,National University of Singapore,SG,4,53
@@ -521,8 +519,6 @@ NIT Jamshedpur,Umm al-Qura University,SA,3,249
 NIT Jamshedpur,King Abdullah University of Science and Technology,SA,3,273
 NIT Jamshedpur,Chinese Academy of Sciences,CN,3,153
 NIT Jamshedpur,University of Sri Jayewardenepura,LK,3,171
-NIT Jamshedpur,Bangladesh Wheat and Maize Research Institute,BD,3,147
-NIT Jamshedpur,Slovak University of Agriculture in Nitra,SK,3,147
 NIT Jamshedpur,China University of Mining and Technology,CN,3,158
 NIT Jamshedpur,Benha University,EG,3,86
 NIT Jamshedpur,Zhejiang University,CN,3,60
@@ -564,6 +560,8 @@ NIT Jamshedpur,Beni-Suef University,EG,2,131
 NIT Jamshedpur,Alexandria University,EG,2,188
 NIT Jamshedpur,Northwest Institute of Eco-Environment and Resources,CN,2,151
 NIT Jamshedpur,Prince Sattam Bin Abdulaziz University,SA,2,188
+NIT Jamshedpur,Bangladesh Wheat and Maize Research Institute,BD,2,133
+NIT Jamshedpur,Slovak University of Agriculture in Nitra,SK,2,133
 NIT Jamshedpur,Czech University of Life Sciences Prague,CZ,2,133
 NIT Jamshedpur,Laboratoire des Sciences des Procédés et des Matériaux,FR,2,127
 NIT Jamshedpur,Kastamonu University,TR,2,129
@@ -728,7 +726,6 @@ NIT Jamshedpur,"National Centre for Nuclear Energy, Science and Technology",MA,1
 NIT Jamshedpur,University of Memphis,US,1,18
 NIT Jamshedpur,Saudi Aramco (Saudi Arabia),SA,1,15
 NIT Jamshedpur,Asian Institute of Technology,TH,1,14
-NIT Jamshedpur,King Khalid University Hospital,SA,1,14
 NIT Jamshedpur,Diponegoro University,ID,1,14
 NIT Jamshedpur,Bialystok University of Technology,PL,1,13
 NIT Jamshedpur,Istinye University,TR,1,13
@@ -946,11 +943,9 @@ NIT Silchar,National University of Defense Technology,CN,5,669
 NIT Silchar,KU Leuven,BE,5,227
 NIT Silchar,University of Castilla-La Mancha,ES,5,208
 NIT Silchar,Swansea University,GB,5,358
-NIT Silchar,University of Wisconsin–Madison,US,5,417
 NIT Silchar,University of Sharjah,AE,5,246
 NIT Silchar,Iran University of Science and Technology,IR,5,318
 NIT Silchar,Nanyang Technological University,SG,5,227
-NIT Silchar,Lebanese American University,LB,5,180
 NIT Silchar,University of Tsukuba,JP,5,279
 NIT Silchar,University of Jyväskylä,FI,5,145
 NIT Silchar,Beni-Suef University,EG,5,155
@@ -965,6 +960,7 @@ NIT Silchar,Korea University,KR,5,54
 NIT Silchar,Tokyo University of Science,JP,5,55
 NIT Silchar,Aix-Marseille Université,FR,5,25
 NIT Silchar,Dalhousie University,CA,5,10
+NIT Silchar,University of Wisconsin–Madison,US,4,332
 NIT Silchar,University of Saskatchewan,CA,4,199
 NIT Silchar,K. N. Toosi University of Technology,IR,4,229
 NIT Silchar,Harbin Normal University,CN,4,177
@@ -972,6 +968,7 @@ NIT Silchar,University of Colorado Denver,US,4,226
 NIT Silchar,University of Stuttgart,DE,4,131
 NIT Silchar,"Agency for Science, Technology and Research",SG,4,153
 NIT Silchar,Vietnam Academy of Science and Technology,VN,4,175
+NIT Silchar,Lebanese American University,LB,4,95
 NIT Silchar,Universitat Politècnica de València,ES,4,71
 NIT Silchar,Dongguk University,KR,4,116
 NIT Silchar,National Research University Higher School of Economics,RU,4,71
@@ -1057,10 +1054,6 @@ NIT Silchar,Nevşehir Hacı Bektaş Veli University,TR,2,149
 NIT Silchar,Deakin University,AU,2,171
 NIT Silchar,Guangdong Polytechnic Normal University,CN,2,125
 NIT Silchar,University of Havana,CU,2,114
-NIT Silchar,Universidad Internacional de La Rioja,ES,2,109
-NIT Silchar,Ajman University,AE,2,136
-NIT Silchar,Noroff University College,NO,2,136
-NIT Silchar,Northwest A&F University,CN,2,93
 NIT Silchar,Pham Ngoc Thach University of Medicine,VN,2,92
 NIT Silchar,"Laboratoire Procédés, Matériaux et Energie Solaire",FR,2,74
 NIT Silchar,University of Missouri,US,2,74
@@ -1176,8 +1169,7 @@ NIT Silchar,École Centrale de Nantes,FR,1,93
 NIT Silchar,Institut de recherche en communications et cybernétique de Nantes,FR,1,93
 NIT Silchar,Vanderbilt University,US,1,91
 NIT Silchar,Zhejiang Lab,CN,1,91
-NIT Silchar,Pohang University of Science and Technology,KR,1,85
-NIT Silchar,Forest Products Laboratory,US,1,85
+NIT Silchar,Universidad Internacional de La Rioja,ES,1,90
 NIT Silchar,National Center for Agricultural Utilization Research,US,1,82
 NIT Silchar,United States Department of Agriculture,US,1,82
 NIT Silchar,Petromat,TH,1,82
@@ -1198,6 +1190,8 @@ NIT Silchar,École Polytechnique Fédérale de Lausanne,CH,1,53
 NIT Silchar,Universitat Rovira i Virgili,ES,1,51
 NIT Silchar,University of Nottingham Ningbo China,CN,1,51
 NIT Silchar,Kongju National University,KR,1,51
+NIT Silchar,Ajman University,AE,1,51
+NIT Silchar,Noroff University College,NO,1,51
 NIT Silchar,Majmaah University,SA,1,49
 NIT Silchar,University of Bradford,GB,1,48
 NIT Silchar,University Ferhat Abbas of Setif,DZ,1,48
@@ -1358,6 +1352,7 @@ NIT Silchar,Incheon National University,KR,1,14
 NIT Silchar,University of Arkansas at Fayetteville,US,1,12
 NIT Silchar,University of Virginia,US,1,9
 NIT Silchar,Széchenyi István University,HU,1,8
+NIT Silchar,Northwest A&F University,CN,1,8
 NIT Silchar,Southern Federal University,RU,1,7
 NIT Silchar,Advanced Remanufacturing & Technology Centre,SG,1,7
 NIT Silchar,Daegu Gyeongbuk Institute of Science and Technology,KR,1,7

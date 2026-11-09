@@ -44,10 +44,12 @@ that read the final tables and the faculty graph; the model never runs code, SQL
 | Citation sources | In-corpus links split into author self-citation / same institute other author / between our institutes; per-year PageRank rank; “within-corpus” labelling. | `extra_metrics.py`, `dashboard/extras.js` |
 | Venue types | Journal/conference decided by Scopus aggregation type (`venue_types.py`), not by the word “proceedings”. | `build_tables.py`, `venue_types.py` |
 | Duplicates | Same title, year ±1, same venue, matching authors are merged; audit in `data/out/duplicate_audit.csv`. | `build_tables.py` |
+| Retractions | 32 retracted papers and 1 withdrawn paper (537 citations) are removed from every metric and network; they are kept, with the reason, in `data/out/group15_retracted.csv` and listed in the Methodology tab. Each was checked against Crossref, the Retraction Watch database and the publisher's notice (Nov 2026). | `retractions.py`, `data/ref/retracted_papers.csv` |
 | Q1 share | One definition: Q1 journal papers ÷ journal papers with a quartile; conference ranks (CORE) separate. | `metrics_defs.py`, `deep_analysis.py` |
 | Conferences | Named vs generic series via Crossref; CORE matching. | `conference_resolution.py` |
 | New analyses | Network resilience; temporal link prediction; institute comparison; concentration; review and team-size analyses; generated key findings. | `resilience.py`, `collab_model.py`, `link_prediction.py`, `deep_insights.py`, `key_findings.py` |
 | Dashboard | Key findings per tab, comparison table, citation sources, degree CCDF, resilience page, potential-collaborations page, data-quality block. | `dashboard/extras.js`, `build_dashboard.py` |
+| Affiliation check | Prof. Kumarasamy Sudhakar (MANIT) is on leave at Universiti Malaysia Pahang since 2017 (checked Nov 2026). His papers stay in the data; MANIT's h-index is shown three ways (all / his papers up to 2017 only / without him) on the Faculty tab, with the evidence. Both corrections also appear among the Key Findings (Overview and Faculty tabs). | `affiliation_checks.py`, `data/ref/faculty_status_checks.csv`, `dashboard/extras.js` |
 | Assistant | New package and Streamlit page. | `assistant/`, `dashboard/streamlit_app.py` |
 | Tests | 37 tests (flow direction, DOI-less metrics, venue typing, duplicates, no-leakage, resilience, assistant). | `tests/` |
 
@@ -57,6 +59,7 @@ that read the final tables and the faculty graph; the model never runs code, SQL
 * Faculty roster, departments and the 2016–2026 window limit all metrics; h-index here is not a career h-index. Some faculty still have an unknown department.
 * Link-prediction scores for **new** collaborations are rankings, not probabilities (calibration slope 0.41). Repeat-collaboration probabilities pass the calibration check.
 * CORE covers computer-science conferences; the only A* paper in the unfiltered corpus has no verified-faculty author. Many conference papers appear under publisher series only.
+* The aggregate Indian citation-flow tables (`incoming_citations_by_*.csv`, `outgoing_citations_by_*.csv`) were built before the retracted papers were removed and still include their citations (537 in total) until `outflow.py` / `inflow.py` are rerun with `data/raw/`. Row-level flags in `group15_data.csv` and every other metric exclude them.
 * Quartiles for some venues are estimated (see Methodology tab); OpenAlex omits ~27k referenced works, so in-corpus citation counts are lower bounds.
 * The handwritten “GDP / climate analysis” note in the brief was ambiguous and has not been implemented.
 * The dashboard Reach, Flows and Collaboration tabs keep their original layouts with added key findings; the larger redesign items in the brief (field→subfield drill-down, performance-vs-connectivity scatter, participation-coefficient views, Sankey and 100%-stacked partner types) are not built.

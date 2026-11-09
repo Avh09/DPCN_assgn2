@@ -1,42 +1,42 @@
 {
  "citation_network": {
-  "nodes_in_edges": 11802,
-  "edges": 28040,
-  "papers_in_corpus": 17720,
+  "nodes_in_edges": 11775,
+  "edges": 27971,
+  "papers_in_corpus": 17687,
   "share_papers_cited_by_another_corpus_paper": 42.7,
   "in_degree_max": 45,
-  "in_degree_mean_over_all_papers": 1.582,
+  "in_degree_mean_over_all_papers": 1.581,
   "in_degree_median_over_cited": 2.0,
   "in_degree_quantiles_over_cited": [
    2.0,
    8.0,
-   21.26000000000022
+   21.4399999999996
   ],
-  "edges_within_same_institute": 26997,
-  "edges_cross_institute": 1043,
+  "edges_within_same_institute": 26929,
+  "edges_cross_institute": 1042,
   "edges_involving_joint_papers": 195,
   "flow_matrix_source_rows_target_cols": {
    "MANIT Bhopal": {
-    "MANIT Bhopal": 6066,
+    "MANIT Bhopal": 6049,
     "NIT Jamshedpur": 165,
     "NIT Silchar": 236
    },
    "NIT Jamshedpur": {
     "MANIT Bhopal": 138,
-    "NIT Jamshedpur": 3708,
-    "NIT Silchar": 256
+    "NIT Jamshedpur": 3698,
+    "NIT Silchar": 255
    },
    "NIT Silchar": {
     "MANIT Bhopal": 254,
     "NIT Jamshedpur": 216,
-    "NIT Silchar": 17250
+    "NIT Silchar": 17209
    }
   },
   "flow_matrix_row_pct": {
    "MANIT Bhopal": {
     "MANIT Bhopal": 93.8,
     "NIT Jamshedpur": 2.6,
-    "NIT Silchar": 3.6
+    "NIT Silchar": 3.7
    },
    "NIT Jamshedpur": {
     "MANIT Bhopal": 3.4,
@@ -53,24 +53,24 @@
    "2016": 108,
    "2017": 450,
    "2018": 817,
-   "2019": 1128,
-   "2020": 2100,
-   "2021": 3270,
-   "2022": 4070,
-   "2023": 4574,
-   "2024": 4753,
-   "2025": 4175,
-   "2026": 2595
+   "2019": 1127,
+   "2020": 2091,
+   "2021": 3255,
+   "2022": 4056,
+   "2023": 4563,
+   "2024": 4738,
+   "2025": 4172,
+   "2026": 2594
   },
-  "weakly_connected_components": 777,
-  "largest_weak_component": 8047,
+  "weakly_connected_components": 780,
+  "largest_weak_component": 8013,
   "top10_pagerank": [
    {
     "title": "Probabilistic characterisation for dynamics and stability of laminated soft core sandwich plates",
     "year": 2017,
     "inst": "NIT Silchar",
     "journal": "Journal of Sandwich Structures & Materials",
-    "pagerank": 0.002323,
+    "pagerank": 0.002328,
     "in_degree_in_corpus": 22,
     "citations_openalex": 77
    },
@@ -79,7 +79,7 @@
     "year": 2016,
     "inst": "NIT Silchar",
     "journal": "Composites Part B Engineering",
-    "pagerank": 0.001875,
+    "pagerank": 0.001879,
     "in_degree_in_corpus": 21,
     "citations_openalex": 62
    },
@@ -88,7 +88,7 @@
     "year": 2016,
     "inst": "NIT Silchar",
     "journal": "Microelectronics Journal",
-    "pagerank": 0.001546,
+    "pagerank": 0.00155,
     "in_degree_in_corpus": 33,
     "citations_openalex": 65
    },
@@ -97,7 +97,7 @@
     "year": 2018,
     "inst": "NIT Silchar",
     "journal": "Green Chemistry",
-    "pagerank": 0.001532,
+    "pagerank": 0.001536,
     "in_degree_in_corpus": 45,
     "citations_openalex": 253
    },
@@ -106,7 +106,7 @@
     "year": 2019,
     "inst": "MANIT Bhopal",
     "journal": "International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT)",
-    "pagerank": 0.001525,
+    "pagerank": 0.001528,
     "in_degree_in_corpus": 13,
     "citations_openalex": 93
    },
@@ -115,34 +115,34 @@
     "year": 2016,
     "inst": "NIT Silchar",
     "journal": "International Journal of Hydrogen Energy",
-    "pagerank": 0.00147,
+    "pagerank": 0.001474,
     "in_degree_in_corpus": 41,
     "citations_openalex": 178
-   },
-   {
-    "title": "Establishment and Effect of Constraint on Different Mechanical Properties of Bamboo Filler Reinforced Epoxy Composite",
-    "year": 2017,
-    "inst": "NIT Silchar",
-    "journal": "International Polymer Processing",
-    "pagerank": 0.001464,
-    "in_degree_in_corpus": 18,
-    "citations_openalex": 27
    },
    {
     "title": "Performance and emission analysis of a diesel engine using hydrogen enriched n-butanol, diethyl ester and Spirulina microalgae biodiesel",
     "year": 2020,
     "inst": "MANIT Bhopal",
     "journal": "Fuel",
-    "pagerank": 0.001462,
+    "pagerank": 0.001469,
     "in_degree_in_corpus": 16,
     "citations_openalex": 123
+   },
+   {
+    "title": "Establishment and Effect of Constraint on Different Mechanical Properties of Bamboo Filler Reinforced Epoxy Composite",
+    "year": 2017,
+    "inst": "NIT Silchar",
+    "journal": "International Polymer Processing",
+    "pagerank": 0.001468,
+    "in_degree_in_corpus": 18,
+    "citations_openalex": 27
    },
    {
     "title": "Flower Pollination Algorithm Optimized PI-PD Cascade Controller in Automatic Generation Control of a Multi-area Power System",
     "year": 2016,
     "inst": "NIT Silchar",
     "journal": "International Journal of Electrical Power & Energy Systems",
-    "pagerank": 0.001324,
+    "pagerank": 0.001322,
     "in_degree_in_corpus": 24,
     "citations_openalex": 207
    },
@@ -151,38 +151,38 @@
     "year": 2017,
     "inst": "NIT Silchar",
     "journal": "Composite Structures",
-    "pagerank": 0.001319,
+    "pagerank": 0.001322,
     "in_degree_in_corpus": 26,
     "citations_openalex": 145
    }
   ],
   "per_institute_outgoing_share": {
    "MANIT Bhopal": {
-    "edges_out": 6436,
-    "to_same_inst_%": 94.3
+    "edges_out": 6419,
+    "to_same_inst_%": 94.2
    },
    "NIT Jamshedpur": {
-    "edges_out": 4045,
+    "edges_out": 4034,
     "to_same_inst_%": 91.7
    },
    "NIT Silchar": {
-    "edges_out": 17668,
+    "edges_out": 17627,
     "to_same_inst_%": 97.6
    }
   }
  },
  "authorship_network_all_our_authors": {
   "nodes": 766,
-  "edges": 1265,
-  "density": 0.00432,
+  "edges": 1263,
+  "density": 0.00431,
   "avg_degree": 3.3,
   "connected_components": 32,
   "isolated_nodes": 0,
   "avg_clustering": 0.205,
   "largest_component_nodes": 673,
   "largest_component_share_%": 87.9,
-  "louvain_communities": 51,
-  "louvain_modularity": 0.875,
+  "louvain_communities": 52,
+  "louvain_modularity": 0.876,
   "largest_communities": [
    {
     "size": 62,
@@ -192,7 +192,7 @@
     },
     "top_fields": {
      "Engineering": 43,
-     "Business, Management and Accounting": 3
+     "Environmental Science": 3
     },
     "top_members": [
      "Rajesh Purohit",
@@ -248,18 +248,18 @@
     ]
    },
    {
-    "size": 47,
+    "size": 44,
     "institutes": {
-     "NIT Silchar": 47
+     "MANIT Bhopal": 44
     },
     "top_fields": {
-     "Engineering": 34,
-     "Mathematics": 4
+     "Engineering": 39,
+     "Computer Science": 2
     },
     "top_members": [
-     "Binoy Krishna Roy",
-     "Arup Kumar Goswami",
-     "Nidul Sinha"
+     "Sushma Gupta",
+     "Anoop Arya",
+     "Savita Nema"
     ]
    },
    {
@@ -345,43 +345,43 @@
    {
     "author": "Vijay Bhaskar Semwal",
     "inst": "NIT Jamshedpur",
-    "betweenness": 0.1771,
+    "betweenness": 0.178,
     "collaborators": 17
-   },
-   {
-    "author": "Shiva Nand Singh",
-    "inst": "NIT Jamshedpur",
-    "betweenness": 0.1616,
-    "collaborators": 6
    },
    {
     "author": "Suresh Kumar Gawre",
     "inst": "MANIT Bhopal",
-    "betweenness": 0.1562,
+    "betweenness": 0.1615,
     "collaborators": 16
+   },
+   {
+    "author": "Shiva Nand Singh",
+    "inst": "NIT Jamshedpur",
+    "betweenness": 0.1597,
+    "collaborators": 6
    },
    {
     "author": "Rajesh Purohit",
     "inst": "MANIT Bhopal",
-    "betweenness": 0.1521,
+    "betweenness": 0.1516,
     "collaborators": 27
    },
    {
     "author": "Shahedul Haque Laskar",
     "inst": "NIT Silchar",
-    "betweenness": 0.1483,
+    "betweenness": 0.1469,
     "collaborators": 5
    },
    {
     "author": "Swagatadeb Sahoo",
     "inst": "NIT Silchar",
-    "betweenness": 0.148,
+    "betweenness": 0.1465,
     "collaborators": 2
    },
    {
     "author": "S. Sanjay",
     "inst": "NIT Jamshedpur",
-    "betweenness": 0.1121,
+    "betweenness": 0.1082,
     "collaborators": 9
    },
    {
@@ -393,13 +393,13 @@
    {
     "author": "Emon Barua",
     "inst": "MANIT Bhopal",
-    "betweenness": 0.0934,
+    "betweenness": 0.0935,
     "collaborators": 2
    },
    {
     "author": "Ashish Bhalchandra Deoghare",
     "inst": "NIT Silchar",
-    "betweenness": 0.0932,
+    "betweenness": 0.0934,
     "collaborators": 3
    }
   ],
@@ -408,15 +408,15 @@
  },
  "authorship_network_core_authors": {
   "nodes": 486,
-  "edges": 896,
-  "density": 0.0076,
-  "avg_degree": 3.69,
+  "edges": 894,
+  "density": 0.00759,
+  "avg_degree": 3.68,
   "connected_components": 26,
   "isolated_nodes": 14,
   "avg_clustering": 0.205,
   "largest_component_nodes": 441,
   "largest_component_share_%": 90.7,
-  "louvain_communities": 44,
+  "louvain_communities": 43,
   "louvain_modularity": 0.865,
   "largest_communities": [
    {
@@ -450,19 +450,35 @@
     ]
    },
    {
-    "size": 34,
+    "size": 37,
     "institutes": {
-     "NIT Silchar": 32,
+     "NIT Silchar": 35,
      "NIT Jamshedpur": 2
     },
     "top_fields": {
-     "Engineering": 27,
+     "Engineering": 28,
      "Computer Science": 5
     },
     "top_members": [
      "Fazal Ahmed Talukdar",
      "Krishna Lal Baishnab",
      "Koushik Guha"
+    ]
+   },
+   {
+    "size": 35,
+    "institutes": {
+     "NIT Silchar": 34,
+     "MANIT Bhopal": 1
+    },
+    "top_fields": {
+     "Engineering": 26,
+     "Mathematics": 3
+    },
+    "top_members": [
+     "Arup Kumar Goswami",
+     "Binoy Krishna Roy",
+     "Nidul Sinha"
     ]
    },
    {
@@ -493,21 +509,6 @@
      "Sushma Gupta",
      "Anoop Arya",
      "Savita Nema"
-    ]
-   },
-   {
-    "size": 30,
-    "institutes": {
-     "NIT Jamshedpur": 30
-    },
-    "top_fields": {
-     "Engineering": 28,
-     "Computer Science": 2
-    },
-    "top_members": [
-     "Keshav Kumar Sharma",
-     "Abdhesh Kumar Sinha",
-     "Amit Prakash"
     ]
    }
   ],
@@ -578,55 +579,55 @@
    {
     "author": "Shiva Nand Singh",
     "inst": "NIT Jamshedpur",
-    "betweenness": 0.2161,
+    "betweenness": 0.2158,
     "collaborators": 6
    },
    {
     "author": "Tanmoy Malakar",
     "inst": "NIT Silchar",
-    "betweenness": 0.2083,
+    "betweenness": 0.2086,
     "collaborators": 5
    },
    {
     "author": "More Raju",
     "inst": "MANIT Bhopal",
-    "betweenness": 0.2033,
+    "betweenness": 0.2036,
     "collaborators": 5
    },
    {
     "author": "Sreenu Sreekumar",
     "inst": "NIT Silchar",
-    "betweenness": 0.2027,
+    "betweenness": 0.203,
     "collaborators": 2
    },
    {
     "author": "Suresh Kumar Gawre",
     "inst": "MANIT Bhopal",
-    "betweenness": 0.2,
+    "betweenness": 0.202,
     "collaborators": 15
    },
    {
     "author": "Shahedul Haque Laskar",
     "inst": "NIT Silchar",
-    "betweenness": 0.1971,
+    "betweenness": 0.1968,
     "collaborators": 5
    },
    {
     "author": "Swagatadeb Sahoo",
     "inst": "NIT Silchar",
-    "betweenness": 0.1964,
+    "betweenness": 0.1962,
     "collaborators": 2
    },
    {
     "author": "Vijay Bhaskar Semwal",
     "inst": "NIT Jamshedpur",
-    "betweenness": 0.1893,
+    "betweenness": 0.1901,
     "collaborators": 15
    },
    {
     "author": "Rajesh Purohit",
     "inst": "MANIT Bhopal",
-    "betweenness": 0.13,
+    "betweenness": 0.1301,
     "collaborators": 23
    },
    {
@@ -640,8 +641,8 @@
   "edges_between_our_institutes_%": 2.9
  },
  "authorship_network_meta": {
-  "pair_rows_in_file": 55533,
-  "pairs_used_in_analysis": 55533,
+  "pair_rows_in_file": 55322,
+  "pairs_used_in_analysis": 55322,
   "papers_over_30_authors_excluded": 0,
   "counting": "full counting (every joint paper adds 1 to the edge weight)"
  },
@@ -651,13 +652,13 @@
    "top10_partners": [
     {
      "partner_inst": "National Institute of Technology Raipur",
-     "shared_papers": 85,
-     "total_citations": 1039
+     "shared_papers": 84,
+     "total_citations": 1027
     },
     {
      "partner_inst": "Rajiv Gandhi Technical University",
-     "shared_papers": 67,
-     "total_citations": 889
+     "shared_papers": 66,
+     "total_citations": 849
     },
     {
      "partner_inst": "Indian Institute of Technology Roorkee",
@@ -665,14 +666,14 @@
      "total_citations": 1209
     },
     {
-     "partner_inst": "Indian Institute of Information Technology Bhopal",
-     "shared_papers": 51,
-     "total_citations": 406
-    },
-    {
      "partner_inst": "Indian Institute of Technology Delhi",
      "shared_papers": 51,
      "total_citations": 599
+    },
+    {
+     "partner_inst": "Indian Institute of Information Technology Bhopal",
+     "shared_papers": 50,
+     "total_citations": 392
     },
     {
      "partner_inst": "Indian Institute of Information Technology Design and Manufacturing Jabalpur",
@@ -701,11 +702,11 @@
     }
    ],
    "shared_papers_by_partner_cluster": {
-    "University/college": 1520,
+    "University/college": 1517,
     "IIT": 355,
-    "NIT": 289,
+    "NIT": 288,
     "Other": 142,
-    "IIIT": 140,
+    "IIIT": 139,
     "Government lab/agency": 65,
     "Medical/health": 42,
     "Industry": 35,
@@ -725,25 +726,25 @@
     "Medical/health": 11,
     "IISER": 6,
     "DAE": 4,
-    "Premier science inst.": 2,
-    "CSIR": 2
+    "CSIR": 2,
+    "Premier science inst.": 2
    },
-   "papers": 5759,
+   "papers": 5746,
    "share_with_other_indian_institute_%": 32.5,
    "share_with_foreign_coauthor_%": 11.2,
    "top_foreign_countries": {
     "MY": 147,
-    "SA": 78,
+    "SA": 77,
     "GB": 59,
     "US": 58,
-    "CN": 43,
     "AU": 42,
+    "CN": 42,
     "TR": 39,
     "AE": 33
    }
   },
   "NIT Jamshedpur": {
-   "distinct_indian_partners": 389,
+   "distinct_indian_partners": 387,
    "top10_partners": [
     {
      "partner_inst": "National Metallurgical Laboratory",
@@ -797,13 +798,13 @@
     }
    ],
    "shared_papers_by_partner_cluster": {
-    "University/college": 1325,
-    "IIT": 342,
+    "University/college": 1318,
+    "IIT": 341,
     "NIT": 301,
-    "Other": 163,
+    "Other": 162,
     "IIIT": 104,
     "Industry": 71,
-    "Government lab/agency": 62,
+    "Government lab/agency": 61,
     "CSIR": 33,
     "DAE": 29,
     "Premier science inst.": 18,
@@ -811,8 +812,8 @@
     "IISER": 6
    },
    "partners_by_cluster_count": {
-    "University/college": 260,
-    "Other": 31,
+    "University/college": 259,
+    "Other": 30,
     "NIT": 22,
     "IIT": 20,
     "Government lab/agency": 15,
@@ -824,11 +825,11 @@
     "Premier science inst.": 2,
     "CSIR": 1
    },
-   "papers": 3594,
+   "papers": 3587,
    "share_with_other_indian_institute_%": 46.0,
    "share_with_foreign_coauthor_%": 14.5,
    "top_foreign_countries": {
-    "SA": 106,
+    "SA": 105,
     "US": 60,
     "AE": 58,
     "GB": 43,
@@ -839,7 +840,7 @@
    }
   },
   "NIT Silchar": {
-   "distinct_indian_partners": 466,
+   "distinct_indian_partners": 465,
    "top10_partners": [
     {
      "partner_inst": "Indian Institute of Technology Guwahati",
@@ -853,8 +854,8 @@
     },
     {
      "partner_inst": "Koneru Lakshmaiah Education Foundation",
-     "shared_papers": 103,
-     "total_citations": 1220
+     "shared_papers": 102,
+     "total_citations": 1213
     },
     {
      "partner_inst": "National Institute of Technology Durgapur",
@@ -868,8 +869,8 @@
     },
     {
      "partner_inst": "Assam University",
-     "shared_papers": 76,
-     "total_citations": 1535
+     "shared_papers": 75,
+     "total_citations": 1531
     },
     {
      "partner_inst": "Jadavpur University",
@@ -888,26 +889,26 @@
     },
     {
      "partner_inst": "Indian Institute of Science Bangalore",
-     "shared_papers": 65,
-     "total_citations": 946
+     "shared_papers": 64,
+     "total_citations": 935
     }
    ],
    "shared_papers_by_partner_cluster": {
-    "University/college": 2569,
-    "NIT": 656,
+    "University/college": 2556,
+    "NIT": 653,
     "IIT": 584,
     "Other": 111,
     "IIIT": 78,
-    "Premier science inst.": 76,
+    "Premier science inst.": 75,
     "Government lab/agency": 64,
-    "Medical/health": 48,
+    "Medical/health": 47,
     "Industry": 27,
     "CSIR": 18,
     "IISER": 13,
     "DAE": 7
    },
    "partners_by_cluster_count": {
-    "University/college": 322,
+    "University/college": 321,
     "Other": 27,
     "NIT": 24,
     "IIT": 22,
@@ -920,12 +921,12 @@
     "DAE": 4,
     "CSIR": 1
    },
-   "papers": 8411,
+   "papers": 8398,
    "share_with_other_indian_institute_%": 36.2,
    "share_with_foreign_coauthor_%": 15.1,
    "top_foreign_countries": {
-    "US": 238,
-    "CN": 162,
+    "US": 237,
+    "CN": 161,
     "GB": 146,
     "CA": 91,
     "IT": 76,
@@ -944,32 +945,32 @@
    {
     "your_cluster": "NIT",
     "partner_cluster": "University/college",
-    "shared_papers": 5414
+    "shared_papers": 5391
    },
    {
     "your_cluster": "NIT",
     "partner_cluster": "IIT",
-    "shared_papers": 1281
+    "shared_papers": 1280
    },
    {
     "your_cluster": "NIT",
     "partner_cluster": "NIT",
-    "shared_papers": 1246
+    "shared_papers": 1242
    },
    {
     "your_cluster": "NIT",
     "partner_cluster": "Other",
-    "shared_papers": 416
+    "shared_papers": 415
    },
    {
     "your_cluster": "NIT",
     "partner_cluster": "IIIT",
-    "shared_papers": 322
+    "shared_papers": 321
    },
    {
     "your_cluster": "NIT",
     "partner_cluster": "Government lab/agency",
-    "shared_papers": 191
+    "shared_papers": 190
    },
    {
     "your_cluster": "NIT",
@@ -979,12 +980,12 @@
    {
     "your_cluster": "NIT",
     "partner_cluster": "Premier science inst.",
-    "shared_papers": 111
+    "shared_papers": 110
    },
    {
     "your_cluster": "NIT",
     "partner_cluster": "Medical/health",
-    "shared_papers": 101
+    "shared_papers": 100
    },
    {
     "your_cluster": "NIT",
@@ -1006,8 +1007,8 @@
    {
     "author": "Samuel Lalthazuala Rokhum",
     "inst": "NIT Silchar",
-    "distinct_indian_partner_institutes": 64,
-    "papers_with_them": 137
+    "distinct_indian_partner_institutes": 63,
+    "papers_with_them": 136
    },
    {
     "author": "Gaurav Dwivedi",
@@ -1019,7 +1020,7 @@
     "author": "Tikendra Nath Verma",
     "inst": "MANIT Bhopal",
     "distinct_indian_partner_institutes": 48,
-    "papers_with_them": 105
+    "papers_with_them": 104
    },
    {
     "author": "Md. Ahmaruzzaman",

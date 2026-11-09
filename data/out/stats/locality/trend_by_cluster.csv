@@ -92,7 +92,7 @@ MANIT Bhopal,2020,Premier science inst.,0
 MANIT Bhopal,2021,Other university/college,192
 MANIT Bhopal,2021,Central university,13
 MANIT Bhopal,2021,DAE,0
-MANIT Bhopal,2021,NIT,31
+MANIT Bhopal,2021,NIT,30
 MANIT Bhopal,2021,ICAR,2
 MANIT Bhopal,2021,IIT,55
 MANIT Bhopal,2021,CSIR,9
@@ -107,7 +107,7 @@ MANIT Bhopal,2021,IISc,0
 MANIT Bhopal,2021,ISRO,0
 MANIT Bhopal,2021,DRDO,0
 MANIT Bhopal,2021,Premier science inst.,0
-MANIT Bhopal,2022,Other university/college,190
+MANIT Bhopal,2022,Other university/college,188
 MANIT Bhopal,2022,Central university,15
 MANIT Bhopal,2022,DAE,1
 MANIT Bhopal,2022,NIT,41
@@ -125,7 +125,7 @@ MANIT Bhopal,2022,IISc,0
 MANIT Bhopal,2022,ISRO,1
 MANIT Bhopal,2022,DRDO,0
 MANIT Bhopal,2022,Premier science inst.,0
-MANIT Bhopal,2023,Other university/college,188
+MANIT Bhopal,2023,Other university/college,187
 MANIT Bhopal,2023,Central university,20
 MANIT Bhopal,2023,DAE,0
 MANIT Bhopal,2023,NIT,36
@@ -133,7 +133,7 @@ MANIT Bhopal,2023,ICAR,7
 MANIT Bhopal,2023,IIT,30
 MANIT Bhopal,2023,CSIR,13
 MANIT Bhopal,2023,Government lab/agency,9
-MANIT Bhopal,2023,IIIT,22
+MANIT Bhopal,2023,IIIT,21
 MANIT Bhopal,2023,Other,6
 MANIT Bhopal,2023,Industry,4
 MANIT Bhopal,2023,Medical/health,1
@@ -318,7 +318,7 @@ NIT Jamshedpur,2022,DRDO,1
 NIT Jamshedpur,2022,IISER,0
 NIT Jamshedpur,2023,IIT,35
 NIT Jamshedpur,2023,CSIR,22
-NIT Jamshedpur,2023,Other university/college,184
+NIT Jamshedpur,2023,Other university/college,183
 NIT Jamshedpur,2023,Central university,11
 NIT Jamshedpur,2023,NIT,42
 NIT Jamshedpur,2023,IISc,2
@@ -333,14 +333,14 @@ NIT Jamshedpur,2023,DAE,4
 NIT Jamshedpur,2023,Premier science inst.,0
 NIT Jamshedpur,2023,DRDO,3
 NIT Jamshedpur,2023,IISER,0
-NIT Jamshedpur,2024,IIT,54
+NIT Jamshedpur,2024,IIT,53
 NIT Jamshedpur,2024,CSIR,25
-NIT Jamshedpur,2024,Other university/college,213
-NIT Jamshedpur,2024,Central university,10
+NIT Jamshedpur,2024,Other university/college,208
+NIT Jamshedpur,2024,Central university,9
 NIT Jamshedpur,2024,NIT,75
 NIT Jamshedpur,2024,IISc,0
-NIT Jamshedpur,2024,Other,3
-NIT Jamshedpur,2024,Government lab/agency,9
+NIT Jamshedpur,2024,Other,2
+NIT Jamshedpur,2024,Government lab/agency,8
 NIT Jamshedpur,2024,ICAR,0
 NIT Jamshedpur,2024,IIIT,19
 NIT Jamshedpur,2024,ISRO,2
@@ -436,7 +436,7 @@ NIT Silchar,2018,ISRO,0
 NIT Silchar,2018,DAE,0
 NIT Silchar,2018,DRDO,0
 NIT Silchar,2019,Central university,28
-NIT Silchar,2019,Other university/college,101
+NIT Silchar,2019,Other university/college,98
 NIT Silchar,2019,Medical/health,4
 NIT Silchar,2019,IISc,0
 NIT Silchar,2019,IIT,37
@@ -453,8 +453,8 @@ NIT Silchar,2019,ISRO,0
 NIT Silchar,2019,DAE,2
 NIT Silchar,2019,DRDO,0
 NIT Silchar,2020,Central university,52
-NIT Silchar,2020,Other university/college,135
-NIT Silchar,2020,Medical/health,6
+NIT Silchar,2020,Other university/college,132
+NIT Silchar,2020,Medical/health,5
 NIT Silchar,2020,IISc,1
 NIT Silchar,2020,IIT,53
 NIT Silchar,2020,NIT,70
@@ -487,11 +487,11 @@ NIT Silchar,2021,ISRO,0
 NIT Silchar,2021,DAE,0
 NIT Silchar,2021,DRDO,0
 NIT Silchar,2022,Central university,41
-NIT Silchar,2022,Other university/college,276
+NIT Silchar,2022,Other university/college,275
 NIT Silchar,2022,Medical/health,6
 NIT Silchar,2022,IISc,13
 NIT Silchar,2022,IIT,60
-NIT Silchar,2022,NIT,82
+NIT Silchar,2022,NIT,81
 NIT Silchar,2022,IIIT,17
 NIT Silchar,2022,Government lab/agency,5
 NIT Silchar,2022,Premier science inst.,10
@@ -504,7 +504,7 @@ NIT Silchar,2022,ISRO,0
 NIT Silchar,2022,DAE,0
 NIT Silchar,2022,DRDO,0
 NIT Silchar,2023,Central university,41
-NIT Silchar,2023,Other university/college,320
+NIT Silchar,2023,Other university/college,317
 NIT Silchar,2023,Medical/health,5
 NIT Silchar,2023,IISc,10
 NIT Silchar,2023,IIT,54
@@ -520,7 +520,7 @@ NIT Silchar,2023,IISER,0
 NIT Silchar,2023,ISRO,3
 NIT Silchar,2023,DAE,1
 NIT Silchar,2023,DRDO,1
-NIT Silchar,2024,Central university,32
+NIT Silchar,2024,Central university,31
 NIT Silchar,2024,Other university/college,382
 NIT Silchar,2024,Medical/health,6
 NIT Silchar,2024,IISc,14
@@ -538,9 +538,9 @@ NIT Silchar,2024,ISRO,1
 NIT Silchar,2024,DAE,2
 NIT Silchar,2024,DRDO,0
 NIT Silchar,2025,Central university,24
-NIT Silchar,2025,Other university/college,374
+NIT Silchar,2025,Other university/college,372
 NIT Silchar,2025,Medical/health,3
-NIT Silchar,2025,IISc,7
+NIT Silchar,2025,IISc,6
 NIT Silchar,2025,IIT,103
 NIT Silchar,2025,NIT,97
 NIT Silchar,2025,IIIT,26
@@ -559,7 +559,7 @@ NIT Silchar,2026,Other university/college,289
 NIT Silchar,2026,Medical/health,3
 NIT Silchar,2026,IISc,7
 NIT Silchar,2026,IIT,76
-NIT Silchar,2026,NIT,68
+NIT Silchar,2026,NIT,66
 NIT Silchar,2026,IIIT,8
 NIT Silchar,2026,Government lab/agency,8
 NIT Silchar,2026,Premier science inst.,7

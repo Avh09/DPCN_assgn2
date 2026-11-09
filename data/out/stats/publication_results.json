@@ -5,12 +5,12 @@
    "2017": 332,
    "2018": 355,
    "2019": 265,
-   "2020": 448,
-   "2021": 600,
-   "2022": 622,
-   "2023": 684,
-   "2024": 708,
-   "2025": 792,
+   "2020": 446,
+   "2021": 597,
+   "2022": 620,
+   "2023": 680,
+   "2024": 707,
+   "2025": 791,
    "2026": 668
   },
   "NIT Jamshedpur": {
@@ -18,11 +18,11 @@
    "2017": 118,
    "2018": 146,
    "2019": 196,
-   "2020": 309,
-   "2021": 411,
-   "2022": 445,
-   "2023": 476,
-   "2024": 521,
+   "2020": 308,
+   "2021": 410,
+   "2022": 444,
+   "2023": 474,
+   "2024": 519,
    "2025": 491,
    "2026": 396
   },
@@ -30,27 +30,27 @@
    "2016": 295,
    "2017": 362,
    "2018": 527,
-   "2019": 578,
-   "2020": 792,
-   "2021": 896,
-   "2022": 1108,
-   "2023": 990,
-   "2024": 1117,
-   "2025": 1044,
-   "2026": 702
+   "2019": 575,
+   "2020": 789,
+   "2021": 895,
+   "2022": 1106,
+   "2023": 989,
+   "2024": 1116,
+   "2025": 1043,
+   "2026": 701
   },
   "all (unique papers)": {
    "2016": 665,
    "2017": 812,
    "2018": 1028,
-   "2019": 1036,
-   "2020": 1541,
-   "2021": 1903,
-   "2022": 2169,
-   "2023": 2143,
-   "2024": 2342,
-   "2025": 2322,
-   "2026": 1759
+   "2019": 1033,
+   "2020": 1535,
+   "2021": 1898,
+   "2022": 2164,
+   "2023": 2136,
+   "2024": 2338,
+   "2025": 2320,
+   "2026": 1758
   }
  },
  "growth_2016_to_2025_cagr_%": {
@@ -59,36 +59,36 @@
   "NIT Silchar": 15.1
  },
  "totals": {
-  "MANIT Bhopal": 5759,
-  "NIT Jamshedpur": 3594,
-  "NIT Silchar": 8411,
-  "unique_papers": 17720
+  "MANIT Bhopal": 5746,
+  "NIT Jamshedpur": 3587,
+  "NIT Silchar": 8398,
+  "unique_papers": 17687
  },
  "type_split": {
   "MANIT Bhopal": {
-   "journal": 3592,
-   "conference": 2167
+   "journal": 3580,
+   "conference": 2166
   },
   "NIT Jamshedpur": {
-   "journal": 2399,
-   "conference": 1195
+   "journal": 2393,
+   "conference": 1194
   },
   "NIT Silchar": {
-   "journal": 5464,
-   "conference": 2947
+   "journal": 5454,
+   "conference": 2944
   }
  },
  "quartiles": {
   "MANIT Bhopal": {
-   "journal_papers": 3592,
-   "with_quartile": 3584,
+   "journal_papers": 3580,
+   "with_quartile": 3572,
    "match_rate_%": 99.8,
    "unranked": 8,
    "Q1_fraction_%": 33.2,
    "shares_%": {
     "Q1": 33.2,
-    "Q2": 34.3,
-    "Q3": 21.8,
+    "Q2": 34.2,
+    "Q3": 21.9,
     "Q4": 10.7
    },
    "Q1_fraction_by_year_%": {
@@ -96,25 +96,25 @@
     "2017": 23.9,
     "2018": 19.4,
     "2019": 20.9,
-    "2020": 28.2,
-    "2021": 35.1,
-    "2022": 35.7,
-    "2023": 36.4,
-    "2024": 41.1,
-    "2025": 40.4,
+    "2020": 28.1,
+    "2021": 35.0,
+    "2022": 35.6,
+    "2023": 36.2,
+    "2024": 41.2,
+    "2025": 40.5,
     "2026": 35.1
    }
   },
   "NIT Jamshedpur": {
-   "journal_papers": 2399,
-   "with_quartile": 2398,
+   "journal_papers": 2393,
+   "with_quartile": 2392,
    "match_rate_%": 100.0,
    "unranked": 1,
-   "Q1_fraction_%": 26.3,
+   "Q1_fraction_%": 26.2,
    "shares_%": {
-    "Q1": 26.3,
+    "Q1": 26.2,
     "Q2": 40.0,
-    "Q3": 25.9,
+    "Q3": 26.0,
     "Q4": 7.8
    },
    "Q1_fraction_by_year_%": {
@@ -123,17 +123,17 @@
     "2018": 22.3,
     "2019": 24.1,
     "2020": 25.9,
-    "2021": 24.3,
-    "2022": 25.8,
-    "2023": 26.6,
-    "2024": 24.7,
+    "2021": 24.4,
+    "2022": 25.9,
+    "2023": 26.4,
+    "2024": 24.3,
     "2025": 28.2,
     "2026": 30.6
    }
   },
   "NIT Silchar": {
-   "journal_papers": 5464,
-   "with_quartile": 5453,
+   "journal_papers": 5454,
+   "with_quartile": 5443,
    "match_rate_%": 99.8,
    "unranked": 11,
    "Q1_fraction_%": 36.8,
@@ -141,17 +141,17 @@
     "Q1": 36.8,
     "Q2": 39.6,
     "Q3": 18.8,
-    "Q4": 4.7
+    "Q4": 4.8
    },
    "Q1_fraction_by_year_%": {
     "2016": 36.9,
     "2017": 30.7,
     "2018": 27.5,
-    "2019": 27.9,
-    "2020": 31.6,
-    "2021": 35.5,
-    "2022": 33.8,
-    "2023": 40.8,
+    "2019": 28.0,
+    "2020": 31.8,
+    "2021": 35.6,
+    "2022": 33.6,
+    "2023": 40.7,
     "2024": 42.0,
     "2025": 42.0,
     "2026": 42.9
@@ -160,45 +160,45 @@
  },
  "conference_rank": {
   "MANIT Bhopal": {
-   "conference_papers": 2167,
+   "conference_papers": 2166,
    "with_CORE_rank": 10,
    "rank_counts": {
     "C": 6,
     "B": 4
    },
-   "with_scopus_quartile": 2149,
+   "with_scopus_quartile": 2148,
    "scopus_quartile_counts": {
-    "Q4": 1300,
+    "Q4": 1299,
     "Q3": 774,
     "Q2": 75
    },
    "unranked": 8
   },
   "NIT Jamshedpur": {
-   "conference_papers": 1195,
+   "conference_papers": 1194,
    "with_CORE_rank": 3,
    "rank_counts": {
     "C": 2,
     "B": 1
    },
-   "with_scopus_quartile": 1168,
+   "with_scopus_quartile": 1167,
    "scopus_quartile_counts": {
     "Q4": 915,
-    "Q3": 223,
+    "Q3": 222,
     "Q2": 30
    },
    "unranked": 24
   },
   "NIT Silchar": {
-   "conference_papers": 2947,
+   "conference_papers": 2944,
    "with_CORE_rank": 30,
    "rank_counts": {
     "B": 22,
     "C": 8
    },
-   "with_scopus_quartile": 2900,
+   "with_scopus_quartile": 2897,
    "scopus_quartile_counts": {
-    "Q4": 2231,
+    "Q4": 2228,
     "Q3": 608,
     "Q2": 61
    },
@@ -226,23 +226,23 @@
     "quartile": "Q1"
    },
    {
-    "journal_name": "Environmental Science and Pollution Research",
-    "papers": 34,
-    "citations": 654,
-    "quartile": "Q1"
-   },
-   {
     "journal_name": "Scientific Reports",
     "papers": 33,
     "citations": 745,
+    "quartile": "Q1"
+   },
+   {
+    "journal_name": "Environmental Science and Pollution Research",
+    "papers": 33,
+    "citations": 639,
     "quartile": "Q1"
    }
   ],
   "NIT Jamshedpur": [
    {
     "journal_name": "Multimedia Tools and Applications",
-    "papers": 31,
-    "citations": 858,
+    "papers": 30,
+    "citations": 849,
     "quartile": "Q2"
    },
    {
@@ -285,8 +285,8 @@
    },
    {
     "journal_name": "Multimedia Tools and Applications",
-    "papers": 70,
-    "citations": 1727,
+    "papers": 68,
+    "citations": 1685,
     "quartile": "Q2"
    },
    {
@@ -315,7 +315,7 @@
    "Lecture notes in electrical engineering": 189,
    "Lecture notes in civil engineering": 89,
    "Lecture notes in mechanical engineering": 88,
-   "Materials Today Proceedings": 83,
+   "Materials Today Proceedings": 82,
    "AIP conference proceedings": 61
   },
   "NIT Silchar": {
@@ -328,7 +328,7 @@
  },
  "citations": {
   "MANIT Bhopal": {
-   "total_citations": 90684,
+   "total_citations": 90499,
    "mean_per_paper": 15.75,
    "median": 4.0,
    "uncited_%": 23.7,
@@ -339,7 +339,7 @@
     "2017": 34.3,
     "2018": 25.5,
     "2019": 27.6,
-    "2020": 26.4,
+    "2020": 26.5,
     "2021": 22.9,
     "2022": 15.6,
     "2023": 11.5,
@@ -349,10 +349,10 @@
    }
   },
   "NIT Jamshedpur": {
-   "total_citations": 44061,
-   "mean_per_paper": 12.26,
-   "median": 4.0,
-   "uncited_%": 25.5,
+   "total_citations": 43995,
+   "mean_per_paper": 12.27,
+   "median": 3.0,
+   "uncited_%": 25.6,
    "papers_with_100plus": 61,
    "share_of_citations_from_top_1%_papers_%": 20.7,
    "mean_citations_by_year": {
@@ -361,7 +361,7 @@
     "2018": 21.2,
     "2019": 20.7,
     "2020": 25.5,
-    "2021": 21.2,
+    "2021": 21.3,
     "2022": 11.5,
     "2023": 11.7,
     "2024": 6.9,
@@ -370,12 +370,12 @@
    }
   },
   "NIT Silchar": {
-   "total_citations": 124894,
-   "mean_per_paper": 14.85,
+   "total_citations": 124608,
+   "mean_per_paper": 14.84,
    "median": 5.0,
    "uncited_%": 20.2,
    "papers_with_100plus": 148,
-   "share_of_citations_from_top_1%_papers_%": 14.5,
+   "share_of_citations_from_top_1%_papers_%": 14.4,
    "mean_citations_by_year": {
     "2016": 32.4,
     "2017": 25.4,
@@ -997,7 +997,7 @@
    },
    "domains_%": {
     "Physical Sciences": 82.6,
-    "Social Sciences": 9.1,
+    "Social Sciences": 9.0,
     "Life Sciences": 4.9,
     "Health Sciences": 3.4
    },
@@ -1014,35 +1014,35 @@
     "Engineering": 56.6,
     "Computer Science": 12.4,
     "Materials Science": 6.4,
-    "Environmental Science": 4.2,
+    "Environmental Science": 4.1,
     "Mathematics": 4.1,
     "Energy": 3.1,
     "Physics and Astronomy": 2.8,
     "Medicine": 2.2
    },
    "domains_%": {
-    "Physical Sciences": 92.0,
+    "Physical Sciences": 92.1,
     "Social Sciences": 3.2,
-    "Health Sciences": 3.0,
+    "Health Sciences": 2.9,
     "Life Sciences": 1.8
    },
    "field_missing_%": 0.0,
    "highest_mean_citations_fields(min 50 papers)": {
     "Mathematics": 34.6,
-    "Environmental Science": 32.3,
-    "Medicine": 21.7,
+    "Environmental Science": 32.7,
+    "Medicine": 21.8,
     "Materials Science": 13.9
    }
   },
   "NIT Silchar": {
    "fields_top8_%": {
-    "Engineering": 54.4,
-    "Computer Science": 14.4,
+    "Engineering": 54.5,
+    "Computer Science": 14.3,
     "Materials Science": 5.7,
     "Energy": 5.3,
     "Physics and Astronomy": 3.7,
     "Environmental Science": 3.0,
-    "Medicine": 3.0,
+    "Medicine": 2.9,
     "Decision Sciences": 1.6
    },
    "domains_%": {
@@ -1055,7 +1055,7 @@
    "highest_mean_citations_fields(min 50 papers)": {
     "Energy": 24.1,
     "Agricultural and Biological Sciences": 23.2,
-    "Environmental Science": 22.7,
+    "Environmental Science": 22.5,
     "Materials Science": 21.1
    }
   }

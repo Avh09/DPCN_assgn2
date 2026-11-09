@@ -1,9 +1,9 @@
 your_inst,partner_inst,shared_papers,total_citations
-MANIT Bhopal,National Institute of Technology Raipur,85,1039
-MANIT Bhopal,Rajiv Gandhi Technical University,67,889
+MANIT Bhopal,National Institute of Technology Raipur,84,1027
+MANIT Bhopal,Rajiv Gandhi Technical University,66,849
 MANIT Bhopal,Indian Institute of Technology Roorkee,63,1209
-MANIT Bhopal,Indian Institute of Information Technology Bhopal,51,406
 MANIT Bhopal,Indian Institute of Technology Delhi,51,599
+MANIT Bhopal,Indian Institute of Information Technology Bhopal,50,392
 MANIT Bhopal,Indian Institute of Information Technology Design and Manufacturing Jabalpur,50,815
 MANIT Bhopal,Amity University,48,1081
 MANIT Bhopal,Advanced Materials and Processes Research Institute,45,324
@@ -34,8 +34,8 @@ MANIT Bhopal,National Institute of Technology Manipur,20,734
 MANIT Bhopal,Bennett University,19,136
 MANIT Bhopal,GLA University,19,612
 MANIT Bhopal,Indian Institute of Technology Dhanbad,19,347
-MANIT Bhopal,Pandit Deendayal Energy University,19,310
 MANIT Bhopal,Indian Institute of Technology Bhubaneswar,18,274
+MANIT Bhopal,Pandit Deendayal Energy University,18,270
 MANIT Bhopal,Delhi Technological University,17,326
 MANIT Bhopal,Indian Institute of Technology Kanpur,17,104
 MANIT Bhopal,Indian Institute of Technology Patna,17,370
@@ -106,7 +106,6 @@ MANIT Bhopal,Central Building Research Institute,6,280
 MANIT Bhopal,Chhattisgarh Swami Vivekanand Technical University,6,107
 MANIT Bhopal,GMR Institute of Technology,6,103
 MANIT Bhopal,Institute of Infrastructure Technology Research and Management,6,130
-MANIT Bhopal,Madan Mohan Malaviya University of Technology,6,169
 MANIT Bhopal,National Institute of Technology Srinagar,6,228
 MANIT Bhopal,Noida International University,6,51
 MANIT Bhopal,Punjab Technical University,6,126
@@ -120,6 +119,7 @@ MANIT Bhopal,All India Council for Technical Education,5,127
 MANIT Bhopal,Centre for Development of Advanced Computing,5,135
 MANIT Bhopal,Glocal University,5,210
 MANIT Bhopal,Indian Institute of Information Technology Allahabad,5,30
+MANIT Bhopal,Madan Mohan Malaviya University of Technology,5,137
 MANIT Bhopal,National Institute of Technology Durgapur,5,78
 MANIT Bhopal,North Eastern Regional Institute of Science and Technology,5,5
 MANIT Bhopal,Panjab University,5,22
@@ -464,11 +464,11 @@ NIT Jamshedpur,Tata Steel (India),37,284
 NIT Jamshedpur,Council of Scientific and Industrial Research,33,564
 NIT Jamshedpur,Indian Institute of Technology Roorkee,33,378
 NIT Jamshedpur,KIIT University,33,238
-NIT Jamshedpur,Chandigarh University,32,307
 NIT Jamshedpur,Amrita Vishwa Vidyapeetham,31,570
+NIT Jamshedpur,Chandigarh University,31,298
 NIT Jamshedpur,Amity University,30,515
-NIT Jamshedpur,Jadavpur University,30,368
 NIT Jamshedpur,National Institute of Technology Sikkim,30,146
+NIT Jamshedpur,Jadavpur University,29,354
 NIT Jamshedpur,National Institute of Technology Rourkela,29,235
 NIT Jamshedpur,Graphic Era University,27,82
 NIT Jamshedpur,Indian Institute of Technology BHU,25,127
@@ -479,10 +479,10 @@ NIT Jamshedpur,SR University,23,28
 NIT Jamshedpur,"RVS College of Engineering & Technology, Jamshedpur",21,82
 NIT Jamshedpur,SRM Institute of Science and Technology,21,277
 NIT Jamshedpur,Indian Institute of Technology Bhubaneswar,20,373
-NIT Jamshedpur,Indian Institute of Technology Kanpur,20,1272
 NIT Jamshedpur,Indian Institute of Technology Madras,20,80
 NIT Jamshedpur,Manipal Academy of Higher Education,20,165
 NIT Jamshedpur,"Birla Institute of Technology, Mesra",19,145
+NIT Jamshedpur,Indian Institute of Technology Kanpur,19,1258
 NIT Jamshedpur,"SRM University, Andhra Pradesh",19,220
 NIT Jamshedpur,Siksha O Anusandhan University,19,131
 NIT Jamshedpur,Indian Institute of Information Technology Design and Manufacturing Jabalpur,18,503
@@ -514,7 +514,6 @@ NIT Jamshedpur,Delhi Technological University,10,101
 NIT Jamshedpur,Madan Mohan Malaviya University of Technology,10,34
 NIT Jamshedpur,National Institute of Technology Nagaland,10,86
 NIT Jamshedpur,National Institute of Technology Raipur,10,66
-NIT Jamshedpur,University of Kalyani,10,503
 NIT Jamshedpur,VIT Bhopal University,10,152
 NIT Jamshedpur,Babasaheb Bhimrao Ambedkar Bihar University,9,75
 NIT Jamshedpur,Bennett University,9,34
@@ -525,6 +524,7 @@ NIT Jamshedpur,Indian Institute of Information Technology Kalyani,9,54
 NIT Jamshedpur,Parul University,9,76
 NIT Jamshedpur,Sharda University,9,298
 NIT Jamshedpur,Tilka Manjhi Bhagalpur University,9,38
+NIT Jamshedpur,University of Kalyani,9,489
 NIT Jamshedpur,Dr. B. R. Ambedkar National Institute of Technology Jalandhar,8,57
 NIT Jamshedpur,G.L. Bajaj Institute of Technology and Management Greater Noida,8,83
 NIT Jamshedpur,Government College of Engineering & Ceramic Technology,8,34
@@ -575,7 +575,6 @@ NIT Jamshedpur,National Institute of Technology Calicut,5,20
 NIT Jamshedpur,Punjabi University,5,20
 NIT Jamshedpur,Tata Consultancy Services (India),5,6
 NIT Jamshedpur,"All India Institute of Medical Sciences, Deoghar",4,12
-NIT Jamshedpur,Assam University,4,256
 NIT Jamshedpur,Central Mechanical Engineering Research Institute,4,33
 NIT Jamshedpur,Central University of Jharkhand,4,165
 NIT Jamshedpur,Centre for Materials for Electronics Technology,4,20
@@ -584,7 +583,6 @@ NIT Jamshedpur,Indian Association for the Cultivation of Science,4,27
 NIT Jamshedpur,"Indian Institute of Information Technology, Sonepat",4,8
 NIT Jamshedpur,Indian Institute of Technology Bhilai,4,66
 NIT Jamshedpur,Indian Institute of Technology Jammu,4,34
-NIT Jamshedpur,Indian Institute of Water Management,4,256
 NIT Jamshedpur,Indira Gandhi Delhi Technical University for Women,4,16
 NIT Jamshedpur,JIS University,4,0
 NIT Jamshedpur,Jain University,4,143
@@ -604,6 +602,7 @@ NIT Jamshedpur,Uttaranchal University,4,78
 NIT Jamshedpur,Vikram University,4,1
 NIT Jamshedpur,Adamas University,3,11
 NIT Jamshedpur,All India Institute of Medical Sciences,3,14
+NIT Jamshedpur,Assam University,3,242
 NIT Jamshedpur,Central Glass and Ceramic Research Institute,3,49
 NIT Jamshedpur,Davangere University,3,258
 NIT Jamshedpur,"Dharanidhar University, Keonjhar",3,2
@@ -616,6 +615,7 @@ NIT Jamshedpur,Indian Council of Agricultural Research,3,219
 NIT Jamshedpur,Indian Institute of Chemical Technology,3,8
 NIT Jamshedpur,"Indian Institute of Science Education and Research, Bhopal",3,14
 NIT Jamshedpur,Indian Institute of Technology Hyderabad,3,4
+NIT Jamshedpur,Indian Institute of Water Management,3,242
 NIT Jamshedpur,Indo-US Science and Technology Forum,3,124
 NIT Jamshedpur,Indus University,3,16
 NIT Jamshedpur,Inter-University Centre for Astronomy and Astrophysics,3,104
@@ -644,7 +644,6 @@ NIT Jamshedpur,All India Shri Shivaji Memorial Society College of Engineering,2,
 NIT Jamshedpur,Aryabhatta Knowledge University,2,9
 NIT Jamshedpur,Bharati Vidyapeeth (Deemed to be University),2,133
 NIT Jamshedpur,Bidhan Chandra Krishi Viswavidyalaya,2,132
-NIT Jamshedpur,Bihar Agricultural University,2,124
 NIT Jamshedpur,Birla Institute of Technology and Science - Hyderabad Campus,2,3
 NIT Jamshedpur,Central University of Punjab,2,75
 NIT Jamshedpur,Christ University,2,10
@@ -670,7 +669,6 @@ NIT Jamshedpur,Kakatiya University,2,25
 NIT Jamshedpur,Kalpavriksh,2,4
 NIT Jamshedpur,Karnatak University,2,248
 NIT Jamshedpur,Lalit Narayan Mithila University,2,10
-NIT Jamshedpur,M.J.P. Rohilkhand University,2,25
 NIT Jamshedpur,"Maharishi Markandeshwar University, Mullana",2,80
 NIT Jamshedpur,Mahindra University,2,4
 NIT Jamshedpur,Mandsaur University,2,52
@@ -705,7 +703,6 @@ NIT Jamshedpur,Ahmedabad University,1,3
 NIT Jamshedpur,Aliah University,1,8
 NIT Jamshedpur,All India Institute of Medical Sciences Bhopal,1,11
 NIT Jamshedpur,Amity University Gurugram,1,3
-NIT Jamshedpur,Amity University Madhya Pradesh,1,14
 NIT Jamshedpur,Andhra University,1,1
 NIT Jamshedpur,Antara,1,0
 NIT Jamshedpur,Assam Don Bosco University,1,4
@@ -718,6 +715,7 @@ NIT Jamshedpur,Bangalore Medical College and Research Institute,1,68
 NIT Jamshedpur,Bengal School of Technology and Management,1,1
 NIT Jamshedpur,Bharat Heavy Electricals (India),1,1
 NIT Jamshedpur,Bharat Petroleum (India),1,0
+NIT Jamshedpur,Bihar Agricultural University,1,110
 NIT Jamshedpur,Biju Patnaik University of Technology,1,0
 NIT Jamshedpur,Bikaner Technical University,1,14
 NIT Jamshedpur,"Birla Institute of Technology and Science, Pilani - Goa Campus",1,3
@@ -737,7 +735,6 @@ NIT Jamshedpur,Dayalbagh Educational Institute,1,2
 NIT Jamshedpur,Dayananda Sagar College of Engineering,1,16
 NIT Jamshedpur,Deen Dayal Upadhyaya Gorakhpur University,1,1
 NIT Jamshedpur,Dibrugarh University,1,1
-NIT Jamshedpur,Directorate of Weed Research,1,14
 NIT Jamshedpur,Dr. A.P.J. Abdul Kalam Technical University,1,66
 NIT Jamshedpur,Dr. B.C. Roy Engineering College,1,0
 NIT Jamshedpur,Dr. NTR University of Health Sciences,1,0
@@ -784,6 +781,7 @@ NIT Jamshedpur,Jaypee Institute of Information Technology,1,2
 NIT Jamshedpur,Jaypee University of Information Technology,1,12
 NIT Jamshedpur,KCG College of Technology,1,0
 NIT Jamshedpur,KPR Institute of Engineering and Technology,1,0
+NIT Jamshedpur,M.J.P. Rohilkhand University,1,11
 NIT Jamshedpur,"MIT Art, Design and Technology University",1,3
 NIT Jamshedpur,MIT World Peace University,1,1
 NIT Jamshedpur,Maharaja Engineering College,1,14
@@ -842,27 +840,27 @@ NIT Jamshedpur,Vasireddy Venkatadri International Technological University,1,5
 NIT Jamshedpur,Visva-Bharati University,1,0
 NIT Silchar,Indian Institute of Technology Guwahati,137,1176
 NIT Silchar,Mizoram University,134,3450
-NIT Silchar,Koneru Lakshmaiah Education Foundation,103,1220
+NIT Silchar,Koneru Lakshmaiah Education Foundation,102,1213
 NIT Silchar,National Institute of Technology Durgapur,100,1945
 NIT Silchar,Vellore Institute of Technology University,93,1151
-NIT Silchar,Assam University,76,1535
+NIT Silchar,Assam University,75,1531
 NIT Silchar,Jadavpur University,73,842
 NIT Silchar,Indian Institute of Technology Kharagpur,66,771
 NIT Silchar,National Institute of Technology Meghalaya,66,706
-NIT Silchar,Indian Institute of Science Bangalore,65,946
-NIT Silchar,National Institute of Technology Rourkela,65,923
+NIT Silchar,Indian Institute of Science Bangalore,64,935
+NIT Silchar,National Institute of Technology Rourkela,64,923
 NIT Silchar,Malaviya National Institute of Technology Jaipur,56,409
 NIT Silchar,National Institute of Technology Agartala,55,606
 NIT Silchar,Indian Institute of Technology Delhi,54,735
 NIT Silchar,Indian Institute of Information Technology Allahabad,53,476
-NIT Silchar,Siksha O Anusandhan University,52,473
+NIT Silchar,Siksha O Anusandhan University,51,459
 NIT Silchar,Amrita Vishwa Vidyapeetham,47,281
 NIT Silchar,Tezpur University,47,663
 NIT Silchar,KIIT University,45,344
 NIT Silchar,University of Petroleum and Energy Studies,44,802
 NIT Silchar,Indian Institute of Technology Bombay,42,478
 NIT Silchar,Motilal Nehru National Institute of Technology,42,118
-NIT Silchar,Siddaganga Institute of Technology,42,508
+NIT Silchar,Siddaganga Institute of Technology,41,497
 NIT Silchar,REVA University,39,243
 NIT Silchar,Indian Institute of Technology Indore,36,952
 NIT Silchar,Indian Institute of Technology Roorkee,36,564
@@ -871,33 +869,33 @@ NIT Silchar,SRM Institute of Science and Technology,36,307
 NIT Silchar,Indian Institute of Technology Dhanbad,35,518
 NIT Silchar,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,35,303
 NIT Silchar,Aditya University,33,397
-NIT Silchar,National Institute of Technology Patna,33,714
 NIT Silchar,Gauhati University,32,621
+NIT Silchar,National Institute of Technology Patna,32,695
 NIT Silchar,National Institute of Technology Tiruchirappalli,32,269
 NIT Silchar,Indian Institute of Technology Madras,31,253
-NIT Silchar,Dr. B. R. Ambedkar National Institute of Technology Jalandhar,30,432
 NIT Silchar,Gour Mahavidyalaya,30,155
 NIT Silchar,Government of West Bengal,30,762
+NIT Silchar,Dr. B. R. Ambedkar National Institute of Technology Jalandhar,29,432
 NIT Silchar,Indian Institute of Technology Kanpur,29,564
 NIT Silchar,Manipal Academy of Higher Education,29,259
 NIT Silchar,Bodoland University,26,885
-NIT Silchar,Silchar Medical College and Hospital,26,741
 NIT Silchar,"Gurucharan University, Silchar",25,674
 NIT Silchar,Nirma University,25,242
-NIT Silchar,LNM Institute of Information Technology,24,255
+NIT Silchar,Silchar Medical College and Hospital,25,723
 NIT Silchar,S.N. Bose National Centre for Basic Sciences,24,227
 NIT Silchar,Visvesvaraya National Institute of Technology,24,307
 NIT Silchar,Indian Institute of Technology Mandi,23,299
 NIT Silchar,Indian Institute of Technology Patna,23,148
 NIT Silchar,Indian Institute of Technology BHU,22,158
+NIT Silchar,LNM Institute of Information Technology,22,235
 NIT Silchar,National Institute of Technology Nagaland,22,591
 NIT Silchar,"Birla Institute of Technology, Mesra",21,415
 NIT Silchar,National Institute of Technology Manipur,21,336
 NIT Silchar,Jawaharlal Nehru University,20,412
 NIT Silchar,National Institute of Technology Karnataka,20,112
-NIT Silchar,St. Joseph’s College of Engineering,20,484
 NIT Silchar,"Birla Institute of Technology and Science, Pilani",19,323
 NIT Silchar,National Institute of Technology Warangal,19,113
+NIT Silchar,St. Joseph’s College of Engineering,19,399
 NIT Silchar,Thapar Institute of Engineering & Technology,19,118
 NIT Silchar,Tripura University,19,84
 NIT Silchar,University of Engineering & Management,19,95
@@ -912,11 +910,11 @@ NIT Silchar,North Bengal University,18,108
 NIT Silchar,North East Institute of Science and Technology,18,404
 NIT Silchar,North Eastern Hill University,18,209
 NIT Silchar,PSG College of Technology,18,834
-NIT Silchar,Saveetha University,18,404
 NIT Silchar,Chandigarh University,17,175
 NIT Silchar,Kaziranga University,17,46
 NIT Silchar,SR University,17,48
 NIT Silchar,GITAM University,16,222
+NIT Silchar,Saveetha University,16,312
 NIT Silchar,Assam Down Town University,15,73
 NIT Silchar,"Indian Institute of Engineering Science and Technology, Shibpur",15,238
 NIT Silchar,Birla Institute of Technology and Science - Hyderabad Campus,14,76
@@ -941,7 +939,6 @@ NIT Silchar,Sikkim Manipal University,11,40
 NIT Silchar,Academy of Scientific and Innovative Research,10,117
 NIT Silchar,Bennett University,10,82
 NIT Silchar,Dayananda Sagar College of Engineering,10,160
-NIT Silchar,"Dr. D.Y. Patil Vidyapeeth, Pune",10,86
 NIT Silchar,Graphic Era University,10,117
 NIT Silchar,Hindustan Institute of Technology and Science,10,87
 NIT Silchar,IMS Ghaziabad,10,57
@@ -951,7 +948,7 @@ NIT Silchar,Visvesvaraya Technological University,10,27
 NIT Silchar,Amity University,9,153
 NIT Silchar,Brainware University,9,61
 NIT Silchar,CMR University,9,29
-NIT Silchar,Dr. B.C. Roy Engineering College,9,118
+NIT Silchar,"Dr. D.Y. Patil Vidyapeeth, Pune",9,75
 NIT Silchar,"ICFAI University, Tripura",9,145
 NIT Silchar,Indian Institute of Integrative Medicine,9,196
 NIT Silchar,Pandit Deendayal Energy University,9,183
@@ -963,6 +960,7 @@ NIT Silchar,COEP Technological University,8,11
 NIT Silchar,Central Electronics Engineering Research Institute,8,24
 NIT Silchar,Cotton University,8,132
 NIT Silchar,Dehradun Institute of Technology University,8,74
+NIT Silchar,Dr. B.C. Roy Engineering College,8,85
 NIT Silchar,Integral University,8,65
 NIT Silchar,Karimganj College,8,132
 NIT Silchar,Malla Reddy University,8,28
@@ -985,7 +983,6 @@ NIT Silchar,Ramaiah Institute of Technology,7,39
 NIT Silchar,SRM University,7,16
 NIT Silchar,Shiv Nadar University,7,233
 NIT Silchar,University of Mumbai,7,87
-NIT Silchar,Alliance University,6,39
 NIT Silchar,Chettinad Academy of Research and Education,6,50
 NIT Silchar,Christ University,6,47
 NIT Silchar,Gauhati Medical College and Hospital,6,36
@@ -1000,6 +997,7 @@ NIT Silchar,Swami Vivekananda University,6,21
 NIT Silchar,Techno India University,6,80
 NIT Silchar,VIT Bhopal University,6,335
 NIT Silchar,Acharya Nagarjuna University,5,26
+NIT Silchar,Alliance University,5,20
 NIT Silchar,Amity University Gurugram,5,38
 NIT Silchar,Banasthali University,5,8
 NIT Silchar,Calcutta Institute of Technology,5,25
@@ -1289,7 +1287,6 @@ NIT Silchar,Sree Balaji Dental College and Hospital,1,8
 NIT Silchar,Sri Sri University,1,2
 NIT Silchar,St. Joseph's Institute of Technology,1,3
 NIT Silchar,Synod Hospital,1,24
-NIT Silchar,T.K.M Institute of Technology,1,85
 NIT Silchar,Tata Institute of Social Sciences,1,2
 NIT Silchar,Tech Mahindra (India),1,71
 NIT Silchar,Teerthanker Mahaveer University,1,1

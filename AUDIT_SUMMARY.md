@@ -23,7 +23,7 @@ NIT Silchar         254      40
 how they got on the list: {'official faculty page': 737, 'official faculty page (former, archived)': 120, 'added after verification (not on scraped page)': 11}
 matched to OpenAlex papers: 806 | no papers found: 57
 
-group15_data.csv rows (faculty authors only): 21940 | distinct papers: 17720
+group15_data.csv rows (faculty authors only): 21900 | distinct papers: 17687
 authors that are not faculty (PhD scholars, staff, visitors, collaborators who print our name) were removed:
   22867 rows dropped
 ```
@@ -38,8 +38,8 @@ unclear                         3201
 ```
 
 ```text
-papers with more than 10 authors flagged (is_multi_author_10plus): 63
-  our faculty on them: 69 author slots, non-faculty removed: 24
+papers with more than 10 authors flagged (is_multi_author_10plus): 62
+  our faculty on them: 68 author slots, non-faculty removed: 24
   review flags (former outside page years / record mostly elsewhere): 0
   most authors on one paper in the data: 30
 ```
@@ -59,7 +59,7 @@ MANIT Bhopal  Anupama Sharma Architecture and Planning       Professor        cu
 ```text
 required columns present: True | group = ['15'] | years 2016-2026 | types ['conference', 'journal']
 DOIs in https://doi.org/ form: 100.0%
-empty cells (rows): {'issn': 3893, 'doi': 95, 'venue_h_index': 1064, 'venue_citedness': 1064, 'faculty_window': 20293, 'affiliation_note': 21628, 'paper_in_window': 20293, 'resolved_conference': 17536, 'core_rank': 21890, 'journal_cites_per_doc': 8539, 'journal_2yr_citedness_openalex': 8068, 'impact_estimate': 8065}
+empty cells (rows): {'issn': 3889, 'doi': 95, 'venue_h_index': 1064, 'venue_citedness': 1064, 'faculty_window': 20257, 'affiliation_note': 21588, 'paper_in_window': 20257, 'resolved_conference': 17500, 'core_rank': 21850, 'journal_cites_per_doc': 8534, 'journal_2yr_citedness_openalex': 8063, 'impact_estimate': 8060}
 duplicate (paper, faculty, institute) rows: 0 | duplicate DOIs among papers: 0
 ```
 
@@ -69,15 +69,15 @@ Same title and year under two DOIs (journal and its early-access copy, mostly In
 quartile / rank by source (papers):
 quartile_source  core  estimated_openalex  estimated_publisher  none  scopus_citescore  sjr_approx
 type                                                                                              
-conference         43                2230                  761    49              3219           0
-journal             0                 393                    1    20                29       10975
+conference         43                2226                  761    49              3218           0
+journal             0                 393                    1    20                29       10947
 
 quartile values:
 quartile
-Q4          5265
-Q2          4501
-Q3          4025
-Q1          3817
+Q4          5261
+Q2          4487
+Q3          4022
+Q1          3805
 Unranked      69
 B             27
 C             16
@@ -86,38 +86,38 @@ C             16
 `sjr_approx` = SCImago SJR recomputed, `scopus_citescore` = Scopus CiteScore percentile, `core` = CORE 2023, `estimated_openalex` / `estimated_publisher` = estimated (58% exact, 96% within one quartile when tested), `none` = Unranked.
 
 ```text
-high-impact flags (journal Q1 and the lower of SCImago citations/doc and OpenAlex 2-year citedness): Q1 and >5: 1896 papers, Q1 and >10: 231 papers
+high-impact flags (journal Q1 and the lower of SCImago citations/doc and OpenAlex 2-year citedness): Q1 and >5: 1892 papers, Q1 and >10: 231 papers
 ```
 
 ## Phase 3: networks
 
 ```text
-citation_network.csv: 28040 edges between 11802 papers; within one institute 26997, across institutes 1043
-max in-degree 45; top PageRank paper: {'title': 'Probabilistic characterisation for dynamics and stability of laminated soft core sandwich plates', 'year': 2017, 'inst': 'NIT Silchar', 'journal': 'Journal of Sandwich Structures & Materials', 'pagerank': 0.002323, 'in_degree_in_corpus': 22, 'citations_openalex': 77}
+citation_network.csv: 27971 edges between 11775 papers; within one institute 26929, across institutes 1042
+max in-degree 45; top PageRank paper: {'title': 'Probabilistic characterisation for dynamics and stability of laminated soft core sandwich plates', 'year': 2017, 'inst': 'NIT Silchar', 'journal': 'Journal of Sandwich Structures & Materials', 'pagerank': 0.002328, 'in_degree_in_corpus': 22, 'citations_openalex': 77}
 ```
 
 ```text
-authorship_network.csv: 55533 author pairs; core-author graph 486 nodes, 896 edges, 44 Louvain communities (modularity 0.865)
-top betweenness: [{'author': 'Shiva Nand Singh', 'inst': 'NIT Jamshedpur', 'betweenness': 0.2161, 'collaborators': 6}, {'author': 'Tanmoy Malakar', 'inst': 'NIT Silchar', 'betweenness': 0.2083, 'collaborators': 5}, {'author': 'More Raju', 'inst': 'MANIT Bhopal', 'betweenness': 0.2033, 'collaborators': 5}]
+authorship_network.csv: 55322 author pairs; core-author graph 486 nodes, 894 edges, 43 Louvain communities (modularity 0.865)
+top betweenness: [{'author': 'Shiva Nand Singh', 'inst': 'NIT Jamshedpur', 'betweenness': 0.2158, 'collaborators': 6}, {'author': 'Tanmoy Malakar', 'inst': 'NIT Silchar', 'betweenness': 0.2086, 'collaborators': 5}, {'author': 'More Raju', 'inst': 'MANIT Bhopal', 'betweenness': 0.2036, 'collaborators': 5}]
 ```
 
 ```text
-faculty co-authorship network: 800 faculty, 1203 links, 152 isolated, cross-department 23.9%, cross-institute links 33
+faculty co-authorship network: 800 faculty, 1201 links, 152 isolated, cross-department 23.7%, cross-institute links 33
 ```
 
 indian_connections.csv, top partner institutes per institute:
 
 ```text
      your_inst                               partner_inst  shared_papers  total_citations
-  MANIT Bhopal    National Institute of Technology Raipur             85             1039
-  MANIT Bhopal          Rajiv Gandhi Technical University             67              889
+  MANIT Bhopal    National Institute of Technology Raipur             84             1027
+  MANIT Bhopal          Rajiv Gandhi Technical University             66              849
   MANIT Bhopal     Indian Institute of Technology Roorkee             63             1209
 NIT Jamshedpur          National Metallurgical Laboratory             91              869
 NIT Jamshedpur     Indian Institute of Technology Dhanbad             79             1059
 NIT Jamshedpur Vellore Institute of Technology University             69             1318
    NIT Silchar    Indian Institute of Technology Guwahati            137             1176
    NIT Silchar                         Mizoram University            134             3450
-   NIT Silchar     Koneru Lakshmaiah Education Foundation            103             1220
+   NIT Silchar     Koneru Lakshmaiah Education Foundation            102             1213
 ```
 
 ```text
@@ -137,30 +137,30 @@ year
 2016           285              85          295                  665
 2017           332             118          362                  812
 2018           355             146          527                 1028
-2019           265             196          578                 1036
-2020           448             309          792                 1541
-2021           600             411          896                 1903
-2022           622             445         1108                 2169
-2023           684             476          990                 2143
-2024           708             521         1117                 2342
-2025           792             491         1044                 2322
-2026           668             396          702                 1759
+2019           265             196          575                 1033
+2020           446             308          789                 1535
+2021           597             410          895                 1898
+2022           620             444         1106                 2164
+2023           680             474          989                 2136
+2024           707             519         1116                 2338
+2025           791             491         1043                 2320
+2026           668             396          701                 1758
 ```
 
 ```text
 journal quartile share (%), papers with a quartile:
                   Q1    Q2    Q3    Q4  Q1_fraction_%  unranked_journal_papers
-MANIT Bhopal    33.2  34.3  21.8  10.7           33.2                        8
-NIT Jamshedpur  26.3  40.0  25.9   7.8           26.3                        1
-NIT Silchar     36.8  39.6  18.8   4.7           36.8                       11
+MANIT Bhopal    33.2  34.2  21.9  10.7           33.2                        8
+NIT Jamshedpur  26.2  40.0  26.0   7.8           26.2                        1
+NIT Silchar     36.8  39.6  18.8   4.8           36.8                       11
 ```
 
 ```text
 conference ranks:
                conference_papers with_CORE_rank        rank_counts with_scopus_quartile unranked
-MANIT Bhopal                2167             10   {'C': 6, 'B': 4}                 2149        8
-NIT Jamshedpur              1195              3   {'C': 2, 'B': 1}                 1168       24
-NIT Silchar                 2947             30  {'B': 22, 'C': 8}                 2900       17
+MANIT Bhopal                2166             10   {'C': 6, 'B': 4}                 2148        8
+NIT Jamshedpur              1194              3   {'C': 2, 'B': 1}                 1167       24
+NIT Silchar                 2944             30  {'B': 22, 'C': 8}                 2897       17
 ```
 
 ```text
@@ -169,14 +169,14 @@ top 5 journals, MANIT Bhopal:
                                     National Academy Science Letters      64        116       Q3
 Energy Sources Part A Recovery Utilization and Environmental Effects      44        493       Q2
                                    Multimedia Tools and Applications      39        702       Q1
-                        Environmental Science and Pollution Research      34        654       Q1
                                                   Scientific Reports      33        745       Q1
+                        Environmental Science and Pollution Research      33        639       Q1
 ```
 
 ```text
 top 5 journals, NIT Jamshedpur:
                                     journal_name  papers  citations quartile
-               Multimedia Tools and Applications      31        858       Q2
+               Multimedia Tools and Applications      30        849       Q2
 Journal of Materials Engineering and Performance      28        113       Q2
                               Scientific Reports      24        415       Q1
                                          Pramana      22        119       Q2
@@ -188,7 +188,7 @@ top 5 journals, NIT Silchar:
                                journal_name  papers  citations quartile
                    Microsystem Technologies      90       1057       Q2
 Arabian Journal for Science and Engineering      87       1030       Q1
-          Multimedia Tools and Applications      70       1727       Q2
+          Multimedia Tools and Applications      68       1685       Q2
                                     Silicon      53       1088       Q2
    International Journal of Hydrogen Energy      44       2935       Q1
 ```
@@ -222,12 +222,12 @@ Re-analysis without the papers that have more than 10 authors:
 
 ```text
    institution                     scope  papers  citations  journal_Q1_share_%  median_faculty_h  faculty_h_20_plus
-  MANIT Bhopal                all papers    5759      90684                33.2               6.0                 11
-  MANIT Bhopal without >10-author papers    5737      90216                33.0               6.0                 11
-NIT Jamshedpur                all papers    3594      44061                26.3               4.0                  3
-NIT Jamshedpur without >10-author papers    3581      43430                26.1               4.0                  3
-   NIT Silchar                all papers    8411     124894                36.8               7.0                 35
-   NIT Silchar without >10-author papers    8383     124065                36.7               7.0                 34
+  MANIT Bhopal                all papers    5746      90499                33.2               6.0                 11
+  MANIT Bhopal without >10-author papers    5724      90031                32.9               6.0                 11
+NIT Jamshedpur                all papers    3587      43995                26.2               4.0                  3
+NIT Jamshedpur without >10-author papers    3575      43378                26.1               4.0                  3
+   NIT Silchar                all papers    8398     124608                36.8               7.0                 35
+   NIT Silchar without >10-author papers    8370     123779                36.7               7.0                 34
 ```
 
 Author-level (faculty): `faculty_ranking_<institute>.csv`, `h_index_distribution.csv`, `author_brokers.csv`, `author_analysis.json`.
@@ -237,9 +237,9 @@ institution  MANIT Bhopal  NIT Jamshedpur  NIT Silchar
 h_index                                               
 0                      11              21           15
 1-4                   118             103           84
-5-9                    85              69           71
-10-14                  55              36           41
-15-19                  16               3           30
+5-9                    87              69           71
+10-14                  53              36           42
+15-19                  16               3           29
 20-29                   6               1           27
 30+                     5               2            8
 ```
@@ -248,8 +248,8 @@ h_index
 top 5 faculty by h-index, MANIT Bhopal:
        faculty_name                     department  papers  citations  h_index  q1_papers                                       top_journal
 Kumarasamy Sudhakar Energy Science and Engineering     145      11714       56         82               Case Studies in Thermal Engineering
-Tikendra Nath Verma         Mechanical Engineering     145       4256       37         86                                              Fuel
-Prashant V. Baredar Energy Science and Engineering     113       5818       36         39      Environmental Science and Pollution Research
+Tikendra Nath Verma         Mechanical Engineering     144       4224       37         85                                              Fuel
+Prashant V. Baredar Energy Science and Engineering     112       5803       36         38          Renewable and Sustainable Energy Reviews
      Gaurav Dwivedi Energy Science and Engineering     127       3236       31         45                                          Energies
      Rajesh Purohit         Mechanical Engineering     169       3272       30          7 Advances in Materials and Processing Technologies
 ```
@@ -258,32 +258,32 @@ Prashant V. Baredar Energy Science and Engineering     113       5818       36  
 top 5 faculty by h-index, NIT Jamshedpur:
                                   faculty_name                                department  papers  citations  h_index  q1_papers                                    top_journal
                                    Sunil Kumar                               Mathematics     137       6433       42         49                      Chaos Solitons & Fractals
-                                 Balram Ambade                                 Chemistry      92       4686       34         47 Physics and Chemistry of the Earth Parts A/B/C
+                                 Balram Ambade                                 Chemistry      91       4679       34         46 Physics and Chemistry of the Earth Parts A/B/C
                                   RASHMI SINHA Electronics and Communication Engineering      83        963       20          5                                       Frequenz
                                        Sanja y                    Mechanical Engineering      53       1076       18         24       International Journal of Hydrogen Energy
-Dilip Kumar (Computer Science and Engineering)          Computer Science and Engineering      34        656       16          9              Multimedia Tools and Applications
+Dilip Kumar (Computer Science and Engineering)          Computer Science and Engineering      33        647       16          8              Multimedia Tools and Applications
 ```
 
 ```text
 top 5 faculty by h-index, NIT Silchar:
              faculty_name             department  papers  citations  h_index  q1_papers                                                                                             top_journal
          Md. Ahmaruzzaman              Chemistry     276      10624       54        170                                                                                      Scientific Reports
-Samuel Lalthazuala Rokhum              Chemistry     186       7193       47        117                                                                                        Renewable Energy
+Samuel Lalthazuala Rokhum              Chemistry     185       7108       46        116                                                                                        Renewable Energy
     Krishna Murari Pandey Mechanical Engineering     211       6132       43         49                                                                International Journal of Hydrogen Energy
      Lalit Chandra Saikia Electrical Engineering     169       3941       36         38                                                                                IETE Journal of Research
              Sukumar Pati Mechanical Engineering     151       3445       36         58 Proceedings of the Institution of Mechanical Engineers Part E Journal of Process Mechanical Engineering
 ```
 
 ```text
-citation network (papers): {'papers': 17720, 'citation_links': 28040, 'density': 8.9e-05, 'avg_clustering_undirected': 0.1799, 'reciprocity': 0.0009, 'weak_components': 6695, 'largest_component_share_%': 45.4, 'papers_never_cited_in_corpus_%': 57.3}
+citation network (papers): {'papers': 17687, 'citation_links': 27971, 'density': 8.9e-05, 'avg_clustering_undirected': 0.1799, 'reciprocity': 0.0009, 'weak_components': 6692, 'largest_component_share_%': 45.3, 'papers_never_cited_in_corpus_%': 57.3}
   metrics per paper in citation_node_metrics.csv: in-degree, out-degree, PageRank, HITS authority / hub, in-degree h-index
 ```
 
 ```text
 faculty network (diameter, shortest path, assortativity, k-core):
                scope  faculty  links  largest_component_faculty  diameter_largest_component  avg_shortest_path_largest_component  degree_assortativity  h_index_assortativity  max_k_core  faculty_in_max_core
-all three institutes      800   1203                        608                          20                                7.593                 0.095                  0.213           5                    9
-        MANIT Bhopal      296    483                        235                          16                                5.279                 0.077                  0.202           4                   56
+all three institutes      800   1201                        608                          20                                7.594                 0.094                  0.213           5                    9
+        MANIT Bhopal      296    481                        235                          16                                5.286                 0.076                  0.201           4                   53
       NIT Jamshedpur      230    236                        140                          10                                4.704                -0.045                  0.141           3                   39
          NIT Silchar      274    451                        224                          12                                5.052                 0.073                  0.104           5                    9
 ```
@@ -291,31 +291,31 @@ all three institutes      800   1203                        608                 
 ```text
 bridge authors (co-authorship edges to other Indian institutes), top 2 per institute:
    institution              faculty_name  cross_institute_edges  distinct_indian_partner_institutes  joint_papers
-  MANIT Bhopal       Tikendra Nath Verma                    226                                  49           105
+  MANIT Bhopal       Tikendra Nath Verma                    225                                  49           104
   MANIT Bhopal            Gaurav Dwivedi                    201                                  52            76
 NIT Jamshedpur             Balram Ambade                    154                                  28            56
 NIT Jamshedpur          Mani Kant Paswan                    147                                  34            56
-   NIT Silchar Samuel Lalthazuala Rokhum                    422                                  64           137
+   NIT Silchar Samuel Lalthazuala Rokhum                    418                                  63           136
    NIT Silchar              Koushik Guha                    287                                  33           120
 ```
 
 ```text
 institute summary:
 institution                 MANIT Bhopal  NIT Jamshedpur  NIT Silchar
-papers                          5759.000        3594.000     8411.000
-journal_papers                  3592.000        2399.000     5464.000
-conference_papers               2167.000        1195.000     2947.000
+papers                          5746.000        3587.000     8398.000
+journal_papers                  3580.000        2393.000     5454.000
+conference_papers               2166.000        1194.000     2944.000
 faculty_with_papers              296.000         235.000      276.000
-total_citations                90684.000       44061.000   124894.000
-citations_per_paper               15.750          12.260       14.850
+total_citations                90499.000       43995.000   124608.000
+citations_per_paper               15.750          12.270       14.840
 institute_h_index                118.000          84.000      112.000
-journal_Q1_%                      33.200          26.300       36.800
-journal_Q2_%                      34.300          40.000       39.600
-journal_Q3_%                      21.800          25.900       18.800
-journal_Q4_%                      10.700           7.800        4.700
-Q1_and_IF_gt5                    638.000         288.000      973.000
+journal_Q1_%                      33.200          26.200       36.800
+journal_Q2_%                      34.200          40.000       39.600
+journal_Q3_%                      21.900          26.000       18.800
+journal_Q4_%                      10.700           7.800        4.800
+Q1_and_IF_gt5                    636.000         288.000      971.000
 Q1_and_IF_gt10                    73.000          18.000      141.000
-papers_over_10_authors_%           0.380           0.360        0.330
+papers_over_10_authors_%           0.380           0.330        0.330
 in_cites_from_other_indian     28449.000       15333.000    44878.000
 out_cites_to_other_indian      35858.000       24983.000    55127.000
 in_over_out_ratio                  0.793           0.614        0.814
@@ -325,11 +325,11 @@ in_over_out_ratio                  0.793           0.614        0.814
 papers with more than 10 authors vs the rest:
    institution                group  papers  share_of_papers_%  mean_citations  median_citations  share_of_citations_%  journal_Q1_%  conference_share_%
   MANIT Bhopal more than 10 authors      22               0.38           21.27               8.5                  0.52          80.0                 9.1
-  MANIT Bhopal  10 or fewer authors    5737              99.62           15.73               4.0                 99.48          33.0                37.7
-NIT Jamshedpur more than 10 authors      13               0.36           48.54              32.0                  1.43          53.8                 0.0
-NIT Jamshedpur  10 or fewer authors    3581              99.64           12.13               3.0                 98.57          26.1                33.4
-   NIT Silchar more than 10 authors      28               0.33           29.61              11.5                  0.66          63.0                 3.6
-   NIT Silchar  10 or fewer authors    8383              99.67           14.80               5.0                 99.34          36.7                35.1
+  MANIT Bhopal  10 or fewer authors    5724              99.62           15.73               4.0                 99.48          32.9                37.8
+NIT Jamshedpur more than 10 authors      12               0.33           51.42              42.0                  1.40          50.0                 0.0
+NIT Jamshedpur  10 or fewer authors    3575              99.67           12.13               3.0                 98.60          26.1                33.4
+   NIT Silchar more than 10 authors      28               0.33           29.61              11.5                  0.67          63.0                 3.6
+   NIT Silchar  10 or fewer authors    8370              99.67           14.79               5.0                 99.33          36.7                35.2
 ```
 
 ## Phase 5: files the dashboard reads
@@ -377,6 +377,7 @@ tables (data/out/ and data/out/stats/):
   faculty_network_nodes.csv
   group15_data.csv
   group15_data_draft.csv
+  group15_retracted.csv
   incoming_citations_by_institute.csv
   incoming_citations_by_year.csv
   indian_connections.csv
@@ -387,60 +388,61 @@ tables (data/out/ and data/out/stats/):
   papers_enriched.csv
   scopus_comparison.csv
   scopus_only_papers.csv
-  stats\author_analysis.json
-  stats\author_brokers.csv
-  stats\authors_MANIT_Bhopal.csv
-  stats\authors_NIT_Jamshedpur.csv
-  stats\authors_NIT_Silchar.csv
-  stats\bridge_authors.csv
-  stats\citation_degree_distribution.csv
-  stats\citation_flow_by_cluster.csv
-  stats\citation_network_macro.json
-  stats\citation_node_metrics.csv
-  stats\citation_ratio.csv
-  stats\citation_sources.json
-  stats\citation_velocity.csv
-  stats\collab_candidates.csv
-  stats\conference_ranking.json
-  stats\core_a_star_a_papers.csv
-  stats\critical_faculty.csv
-  stats\department_stats.csv
-  stats\faculty_network_extra.json
-  stats\faculty_network_results.json
-  stats\faculty_node_metrics.csv
-  stats\faculty_performance.csv
-  stats\faculty_ranking_MANIT_Bhopal.csv
-  stats\faculty_ranking_NIT_Jamshedpur.csv
-  stats\faculty_ranking_NIT_Silchar.csv
-  stats\faculty_results.json
-  stats\h_index_distribution.csv
-  stats\hyper_authorship_performance.csv
-  stats\inflow_results.json
-  stats\institution_summary.csv
-  stats\key_findings.json
-  stats\link_prediction_results.json
-  stats\locality_results.json
-  stats\multi_author_10plus_papers.csv
-  stats\multi_author_reanalysis.csv
-  stats\network_results.json
-  stats\no_doi_candidates.csv
-  stats\outflow_results.json
-  stats\papers_per_year.csv
-  stats\partner_results.json
-  stats\publication_results.json
-  stats\resilience_curves.csv
-  stats\resilience_results.json
-  stats\scopus_results.json
-  stats\top10_cited_MANIT_Bhopal.csv
-  stats\top10_cited_NIT_Jamshedpur.csv
-  stats\top10_cited_NIT_Silchar.csv
-  stats\top30_papers_MANIT_Bhopal.csv
-  stats\top30_papers_NIT_Jamshedpur.csv
-  stats\top30_papers_NIT_Silchar.csv
-  stats\top30_summary.csv
-  stats\top_journals_MANIT_Bhopal.csv
-  stats\top_journals_NIT_Jamshedpur.csv
-  stats\top_journals_NIT_Silchar.csv
+  stats/author_analysis.json
+  stats/author_brokers.csv
+  stats/authors_MANIT_Bhopal.csv
+  stats/authors_NIT_Jamshedpur.csv
+  stats/authors_NIT_Silchar.csv
+  stats/bridge_authors.csv
+  stats/citation_degree_distribution.csv
+  stats/citation_flow_by_cluster.csv
+  stats/citation_network_macro.json
+  stats/citation_node_metrics.csv
+  stats/citation_ratio.csv
+  stats/citation_sources.json
+  stats/citation_velocity.csv
+  stats/collab_candidates.csv
+  stats/conference_ranking.json
+  stats/core_a_star_a_papers.csv
+  stats/critical_faculty.csv
+  stats/department_stats.csv
+  stats/faculty_network_extra.json
+  stats/faculty_network_results.json
+  stats/faculty_node_metrics.csv
+  stats/faculty_performance.csv
+  stats/faculty_ranking_MANIT_Bhopal.csv
+  stats/faculty_ranking_NIT_Jamshedpur.csv
+  stats/faculty_ranking_NIT_Silchar.csv
+  stats/faculty_results.json
+  stats/h_index_distribution.csv
+  stats/hyper_authorship_performance.csv
+  stats/inflow_results.json
+  stats/institution_summary.csv
+  stats/key_findings.json
+  stats/link_prediction_results.json
+  stats/locality_results.json
+  stats/multi_author_10plus_papers.csv
+  stats/multi_author_reanalysis.csv
+  stats/network_results.json
+  stats/no_doi_candidates.csv
+  stats/outflow_results.json
+  stats/papers_per_year.csv
+  stats/partner_results.json
+  stats/publication_results.json
+  stats/resilience_curves.csv
+  stats/resilience_results.json
+  stats/retractions.json
+  stats/scopus_results.json
+  stats/top10_cited_MANIT_Bhopal.csv
+  stats/top10_cited_NIT_Jamshedpur.csv
+  stats/top10_cited_NIT_Silchar.csv
+  stats/top30_papers_MANIT_Bhopal.csv
+  stats/top30_papers_NIT_Jamshedpur.csv
+  stats/top30_papers_NIT_Silchar.csv
+  stats/top30_summary.csv
+  stats/top_journals_MANIT_Bhopal.csv
+  stats/top_journals_NIT_Jamshedpur.csv
+  stats/top_journals_NIT_Silchar.csv
   work_extras.csv
   work_topics.csv
 ```

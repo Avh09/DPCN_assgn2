@@ -63,7 +63,8 @@ def verdicts(measures, common, lead, leader_by_year):
 def main():
     perf = pd.read_csv(STATS / "faculty_performance.csv")
     alias = movers.aliases()
-    perf = perf[(perf.papers > 0) & [(i, n) not in alias for i, n in zip(perf.institution, perf.faculty_name)]].copy()
+    not_alias = pd.Series([(i, n) not in alias for i, n in zip(perf.institution, perf.faculty_name)], index=perf.index)
+    perf = perf[(perf.papers > 0) & not_alias].copy()
     perf["rank"] = perf.designation.map(rank_of)
     m = pd.read_csv(OUT / "group15_data.csv", dtype=str, keep_default_na=False,
                     usecols=["openalex_work_id", "institution", "is_faculty", "faculty_name", "year", "type"])

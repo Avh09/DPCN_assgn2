@@ -2,11 +2,11 @@
  {
   "scope": "all three institutes",
   "faculty": 800,
-  "links": 1203,
+  "links": 1201,
   "largest_component_faculty": 608,
   "diameter_largest_component": 20,
-  "avg_shortest_path_largest_component": 7.593,
-  "degree_assortativity": 0.095,
+  "avg_shortest_path_largest_component": 7.594,
+  "degree_assortativity": 0.094,
   "h_index_assortativity": 0.213,
   "max_k_core": 5,
   "faculty_in_max_core": 9
@@ -14,14 +14,14 @@
  {
   "scope": "MANIT Bhopal",
   "faculty": 296,
-  "links": 483,
+  "links": 481,
   "largest_component_faculty": 235,
   "diameter_largest_component": 16,
-  "avg_shortest_path_largest_component": 5.279,
-  "degree_assortativity": 0.077,
-  "h_index_assortativity": 0.202,
+  "avg_shortest_path_largest_component": 5.286,
+  "degree_assortativity": 0.076,
+  "h_index_assortativity": 0.201,
   "max_k_core": 4,
-  "faculty_in_max_core": 56
+  "faculty_in_max_core": 53
  },
  {
   "scope": "NIT Jamshedpur",

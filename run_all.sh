@@ -56,6 +56,7 @@ runs build    && need "data/ref/venue_types.csv" "ELSEVIER_API_KEY=... python ve
 runs outflow  && need "data/raw/links/referenced.jsonl" "run: $PY links.py refs (about 1-2 h), or copy from a teammate"
 runs inflow   && need "data/raw/links/citing.jsonl" "run: $PY links.py citing (about 1 h), or copy from a teammate"
 runs faculty  && need "data/faculty/*.csv" "in the repo (data/faculty/)"
+runs faculty  && need "data/ref/retracted_papers.csv" "in the repo (data/ref/); checked list of retracted / withdrawn papers"
 if runs partners; then
     need "data/raw/links/citing.jsonl" "run: $PY links.py citing (about 1 h), or copy from a teammate"
     [[ -s data/raw/links/subfields.json ]] || has_key || missing+=("OpenAlex API key (partners.py looks up ~70 institutes)  ->  echo KEY > .openalex_key")
@@ -78,11 +79,11 @@ for s in "${RUN[@]}"; do
         networks) step networks.py ;;
         outflow)  step outflow.py ;;
         inflow)   step inflow.py ;;
-        faculty)  step faculty_match.py; step author_resolution.py; step corpus_filter.py; step conference_resolution.py ;;
+        faculty)  step faculty_match.py; step author_resolution.py; step corpus_filter.py; step retractions.py; step conference_resolution.py ;;
         facstats) step faculty_stats.py; step faculty_network.py; step extras.py; step deep_analysis.py; step extra_metrics.py; step resilience.py; step link_prediction.py; step deep_insights.py; step output_drivers.py; step new_views.py ;;
         partners) step partners.py ;;
         report)   step stats.py; step plots.py --no-show; step audit_summary.py ;;
-        dashboard) step locality_reach.py; step key_findings.py; step build_dashboard.py ;;
+        dashboard) step locality_reach.py; step affiliation_checks.py; step key_findings.py; step build_dashboard.py ;;
     esac
 done
 
