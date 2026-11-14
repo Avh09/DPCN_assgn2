@@ -6,6 +6,8 @@ state is a plain dict kept in the Streamlit session: {"history": [...], "ctx": {
   text (markdown), figures [plotly Figure], tables [DataFrame], evidence [records], tool_calls, results, needs_choice,
   grounding {"ungrounded": [...], "checked": n}, mode ("llm" | "rules").
 """
+import re
+
 import pandas as pd
 
 from . import answers, grounding, llm, router
@@ -28,16 +30,26 @@ class Assistant:
         state["ctx"] = plan["ctx"]
         if self.use_llm:
             try:
-                ctx_text = self._ctx_text(plan["ctx"])
-                text, results, calls = llm.ask(question, hist, ctx_text)
+                # earlier people / institutes are passed on only when the question refers back to them ("their", "him", "this paper");
+                # a general question ("How many papers were retracted?") must not be narrowed to whoever was discussed before
+                refers_back = bool(re.search(r"\b(they|them|their|theirs|both|he|she|his|her|him|this person|that person|those two|these two|"
+                                             r"this paper|that paper|this institute|that institute|the same)\b", question.lower()))
+                ctx_text = self._ctx_text(plan["ctx"]) if refers_back else ""
+                text, results, calls = llm.ask(question, hist if refers_back else hist[-2:], ctx_text)
+                if text.startswith(llm.INCOMPLETE) and plan["calls"]:
+                    raise RuntimeError("the model did not finish within the allowed tool calls")
+                if plan.get("fixes"):
+                    text = "*Read " + ", ".join(f"'{a}' as '{b}'" for a, b in plan["fixes"]) + ".*\n\n" + text
                 nc = next((r["needs_choice"] for r in results if r.get("needs_choice")), None)
                 resp = self._pack(text, results, calls, "llm")
                 resp["needs_choice"] = nc
-                resp["grounding"] = grounding.check(text, results)
+                resp["grounding"] = grounding.check(text, results, question)
+                resp["follow_ups"] = self.follow_ups(results)
                 hist += [{"role": "user", "content": question}, {"role": "assistant", "content": text}]
                 return resp
-            except Exception as e:                  # API failure: fall back to the deterministic answers, and say so
-                note = f"(The language model is unavailable: {type(e).__name__}. Showing the deterministic analysis instead.)\n\n"
+            except Exception as e:                  # API failure or unfinished analysis: fall back to the deterministic answers, and say so
+                why = "it did not finish the analysis" if isinstance(e, RuntimeError) else f"it is unavailable ({type(e).__name__})"
+                note = f"(The language model could not answer this one: {why}. Showing the built-in analysis instead.)\n\n"
         else:
             note = ""
         results, calls = [], []
@@ -45,6 +57,8 @@ class Assistant:
             r = run_tool(tool, args)
             results.append(r)
             calls.append({"tool": tool, "args": args})
+        if plan.get("fixes"):
+            note += "*Read " + ", ".join(f"'{a}' as '{b}'" for a, b in plan["fixes"]) + ".*\n\n"
         if not results:
             text = router.HELP if not plan["ctx"].get("faculty") else "I could not map that to an analysis. " + router.HELP
         else:
@@ -52,8 +66,48 @@ class Assistant:
         resp = self._pack(text, results, calls, "rules")
         resp["needs_choice"] = next((r["needs_choice"] for r in results if r.get("needs_choice")), None)
         resp["grounding"] = {"ungrounded": [], "checked": 0, "note": "deterministic answer: every number is copied from the tool result"}
+        resp["follow_ups"] = self.follow_ups(results)
         hist += [{"role": "user", "content": question}, {"role": "assistant", "content": text}]
         return resp
+
+    @staticmethod
+    def follow_ups(results):
+        """Up to three next questions built from the names in the answer, so every suggestion is one the assistant can answer."""
+        if not results or not results[0].get("ok", True):
+            return []
+        r = results[0]
+        t, d = r["tool"], r.get("data") or {}
+        out = []
+        if t == "get_faculty_profile":
+            n = d.get("name")
+            out = [f"Suggest collaborators for {n}", f"Show the collaboration network around {n}"]
+            if d.get("retracted_papers_not_counted"):
+                out.append(f"Which papers of {n} were retracted?")
+        elif t in ("assess_collaboration", "get_shortest_collaboration_path", "get_common_collaborators") and isinstance(d.get("a"), dict):
+            a, b = d["a"]["name"], d["b"]["name"]
+            out = ["Who are their mutual collaborators?", "Show the shortest path between them", f"Compare {a} and {b}"]
+        elif t == "recommend_collaborators" and d.get("suggestions"):
+            me = next((e["label"].split(" (")[0] for e in r.get("evidence", []) if e.get("type") == "faculty"), None)
+            s = d["suggestions"][0]["name"]
+            out = [f"Tell me about {s}"] + ([f"Can {me} collaborate with {s}?"] if me else [])
+        elif t == "top_faculty" and d.get("rows"):
+            out = [f"Tell me about {d['rows'][0]['name']}", f"Suggest collaborators for {d['rows'][0]['name']}"]
+        elif t == "compare_institutes":
+            out = ["Why does NIT Silchar publish more papers than the other institutes?", "Do the institutes collaborate mostly within their own region?",
+                   "Which department has the highest median h-index?"]
+        elif t == "regional_collaboration" and d.get("institutes"):
+            x = d["institutes"][0]
+            if x["top_home_partners"]:
+                out = [f"Which faculty collaborate with {x['top_home_partners'][0]['partner']}?"]
+            out.append("Which partner countries and Indian states raise the institutes' impact the most?")
+        elif t == "department_stats" and d.get("rows"):
+            x = d["rows"][0]
+            out = [f"Who are the top faculty in {x['department']} at {x['institution']}?"]
+        elif t == "retracted_papers" and d.get("rows"):
+            names = [n for row in d["rows"] for n in row["faculty"].split("; ") if n]
+            if names:
+                out = [f"Tell me about {names[0]}"]
+        return [q for q in out if q][:3]
 
     @staticmethod
     def _ctx_text(ctx):
@@ -68,7 +122,13 @@ class Assistant:
 
     @staticmethod
     def _clarify(c):
-        lines = [f"- {x['name']} ({x['institution']}, {x['department']}; {x['papers']} papers, h-index {x['h_index']})" for x in c["candidates"]] if c["entity"] == "faculty" else [f"- {x}" for x in c["candidates"]]
+        if not c["candidates"]:          # a name that matches nobody: say so, never answer about someone else instead
+            text = (f"**I could not find '{c['query']}' among the verified faculty of MANIT Bhopal, NIT Jamshedpur and NIT Silchar.** "
+                    "Check the spelling, or add the institute, for example *Name (NIT Silchar)*. People from other institutes are only known "
+                    "as co-authors on joint papers; ask about their institute instead, for example *Which faculty collaborate with IIT Guwahati?*")
+            return {"text": text, "figures": [], "tables": [], "evidence": [], "tool_calls": [], "results": [], "needs_choice": None,
+                    "grounding": {"ungrounded": [], "checked": 0}, "mode": "rules"}
+        lines =[f"- {x['name']} ({x['institution']}, {x['department']}; {x['papers']} papers, h-index {x['h_index']})" for x in c["candidates"]] if c["entity"] == "faculty" else [f"- {x}" for x in c["candidates"]]
         text = f"**'{c['query']}' matches more than one {c['entity']}.** Which one do you mean?\n\n" + "\n".join(lines) + "\n\nReply with the full name and institute, for example *Name (NIT Silchar)*."
         return {"text": text, "figures": [], "tables": [], "evidence": [], "tool_calls": [], "results": [], "needs_choice": c, "grounding": {"ungrounded": [], "checked": 0}, "mode": "rules"}
 

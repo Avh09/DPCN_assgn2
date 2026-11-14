@@ -4,6 +4,8 @@ Direct answer / Supporting evidence / Network interpretation / Limitations (the 
 Every number comes straight from the tool result, so these answers are grounded by construction. With an LLM key the same
 tool results are given to the model instead (llm.py) and the text is checked by grounding.py.
 """
+import re
+
 
 def _fmt(v):
     if isinstance(v, float):
@@ -45,7 +47,7 @@ def _partner(d, r):
         return r["summary"], [], []
     ev = [f"{x['your_inst']}: {x['shared_papers']} joint paper(s)" + (f", {x['first_year']}-{x['last_year']}" if x.get("first_year") else "") +
           (f", {x['faculty_involved']} faculty involved (e.g. {x['top_faculty']})" if x.get("top_faculty") else "") +
-          (f"; {d['partner']} cites {x['your_inst']} {x['cites_from_partner']} times, {x['your_inst']} cites {d['partner']} {x['cites_to_partner']} times" if x.get("cites_from_partner") is not None else "") for x in links]
+          (f"; {d['partner']} cites {x['your_inst']} {_int(x['cites_from_partner'])} times, {x['your_inst']} cites {d['partner']} {_int(x['cites_to_partner'])} times" if x.get("cites_from_partner") is not None else "") for x in links]
     ppl = d.get("people", [])
     if ppl:
         ev.append(f"{d['partner']} co-authors named in the data: " + "; ".join(f"{x['name']} ({x['joint_papers']} paper(s), {x['years']}, with {', '.join(x['worked_with'][:2])})" for x in ppl[:8]))
@@ -125,8 +127,7 @@ def _assess(d, r):
 def _recommend(d, r):
     s = d["suggestions"]
     direct = f"{len(s)} suggested collaborator(s) (no previous joint paper), ranked by {d['basis']}."
-    ev = [f"**{x['name']}** ({x['institution']}, {x['department']}): rank score {_fmt(x['rank_score'])}, path {x['hops']} hop(s), topic cosine {_fmt(x['topic_cosine'])}; shared subfields: {', '.join(x['shared_subfields'][:3]) or 'none'}"
-          + (f"; common collaborators: {', '.join(x['common_collaborators'][:3])}" if x["common_collaborators"] else "") for x in s]
+    ev = [f"**{x['name']}** ({x['institution']}, {x['department']}), rank score {_fmt(x['rank_score'])}. Why: " + "; ".join(x.get("why") or ["no specific signal"]) for x in s]
     return direct, ev, ["Scores rank candidates against each other; they do not say a collaboration will happen."]
 
 
@@ -149,7 +150,20 @@ def _top_faculty(d, r):
     rows = d["rows"]
     extra = [c for c in rows[0] if c not in ("name", "institution", "department", "papers", "citations")] if rows else []
     k = extra[0] if extra else (d.get("metric") or r.get("data", {}).get("metric") or "citations")
-    return f"Top {len(rows)} by {k}: " + ", ".join(f"{x['name']} ({_fmt(x[k])})" for x in rows[:5]) + ("..." if len(rows) > 5 else ""), [f"{x['name']} - {x['institution']}, {x['department']}: {k} {_fmt(x[k])}, {x['papers']} papers, {x['citations']} citations" for x in rows], []
+    f = d.get("filters") or {}
+    span = f" counting papers from {f.get('year_from') or 2016} to {f.get('year_to') or 2026}" if (f.get("year_from") or f.get("year_to")) else ""
+    rest = lambda x: ", ".join(s for s in [f"{x['papers']} papers" if k != "papers" else "", f"{x['citations']:,} citations" if k != "citations" else ""] if s)
+    return (f"Top {len(rows)} by {k.replace('_', ' ')}{span}: " + ", ".join(f"{x['name']} ({_fmt(x[k])})" for x in rows[:5]) + ("..." if len(rows) > 5 else ""),
+            [f"{x['name']} - {x['institution']}, {x['department']}: {k.replace('_', ' ')} {_fmt(x[k])}" + (f"; {rest(x)}" if rest(x) else "") for x in rows], [])
+
+
+def _top_papers(d, r):
+    rows = d.get("papers") or []
+    if not rows:
+        return "No papers match these filters.", [], []
+    ev = [f"{x['title'][:120]} ({x['year']}, {x['venue']}): {x['citations_worldwide']:,} citations worldwide"
+          + (f", FWCI {x['fwci']}" if x.get("fwci") is not None else "") + f"; {x['institutes']}" for x in rows]
+    return f"{r['summary']}. Most cited: {rows[0]['title'][:120]} ({rows[0]['year']}, {rows[0]['citations_worldwide']:,} citations).", ev, [d.get("note", "")]
 
 
 def _pattern(d, r):
@@ -200,7 +214,9 @@ def _paper(d, r):
 
 
 def _pagerank(d, r):
-    return (f"{r['summary']}. {d.get('self_citation_share_of_in_corpus_%')}% of its in-corpus citations are author self-citations.", [f"{d['in_corpus_citations_by_kind']}", d["explanation_inputs"]], [])
+    k = d.get("in_corpus_citations_by_kind") or {}
+    kinds = f"Citations from inside the corpus: {k.get('author_self', 0) or 0} by the same authors, {k.get('same_institute_other_author', 0) or 0} by other authors at the same institute, {k.get('between_our_institutes', 0) or 0} between the three institutes"
+    return (f"{r['summary']}. {d.get('self_citation_share_of_in_corpus_%')}% of its in-corpus citations are author self-citations.", [kinds, d["explanation_inputs"]], [])
 
 
 def _institute_collab(d, r):
@@ -211,12 +227,97 @@ def _institute_collab(d, r):
     return r["summary"], ev, []
 
 
+def _int(v):
+    try:
+        return int(v)
+    except (TypeError, ValueError):
+        return "n/a"
+
+
 def _profile(d, r):
-    ev = [f"{d['papers']} papers ({d['journal_papers']} journal / {d['conference_papers']} conference), {d['citations']} citations, {d['citations_per_paper']} per paper; 2016-2026 h-index {d['h_index_2016_2026']}; Q1 share {d['q1_share_%']}%",
+    cpp = f", {d['citations_per_paper']} per paper" if d.get("citations_per_paper") is not None else ""
+    q1 = f"; Q1 share {d['q1_share_%']}%" if d.get("q1_share_%") is not None else ""
+    ev = [f"{d['papers']} papers ({d['journal_papers']} journal / {d['conference_papers']} conference), {d['citations']:,} citations{cpp}; 2016-2026 h-index {d['h_index_2016_2026']}{q1}",
           f"Top journals: {', '.join(d['top_journals']) or 'none'}; most used conference or series: {', '.join(d['top_conferences_or_series']) or 'none'}",
-          f"Network: {d['collaborators_in_faculty_network']} collaborators, betweenness {_fmt(d['betweenness'])}, k-core {d['k_core']}, community {d['community_leiden']}",
-          "Top collaborators: " + ", ".join(f"{c['name']} ({c['joint_papers']})" for c in d["top_collaborators"][:5])]
-    return r["summary"], ev, []
+          f"Network: {d['collaborators_in_faculty_network']} collaborators among the verified faculty, betweenness {_fmt(d['betweenness']) if d.get('betweenness') is not None else 'n/a'}, "
+          f"k-core {_int(d.get('k_core'))}, community {_int(d.get('community_leiden'))}"]
+    if d["top_collaborators"]:
+        ev.append("Top collaborators: " + ", ".join(f"{c['name']} ({c['joint_papers']})" for c in d["top_collaborators"][:5]))
+    interp = []
+    ac = d.get("affiliation_check")
+    if ac:
+        h = ac["institute_h_index"]; k = list(h)
+        interp.append(f"Affiliation checked: {ac['status']} Since {ac['away_since']}, {ac['papers_after_away_year_with_other_affiliation']} of {d['name']}'s {ac['papers_after_away_year']} papers "
+                      f"also list {ac['other_affiliation']}, and {d['name']} accounts for {ac['share_of_institute_citations_%']}% of the institute's citations; its h-index is {h[k[0]]} with these papers, "
+                      f"{h[k[1]]} counting only those up to {ac['away_since']}, and {h[k[2]]} without them. Sources: " + ", ".join(ac["sources"][:3]))
+    rp = d.get("retracted_papers_not_counted") or []
+    if rp:
+        interp.append(f"{len(rp)} retracted or withdrawn paper(s) are not counted above: " + "; ".join(f"{x['title'][:80]} ({x['year']}, {x['reason'].lower()})" for x in rp[:3]))
+    direct = r["summary"] + (f". Affiliation: {ac['status']}" if ac else "")
+    return direct, ev, interp
+
+
+def _regional(d, r):
+    ins = d["institutes"]
+    sh = lambda x: x["institution"].replace("MANIT Bhopal", "MANIT")
+    home = lambda x: x["share_of_joint_papers_%"]["Same state"] + x["share_of_joint_papers_%"]["Same region"]
+    other = lambda x: x["share_of_joint_papers_%"]["Other region"]
+    mostly_out = [x for x in ins if other(x) > home(x)]
+    lead = ("No. " if len(mostly_out) == len(ins) else "Not for all. " if mostly_out else "Yes. ")
+    direct = (lead + "Share of joint papers with Indian partners that are with institutes in other regions: " +
+              ", ".join(f"{sh(x)} {other(x)}% (own state and region: {round(home(x), 1)}%)" for x in ins) + ".")
+    prefs = [x["home_region_preference_x"] for x in ins if x["home_region_preference_x"]]
+    if prefs and min(prefs) > 1.5:
+        times = f"{prefs[0]} times" if len(prefs) == 1 else f"{min(prefs)}-{max(prefs)} times"
+        who = "it works" if len(ins) == 1 else "each institute works"
+        direct += (f" Still, {who} with its own region {times} more than the other institutes do"
+                   + (", and those partnerships are deeper." if all(x["papers_per_partner_home"] > x["papers_per_partner_elsewhere"] for x in ins) else "."))
+    ev = []
+    for x in ins:
+        s = x["share_of_joint_papers_%"]
+        ev.append(f"**{x['institution']}** (home: {x['home_state']}, {x['home_region']} region): same state {s['Same state']}%, rest of the region {s['Same region']}%, "
+                  f"other regions {s['Other region']}%, national bodies {s['National body']}%, unmapped {s['Unknown']}%")
+        pref = f"{x['home_region_preference_x']}x" if x["home_region_preference_x"] else "n/a"
+        ev.append(f"{x['institution']}: home-region share {x['home_region_share_%']}% vs {x['expected_home_region_share_%']}% expected from the other two institutes ({pref}); "
+                  f"{x['papers_per_partner_home']} joint papers per nearby partner vs {x['papers_per_partner_elsewhere']} per partner elsewhere; "
+                  "trend " + ", ".join(f"{k}: {v}%" for k, v in x["home_share_by_period_%"].items()))
+        ev.append(f"{x['institution']} top nearby partners: " + "; ".join(f"{p['partner']} ({p['joint_papers']} papers, {p['faculty_involved']} faculty)" for p in x["top_home_partners"][:4]))
+    interp = []
+    for x in ins:
+        for c in x["co_located_partners"]:
+            interp.append(f"{c['partner']} {c['note']} ({c['joint_papers']} joint papers, counted in '{(c.get('counted_in') or 'home region').lower()}'), so part of {x['institution']}'s home share is same-campus work; "
+                          f"without it the home-region share is {x['home_region_share_without_co_located_%']}%. Source: {c['source']}")
+    interp.append("Nearby partnerships are usually carried by a few faculty and by labs or universities close by; the falling trend fits the wider finding that "
+                  "co-authors are increasingly far apart. These are associations, not tested causes.")
+    return direct, ev, interp
+
+
+def _departments(d, r):
+    rows = d["rows"]
+    if not rows:
+        return r["summary"], [], []
+    m = d["metric"].replace("_", " ")
+    top = rows[0]
+    direct = (f"{top['department']} at {top['institution']} ranks first by {m} ({_fmt(top[d['metric']])})" +
+              (f" among {d['scope']}." if len(rows) > 1 else f"; it is the only department matching {d['scope']}."))
+    if len({x['institution'] for x in rows}) > 1 and len({x['department'].split()[0] for x in rows}) == 1:
+        direct = f"Comparing {d['scope']}: " + "; ".join(f"{x['institution']} median h-index {_fmt(x['median_h_index'])}, {_fmt(x['papers_per_faculty'])} papers per faculty" for x in rows) + "."
+    ev = [f"{x['department']} ({x['institution']}): {x['faculty_with_papers']} faculty with papers, {x['papers']:,} papers, {x['citations']:,} citations, "
+          f"{_fmt(x['papers_per_faculty'])} papers per faculty, median h-index {_fmt(x['median_h_index'])} (max {x['max_h_index']}), "
+          f"Q1 share {_fmt(x['q1_share_%']) if x['q1_share_%'] is not None else 'n/a'}%" for x in rows[:10]]
+    return direct, ev, ["Department totals depend on department size; papers per faculty and median h-index are the fairer comparisons."]
+
+
+def _retracted(d, r):
+    if not d["papers"]:
+        return f"No retracted or withdrawn papers for {d['scope']}.", [], []
+    reasons = "; ".join(f"{k.lower()}: {v}" for k, v in d["by_reason"].items())
+    direct = (f"{d['papers']} paper(s) for {d['scope']} have been retracted or withdrawn ({d['citations']:,} citations); they are left out of every metric on the dashboard. "
+              f"By reason: {reasons}.")
+    ev = [f"By institute: " + ", ".join(f"{k} {v}" for k, v in d["by_institute"].items())] if d["scope"] == "the three institutes" else []
+    clean = lambda s: re.sub(r"^(RETRACTED( ARTICLE)?|Retracted|WITHDRAWN|\[Retracted\])\s*:?\s*", "", s)
+    ev += [f"{clean(x['title'])[:110]} ({x['institution']}, {x['year']}, {x['citations']} citations): {x['reason'].lower()}; faculty: {x['faculty']}" for x in d["rows"][:8]]
+    return direct, ev, ["The full list with DOI links and the reasons is in the Methodology tab."]
 
 
 def _explain(d, r):
@@ -226,4 +327,4 @@ def _explain(d, r):
 FORMATTERS = {"explain_metric": _explain, "assess_collaboration": _assess, "get_collaboration_history": _assess, "get_shortest_collaboration_path": _assess, "get_common_collaborators": _assess,
               "recommend_collaborators": _recommend, "compare_institutes": _compare_inst, "top_faculty": _top_faculty, "bridge_researchers": _top_faculty, "faculty_pattern": _pattern,
               "resilience_summary": _resilience, "simulate_node_removal": _removal, "network_overview": _network, "citation_flows": _flows, "get_paper": _paper, "explain_paper_pagerank": _pagerank,
-              "assess_institute_collaboration": _institute_collab, "partner_institutes": _partner, "partner_place_impact": _place_impact, "citation_give_take": _give_take, "explain_output_difference": _why, "find_experts": _experts, "get_faculty_profile": _profile}
+              "assess_institute_collaboration": _institute_collab, "partner_institutes": _partner, "partner_place_impact": _place_impact, "citation_give_take": _give_take, "explain_output_difference": _why, "find_experts": _experts, "get_faculty_profile": _profile, "top_papers": _top_papers, "retracted_papers": _retracted, "regional_collaboration": _regional, "department_stats": _departments}

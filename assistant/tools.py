@@ -19,8 +19,20 @@ from . import entities as E
 from . import viz
 from .data import INSTS, OUT, SHORT, ST, store
 
-COVERAGE_FAC = ("Verified faculty of MANIT Bhopal, NIT Jamshedpur and NIT Silchar (887 listed, 823 with papers), papers 2016-2026 "
-                "(2026 is partial). Co-authorship links are between these faculty only; collaborators outside them are counted but not individually known.")
+
+def _coverage_fac():
+    """Counts come from the final tables, so this line stays true after a rebuild."""
+    try:
+        listed = len(pd.read_csv(OUT.parent / "faculty_final.csv", usecols=[0]))
+        active = len(pd.read_csv(ST / "faculty_performance.csv", usecols=[0]))
+    except Exception:
+        return ("Verified faculty of MANIT Bhopal, NIT Jamshedpur and NIT Silchar, papers 2016-2026 (2026 is partial). Co-authorship links are between these faculty only; "
+                "collaborators outside them are counted but not individually known.")
+    return (f"Verified faculty of MANIT Bhopal, NIT Jamshedpur and NIT Silchar ({listed} listed, {active} with papers), papers 2016-2026 (2026 is partial); "
+            "retracted and withdrawn papers are excluded. Co-authorship links are between these faculty only; collaborators outside them are counted but not individually known.")
+
+
+COVERAGE_FAC = _coverage_fac()
 GLOSSARY = {
     "degree": "Number of distinct verified faculty a person has co-authored with. High = many collaborators; says nothing about paper quality.",
     "strength": "Total joint papers with other verified faculty (a repeated collaborator adds more than a one-off).",
@@ -73,7 +85,7 @@ def _faculty_record(fid_):
     g = lambda k, d=None: (None if pd.isna(f.get(k)) else f.get(k)) if k in f.index else d
     return {"id": fid_, "name": f.faculty_name, "institution": f.institution, "department": f.department, "designation": g("designation") or "", "status": f.faculty_status,
             "papers": int(f.papers), "journal_papers": int(f.journal_papers), "conference_papers": int(f.conference_papers), "citations": int(f.citations),
-            "citations_per_paper": g("citations_per_paper"), "h_index_2016_2026": int(f.h_index), "q1_share_%": g("q1_share_%"), "top_journal": g("top_journal"),
+            "citations_per_paper": g("citations_per_paper") or (round(int(f.citations) / int(f.papers), 1) if int(f.papers) else None), "h_index_2016_2026": int(f.h_index), "q1_share_%": g("q1_share_%"), "top_journal": g("top_journal"),
             "years_active": f"{g('first_year')}-{g('last_year')}", "collaborators_in_faculty_network": int(g("degree", 0) or 0),
             "joint_papers_strength": int(g("strength_joint_papers", 0) or 0), "betweenness": g("betweenness"), "closeness": g("closeness"), "eigenvector": g("eigenvector"),
             "k_core": g("k_core"), "community_leiden": g("community_leiden"), "participation_dept": g("participation_dept"), "mean_fwci": g("mean_fwci"),
@@ -104,6 +116,16 @@ def get_faculty_profile(faculty):
                 "top_cited_papers": [{"title": r.title, "year": int(r.year), "citations": int(r.citations), "venue": r.journal_name} for r in top.itertuples()],
                 "top_collaborators": [{"name": G.nodes[n]["name"], "institution": G.nodes[n]["institution"], "joint_papers": d["weight"]} for n, d in nb],
                 "fields": fp.field.value_counts().head(5).to_dict()})
+    rp = _retracted_rows()
+    mine_r = rp[(rp.institution == rec["institution"]) & (rp.faculty_name == rec["name"])].drop_duplicates("openalex_work_id") if len(rp) else rp
+    rec["retracted_papers_not_counted"] = [{"title": r.title, "year": int(r.year), "reason": r.retraction_reason_category, "doi": r.doi} for r in mine_r.itertuples()] if len(mine_r) else []
+    ac = next((a for a in _affiliation_checks() if a["institution"] == rec["institution"] and a["faculty"] == rec["name"]), None)
+    if ac:
+        rec["affiliation_check"] = {k: ac[k] for k in ("status", "away_since", "other_affiliation", "papers_after_away_year", "papers_after_away_year_with_other_affiliation",
+                                                       "share_of_institute_citations_%", "institute_h_index", "sources")}
+        rec["affiliation_check"]["why_status_field_says_" + str(rec["status"])] = (
+            f"The status field comes from the verified faculty list of {rec['institution']}, which includes this person; the affiliation check above "
+            f"(made from public records) shows the move to {ac['other_affiliation']} in {ac['away_since']}. The papers stay in the data because they carry the institute's name.")
     return _res("get_faculty_profile", f"{rec['name']} ({SHORT[rec['institution']]}, {rec['department']}): {rec['papers']} papers, {rec['citations']} citations, 2016-2026 h-index {rec['h_index_2016_2026']}",
                 rec, [_flink(fid_)] + [_plink(w) for w in top.openalex_work_id], COVERAGE_FAC + " h-index is for the 2016-2026 corpus, not a career h-index.")
 
@@ -322,9 +344,22 @@ def recommend_collaborators(faculty, k=5, scope="any", field=None, different_dep
         key = C.keys[j]
         f = S.faculty.loc[key]
         ex = C.explain(H, M, i, j)
+        why = []
+        if ex["common_collaborators"]:
+            why.append(f"{len(ex['common_collaborators'])} shared co-author(s) ({', '.join(ex['common_collaborators'][:2])})")
+        if ex["hops"] and ex["hops"] < 11:
+            why.append(f"{ex['hops']} step(s) apart in the co-authorship network")
+        else:
+            why.append("not yet connected through co-authors")
+        if ex["shared_subfields"]:
+            why.append(f"{len(ex['shared_subfields'])} shared research subfield(s) ({', '.join(ex['shared_subfields'][:2])})")
+        tc_rank = float((df.topic_cosine <= r.topic_cosine).mean())
+        if tc_rank >= 0.9:
+            why.append(f"topic overlap {float(r.topic_cosine):.2f}, in the top {max(1, round(100 * (1 - tc_rank)))}% of all candidates")
+        connected = bool(ex["hops"] and ex["hops"] < 11)          # collab_model codes "no path" as 11 hops
         out.append({"name": f.faculty_name, "institution": f.institution, "department": f.department, "papers": int(f.papers), "h_index": int(f.h_index), "rank_score": round(float(r.score), 3),
-                    "hops": ex["hops"], "common_collaborators": ex["common_collaborators"], "shared_subfields": ex["shared_subfields"], "topic_cosine": round(float(r.topic_cosine), 2),
-                    "same_department": bool(f.department == me.department and f.institution == me.institution)})
+                    "connected_in_network": connected, "hops": ex["hops"] if connected else None, "common_collaborators": ex["common_collaborators"], "shared_subfields": ex["shared_subfields"], "topic_cosine": round(float(r.topic_cosine), 2),
+                    "same_department": bool(f.department == me.department and f.institution == me.institution), "why": why})
     ids = [C.keys[r.other] for r in top.itertuples()]
     fig = viz.network_figure([fid_] + ids + [n for r in out for n in []], center=[fid_], highlight=ids, extra_edges=[(fid_, n) for n in ids],
                              title=f"Suggested collaborators for {me.faculty_name} (dashed = no joint paper yet)")
@@ -367,7 +402,7 @@ def assess_institute_collaboration(faculty, institute):
     data["links_with_researchers_own_institute"] = nan_to_none(inst_level[["shared_papers", "total_citations", "top_faculty", "weighted_jaccard"]].to_dict("records"))
     data["topic_similarity_note"] = "weighted_jaccard is null where research-topic similarity was not calculated (only the top 25 partners of each institute were profiled); null is NOT zero similarity"
     ext = pd.read_csv(ST / "locality" / "top_external_authors.csv")
-    ea = ext[ext.iloc[:, :].astype(str).apply(lambda r: inst.lower() in " ".join(r).lower(), axis=1)] if len(ext) else ext
+    ea = ext[ext.fillna("").astype(str).apply(lambda r: inst.lower() in " ".join(map(str, r)).lower(), axis=1)] if len(ext) else ext
     data["external_authors_there_known_from_joint_papers"] = ea.head(8).to_dict("records") if len(ea) else []
     cov += (" Faculty lists and research profiles of outside institutes are NOT in this dataset: only the joint papers with the faculty of the three institutes are known. No outside collaborator is suggested "
             "beyond people who actually appear on joint papers with the faculty of the three institutes.")
@@ -496,12 +531,35 @@ METRICS = {"papers": "papers", "citations": "citations", "h_index": "h_index", "
            "q1_papers": "q1_papers"}
 
 
-def top_faculty(metric="citations", institute=None, department=None, n=10, status=None, min_papers=1):
+def _faculty_in_years(year_from=None, year_to=None):
+    """papers, citations and h-index per faculty member counting only papers published in the window (same rules as faculty_stats.py)."""
+    S = store()
+    fp = S.fac_papers
+    if year_from:
+        fp = fp[fp.year >= int(year_from)]
+    if year_to:
+        fp = fp[fp.year <= int(year_to)]
+    g = fp.groupby("id")
+    w = pd.DataFrame({"papers": g.size(), "citations": g.citations.sum(), "h_index": g.citations.apply(lambda c: _h(list(c)))})
+    f = S.faculty.drop(columns=["papers", "citations", "h_index"]).join(w, how="inner")
+    return f
+
+
+def _h(c):
+    c = sorted(c, reverse=True)
+    return sum(1 for k, x in enumerate(c) if x >= k + 1)
+
+
+def top_faculty(metric="citations", institute=None, department=None, n=10, status=None, min_papers=1, year_from=None, year_to=None):
     S = store()
     col = METRICS.get(metric.lower().replace(" ", "_"))
     if col is None or col not in S.faculty.columns:
         return _res("top_faculty", f"Unknown metric '{metric}'. Available: {sorted(METRICS)}", ok=False)
-    f = S.faculty[S.faculty.papers >= min_papers]
+    windowed = bool(year_from or year_to)
+    if windowed and col not in ("papers", "citations", "h_index"):
+        return _res("top_faculty", f"A year range works for papers, citations and h-index, not for '{metric}' (network measures use the whole 2016-2026 network).", ok=False)
+    f = (_faculty_in_years(year_from, year_to) if windowed else S.faculty)
+    f = f[f.papers >= min_papers]
     if institute:
         ri = E.resolve_institute(institute)
         if ri["canonical"] in INSTS:
@@ -517,8 +575,10 @@ def top_faculty(metric="citations", institute=None, department=None, n=10, statu
              metric: (None if pd.isna(top.iloc[k][col]) else float(top.iloc[k][col])), "papers": int(top.iloc[k].papers), "citations": int(top.iloc[k].citations)}
             for k in range(len(top))]
     fig = viz.bar_figure([f"{r['name']} ({SHORT[r['institution']]})" for r in rows], [r[metric] for r in rows], f"Top faculty by {metric}", metric)
-    return _res("top_faculty", f"Top {len(rows)} by {metric}", {"rows": rows, "filters": {"institute": institute, "department": department, "status": status}},
-                [_flink(i) for i in top.id], COVERAGE_FAC, fig)
+    span = f" ({year_from or 2016}-{year_to or 2026} papers only)" if windowed else ""
+    return _res("top_faculty", f"Top {len(rows)} by {metric}{span}", {"rows": rows, "filters": {"institute": institute, "department": department, "status": status,
+                "year_from": year_from, "year_to": year_to}}, [_flink(i) for i in top.id],
+                COVERAGE_FAC + (f" Papers, citations and h-index here count only papers published {year_from or 2016}-{year_to or 2026}; citations are counted to today." if windowed else ""), fig)
 
 
 def faculty_pattern(pattern, institute=None, n=10):
@@ -830,9 +890,12 @@ def find_experts(topic, keywords=None, institute=None, n=8, include_former=False
         terms = SYNONYMS.get(topic.strip().lower(), [topic.strip().lower()])
     pat = re.compile(r"\b(?:" + "|".join(re.escape(t) for t in terms) + ")", re.I)
     p = S.papers
-    text = (p.title.fillna("") + " | " + p.topic.fillna("") + " | " + p.subfield.fillna(""))
-    hit = p[text.map(lambda x: bool(pat.search(x)))]
-    cov = ("Matching uses paper titles and OpenAlex topic/subfield labels of the verified-faculty corpus (2016-2026); papers that use other words for the topic can be missed. "
+    # titles and the fine OpenAlex topic (about 4,500 labels) are matched; a broad subfield label is used only when a term IS that subfield
+    # ("renewable energy" must not pull in every paper of 'Renewable Energy, Sustainability and the Environment', e.g. photocatalysis)
+    text = p.title.fillna("") + " | " + p.topic.fillna("")
+    sub = p.subfield.fillna("").str.lower()
+    hit = p[text.map(lambda x: bool(pat.search(x))) | sub.isin(terms)]
+    cov = ("Matching uses paper titles and OpenAlex topic labels of the verified-faculty corpus (2016-2026), and a subfield only when a search term is its exact name; papers that use other words for the topic can be missed. "
            "Only faculty of MANIT Bhopal, NIT Jamshedpur and NIT Silchar are covered; this is output on the topic, not a quality ranking.")
     if hit.empty:
         return _res("find_experts", f"No paper in the corpus matches '{topic}' (searched: {', '.join(terms)}).", {"terms": terms, "papers_matched": 0}, [], cov, ok=False)
@@ -857,7 +920,8 @@ def find_experts(topic, keywords=None, institute=None, n=8, include_former=False
     rows.sort(key=lambda r: (-r["relevant_papers"], -r["citations_on_these_papers"]))
     top = rows[:max(1, min(int(n or 8), 15))]
     by_inst = fp.drop_duplicates("openalex_work_id").groupby("institution").size().to_dict()
-    data = {"topic": topic, "terms_searched": terms, "papers_matched": int(len(hit)), "papers_by_our_institute": {k: int(v) for k, v in by_inst.items()},
+    per_term = {t_: int(text.str.contains(r"\b" + re.escape(t_), case=False, regex=True).sum()) for t_ in terms}
+    data = {"topic": topic, "terms_searched": terms, "papers_matched_per_term": per_term, "papers_matched": int(len(hit)), "papers_by_our_institute": {k: int(v) for k, v in by_inst.items()},
             "faculty": top, "rows": [{k: v for k, v in r.items() if k != "example_papers"} for r in top]}
     ev = [_flink(r["id"]) for r in top[:5]] + [_plink(w) for w in hit.sort_values("citations", ascending=False).index[:3]]
     return _res("find_experts", f"{len(hit)} papers on '{topic}'; most active faculty: " + ", ".join(f"{r['name']} ({r['relevant_papers']})" for r in top[:3]), data, ev, cov)
@@ -946,6 +1010,161 @@ def citation_give_take(institute=None, n=8):
                 "A gap does not show unfairness: larger or same-field institutes cite the institute more often than the reverse, and papers can only cite older work. Shown in the Citation flows tab.")
 
 
+# ============================================================================ data corrections (retractions.py, affiliation_checks.py)
+_DC = {}
+
+
+def _retracted_rows():
+    if "rows" not in _DC:
+        f = OUT / "group15_retracted.csv"
+        _DC["rows"] = pd.read_csv(f, dtype=str, keep_default_na=False) if f.exists() else pd.DataFrame()
+    return _DC["rows"]
+
+
+def _affiliation_checks():
+    if "aff" not in _DC:
+        f = ST / "affiliation_checks.json"
+        _DC["aff"] = json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+    return _DC["aff"]
+
+
+def retracted_papers(institute=None, faculty=None):
+    """Retracted / withdrawn papers that were taken out of every metric: counts, reasons, and the papers of one institute or person."""
+    rows = _retracted_rows()
+    if rows.empty:
+        return _res("retracted_papers", "No retraction list is available in this build.", ok=False)
+    who = None
+    if faculty:
+        fid_, err = _fac(faculty, "retracted_papers")
+        if err:
+            return err
+        who = store().faculty.loc[fid_]
+        rows = rows[(rows.institution == who.institution) & (rows.faculty_name == who.faculty_name)]
+    elif institute:
+        inst = next((i for i in INSTS if i == institute or SHORT[i].lower() == str(institute).lower()), None) or E.resolve_institute(institute)["canonical"]
+        if inst not in INSTS:
+            return _res("retracted_papers", f"'{institute}' is not one of the three institutes.", ok=False)
+        rows = rows[rows.institution == inst]
+        institute = inst
+    papers = rows.drop_duplicates("openalex_work_id").copy()
+    papers["cites"] = pd.to_numeric(papers.citations, errors="coerce").fillna(0).astype(int)
+    by_inst = {SHORT[i]: int(papers[papers.institution == i].openalex_work_id.nunique()) for i in INSTS}
+    lst = [{"title": r.title, "institution": SHORT.get(r.institution, r.institution), "year": int(r.year), "citations": int(r.cites), "status": r.retraction_status,
+            "reason": r.retraction_reason_category, "faculty": "; ".join(sorted(set(rows[rows.openalex_work_id == r.openalex_work_id].faculty_name))), "doi": r.doi}
+           for r in papers.sort_values("cites", ascending=False).itertuples()]
+    scope = who.faculty_name if who is not None else (institute or "the three institutes")
+    data = {"scope": scope, "papers": len(lst), "citations": int(papers.cites.sum()), "by_institute": by_inst,
+            "by_reason": papers.retraction_reason_category.value_counts().to_dict(), "rows": lst[:15]}
+    return _res("retracted_papers", f"{len(lst)} retracted or withdrawn paper(s) for {scope}", data, [],
+                "Retracted and withdrawn papers are left out of every count, h-index, ranking and network. Status and reasons were checked against Crossref, "
+                "the Retraction Watch database and the publishers' notices (Nov 2026). A retraction does not by itself mean the authors did something wrong.")
+
+
+# ============================================================================ regional collaboration (locality_reach.py)
+# Facts that the data cannot show, checked on the web (Nov 2026): partners that share a campus with one of the three institutes.
+CO_LOCATED = {("MANIT Bhopal", "Indian Institute of Information Technology Bhopal"):
+              ("operates from MANIT's campus and is mentored by MANIT", "https://en.wikipedia.org/wiki/Indian_Institute_of_Information_Technology,_Bhopal")}
+
+
+def regional_collaboration(institute=None):
+    """Do the institutes collaborate mostly with institutes in their own state / region? Observed vs expected home-region share, depth, trend."""
+    f = ST / "locality" / "partners_locality.csv"
+    if not f.exists():
+        return _res("regional_collaboration", "The locality tables are not available in this build.", ok=False)
+    p = pd.read_csv(f)
+    insts = INSTS
+    if institute:
+        c = E.resolve_institute(institute)["canonical"]
+        if c not in INSTS:
+            return _res("regional_collaboration", f"'{institute}' is not one of the three institutes.", ok=False)
+        insts = [c]
+    yrs = [c_ for c_ in p.columns if re.fullmatch(r"y20\d\d", c_)]
+    known = p[~p.region.isin(["Unknown", "National (multi-site)"])]
+    out = []
+    for i in insts:
+        mine = p[p.your_inst == i]
+        tot = mine.shared_papers.sum()
+        shares = {loc: round(100 * mine[mine.locality == loc].shared_papers.sum() / tot, 1) for loc in ["Same state", "Same region", "Other region", "National body", "Unknown"]}
+        home_region = mine[mine.locality == "Same state"].region.mode()
+        home_region = home_region.iloc[0] if len(home_region) else None
+        k = known[known.your_inst == i]
+        oth = known[known.your_inst != i]
+        home = k.locality.isin(["Same state", "Same region"])
+        obs = round(100 * k[home].shared_papers.sum() / k.shared_papers.sum(), 1)
+        exp = round(100 * oth[oth.region == home_region].shared_papers.sum() / oth.shared_papers.sum(), 1) if home_region else None
+        periods = {}
+        for a, b in [(2016, 2018), (2019, 2021), (2022, 2025)]:
+            cols = [f"y{y}" for y in range(a, b + 1) if f"y{y}" in yrs]
+            s = k[cols].sum(axis=1)
+            periods[f"{a}-{b}"] = round(100 * s[home].sum() / s.sum(), 1) if s.sum() else None
+        top_home = k[home].sort_values("shared_papers", ascending=False).head(5)
+        co = [{"partner": n, "joint_papers": int(k[k.partner_inst == n].shared_papers.sum()), "note": note, "source": src}
+              for (ii, n), (note, src) in CO_LOCATED.items() if ii == i and n in set(k.partner_inst)]
+        obs_wo = None
+        if co:
+            kk = k[~k.partner_inst.isin([c_["partner"] for c_ in co])]
+            hh = kk.locality.isin(["Same state", "Same region"])
+            obs_wo = round(100 * kk[hh].shared_papers.sum() / kk.shared_papers.sum(), 1)
+        for c_ in co:
+            c_["counted_in"] = k[k.partner_inst == c_["partner"]].locality.iloc[0] if (k.partner_inst == c_["partner"]).any() else None
+        out.append({"institution": i, "home_state": mine[mine.locality == "Same state"].state.mode().iloc[0] if (mine.locality == "Same state").any() else None,
+                    "home_region": home_region, "share_of_joint_papers_%": shares,
+                    "own_state_and_region_%": round(shares["Same state"] + shares["Same region"], 1),
+                    "national_body_or_unmapped_%": round(shares["National body"] + shares["Unknown"], 1),
+                    "home_region_share_%": obs, "expected_home_region_share_%": exp, "home_region_preference_x": round(obs / exp, 1) if exp else None,
+                    "home_region_share_without_co_located_%": obs_wo, "co_located_partners": co,
+                    "papers_per_partner_home": round(float(k[home].shared_papers.mean()), 1), "papers_per_partner_elsewhere": round(float(k[~home].shared_papers.mean()), 1),
+                    "home_share_by_period_%": periods,
+                    "top_home_partners": [{"partner": r.partner_inst, "state": r.state, "joint_papers": int(r.shared_papers), "faculty_involved": int(r.faculty_involved),
+                                           "top_faculty": r.top_faculty} for r in top_home.itertuples()]})
+    most_out = min(out, key=lambda x: x["share_of_joint_papers_%"]["Other region"])
+    return _res("regional_collaboration", "Collaboration by locality: " + "; ".join(f"{SHORT[x['institution']]} {x['share_of_joint_papers_%']['Other region']}% with other regions" for x in out),
+                {"institutes": out}, [],
+                "Joint papers with Indian partner institutes, 2016-2026; a paper with two partners counts for each. States and regions come from a curated place list "
+                "(about 93% of links mapped). 'Expected' is that region's share in the other two institutes' partnerships, a rough baseline: the other institutes have "
+                "their own regional pull. Proximity effects are well documented elsewhere (Katz 1994, Scientometrics 31:31-43; Hoekman et al. 2010, Research Policy 39:662-673); "
+                "possible reasons such as alumni ties or state funding are not measured here.")
+
+
+def department_stats(institute=None, department=None, metric="median_h_index", n=10):
+    """Department-level statistics (papers, citations, papers per faculty, median / max h-index, Q1 share) for one or all institutes."""
+    f = ST / "department_stats.csv"
+    if not f.exists():
+        return _res("department_stats", "Department statistics are not available in this build.", ok=False)
+    d = pd.read_csv(f)
+    d = d[d.department != "Unknown department"]
+    cols = {"h_index": "median_h_index", "h-index": "median_h_index", "median_h_index": "median_h_index", "max_h_index": "max_h_index", "papers": "papers",
+            "citations": "citations", "papers_per_faculty": "papers_per_faculty", "productivity": "papers_per_faculty", "q1": "q1_share_%", "q1_share": "q1_share_%"}
+    col = cols.get(str(metric).lower().replace(" ", "_"), "median_h_index")
+    scope = "the three institutes"
+    if institute:
+        c = E.resolve_institute(institute)["canonical"]
+        if c not in INSTS:
+            return _res("department_stats", f"'{institute}' is not one of the three institutes.", ok=False)
+        d = d[d.institution == c]
+        scope = c
+    if department:
+        keep = []
+        for i in sorted(set(d.institution)):
+            rd = E.resolve_department(department, i)
+            if rd["best"]:
+                keep.append((i, rd["best"]))
+        if not keep:
+            return _res("department_stats", f"No department matches '{department}'.", ok=False)
+        d = d[[(i, dep) in set(keep) for i, dep in zip(d.institution, d.department)]]
+        scope = f"{department} departments" + (f" at {scope}" if institute else " across the three institutes")
+    d = d.sort_values(col, ascending=False).head(int(min(max(n, 1), 30)))
+    rows = [{"institution": r.institution, "department": r.department, "faculty_with_papers": int(r.faculty_matched), "papers": int(r.papers), "citations": int(r.citations),
+             "papers_per_faculty": float(r.papers_per_faculty), "median_h_index": float(r.median_h_index), "max_h_index": int(r.max_h_index),
+             "q1_share_%": None if pd.isna(r["q1_share_%"]) else float(r["q1_share_%"])} for _, r in d.iterrows()]
+    fig = viz.bar_figure([f"{x['department']} ({SHORT[x['institution']]})" for x in rows], [x[col] for x in rows], f"Departments by {col.replace('_', ' ')}", col.replace("_", " "))
+    small = [f"{x['department']} ({SHORT[x['institution']]})" for x in rows if x["faculty_with_papers"] < 5]
+    return _res("department_stats", f"Departments of {scope} ranked by {col.replace('_', ' ')}", {"rows": rows, "metric": col, "scope": scope}, [],
+                "Verified faculty only, 2016-2026; a paper counts once per department. h-index is the 2016-2026 corpus h-index of each faculty member, summarised "
+                "per department (median and maximum). Department names differ slightly between institutes (e.g. 'Materials and Metallurgical Engineering')."
+                + (f" Small departments (fewer than 5 faculty with papers) are less reliable: {', '.join(small)}." if small else ""), fig)
+
+
 def _schema(props, required=()):
     return {"type": "object", "properties": props, "required": list(required)}
 
@@ -967,7 +1186,7 @@ TOOLS = {
     "compare_institutes": (compare_institutes, "Compare the three institutes on normalised metrics (productivity per faculty, citations per paper, FWCI, Q1 share, growth).", _schema({"institutes": {"type": "array", "items": S_}})),
     "institute_profile": (institute_profile, "Profile of one of the three institutes including partners and departments.", _schema({"institute": S_}, ["institute"])),
     "top_faculty": (top_faculty, "Rank faculty by a metric: papers, citations, h_index, betweenness, degree, closeness, eigenvector, q1_share, citations_per_paper, fwci, participation, k_core.",
-                    _schema({"metric": S_, "institute": S_, "department": S_, "n": I_, "status": {"type": "string", "enum": ["current", "former"]}})),
+                    _schema({"metric": S_, "institute": S_, "department": S_, "n": I_, "status": {"type": "string", "enum": ["current", "former"]}, "year_from": I_, "year_to": I_})),
     "faculty_pattern": (faculty_pattern, "Find faculty with a pattern: high_betweenness_low_degree, high_citations_few_collaborators, connected_but_low_citations, interdisciplinary_bridges.",
                         _schema({"pattern": S_, "institute": S_, "n": I_}, ["pattern"])),
     "network_overview": (network_overview, "Structure of the faculty collaboration network (components, clustering, paths, communities) for all or one institute.", _schema({"scope": S_})),
@@ -990,11 +1209,14 @@ TOOLS = {
     "citation_give_take": (citation_give_take, "Which institutes cite an institute more than it cites them, and do private universities, other universities, IIT/NIT/IIIT, labs or industry cite an institute more than it cites them. Use for 'who cites the institutes most', 'do private universities boost our citations', 'is citation reciprocal'.", _schema({"institute": S_, "n": I_})),
     "explain_output_difference": (explain_output_difference, "WHY does an institute publish more / differ in output? Returns measured drivers (headcount, papers per faculty, median, concentration, fractional credit, team size, seniority, like-for-like departments) AND papers per year per institute. Use for any 'why' or 'yearly' output question; do not add reasons the tool does not return.", _schema({"metric": S_})),
     "explain_metric": (explain_metric, "Plain-language definition of a network or bibliometric metric used in the dashboard.", _schema({"name": S_}, ["name"])),
+    "regional_collaboration": (regional_collaboration, "Do the three institutes collaborate mostly with institutes in their own state or region? Shares by locality, home-region preference against a baseline, depth of partnerships, trend over time, top nearby partners, and caveats (co-located partners).", _schema({"institute": S_})),
+    "department_stats": (department_stats, "Department-level statistics: rank or compare departments (papers, citations, papers per faculty, median/max h-index, Q1 share) within one institute or the same department across the three institutes.", _schema({"institute": S_, "department": S_, "metric": S_, "n": I_})),
+    "retracted_papers": (retracted_papers, "Retracted or withdrawn papers removed from all metrics: how many, why (reason category), and which papers, for all three institutes, one institute or one faculty member.", _schema({"institute": S_, "faculty": S_})),
 }
 
 
 # ============================================================================ links into the dashboard
-TAB_LINK = {"institute_profile": ("overview", "Institute overview"), "compare_institutes": ("overview", "Institute comparison"),
+TAB_LINK = {"regional_collaboration": ("reach", "Reach and locality"), "department_stats": ("faculty", "Faculty and departments"), "retracted_papers": ("method", "Methodology (retracted papers)"), "institute_profile": ("overview", "Institute overview"), "compare_institutes": ("overview", "Institute comparison"),
             "top_faculty": ("faculty", "Faculty leaderboard"), "faculty_pattern": ("faculty", "Faculty table"),
             "network_overview": ("collab", "Collaboration network"), "strongest_pairs": ("collab", "Collaboration network"), "bridge_researchers": ("collab", "Collaboration network"),
             "interdisciplinary_communities": ("collab", "Collaboration network"), "filter_network_by_weight": ("collab", "Collaboration network"),

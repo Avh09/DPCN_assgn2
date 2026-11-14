@@ -110,6 +110,9 @@ def resolve_institute(text):
         return {"canonical": None, "kind": "unknown", "candidates": [], "ambiguous": False}
     top = cands[0][1]
     near = [c for c, s in cands if s >= top - 3]
+    exact = [c for c in near if norm(c) == norm(text)]          # an exact full name is never ambiguous
+    if len(exact) == 1:
+        return {"canonical": exact[0], "kind": "partner", "candidates": exact, "ambiguous": False}
     return {"canonical": near[0] if len(near) == 1 else None, "kind": "partner", "candidates": near, "ambiguous": len(near) > 1}
 
 

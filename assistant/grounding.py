@@ -47,7 +47,7 @@ def _match(x, pool):
                 return True
             if v == 0:
                 continue
-            for d in range(0, 6):
+            for d in range(0, 10):          # small values such as PageRank (0.001826) need many decimals
                 if round(v, d) == round(x, d) and (d > 0 or abs(v - x) < 0.5):
                     # a number written with k decimals matches a value that rounds to it
                     if abs(round(v, d) - x) < 1e-9:
@@ -55,9 +55,12 @@ def _match(x, pool):
     return False
 
 
-def check(answer_text, tool_results):
-    """Returns {"ungrounded": [numbers], "checked": n}."""
-    pool = set()
+FIXED = {15.0, 3.0}       # the project's own facts that the model may repeat: Group 15, the three institutes
+
+
+def check(answer_text, tool_results, question=""):
+    """Returns {"ungrounded": [numbers], "checked": n}. Numbers from the user's question and FIXED are accepted too."""
+    pool = set(FIXED) | set(_numbers_in(question))
     for r in tool_results:
         collect({k: r.get(k) for k in ("summary", "data", "coverage")}, pool)
     nums = []

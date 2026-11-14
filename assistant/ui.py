@@ -25,6 +25,11 @@ EXAMPLES = [
     "Which partner countries and Indian states raise the institutes’ papers' impact the most?",
     "Do private universities cite MANIT more than MANIT cites them?",
     "Which institutes cite NIT Silchar far more than NIT Silchar cites them?",
+    "Do the institutes collaborate mostly within their own region?",
+    "Which department has the highest median h-index?",
+    "Who are the top 5 most cited faculty at MANIT since 2022?",
+    "How many papers were retracted, and why?",
+    "Did Kumarasamy Sudhakar leave MANIT, and how much does MANIT's h-index depend on him?",
     "What is betweenness?",
 ]
 
@@ -60,9 +65,10 @@ def _render_message(m, idx):
                     st.session_state["queued"] = f"Who is {cd[0]}?"
                     st.rerun()
         st.download_button("Download figure (HTML)", pio.to_html(fig, include_plotlyjs="cdn"), file_name="figure.html", key=f"dl_{idx}_{k}")
-    for name, df in m.get("tables", []):
+    for k, (name, df) in enumerate(m.get("tables", [])):
         with st.expander(f"Table: {name}"):
             st.dataframe(df, width="stretch")
+            st.download_button("Download as CSV", df.to_csv(index=False).encode("utf-8"), file_name=f"{name}.csv", mime="text/csv", key=f"csv_{idx}_{k}")
     if m.get("evidence"):
         with st.expander(f"References ({len(m['evidence'])})"):
             for e in m["evidence"]:
@@ -74,6 +80,13 @@ def _render_message(m, idx):
             if cols[k % len(cols)].button(f"{l['label']} →", key=f"dash_{idx}_{k}", width="stretch"):
                 st.session_state["dash_hash"] = l["hash"]
                 st.switch_page(st.session_state["_pages"]["dashboard"])
+    if m.get("follow_ups"):
+        st.caption("Ask next")
+        cols = st.columns(len(m["follow_ups"]))
+        for k, fq in enumerate(m["follow_ups"]):
+            if cols[k].button(fq, key=f"fu_{idx}_{k}", width="stretch"):
+                st.session_state["queued"] = fq
+                st.rerun()
     if m.get("tool_calls"):
         with st.expander("How this was computed"):
             st.json(m["tool_calls"])
@@ -94,7 +107,8 @@ def _respond(question):
     st.session_state["messages"].append({"role": "user", "text": question})
     st.session_state["messages"].append({
         "role": "assistant", "text": resp["text"], "figures": [f.to_json() for f in resp["figures"]], "tables": resp["tables"], "evidence": resp["evidence"], "links": resp.get("links", []),
-        "tool_calls": resp["tool_calls"], "grounding": resp["grounding"], "needs_choice": resp["needs_choice"], "mode": resp["mode"], "question": question})
+        "tool_calls": resp["tool_calls"], "grounding": resp["grounding"], "needs_choice": resp["needs_choice"], "mode": resp["mode"], "question": question,
+        "follow_ups": resp.get("follow_ups", [])})
 
 
 def render():

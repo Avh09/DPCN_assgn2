@@ -16,7 +16,8 @@ Rebuild everything from the raw download (needs `data/raw/`, `OPENALEX_*`/`ELSEV
 ```bash
 ./run_all.sh                 # default: build → enrich → quartiles → faculty → networks → outflow → inflow → partners → facstats → report → dashboard
 ./run_all.sh dashboard       # only regenerate dashboard/data.js (runs locality_reach.py, key_findings.py, build_dashboard.py)
-PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONHASHSEED=0 python -m pytest tests    # 37 tests
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONHASHSEED=0 python -m pytest tests    # 96 assistant tests
+PYTHONHASHSEED=0 python tests/evaluate_assistant.py [--llm]               # writes ASSISTANT_EVALUATION.md
 python validate.py           # 52 data checks
 ```
 
@@ -25,15 +26,17 @@ python validate.py           # 52 data checks
 Page "AI Research Assistant" in the Streamlit app. Every question is answered from allowlisted analysis tools (`assistant/tools.py`)
 that read the final tables and the faculty graph; the model never runs code, SQL or file access.
 
-* **With a key** (`ANTHROPIC_API_KEY` in the environment or in Streamlit secrets; optional `ANTHROPIC_MODEL`): the model chooses tools, writes the answer from the tool results, and numbers not found in the results are flagged.
+* **With a key** (`GEMINI_API_KEY` or `ANTHROPIC_API_KEY` in the environment or in Streamlit secrets; Gemini is used first and falls back between gemini-3.5-flash-lite, gemini-3.5-flash and gemini-3.8-flash, or set `GEMINI_MODEL` / `ANTHROPIC_MODEL`): the model chooses tools, writes the answer from the tool results, and numbers not found in the results are flagged.
 * **Without a key** (or if the API fails): a deterministic router uses the same tools and the same data (`assistant/router.py`, `answers.py`). Answers separate facts, statistics, predictions and interpretation, list limitations and show references.
-* Ambiguous names (“Rajesh Purohit”) trigger a choice; follow-up questions keep context; figures highlight the pair, path or common collaborators.
+* Ambiguous names (“Rajesh Purohit”) trigger a choice; a name that matches nobody is reported as not found; follow-up questions keep context and each answer suggests answerable next questions; figures highlight the pair, path or common collaborators.
+* Spelling mistakes and capitalisation are handled ("colaborate", "enrgy", "nit silchr", "sudhakr"); corrections are shown in the answer, and correctly spelled words are never changed.
+* Also answers: retracted papers and their reasons, regional collaboration (own state / region vs elsewhere), department rankings and comparisons, year ranges ("since 2022"), and explains each suggested collaborator. Results: `ASSISTANT_EVALUATION.md`.
 
 ### Deploy on Streamlit Community Cloud
 
 1. Push the repository (including `data/out/`, `data/faculty_final.csv`, `dashboard/`; `data/raw/` is not needed) to GitHub.
 2. New app → main file `dashboard/streamlit_app.py`, requirements `dashboard/requirements.txt`.
-3. App settings → Secrets: `ANTHROPIC_API_KEY = "..."` (optional). Never commit keys.
+3. App settings → Secrets: `APP_PASSWORD = "..."` and optionally `GEMINI_API_KEY = "..."` (or `ANTHROPIC_API_KEY`). Never commit keys.
 
 ## What was changed (audit fixes)
 
@@ -51,7 +54,7 @@ that read the final tables and the faculty graph; the model never runs code, SQL
 | Dashboard | Key findings per tab, comparison table, citation sources, degree CCDF, resilience page, potential-collaborations page, data-quality block. | `dashboard/extras.js`, `build_dashboard.py` |
 | Affiliation check | Prof. Kumarasamy Sudhakar (MANIT) is on leave at Universiti Malaysia Pahang since 2017 (checked Nov 2026). His papers stay in the data; MANIT's h-index is shown three ways (all / his papers up to 2017 only / without him) on the Faculty tab, with the evidence. Both corrections also appear among the Key Findings (Overview and Faculty tabs). | `affiliation_checks.py`, `data/ref/faculty_status_checks.csv`, `dashboard/extras.js` |
 | Assistant | New package and Streamlit page. | `assistant/`, `dashboard/streamlit_app.py` |
-| Tests | 37 tests (flow direction, DOI-less metrics, venue typing, duplicates, no-leakage, resilience, assistant). | `tests/` |
+| Tests | 96 assistant tests (routing, tool errors, unknown names, spelling, follow-ups, retractions, regions, departments, year filters) and an evaluation report. Pipeline checks are in `validate.py`. | `tests/`, `ASSISTANT_EVALUATION.md` |
 
 ## Limitations (not completed or not verifiable)
 
