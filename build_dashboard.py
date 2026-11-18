@@ -351,6 +351,9 @@ dl = int(re.search(r"Unique works downloaded: (\d+)", rep).group(1))
 dropped = int(re.search(r"Dropped (\d+) non-research items", rep).group(1)) + int(re.search(r"Dropped (\d+) duplicate DOIs", rep).group(1))
 kept_types = dl - dropped - int(re.search(r"Dropped (\d+) non journal/conference items", rep).group(1))
 merged = int(re.search(r"Merged (\d+) duplicate records", rep).group(1))
+# delayed recognition: the 13 candidate papers and how each holds up (sleeping_beauties.py; Papers tab)
+if (ST / "sleeping_beauties.json").exists():
+    data["sleepingBeauties"] = json.loads((ST / "sleeping_beauties.json").read_text(encoding="utf-8"))
 data["dupMerged"] = merged
 data["funnel"] = [["Records downloaded from OpenAlex", dl], ["After removing errata, retractions and duplicate DOIs", dl - dropped],
                   ["Journal and conference papers", kept_types], [f"After merging {merged} duplicate records of the same paper", int(re.search(r"Papers kept: (\d+)", rep).group(1))],

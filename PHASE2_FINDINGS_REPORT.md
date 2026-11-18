@@ -78,6 +78,8 @@
 
 - **Prof. Kumarasamy Sudhakar.** His ORCID record shows MANIT until February 2017 and Universiti Malaysia Pahang since March 2017 [5], yet 114 of his 118 later papers still list MANIT. He holds 2.5% of MANIT's papers but **12.9% of its citations**. MANIT's h-index is **118** with all his papers, **113** with only his pre-2017 papers, and **109** without them [3]. *(Faculty tab)*
 
+- **Delayed recognition ("sleeping beauties").** The 13 papers with at most 3 citations in their first three years and at least 40 later were re-checked with the beauty coefficient of Ke et al. [10], after removing self-citations and checking publication dates in Crossref [11]. **6 hold up** (in the top 1% of the corpus), for example a 2019 MANIT paper on image-based anemia detection (3 citations, then 64); 6 are weaker; and 1 was an artefact of a 30 December publication date. These are short delays rather than classic sleeping beauties, as the papers are at most ten years old. *(Papers tab)*
+
 ## 5. AI Research Assistant
 
 The assistant answers questions about faculty, collaborations, papers and the network, using only the project's analysis tools, so it cannot invent data.
@@ -85,7 +87,7 @@ The assistant answers questions about faculty, collaborations, papers and the ne
 - **Checked answers:** every number in an AI-written answer is checked against the data, and unknown names are reported as not found.
 - **Explained suggestions:** each suggested collaborator comes with a reason (shared co-authors, network distance, shared topics).
 - **Robust input:** it handles spelling mistakes openly, and answers questions on retractions, departments, regions and year ranges.
-- **Tested:** it answered **71/71** test questions correctly, **132/132** numbers in AI answers were traced to the data, and **100/100** automated tests pass [9].
+- **Tested:** it answered **71/71** test questions correctly, **139/140** numbers in AI answers were traced to the data (the one untraced number was flagged to the user), and **100/100** automated tests pass [9].
 
 *(AI Research Assistant page)*
 
@@ -107,3 +109,5 @@ The assistant answers questions about faculty, collaborations, papers and the ne
 7. Katz, J. S. (1994). Geographical proximity and scientific collaboration. *Scientometrics*, 31(1), 31–43
 8. Measuring and characterizing international collaboration patterns in Indian scientific research (2023). *Scientometrics*, 128, 5081–5116
 9. `tests/evaluate_assistant.py` → `ASSISTANT_EVALUATION.md`
+10. Ke, Q., Ferrara, E., Radicchi, F. & Flammini, A. (2015). Defining and identifying Sleeping Beauties in science. *PNAS*, 112(24), 7426–7431
+11. `sleeping_beauties.py` → `stats/sleeping_beauties.csv`; publication dates from the Crossref API

@@ -83,7 +83,7 @@ for s in "${RUN[@]}"; do
         facstats) step faculty_stats.py; step faculty_network.py; step extras.py; step deep_analysis.py; step extra_metrics.py; step resilience.py; step link_prediction.py; step deep_insights.py; step output_drivers.py; step new_views.py ;;
         partners) step partners.py ;;
         report)   step stats.py; step plots.py --no-show; step audit_summary.py ;;
-        dashboard) step locality_reach.py; step affiliation_checks.py; step key_findings.py; step build_dashboard.py ;;
+        dashboard) step locality_reach.py; step affiliation_checks.py; step sleeping_beauties.py; step key_findings.py; step build_dashboard.py ;;
     esac
 done
 

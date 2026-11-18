@@ -346,9 +346,32 @@ function retractionsExtra() {
     `<div class="note-warn">A retraction does not by itself mean the authors did something wrong. Most of these came from publisher investigations of whole batches of papers, and several authors dispute their retraction. Reasons are taken from the Retraction Watch database and the publishers’ notices.</div>`));
 }
 
+// ---------------------------------------------------------------- Papers: delayed recognition ("sleeping beauties"), checked (sleeping_beauties.py)
+function sleepExtra() {
+  const S = D.sleepingBeauties;
+  if (!S || !S.papers) return;
+  const col = { 'holds up': 'var(--brand,#2563eb)', 'weaker': 'var(--warn,#d97706)', 'not supported': 'var(--muted,#888)' };
+  const spark = ys => { const m = Math.max(1, ...ys), w = 6 * ys.length, h = 22;
+    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-label="citations per year: ${ys.join(', ')}"><title>Citations per year from publication: ${ys.join(', ')}</title>` +
+      ys.map((v, i) => `<rect x="${i * 6}" y="${h - Math.max(1, v / m * h)}" width="4" height="${Math.max(1, v / m * h)}" rx="1" fill="${i < 3 ? 'var(--warn,#d97706)' : 'var(--brand,#2563eb)'}" opacity="${v ? 1 : .35}"></rect>`).join('') + `</svg>`; };
+  const badge = v => `<span style="display:inline-block;padding:1px 8px;border-radius:9px;font-size:11.5px;font-weight:600;color:#fff;background:${col[v]}">${esc(v)}</span>`;
+  const v = S.verdicts, q = S.B_quantiles;
+  const rows = S.papers.map(p => [
+    `${esc(p.title)}${p.doi ? ` <a href="${esc(p.doi)}" target="_blank" rel="noopener">↗</a>` : ''}<div style="font-size:11.5px;opacity:.7">${esc(p.faculty)}</div>`,
+    esc(SH[I.indexOf(p.institution)] || p.institution), p.year, spark(p.yearly || []), fmt(p.early_3y), fmt(p.later), fmt(p.self_citations),
+    fmt1(p.B_without_self), fmt1(p.B_without_self_percentile), `${badge(p.verdict)}<div style="font-size:11.5px;opacity:.75;max-width:280px;text-align:left;margin-left:auto">${esc(p.reason)}</div>`]);
+  addSection('papers', 'pp-sleep', card('Which papers were recognised late, and does it hold up?',
+    `The Phase-1 list: papers with at most 3 citations in their first three years and at least 40 afterwards (${fmt(S.candidates)} papers). Each was re-checked with the beauty coefficient B of Ke et al. (2015), with self-citations removed and with the publisher’s publication date. <b>${fmt(v['holds up'] || 0)} hold up, ${fmt(v['weaker'] || 0)} are weaker and ${fmt(v['not supported'] || 0)} is not supported.</b>`,
+    `<div style="display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;margin:0 0 10px"><span style="display:inline-flex;align-items:center;gap:6px"><span style="width:10px;height:10px;border-radius:2px;background:var(--warn,#d97706)"></span>Citations in the first three years</span><span style="display:inline-flex;align-items:center;gap:6px"><span style="width:10px;height:10px;border-radius:2px;background:var(--brand,#2563eb)"></span>Later years</span></div>` +
+    `<div class="tbl-wrap"><table><thead><tr><th>Paper</th><th>Inst.</th><th class="r">Year</th><th class="r">Citations per year</th><th class="r">First 3 yrs</th><th class="r">Later</th><th class="r">Self-cites</th><th class="r">B (no self)</th><th class="r">Percentile</th><th class="r">Verdict</th></tr></thead><tbody>` +
+    rows.map(r => `<tr>${r.map((c, i) => `<td class="${i ? 'r num' : ''}">${c}</td>`).join('')}</tr>`).join('') + `</tbody></table></div>` +
+    `<p class="explain"><b>How to read B.</b> B is 0 for a paper whose citations grow steadily and grows with a longer quiet start and a sharper later rise. Across all ${fmt(S.papers_scored)} faculty papers of 2016–2022 the median B is ${fmt1(q.p50)}, the top 1% start at ${fmt1(q.p99)} and the highest is ${fmt1(q.max)}. <b>Holds up</b>: B in the top 1% even without self-citations, the rule still met, no date problem. <b>Not supported</b>: B below the 90th percentile. A quiet start alone is common: ${fmt1(S['share_with_at_most_3_early_%'])}% of all papers have at most 3 citations in their first three years.</p>` +
+    `<div class="note-warn">These are short delays, not classic sleeping beauties. The papers are at most ten years old, while the 1,000 strongest sleeping beauties in Web of Science have B of ${fmt1(S.wos_top_1000_threshold)} or more after decades of sleep (Ke et al., PNAS 2015). Self-citations are counted only from papers of the same verified faculty; publication dates are from Crossref.</div>`));
+}
+
 // ---------------------------------------------------------------- wiring
 if ($('#facCount')) $('#facCount').textContent = fmt(D.fac.length);
-const wrap = { collab: () => { collabExtra(); moversExtra(); }, overview: () => { overviewExtra(); whyExtra(); instStrip(); }, pubs: pubsExtra, faculty: () => { facultyExtra(); affiliationExtra(); }, papers: papersExtra, citnet: citnetExtra, method: () => { methodExtra(); retractionsExtra(); } };
+const wrap = { collab: () => { collabExtra(); moversExtra(); }, overview: () => { overviewExtra(); whyExtra(); instStrip(); }, pubs: pubsExtra, faculty: () => { facultyExtra(); affiliationExtra(); }, papers: () => { papersExtra(); sleepExtra(); }, citnet: citnetExtra, method: () => { methodExtra(); retractionsExtra(); } };
 const original = { ...A.RENDER };
 Object.keys(wrap).forEach(tab => { const base = A.RENDER[tab]; A.RENDER[tab] = () => { base(); try { wrap[tab](); } catch (e) { console.error('extras', tab, e); } renderFindings(tab); }; });
 ['reach', 'flows'].forEach(tab => { const base = A.RENDER[tab]; A.RENDER[tab] = () => { base(); renderFindings(tab); }; });
