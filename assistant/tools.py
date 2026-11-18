@@ -161,9 +161,13 @@ def _topic_similarity(ia, ib):
     i, j = C.idx.get(ia), C.idx.get(ib)
     if i is None or j is None:
         return None
-    return {"topic_cosine": round(float(M["topic_cosine"][i, j]), 3), "topic_weighted_jaccard": round(float(M["topic_weighted_jaccard"][i, j]), 3),
+    tc = float(M["topic_cosine"][i, j])
+    return {"topic_cosine": round(tc, 3), "topic_weighted_jaccard": round(float(M["topic_weighted_jaccard"][i, j]), 3),
             "shared_subfields": int(M["shared_subfields"][i, j]), "field_cosine": round(float(M["field_cosine"][i, j]), 3),
-            "top_shared_subfields": C.explain(H, M, i, j)["shared_subfields"]}
+            "top_shared_subfields": C.explain(H, M, i, j)["shared_subfields"],
+            "topic_overlap": "high" if tc >= .5 else "moderate" if tc >= .2 else "low",
+            "how_to_read": "topic_cosine (subfield level) measures shared research; field_cosine compares only broad fields such as "
+                           "'Engineering' or 'Materials Science', so a high field_cosine with a low topic_cosine means little shared research"}
 
 
 def _model_score(ia, ib):
@@ -191,7 +195,10 @@ def _model_score(ia, ib):
     z = scaler.transform(df[fe])[0]
     contrib = sorted(zip(fe, z * clf.coef_[0]), key=lambda t: -abs(t[1]))[:6]
     return {"score_logistic": round(p_lr, 4), "score_random_forest": round(p_rf, 4), "feature_contributions_logistic": [(f, round(float(c), 2)) for f, c in contrib],
-            "ranking_only": True, "note": "ranking scores; calibration on the 2023-2025 test window failed for new-link prediction, so these are NOT probabilities"}
+            "ranking_only": True, "in_top_suggested_pairs": bool(cand is not None and len(cand) and p_lr >= float(cand.score_lr.min())),
+            "top_suggested_pairs_note": (f"the model's {len(cand):,} top suggested pairs all have a logistic score of at least "
+                                         f"{float(cand.score_lr.min()):.3f}") if cand is not None and len(cand) else None,
+            "note": "ranking scores; calibration on the 2023-2025 test window failed for new-link prediction, so these are NOT probabilities"}
 
 
 def assess_collaboration(a, b):
