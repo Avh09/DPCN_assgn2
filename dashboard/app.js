@@ -698,7 +698,7 @@ function renderPapers() {
 
   exTable = makeTable($('#pp-ex'), {
     rows: () => d3.range(P.length),
-    search: 'Search titles…', text: k => P[k][T.title],
+    search: 'Search titles or journals / conferences…', text: k => P[k][T.title] + ' ' + (P[k][T.venue] || ''),
     filter: k => exMatch(k),
     extraTools: tools => EX_SELECTS.forEach(([key, label, opts]) => {
       const s = document.createElement('select'); s.dataset.ex = key;

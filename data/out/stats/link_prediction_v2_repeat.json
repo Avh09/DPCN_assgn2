@@ -1,0 +1,539 @@
+{
+ "folds": {
+  "2020": {
+   "train_windows": [
+    2017
+   ],
+   "train_pairs": 200,
+   "train_positives": 108,
+   "test_pairs": 439,
+   "test_positives": 164,
+   "metrics": {
+    "v1 baseline: logistic regression (v1 feats, single window)": {
+     "positives": 164,
+     "pairs": 439,
+     "base_rate": 0.37358,
+     "average_precision": 0.5721,
+     "roc_auc": 0.692,
+     "ap_lift_over_base_rate": 1.5,
+     "precision@50": 0.66,
+     "recall@50": 0.2012,
+     "precision@100": 0.6,
+     "recall@100": 0.3659,
+     "precision@500": 0.3736,
+     "recall@500": 1.0
+    },
+    "LR, v1 features, pooled windows": {
+     "positives": 164,
+     "pairs": 439,
+     "base_rate": 0.37358,
+     "average_precision": 0.6295,
+     "roc_auc": 0.7219,
+     "ap_lift_over_base_rate": 1.7,
+     "precision@50": 0.72,
+     "recall@50": 0.2195,
+     "precision@100": 0.66,
+     "recall@100": 0.4024,
+     "precision@500": 0.3736,
+     "recall@500": 1.0
+    },
+    "LightGBM, v1 features, pooled windows": {
+     "positives": 164,
+     "pairs": 439,
+     "base_rate": 0.37358,
+     "average_precision": 0.3736,
+     "roc_auc": 0.5,
+     "ap_lift_over_base_rate": 1.0,
+     "precision@50": 0.3,
+     "recall@50": 0.0915,
+     "precision@100": 0.32,
+     "recall@100": 0.1951,
+     "precision@500": 0.3736,
+     "recall@500": 1.0
+    },
+    "LR, v2 features": {
+     "positives": 164,
+     "pairs": 439,
+     "base_rate": 0.37358,
+     "average_precision": 0.5819,
+     "roc_auc": 0.6831,
+     "ap_lift_over_base_rate": 1.6,
+     "precision@50": 0.66,
+     "recall@50": 0.2012,
+     "precision@100": 0.6,
+     "recall@100": 0.3659,
+     "precision@500": 0.3736,
+     "recall@500": 1.0
+    },
+    "LightGBM, v2 features": {
+     "positives": 164,
+     "pairs": 439,
+     "base_rate": 0.37358,
+     "average_precision": 0.3736,
+     "roc_auc": 0.5,
+     "ap_lift_over_base_rate": 1.0,
+     "precision@50": 0.3,
+     "recall@50": 0.0915,
+     "precision@100": 0.32,
+     "recall@100": 0.1951,
+     "precision@500": 0.3736,
+     "recall@500": 1.0
+    },
+    "ensemble (LR + LightGBM, v2 features)": {
+     "positives": 164,
+     "pairs": 439,
+     "base_rate": 0.37358,
+     "average_precision": 0.5819,
+     "roc_auc": 0.6831,
+     "ap_lift_over_base_rate": 1.6,
+     "precision@50": 0.66,
+     "recall@50": 0.2012,
+     "precision@100": 0.6,
+     "recall@100": 0.3659,
+     "precision@500": 0.3736,
+     "recall@500": 1.0
+    }
+   }
+  },
+  "2021": {
+   "train_windows": [
+    2017,
+    2018
+   ],
+   "train_pairs": 493,
+   "train_positives": 224,
+   "test_pairs": 538,
+   "test_positives": 200,
+   "metrics": {
+    "v1 baseline: logistic regression (v1 feats, single window)": {
+     "positives": 200,
+     "pairs": 538,
+     "base_rate": 0.37175,
+     "average_precision": 0.5875,
+     "roc_auc": 0.7049,
+     "ap_lift_over_base_rate": 1.6,
+     "precision@50": 0.7,
+     "recall@50": 0.175,
+     "precision@100": 0.6,
+     "recall@100": 0.3,
+     "precision@500": 0.392,
+     "recall@500": 0.98
+    },
+    "LR, v1 features, pooled windows": {
+     "positives": 200,
+     "pairs": 538,
+     "base_rate": 0.37175,
+     "average_precision": 0.6011,
+     "roc_auc": 0.7167,
+     "ap_lift_over_base_rate": 1.6,
+     "precision@50": 0.72,
+     "recall@50": 0.18,
+     "precision@100": 0.7,
+     "recall@100": 0.35,
+     "precision@500": 0.394,
+     "recall@500": 0.985
+    },
+    "LightGBM, v1 features, pooled windows": {
+     "positives": 200,
+     "pairs": 538,
+     "base_rate": 0.37175,
+     "average_precision": 0.5456,
+     "roc_auc": 0.6722,
+     "ap_lift_over_base_rate": 1.5,
+     "precision@50": 0.66,
+     "recall@50": 0.165,
+     "precision@100": 0.64,
+     "recall@100": 0.32,
+     "precision@500": 0.392,
+     "recall@500": 0.98
+    },
+    "LR, v2 features": {
+     "positives": 200,
+     "pairs": 538,
+     "base_rate": 0.37175,
+     "average_precision": 0.5461,
+     "roc_auc": 0.6471,
+     "ap_lift_over_base_rate": 1.5,
+     "precision@50": 0.66,
+     "recall@50": 0.165,
+     "precision@100": 0.61,
+     "recall@100": 0.305,
+     "precision@500": 0.388,
+     "recall@500": 0.97
+    },
+    "LightGBM, v2 features": {
+     "positives": 200,
+     "pairs": 538,
+     "base_rate": 0.37175,
+     "average_precision": 0.5593,
+     "roc_auc": 0.6586,
+     "ap_lift_over_base_rate": 1.5,
+     "precision@50": 0.66,
+     "recall@50": 0.165,
+     "precision@100": 0.64,
+     "recall@100": 0.32,
+     "precision@500": 0.386,
+     "recall@500": 0.965
+    },
+    "ensemble (LR + LightGBM, v2 features)": {
+     "positives": 200,
+     "pairs": 538,
+     "base_rate": 0.37175,
+     "average_precision": 0.566,
+     "roc_auc": 0.6588,
+     "ap_lift_over_base_rate": 1.5,
+     "precision@50": 0.68,
+     "recall@50": 0.17,
+     "precision@100": 0.66,
+     "recall@100": 0.33,
+     "precision@500": 0.388,
+     "recall@500": 0.97
+    }
+   }
+  },
+  "2022": {
+   "train_windows": [
+    2017,
+    2018,
+    2019
+   ],
+   "train_pairs": 832,
+   "train_positives": 362,
+   "test_pairs": 667,
+   "test_positives": 223,
+   "metrics": {
+    "v1 baseline: logistic regression (v1 feats, single window)": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.5661,
+     "roc_auc": 0.7658,
+     "ap_lift_over_base_rate": 1.7,
+     "precision@50": 0.66,
+     "recall@50": 0.148,
+     "precision@100": 0.63,
+     "recall@100": 0.2825,
+     "precision@500": 0.42,
+     "recall@500": 0.9417
+    },
+    "LR, v1 features, pooled windows": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.6064,
+     "roc_auc": 0.7746,
+     "ap_lift_over_base_rate": 1.8,
+     "precision@50": 0.7,
+     "recall@50": 0.157,
+     "precision@100": 0.69,
+     "recall@100": 0.3094,
+     "precision@500": 0.416,
+     "recall@500": 0.9327
+    },
+    "LightGBM, v1 features, pooled windows": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.6167,
+     "roc_auc": 0.7549,
+     "ap_lift_over_base_rate": 1.8,
+     "precision@50": 0.76,
+     "recall@50": 0.1704,
+     "precision@100": 0.74,
+     "recall@100": 0.3318,
+     "precision@500": 0.404,
+     "recall@500": 0.9058
+    },
+    "LR, v2 features": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.5852,
+     "roc_auc": 0.7401,
+     "ap_lift_over_base_rate": 1.8,
+     "precision@50": 0.76,
+     "recall@50": 0.1704,
+     "precision@100": 0.64,
+     "recall@100": 0.287,
+     "precision@500": 0.396,
+     "recall@500": 0.8879
+    },
+    "LightGBM, v2 features": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.6059,
+     "roc_auc": 0.7473,
+     "ap_lift_over_base_rate": 1.8,
+     "precision@50": 0.8,
+     "recall@50": 0.1794,
+     "precision@100": 0.71,
+     "recall@100": 0.3184,
+     "precision@500": 0.404,
+     "recall@500": 0.9058
+    },
+    "ensemble (LR + LightGBM, v2 features)": {
+     "positives": 223,
+     "pairs": 667,
+     "base_rate": 0.33433,
+     "average_precision": 0.6035,
+     "roc_auc": 0.7511,
+     "ap_lift_over_base_rate": 1.8,
+     "precision@50": 0.78,
+     "recall@50": 0.1749,
+     "precision@100": 0.68,
+     "recall@100": 0.3049,
+     "precision@500": 0.396,
+     "recall@500": 0.8879
+    }
+   }
+  }
+ },
+ "selection": {
+  "validation_T": 2021,
+  "best_lgb": {
+   "n": 200,
+   "lr": 0.03,
+   "leaves": 7,
+   "mcs": 100,
+   "spw": 10
+  },
+  "best_lgb_val_AP": 0.5593,
+  "best_lr_C": 0.03,
+  "best_lr_val_AP": 0.5461,
+  "lgb_grid_size": 8
+ },
+ "operating_point": {
+  "v1 baseline: logistic regression (v1 feats, single window)": {
+   "q_from_validation_2021": 0.5,
+   "validation_F1": 0.597,
+   "test_2022": {
+    "flagged_fraction": 0.5,
+    "flagged": 333,
+    "tp": 177,
+    "fp": 156,
+    "fn": 46,
+    "tn": 288,
+    "accuracy": 0.69715,
+    "precision": 0.5315,
+    "recall": 0.7937,
+    "f1": 0.6367,
+    "mcc": 0.4174
+   }
+  },
+  "LR, v1 features, pooled windows": {
+   "q_from_validation_2021": 0.75,
+   "validation_F1": 0.606,
+   "test_2022": {
+    "flagged_fraction": 0.75,
+    "flagged": 500,
+    "tp": 208,
+    "fp": 292,
+    "fn": 15,
+    "tn": 152,
+    "accuracy": 0.53973,
+    "precision": 0.416,
+    "recall": 0.9327,
+    "f1": 0.5754,
+    "mcc": 0.2995
+   }
+  },
+  "LightGBM, v1 features, pooled windows": {
+   "q_from_validation_2021": 0.8,
+   "validation_F1": 0.5746,
+   "test_2022": {
+    "flagged_fraction": 0.8,
+    "flagged": 534,
+    "tp": 208,
+    "fp": 326,
+    "fn": 15,
+    "tn": 118,
+    "accuracy": 0.48876,
+    "precision": 0.3895,
+    "recall": 0.9327,
+    "f1": 0.5495,
+    "mcc": 0.2344
+   }
+  },
+  "LR, v2 features": {
+   "q_from_validation_2021": 0.95,
+   "validation_F1": 0.557,
+   "test_2022": {
+    "flagged_fraction": 0.95,
+    "flagged": 634,
+    "tp": 220,
+    "fp": 414,
+    "fn": 3,
+    "tn": 30,
+    "accuracy": 0.37481,
+    "precision": 0.347,
+    "recall": 0.9865,
+    "f1": 0.5134,
+    "mcc": 0.1177
+   }
+  },
+  "LightGBM, v2 features": {
+   "q_from_validation_2021": 0.7,
+   "validation_F1": 0.5581,
+   "test_2022": {
+    "flagged_fraction": 0.7,
+    "flagged": 467,
+    "tp": 193,
+    "fp": 274,
+    "fn": 30,
+    "tn": 170,
+    "accuracy": 0.54423,
+    "precision": 0.4133,
+    "recall": 0.8655,
+    "f1": 0.5594,
+    "mcc": 0.2557
+   }
+  },
+  "ensemble (LR + LightGBM, v2 features)": {
+   "q_from_validation_2021": 0.85,
+   "validation_F1": 0.5571,
+   "test_2022": {
+    "flagged_fraction": 0.85,
+    "flagged": 567,
+    "tp": 213,
+    "fp": 354,
+    "fn": 10,
+    "tn": 90,
+    "accuracy": 0.45427,
+    "precision": 0.3757,
+    "recall": 0.9552,
+    "f1": 0.5392,
+    "mcc": 0.2086
+   }
+  }
+ },
+ "headline_ci95": {
+  "v1 baseline: logistic regression (v1 feats, single window)": {
+   "average_precision": [
+    0.5284,
+    0.622
+   ],
+   "roc_auc": [
+    0.7324,
+    0.8004
+   ]
+  },
+  "LR, v1 features, pooled windows": {
+   "average_precision": [
+    0.5588,
+    0.6731
+   ],
+   "roc_auc": [
+    0.7405,
+    0.8091
+   ]
+  },
+  "LightGBM, v1 features, pooled windows": {
+   "average_precision": [
+    0.5641,
+    0.6698
+   ],
+   "roc_auc": [
+    0.7191,
+    0.7909
+   ]
+  },
+  "LR, v2 features": {
+   "average_precision": [
+    0.5361,
+    0.641
+   ],
+   "roc_auc": [
+    0.7058,
+    0.7758
+   ]
+  },
+  "LightGBM, v2 features": {
+   "average_precision": [
+    0.5473,
+    0.6644
+   ],
+   "roc_auc": [
+    0.714,
+    0.7844
+   ]
+  },
+  "ensemble (LR + LightGBM, v2 features)": {
+   "average_precision": [
+    0.5555,
+    0.6613
+   ],
+   "roc_auc": [
+    0.7181,
+    0.7846
+   ]
+  }
+ },
+ "ablation_lgb_v2": {
+  "network (v1)": {
+   "only_AP": 0.5909,
+   "only_AUC": 0.7569,
+   "drop_AP": 0.5193,
+   "drop_AUC": 0.678
+  },
+  "topic (v1 subfield)": {
+   "only_AP": 0.3762,
+   "only_AUC": 0.5554,
+   "drop_AP": 0.6115,
+   "drop_AUC": 0.7557
+  },
+  "structure+activity (v1)": {
+   "only_AP": 0.3746,
+   "only_AUC": 0.5563,
+   "drop_AP": 0.5974,
+   "drop_AUC": 0.7456
+  },
+  "content (v2)": {
+   "only_AP": 0.5255,
+   "only_AUC": 0.6997,
+   "drop_AP": 0.6108,
+   "drop_AUC": 0.7417
+  },
+  "citation links (v2)": {
+   "only_AP": 0.4147,
+   "only_AUC": 0.612,
+   "drop_AP": 0.613,
+   "drop_AUC": 0.7477
+  },
+  "co-author overlap (v2)": {
+   "only_AP": 0.3343,
+   "only_AUC": 0.5,
+   "drop_AP": 0.6111,
+   "drop_AUC": 0.7441
+  },
+  "graph embedding (v2)": {
+   "only_AP": 0.3343,
+   "only_AUC": 0.5,
+   "drop_AP": 0.6175,
+   "drop_AUC": 0.755
+  },
+  "career/impact (v2)": {
+   "only_AP": 0.3782,
+   "only_AUC": 0.5705,
+   "drop_AP": 0.6144,
+   "drop_AUC": 0.7525
+  }
+ },
+ "lgb_gain_importance": {
+  "years_since_last_joint": 0.1372,
+  "refs_cosine": 0.0994,
+  "log_cites_min": 0.0871,
+  "joint_papers_hist": 0.0853,
+  "log_cites_max": 0.0736,
+  "adamic_adar": 0.0693,
+  "field_cosine": 0.0583,
+  "dept_pair_joint_hist": 0.0452,
+  "spectral_dot": 0.0423,
+  "venue_cosine": 0.0394,
+  "resource_allocation": 0.026,
+  "topic_weighted_jaccard": 0.026,
+  "topic_cosine": 0.0228,
+  "topic_fine_cosine": 0.0205,
+  "recent_trend_min": 0.0161
+ }
+}

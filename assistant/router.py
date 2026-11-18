@@ -349,6 +349,7 @@ def route(question, ctx=None):
     # the institute of an earlier turn is reused only when the question points back to it ("there", "this institute")
     inst = inst_names[0] if inst_names else (ctx.get("institute") if re.search(r"\b(there|this institute|that institute|the same institute|same nit)\b", ql) else None)
     calls = []
+    vq = E.find_venue_in_text(ql) if (not ids and re.search(r"journal|conference|proceedings|venue|publish(?:ed|es)?\s+(?:in|at)|papers?\s+(?:in|at)", ql)) else None
     f1 = ids[0] if ids else None
     f2 = ids[1] if len(ids) > 1 else None
 
@@ -362,6 +363,8 @@ def route(question, ctx=None):
                                          "n": _num(re.sub(r"20\d\d", "", ql), 10) if re.search(r"top\s*\d+", ql) else 10}))
     elif re.search(r"retract|retrac|withdrawn|withdrawal", ql):
         calls.append(("retracted_papers", {"faculty": f1} if f1 else {"institute": ours[0]} if ours else {}))
+    elif vq:
+        calls.append(("venue_profile", {"venue": vq}))
     elif not ids and re.search(r"\bregion|regional|same state|state[- ]level|within (?:the |their |its )?(?:own )?states?|nearby|\blocal\b|locality|geograph|proximity|distance|close by|neighbou?ring", ql) \
             and re.search(r"collab|partner|co-?author|work|link|connect|joint", ql):
         calls.append(("regional_collaboration", {"institute": ours[0]} if len(ours) == 1 else {}))

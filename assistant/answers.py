@@ -166,6 +166,17 @@ def _top_papers(d, r):
     return f"{r['summary']}. Most cited: {rows[0]['title'][:120]} ({rows[0]['year']}, {rows[0]['citations_worldwide']:,} citations).", ev, [d.get("note", "")]
 
 
+def _venue(d, r):
+    if not d.get("matched"):
+        return r["summary"], [], []
+    ev = [f"{d['papers']} paper(s), {d['years']}, {d['citations_worldwide']:,} citations worldwide; recorded as: {', '.join(d['recorded_names'][:3])}",
+          "By institute: " + ", ".join(f"{k} ({v})" for k, v in d["papers_by_institute"].items()),
+          "Quartiles / ranks: " + ", ".join(f"{k} {v}" for k, v in d["quartiles"].items())]
+    ev += [f"{x['name']} - {x['institution']}, {x['department']}: {x['papers']} paper(s)" for x in d["faculty"]]
+    ev += [f"{x['title'][:110]} ({x['year']}, {x['citations_worldwide']:,} citations; {x['institutes']})" for x in d["top_papers"][:3]]
+    return (f"Yes. {d['papers']} paper(s) in {d['recorded_names'][0]} by {d['faculty_count']} verified faculty, mainly " + ", ".join(f"{x['name']} ({x['papers']})" for x in d["faculty"][:3]) + ".", ev, [])
+
+
 def _pattern(d, r):
     return r["summary"], [f"{x['name']} ({x['institution']}): degree {x['degree']}, betweenness {_fmt(x['betweenness'])}, {x['papers']} papers, {x['citations']} citations" for x in d["rows"]], [f"Thresholds were computed over {d['thresholds_computed_over']}."]
 
@@ -338,7 +349,7 @@ def _explain(d, r):
     return d.get("definition") or r["summary"], [], []
 
 
-FORMATTERS = {"explain_metric": _explain, "assess_collaboration": _assess, "get_collaboration_history": _assess, "get_shortest_collaboration_path": _assess, "get_common_collaborators": _assess,
+FORMATTERS = {"venue_profile": _venue, "explain_metric": _explain, "assess_collaboration": _assess, "get_collaboration_history": _assess, "get_shortest_collaboration_path": _assess, "get_common_collaborators": _assess,
               "recommend_collaborators": _recommend, "compare_institutes": _compare_inst, "top_faculty": _top_faculty, "bridge_researchers": _top_faculty, "faculty_pattern": _pattern,
               "resilience_summary": _resilience, "simulate_node_removal": _removal, "network_overview": _network, "citation_flows": _flows, "get_paper": _paper, "explain_paper_pagerank": _pagerank,
               "assess_institute_collaboration": _institute_collab, "partner_institutes": _partner, "partner_place_impact": _place_impact, "citation_give_take": _give_take, "explain_output_difference": _why, "find_experts": _experts, "get_faculty_profile": _profile, "top_papers": _top_papers, "retracted_papers": _retracted, "regional_collaboration": _regional, "department_stats": _departments, "journal_papers": _journal}

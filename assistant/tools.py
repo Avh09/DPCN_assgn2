@@ -757,6 +757,30 @@ def top_papers(metric="citations", institute=None, n=10, year_from=None, year_to
                 [_plink(w) for w in top.index[:5]], COVERAGE_FAC)
 
 
+def venue_profile(venue, n=8):
+    """Who published in a journal or conference: faculty, institutes, years, ranks and most cited papers. Names are matched ignoring punctuation, '&' vs 'and', years and editions."""
+    S = store()
+    names, sug = E.resolve_venue(venue)
+    if not names:
+        msg = f"No journal or conference matching '{venue}' is recorded among the {len(S.papers):,} papers of the three institutes (2016-2026)."
+        return _res("venue_profile", msg + (f" Closest recorded names: {', '.join(sug)}." if sug else ""), {"matched": False, "suggestions": sug}, [], COVERAGE_FAC, ok=False)
+    p = S.papers[S.papers.journal_name.isin(names)]
+    fp = S.fac_papers[S.fac_papers.openalex_work_id.isin(p.index)]
+    fac = fp.groupby(["faculty_name", "institution", "department"]).openalex_work_id.nunique().sort_values(ascending=False)
+    inst = {}
+    for v in p.our_institutes:
+        for i in str(v).replace(",", ";").split(";"):
+            if i.strip():
+                inst[i.strip()] = inst.get(i.strip(), 0) + 1
+    top = p.sort_values("citations", ascending=False).head(int(min(n, 15)))
+    qs = p.quartile.replace("", "unranked").value_counts().to_dict()
+    data = {"matched": True, "recorded_names": names, "papers": int(len(p)), "type": ", ".join(sorted(set(p.type))), "years": f"{int(p.year.min())}-{int(p.year.max())}",
+            "citations_worldwide": int(p.citations.sum()), "quartiles": qs, "papers_by_institute": inst,
+            "faculty": [{"name": a, "institution": b, "department": c, "papers": int(k)} for (a, b, c), k in fac.head(int(min(n, 15))).items()], "faculty_count": int(len(fac)),
+            "top_papers": [{"title": r.title, "year": int(r.year), "citations_worldwide": int(r.citations), "institutes": r.our_institutes} for r in top.itertuples()]}
+    return _res("venue_profile", f"{len(p)} paper(s) in {', '.join(names[:3])} by {len(fac)} verified faculty", data, [_plink(w) for w in top.index[:5]], COVERAGE_FAC)
+
+
 def get_paper(query):
     r = E.resolve_paper(query)
     if not r["candidates"]:
@@ -1311,6 +1335,7 @@ TOOLS = {
     "strongest_pairs": (strongest_pairs, "Strongest faculty pairs by joint papers. kind: any | within_institute | cross_institute.", _schema({"kind": {"type": "string", "enum": ["any", "within_institute", "cross_institute"]}, "n": I_})),
     "interdisciplinary_communities": (interdisciplinary_communities, "Collaboration communities ordered by how mixed their departments are.", _schema({"n": I_})),
     "top_papers": (top_papers, "Top papers by citations / fwci / pagerank with optional institute, years, field, journal/conference filter.", _schema({"metric": S_, "institute": S_, "n": I_, "year_from": I_, "year_to": I_, "field": S_, "kind": S_})),
+    "venue_profile": (venue_profile, "Who published in a named JOURNAL or CONFERENCE (e.g. Chaos Solitons & Fractals, IEEE Access): papers, faculty, institutes, quartile/rank, top papers. Use this for any question naming a journal or conference; matching ignores punctuation and '&' vs 'and'.", _schema({"venue": S_, "n": I_}, ["venue"])),
     "get_paper": (get_paper, "Details of one paper by title fragment, DOI or OpenAlex id.", _schema({"query": S_}, ["query"])),
     "citation_neighbourhood": (citation_neighbourhood, "Papers that cite / are cited by a paper inside the corpus, with a figure.", _schema({"paper": S_}, ["paper"])),
     "explain_paper_pagerank": (explain_paper_pagerank, "Why a paper has its within-corpus PageRank compared with its worldwide citations (self-citation share).", _schema({"paper": S_}, ["paper"])),

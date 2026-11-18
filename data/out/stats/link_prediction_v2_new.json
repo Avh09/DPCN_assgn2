@@ -1,0 +1,539 @@
+{
+ "folds": {
+  "2020": {
+   "train_windows": [
+    2017
+   ],
+   "train_pairs": 56753,
+   "train_positives": 132,
+   "test_pairs": 125814,
+   "test_positives": 274,
+   "metrics": {
+    "v1 baseline: logistic regression (v1 feats, single window)": {
+     "positives": 274,
+     "pairs": 125814,
+     "base_rate": 0.00218,
+     "average_precision": 0.0563,
+     "roc_auc": 0.9457,
+     "ap_lift_over_base_rate": 25.8,
+     "precision@50": 0.12,
+     "recall@50": 0.0219,
+     "precision@100": 0.08,
+     "recall@100": 0.0292,
+     "precision@500": 0.086,
+     "recall@500": 0.1569
+    },
+    "LR, v1 features, pooled windows": {
+     "positives": 274,
+     "pairs": 125814,
+     "base_rate": 0.00218,
+     "average_precision": 0.0541,
+     "roc_auc": 0.943,
+     "ap_lift_over_base_rate": 24.8,
+     "precision@50": 0.08,
+     "recall@50": 0.0146,
+     "precision@100": 0.09,
+     "recall@100": 0.0328,
+     "precision@500": 0.078,
+     "recall@500": 0.1423
+    },
+    "LightGBM, v1 features, pooled windows": {
+     "positives": 274,
+     "pairs": 125814,
+     "base_rate": 0.00218,
+     "average_precision": 0.0592,
+     "roc_auc": 0.9477,
+     "ap_lift_over_base_rate": 27.2,
+     "precision@50": 0.12,
+     "recall@50": 0.0219,
+     "precision@100": 0.09,
+     "recall@100": 0.0328,
+     "precision@500": 0.084,
+     "recall@500": 0.1533
+    },
+    "LR, v2 features": {
+     "positives": 274,
+     "pairs": 125814,
+     "base_rate": 0.00218,
+     "average_precision": 0.052,
+     "roc_auc": 0.9441,
+     "ap_lift_over_base_rate": 23.9,
+     "precision@50": 0.1,
+     "recall@50": 0.0182,
+     "precision@100": 0.08,
+     "recall@100": 0.0292,
+     "precision@500": 0.076,
+     "recall@500": 0.1387
+    },
+    "LightGBM, v2 features": {
+     "positives": 274,
+     "pairs": 125814,
+     "base_rate": 0.00218,
+     "average_precision": 0.0679,
+     "roc_auc": 0.9507,
+     "ap_lift_over_base_rate": 31.1,
+     "precision@50": 0.1,
+     "recall@50": 0.0182,
+     "precision@100": 0.12,
+     "recall@100": 0.0438,
+     "precision@500": 0.106,
+     "recall@500": 0.1934
+    },
+    "ensemble (LR + LightGBM, v2 features)": {
+     "positives": 274,
+     "pairs": 125814,
+     "base_rate": 0.00218,
+     "average_precision": 0.0649,
+     "roc_auc": 0.9496,
+     "ap_lift_over_base_rate": 29.8,
+     "precision@50": 0.18,
+     "recall@50": 0.0328,
+     "precision@100": 0.15,
+     "recall@100": 0.0547,
+     "precision@500": 0.092,
+     "recall@500": 0.1679
+    }
+   }
+  },
+  "2021": {
+   "train_windows": [
+    2017,
+    2018
+   ],
+   "train_pairs": 140305,
+   "train_positives": 292,
+   "test_pairs": 129257,
+   "test_positives": 245,
+   "metrics": {
+    "v1 baseline: logistic regression (v1 feats, single window)": {
+     "positives": 245,
+     "pairs": 129257,
+     "base_rate": 0.0019,
+     "average_precision": 0.0537,
+     "roc_auc": 0.951,
+     "ap_lift_over_base_rate": 28.3,
+     "precision@50": 0.1,
+     "recall@50": 0.0204,
+     "precision@100": 0.11,
+     "recall@100": 0.0449,
+     "precision@500": 0.066,
+     "recall@500": 0.1347
+    },
+    "LR, v1 features, pooled windows": {
+     "positives": 245,
+     "pairs": 129257,
+     "base_rate": 0.0019,
+     "average_precision": 0.0474,
+     "roc_auc": 0.9519,
+     "ap_lift_over_base_rate": 24.9,
+     "precision@50": 0.04,
+     "recall@50": 0.0082,
+     "precision@100": 0.03,
+     "recall@100": 0.0122,
+     "precision@500": 0.066,
+     "recall@500": 0.1347
+    },
+    "LightGBM, v1 features, pooled windows": {
+     "positives": 245,
+     "pairs": 129257,
+     "base_rate": 0.0019,
+     "average_precision": 0.0426,
+     "roc_auc": 0.9512,
+     "ap_lift_over_base_rate": 22.4,
+     "precision@50": 0.04,
+     "recall@50": 0.0082,
+     "precision@100": 0.06,
+     "recall@100": 0.0245,
+     "precision@500": 0.052,
+     "recall@500": 0.1061
+    },
+    "LR, v2 features": {
+     "positives": 245,
+     "pairs": 129257,
+     "base_rate": 0.0019,
+     "average_precision": 0.0525,
+     "roc_auc": 0.9529,
+     "ap_lift_over_base_rate": 27.6,
+     "precision@50": 0.08,
+     "recall@50": 0.0163,
+     "precision@100": 0.12,
+     "recall@100": 0.049,
+     "precision@500": 0.076,
+     "recall@500": 0.1551
+    },
+    "LightGBM, v2 features": {
+     "positives": 245,
+     "pairs": 129257,
+     "base_rate": 0.0019,
+     "average_precision": 0.0526,
+     "roc_auc": 0.9533,
+     "ap_lift_over_base_rate": 27.7,
+     "precision@50": 0.14,
+     "recall@50": 0.0286,
+     "precision@100": 0.12,
+     "recall@100": 0.049,
+     "precision@500": 0.078,
+     "recall@500": 0.1592
+    },
+    "ensemble (LR + LightGBM, v2 features)": {
+     "positives": 245,
+     "pairs": 129257,
+     "base_rate": 0.0019,
+     "average_precision": 0.0543,
+     "roc_auc": 0.9546,
+     "ap_lift_over_base_rate": 28.6,
+     "precision@50": 0.16,
+     "recall@50": 0.0327,
+     "precision@100": 0.11,
+     "recall@100": 0.0449,
+     "precision@500": 0.08,
+     "recall@500": 0.1633
+    }
+   }
+  },
+  "2022": {
+   "train_windows": [
+    2017,
+    2018,
+    2019
+   ],
+   "train_pairs": 243251,
+   "train_positives": 527,
+   "test_pairs": 149211,
+   "test_positives": 246,
+   "metrics": {
+    "v1 baseline: logistic regression (v1 feats, single window)": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0519,
+     "roc_auc": 0.9488,
+     "ap_lift_over_base_rate": 31.5,
+     "precision@50": 0.16,
+     "recall@50": 0.0325,
+     "precision@100": 0.12,
+     "recall@100": 0.0488,
+     "precision@500": 0.066,
+     "recall@500": 0.1341
+    },
+    "LR, v1 features, pooled windows": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0475,
+     "roc_auc": 0.9515,
+     "ap_lift_over_base_rate": 28.8,
+     "precision@50": 0.06,
+     "recall@50": 0.0122,
+     "precision@100": 0.06,
+     "recall@100": 0.0244,
+     "precision@500": 0.086,
+     "recall@500": 0.1748
+    },
+    "LightGBM, v1 features, pooled windows": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.05,
+     "roc_auc": 0.9531,
+     "ap_lift_over_base_rate": 30.3,
+     "precision@50": 0.14,
+     "recall@50": 0.0285,
+     "precision@100": 0.07,
+     "recall@100": 0.0285,
+     "precision@500": 0.056,
+     "recall@500": 0.1138
+    },
+    "LR, v2 features": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0554,
+     "roc_auc": 0.9513,
+     "ap_lift_over_base_rate": 33.6,
+     "precision@50": 0.12,
+     "recall@50": 0.0244,
+     "precision@100": 0.13,
+     "recall@100": 0.0528,
+     "precision@500": 0.09,
+     "recall@500": 0.1829
+    },
+    "LightGBM, v2 features": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0566,
+     "roc_auc": 0.9583,
+     "ap_lift_over_base_rate": 34.3,
+     "precision@50": 0.16,
+     "recall@50": 0.0325,
+     "precision@100": 0.13,
+     "recall@100": 0.0528,
+     "precision@500": 0.074,
+     "recall@500": 0.1504
+    },
+    "ensemble (LR + LightGBM, v2 features)": {
+     "positives": 246,
+     "pairs": 149211,
+     "base_rate": 0.00165,
+     "average_precision": 0.0647,
+     "roc_auc": 0.9566,
+     "ap_lift_over_base_rate": 39.2,
+     "precision@50": 0.12,
+     "recall@50": 0.0244,
+     "precision@100": 0.08,
+     "recall@100": 0.0325,
+     "precision@500": 0.088,
+     "recall@500": 0.1789
+    }
+   }
+  }
+ },
+ "selection": {
+  "validation_T": 2021,
+  "best_lgb": {
+   "n": 200,
+   "lr": 0.03,
+   "leaves": 7,
+   "mcs": 100,
+   "spw": 1
+  },
+  "best_lgb_val_AP": 0.0526,
+  "best_lr_C": 0.03,
+  "best_lr_val_AP": 0.0525,
+  "lgb_grid_size": 8
+ },
+ "operating_point": {
+  "v1 baseline: logistic regression (v1 feats, single window)": {
+   "q_from_validation_2021": 0.0085,
+   "validation_F1": 0.0997,
+   "test_2022": {
+    "flagged_fraction": 0.0085,
+    "flagged": 1268,
+    "tp": 65,
+    "fp": 1203,
+    "fn": 181,
+    "tn": 147762,
+    "accuracy": 0.99072,
+    "precision": 0.0513,
+    "recall": 0.2642,
+    "f1": 0.0859,
+    "mcc": 0.1132
+   }
+  },
+  "LR, v1 features, pooled windows": {
+   "q_from_validation_2021": 0.008,
+   "validation_F1": 0.1032,
+   "test_2022": {
+    "flagged_fraction": 0.008,
+    "flagged": 1194,
+    "tp": 65,
+    "fp": 1129,
+    "fn": 181,
+    "tn": 147836,
+    "accuracy": 0.99122,
+    "precision": 0.0544,
+    "recall": 0.2642,
+    "f1": 0.0903,
+    "mcc": 0.1169
+   }
+  },
+  "LightGBM, v1 features, pooled windows": {
+   "q_from_validation_2021": 0.009,
+   "validation_F1": 0.0881,
+   "test_2022": {
+    "flagged_fraction": 0.009,
+    "flagged": 1343,
+    "tp": 77,
+    "fp": 1266,
+    "fn": 169,
+    "tn": 147699,
+    "accuracy": 0.99038,
+    "precision": 0.0573,
+    "recall": 0.313,
+    "f1": 0.0969,
+    "mcc": 0.1308
+   }
+  },
+  "LR, v2 features": {
+   "q_from_validation_2021": 0.0085,
+   "validation_F1": 0.1131,
+   "test_2022": {
+    "flagged_fraction": 0.0085,
+    "flagged": 1268,
+    "tp": 78,
+    "fp": 1190,
+    "fn": 168,
+    "tn": 147775,
+    "accuracy": 0.9909,
+    "precision": 0.0615,
+    "recall": 0.3171,
+    "f1": 0.103,
+    "mcc": 0.1366
+   }
+  },
+  "LightGBM, v2 features": {
+   "q_from_validation_2021": 0.0045,
+   "validation_F1": 0.1137,
+   "test_2022": {
+    "flagged_fraction": 0.0045,
+    "flagged": 671,
+    "tp": 44,
+    "fp": 627,
+    "fn": 202,
+    "tn": 148338,
+    "accuracy": 0.99444,
+    "precision": 0.0656,
+    "recall": 0.1789,
+    "f1": 0.096,
+    "mcc": 0.1059
+   }
+  },
+  "ensemble (LR + LightGBM, v2 features)": {
+   "q_from_validation_2021": 0.006,
+   "validation_F1": 0.1214,
+   "test_2022": {
+    "flagged_fraction": 0.006,
+    "flagged": 895,
+    "tp": 66,
+    "fp": 829,
+    "fn": 180,
+    "tn": 148136,
+    "accuracy": 0.99324,
+    "precision": 0.0737,
+    "recall": 0.2683,
+    "f1": 0.1157,
+    "mcc": 0.138
+   }
+  }
+ },
+ "headline_ci95": {
+  "v1 baseline: logistic regression (v1 feats, single window)": {
+   "average_precision": [
+    0.0406,
+    0.0709
+   ],
+   "roc_auc": [
+    0.9369,
+    0.9591
+   ]
+  },
+  "LR, v1 features, pooled windows": {
+   "average_precision": [
+    0.0381,
+    0.0588
+   ],
+   "roc_auc": [
+    0.9418,
+    0.9614
+   ]
+  },
+  "LightGBM, v1 features, pooled windows": {
+   "average_precision": [
+    0.0379,
+    0.0638
+   ],
+   "roc_auc": [
+    0.9449,
+    0.9627
+   ]
+  },
+  "LR, v2 features": {
+   "average_precision": [
+    0.0435,
+    0.075
+   ],
+   "roc_auc": [
+    0.9405,
+    0.9619
+   ]
+  },
+  "LightGBM, v2 features": {
+   "average_precision": [
+    0.0449,
+    0.0778
+   ],
+   "roc_auc": [
+    0.9513,
+    0.9654
+   ]
+  },
+  "ensemble (LR + LightGBM, v2 features)": {
+   "average_precision": [
+    0.0494,
+    0.0897
+   ],
+   "roc_auc": [
+    0.948,
+    0.9652
+   ]
+  }
+ },
+ "ablation_lgb_v2": {
+  "network (v1)": {
+   "only_AP": 0.0207,
+   "only_AUC": 0.7837,
+   "drop_AP": 0.0518,
+   "drop_AUC": 0.959
+  },
+  "topic (v1 subfield)": {
+   "only_AP": 0.0052,
+   "only_AUC": 0.76,
+   "drop_AP": 0.0513,
+   "drop_AUC": 0.9574
+  },
+  "structure+activity (v1)": {
+   "only_AP": 0.0469,
+   "only_AUC": 0.946,
+   "drop_AP": 0.0438,
+   "drop_AUC": 0.9387
+  },
+  "content (v2)": {
+   "only_AP": 0.0156,
+   "only_AUC": 0.8251,
+   "drop_AP": 0.0463,
+   "drop_AUC": 0.9533
+  },
+  "citation links (v2)": {
+   "only_AP": 0.0103,
+   "only_AUC": 0.5572,
+   "drop_AP": 0.0561,
+   "drop_AUC": 0.9587
+  },
+  "co-author overlap (v2)": {
+   "only_AP": 0.019,
+   "only_AUC": 0.6447,
+   "drop_AP": 0.0558,
+   "drop_AUC": 0.9591
+  },
+  "graph embedding (v2)": {
+   "only_AP": 0.0188,
+   "only_AUC": 0.7612,
+   "drop_AP": 0.0552,
+   "drop_AUC": 0.9582
+  },
+  "career/impact (v2)": {
+   "only_AP": 0.0267,
+   "only_AUC": 0.9166,
+   "drop_AP": 0.0557,
+   "drop_AUC": 0.957
+  }
+ },
+ "lgb_gain_importance": {
+  "same_department": 0.4291,
+  "dept_pair_joint_hist": 0.2396,
+  "same_institute": 0.116,
+  "log_cites_max": 0.0216,
+  "refs_cosine": 0.0174,
+  "log_cites_min": 0.0171,
+  "topic_weighted_jaccard": 0.0158,
+  "title_cosine": 0.0154,
+  "recent_papers_max": 0.0134,
+  "topic_cosine": 0.0128,
+  "venue_cosine": 0.0099,
+  "field_cosine": 0.0098,
+  "hop_distance": 0.0091,
+  "topic_fine_cosine": 0.0079,
+  "recent_trend_max": 0.0075
+ }
+}
