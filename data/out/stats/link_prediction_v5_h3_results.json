@@ -1,0 +1,325 @@
+{
+ "design": "Collaboration prediction v5: v2 faculty model + big-graph network features + recency-weighted content similarity, bagged, with per-faculty hit rates.\n\nAdds to the v2 feature set (faculty-pair rows, same temporal protocol as v3/v4):\n  big-graph  common neighbours / Adamic-Adar / resource allocation / Jaccard / 3-step paths / degrees computed on the graph of ALL co-authors of the\n             verified corpus (v4's Big graph), not only faculty\n  recency    reference, topic and venue TF-IDF cosine and citation links using only the last 2 years of each person's papers\nModels: A = v3 LightGBM reference (v2 features); A2 = LightGBM on the extended features (params chosen on the validation fold), bagged over 5 seeds;\nLR2 = logistic regression on the same features; E = rank average of A2 and LR2.\nHORIZON env var: 1 (default; label = year T+1) or 3 (label = any collaboration in T+1..T+3).\nReports per fold and pooled over folds (ranks normalised inside each fold): average precision, ROC-AUC, precision@100, and per-faculty hit@k / precision@k.",
+ "horizon_years": 3,
+ "params": {
+  "A": {
+   "n": 200,
+   "lr": 0.03,
+   "leaves": 7,
+   "mcs": 30,
+   "spw": 10
+  },
+  "A2": {
+   "n": 300,
+   "lr": 0.03,
+   "leaves": 15,
+   "mcs": 100,
+   "spw": 1
+  },
+  "LR2_C": 0.01
+ },
+ "folds": {
+  "2020": {
+   "label_years": "2021-2023",
+   "train_positives": 206,
+   "models": {
+    "A: LightGBM, v2 features (reference)": {
+     "positives": 273,
+     "pairs": 125814,
+     "average_precision": 0.0518,
+     "roc_auc": 0.9468,
+     "precision@100": 0.06,
+     "recall@100": 0.022,
+     "precision@500": 0.084,
+     "recall@500": 0.154,
+     "faculty_with_a_new_link": 288,
+     "hit@3": 0.316,
+     "precision@3": 0.1169,
+     "hit@5": 0.441,
+     "precision@5": 0.1056,
+     "hit@10": 0.5799,
+     "precision@10": 0.0819
+    },
+    "A2: LightGBM, extended features, 5-seed bag": {
+     "positives": 273,
+     "pairs": 125814,
+     "average_precision": 0.0652,
+     "roc_auc": 0.9519,
+     "precision@100": 0.11,
+     "recall@100": 0.04,
+     "precision@500": 0.098,
+     "recall@500": 0.179,
+     "faculty_with_a_new_link": 288,
+     "hit@3": 0.3403,
+     "precision@3": 0.1262,
+     "hit@5": 0.4375,
+     "precision@5": 0.1063,
+     "hit@10": 0.6458,
+     "precision@10": 0.0934
+    },
+    "LR2: logistic regression, extended features": {
+     "positives": 273,
+     "pairs": 125814,
+     "average_precision": 0.0548,
+     "roc_auc": 0.941,
+     "precision@100": 0.09,
+     "recall@100": 0.033,
+     "precision@500": 0.082,
+     "recall@500": 0.15,
+     "faculty_with_a_new_link": 288,
+     "hit@3": 0.2951,
+     "precision@3": 0.1053,
+     "hit@5": 0.4375,
+     "precision@5": 0.1021,
+     "hit@10": 0.6076,
+     "precision@10": 0.0875
+    },
+    "E: A2 + LR2 rank average": {
+     "positives": 273,
+     "pairs": 125814,
+     "average_precision": 0.0669,
+     "roc_auc": 0.9487,
+     "precision@100": 0.12,
+     "recall@100": 0.044,
+     "precision@500": 0.112,
+     "recall@500": 0.205,
+     "faculty_with_a_new_link": 288,
+     "hit@3": 0.3611,
+     "precision@3": 0.1308,
+     "hit@5": 0.4583,
+     "precision@5": 0.1111,
+     "hit@10": 0.6215,
+     "precision@10": 0.0896
+    }
+   }
+  },
+  "2021": {
+   "label_years": "2022-2024",
+   "train_positives": 366,
+   "models": {
+    "A: LightGBM, v2 features (reference)": {
+     "positives": 244,
+     "pairs": 129257,
+     "average_precision": 0.0506,
+     "roc_auc": 0.9494,
+     "precision@100": 0.06,
+     "recall@100": 0.025,
+     "precision@500": 0.08,
+     "recall@500": 0.164,
+     "faculty_with_a_new_link": 287,
+     "hit@3": 0.3171,
+     "precision@3": 0.1185,
+     "hit@5": 0.4286,
+     "precision@5": 0.0997,
+     "hit@10": 0.6481,
+     "precision@10": 0.0854
+    },
+    "A2: LightGBM, extended features, 5-seed bag": {
+     "positives": 244,
+     "pairs": 129257,
+     "average_precision": 0.0511,
+     "roc_auc": 0.9572,
+     "precision@100": 0.13,
+     "recall@100": 0.053,
+     "precision@500": 0.058,
+     "recall@500": 0.119,
+     "faculty_with_a_new_link": 287,
+     "hit@3": 0.3484,
+     "precision@3": 0.1289,
+     "hit@5": 0.4808,
+     "precision@5": 0.1101,
+     "hit@10": 0.6411,
+     "precision@10": 0.0843
+    },
+    "LR2: logistic regression, extended features": {
+     "positives": 244,
+     "pairs": 129257,
+     "average_precision": 0.0503,
+     "roc_auc": 0.9533,
+     "precision@100": 0.11,
+     "recall@100": 0.045,
+     "precision@500": 0.076,
+     "recall@500": 0.156,
+     "faculty_with_a_new_link": 287,
+     "hit@3": 0.2997,
+     "precision@3": 0.1069,
+     "hit@5": 0.4495,
+     "precision@5": 0.1024,
+     "hit@10": 0.5993,
+     "precision@10": 0.0798
+    },
+    "E: A2 + LR2 rank average": {
+     "positives": 244,
+     "pairs": 129257,
+     "average_precision": 0.0541,
+     "roc_auc": 0.957,
+     "precision@100": 0.12,
+     "recall@100": 0.049,
+     "precision@500": 0.068,
+     "recall@500": 0.139,
+     "faculty_with_a_new_link": 287,
+     "hit@3": 0.3484,
+     "precision@3": 0.1289,
+     "hit@5": 0.4669,
+     "precision@5": 0.1094,
+     "hit@10": 0.6376,
+     "precision@10": 0.0836
+    }
+   }
+  },
+  "2022": {
+   "label_years": "2023-2025",
+   "train_positives": 601,
+   "models": {
+    "A: LightGBM, v2 features (reference)": {
+     "positives": 244,
+     "pairs": 149211,
+     "average_precision": 0.0508,
+     "roc_auc": 0.9572,
+     "precision@100": 0.07,
+     "recall@100": 0.029,
+     "precision@500": 0.08,
+     "recall@500": 0.164,
+     "faculty_with_a_new_link": 289,
+     "hit@3": 0.2837,
+     "precision@3": 0.1084,
+     "hit@5": 0.4291,
+     "precision@5": 0.1087,
+     "hit@10": 0.6609,
+     "precision@10": 0.0931
+    },
+    "A2: LightGBM, extended features, 5-seed bag": {
+     "positives": 244,
+     "pairs": 149211,
+     "average_precision": 0.054,
+     "roc_auc": 0.9578,
+     "precision@100": 0.06,
+     "recall@100": 0.025,
+     "precision@500": 0.084,
+     "recall@500": 0.172,
+     "faculty_with_a_new_link": 289,
+     "hit@3": 0.3287,
+     "precision@3": 0.1269,
+     "hit@5": 0.4567,
+     "precision@5": 0.1156,
+     "hit@10": 0.6367,
+     "precision@10": 0.0893
+    },
+    "LR2: logistic regression, extended features": {
+     "positives": 244,
+     "pairs": 149211,
+     "average_precision": 0.0422,
+     "roc_auc": 0.9534,
+     "precision@100": 0.08,
+     "recall@100": 0.033,
+     "precision@500": 0.058,
+     "recall@500": 0.119,
+     "faculty_with_a_new_link": 289,
+     "hit@3": 0.2803,
+     "precision@3": 0.105,
+     "hit@5": 0.4498,
+     "precision@5": 0.1038,
+     "hit@10": 0.6194,
+     "precision@10": 0.0858
+    },
+    "E: A2 + LR2 rank average": {
+     "positives": 244,
+     "pairs": 149211,
+     "average_precision": 0.0578,
+     "roc_auc": 0.9575,
+     "precision@100": 0.12,
+     "recall@100": 0.049,
+     "precision@500": 0.086,
+     "recall@500": 0.176,
+     "faculty_with_a_new_link": 289,
+     "hit@3": 0.3356,
+     "precision@3": 0.1373,
+     "hit@5": 0.4567,
+     "precision@5": 0.1156,
+     "hit@10": 0.6574,
+     "precision@10": 0.0924
+    }
+   }
+  }
+ },
+ "pooled": {
+  "A: LightGBM, v2 features (reference)": {
+   "positives": 761,
+   "pairs": 404282,
+   "average_precision": 0.05,
+   "roc_auc": 0.951,
+   "precision@100": 0.06,
+   "recall@100": 0.008,
+   "precision@500": 0.09,
+   "recall@500": 0.059,
+   "hit@3": 0.3056,
+   "hit@5": 0.4329,
+   "hit@10": 0.6296,
+   "precision@5": 0.1047,
+   "mean_fold_precision@100": 0.0633
+  },
+  "A2: LightGBM, extended features, 5-seed bag": {
+   "positives": 761,
+   "pairs": 404282,
+   "average_precision": 0.055,
+   "roc_auc": 0.9554,
+   "precision@100": 0.12,
+   "recall@100": 0.016,
+   "precision@500": 0.094,
+   "recall@500": 0.062,
+   "hit@3": 0.3391,
+   "hit@5": 0.4583,
+   "hit@10": 0.6412,
+   "precision@5": 0.1107,
+   "mean_fold_precision@100": 0.1
+  },
+  "LR2: logistic regression, extended features": {
+   "positives": 761,
+   "pairs": 404282,
+   "average_precision": 0.0478,
+   "roc_auc": 0.9489,
+   "precision@100": 0.05,
+   "recall@100": 0.007,
+   "precision@500": 0.074,
+   "recall@500": 0.049,
+   "hit@3": 0.2917,
+   "hit@5": 0.4456,
+   "hit@10": 0.6088,
+   "precision@5": 0.1028,
+   "mean_fold_precision@100": 0.0933
+  },
+  "E: A2 + LR2 rank average": {
+   "positives": 761,
+   "pairs": 404282,
+   "average_precision": 0.0574,
+   "roc_auc": 0.9542,
+   "precision@100": 0.13,
+   "recall@100": 0.017,
+   "precision@500": 0.1,
+   "recall@500": 0.066,
+   "hit@3": 0.3484,
+   "hit@5": 0.4606,
+   "hit@10": 0.6389,
+   "precision@5": 0.112,
+   "mean_fold_precision@100": 0.12
+  }
+ },
+ "headline_ci95_ap": {
+  "A: LightGBM, v2 features (reference)": [
+   0.0428,
+   0.0692
+  ],
+  "A2: LightGBM, extended features, 5-seed bag": [
+   0.0444,
+   0.0755
+  ],
+  "LR2: logistic regression, extended features": [
+   0.0363,
+   0.0538
+  ],
+  "E: A2 + LR2 rank average": [
+   0.0475,
+   0.0776
+  ]
+ }
+}

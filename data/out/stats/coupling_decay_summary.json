@@ -1,0 +1,210 @@
+{
+ "coupling (single-faculty papers only)": {
+  "pairs_with_any_shared_reference": 30087,
+  "pairs_with_>=10_shared_references": 1173,
+  "co_citation_pairs_nonzero": 2113,
+  "collaborating_pairs": 1083
+ },
+ "collaboration_rate_by_coupling_quintile (pairs with any coupling; 4 = most coupled)": {
+  "0": 0.004,
+  "1": 0.004,
+  "2": 0.0078,
+  "3": 0.0186,
+  "4": 0.0603
+ },
+ "collaboration_rate_pairs_with_no_coupling": 0.00177,
+ "pairs_with_any_coupling": 30087,
+ "coupling_vs_collaboration": {
+  "share_of_collab_pairs_with_shared_refs": 0.526,
+  "share_of_noncollab_pairs_with_shared_refs": 0.093,
+  "median_shared_refs_collab_pairs": 1.0,
+  "median_shared_refs_other_pairs": 0.0
+ },
+ "coupling_network": {
+  "nodes_with_links": 464,
+  "edges": 692,
+  "communities": 392,
+  "modularity": 0.877,
+  "collaboration_network_communities": 230,
+  "agreement_with_collaboration_communities_NMI": 0.55,
+  "share_of_coupling_edges_that_are_real_collaborations": 0.172,
+  "share_of_coupling_edges_within_one_institute": 0.513
+ },
+ "decay": {
+  "half_life_years": 3.0,
+  "reference_year": 2025,
+  "spearman_static_vs_decayed": {
+   "strength": 0.943,
+   "betweenness": 0.853,
+   "harmonic": 0.724
+  },
+  "rising_brokers (rank up most, betweenness)": [
+   {
+    "faculty": "Arun Kumar Singh",
+    "institute": "NIT Jamshedpur",
+    "betweenness_rank_change": 468.0
+   },
+   {
+    "faculty": "Vipin Chandra Pal",
+    "institute": "NIT Silchar",
+    "betweenness_rank_change": 449.0
+   },
+   {
+    "faculty": "Pannalal Choudhury",
+    "institute": "NIT Silchar",
+    "betweenness_rank_change": 289.0
+   },
+   {
+    "faculty": "Kumarasamy Sudhakar",
+    "institute": "MANIT Bhopal",
+    "betweenness_rank_change": 279.0
+   },
+   {
+    "faculty": "Amit Kumar Das",
+    "institute": "NIT Silchar",
+    "betweenness_rank_change": 274.0
+   },
+   {
+    "faculty": "Vinay Kumar",
+    "institute": "NIT Jamshedpur",
+    "betweenness_rank_change": 259.0
+   },
+   {
+    "faculty": "Subrata Mahanta",
+    "institute": "NIT Jamshedpur",
+    "betweenness_rank_change": 248.0
+   },
+   {
+    "faculty": "R. Murugan",
+    "institute": "NIT Silchar",
+    "betweenness_rank_change": 240.0
+   }
+  ],
+  "fading_brokers (rank down most, betweenness)": [
+   {
+    "faculty": "Prashant Kumar",
+    "institute": "NIT Jamshedpur",
+    "betweenness_rank_change": -542.0
+   },
+   {
+    "faculty": "Lintu Roy",
+    "institute": "NIT Silchar",
+    "betweenness_rank_change": -473.0
+   },
+   {
+    "faculty": "Ram Vinoy Sharma",
+    "institute": "NIT Jamshedpur",
+    "betweenness_rank_change": -450.0
+   },
+   {
+    "faculty": "Nagendra Kumar",
+    "institute": "NIT Jamshedpur",
+    "betweenness_rank_change": -429.0
+   },
+   {
+    "faculty": "Rahul Dev Misra",
+    "institute": "NIT Silchar",
+    "betweenness_rank_change": -413.0
+   },
+   {
+    "faculty": "M. K. Pradhan",
+    "institute": "MANIT Bhopal",
+    "betweenness_rank_change": -402.0
+   },
+   {
+    "faculty": "Rajesh Saha",
+    "institute": "NIT Silchar",
+    "betweenness_rank_change": -381.0
+   },
+   {
+    "faculty": "Dilip Kumar (Computer Science and Engineering)",
+    "institute": "NIT Jamshedpur",
+    "betweenness_rank_change": -363.0
+   }
+  ],
+  "top_decayed_betweenness": [
+   {
+    "faculty": "Agnimitra Biswas",
+    "institute": "NIT Silchar",
+    "decayed_betweenness": 0.142
+   },
+   {
+    "faculty": "AMIT PRAKASH",
+    "institute": "NIT Jamshedpur",
+    "decayed_betweenness": 0.127
+   },
+   {
+    "faculty": "Prashant V. Baredar",
+    "institute": "MANIT Bhopal",
+    "decayed_betweenness": 0.127
+   },
+   {
+    "faculty": "Kunal Singh",
+    "institute": "NIT Jamshedpur",
+    "decayed_betweenness": 0.119
+   },
+   {
+    "faculty": "Kavicharan Mummaneni",
+    "institute": "NIT Silchar",
+    "decayed_betweenness": 0.116
+   },
+   {
+    "faculty": "M. Raju",
+    "institute": "MANIT Bhopal",
+    "decayed_betweenness": 0.111
+   },
+   {
+    "faculty": "SREENU SREEKUMAR",
+    "institute": "NIT Silchar",
+    "decayed_betweenness": 0.111
+   },
+   {
+    "faculty": "Tanmoy Malakar",
+    "institute": "NIT Silchar",
+    "decayed_betweenness": 0.111
+   }
+  ],
+  "top_static_betweenness": [
+   {
+    "faculty": "SURESH KUMAR GAWRE",
+    "institute": "MANIT Bhopal",
+    "static_betweenness": 0.111
+   },
+   {
+    "faculty": "Tanmoy Malakar",
+    "institute": "NIT Silchar",
+    "static_betweenness": 0.102
+   },
+   {
+    "faculty": "M. Raju",
+    "institute": "MANIT Bhopal",
+    "static_betweenness": 0.1
+   },
+   {
+    "faculty": "Vijay Bhaskar Semwal",
+    "institute": "MANIT Bhopal",
+    "static_betweenness": 0.1
+   },
+   {
+    "faculty": "SREENU SREEKUMAR",
+    "institute": "NIT Silchar",
+    "static_betweenness": 0.1
+   },
+   {
+    "faculty": "Kunal Singh",
+    "institute": "NIT Jamshedpur",
+    "static_betweenness": 0.082
+   },
+   {
+    "faculty": "Rajesh Purohit",
+    "institute": "MANIT Bhopal",
+    "static_betweenness": 0.08
+   },
+   {
+    "faculty": "Shiva Nand Singh",
+    "institute": "NIT Jamshedpur",
+    "static_betweenness": 0.07
+   }
+  ]
+ }
+}

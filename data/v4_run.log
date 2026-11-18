@@ -1,0 +1,27 @@
+[   0.0 min] big graph: 15126 people (800 faculty), 57960 authorships on 17548 papers
+[   0.1 min]   other pairs T=2016: 3205 rows, 28 positives
+[   0.1 min]   other pairs T=2017: 11353 rows, 74 positives
+[   0.1 min]   other pairs T=2018: 24882 rows, 53 positives
+[   0.1 min]   other pairs T=2019: 31989 rows, 128 positives
+[   0.2 min]   other pairs T=2020: 50702 rows, 277 positives
+[   0.2 min]   other pairs T=2021: 80635 rows, 331 positives
+[   0.2 min]   other pairs T=2022: 125157 rows, 460 positives
+[   0.3 min]   other pairs T=2023: 167179 rows, 456 positives
+[   0.4 min]   other pairs T=2024: 196210 rows, 401 positives
+[   0.4 min] features built for all snapshots
+[   0.6 min]   val B {'n': 300, 'lr': 0.03, 'leaves': 7, 'mcs': 100, 'spw': 1}: AP 0.0123
+[   0.7 min]   val B {'n': 300, 'lr': 0.03, 'leaves': 7, 'mcs': 100, 'spw': 10}: AP 0.0113
+[   0.9 min]   val B {'n': 300, 'lr': 0.03, 'leaves': 15, 'mcs': 100, 'spw': 1}: AP 0.0119
+[   1.0 min]   val B {'n': 300, 'lr': 0.03, 'leaves': 15, 'mcs': 100, 'spw': 10}: AP 0.0117
+[   1.0 min] selected params for B: {'n': 300, 'lr': 0.03, 'leaves': 7, 'mcs': 100, 'spw': 1}
+[   1.1 min] fold 2020 (label 2021, 109 positives): A: AP 0.0209 | B: AP 0.0124 | C: AP 0.0134 | A+ AP 0.0168 | A+ AP 0.0162
+[   1.3 min] fold 2021 (label 2022, 92 positives): A: AP 0.0248 | B: AP 0.0163 | C: AP 0.0174 | A+ AP 0.0247 | A+ AP 0.0316
+[   1.5 min] fold 2022 (label 2023, 92 positives): A: AP 0.0240 | B: AP 0.0157 | C: AP 0.0165 | A+ AP 0.0238 | A+ AP 0.0266
+[   1.8 min] fold 2023 (label 2024, 78 positives): A: AP 0.0203 | B: AP 0.0123 | C: AP 0.0110 | A+ AP 0.0193 | A+ AP 0.0205
+[   2.1 min] fold 2024 (label 2025, 121 positives): A: AP 0.0393 | B: AP 0.0166 | C: AP 0.0131 | A+ AP 0.0352 | A+ AP 0.0325
+[   2.5 min] POOLED 2020-24 A: LightGBM, faculty data, v2 features (v3 refer AP 0.0233 AUC 0.9550 P@100(avg fold) 0.044 hit@5 0.3963  (492 positives)
+[   2.5 min] POOLED 2020-24 B: LightGBM, big-graph features, ALL authors' pa AP 0.0131 AUC 0.7456 P@100(avg fold) 0.05 hit@5 0.2664  (492 positives)
+[   2.5 min] POOLED 2020-24 C: LightGBM, big-graph features, faculty pairs o AP 0.0119 AUC 0.7571 P@100(avg fold) 0.044 hit@5 0.2423  (492 positives)
+[   2.5 min] POOLED 2020-24 A+B rank average                                 AP 0.0208 AUC 0.8872 P@100(avg fold) 0.056 hit@5 0.32  (492 positives)
+[   2.5 min] POOLED 2020-24 A+C rank average                                 AP 0.0212 AUC 0.8948 P@100(avg fold) 0.06 hit@5 0.3159  (492 positives)
+[   2.5 min] written

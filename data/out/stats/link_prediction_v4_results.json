@@ -1,0 +1,485 @@
+{
+ "design": "Collaboration prediction v4: learn link prediction on the WHOLE co-author graph, then score faculty pairs.\n\nWhy: the faculty-only data has ~100-250 new links a year. The full co-author graph of the verified corpus (faculty + all their co-authors,\n~17k people) has ~350-600 new links a year among pairs that are two steps apart, so ~4x more training positives.\n\nProtocol (strictly temporal, one-year-ahead, same faculty test pairs as v3):\n  snapshot T: graph of papers up to T; label = the pair co-authors a paper in T+1 and had never done so before\n  fold test_T: train on snapshots T' <= test_T - 1, test on faculty-faculty never-collaborated pairs at test_T (label = year test_T + 1)\n  folds 2020..2024; headline = 2024 (label 2025); predictions of the 5 folds are also pooled (rank-normalised inside each fold)\nModels (all LightGBM):\n  A  faculty-only data, v2 features                  (= the v3 LightGBM, the reference)\n  B  structural features from the big graph, trained on faculty pairs + all other author pairs (the new idea)\n  C  same structural features, trained on faculty pairs only (ablation: does the extra data matter, or just the features?)\n  A+B, A+C rank averages",
+ "params": {
+  "A": {
+   "n": 200,
+   "lr": 0.03,
+   "leaves": 7,
+   "mcs": 30,
+   "spw": 10
+  },
+  "B_and_C": {
+   "n": 300,
+   "lr": 0.03,
+   "leaves": 7,
+   "mcs": 100,
+   "spw": 1
+  }
+ },
+ "folds": {
+  "2020": {
+   "label_year": 2021,
+   "train_rows_B": 343502,
+   "train_positives_B": 492,
+   "train_positives_faculty_only": 209,
+   "models": {
+    "A: LightGBM, faculty data, v2 features (v3 reference)": {
+     "positives": 109,
+     "pairs": 125814,
+     "average_precision": 0.0209,
+     "roc_auc": 0.9496,
+     "precision@100": 0.05,
+     "recall@100": 0.046,
+     "precision@500": 0.022,
+     "recall@500": 0.101,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.3986,
+     "precision@5": 0.0865
+    },
+    "B: LightGBM, big-graph features, ALL authors' pairs": {
+     "positives": 109,
+     "pairs": 125814,
+     "average_precision": 0.0124,
+     "roc_auc": 0.7012,
+     "precision@100": 0.04,
+     "recall@100": 0.037,
+     "precision@500": 0.026,
+     "recall@500": 0.119,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.2095,
+     "precision@5": 0.0432
+    },
+    "C: LightGBM, big-graph features, faculty pairs only": {
+     "positives": 109,
+     "pairs": 125814,
+     "average_precision": 0.0134,
+     "roc_auc": 0.7194,
+     "precision@100": 0.04,
+     "recall@100": 0.037,
+     "precision@500": 0.032,
+     "recall@500": 0.147,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.2095,
+     "precision@5": 0.0446
+    },
+    "A+B rank average": {
+     "positives": 109,
+     "pairs": 125814,
+     "average_precision": 0.0168,
+     "roc_auc": 0.8655,
+     "precision@100": 0.04,
+     "recall@100": 0.037,
+     "precision@500": 0.03,
+     "recall@500": 0.138,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.2973,
+     "precision@5": 0.0676
+    },
+    "A+C rank average": {
+     "positives": 109,
+     "pairs": 125814,
+     "average_precision": 0.0162,
+     "roc_auc": 0.878,
+     "precision@100": 0.04,
+     "recall@100": 0.037,
+     "precision@500": 0.03,
+     "recall@500": 0.138,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.2703,
+     "precision@5": 0.0595
+    }
+   }
+  },
+  "2021": {
+   "label_year": 2022,
+   "train_rows_B": 520018,
+   "train_positives_B": 878,
+   "train_positives_faculty_only": 318,
+   "models": {
+    "A: LightGBM, faculty data, v2 features (v3 reference)": {
+     "positives": 92,
+     "pairs": 129257,
+     "average_precision": 0.0248,
+     "roc_auc": 0.9487,
+     "precision@100": 0.03,
+     "recall@100": 0.033,
+     "precision@500": 0.036,
+     "recall@500": 0.196,
+     "faculty_with_a_new_link": 139,
+     "hit@5": 0.3813,
+     "precision@5": 0.0835
+    },
+    "B: LightGBM, big-graph features, ALL authors' pairs": {
+     "positives": 92,
+     "pairs": 129257,
+     "average_precision": 0.0163,
+     "roc_auc": 0.7154,
+     "precision@100": 0.04,
+     "recall@100": 0.043,
+     "precision@500": 0.026,
+     "recall@500": 0.141,
+     "faculty_with_a_new_link": 139,
+     "hit@5": 0.2518,
+     "precision@5": 0.0561
+    },
+    "C: LightGBM, big-graph features, faculty pairs only": {
+     "positives": 92,
+     "pairs": 129257,
+     "average_precision": 0.0174,
+     "roc_auc": 0.7104,
+     "precision@100": 0.06,
+     "recall@100": 0.065,
+     "precision@500": 0.03,
+     "recall@500": 0.163,
+     "faculty_with_a_new_link": 139,
+     "hit@5": 0.2374,
+     "precision@5": 0.0504
+    },
+    "A+B rank average": {
+     "positives": 92,
+     "pairs": 129257,
+     "average_precision": 0.0247,
+     "roc_auc": 0.8807,
+     "precision@100": 0.06,
+     "recall@100": 0.065,
+     "precision@500": 0.034,
+     "recall@500": 0.185,
+     "faculty_with_a_new_link": 139,
+     "hit@5": 0.259,
+     "precision@5": 0.0576
+    },
+    "A+C rank average": {
+     "positives": 92,
+     "pairs": 129257,
+     "average_precision": 0.0316,
+     "roc_auc": 0.8764,
+     "precision@100": 0.07,
+     "recall@100": 0.076,
+     "precision@500": 0.034,
+     "recall@500": 0.185,
+     "faculty_with_a_new_link": 139,
+     "hit@5": 0.2374,
+     "precision@5": 0.0547
+    }
+   }
+  },
+  "2022": {
+   "label_year": 2023,
+   "train_rows_B": 729910,
+   "train_positives_B": 1301,
+   "train_positives_faculty_only": 410,
+   "models": {
+    "A: LightGBM, faculty data, v2 features (v3 reference)": {
+     "positives": 92,
+     "pairs": 149211,
+     "average_precision": 0.024,
+     "roc_auc": 0.9639,
+     "precision@100": 0.04,
+     "recall@100": 0.043,
+     "precision@500": 0.036,
+     "recall@500": 0.196,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.3581,
+     "precision@5": 0.0784
+    },
+    "B: LightGBM, big-graph features, ALL authors' pairs": {
+     "positives": 92,
+     "pairs": 149211,
+     "average_precision": 0.0157,
+     "roc_auc": 0.7442,
+     "precision@100": 0.06,
+     "recall@100": 0.065,
+     "precision@500": 0.028,
+     "recall@500": 0.152,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.2838,
+     "precision@5": 0.0581
+    },
+    "C: LightGBM, big-graph features, faculty pairs only": {
+     "positives": 92,
+     "pairs": 149211,
+     "average_precision": 0.0165,
+     "roc_auc": 0.7633,
+     "precision@100": 0.03,
+     "recall@100": 0.033,
+     "precision@500": 0.028,
+     "recall@500": 0.152,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.2432,
+     "precision@5": 0.0514
+    },
+    "A+B rank average": {
+     "positives": 92,
+     "pairs": 149211,
+     "average_precision": 0.0238,
+     "roc_auc": 0.8883,
+     "precision@100": 0.07,
+     "recall@100": 0.076,
+     "precision@500": 0.04,
+     "recall@500": 0.217,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.3581,
+     "precision@5": 0.0743
+    },
+    "A+C rank average": {
+     "positives": 92,
+     "pairs": 149211,
+     "average_precision": 0.0266,
+     "roc_auc": 0.9006,
+     "precision@100": 0.09,
+     "recall@100": 0.098,
+     "precision@500": 0.04,
+     "recall@500": 0.217,
+     "faculty_with_a_new_link": 148,
+     "hit@5": 0.3716,
+     "precision@5": 0.0811
+    }
+   }
+  },
+  "2023": {
+   "label_year": 2024,
+   "train_rows_B": 1004278,
+   "train_positives_B": 1853,
+   "train_positives_faculty_only": 502,
+   "models": {
+    "A: LightGBM, faculty data, v2 features (v3 reference)": {
+     "positives": 78,
+     "pairs": 164824,
+     "average_precision": 0.0203,
+     "roc_auc": 0.9601,
+     "precision@100": 0.02,
+     "recall@100": 0.026,
+     "precision@500": 0.03,
+     "recall@500": 0.192,
+     "faculty_with_a_new_link": 133,
+     "hit@5": 0.3985,
+     "precision@5": 0.0797
+    },
+    "B: LightGBM, big-graph features, ALL authors' pairs": {
+     "positives": 78,
+     "pairs": 164824,
+     "average_precision": 0.0123,
+     "roc_auc": 0.7639,
+     "precision@100": 0.05,
+     "recall@100": 0.064,
+     "precision@500": 0.02,
+     "recall@500": 0.128,
+     "faculty_with_a_new_link": 133,
+     "hit@5": 0.2782,
+     "precision@5": 0.0556
+    },
+    "C: LightGBM, big-graph features, faculty pairs only": {
+     "positives": 78,
+     "pairs": 164824,
+     "average_precision": 0.011,
+     "roc_auc": 0.7866,
+     "precision@100": 0.05,
+     "recall@100": 0.064,
+     "precision@500": 0.02,
+     "recall@500": 0.128,
+     "faculty_with_a_new_link": 133,
+     "hit@5": 0.2556,
+     "precision@5": 0.0541
+    },
+    "A+B rank average": {
+     "positives": 78,
+     "pairs": 164824,
+     "average_precision": 0.0193,
+     "roc_auc": 0.8917,
+     "precision@100": 0.04,
+     "recall@100": 0.051,
+     "precision@500": 0.034,
+     "recall@500": 0.218,
+     "faculty_with_a_new_link": 133,
+     "hit@5": 0.3835,
+     "precision@5": 0.0782
+    },
+    "A+C rank average": {
+     "positives": 78,
+     "pairs": 164824,
+     "average_precision": 0.0205,
+     "roc_auc": 0.9106,
+     "precision@100": 0.04,
+     "recall@100": 0.051,
+     "precision@500": 0.032,
+     "recall@500": 0.205,
+     "faculty_with_a_new_link": 133,
+     "hit@5": 0.3233,
+     "precision@5": 0.0662
+    }
+   }
+  },
+  "2024": {
+   "label_year": 2025,
+   "train_rows_B": 1336281,
+   "train_positives_B": 2387,
+   "train_positives_faculty_only": 580,
+   "models": {
+    "A: LightGBM, faculty data, v2 features (v3 reference)": {
+     "positives": 121,
+     "pairs": 211358,
+     "average_precision": 0.0393,
+     "roc_auc": 0.9545,
+     "precision@100": 0.08,
+     "recall@100": 0.066,
+     "precision@500": 0.046,
+     "recall@500": 0.19,
+     "faculty_with_a_new_link": 179,
+     "hit@5": 0.4358,
+     "precision@5": 0.1028
+    },
+    "B: LightGBM, big-graph features, ALL authors' pairs": {
+     "positives": 121,
+     "pairs": 211358,
+     "average_precision": 0.0166,
+     "roc_auc": 0.798,
+     "precision@100": 0.06,
+     "recall@100": 0.05,
+     "precision@500": 0.03,
+     "recall@500": 0.124,
+     "faculty_with_a_new_link": 179,
+     "hit@5": 0.3017,
+     "precision@5": 0.0648
+    },
+    "C: LightGBM, big-graph features, faculty pairs only": {
+     "positives": 121,
+     "pairs": 211358,
+     "average_precision": 0.0131,
+     "roc_auc": 0.8029,
+     "precision@100": 0.04,
+     "recall@100": 0.033,
+     "precision@500": 0.028,
+     "recall@500": 0.116,
+     "faculty_with_a_new_link": 179,
+     "hit@5": 0.2626,
+     "precision@5": 0.0559
+    },
+    "A+B rank average": {
+     "positives": 121,
+     "pairs": 211358,
+     "average_precision": 0.0352,
+     "roc_auc": 0.908,
+     "precision@100": 0.07,
+     "recall@100": 0.058,
+     "precision@500": 0.05,
+     "recall@500": 0.207,
+     "faculty_with_a_new_link": 179,
+     "hit@5": 0.3073,
+     "precision@5": 0.076
+    },
+    "A+C rank average": {
+     "positives": 121,
+     "pairs": 211358,
+     "average_precision": 0.0325,
+     "roc_auc": 0.9092,
+     "precision@100": 0.06,
+     "recall@100": 0.05,
+     "precision@500": 0.044,
+     "recall@500": 0.182,
+     "faculty_with_a_new_link": 179,
+     "hit@5": 0.3631,
+     "precision@5": 0.086
+    }
+   }
+  }
+ },
+ "pooled": {
+  "A: LightGBM, faculty data, v2 features (v3 reference)": {
+   "positives": 492,
+   "pairs": 780464,
+   "average_precision": 0.0233,
+   "roc_auc": 0.955,
+   "precision@100": 0.07,
+   "recall@100": 0.014,
+   "precision@500": 0.046,
+   "recall@500": 0.047,
+   "faculty_with_a_new_link(sum over folds)": 747,
+   "hit@5": 0.3963,
+   "precision@5": 0.087,
+   "mean_fold_precision@100": 0.044,
+   "mean_fold_recall@500": 0.175
+  },
+  "B: LightGBM, big-graph features, ALL authors' pairs": {
+   "positives": 492,
+   "pairs": 780464,
+   "average_precision": 0.0131,
+   "roc_auc": 0.7456,
+   "precision@100": 0.11,
+   "recall@100": 0.022,
+   "precision@500": 0.048,
+   "recall@500": 0.049,
+   "faculty_with_a_new_link(sum over folds)": 747,
+   "hit@5": 0.2664,
+   "precision@5": 0.0559,
+   "mean_fold_precision@100": 0.05,
+   "mean_fold_recall@500": 0.1328
+  },
+  "C: LightGBM, big-graph features, faculty pairs only": {
+   "positives": 492,
+   "pairs": 780464,
+   "average_precision": 0.0119,
+   "roc_auc": 0.7571,
+   "precision@100": 0.07,
+   "recall@100": 0.014,
+   "precision@500": 0.042,
+   "recall@500": 0.043,
+   "faculty_with_a_new_link(sum over folds)": 747,
+   "hit@5": 0.2423,
+   "precision@5": 0.0514,
+   "mean_fold_precision@100": 0.044,
+   "mean_fold_recall@500": 0.1412
+  },
+  "A+B rank average": {
+   "positives": 492,
+   "pairs": 780464,
+   "average_precision": 0.0208,
+   "roc_auc": 0.8872,
+   "precision@100": 0.1,
+   "recall@100": 0.02,
+   "precision@500": 0.056,
+   "recall@500": 0.057,
+   "faculty_with_a_new_link(sum over folds)": 747,
+   "hit@5": 0.32,
+   "precision@5": 0.071,
+   "mean_fold_precision@100": 0.056,
+   "mean_fold_recall@500": 0.193
+  },
+  "A+C rank average": {
+   "positives": 492,
+   "pairs": 780464,
+   "average_precision": 0.0212,
+   "roc_auc": 0.8948,
+   "precision@100": 0.08,
+   "recall@100": 0.016,
+   "precision@500": 0.056,
+   "recall@500": 0.057,
+   "faculty_with_a_new_link(sum over folds)": 747,
+   "hit@5": 0.3159,
+   "precision@5": 0.0704,
+   "mean_fold_precision@100": 0.06,
+   "mean_fold_recall@500": 0.1854
+  }
+ },
+ "headline_ci95_ap": {
+  "A: LightGBM, faculty data, v2 features (v3 reference)": [
+   0.0242,
+   0.0965
+  ],
+  "B: LightGBM, big-graph features, ALL authors' pairs": [
+   0.0092,
+   0.0421
+  ],
+  "C: LightGBM, big-graph features, faculty pairs only": [
+   0.0077,
+   0.035
+  ],
+  "A+B rank average": [
+   0.0204,
+   0.0799
+  ],
+  "A+C rank average": [
+   0.016,
+   0.0684
+  ]
+ }
+}

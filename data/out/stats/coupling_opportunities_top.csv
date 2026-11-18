@@ -1,0 +1,22 @@
+faculty_a,institute_a,faculty_b,institute_b,shared_references,coupling_cosine,same_institute
+Atul Lanjewar,MANIT Bhopal,Vikash Kumar,MANIT Bhopal,88,0.2294,True
+Jayakrushna Sahoo,NIT Jamshedpur,Sudhanshu Kumar Jha,NIT Jamshedpur,3,0.2119,True
+Brinda Bhowmick,NIT Silchar,Kavicharan Mummaneni,NIT Silchar,146,0.1981,True
+Atul Lanjewar,MANIT Bhopal,Radha Krishna Prasad,NIT Jamshedpur,64,0.195,False
+J. L. Bhagoria,MANIT Bhopal,Radha Krishna Prasad,NIT Jamshedpur,39,0.194,False
+Vikash Kumar,MANIT Bhopal,Laljee Prasad,NIT Jamshedpur,72,0.19,False
+Rakesh Kumar,MANIT Bhopal,Ashim Kanti Dey,NIT Silchar,45,0.1808,False
+Rutuja M. Chavan,MANIT Bhopal,A.K. Barbhuiya,NIT Silchar,43,0.1766,False
+Emon Barua,MANIT Bhopal,Ashish B. Deoghare,NIT Silchar,21,0.175,False
+M. Raju,MANIT Bhopal,Lalit Chandra Saikia,NIT Silchar,91,0.1705,False
+Shailendra Jain,MANIT Bhopal,Jiwanjot Singh,NIT Silchar,37,0.1634,False
+J. L. Bhagoria,MANIT Bhopal,Laljee Prasad,NIT Jamshedpur,32,0.1613,False
+Mayank Srivastava,NIT Jamshedpur,Rajiv Kumar,NIT Jamshedpur,25,0.1603,True
+Kunal Singh,NIT Jamshedpur,Brinda Bhowmick,NIT Silchar,109,0.1578,False
+Arvind Kumar,MANIT Bhopal,R.M.Sarviya,MANIT Bhopal,87,0.1571,True
+Dheeraj K. Agarwal,MANIT Bhopal,Manish Kashyap,MANIT Bhopal,64,0.1558,True
+Laxmi Kumre,MANIT Bhopal,TARUN KUMAR GUPTA,MANIT Bhopal,25,0.1455,True
+Atul Lanjewar,MANIT Bhopal,Laljee Prasad,NIT Jamshedpur,37,0.1357,False
+Pritikana Das,MANIT Bhopal,Mokaddes Ali Ahmed,NIT Silchar,65,0.1335,False
+Laljee Prasad,NIT Jamshedpur,Radha Krishna Prasad,NIT Jamshedpur,36,0.1335,True
+R.M.Sarviya,MANIT Bhopal,Laljee Prasad,NIT Jamshedpur,62,0.1227,False

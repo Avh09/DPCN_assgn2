@@ -1,0 +1,11 @@
+[   0.0 min] big graph: 15126 people (800 faculty), 57960 authorships on 17548 papers
+[   0.2 min] HORIZON=3: features built (40 v2 + 14 big-graph + 5 recency)
+[   1.3 min] validation (T=2021): A2 params {'n': 300, 'lr': 0.03, 'leaves': 15, 'mcs': 100, 'spw': 1} (AP 0.0552); LR C=0.01
+[   1.4 min] fold 2020 (273 positives): A AP 0.0518 hit@5 0.441 | A2 AP 0.0652 hit@5 0.4375 | LR2 AP 0.0548 hit@5 0.4375 | E AP 0.0669 hit@5 0.4583
+[   1.7 min] fold 2021 (244 positives): A AP 0.0506 hit@5 0.4286 | A2 AP 0.0511 hit@5 0.4808 | LR2 AP 0.0503 hit@5 0.4495 | E AP 0.0541 hit@5 0.4669
+[   2.6 min] fold 2022 (244 positives): A AP 0.0508 hit@5 0.4291 | A2 AP 0.0540 hit@5 0.4567 | LR2 AP 0.0422 hit@5 0.4498 | E AP 0.0578 hit@5 0.4567
+[   2.6 min] POOLED A: LightGBM, v2 features (reference)           AP 0.0500 AUC 0.9510 P@100 0.0633 hit@3 0.3056 hit@5 0.4329 hit@10 0.6296 (761 pos)
+[   2.6 min] POOLED A2: LightGBM, extended features, 5-seed bag    AP 0.0550 AUC 0.9554 P@100 0.1 hit@3 0.3391 hit@5 0.4583 hit@10 0.6412 (761 pos)
+[   2.6 min] POOLED LR2: logistic regression, extended features    AP 0.0478 AUC 0.9489 P@100 0.0933 hit@3 0.2917 hit@5 0.4456 hit@10 0.6088 (761 pos)
+[   2.6 min] POOLED E: A2 + LR2 rank average                       AP 0.0574 AUC 0.9542 P@100 0.12 hit@3 0.3484 hit@5 0.4606 hit@10 0.6389 (761 pos)
+[   2.6 min] written

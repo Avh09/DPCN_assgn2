@@ -1,0 +1,13 @@
+[   0.0 min] big graph: 15126 people (800 faculty), 57960 authorships on 17548 papers
+[   0.3 min] HORIZON=1: features built (40 v2 + 14 big-graph + 5 recency)
+[   4.6 min] validation (T=2023): A2 params {'n': 300, 'lr': 0.03, 'leaves': 7, 'mcs': 100, 'spw': 1} (AP 0.0333); LR C=0.01
+[   5.1 min] fold 2020 (109 positives): A AP 0.0210 hit@5 0.4189 | A2 AP 0.0256 hit@5 0.4324 | LR2 AP 0.0184 hit@5 0.3446 | E AP 0.0254 hit@5 0.4054
+[   5.7 min] fold 2021 (92 positives): A AP 0.0290 hit@5 0.3741 | A2 AP 0.0383 hit@5 0.3813 | LR2 AP 0.0211 hit@5 0.3453 | E AP 0.0259 hit@5 0.3813
+[   6.6 min] fold 2022 (92 positives): A AP 0.0248 hit@5 0.3581 | A2 AP 0.0359 hit@5 0.3919 | LR2 AP 0.0199 hit@5 0.4122 | E AP 0.0250 hit@5 0.4189
+[   7.8 min] fold 2023 (78 positives): A AP 0.0203 hit@5 0.3759 | A2 AP 0.0252 hit@5 0.4286 | LR2 AP 0.0140 hit@5 0.3835 | E AP 0.0181 hit@5 0.4211
+[   9.6 min] fold 2024 (121 positives): A AP 0.0408 hit@5 0.4358 | A2 AP 0.0514 hit@5 0.3966 | LR2 AP 0.0250 hit@5 0.4302 | E AP 0.0410 hit@5 0.4358
+[   9.6 min] POOLED A: LightGBM, v2 features (reference)           AP 0.0243 AUC 0.9550 P@100 0.044 hit@3 0.2704 hit@5 0.3949 hit@10 0.5783 (492 pos)
+[   9.6 min] POOLED A2: LightGBM, extended features, 5-seed bag    AP 0.0301 AUC 0.9650 P@100 0.046 hit@3 0.2758 hit@5 0.4056 hit@10 0.6131 (492 pos)
+[   9.7 min] POOLED LR2: logistic regression, extended features    AP 0.0187 AUC 0.9582 P@100 0.026 hit@3 0.257 hit@5 0.3856 hit@10 0.5797 (492 pos)
+[   9.7 min] POOLED E: A2 + LR2 rank average                       AP 0.0244 AUC 0.9639 P@100 0.052 hit@3 0.2985 hit@5 0.4137 hit@10 0.6104 (492 pos)
+[   9.7 min] written
