@@ -1,13 +1,13 @@
 # Key Observations: MANIT Bhopal, NIT Jamshedpur and NIT Silchar
 
-**DPCN Group 15** · Verified faculty, 2016–2026 (OpenAlex; 2026 partial) · 17,687 papers, 800 faculty. All figures come from the project's final tables [1]; the 33 retracted or withdrawn papers are excluded [2].
+**DPCN Group 15** · Verified faculty, 2016–2026 (OpenAlex; 2026 partial) · 17,687 papers by 807 research-active faculty. All figures come from the project's final tables [1]; the 33 retracted or withdrawn papers are excluded [2].
 
 ## 1. Basic Statistics
 
 | Measure | MANIT | NIT Jamshedpur | NIT Silchar |
 |---|---|---|---|
 | Papers (journal / conference) | 5,746 (3,580 / 2,166) | 3,587 (2,393 / 1,194) | **8,398** (5,454 / 2,944) |
-| Papers per research-active faculty | 19.4 | 15.6 | **30.7** |
+| Papers per research-active faculty | 19.4 | 15.3 | **30.4** |
 | Citations / per paper | 90,499 / **15.8** | 43,995 / 12.3 | **124,608** / 14.8 |
 | Institute h-index | **118** | 84 | 112 |
 | Median field-weighted impact (FWCI) | 0.73 | 0.67 | **0.82** |
@@ -39,15 +39,15 @@
 
 - **Collaboration stays inside each institute.** Only 33 of 1,201 links join two of the three NITs, and communities largely follow departments (NMI 0.58–0.70).
 - **The networks depend on a few brokers.** Removing the 4% most central faculty breaks the network apart, while random removal needs 24%. NIT Jamshedpur is the most fragile. *(Resilience tab)*
-- **Better-connected faculty have higher impact** (number of collaborators vs FWCI, Spearman 0.32; an association).
-- **Future collaborations can be predicted.** A model trained on 2016–2019 and tested on 2023–2025 reaches ROC-AUC **0.95** for new collaborations (average precision 32× the base rate) and 0.56 average precision for repeat collaborations (base rate 0.33). Scores rank candidates rather than give probabilities, and each suggestion comes with its reasons. *(Potential tab)*
+- **Better-connected faculty have higher impact** (number of collaborators vs FWCI, Spearman 0.32), but this falls to 0.08 once the number of papers is controlled for, so it largely reflects productivity.
+- **Future collaborations can be predicted.** A model trained on collaborations up to 2019 (outcomes 2020–22) and tested on new outcomes in 2023–25 reaches ROC-AUC **0.95** for new collaborations (average precision 32× the base rate) and 0.56 average precision for repeat collaborations (base rate 0.33). Scores rank candidates rather than give probabilities, and each suggestion comes with its reasons. *(Potential tab)*
 - **Within-corpus citations are mostly self-citations** (88%). In-corpus PageRank therefore reflects self-citation rather than influence. *(Citations tab)*
-- **All three institutes cite other Indian institutes more than they are cited back** (received ÷ given: MANIT 0.79, NITJ 0.61, NITS 0.81). They cite IITs most, while private universities cite them more than they cite back. *(Flows tab)*
+- **All three institutes cite other Indian institutes more than they are cited back** (received ÷ given: MANIT 0.79, NITJ 0.61, NITS 0.81). The institutions they cite most are IITs, while those that cite them most are private universities (VIT, Saveetha, LPU, SRM). *(Flows tab)*
 
 ## 3. Regional and International Collaboration (new)
 
-- **Most collaboration is with other regions:** 63% (MANIT), 56% (NITJ) and 72% (NITS) of joint papers with Indian partners [3].
-- **Yet each institute prefers its own region**, 2.2–10.7× more than the baseline set by the other two institutes, and the preference is fading: NIT Silchar fell from 35% to 17% between 2016–18 and 2022–25 [3].
+- **Most collaboration is with other regions:** 63% (MANIT), 56% (NITJ) and 72% (NITS) of their links with Indian partner institutions [3].
+- **Yet each institute prefers its own region**, 2.2–10.7× more than the baseline set by the other two institutes, and the preference is fading: NIT Silchar's own-region share fell from 35% to 17% of links with a known region between 2016–18 and 2022–25 [3].
 - **Nearby institutions drive it:** CSIR-NML in Jamshedpur, IIT Guwahati in the North-East, and IIIT Bhopal on MANIT's campus [6].
 - **The three NITs barely collaborate with each other:** 44 joint papers in total.
 - **This matches the literature:** distance reduces collaboration [7], and in India institutional strength outweighs distance [8]. We found no earlier state-level study for India.
