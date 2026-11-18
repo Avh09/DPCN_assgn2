@@ -163,3 +163,47 @@ def resolve_field(text):
     scored = process.extract(norm(text), {f: norm(f) for f in fields}, scorer=fuzz.token_set_ratio, limit=3)
     best = [(x[2], x[1]) for x in scored if x[1] >= 75]
     return {"candidates": [b for b, _ in best], "best": best[0][0] if best else None}
+
+
+# ---------------------------------------------------------------------------------------------- journals and conferences
+def norm_venue(s):
+    """'Chaos, Solitons & Fractals' and 'chaos solitons and fractals' normalise to the same string; years and editions are dropped."""
+    s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower().replace("&", " and ")
+    s = re.sub(r"\b(19|20)\d{2}\b|\b\d+(st|nd|rd|th)\b", " ", s)
+    s = re.sub(r"[^a-z0-9 ]", " ", s)
+    return " ".join(t for t in s.split() if t != "the")
+
+
+def _venue_index():
+    S = store()
+    if not hasattr(S, "_venue_norm"):
+        names = [v for v in S.papers.journal_name.dropna().unique() if str(v).strip()]
+        S._venue_norm = {v: norm_venue(v) for v in names}
+        by = {}
+        for v, n in S._venue_norm.items():
+            by.setdefault(n, []).append(v)
+        S._venue_by_norm = by
+    return S._venue_norm, S._venue_by_norm
+
+
+def find_venue_in_text(text):
+    """Longest recorded journal / conference name that appears inside a question (whole words), or None."""
+    _, by = _venue_index()
+    t = " " + norm_venue(text) + " "
+    hits = [n for n in by if len(n) >= 8 and f" {n} " in t]
+    return max(hits, key=len) if hits else None
+
+
+def resolve_venue(query):
+    """-> (recorded names that are this venue, close suggestions). Exact (normalised) match first, then whole-word containment, then fuzzy suggestions."""
+    names, by = _venue_index()
+    q = norm_venue(query)
+    if not q:
+        return [], []
+    if q in by:
+        return by[q], []
+    cont = [v for v, n in names.items() if f" {q} " in f" {n} "]
+    if cont:
+        return cont, []
+    sug = process.extract(q, list(by), scorer=fuzz.token_set_ratio, limit=5, score_cutoff=80)
+    return [], [by[n][0] for n, _, _ in sug]
