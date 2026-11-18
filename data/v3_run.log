@@ -1,0 +1,51 @@
+[new] train T 2016..2023 rows 841752 pos 582; test pairs 211356 pos 121
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+[   7.3 min] [new] val: LGB {'n': 200, 'lr': 0.03, 'leaves': 7, 'mcs': 30, 'spw': 10} AP 0.0215; LR C=0.03; GNN val-AP by epoch [(10, 0.0173), (20, 0.0234), (30, 0.013), (40, 0.0163), (50, 0.0168), (60, 0.0169)] -> 60
+[   7.3 min] validation done; scoring validation fold
+[   7.8 min]    training GNN (graph only) seed 0 on T<=2022
+[  10.0 min]    training GNN (graph only) seed 1 on T<=2022
+[  12.2 min]    training GNN (graph only) seed 2 on T<=2022
+[  15.0 min]    training GNN + pair features seed 0 on T<=2022
+[  17.4 min]    training GNN + pair features seed 1 on T<=2022
+[  19.9 min]    training GNN + pair features seed 2 on T<=2022
+[  22.4 min] final: training on all windows through 2023
+[  23.2 min]    training GNN (graph only) seed 0 on T<=2023
+[  25.9 min]    training GNN (graph only) seed 1 on T<=2023
+[  28.4 min]    training GNN (graph only) seed 2 on T<=2023
+[  30.9 min]    training GNN + pair features seed 0 on T<=2023
+[  34.0 min]    training GNN + pair features seed 1 on T<=2023
+[  36.7 min]    training GNN + pair features seed 2 on T<=2023
+  [new] v1 baseline: LR, v1 feats (single window) AP 0.0201 [0.0138, 0.035]  AUC 0.9386  P@100 0.04  R@500 0.14  acc 0.9990 F1 0.0352
+  [new] LR, v2 feats                       AP 0.0290 [0.0203, 0.0505]  AUC 0.9617  P@100 0.07  R@500 0.157  acc 0.9976 F1 0.0662
+  [new] LightGBM, v2 feats                 AP 0.0354 [0.0215, 0.0657]  AUC 0.9541  P@100 0.08  R@500 0.207  acc 0.9972 F1 0.0801
+  [new] GNN (graph only)                   AP 0.0108 [0.0078, 0.0165]  AUC 0.9251  P@100 0.0  R@500 0.074  acc 0.9975 F1 0.0294
+  [new] GNN + pair features                AP 0.0263 [0.0185, 0.0395]  AUC 0.9628  P@100 0.02  R@500 0.182  acc 0.9962 F1 0.0767
+  [new] ensemble LGB + LR                  AP 0.0379 [0.0248, 0.066]  AUC 0.9592  P@100 0.1  R@500 0.231  acc 0.9986 F1 0.0843
+  [new] ensemble LGB + GNN+pair            AP 0.0398 [0.0226, 0.0684]  AUC 0.9630  P@100 0.05  R@500 0.256  acc 0.9981 F1 0.0868
+  [new] ensemble LGB + LR + GNN+pair       AP 0.0452 [0.0263, 0.0793]  AUC 0.9643  P@100 0.06  R@500 0.24  acc 0.9986 F1 0.0904
+[repeat] train T 2016..2023 rows 3353 pos 886; test pairs 870 pos 178
+[  42.8 min] [repeat] val: LGB {'n': 200, 'lr': 0.03, 'leaves': 7, 'mcs': 30, 'spw': 1} AP 0.5694; LR C=0.03; GNN val-AP by epoch [(10, 0.3878), (20, 0.5036), (30, 0.5097), (40, 0.4765), (50, 0.4684), (60, 0.484)] -> 60
+[  42.8 min] validation done; scoring validation fold
+[  42.8 min]    training GNN (graph only) seed 0 on T<=2022
+[  44.8 min]    training GNN (graph only) seed 1 on T<=2022
+[  46.7 min]    training GNN (graph only) seed 2 on T<=2022
+[  48.8 min]    training GNN + pair features seed 0 on T<=2022
+[  51.3 min]    training GNN + pair features seed 1 on T<=2022
+[  54.1 min]    training GNN + pair features seed 2 on T<=2022
+[  56.5 min] final: training on all windows through 2023
+[  56.5 min]    training GNN (graph only) seed 0 on T<=2023
+[  58.9 min]    training GNN (graph only) seed 1 on T<=2023
+[  62.0 min]    training GNN (graph only) seed 2 on T<=2023
+[  64.3 min]    training GNN + pair features seed 0 on T<=2023
+[  67.1 min]    training GNN + pair features seed 1 on T<=2023
+[  69.7 min]    training GNN + pair features seed 2 on T<=2023
+  [repeat] v1 baseline: LR, v1 feats (single window) AP 0.5216 [0.4661, 0.6043]  AUC 0.8306  P@100 0.57  R@500 0.921  acc 0.7897 F1 0.5831
+  [repeat] LR, v2 feats                       AP 0.5998 [0.5385, 0.673]  AUC 0.8438  P@100 0.67  R@500 0.938  acc 0.8046 F1 0.5707
+  [repeat] LightGBM, v2 feats                 AP 0.6244 [0.5659, 0.6948]  AUC 0.8457  P@100 0.67  R@500 0.927  acc 0.8092 F1 0.5808
+  [repeat] GNN (graph only)                   AP 0.3988 [0.3541, 0.4722]  AUC 0.7256  P@100 0.51  R@500 0.826  acc 0.6919 F1 0.4440
+  [repeat] GNN + pair features                AP 0.5092 [0.4564, 0.5859]  AUC 0.8067  P@100 0.58  R@500 0.871  acc 0.7977 F1 0.5556
+  [repeat] ensemble LGB + LR                  AP 0.6253 [0.5652, 0.6986]  AUC 0.8505  P@100 0.66  R@500 0.938  acc 0.8023 F1 0.5657
+  [repeat] ensemble LGB + GNN+pair            AP 0.6008 [0.5477, 0.6703]  AUC 0.8363  P@100 0.64  R@500 0.944  acc 0.8023 F1 0.5657
+  [repeat] ensemble LGB + LR + GNN+pair       AP 0.6138 [0.5574, 0.6837]  AUC 0.8443  P@100 0.66  R@500 0.949  acc 0.8230 F1 0.5625
+written

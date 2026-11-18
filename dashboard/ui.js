@@ -29,6 +29,11 @@ const toggleSide = () => {};
 // ---------------------------------------------------------------- command palette
 const partners = D.loc ? [...new Set(D.loc.partners.map(r => r[1]))] : [];
 const pIdx = P.map((p, i) => [p[0].toLowerCase(), i]);
+const TV = A.T.venue, TT = A.T.type, TC = A.T.cites;
+const confKey = v => String(v || '').replace(/^(19|20)\d{2}\s+/, '').replace(/^\d+(st|nd|rd|th)\s+/i, '').replace(/\s+(19|20)\d{2}$/, '').trim();
+const vMap = new Map();   // journals by exact name, conferences by name without year / edition (same key the paper explorer filters on)
+P.forEach(p => { if (!p[TV]) return; const k = p[TT] === 1 ? confKey(p[TV]) : p[TV]; const o = vMap.get(k) || { name: k, conf: p[TT] === 1, n: 0, c: 0 }; o.n++; o.c += p[TC]; vMap.set(k, o); });
+const vIdx = [...vMap.values()].map(o => [o.name.toLowerCase(), o]);
 const fIdx = F.map((f, i) => [f.n.toLowerCase(), i, (f.d || '').toLowerCase()]);
 const actions = [
   ['Toggle light / dark theme', 'T', () => $('#themeBtn').click()],
@@ -52,6 +57,8 @@ function buildList(q) {
     if (fs.length) groups.push(['Faculty', fs.map(([, i]) => fItem(i))]);
     const ps = partners.map(n => [score(n.toLowerCase(), q), n]).filter(x => x[0] > 0).sort((a, b) => b[0] - a[0]).slice(0, 5);
     if (ps.length) groups.push(['Partner institutes', ps.map(([, n]) => ({ ic: '🏛', tx: n, sub: 'Indian partner', run: () => A.openPartner(n) }))]);
+    const vs = vIdx.map(([n, o]) => [score(n, q), o]).filter(x => x[0] > 0).sort((a, b) => b[0] - a[0] || b[1].n - a[1].n).slice(0, 6);
+    if (vs.length) groups.push(['Journals & conferences', vs.map(([, o]) => ({ ic: o.conf ? '🎤' : '📘', tx: o.name, sub: `${o.conf ? 'Conference' : 'Journal'} · ${o.n.toLocaleString()} papers`, run: () => A.explorer({ venue: o.name }) }))]);
     const pp = pIdx.filter(([t]) => t.includes(q)).map(([, i]) => i).sort((a, b) => P[b][4] - P[a][4]).slice(0, 7);
     if (pp.length) groups.push(['Papers', pp.map(i => ({ ic: '📄', tx: P[i][0], sub: `${P[i][1]} · ${P[i][4].toLocaleString()} cites`, run: () => A.openPaper(i) }))]);
   }

@@ -1,0 +1,819 @@
+{
+ "design": "Collaboration prediction v3: train on 2016-2024, test on 2025, with a GNN.\n\nProtocol (strictly temporal, one-year-ahead; papers are available through 2025 in full, 2026 is partial and unused):\n  snapshot T  = features from papers up to year T, label = pair first/also co-authors a paper in year T+1\n  train       T = 2016 .. 2023   (labels 2017..2024)           -> final test: T = 2024, label = 2025 co-authorship\n  validation  train T = 2016 .. 2022, validate on T = 2023 (label 2024); all hyper-parameters / epochs chosen here only\nModels: v1 logistic regression (baseline), LightGBM on v2 features, relational GNN (3 graphs: collaboration, co-author overlap,\ncontent kNN) with a pair decoder that also sees the hand-crafted pair features, and rank-average ensembles.",
+ "tasks": {
+  "new": {
+   "setup": {
+    "train_T": [
+     2016,
+     2023
+    ],
+    "test_T": 2024,
+    "test_outcome_year": 2025,
+    "gnn_epochs": 60,
+    "lgb": {
+     "n": 200,
+     "lr": 0.03,
+     "leaves": 7,
+     "mcs": 30,
+     "spw": 10
+    },
+    "lr_C": 0.03
+   },
+   "test": {
+    "v1 baseline: LR, v1 feats (single window)": {
+     "positives": 121,
+     "pairs": 211356,
+     "base_rate": 0.00057,
+     "average_precision": 0.0201,
+     "roc_auc": 0.9386,
+     "precision@50": 0.06,
+     "recall@50": 0.025,
+     "precision@100": 0.04,
+     "recall@100": 0.033,
+     "precision@500": 0.034,
+     "recall@500": 0.14,
+     "ci95_ap": [
+      0.0138,
+      0.035
+     ],
+     "ci95_auc": [
+      0.9113,
+      0.9579
+     ],
+     "operating_point": {
+      "q_from_validation": 0.0005,
+      "flagged_fraction": 0.0005,
+      "flagged": 106,
+      "tp": 4,
+      "fp": 102,
+      "fn": 117,
+      "tn": 211133,
+      "accuracy": 0.99896,
+      "precision": 0.0377,
+      "recall": 0.0331,
+      "f1": 0.0352,
+      "mcc": 0.0348
+     }
+    },
+    "LR, v2 feats": {
+     "positives": 121,
+     "pairs": 211356,
+     "base_rate": 0.00057,
+     "average_precision": 0.029,
+     "roc_auc": 0.9617,
+     "precision@50": 0.04,
+     "recall@50": 0.017,
+     "precision@100": 0.07,
+     "recall@100": 0.058,
+     "precision@500": 0.038,
+     "recall@500": 0.157,
+     "ci95_ap": [
+      0.0203,
+      0.0505
+     ],
+     "ci95_auc": [
+      0.9483,
+      0.9732
+     ],
+     "operating_point": {
+      "q_from_validation": 0.002,
+      "flagged_fraction": 0.002,
+      "flagged": 423,
+      "tp": 18,
+      "fp": 405,
+      "fn": 103,
+      "tn": 210830,
+      "accuracy": 0.9976,
+      "precision": 0.0426,
+      "recall": 0.1488,
+      "f1": 0.0662,
+      "mcc": 0.0786
+     }
+    },
+    "LightGBM, v2 feats": {
+     "positives": 121,
+     "pairs": 211356,
+     "base_rate": 0.00057,
+     "average_precision": 0.0354,
+     "roc_auc": 0.9541,
+     "precision@50": 0.14,
+     "recall@50": 0.058,
+     "precision@100": 0.08,
+     "recall@100": 0.066,
+     "precision@500": 0.05,
+     "recall@500": 0.207,
+     "ci95_ap": [
+      0.0215,
+      0.0657
+     ],
+     "ci95_auc": [
+      0.9349,
+      0.9672
+     ],
+     "operating_point": {
+      "q_from_validation": 0.0025,
+      "flagged_fraction": 0.0025,
+      "flagged": 528,
+      "tp": 26,
+      "fp": 502,
+      "fn": 95,
+      "tn": 210733,
+      "accuracy": 0.99718,
+      "precision": 0.0492,
+      "recall": 0.2149,
+      "f1": 0.0801,
+      "mcc": 0.1018
+     }
+    },
+    "GNN (graph only)": {
+     "positives": 121,
+     "pairs": 211356,
+     "base_rate": 0.00057,
+     "average_precision": 0.0108,
+     "roc_auc": 0.9251,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.0,
+     "recall@100": 0.0,
+     "precision@500": 0.018,
+     "recall@500": 0.074,
+     "ci95_ap": [
+      0.0078,
+      0.0165
+     ],
+     "ci95_auc": [
+      0.8869,
+      0.9503
+     ],
+     "operating_point": {
+      "q_from_validation": 0.002,
+      "flagged_fraction": 0.002,
+      "flagged": 423,
+      "tp": 8,
+      "fp": 415,
+      "fn": 113,
+      "tn": 210820,
+      "accuracy": 0.9975,
+      "precision": 0.0189,
+      "recall": 0.0661,
+      "f1": 0.0294,
+      "mcc": 0.0343
+     }
+    },
+    "GNN + pair features": {
+     "positives": 121,
+     "pairs": 211356,
+     "base_rate": 0.00057,
+     "average_precision": 0.0263,
+     "roc_auc": 0.9628,
+     "precision@50": 0.02,
+     "recall@50": 0.008,
+     "precision@100": 0.02,
+     "recall@100": 0.017,
+     "precision@500": 0.044,
+     "recall@500": 0.182,
+     "ci95_ap": [
+      0.0185,
+      0.0395
+     ],
+     "ci95_auc": [
+      0.9477,
+      0.9733
+     ],
+     "operating_point": {
+      "q_from_validation": 0.0035,
+      "flagged_fraction": 0.0035,
+      "flagged": 740,
+      "tp": 33,
+      "fp": 707,
+      "fn": 88,
+      "tn": 210528,
+      "accuracy": 0.99624,
+      "precision": 0.0446,
+      "recall": 0.2727,
+      "f1": 0.0767,
+      "mcc": 0.1091
+     }
+    },
+    "ensemble LGB + LR": {
+     "positives": 121,
+     "pairs": 211356,
+     "base_rate": 0.00057,
+     "average_precision": 0.0379,
+     "roc_auc": 0.9592,
+     "precision@50": 0.1,
+     "recall@50": 0.041,
+     "precision@100": 0.1,
+     "recall@100": 0.083,
+     "precision@500": 0.056,
+     "recall@500": 0.231,
+     "ci95_ap": [
+      0.0248,
+      0.066
+     ],
+     "ci95_auc": [
+      0.9425,
+      0.9709
+     ],
+     "operating_point": {
+      "q_from_validation": 0.001,
+      "flagged_fraction": 0.001,
+      "flagged": 211,
+      "tp": 14,
+      "fp": 197,
+      "fn": 107,
+      "tn": 211038,
+      "accuracy": 0.99856,
+      "precision": 0.0664,
+      "recall": 0.1157,
+      "f1": 0.0843,
+      "mcc": 0.0869
+     }
+    },
+    "ensemble LGB + GNN+pair": {
+     "positives": 121,
+     "pairs": 211356,
+     "base_rate": 0.00057,
+     "average_precision": 0.0398,
+     "roc_auc": 0.963,
+     "precision@50": 0.06,
+     "recall@50": 0.025,
+     "precision@100": 0.05,
+     "recall@100": 0.041,
+     "precision@500": 0.062,
+     "recall@500": 0.256,
+     "ci95_ap": [
+      0.0226,
+      0.0684
+     ],
+     "ci95_auc": [
+      0.9511,
+      0.9728
+     ],
+     "operating_point": {
+      "q_from_validation": 0.0015,
+      "flagged_fraction": 0.0015,
+      "flagged": 317,
+      "tp": 19,
+      "fp": 298,
+      "fn": 102,
+      "tn": 210937,
+      "accuracy": 0.99811,
+      "precision": 0.0599,
+      "recall": 0.157,
+      "f1": 0.0868,
+      "mcc": 0.0962
+     }
+    },
+    "ensemble LGB + LR + GNN+pair": {
+     "positives": 121,
+     "pairs": 211356,
+     "base_rate": 0.00057,
+     "average_precision": 0.0452,
+     "roc_auc": 0.9643,
+     "precision@50": 0.08,
+     "recall@50": 0.033,
+     "precision@100": 0.06,
+     "recall@100": 0.05,
+     "precision@500": 0.058,
+     "recall@500": 0.24,
+     "ci95_ap": [
+      0.0263,
+      0.0793
+     ],
+     "ci95_auc": [
+      0.9522,
+      0.9734
+     ],
+     "operating_point": {
+      "q_from_validation": 0.001,
+      "flagged_fraction": 0.001,
+      "flagged": 211,
+      "tp": 15,
+      "fp": 196,
+      "fn": 106,
+      "tn": 211039,
+      "accuracy": 0.99857,
+      "precision": 0.0711,
+      "recall": 0.124,
+      "f1": 0.0904,
+      "mcc": 0.0932
+     }
+    }
+   },
+   "validation": {
+    "v1 baseline: LR, v1 feats (single window)": {
+     "positives": 78,
+     "pairs": 165397,
+     "base_rate": 0.00047,
+     "average_precision": 0.0113,
+     "roc_auc": 0.9364,
+     "precision@50": 0.02,
+     "recall@50": 0.013,
+     "precision@100": 0.03,
+     "recall@100": 0.038,
+     "precision@500": 0.01,
+     "recall@500": 0.064
+    },
+    "LR, v2 feats": {
+     "positives": 78,
+     "pairs": 165397,
+     "base_rate": 0.00047,
+     "average_precision": 0.0207,
+     "roc_auc": 0.959,
+     "precision@50": 0.04,
+     "recall@50": 0.026,
+     "precision@100": 0.02,
+     "recall@100": 0.026,
+     "precision@500": 0.028,
+     "recall@500": 0.179
+    },
+    "LightGBM, v2 feats": {
+     "positives": 78,
+     "pairs": 165397,
+     "base_rate": 0.00047,
+     "average_precision": 0.0215,
+     "roc_auc": 0.9606,
+     "precision@50": 0.02,
+     "recall@50": 0.013,
+     "precision@100": 0.02,
+     "recall@100": 0.026,
+     "precision@500": 0.032,
+     "recall@500": 0.205
+    },
+    "GNN (graph only)": {
+     "positives": 78,
+     "pairs": 165397,
+     "base_rate": 0.00047,
+     "average_precision": 0.012,
+     "roc_auc": 0.8655,
+     "precision@50": 0.04,
+     "recall@50": 0.026,
+     "precision@100": 0.02,
+     "recall@100": 0.026,
+     "precision@500": 0.018,
+     "recall@500": 0.115
+    },
+    "GNN + pair features": {
+     "positives": 78,
+     "pairs": 165397,
+     "base_rate": 0.00047,
+     "average_precision": 0.0173,
+     "roc_auc": 0.9123,
+     "precision@50": 0.0,
+     "recall@50": 0.0,
+     "precision@100": 0.03,
+     "recall@100": 0.038,
+     "precision@500": 0.024,
+     "recall@500": 0.154
+    },
+    "ensemble LGB + LR": {
+     "positives": 78,
+     "pairs": 165397,
+     "base_rate": 0.00047,
+     "average_precision": 0.0227,
+     "roc_auc": 0.9612,
+     "precision@50": 0.06,
+     "recall@50": 0.038,
+     "precision@100": 0.06,
+     "recall@100": 0.077,
+     "precision@500": 0.03,
+     "recall@500": 0.192
+    },
+    "ensemble LGB + GNN+pair": {
+     "positives": 78,
+     "pairs": 165397,
+     "base_rate": 0.00047,
+     "average_precision": 0.0258,
+     "roc_auc": 0.941,
+     "precision@50": 0.04,
+     "recall@50": 0.026,
+     "precision@100": 0.04,
+     "recall@100": 0.051,
+     "precision@500": 0.034,
+     "recall@500": 0.218
+    },
+    "ensemble LGB + LR + GNN+pair": {
+     "positives": 78,
+     "pairs": 165397,
+     "base_rate": 0.00047,
+     "average_precision": 0.0246,
+     "roc_auc": 0.9485,
+     "precision@50": 0.08,
+     "recall@50": 0.051,
+     "precision@100": 0.06,
+     "recall@100": 0.077,
+     "precision@500": 0.03,
+     "recall@500": 0.192
+    }
+   }
+  },
+  "repeat": {
+   "setup": {
+    "train_T": [
+     2016,
+     2023
+    ],
+    "test_T": 2024,
+    "test_outcome_year": 2025,
+    "gnn_epochs": 60,
+    "lgb": {
+     "n": 200,
+     "lr": 0.03,
+     "leaves": 7,
+     "mcs": 30,
+     "spw": 1
+    },
+    "lr_C": 0.03
+   },
+   "test": {
+    "v1 baseline: LR, v1 feats (single window)": {
+     "positives": 178,
+     "pairs": 870,
+     "base_rate": 0.2046,
+     "average_precision": 0.5216,
+     "roc_auc": 0.8306,
+     "precision@50": 0.56,
+     "recall@50": 0.157,
+     "precision@100": 0.57,
+     "recall@100": 0.32,
+     "precision@500": 0.328,
+     "recall@500": 0.921,
+     "ci95_ap": [
+      0.4661,
+      0.6043
+     ],
+     "ci95_auc": [
+      0.8023,
+      0.8657
+     ],
+     "operating_point": {
+      "q_from_validation": 0.3,
+      "flagged_fraction": 0.3,
+      "flagged": 261,
+      "tp": 128,
+      "fp": 133,
+      "fn": 50,
+      "tn": 559,
+      "accuracy": 0.78966,
+      "precision": 0.4904,
+      "recall": 0.7191,
+      "f1": 0.5831,
+      "mcc": 0.4638
+     }
+    },
+    "LR, v2 feats": {
+     "positives": 178,
+     "pairs": 870,
+     "base_rate": 0.2046,
+     "average_precision": 0.5998,
+     "roc_auc": 0.8438,
+     "precision@50": 0.72,
+     "recall@50": 0.202,
+     "precision@100": 0.67,
+     "recall@100": 0.376,
+     "precision@500": 0.334,
+     "recall@500": 0.938,
+     "ci95_ap": [
+      0.5385,
+      0.673
+     ],
+     "ci95_auc": [
+      0.8102,
+      0.8756
+     ],
+     "operating_point": {
+      "q_from_validation": 0.25,
+      "flagged_fraction": 0.25,
+      "flagged": 218,
+      "tp": 113,
+      "fp": 105,
+      "fn": 65,
+      "tn": 587,
+      "accuracy": 0.8046,
+      "precision": 0.5183,
+      "recall": 0.6348,
+      "f1": 0.5707,
+      "mcc": 0.4497
+     }
+    },
+    "LightGBM, v2 feats": {
+     "positives": 178,
+     "pairs": 870,
+     "base_rate": 0.2046,
+     "average_precision": 0.6244,
+     "roc_auc": 0.8457,
+     "precision@50": 0.82,
+     "recall@50": 0.23,
+     "precision@100": 0.67,
+     "recall@100": 0.376,
+     "precision@500": 0.33,
+     "recall@500": 0.927,
+     "ci95_ap": [
+      0.5659,
+      0.6948
+     ],
+     "ci95_auc": [
+      0.8125,
+      0.8761
+     ],
+     "operating_point": {
+      "q_from_validation": 0.25,
+      "flagged_fraction": 0.25,
+      "flagged": 218,
+      "tp": 115,
+      "fp": 103,
+      "fn": 63,
+      "tn": 589,
+      "accuracy": 0.8092,
+      "precision": 0.5275,
+      "recall": 0.6461,
+      "f1": 0.5808,
+      "mcc": 0.4629
+     }
+    },
+    "GNN (graph only)": {
+     "positives": 178,
+     "pairs": 870,
+     "base_rate": 0.2046,
+     "average_precision": 0.3988,
+     "roc_auc": 0.7256,
+     "precision@50": 0.56,
+     "recall@50": 0.157,
+     "precision@100": 0.51,
+     "recall@100": 0.287,
+     "precision@500": 0.294,
+     "recall@500": 0.826,
+     "ci95_ap": [
+      0.3541,
+      0.4722
+     ],
+     "ci95_auc": [
+      0.686,
+      0.7681
+     ],
+     "operating_point": {
+      "q_from_validation": 0.35,
+      "flagged_fraction": 0.35,
+      "flagged": 304,
+      "tp": 107,
+      "fp": 197,
+      "fn": 71,
+      "tn": 495,
+      "accuracy": 0.69195,
+      "precision": 0.352,
+      "recall": 0.6011,
+      "f1": 0.444,
+      "mcc": 0.2677
+     }
+    },
+    "GNN + pair features": {
+     "positives": 178,
+     "pairs": 870,
+     "base_rate": 0.2046,
+     "average_precision": 0.5092,
+     "roc_auc": 0.8067,
+     "precision@50": 0.66,
+     "recall@50": 0.185,
+     "precision@100": 0.58,
+     "recall@100": 0.326,
+     "precision@500": 0.31,
+     "recall@500": 0.871,
+     "ci95_ap": [
+      0.4564,
+      0.5859
+     ],
+     "ci95_auc": [
+      0.7657,
+      0.8412
+     ],
+     "operating_point": {
+      "q_from_validation": 0.25,
+      "flagged_fraction": 0.25,
+      "flagged": 218,
+      "tp": 110,
+      "fp": 108,
+      "fn": 68,
+      "tn": 584,
+      "accuracy": 0.7977,
+      "precision": 0.5046,
+      "recall": 0.618,
+      "f1": 0.5556,
+      "mcc": 0.43
+     }
+    },
+    "ensemble LGB + LR": {
+     "positives": 178,
+     "pairs": 870,
+     "base_rate": 0.2046,
+     "average_precision": 0.6253,
+     "roc_auc": 0.8505,
+     "precision@50": 0.82,
+     "recall@50": 0.23,
+     "precision@100": 0.66,
+     "recall@100": 0.371,
+     "precision@500": 0.334,
+     "recall@500": 0.938,
+     "ci95_ap": [
+      0.5652,
+      0.6986
+     ],
+     "ci95_auc": [
+      0.8185,
+      0.8824
+     ],
+     "operating_point": {
+      "q_from_validation": 0.25,
+      "flagged_fraction": 0.25,
+      "flagged": 218,
+      "tp": 112,
+      "fp": 106,
+      "fn": 66,
+      "tn": 586,
+      "accuracy": 0.8023,
+      "precision": 0.5138,
+      "recall": 0.6292,
+      "f1": 0.5657,
+      "mcc": 0.4431
+     }
+    },
+    "ensemble LGB + GNN+pair": {
+     "positives": 178,
+     "pairs": 870,
+     "base_rate": 0.2046,
+     "average_precision": 0.6008,
+     "roc_auc": 0.8363,
+     "precision@50": 0.76,
+     "recall@50": 0.213,
+     "precision@100": 0.64,
+     "recall@100": 0.36,
+     "precision@500": 0.336,
+     "recall@500": 0.944,
+     "ci95_ap": [
+      0.5477,
+      0.6703
+     ],
+     "ci95_auc": [
+      0.801,
+      0.8664
+     ],
+     "operating_point": {
+      "q_from_validation": 0.25,
+      "flagged_fraction": 0.25,
+      "flagged": 218,
+      "tp": 112,
+      "fp": 106,
+      "fn": 66,
+      "tn": 586,
+      "accuracy": 0.8023,
+      "precision": 0.5138,
+      "recall": 0.6292,
+      "f1": 0.5657,
+      "mcc": 0.4431
+     }
+    },
+    "ensemble LGB + LR + GNN+pair": {
+     "positives": 178,
+     "pairs": 870,
+     "base_rate": 0.2046,
+     "average_precision": 0.6138,
+     "roc_auc": 0.8443,
+     "precision@50": 0.82,
+     "recall@50": 0.23,
+     "precision@100": 0.66,
+     "recall@100": 0.371,
+     "precision@500": 0.338,
+     "recall@500": 0.949,
+     "ci95_ap": [
+      0.5574,
+      0.6837
+     ],
+     "ci95_auc": [
+      0.8094,
+      0.8736
+     ],
+     "operating_point": {
+      "q_from_validation": 0.2,
+      "flagged_fraction": 0.2,
+      "flagged": 174,
+      "tp": 99,
+      "fp": 75,
+      "fn": 79,
+      "tn": 617,
+      "accuracy": 0.82299,
+      "precision": 0.569,
+      "recall": 0.5562,
+      "f1": 0.5625,
+      "mcc": 0.4516
+     }
+    }
+   },
+   "validation": {
+    "v1 baseline: LR, v1 feats (single window)": {
+     "positives": 173,
+     "pairs": 779,
+     "base_rate": 0.22208,
+     "average_precision": 0.5628,
+     "roc_auc": 0.8041,
+     "precision@50": 0.66,
+     "recall@50": 0.191,
+     "precision@100": 0.62,
+     "recall@100": 0.358,
+     "precision@500": 0.312,
+     "recall@500": 0.902
+    },
+    "LR, v2 feats": {
+     "positives": 173,
+     "pairs": 779,
+     "base_rate": 0.22208,
+     "average_precision": 0.5557,
+     "roc_auc": 0.8037,
+     "precision@50": 0.66,
+     "recall@50": 0.191,
+     "precision@100": 0.59,
+     "recall@100": 0.341,
+     "precision@500": 0.312,
+     "recall@500": 0.902
+    },
+    "LightGBM, v2 feats": {
+     "positives": 173,
+     "pairs": 779,
+     "base_rate": 0.22208,
+     "average_precision": 0.5694,
+     "roc_auc": 0.8129,
+     "precision@50": 0.68,
+     "recall@50": 0.197,
+     "precision@100": 0.62,
+     "recall@100": 0.358,
+     "precision@500": 0.32,
+     "recall@500": 0.925
+    },
+    "GNN (graph only)": {
+     "positives": 173,
+     "pairs": 779,
+     "base_rate": 0.22208,
+     "average_precision": 0.3624,
+     "roc_auc": 0.6614,
+     "precision@50": 0.46,
+     "recall@50": 0.133,
+     "precision@100": 0.45,
+     "recall@100": 0.26,
+     "precision@500": 0.272,
+     "recall@500": 0.786
+    },
+    "GNN + pair features": {
+     "positives": 173,
+     "pairs": 779,
+     "base_rate": 0.22208,
+     "average_precision": 0.4849,
+     "roc_auc": 0.7635,
+     "precision@50": 0.6,
+     "recall@50": 0.173,
+     "precision@100": 0.58,
+     "recall@100": 0.335,
+     "precision@500": 0.3,
+     "recall@500": 0.867
+    },
+    "ensemble LGB + LR": {
+     "positives": 173,
+     "pairs": 779,
+     "base_rate": 0.22208,
+     "average_precision": 0.5644,
+     "roc_auc": 0.8124,
+     "precision@50": 0.7,
+     "recall@50": 0.202,
+     "precision@100": 0.6,
+     "recall@100": 0.347,
+     "precision@500": 0.318,
+     "recall@500": 0.919
+    },
+    "ensemble LGB + GNN+pair": {
+     "positives": 173,
+     "pairs": 779,
+     "base_rate": 0.22208,
+     "average_precision": 0.5361,
+     "roc_auc": 0.7976,
+     "precision@50": 0.68,
+     "recall@50": 0.197,
+     "precision@100": 0.59,
+     "recall@100": 0.341,
+     "precision@500": 0.316,
+     "recall@500": 0.913
+    },
+    "ensemble LGB + LR + GNN+pair": {
+     "positives": 173,
+     "pairs": 779,
+     "base_rate": 0.22208,
+     "average_precision": 0.5434,
+     "roc_auc": 0.8034,
+     "precision@50": 0.66,
+     "recall@50": 0.191,
+     "precision@100": 0.59,
+     "recall@100": 0.341,
+     "precision@500": 0.314,
+     "recall@500": 0.908
+    }
+   }
+  }
+ }
+}
