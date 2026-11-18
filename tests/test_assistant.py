@@ -96,12 +96,26 @@ ROUTING = [
     ("What are the most cited papers of NIT Silchar in 2023?", "top_papers"),
     ("Which faculty collaborate with National Institute of Technology Raipur?", "partner_institutes"),
     ("Which faculty connect the mechanical and computer science departments?", "faculty_pattern"),
+    # added: journal names (misspelled, written differently, ambiguous)
+    ("Which professors publish in Chaos Solutionss and Factal?", "journal_papers"),
+    ("Who publishes in Multimedia Tools and Aplications?", "journal_papers"),
+    ("How many papers in Materials Today Procedings?", "journal_papers"),
+    ("How many papers are in chaos, solitons & fractals?", "journal_papers"),
+    ("Who publishes in THE SCIENCE OF THE TOTAL ENVIRONMENT?", "journal_papers"),
+    ("Top 5 faculty in journal Chaos Solitons and Fractals", "journal_papers"),
+    ("Which NITS faculty publish in Fuel since 2020?", "journal_papers"),
+    ("Who publishes in the Fuel journal?", "journal_papers"),
+    ("papers in IEEE Acess at MANIT", "journal_papers"),
+    ("Who publishes in Materials Today?", "clarify"),
 ]
 
 
 CORRECT_SPELLING = ["Which faculty have high betweenness but relatively low degree?", "Which topics grew fastest since 2020?",
                     "Who works on solar energy at NIT Silchar?", "Show the strongest collaborating pairs across institutes",
-                    "Which partner countries and Indian states raise impact the most?", "Has collaboration increased since 2020?"]
+                    "Which partner countries and Indian states raise impact the most?", "Has collaboration increased since 2020?",
+                    "Who publishes in Chaos Solitons & Fractals?", "Papers on memristor based chaotic oscillators",
+                    "Which faculty work on fractional calculus and solitons?", "What solutions were proposed for traffic?",
+                    "Who publishes in Multimedia Tools and Applications?", "What is the Lyapunov exponent of a hyperchaotic system?"]
 
 
 @pytest.mark.parametrize("question", CORRECT_SPELLING)
@@ -157,7 +171,7 @@ def test_retraction_numbers_match_pipeline(bot):
     r = bot.ask("How many papers were retracted?", {"history": [], "ctx": {}})
     d = r["results"][0]["data"]
     assert d["papers"] == rt["papers_removed"] and d["citations"] == rt["citations_of_removed_papers"]
-    assert any(name == "rows" for name, _ in r["tables"])          # shown as a table in the chat
+    assert any(name == "Retracted papers" for name, _ in r["tables"])          # shown as a table in the chat
 
 
 def test_sudhakar_profile_carries_affiliation_check(bot):
@@ -201,7 +215,7 @@ def test_recommendations_explain_why(bot):
     assert all(s["why"] for s in r["results"][0]["data"]["suggestions"]) and "Why:" in r["text"]
 
 
-FOLLOW_UP_SOURCES = ["Tell me about Biplab Das", "Can Rajesh Purohit (MANIT) collaborate with Samuel Lalthazuala Rokhum?", "Suggest 3 collaborators for Biplab Das",
+FOLLOW_UP_SOURCES = ["Who publishes in Chaos Solitons & Fractals?", "Tell me about Biplab Das", "Can Rajesh Purohit (MANIT) collaborate with Samuel Lalthazuala Rokhum?", "Suggest 3 collaborators for Biplab Das",
                      "Who are the top 5 most cited faculty at NIT Silchar?", "Compare MANIT and NIT Silchar", "Do the institutes collaborate mostly within their own region?",
                      "Which department has the highest median h-index?", "How many papers were retracted?", "Tell me about Rabul Hussain Laskar"]
 
@@ -251,3 +265,72 @@ def test_general_question_is_not_narrowed_by_earlier_context(bot):
     assert r["results"][0]["data"]["scope"] == "the three institutes" and r["results"][0]["data"]["papers"] == 33
     r = bot.ask("Who are the top 5 most cited faculty?", state)
     assert r["tool_calls"][0]["args"].get("institute") is None
+
+
+# ---------------------------------------------------------------- journals
+JOURNAL_NAMES = [("Chaos Solutionss and Factal", "Chaos Solitons & Fractals"), ("chaos, solitons & fractals", "Chaos Solitons & Fractals"),
+                 ("CHAOS SOLITONS AND FRACTALS", "Chaos Solitons & Fractals"), ("Multimedia Tools and Aplications", "Multimedia Tools and Applications"),
+                 ("Materials Today Procedings", "Materials Today Proceedings"), ("Science of the Total Environment", "The Science of The Total Environment"),
+                 ("IEEE Acess", "IEEE Access"), ("Fuel", "Fuel")]
+
+
+@pytest.mark.parametrize("written,stored", JOURNAL_NAMES)
+def test_journal_names_match_forgivingly(written, stored):
+    from assistant.tools import resolve_journal
+    assert resolve_journal(written)["match"] == stored
+
+
+@pytest.mark.parametrize("journal", ["Chaos Solitons & Fractals", "Multimedia Tools and Applications", "Materials Today Proceedings", "IEEE Access"])
+def test_journal_counts_match_pipeline(journal):
+    import pandas as pd
+    from assistant.tools import run_tool
+    g = pd.read_csv(ROOT / "data" / "out" / "group15_data.csv", dtype=str, keep_default_na=False)
+    g = g[(g.is_faculty.str.lower() == "true") & (g.journal_name == journal)]
+    d = run_tool("journal_papers", {"journal": journal})["data"]
+    assert d["papers"] == g.openalex_work_id.nunique()
+    assert d["citations"] == pd.to_numeric(g.drop_duplicates("openalex_work_id").citations).sum()
+    short = {"MANIT Bhopal": "MANIT", "NIT Jamshedpur": "NITJ", "NIT Silchar": "NITS"}
+    assert d["by_institute"] == {short[i]: int(g[g.institution == i].openalex_work_id.nunique()) for i in short}
+
+
+def test_original_journal_question_is_answered_from_the_journal(bot):
+    r = bot.ask("Which professors publish in Chaos Solutionss and Factal?", {"history": [], "ctx": {}})
+    d = r["results"][0]["data"]
+    assert r["tool_calls"][0]["tool"] == "journal_papers" and d["journal"] == "Chaos Solitons & Fractals" and d["papers"] == 27
+    assert {x["name"] for x in d["rows"][:2]} == {"Binoy Krishna Roy", "Sunil Kumar"}
+    assert "Read 'Chaos Solutionss and Factal' as 'Chaos Solitons & Fractals'" in r["text"] and "'solutions'" not in r["text"]
+
+
+def test_ambiguous_journal_asks_which_one(bot):
+    r = bot.ask("Who publishes in Materials Today?", {"history": [], "ctx": {}})
+    assert not r["tool_calls"] and r["needs_choice"]["entity"] == "journal"
+    assert {"Materials Today Proceedings", "Materials Today Communications"} <= set(r["needs_choice"]["candidates"])
+
+
+def test_missing_journal_is_not_found_and_nothing_is_invented(bot):
+    r = bot.ask("Who publishes in Journal of Imaginary Studies?", {"history": [], "ctx": {}})
+    res = r["results"][0]
+    assert res["tool"] == "journal_papers" and not res["ok"] and res["data"] == {}
+    assert "No journal or conference matching 'Journal of Imaginary Studies'" in r["text"]
+
+
+@pytest.mark.parametrize("question,wrong,right", [("Chaos Solutionss and Factal papers", "Solutionss", "solitons"),
+                                                  ("What is the lyapanov exponent of a chaotic system?", "lyapanov", "lyapunov"),
+                                                  ("Who works on memristr circuits?", "memristr", "memristor"),
+                                                  ("Which solutionss were proposed for traffic?", "solutionss", "solutions")])
+def test_spelling_prefers_technical_terms_only_in_technical_questions(question, wrong, right):
+    from assistant.router import spellfix
+    assert (wrong, right) in spellfix(question)[1]
+
+
+def test_papers_of_faculty_who_moved_are_kept():
+    """Saikat Ranjan Maity moved from NIT Silchar to NIT Jamshedpur; his NIT Silchar papers belong to his current record."""
+    import pandas as pd
+    from assistant.data import store
+    g = pd.read_csv(ROOT / "data" / "out" / "group15_data.csv", dtype=str, keep_default_na=False)
+    g = g[(g.is_faculty.str.lower() == "true") & (g.faculty_name == "Saikat Ranjan Maity")]
+    fp = store().fac_papers
+    mine = fp[fp.id == "NIT Jamshedpur|Saikat Ranjan Maity"]
+    assert mine.openalex_work_id.nunique() == g.openalex_work_id.nunique()
+    assert store().fac_papers.openalex_work_id.nunique() == pd.read_csv(ROOT / "data" / "out" / "group15_data.csv", dtype=str, keep_default_na=False
+                                                                        ).query("is_faculty.str.lower() == 'true'", engine="python").openalex_work_id.nunique()

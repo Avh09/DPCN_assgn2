@@ -49,8 +49,13 @@ class Store:
     def fac_papers(self):
         m = pd.read_csv(OUT / "group15_data.csv", dtype=str, keep_default_na=False,
                         usecols=["openalex_work_id", "institution", "faculty_name", "department", "year", "title", "type", "journal_name", "doi", "citations", "quartile", "field"])
-        m["id"] = [fid(i, n) for i, n in zip(m.institution, m.faculty_name)]
-        m = m[m.id.isin(self.faculty.index)]            # papers stay with the person's current record
+        import sys
+        sys.path.insert(0, str(ROOT))
+        from movers import aliases
+        alias = aliases()      # (earlier institute, name) -> (current institute, name) for the few people who moved between the three
+        # a mover's earlier papers are attached to their current record; 'institution' stays the institute printed on the paper
+        m["id"] = [fid(*alias.get((i, n), (i, n))) for i, n in zip(m.institution, m.faculty_name)]
+        m = m[m.id.isin(self.faculty.index)]
         m["year"] = m.year.astype(int)
         m["citations"] = pd.to_numeric(m.citations, errors="coerce").fillna(0).astype(int)
         return m.drop_duplicates(["openalex_work_id", "id"])

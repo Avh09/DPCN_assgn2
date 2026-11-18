@@ -35,9 +35,22 @@ class Assistant:
                 refers_back = bool(re.search(r"\b(they|them|their|theirs|both|he|she|his|her|him|this person|that person|those two|these two|"
                                              r"this paper|that paper|this institute|that institute|the same)\b", question.lower()))
                 ctx_text = self._ctx_text(plan["ctx"]) if refers_back else ""
+                # a journal the router has already matched against the data is handed over, so the model cannot split or re-spell it
+                jcall = next((a for t_, a in plan["calls"] if t_ == "journal_papers"), None)
+                if jcall:
+                    ctx_text = (ctx_text + "; " if ctx_text else "") + (f"the question names ONE journal, matched in the data as '{jcall['journal']}': "
+                                                                         f"call journal_papers with journal='{jcall['journal']}'")
                 text, results, calls = llm.ask(question, hist if refers_back else hist[-2:], ctx_text)
                 if text.startswith(llm.INCOMPLETE) and plan["calls"]:
                     raise RuntimeError("the model did not finish within the allowed tool calls")
+                if jcall:
+                    from .tools import resolve_journal
+                    known = resolve_journal(jcall["journal"])["match"]
+                    looked_up = [r for r in results if r.get("tool") == "journal_papers"]
+                    if known and not any(r.get("ok") and r["data"].get("journal") == known for r in looked_up):
+                        raise RuntimeError(f"the model did not look up the journal {known}")
+                    if not known and not looked_up:
+                        raise RuntimeError("the model did not check the journal name against the data")
                 if plan.get("fixes"):
                     text = "*Read " + ", ".join(f"'{a}' as '{b}'" for a, b in plan["fixes"]) + ".*\n\n" + text
                 nc = next((r["needs_choice"] for r in results if r.get("needs_choice")), None)
@@ -48,7 +61,7 @@ class Assistant:
                 hist += [{"role": "user", "content": question}, {"role": "assistant", "content": text}]
                 return resp
             except Exception as e:                  # API failure or unfinished analysis: fall back to the deterministic answers, and say so
-                why = "it did not finish the analysis" if isinstance(e, RuntimeError) else f"it is unavailable ({type(e).__name__})"
+                why = str(e) if isinstance(e, RuntimeError) else f"it is unavailable ({type(e).__name__})"
                 note = f"(The language model could not answer this one: {why}. Showing the built-in analysis instead.)\n\n"
         else:
             note = ""
@@ -103,6 +116,8 @@ class Assistant:
         elif t == "department_stats" and d.get("rows"):
             x = d["rows"][0]
             out = [f"Who are the top faculty in {x['department']} at {x['institution']}?"]
+        elif t == "journal_papers" and d.get("rows"):
+            out = [f"Tell me about {d['rows'][0]['name']}", f"Suggest collaborators for {d['rows'][0]['name']}"]
         elif t == "retracted_papers" and d.get("rows"):
             names = [n for row in d["rows"] for n in row["faculty"].split("; ") if n]
             if names:
@@ -129,7 +144,9 @@ class Assistant:
             return {"text": text, "figures": [], "tables": [], "evidence": [], "tool_calls": [], "results": [], "needs_choice": None,
                     "grounding": {"ungrounded": [], "checked": 0}, "mode": "rules"}
         lines =[f"- {x['name']} ({x['institution']}, {x['department']}; {x['papers']} papers, h-index {x['h_index']})" for x in c["candidates"]] if c["entity"] == "faculty" else [f"- {x}" for x in c["candidates"]]
-        text = f"**'{c['query']}' matches more than one {c['entity']}.** Which one do you mean?\n\n" + "\n".join(lines) + "\n\nReply with the full name and institute, for example *Name (NIT Silchar)*."
+        hint = ("Reply with the full journal name, for example *Who publishes in " + str(c["candidates"][0]) + "?*" if c["entity"] == "journal"
+                else "Reply with the full name and institute, for example *Name (NIT Silchar)*.")
+        text = f"**'{c['query']}' matches more than one {c['entity']} in the data.** Which one do you mean?\n\n" + "\n".join(lines) + "\n\n" + hint
         return {"text": text, "figures": [], "tables": [], "evidence": [], "tool_calls": [], "results": [], "needs_choice": c, "grounding": {"ungrounded": [], "checked": 0}, "mode": "rules"}
 
     @staticmethod
@@ -142,11 +159,16 @@ class Assistant:
                     seen.add((e["type"], e["id"]))
                     ev.append(e)
         tables = []
+        by_tool = {"journal_papers": "Faculty who publish in this journal", "top_faculty": "Faculty ranking", "bridge_researchers": "Faculty ranking",
+                   "department_stats": "Departments", "retracted_papers": "Retracted papers", "top_papers": "Papers", "find_experts": "Faculty on this topic",
+                   "recommend_collaborators": "Suggested collaborators", "strongest_pairs": "Collaborating pairs", "faculty_pattern": "Faculty",
+                   "interdisciplinary_communities": "Communities", "partner_institutes": "Partners"}
+        by_key = {"rows": "Results", "suggestions": "Suggested collaborators", "table": "Table", "pairs": "Pairs", "papers": "Papers", "communities": "Communities"}
         for r in results:
             d = r.get("data", {})
             for k in ("rows", "suggestions", "table", "pairs", "papers", "communities"):
                 if isinstance(d.get(k), list) and d[k] and isinstance(d[k][0], dict):
-                    tables.append((k, pd.DataFrame(d[k])))
+                    tables.append((by_tool.get(r.get("tool"), by_key[k]), pd.DataFrame(d[k])))
                     break
         links, seen_l = [], set()
         for r in results:

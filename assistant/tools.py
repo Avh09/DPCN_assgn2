@@ -1172,6 +1172,113 @@ def department_stats(institute=None, department=None, metric="median_h_index", n
                 + (f" Small departments (fewer than 5 faculty with papers) are less reliable: {', '.join(small)}." if small else ""), fig)
 
 
+# ============================================================================ journals and conferences
+GENERIC_VENUE_WORDS = {"journal", "journals", "conference", "conferences", "proceedings", "q1", "q2", "q3", "q4", "top", "good", "high", "impact",
+                       "international", "national", "ieee", "elsevier", "springer", "the", "a", "an", "of", "and", "in", "on", "for"}
+
+
+def norm_venue(s):
+    """'The Science of The Total Environment' -> 'science of the total environment'; '&' = 'and'; punctuation and case ignored."""
+    s = str(s).lower().replace("&", " and ")
+    s = re.sub(r"[^a-z0-9 ]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return re.sub(r"^the ", "", s)
+
+
+@lru_cache(maxsize=1)
+def _venues():
+    """{normalised name: (stored name, papers)} for every journal / conference name in the faculty papers."""
+    fp = store().fac_papers
+    cnt = fp[fp.journal_name != ""].drop_duplicates("openalex_work_id").journal_name.value_counts()
+    out = {}
+    for name, n in cnt.items():
+        k = norm_venue(name)
+        if k and (k not in out or n > out[k][1]):
+            out[k] = (name, int(n))
+    return out
+
+
+def resolve_journal(query):
+    """Match a journal name forgivingly against the names that are actually in the data. Never invents a name.
+    Returns {"match": stored name | None, "candidates": [stored names], "how": exact | close spelling | contains | none, "score": float}."""
+    from rapidfuzz import fuzz, process
+    V = _venues()
+    q = norm_venue(query)
+    none = {"match": None, "candidates": [], "how": "none", "score": 0.0}
+    if len(q) < 3 or set(q.split()) <= GENERIC_VENUE_WORDS:
+        return none
+    if q in V:
+        return {"match": V[q][0], "candidates": [V[q][0]], "how": "exact", "score": 100.0}
+    best = process.extract(q, list(V), scorer=fuzz.ratio, limit=5)
+    if best and best[0][1] >= 88:
+        close = [k for k, s, _ in best if s >= 88 and s >= best[0][1] - 2.5]
+        if len(close) == 1:
+            return {"match": V[close[0]][0], "candidates": [V[close[0]][0]], "how": "close spelling", "score": round(best[0][1], 1)}
+        close.sort(key=lambda k: -V[k][1])
+        return {"match": None, "candidates": [V[k][0] for k in close], "how": "close spelling", "score": round(best[0][1], 1)}
+    # every word of the query appears in the name: 'Materials Today' -> Materials Today Proceedings / Communications / Nano ...
+    words = [w for w in q.split() if w not in GENERIC_VENUE_WORDS]
+    if words and len(q) >= 4:
+        hits = [k for k in V if all(re.search(r"\b" + re.escape(w) + r"\b", k) for w in q.split())]
+        hits.sort(key=lambda k: -V[k][1])
+        if len(hits) == 1:
+            return {"match": V[hits[0]][0], "candidates": [V[hits[0]][0]], "how": "contains", "score": 0.0}
+        if len(hits) > 1:
+            return {"match": None, "candidates": [V[k][0] for k in hits[:8]], "how": "contains", "score": 0.0}
+    return none
+
+
+def journal_papers(journal, institute=None, year_from=None, year_to=None, n=10):
+    """Papers of the verified faculty in one journal or conference: totals, by institute, by faculty, top papers, with links."""
+    r = resolve_journal(journal)
+    V = _venues()
+    if not r["match"] and r["candidates"]:
+        cands = [f"{c} ({V[norm_venue(c)][1]} paper{'' if V[norm_venue(c)][1] == 1 else 's'})" for c in r["candidates"]]
+        return _need("journal", journal, cands, "journal_papers")
+    if not r["match"]:
+        return _res("journal_papers", f"No journal or conference matching '{journal}' appears among the papers of the verified faculty.", ok=False,
+                    coverage=f"Checked against all {len(V):,} journal and conference names in the 2016-2026 papers of the verified faculty of the three institutes. "
+                             "A journal that is missing here has no paper by these faculty in the data; the assistant does not guess another name.")
+    name = r["match"]
+    fp = store().fac_papers
+    df = fp[fp.journal_name == name]
+    if institute:
+        inst = next((i for i in INSTS if i == institute or SHORT[i].lower() == str(institute).lower()), None) or E.resolve_institute(institute)["canonical"]
+        if inst not in INSTS:
+            return _res("journal_papers", f"'{institute}' is not one of the three institutes.", ok=False)
+        df = df[df.institution == inst]
+        institute = inst
+    if year_from:
+        df = df[df.year >= int(year_from)]
+    if year_to:
+        df = df[df.year <= int(year_to)]
+    uniq = df.drop_duplicates("openalex_work_id")
+    by_inst = {SHORT[i]: int(df[df.institution == i].openalex_work_id.nunique()) for i in INSTS}
+    fac = (df.groupby("id").agg(papers=("openalex_work_id", "nunique"), citations=("citations", "sum")).reset_index()
+           .sort_values(["papers", "citations"], ascending=False))
+    F = store().faculty
+    fac_rows = [{"name": F.at[i, "faculty_name"], "institution": F.at[i, "short_inst"], "department": F.at[i, "department"], "papers": int(p), "citations": int(c)}
+                for i, p, c in fac.head(int(n)).itertuples(index=False)]
+    names_by_work = df.groupby("openalex_work_id").faculty_name.apply(lambda s: "; ".join(sorted(set(s))))
+    insts_by_work = df.groupby("openalex_work_id").institution.apply(lambda s: ", ".join(SHORT[i] for i in INSTS if i in set(s)))
+    top = uniq.sort_values("citations", ascending=False).head(5)
+    paper_rows = [{"title": p.title, "year": int(p.year), "citations": int(p.citations), "institutes": insts_by_work[p.openalex_work_id],
+                   "faculty": names_by_work[p.openalex_work_id], "doi": p.doi} for p in top.itertuples()]
+    q = uniq.quartile[uniq.quartile.isin(["Q1", "Q2", "Q3", "Q4"])]
+    data = {"journal": name, "you_asked_for": journal, "matched_by": r["how"], "kind": uniq.type.mode().iat[0] if len(uniq) else "",
+            "quartile": q.mode().iat[0] if len(q) else None, "scope": institute or "the three institutes",
+            "years": f"{year_from or 2016}-{year_to or 2026}", "papers": int(len(uniq)), "citations": int(uniq.citations.sum()),
+            "by_institute": by_inst, "faculty_with_papers": int(df.id.nunique()), "rows": fac_rows, "top_papers": paper_rows,
+            "papers_per_year": {int(y): int(c) for y, c in uniq.year.value_counts().sort_index().items()}}
+    ev = [_flink(x) for x in fac.id.head(5)]
+    P = store().papers
+    ev += [_plink(w) for w in top.openalex_work_id if w in P.index]
+    summary = f"{len(uniq)} paper(s) by verified faculty in {name}" + (f" ({institute})" if institute else "")
+    return _res("journal_papers", summary, data, ev,
+                "Papers of the verified faculty only, 2016-2026 (2026 is partial), retracted papers excluded; journal names as recorded by OpenAlex. "
+                "A paper written with faculty of two institutes counts once in the total and once for each institute.")
+
+
 def _schema(props, required=()):
     return {"type": "object", "properties": props, "required": list(required)}
 
@@ -1218,12 +1325,13 @@ TOOLS = {
     "explain_metric": (explain_metric, "Plain-language definition of a network or bibliometric metric used in the dashboard.", _schema({"name": S_}, ["name"])),
     "regional_collaboration": (regional_collaboration, "Do the three institutes collaborate mostly with institutes in their own state or region? Shares by locality, home-region preference against a baseline, depth of partnerships, trend over time, top nearby partners, and caveats (co-located partners).", _schema({"institute": S_})),
     "department_stats": (department_stats, "Department-level statistics: rank or compare departments (papers, citations, papers per faculty, median/max h-index, Q1 share) within one institute or the same department across the three institutes.", _schema({"institute": S_, "department": S_, "metric": S_, "n": I_})),
+    "journal_papers": (journal_papers, "Papers of the verified faculty in ONE journal or conference, by institute and by faculty, with citations, top papers and links. Matches the name forgivingly (case, punctuation, '&' = 'and', a leading 'The', close misspellings) against the names actually in the data; returns needs_choice when several names are close and ok=false when none matches. Use for 'who publishes in X', 'papers in X', 'how many papers in X', 'top faculty in journal X'.", _schema({"journal": S_, "institute": S_, "year_from": I_, "year_to": I_, "n": I_}, ["journal"])),
     "retracted_papers": (retracted_papers, "Retracted or withdrawn papers removed from all metrics: how many, why (reason category), and which papers, for all three institutes, one institute or one faculty member.", _schema({"institute": S_, "faculty": S_})),
 }
 
 
 # ============================================================================ links into the dashboard
-TAB_LINK = {"regional_collaboration": ("reach", "Reach and locality"), "department_stats": ("faculty", "Faculty and departments"), "retracted_papers": ("method", "Methodology (retracted papers)"), "institute_profile": ("overview", "Institute overview"), "compare_institutes": ("overview", "Institute comparison"),
+TAB_LINK = {"journal_papers": ("papers", "Paper explorer"), "regional_collaboration": ("reach", "Reach and locality"), "department_stats": ("faculty", "Faculty and departments"), "retracted_papers": ("method", "Methodology (retracted papers)"), "institute_profile": ("overview", "Institute overview"), "compare_institutes": ("overview", "Institute comparison"),
             "top_faculty": ("faculty", "Faculty leaderboard"), "faculty_pattern": ("faculty", "Faculty table"),
             "network_overview": ("collab", "Collaboration network"), "strongest_pairs": ("collab", "Collaboration network"), "bridge_researchers": ("collab", "Collaboration network"),
             "interdisciplinary_communities": ("collab", "Collaboration network"), "filter_network_by_weight": ("collab", "Collaboration network"),

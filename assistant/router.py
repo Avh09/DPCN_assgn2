@@ -11,6 +11,7 @@ from rapidfuzz import fuzz, process
 
 from . import entities as E
 from .data import INSTS, store
+from .tools import norm_venue
 
 STOP = {"professor", "prof", "dr", "can", "could", "collaborate", "with", "and", "or", "the", "of", "from", "between", "compare", "suggest", "show", "who", "what", "which",
         "why", "how", "is", "are", "does", "do", "in", "at", "for", "a", "an", "to", "their", "them", "his", "her", "mutual", "common", "shortest", "path", "network"}
@@ -145,6 +146,16 @@ retracted retraction retractions withdrawn withdrawal communities community depa
 network connected review reviews topics fastest growing grown affiliation affiliated leave left malaysia definition meaning explain""".split()
 
 
+# technical terms: when a misspelled word could be an ordinary word or one of these, and the question is about such a topic
+# (another technical word is present), the technical term wins ('Chaos Solutionss' -> 'solitons', not 'solutions'). Only terms
+# that occur in the paper titles or journal names are used.
+TECH = set("""chaos chaotic hyperchaotic hyperchaos solitons soliton fractals fractal fractional lyapunov memristor memristive bifurcation bifurcations
+attractor attractors oscillator oscillators synchronization nonlinear dynamical perovskite perovskites graphene photovoltaic metamaterial
+nanoparticles nanocomposite nanocomposites tribology tribological geopolymer scramjet supercapacitor supercapacitors photocatalytic photocatalysis
+electrochemical spectroscopy thermoelectric piezoelectric ferroelectric microstrip antenna wavelet wavelets eigenvalue stochastic markov bayesian
+convolutional blockchain cryptography steganography encryption hydrogel biodiesel nanofluid nanofluids rheology metaheuristic""".split())
+
+
 COMMON = """since works worked raise raises raised relatively across today weather please thanks tell show give list find which whose where when
 about their them they this that these those would could should might also very more most much many some any each every other others another
 able like likely really quite rather already still even only just first second third last next good best better high higher low lower""".split()
@@ -164,15 +175,25 @@ def _vocab():
                 known |= {w.strip().lower() for w in open(d, encoding="utf-8", errors="ignore") if w.strip().isalpha()}
                 break
         names = {w for n in S.faculty.faculty_name for w in E.norm(n).split() if len(w) >= 4}
-        S._vocab = (sorted(targets), c, known, names)
+        jw = Counter(w for j in S.fac_papers.journal_name.str.lower() for w in re.findall(r"[a-z]{4,}", j))
+        targets |= set(jw)                      # journal-name words ('solitons', 'fractals', 'applications', 'proceedings')
+        known |= set(jw)
+        tech = {w for w in TECH if w in c or w in jw}     # technical terms that actually occur in the data
+        targets |= tech
+        S._vocab = (sorted(targets), c, known, names, tech)
     return S._vocab
 
 
 def spellfix(question):
     """Correct clearly misspelled ordinary words ('colaborate', 'betweeness', 'enrgy'). A word that is in the English word list,
     in any paper title, a keyword, or close to a faculty name is never changed. Returns (corrected question, [(wrong, right)])."""
-    targets, freq, known, names = _vocab()
+    targets, freq, known, names, tech = _vocab()
     fixes = []
+    words = [w.lower() for w in re.findall(r"[A-Za-z]+", question)]
+
+    def tech_context(lw):
+        """Another word of the question is (or is clearly a misspelling of) a technical term."""
+        return any(o != lw and len(o) >= 4 and (o in tech or process.extractOne(o, tech, scorer=fuzz.ratio, score_cutoff=85)) for o in words)
 
     def fix(m):
         w = m.group(0)
@@ -180,9 +201,13 @@ def spellfix(question):
         if len(lw) < 5 or lw in known or lw in STOP or lw in names or process.extractOne(lw, names, scorer=fuzz.ratio, score_cutoff=85):
             return w
         best = process.extract(lw, targets, scorer=fuzz.ratio, score_cutoff=86 if len(lw) >= 7 else 88, limit=3)
-        if not best:
+        t = process.extractOne(lw, tech, scorer=fuzz.ratio, score_cutoff=75) if tech else None
+        if t and (not best or best[0][0] not in tech) and tech_context(lw):
+            right = t[0]                         # a technical term from the data beats an ordinary word in a technical question
+        elif best:
+            right = max(best, key=lambda b: (b[1], b[0] in tech, b[0] in KEYWORDS, freq.get(b[0], 0)))[0]
+        else:
             return w
-        right = max(best, key=lambda b: (b[1], b[0] in KEYWORDS, freq.get(b[0], 0)))[0]
         fixes.append((w, right))
         return right
     return re.sub(r"[A-Za-z]+", fix, question), fixes
@@ -240,15 +265,65 @@ def _clean_topic(t):
     return t.strip() or t
 
 
+# 'who publishes in X', 'papers in X', 'how many papers in X', 'top faculty in journal X', 'the journal X'
+_J_END = r"(?=\s+(?:since|from|after|before|between|during|by|at)\s|\s+in\s+(?:20\d\d|manit|nit\b|nitj|nits)|\s*[\?\.;!]|,\s+(?:and|or|but|since|from|at)\s|\s*$)"
+# (pattern, case-insensitive?, explicit cue). Explicit: the question says 'journal' or 'publish in'. Spans that must look like a title
+# (start with a capital) are matched case-sensitively, so 'Which journal publishes most papers' is not read as a journal name.
+_J_PATTERNS = [(r"\b(?:in|into|to)\s+(?:the\s+)?journal\s+(?P<j>.+?)" + _J_END, True, True),
+               (r"\b[Jj]ournal\s+(?:called\s+|named\s+)?(?P<j>[A-Z].+?)" + _J_END, False, True),
+               (r"\b(?:[Pp]ublish(?:es|ed|ing)?)\s+(?:(?:their|his|her|most|more|many|any|papers?|articles?|work)\s+){0,2}(?:in|at)\s+(?:the\s+)?(?P<j>.+?)" + _J_END, True, True),
+               (r"\bin\s+(?:the\s+)?(?P<j>[A-Z][\w&,\- ]+?)\s+[Jj]ournal\b", False, True),
+               (r"\b(?:[Pp]apers?|[Aa]rticles?)\s+(?:are\s+|were\s+)?(?:published\s+)?(?:in|at)\s+(?:the\s+)?(?P<j>[A-Z][^\?]*?)" + _J_END, False, False),
+               (r"\b(?:faculty|[Pp]rofessors?|[Aa]uthors?|[Rr]esearchers?|people)\s+in\s+(?:the\s+)?(?P<j>[A-Z][^\?]*?)" + _J_END, False, False)]
+_NOT_JOURNAL = re.compile(r"^(?:20\d\d|most|more|which|what|where|them|it|q[1-4]\b.*|(?:good|top|high|reputed|international|scopus|sci|indexed|which|what)\b.*|journals?|conferences?|"
+                         r"manit\b.*|nit\b.*|nitj\b.*|nits\b.*|iit\b.*|iiit\b.*|the (?:three|3) (?:nits|institutes)|.*\b(?:university|institute|department|dept)\b.*)$", re.I)
+
+
+def journal_span(question):
+    """(text as written, resolve_journal result, explicit cue) for a journal named in the question, or None. Names are matched only
+    against the journal names in the data, never invented."""
+    from .tools import resolve_journal
+    for pat, ci, explicit in _J_PATTERNS:
+        m = re.search(pat, question, flags=re.I if ci else 0)
+        if not m:
+            continue
+        span = re.sub(r"\s+journal$", "", m.group("j").strip(" '\"“”"), flags=re.I)
+        if len(span) < 3 or _NOT_JOURNAL.match(span):
+            continue
+        r = resolve_journal(span)
+        strong = r["how"] in ("exact", "close spelling")
+        if not explicit and (pat is _J_PATTERNS[5][0] and _department_in(span.lower()) or _department_in(span.lower()) and not strong):
+            continue                     # 'faculty in Civil Engineering' is a department question
+        if r["match"] or r["candidates"]:
+            return span, r, explicit
+        if explicit and span[:1].isupper():
+            return span, r, explicit     # 'Who publishes in Journal of Imaginary Studies?' -> the tool answers 'not found'
+    # a lower-case name written after 'papers in' counts only when it is a journal name (exactly or with a small typo) of 3+ words
+    m = re.search(r"\b(?:papers?|articles?)\s+(?:are\s+|were\s+)?(?:published\s+)?in\s+(?:the\s+)?(?P<j>[a-z][^\?]*?)" + _J_END, question)
+    if m and len(m.group("j").split()) >= 3:
+        r = resolve_journal(m.group("j"))
+        if r["match"] and r["how"] in ("exact", "close spelling"):
+            return m.group("j"), r, False
+    return None
+
+
 def route(question, ctx=None):
     """Returns {"calls": [(tool, args)], "clarify": {...} | None, "ctx": ctx, "note": str}."""
     ctx = dict(ctx or {})
     q = re.sub(r"(\w)['’]s\b", r"\1", question.strip())          # "Sudhakar's h-index" -> "Sudhakar h-index"
-    qfix, fixes = spellfix(q)
+    js = journal_span(q) if not re.search(r"retract|retrac|withdrawn", q, re.I) else None
+    if js:                                   # journal words are matched against the journal names, not spell-corrected one by one
+        qfix, fixes = spellfix(q.replace(js[0], " journalname "))
+        qfix = qfix.replace(" journalname ", js[0])
+        if js[1]["match"] and norm_venue(js[1]["match"]) != norm_venue(js[0]):
+            fixes = [(js[0], js[1]["match"])] + fixes
+    else:
+        qfix, fixes = spellfix(q)
     ql = qfix.lower()
     # an all-lowercase question ("can rajesh purohit collaborate with samuel rokhum") is matched with capitalised words
-    facs = extract_faculty(q if re.search(r"[A-Z]", q) else " ".join(w[:1].upper() + w[1:] for w in q.split()))
-    insts = extract_institutes(q)
+    qn = q.replace(js[0], " ") if js else q      # a journal name is not a person or an institute ('Chaos Solitons & Fractals')
+    facs = extract_faculty(qn if re.search(r"[A-Z]", qn) else " ".join(w[:1].upper() + w[1:] for w in qn.split()))
+    insts = extract_institutes(qn)
     # drop institute matches that are really part of a faculty span or just our own institute abbreviations used as filters
     clarify = None
     ids = []
@@ -261,7 +336,7 @@ def route(question, ctx=None):
         return {"calls": [], "clarify": clarify, "ctx": ctx}
     # a pair question that names someone we cannot find: say so instead of answering about the other person only
     if len(ids) < 2 and re.search(r"collaborat|work together|co-?author|path|between|mutual|common|compare|\bvs\b|versus|\band\b", ql):
-        unk = unknown_names(q, [t_ for t_, _ in facs])
+        unk = unknown_names(qn, [t_ for t_, _ in facs])
         if unk:
             return {"calls": [], "clarify": {"entity": "faculty", "query": unk[0], "candidates": []}, "ctx": ctx}
     pronoun = bool(re.search(r"\b(they|them|their|those two|both|he|she|his|her|this person|that person|him)\b", ql))
@@ -278,7 +353,14 @@ def route(question, ctx=None):
     f2 = ids[1] if len(ids) > 1 else None
 
     ours = [n for n in inst_names if n in INSTS]
-    if re.search(r"retract|retrac|withdrawn|withdrawal", ql):
+    if js and not ids:
+        span, jr, _ = js
+        if not jr["match"] and jr["candidates"]:
+            return {"calls": [], "clarify": {"entity": "journal", "query": span, "candidates": jr["candidates"]}, "ctx": ctx, "fixes": fixes}
+        yf, yt = _years(ql)
+        calls.append(("journal_papers", {"journal": jr["match"] or span, "institute": ours[0] if len(ours) == 1 else None, "year_from": yf, "year_to": yt,
+                                         "n": _num(re.sub(r"20\d\d", "", ql), 10) if re.search(r"top\s*\d+", ql) else 10}))
+    elif re.search(r"retract|retrac|withdrawn|withdrawal", ql):
         calls.append(("retracted_papers", {"faculty": f1} if f1 else {"institute": ours[0]} if ours else {}))
     elif not ids and re.search(r"\bregion|regional|same state|state[- ]level|within (?:the |their |its )?(?:own )?states?|nearby|\blocal\b|locality|geograph|proximity|distance|close by|neighbou?ring", ql) \
             and re.search(r"collab|partner|co-?author|work|link|connect|joint", ql):

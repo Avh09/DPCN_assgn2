@@ -320,6 +320,20 @@ def _retracted(d, r):
     return direct, ev, ["The full list with DOI links and the reasons is in the Methodology tab."]
 
 
+def _journal(d, r):
+    if not d["papers"]:
+        return f"No paper by the verified faculty of {d['scope']} appeared in *{d['journal']}* in {d['years']}.", [], []
+    inst = ", ".join(f"{k} {v}" for k, v in d["by_institute"].items() if v)
+    lead = d["rows"][0]
+    q = f", a {d['quartile']} journal" if d.get("quartile") else ""
+    direct = (f"{d['papers']} paper(s) by {d['faculty_with_papers']} verified faculty member(s) of {d['scope']} appeared in *{d['journal']}*{q} ({d['years']}): {inst}. "
+              f"{lead['name']} ({lead['institution']}) has the most, {lead['papers']}.")
+    ev = [f"{x['name']} ({x['institution']}, {x['department']}): {x['papers']} paper(s), {x['citations']:,} citations" for x in d["rows"][:8]]
+    ev += [f"Most cited: {x['title'][:100]} ({x['institutes']}, {x['year']}, {x['citations']:,} citations; {x['faculty']})" for x in d["top_papers"][:3]]
+    note = [f"Matched your '{d['you_asked_for']}' to the journal name in the data, '{d['journal']}'."] if d["matched_by"] != "exact" else []
+    return direct, ev, note + ["Every paper, with its DOI, is in the Papers tab (search the journal name)."]
+
+
 def _explain(d, r):
     return d.get("definition") or r["summary"], [], []
 
@@ -327,4 +341,4 @@ def _explain(d, r):
 FORMATTERS = {"explain_metric": _explain, "assess_collaboration": _assess, "get_collaboration_history": _assess, "get_shortest_collaboration_path": _assess, "get_common_collaborators": _assess,
               "recommend_collaborators": _recommend, "compare_institutes": _compare_inst, "top_faculty": _top_faculty, "bridge_researchers": _top_faculty, "faculty_pattern": _pattern,
               "resilience_summary": _resilience, "simulate_node_removal": _removal, "network_overview": _network, "citation_flows": _flows, "get_paper": _paper, "explain_paper_pagerank": _pagerank,
-              "assess_institute_collaboration": _institute_collab, "partner_institutes": _partner, "partner_place_impact": _place_impact, "citation_give_take": _give_take, "explain_output_difference": _why, "find_experts": _experts, "get_faculty_profile": _profile, "top_papers": _top_papers, "retracted_papers": _retracted, "regional_collaboration": _regional, "department_stats": _departments}
+              "assess_institute_collaboration": _institute_collab, "partner_institutes": _partner, "partner_place_impact": _place_impact, "citation_give_take": _give_take, "explain_output_difference": _why, "find_experts": _experts, "get_faculty_profile": _profile, "top_papers": _top_papers, "retracted_papers": _retracted, "regional_collaboration": _regional, "department_stats": _departments, "journal_papers": _journal}

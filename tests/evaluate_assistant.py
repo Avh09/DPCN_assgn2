@@ -25,8 +25,8 @@ from assistant.engine import Assistant  # noqa: E402
 from assistant.router import spellfix  # noqa: E402
 
 GROUPS = [("Examples shown in the app", 0, 15), ("Other question types", 15, 38), ("Robustness (pairs, unknown people, nonsense, injection)", 38, 47),
-          ("Spelling mistakes and capitalisation", 47, 61), ("Regions, departments, year filters, outside institutes", 61, None)]
-LLM_QUESTIONS = ["Can Rajesh Purohit (MANIT) collaborate with Samuel Lalthazuala Rokhum?", "Compare MANIT and NIT Silchar. Why does MANIT have the higher h-index?",
+          ("Spelling mistakes and capitalisation", 47, 61), ("Regions, departments, year filters, outside institutes", 61, 71), ("Journal names (misspelled, written differently, ambiguous)", 71, None)]
+LLM_QUESTIONS = ["Which professors publish in Chaos Solutionss and Factal?", "Can Rajesh Purohit (MANIT) collaborate with Samuel Lalthazuala Rokhum?", "Compare MANIT and NIT Silchar. Why does MANIT have the higher h-index?",
                  "How many papers were retracted, and why?", "Do the institutes collaborate mostly within their own region?",
                  "Which department has the highest median h-index?", "Did Kumarasamy Sudhakar leave MANIT, and how much does MANIT's h-index depend on him?",
                  "Suggest five potential collaborators for Biplab Das in another NIT.", "Who works on solar energy at NIT Silchar?",

@@ -16,7 +16,7 @@ Rebuild everything from the raw download (needs `data/raw/`, `OPENALEX_*`/`ELSEV
 ```bash
 ./run_all.sh                 # default: build → enrich → quartiles → faculty → networks → outflow → inflow → partners → facstats → report → dashboard
 ./run_all.sh dashboard       # only regenerate dashboard/data.js (runs locality_reach.py, key_findings.py, build_dashboard.py)
-PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONHASHSEED=0 python -m pytest tests    # 96 assistant tests
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONHASHSEED=0 python -m pytest tests    # 137 assistant tests
 PYTHONHASHSEED=0 python tests/evaluate_assistant.py [--llm]               # writes ASSISTANT_EVALUATION.md
 python validate.py           # 52 data checks
 ```
@@ -54,7 +54,7 @@ that read the final tables and the faculty graph; the model never runs code, SQL
 | Dashboard | Key findings per tab, comparison table, citation sources, degree CCDF, resilience page, potential-collaborations page, data-quality block. | `dashboard/extras.js`, `build_dashboard.py` |
 | Affiliation check | Prof. Kumarasamy Sudhakar (MANIT) is on leave at Universiti Malaysia Pahang since 2017 (checked Nov 2026). His papers stay in the data; MANIT's h-index is shown three ways (all / his papers up to 2017 only / without him) on the Faculty tab, with the evidence. Both corrections also appear among the Key Findings (Overview and Faculty tabs). | `affiliation_checks.py`, `data/ref/faculty_status_checks.csv`, `dashboard/extras.js` |
 | Assistant | New package and Streamlit page. | `assistant/`, `dashboard/streamlit_app.py` |
-| Tests | 96 assistant tests (routing, tool errors, unknown names, spelling, follow-ups, retractions, regions, departments, year filters) and an evaluation report. Pipeline checks are in `validate.py`. | `tests/`, `ASSISTANT_EVALUATION.md` |
+| Tests | 137 assistant tests (routing, tool errors, unknown names, spelling, follow-ups, retractions, regions, departments, year filters, journal names) and an evaluation report. Pipeline checks are in `validate.py`. | `tests/`, `ASSISTANT_EVALUATION.md` |
 
 ## Limitations (not completed or not verifiable)
 

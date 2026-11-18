@@ -4,6 +4,7 @@ Used by dashboard/streamlit_app.py as the "AI Research Assistant" page. The page
 server from st.secrets / environment (llm.py), and all analysis runs server-side through the allowlisted tools.
 """
 import os
+import re
 
 import plotly.io as pio
 import streamlit as st
@@ -68,7 +69,7 @@ def _render_message(m, idx):
     for k, (name, df) in enumerate(m.get("tables", [])):
         with st.expander(f"Table: {name}"):
             st.dataframe(df, width="stretch")
-            st.download_button("Download as CSV", df.to_csv(index=False).encode("utf-8"), file_name=f"{name}.csv", mime="text/csv", key=f"csv_{idx}_{k}")
+            st.download_button("Download as CSV", df.to_csv(index=False).encode("utf-8"), file_name=re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_") + ".csv", mime="text/csv", key=f"csv_{idx}_{k}")
     if m.get("evidence"):
         with st.expander(f"References ({len(m['evidence'])})"):
             for e in m["evidence"]:
