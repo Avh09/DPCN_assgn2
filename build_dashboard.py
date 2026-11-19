@@ -292,6 +292,7 @@ data = {
     "linkPred": jload("link_prediction_results.json"),
     "linkPredV5": {h: jload(f"link_prediction_v5_{h}_results.json") for h in ("h1", "h3") if (ST / f"link_prediction_v5_{h}_results.json").exists()},
     "suggest": jload("faculty_suggestions.json") if (ST / "faculty_suggestions.json").exists() else None,
+    "regionDyn": jload("region_dynamics.json") if (ST / "region_dynamics.json").exists() else None,
     "citeDyn": ({"res": jload("citation_dynamics.json"), "papers": jload("citation_dynamics_papers.json")} if (ST / "citation_dynamics.json").exists() else None),
     "coupling": ({"summary": jload("coupling_decay_summary.json"), "opps": rd(ST / "coupling_opportunities_top.csv")[:15]} if (ST / "coupling_decay_summary.json").exists() else None),
     "linkPredV3": jload("link_prediction_v3_results.json") if (ST / "link_prediction_v3_results.json").exists() else None,

@@ -1,0 +1,356 @@
+{
+ "design": "Region dynamics: (1) a gravity model with a distance decay that may change year by year, (2) a Markov chain of faculty collaboration reach.\n\n1. Gravity model (spatial interaction). Joint papers between one of our institutes k and the partner institutes of Indian state s in year t:\n       E[papers_kst] = exp( a_kt + b_s + delta * same_state_ks - gamma_t * ln distance_ks )\n   a_kt absorbs how much institute k publishes that year, b_s how attractive state s is overall, delta a home-state bonus, and gamma_t is the\n   distance decay: how much harder collaboration gets with distance in year t (gamma = 1: twice as far, half as many joint papers). A falling\n   gamma means distance matters less over time. Poisson regression with fixed effects; 95% intervals by resampling states (bootstrap).\n   Distances: great-circle km from each institute to the approximate centre of the partner's state (floor 50 km). Partners whose state is unknown\n   or that are national multi-site bodies are left out.\n2. Markov chain. Each faculty member, each year, is in one state: no papers, within the institute only, nearby partner (same state or region),\n   elsewhere in India, or abroad (the farthest partner on any of their papers that year). Counting year-to-year moves (2016-2025, inside each\n   person's span: first paper to 2025 for current faculty, to the last paper for former faculty) gives a transition matrix; its stationary distribution is where the mix settles if today's habits continue.\nWrites stats/region_dynamics.json.",
+ "gravity": {
+  "years": [
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "gamma": [
+   1.136,
+   1.015,
+   0.879,
+   0.751,
+   0.818,
+   0.607,
+   0.583,
+   0.587,
+   0.509,
+   0.524
+  ],
+  "lo": [
+   0.845,
+   0.625,
+   0.594,
+   0.51,
+   0.603,
+   0.339,
+   0.368,
+   0.355,
+   0.229,
+   0.207
+  ],
+  "hi": [
+   1.459,
+   1.316,
+   1.163,
+   1.021,
+   1.106,
+   0.936,
+   0.803,
+   0.817,
+   0.707,
+   0.728
+  ],
+  "home_state_bonus_factor": 3.08,
+  "trend_per_year": -0.068,
+  "trend_ci95": [
+   -0.098,
+   -0.043
+  ],
+  "gamma_2016_18": 1.01,
+  "gamma_2023_25": 0.54,
+  "joint_papers_used": 7676,
+  "states": 32,
+  "bootstrap_runs": 200,
+  "partners_left_out_unknown_state": 437,
+  "by_distance_band": {
+   "under 300 km": [
+    40.5,
+    37.3,
+    31.0,
+    26.5,
+    28.6,
+    20.1,
+    20.3,
+    20.8,
+    19.4,
+    19.5
+   ],
+   "300-1,000 km": [
+    37.4,
+    32.5,
+    34.5,
+    37.6,
+    40.4,
+    44.8,
+    39.3,
+    38.4,
+    36.2,
+    36.6
+   ],
+   "over 1,000 km": [
+    22.1,
+    30.3,
+    34.5,
+    35.9,
+    31.0,
+    35.1,
+    40.3,
+    40.8,
+    44.4,
+    43.9
+   ]
+  }
+ },
+ "markov": {
+  "states": [
+   "No papers",
+   "Within institute only",
+   "Nearby (same state or region)",
+   "Elsewhere in India",
+   "Abroad"
+  ],
+  "all": {
+   "transition": [
+    [
+     0.451,
+     0.289,
+     0.049,
+     0.151,
+     0.058
+    ],
+    [
+     0.182,
+     0.473,
+     0.042,
+     0.211,
+     0.092
+    ],
+    [
+     0.135,
+     0.277,
+     0.237,
+     0.19,
+     0.161
+    ],
+    [
+     0.123,
+     0.209,
+     0.064,
+     0.423,
+     0.18
+    ],
+    [
+     0.057,
+     0.129,
+     0.033,
+     0.221,
+     0.56
+    ]
+   ],
+   "moves": 4153,
+   "stationary": [
+    18.9,
+    28.7,
+    5.9,
+    25.5,
+    21.1
+   ],
+   "now_2025": [
+    13.3,
+    26.6,
+    6.2,
+    32.4,
+    21.4
+   ],
+   "persistence_years": [
+    1.82,
+    1.9,
+    1.31,
+    1.73,
+    2.27
+   ]
+  },
+  "MANIT": {
+   "transition": [
+    [
+     0.448,
+     0.32,
+     0.04,
+     0.134,
+     0.058
+    ],
+    [
+     0.207,
+     0.501,
+     0.043,
+     0.179,
+     0.071
+    ],
+    [
+     0.119,
+     0.333,
+     0.179,
+     0.214,
+     0.155
+    ],
+    [
+     0.153,
+     0.266,
+     0.071,
+     0.384,
+     0.126
+    ],
+    [
+     0.104,
+     0.156,
+     0.017,
+     0.234,
+     0.489
+    ]
+   ],
+   "moves": 1617,
+   "stationary": [
+    23.1,
+    34.8,
+    5.2,
+    22.4,
+    14.5
+   ],
+   "now_2025": [
+    12.7,
+    36.7,
+    5.5,
+    29.8,
+    15.3
+   ],
+   "persistence_years": [
+    1.81,
+    2.0,
+    1.22,
+    1.62,
+    1.96
+   ]
+  },
+  "NITJ": {
+   "transition": [
+    [
+     0.418,
+     0.241,
+     0.089,
+     0.203,
+     0.051
+    ],
+    [
+     0.183,
+     0.419,
+     0.05,
+     0.24,
+     0.108
+    ],
+    [
+     0.188,
+     0.198,
+     0.281,
+     0.198,
+     0.135
+    ],
+    [
+     0.126,
+     0.186,
+     0.063,
+     0.428,
+     0.197
+    ],
+    [
+     0.057,
+     0.156,
+     0.052,
+     0.229,
+     0.505
+    ]
+   ],
+   "moves": 994,
+   "stationary": [
+    18.5,
+    24.9,
+    8.0,
+    28.0,
+    20.6
+   ],
+   "now_2025": [
+    12.4,
+    23.0,
+    6.7,
+    37.6,
+    20.2
+   ],
+   "persistence_years": [
+    1.72,
+    1.72,
+    1.39,
+    1.75,
+    2.02
+   ]
+  },
+  "NITS": {
+   "transition": [
+    [
+     0.486,
+     0.276,
+     0.033,
+     0.138,
+     0.066
+    ],
+    [
+     0.147,
+     0.469,
+     0.036,
+     0.237,
+     0.112
+    ],
+    [
+     0.096,
+     0.309,
+     0.245,
+     0.16,
+     0.191
+    ],
+    [
+     0.096,
+     0.177,
+     0.057,
+     0.454,
+     0.216
+    ],
+    [
+     0.029,
+     0.099,
+     0.034,
+     0.209,
+     0.629
+    ]
+   ],
+   "moves": 1542,
+   "stationary": [
+    14.7,
+    24.9,
+    5.1,
+    26.9,
+    28.4
+   ],
+   "now_2025": [
+    14.7,
+    17.6,
+    6.7,
+    31.5,
+    29.4
+   ],
+   "persistence_years": [
+    1.95,
+    1.88,
+    1.32,
+    1.83,
+    2.7
+   ]
+  }
+ }
+}

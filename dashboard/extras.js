@@ -508,6 +508,42 @@ function renderDynamics() {
 addPage('dynamics', 'Citation dynamics', 12, `<div class="page-head"><div class="eyebrow">12 — Dynamics</div><h1>How do papers <em>gain</em> citations?</h1><p class="lede">A dynamical model of citation growth fitted to every paper’s yearly citation history: fitness, timing and longevity of attention.</p></div><div id="dyn-body"></div>`);
 A.RENDER.dynamics = () => { renderDynamics(); };
 
+// ---------------------------------------------------------------- Reach: region dynamics (gravity model + Markov chain, region_dynamics.py)
+function regionDyn() {
+  const RD = D.regionDyn; if (!RD) return;
+  const G = RD.gravity, MC = RD.markov, sel = A.state.inst, key = sel < 0 ? 'all' : SH[sel], M = MC[key] || MC.all;
+  const eq = (s) => `<div style="font:500 16px/1.7 'Georgia',serif;padding:10px 14px;margin:8px 0;border-radius:10px;background:var(--surface2,rgba(128,128,128,.08));overflow-x:auto">${s}</div>`;
+  const tr = G.trend_per_year, ci = G.trend_ci95, sig = ci[0] > 0 || ci[1] < 0;
+  const verdict = !sig ? 'There is no clear trend: the year-to-year changes are within the uncertainty.' : tr < 0 ? 'Distance has been mattering <b>less</b> over time: the institutes increasingly collaborate far from home.' : 'Distance has been mattering <b>more</b> over time: collaboration has become more local.';
+  const pct = v => v == null ? '—' : fmt1(v) + '%';
+  const html = `<div class="page-sub mt"><h2 style="margin:0 0 4px">Region dynamics</h2><p class="explain">Two dynamical views of where the institutes collaborate: how strongly distance holds collaboration back, year by year, and where each faculty member’s collaboration reach is heading.</p></div>` +
+    `<div class="grid g2">` +
+    card('Does distance matter less over time? (gravity model)', 'A spatial-interaction model, like gravity: big places attract more, distant places less.',
+      eq(`papers<sub>k,s,t</sub> ∝ exp( a<sub>k,t</sub> + b<sub>s</sub> + δ·home<sub>k,s</sub> ) · distance<sub>k,s</sub><sup>−γ<sub>t</sub></sup>`) +
+      `<p class="explain"><b>k</b> = one of the three institutes, <b>s</b> = an Indian state, <b>t</b> = year. a absorbs how much the institute publishes that year, b how attractive the state is overall, δ a home-state bonus. <b>γ<sub>t</sub> is the distance decay</b>: with γ = 1, a state twice as far away gets half as many joint papers. Distances run from each institute to the approximate centre of the partner’s state.</p>` +
+      chart('rgd-gamma', 280) +
+      `<p class="explain">γ averaged ${fmt2(G.gamma_2016_18)} in 2016–18 and ${fmt2(G.gamma_2023_25)} in 2023–25; trend ${tr >= 0 ? '+' : ''}${fmt2(tr)} per year (95% interval ${fmt2(ci[0])} to ${fmt2(ci[1])}). ${verdict} Joint papers within the institute’s own state are ${fmt1(G.home_state_bonus_factor)}× what distance alone predicts. Based on ${fmt(G.joint_papers_used)} joint papers with partners in ${G.states} states; ${fmt(G.partners_left_out_unknown_state)} partner institutes with an unknown or multi-site location are left out. Shaded band: 95% interval from ${G.bootstrap_runs} bootstrap resamples of states.</p>`) +
+    card('How far away are the Indian partners?', 'Share of joint papers with Indian partners by distance from the institute (descriptive, all three institutes).', chart('rgd-bands', 280)) +
+    `</div>` +
+    `<div class="grid g2 mt">` +
+    card(`Where is collaboration reach heading? (Markov chain${sel < 0 ? '' : ', ' + I[sel]})`, `Each faculty member, each year, is in one state: the farthest partner on any of their papers that year. Counting ${fmt(M.moves)} year-to-year moves (2016–2025) gives the chance of moving from one state to another; repeating those chances year after year leads to the long-run mix.`,
+      chart('rgd-mc', 280) + `<p class="explain">Long-run mix = the stationary distribution of the chain: where the shares settle if today’s habits continue. It is a projection of current behaviour, not a forecast of policy or hiring.</p>`) +
+    card('Chance of moving between states in one year', 'Row = state this year, column = state next year (each row sums to 100%). The diagonal is how often people stay; “Stays” is the average number of years in a state before moving.',
+      table(['This year ↓ / next year →', 'No papers', 'Within only', 'Nearby', 'Elsewhere in India', 'Abroad', 'Stays'], MC.states.map((s, i) => [s, ...M.transition[i].map(v => pct(100 * v)), M.persistence_years[i] == null ? '—' : fmt1(M.persistence_years[i]) + ' yrs']))) +
+    `</div>`;
+  addSection('reach', 'rgd-sec', html);
+  const band = (lo, hi, col) => ({ type: 'scatter', x: [...G.years, ...[...G.years].reverse()], y: [...hi, ...[...lo].reverse()], fill: 'toself', fillcolor: col, line: { width: 0 }, hoverinfo: 'skip', showlegend: false });
+  A.plot('rgd-gamma', [band(G.lo, G.hi, 'rgba(120,90,220,.18)'), { type: 'scatter', mode: 'lines+markers', x: G.years, y: G.gamma, name: 'Distance decay γ', line: { color: css('--c1'), width: 3 } }],
+    { xaxis: { title: { text: 'Year' }, dtick: 1 }, yaxis: { title: { text: 'Distance decay γ (higher = distance matters more)' } }, showlegend: false });
+  const B = G.by_distance_band, cols = ['--c1', '--c3', '--c2'];
+  A.plot('rgd-bands', Object.keys(B).map((k, i) => ({ type: 'bar', name: k, x: G.years, y: B[k], marker: { color: css(cols[i]) } })),
+    { barmode: 'stack', xaxis: { title: { text: 'Year' }, dtick: 1 }, yaxis: { title: { text: 'Share of joint papers (%)' }, range: [0, 100] }, legend: { orientation: 'h', y: -0.25 } });
+  A.plot('rgd-mc', [{ type: 'bar', name: 'Now (2025)', x: MC.states, y: M.now_2025, marker: { color: css('--c2') } }, { type: 'bar', name: 'Long-run mix', x: MC.states, y: M.stationary, marker: { color: css('--c1') } }],
+    { barmode: 'group', yaxis: { title: { text: 'Share of faculty (%)' } }, legend: { orientation: 'h', y: -0.3 } });
+}
+{ const base = A.RENDER.reach; A.RENDER.reach = () => { base(); try { regionDyn(); } catch (e) { console.error('regionDyn', e); } }; }
+
+
 // the first page was rendered before this file loaded
 try { const h = (window.__startHash || '').split('?')[0]; A.rendered.delete(A.state.tab); A.go(A.RENDER[h] ? h : A.state.tab); } catch (e) { document.body.dataset.err = String(e.stack).slice(0, 500); console.error(e); }
 document.addEventListener('atlas:inst', () => { A.rendered.delete('resil'); A.rendered.delete('potential'); if (['resil', 'potential'].includes(A.state.tab)) A.go(A.state.tab); else renderFindings(A.state.tab); });
