@@ -16,6 +16,7 @@ import config
 import link_prediction_v2 as v2
 import link_prediction_v4 as v4
 import link_prediction_v5 as v5
+import reasons
 
 STATS = config.OUT_DIR / "stats"
 NOW = 2025
@@ -32,11 +33,19 @@ def main():
     tr = pd.concat([v5.frame(C, B, T) for T in train_T])
     print(f"training on T={train_T[0]}..{train_T[-1]}: {len(tr)} rows, {int(tr.y.sum())} positives", flush=True)
     now = v5.frame(C, B, NOW)                       # features at 2025 for every never-collaborated pair of active faculty (its label column is unused)
-    bag = np.mean([v2.make_lgb({**PX}).set_params(random_state=s).fit(tr[fx], tr.y).predict_proba(now[fx])[:, 1] for s in range(5)], 0)
+    models = [v2.make_lgb({**PX}).set_params(random_state=s).fit(tr[fx], tr.y) for s in range(5)]
+    bag = np.mean([m.predict_proba(now[fx])[:, 1] for m in models], 0)
     lr = v2.make_lr(lr_c).fit(tr[fx], tr.y).predict_proba(now[fx])[:, 1]
     now["score_lgb"], now["score_lr"] = bag, lr
     now["rank_score"] = (v2.rank01(bag) + v2.rank01(lr)) / 2
     now[["u", "v", "rank_score", "score_lgb", "score_lr"]].round(6).to_csv(STATS / "collab_scores_v5.csv.gz", index=False)     # every candidate pair, for the assistant
+    # why: the strongest feature themes behind each person's 12 best-ranked pairs (tree-model contributions, averaged over the 5 seeds)
+    d = now[["u", "v", "rank_score"]]
+    side = pd.concat([d.rename(columns={"u": "me", "v": "other"}), d.rename(columns={"v": "me", "u": "other"})]).sort_values("rank_score", ascending=False)
+    rows = side.groupby("me").head(12).index.unique()
+    contrib = np.mean([m.predict(now.loc[rows, fx], pred_contrib=True)[:, :-1] for m in models], 0)
+    drv = reasons.theme_drivers(contrib, fx)
+    (STATS / "new_drivers_v5.json").write_text(json.dumps({f"{int(now.at[r, 'u'])},{int(now.at[r, 'v'])}": dd for r, dd in zip(rows, drv)}, separators=(",", ":")))
     top = now.sort_values("rank_score", ascending=False).head(3000).copy()
     H0, mats = v2._cache[("mats", NOW)]
     ev = [C.explain(H0, mats, int(u), int(v)) for u, v in zip(top.u, top.v)]
