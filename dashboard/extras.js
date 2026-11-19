@@ -274,23 +274,22 @@ function renderPotential() {
   const V5 = D.linkPredV5 || {}, V3 = D.linkPredV3, h3 = V5.h3, h1 = V5.h1;
   const M = (t, m) => t.metrics[m];
   const mrows = (t) => Object.entries(t.metrics).map(([k, v]) => [k, (+v.average_precision).toFixed(3), fmt2(v.roc_auc), fmt1(100 * v['precision@100']) + '%', fmt1(100 * v['recall@500']) + '%']);
-  const prows = (r) => Object.entries(r.pooled).map(([k, v]) => [esc(k), (+v.average_precision).toFixed(3), fmt2(v.roc_auc), fmt1(100 * v['mean_fold_precision@100']) + '%', fmt1(100 * v['hit@5']) + '%', fmt1(100 * v['hit@10']) + '%']);
+  const prows = (r) => Object.entries(r.pooled).map(([k, v]) => [esc(k), (+v.average_precision).toFixed(3), fmt2(v.roc_auc), fmt1(100 * v['hit@5']) + '%', fmt1(100 * v['hit@10']) + '%']);
   const pt = (r) => { const v = Object.values(r.pooled)[0]; return `${fmt(v.positives)} real new collaborations in ${fmt(v.pairs)} pair-years, test years ${Object.keys(r.folds).join(', ')}, base rate ${(100 * v.positives / v.pairs).toFixed(2)}%`; };
-  const H5 = ['Model', 'Avg precision', 'ROC-AUC', 'Precision@100', 'Hit@5 per faculty', 'Hit@10 per faculty'];
+  const H5 = ['Model', 'Avg precision', 'ROC-AUC', 'Hit@5 per faculty', 'Hit@10 per faculty'];
   const cands = D.candidates.filter(r => sel < 0 || r.institute_a === I[sel] || r.institute_b === I[sel]).slice(0, 40);
   const newCards = h3 ? card('Which pairs could start collaborating? (3-year outcome)', `Each model only sees papers up to year T and is tested on whether the pair co-authors in T+1 to T+3, over several test years pooled (${pt(h3)}). <b>Hit@5</b>: of the faculty who really started a new collaboration, the share whose top 5 suggested partners contained a correct one (Hit@10 likewise).`, table(H5, prows(h3))) +
       (h1 ? card('Same, one-year outcome', `Label = co-authors in the next year only (${pt(h1)}). Harder and noisier.`, table(H5, prows(h1))) : '')
     : card('Which pairs could start collaborating?', `Trained on features at ${nw.train.T || 2019}, tested on ${nw.test.T || 2022} features and 2023–2025 outcomes. Base rate ${(M(nw, 'logistic regression').base_rate * 100).toFixed(2)}%.`, table(['Model', 'Avg precision', 'ROC-AUC', 'Precision@100', 'Recall@500'], mrows(nw)));
   const rt = V3 && V3.tasks && V3.tasks.repeat && V3.tasks.repeat.test;
   const repCard = rt ? card('Which pairs are likely to work together again?', `A separate task: pairs that already co-authored. Trained on snapshots 2016–2023, tested on 2024 features against 2025 outcomes (${Object.values(rt)[0].positives} of ${Object.values(rt)[0].pairs} pairs did). Accuracy uses the cut-off chosen on a validation year.`,
-      table(['Model', 'Avg precision', 'ROC-AUC', 'Precision@100', 'Accuracy', 'F1'], Object.entries(rt).filter(([k]) => !/GNN/.test(k)).map(([k, v]) => [esc(k), (+v.average_precision).toFixed(3), fmt2(v.roc_auc), fmt1(100 * v['precision@100']) + '%', fmt1(100 * v.operating_point.accuracy) + '%', fmt2(v.operating_point.f1)])))
+      table(['Model', 'Avg precision', 'ROC-AUC', 'Accuracy', 'F1'], Object.entries(rt).filter(([k]) => !/GNN/.test(k)).map(([k, v]) => [esc(k), (+v.average_precision).toFixed(3), fmt2(v.roc_auc), fmt1(100 * v.operating_point.accuracy) + '%', fmt2(v.operating_point.f1)])))
     : card('Which pairs are likely to work together again?', 'A separate task; the probabilities pass the calibration check for the random forest.', table(['Model', 'Avg precision', 'ROC-AUC', 'Precision@100', 'Recall@500'], mrows(rp)));
   const bk = h3 && Object.values(h3.pooled).sort((p, q) => q.average_precision - p.average_precision)[0];
   const rbest = rt && Object.entries(rt).sort((p, q) => q[1].average_precision - p[1].average_precision)[0];
   const headCard = bk ? card('How good are the suggestions?', 'Best new-collaboration model, tested only on years it never saw (see the tables below for every model).', table(['Measure', 'Result', 'What it means'], [
     ['Hit@5 per faculty', `<b>${fmt1(100 * bk['hit@5'])}%</b>`, 'Of faculty who really started a new collaboration, the share whose top 5 suggested partners contained a correct one.'],
     ['Hit@10 per faculty', `<b>${fmt1(100 * bk['hit@10'])}%</b>`, 'Same, with the top 10.'],
-    ['Precision@100', `<b>${fmt1(100 * bk['mean_fold_precision@100'])}%</b>`, `Of the 100 highest-ranked pairs, this share really started collaborating (base rate ${(100 * bk.positives / bk.pairs).toFixed(2)}%).`],
     ['Lift over chance', `<b>${(bk.average_precision / (bk.positives / bk.pairs)).toFixed(0)}×</b>`, 'Average precision divided by the base rate of new collaborations.'],
     ...(rbest ? [['Repeat collaborations', `<b>${fmt1(100 * rbest[1].operating_point.accuracy)}%</b> accuracy`, `Pairs that already co-authored: will they again? Average precision ${(+rbest[1].average_precision).toFixed(2)}, base rate ${fmt1(100 * rbest[1].positives / rbest[1].pairs)}%.`]] : [])])) : '';
   const CP = D.coupling, cs = CP && CP.summary;

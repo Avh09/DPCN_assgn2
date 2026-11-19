@@ -172,9 +172,10 @@ def main():
         m = pool[bn]
         br = m["positives"] / m["pairs"]
         out.append(F("collaborations", "Predicting new collaborations",
-                     f"Each model sees only papers up to year T and is tested on whether a pair that never co-authored starts within the next 3 years (test years {', '.join(V5['h3']['folds'])} pooled: {m['positives']} real new collaborations among {m['pairs']:,} pairs, base rate {br * 100:.2f}%). "
-                     f"The best model (LightGBM + logistic regression on 59 network, topic, reference and recency features) reaches average precision {m['average_precision']:.3f} ({m['average_precision'] / br:.0f}x the base rate) and ROC-AUC {m['roc_auc']:.2f}, with {m['mean_fold_precision@100'] * 100:.0f}% true links among its top 100 pairs. "
-                     f"Per faculty, {m['hit@5'] * 100:.0f}% of those who really started a new collaboration had a correct partner among their top 5 suggestions and {m['hit@10'] * 100:.0f}% among their top 10. The output is a ranking score, not a probability.",
+                     f"What it does: for every pair of faculty who have not yet co-authored, the model reads their papers up to a given year (co-author network, research topics, shared references and citations, how recently each has published) and scores how likely the two are to start working together within 3 years. "
+                     f"For each faculty member this gives a ranked list of suggested partners; the top 5 are what the dashboard and the assistant show. "
+                     f"Results, tested only on years the model had not seen ({', '.join(V5['h3']['folds'])} pooled): of the faculty who really started a new collaboration, {m['hit@5'] * 100:.0f}% had a correct partner among their top 5 suggestions and {m['hit@10'] * 100:.0f}% among their top 10. "
+                     f"The ranking beats chance by about {m['average_precision'] / br:.0f}x (new collaborations are rare: {br * 100:.2f}% of pairs, {m['positives']} real ones among {m['pairs']:,} pairs). The output is a ranking, not a probability.",
                      {"best_model": bn, "pooled_3yr": pool, "pooled_1yr": V5["h1"]["pooled"] if "h1" in V5 else None},
                      caveat="New links are rare; absolute precision is low even though it is far above chance. Hit rates count only faculty who did start a new collaboration."))
     else:
@@ -187,8 +188,9 @@ def main():
         bn = max(rt, key=lambda k: rt[k]["average_precision"])
         r_ = rt[bn]
         out.append(F("collaborations", "Predicting repeat collaborations",
-                     f"For pairs that already co-authored, trained on snapshots 2016-2023 and tested on 2024 features against 2025 outcomes ({r_['positives']} of {r_['pairs']} pairs collaborated again, base rate {r_['base_rate']:.2f}), the best model ({bn}) reaches average precision {r_['average_precision']:.2f} and ROC-AUC {r_['roc_auc']:.2f}, "
-                     f"with {r_['operating_point']['accuracy'] * 100:.0f}% accuracy at a cut-off chosen on a validation year and {r_['precision@50'] * 100:.0f}% true repeat links among its top 50 pairs.",
+                     f"A repeat collaboration is a pair of faculty who have already co-authored at least one paper and publish together again. The model scores each such pair from their joint history, shared collaborators and research topics. "
+                     f"Tested on 2025 (trained on 2016-2023): {r_['positives']} of {r_['pairs']} such pairs did publish together again (base rate {r_['base_rate'] * 100:.0f}%). The best model ({bn}) ranks them with average precision {r_['average_precision']:.2f} and ROC-AUC {r_['roc_auc']:.2f}, "
+                     f"and classifies {r_['operating_point']['accuracy'] * 100:.0f}% of pairs correctly at a cut-off chosen on a validation year.",
                      {"test": rt, "best_model": bn}, caveat="One test year (870 pairs); differences between the top models are within noise."))
     else:
         r_ = rp["metrics"]["random forest"]

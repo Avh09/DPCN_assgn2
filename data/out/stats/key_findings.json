@@ -894,7 +894,7 @@
  {
   "tab": "collaborations",
   "title": "Predicting new collaborations",
-  "text": "Each model sees only papers up to year T and is tested on whether a pair that never co-authored starts within the next 3 years (test years 2020, 2021, 2022 pooled: 761 real new collaborations among 404,282 pairs, base rate 0.19%). The best model (LightGBM + logistic regression on 59 network, topic, reference and recency features) reaches average precision 0.057 (30x the base rate) and ROC-AUC 0.95, with 12% true links among its top 100 pairs. Per faculty, 46% of those who really started a new collaboration had a correct partner among their top 5 suggestions and 64% among their top 10. The output is a ranking score, not a probability.",
+  "text": "What it does: for every pair of faculty who have not yet co-authored, the model reads their papers up to a given year (co-author network, research topics, shared references and citations, how recently each has published) and scores how likely the two are to start working together within 3 years. For each faculty member this gives a ranked list of suggested partners; the top 5 are what the dashboard and the assistant show. Results, tested only on years the model had not seen (2020, 2021, 2022 pooled): of the faculty who really started a new collaboration, 46% had a correct partner among their top 5 suggestions and 64% among their top 10. The ranking beats chance by about 30x (new collaborations are rare: 0.19% of pairs, 761 real ones among 404,282 pairs). The output is a ranking, not a probability.",
   "evidence": {
    "best_model": "E: A2 + LR2 rank average",
    "pooled_3yr": {
@@ -1029,7 +1029,7 @@
  {
   "tab": "collaborations",
   "title": "Predicting repeat collaborations",
-  "text": "For pairs that already co-authored, trained on snapshots 2016-2023 and tested on 2024 features against 2025 outcomes (178 of 870 pairs collaborated again, base rate 0.20), the best model (ensemble LGB + LR) reaches average precision 0.63 and ROC-AUC 0.85, with 80% accuracy at a cut-off chosen on a validation year and 82% true repeat links among its top 50 pairs.",
+  "text": "A repeat collaboration is a pair of faculty who have already co-authored at least one paper and publish together again. The model scores each such pair from their joint history, shared collaborators and research topics. Tested on 2025 (trained on 2016-2023): 178 of 870 such pairs did publish together again (base rate 20%). The best model (ensemble LGB + LR) ranks them with average precision 0.63 and ROC-AUC 0.85, and classifies 80% of pairs correctly at a cut-off chosen on a validation year.",
   "evidence": {
    "test": {
     "v1 baseline: LR, v1 feats (single window)": {
