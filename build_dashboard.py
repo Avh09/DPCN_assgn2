@@ -223,7 +223,7 @@ def candidates_current():
     """Suggested collaborations between current faculty only; 11 hops is the model's placeholder for 'no path', shown as null."""
     st = {(r["institution"], r["name"]): r["faculty_status"] for r in rd(ROOT / "data" / "faculty_final.csv")}
     out = []
-    for r in rd(ST / "collab_candidates.csv"):
+    for r in rd(ST / ("collab_candidates_v5.csv" if (ST / "collab_candidates_v5.csv").exists() else "collab_candidates.csv")):
         if st.get((r["institute_a"], r["faculty_a"])) == "former" or st.get((r["institute_b"], r["faculty_b"])) == "former":
             continue
         if r["hops"] and float(r["hops"]) == 11:
@@ -290,6 +290,8 @@ data = {
     "resCurves": rd(ST / "resilience_curves.csv"),
     "criticalFaculty": [r for sc in ["all"] + INSTS for r in [x for x in rd(ST / "critical_faculty.csv") if x["scope"] == sc][:12]],
     "linkPred": jload("link_prediction_results.json"),
+    "linkPredV5": {h: jload(f"link_prediction_v5_{h}_results.json") for h in ("h1", "h3") if (ST / f"link_prediction_v5_{h}_results.json").exists()},
+    "linkPredV3": jload("link_prediction_v3_results.json") if (ST / "link_prediction_v3_results.json").exists() else None,
     "candidates": candidates_current(),
     "insights": {n: (jload(f"insights/{n}.json") if (ST / "insights" / f"{n}.json").exists() else rd(ST / "insights" / f"{n}.csv"))
                  for n in ("institute_comparison", "h_index_size_test", "citation_concentration", "review_analysis",
