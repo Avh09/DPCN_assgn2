@@ -2,7 +2,7 @@
 
 Model: rank average of the 5-seed LightGBM (A2) and the logistic regression (LR2) from link_prediction_v5.py, 3-year horizon, refit on every snapshot whose
 3-year outcome is fully known (T = 2016 .. 2022), then applied to features at T = 2025 (papers up to 2025). The score is a ranking, not a probability.
-Writes stats/collab_candidates_v5.csv (top 3000 pairs, same columns as collab_candidates.csv, so the dashboard and the assistant can read either).
+Also writes stats/collab_scores_v5.csv.gz (all candidate pairs). Writes stats/collab_candidates_v5.csv (top 3000 pairs, same columns as collab_candidates.csv, so the dashboard and the assistant can read either).
 Run: python forward_ranking_v5.py
 """
 import json
@@ -36,6 +36,7 @@ def main():
     lr = v2.make_lr(lr_c).fit(tr[fx], tr.y).predict_proba(now[fx])[:, 1]
     now["score_lgb"], now["score_lr"] = bag, lr
     now["rank_score"] = (v2.rank01(bag) + v2.rank01(lr)) / 2
+    now[["u", "v", "rank_score", "score_lgb", "score_lr"]].round(6).to_csv(STATS / "collab_scores_v5.csv.gz", index=False)     # every candidate pair, for the assistant
     top = now.sort_values("rank_score", ascending=False).head(3000).copy()
     H0, mats = v2._cache[("mats", NOW)]
     ev = [C.explain(H0, mats, int(u), int(v)) for u, v in zip(top.u, top.v)]

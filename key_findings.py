@@ -164,13 +164,36 @@ def main():
 
     # ------------------------------------------------------------- Potential collaborations
     nw, rp = LP["tasks"]["new"], LP["tasks"]["repeat"]
-    m = nw["metrics"]["logistic regression"]
-    out.append(F("collaborations", "Predicting new collaborations", f"Trained on 2016-2019 history and tested on 2023-2025 outcomes from 2022 features, the best model ranks the true new links with average precision {m['average_precision']:.3f} against a base rate of {m['base_rate']:.4f} "
-                 f"({m['ap_lift_over_base_rate']:.0f}x) and finds {m['precision@100'] * 100:.0f}% true links among its top 100 pairs. Network features, department/institute structure and topic similarity each contribute; the output is a ranking score, not a probability (calibration check failed).",
-                 {"metrics": nw["metrics"], "ablation": nw["ablation_random_forest"], "calibration": nw["calibration"]}, caveat="New links are rare; absolute precision is low even though it is far above chance."))
-    r_ = rp["metrics"]["random forest"]
-    out.append(F("collaborations", "Predicting repeat collaborations", f"For pairs that already co-authored, the random forest reaches average precision {r_['average_precision']:.2f} (base rate {r_['base_rate']:.2f}) and ROC-AUC {r_['roc_auc']:.2f}; its calibrated probabilities pass the calibration check "
-                 f"(slope {rp['calibration']['random forest']['slope']:.2f}). Recency of the last joint paper and the strength of shared collaborator groups matter most.", {"metrics": rp["metrics"], "importance": rp["rf_importance"]}))
+    V5 = {h: json.load(open(ST / f"link_prediction_v5_{h}_results.json")) for h in ("h1", "h3") if (ST / f"link_prediction_v5_{h}_results.json").exists()}
+    V3 = json.load(open(ST / "link_prediction_v3_results.json")) if (ST / "link_prediction_v3_results.json").exists() else None
+    if "h3" in V5:
+        pool = V5["h3"]["pooled"]
+        bn = max(pool, key=lambda k: pool[k]["average_precision"])
+        m = pool[bn]
+        br = m["positives"] / m["pairs"]
+        out.append(F("collaborations", "Predicting new collaborations",
+                     f"Each model sees only papers up to year T and is tested on whether a pair that never co-authored starts within the next 3 years (test years {', '.join(V5['h3']['folds'])} pooled: {m['positives']} real new collaborations among {m['pairs']:,} pairs, base rate {br * 100:.2f}%). "
+                     f"The best model (LightGBM + logistic regression on 59 network, topic, reference and recency features) reaches average precision {m['average_precision']:.3f} ({m['average_precision'] / br:.0f}x the base rate) and ROC-AUC {m['roc_auc']:.2f}, with {m['mean_fold_precision@100'] * 100:.0f}% true links among its top 100 pairs. "
+                     f"Per faculty, {m['hit@5'] * 100:.0f}% of those who really started a new collaboration had a correct partner among their top 5 suggestions and {m['hit@10'] * 100:.0f}% among their top 10. The output is a ranking score, not a probability.",
+                     {"best_model": bn, "pooled_3yr": pool, "pooled_1yr": V5["h1"]["pooled"] if "h1" in V5 else None},
+                     caveat="New links are rare; absolute precision is low even though it is far above chance. Hit rates count only faculty who did start a new collaboration."))
+    else:
+        m = nw["metrics"]["logistic regression"]
+        out.append(F("collaborations", "Predicting new collaborations", f"Trained on 2016-2019 history and tested on 2023-2025 outcomes from 2022 features, the best model ranks the true new links with average precision {m['average_precision']:.3f} against a base rate of {m['base_rate']:.4f} "
+                     f"({m['ap_lift_over_base_rate']:.0f}x) and finds {m['precision@100'] * 100:.0f}% true links among its top 100 pairs. Network features, department/institute structure and topic similarity each contribute; the output is a ranking score, not a probability (calibration check failed).",
+                     {"metrics": nw["metrics"], "ablation": nw["ablation_random_forest"], "calibration": nw["calibration"]}, caveat="New links are rare; absolute precision is low even though it is far above chance."))
+    if V3 and "repeat" in V3.get("tasks", {}):
+        rt = V3["tasks"]["repeat"]["test"]
+        bn = max(rt, key=lambda k: rt[k]["average_precision"])
+        r_ = rt[bn]
+        out.append(F("collaborations", "Predicting repeat collaborations",
+                     f"For pairs that already co-authored, trained on snapshots 2016-2023 and tested on 2024 features against 2025 outcomes ({r_['positives']} of {r_['pairs']} pairs collaborated again, base rate {r_['base_rate']:.2f}), the best model ({bn}) reaches average precision {r_['average_precision']:.2f} and ROC-AUC {r_['roc_auc']:.2f}, "
+                     f"with {r_['operating_point']['accuracy'] * 100:.0f}% accuracy at a cut-off chosen on a validation year and {r_['precision@50'] * 100:.0f}% true repeat links among its top 50 pairs.",
+                     {"test": rt, "best_model": bn}, caveat="One test year (870 pairs); differences between the top models are within noise."))
+    else:
+        r_ = rp["metrics"]["random forest"]
+        out.append(F("collaborations", "Predicting repeat collaborations", f"For pairs that already co-authored, the random forest reaches average precision {r_['average_precision']:.2f} (base rate {r_['base_rate']:.2f}) and ROC-AUC {r_['roc_auc']:.2f}; its calibrated probabilities pass the calibration check "
+                     f"(slope {rp['calibration']['random forest']['slope']:.2f}). Recency of the last joint paper and the strength of shared collaborator groups matter most.", {"metrics": rp["metrics"], "importance": rp["rf_importance"]}))
 
     # ------------------------------------------------------------- Reach and flows
     rr = reach.set_index("institution")

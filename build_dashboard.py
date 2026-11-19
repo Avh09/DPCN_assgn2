@@ -291,6 +291,7 @@ data = {
     "criticalFaculty": [r for sc in ["all"] + INSTS for r in [x for x in rd(ST / "critical_faculty.csv") if x["scope"] == sc][:12]],
     "linkPred": jload("link_prediction_results.json"),
     "linkPredV5": {h: jload(f"link_prediction_v5_{h}_results.json") for h in ("h1", "h3") if (ST / f"link_prediction_v5_{h}_results.json").exists()},
+    "coupling": ({"summary": jload("coupling_decay_summary.json"), "opps": rd(ST / "coupling_opportunities_top.csv")[:15]} if (ST / "coupling_decay_summary.json").exists() else None),
     "linkPredV3": jload("link_prediction_v3_results.json") if (ST / "link_prediction_v3_results.json").exists() else None,
     "candidates": candidates_current(),
     "insights": {n: (jload(f"insights/{n}.json") if (ST / "insights" / f"{n}.json").exists() else rd(ST / "insights" / f"{n}.csv"))

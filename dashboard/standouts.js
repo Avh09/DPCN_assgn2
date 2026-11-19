@@ -193,8 +193,11 @@ function facts() {
 
   // ---- Potential
   const cd = D.candidates, c0 = cd[0], x0 = cd.find(r => r.institute_a !== r.institute_b);
+  const h3 = (D.linkPredV5 || {}).h3, bk = h3 && Object.values(h3.pooled).sort((p, q) => q.average_precision - p.average_precision)[0];
+  const nCo = Math.round(num(c0.common_neighbours));
   out.potential = [
-    { t: 'The model’s top suggestion', x: `${b(esc(c0.faculty_a))} (${SH[I.indexOf(c0.institute_a)]}) and ${b(esc(c0.faculty_b))} (${SH[I.indexOf(c0.institute_b)]}) are ranked first: they are ${b(c0.hops)} co-author steps apart, share ${b(Math.round(num(c0.common_neighbours)))} collaborator and have topic similarity ${b(fmt2(num(c0.topic_cosine)))}.`, look: ['Who could collaborate next?', 'candidate pairs'] },
+    { t: 'The model’s top suggestion', x: `${b(esc(c0.faculty_a))} (${SH[I.indexOf(c0.institute_a)]}) and ${b(esc(c0.faculty_b))} (${SH[I.indexOf(c0.institute_b)]}) are ranked first: ${c0.hops === '' || c0.hops == null ? 'they are not yet linked through any chain of co-authors' : `they are ${b(c0.hops)} co-author steps apart`}, share ${b(nCo)} collaborator${nCo === 1 ? '' : 's'} and have topic similarity ${b(fmt2(num(c0.topic_cosine)))}.`, look: ['Who could collaborate next?', 'candidate pairs'] },
+    ...(bk ? [{ t: 'How often the top suggestions are right', x: `Among faculty who really started a new collaboration, ${b(fmt1(100 * bk['hit@5']) + '%')} had a correct partner in their top 5 suggestions and ${b(fmt1(100 * bk['hit@10']) + '%')} in their top 10 (3-year outcome, test years ${Object.keys(h3.folds).join(', ')} pooled). Of the 100 highest-ranked pairs, ${b(fmt1(100 * bk['mean_fold_precision@100']) + '%')} really started collaborating, against a base rate of ${b((100 * bk.positives / bk.pairs).toFixed(2) + '%')}.`, look: ['Which pairs could start collaborating? (3-year outcome)', 'model results'] }] : []),
     ...(x0 ? [{ t: 'The best suggestion across two institutes', x: `${b(esc(x0.faculty_a))} (${SH[I.indexOf(x0.institute_a)]}) and ${b(esc(x0.faculty_b))} (${SH[I.indexOf(x0.institute_b)]}), ranked ${b('#' + x0.rank)}. Cross-institute pairs are rare in the data, so these would be new bridges.`, look: ['Who could collaborate next?', 'candidate pairs'] }] : [])
   ];
   return out;

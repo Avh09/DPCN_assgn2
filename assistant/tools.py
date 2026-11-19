@@ -301,6 +301,16 @@ def _scope_filter(df, scope, me_inst):
     return df
 
 
+_V5 = {}
+
+
+def _v5_scores(path):
+    if "d" not in _V5:
+        d = pd.read_csv(path)
+        _V5["d"] = {(int(a), int(b)): float(c) for a, b, c in zip(d.u, d.v, d.rank_score)}
+    return _V5["d"]
+
+
 def recommend_collaborators(faculty, k=5, scope="any", field=None, different_department=False, exclude_existing=True):
     """Ranks faculty who have not co-authored with `faculty` using the validated link-prediction models plus topic evidence."""
     fid_, err = _fac(faculty, "recommend_collaborators")
@@ -332,7 +342,12 @@ def recommend_collaborators(faculty, k=5, scope="any", field=None, different_dep
     df = C.pair_frame(H, M, [(min(i, j), max(i, j)) for j in rows])
     fe = cmod.NEW_LINK_FEATURES
     models = cm["models"]["new"]["models"] if cm["models"] else None
-    if models:
+    v5f = ST / "collab_scores_v5.csv.gz"
+    if v5f.exists():
+        sc = _v5_scores(v5f)
+        df["score"] = [sc.get((int(a), int(b)), 0.0) for a, b in zip(df.u, df.v)]
+        basis = "validated link-prediction ranking (LightGBM + logistic regression on 59 network, topic, reference and recency features; 3-year horizon, temporal tests 2020-2022)"
+    elif models:
         df["score"] = (models["random forest"].predict_proba(df[fe])[:, 1].argsort().argsort() + models["logistic regression"].predict_proba(df[fe])[:, 1].argsort().argsort()) / (2 * len(df))
         basis = "validated link-prediction ranking (logistic regression + random forest, temporal test 2023-2025)"
     else:
