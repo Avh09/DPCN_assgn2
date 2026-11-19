@@ -75,6 +75,10 @@ def main():
     out["coupling_vs_collaboration"] = {"share_of_collab_pairs_with_shared_refs": round(float((s[a_ == 1] > 0).mean()), 3),
                                         "share_of_noncollab_pairs_with_shared_refs": round(float((s[a_ == 0] > 0).mean()), 3),
                                         "median_shared_refs_collab_pairs": float(np.median(s[a_ == 1])), "median_shared_refs_other_pairs": float(np.median(s[a_ == 0]))}
+    # every coupled pair, for the assistant ("bibliographic coupling of professor X")
+    ui, uj = np.where(np.triu(shared > 0, 1))
+    pd.DataFrame({"faculty_a": [C.name[i] for i in ui], "institute_a": [C.inst[i] for i in ui], "faculty_b": [C.name[j] for j in uj], "institute_b": [C.inst[j] for j in uj],
+                  "shared_references": shared[ui, uj].astype(int), "coupling_cosine": cos[ui, uj].round(4), "co_authored": A[ui, uj].astype(int)}).to_csv(STATS / "coupling_pairs.csv.gz", index=False)
     # coupled but never collaborated = opportunity list (cross-person, ranked by tf-idf cosine)
     rows = [(int(i), int(j), int(shared[i, j]), round(float(cos[i, j]), 4)) for i, j in zip(*np.where(np.triu((cos > 0.12) & (A == 0), 1)))]
     rows.sort(key=lambda r: -r[3])
@@ -99,7 +103,8 @@ def main():
                                "share_of_coupling_edges_within_one_institute": round(float(np.mean([C.inst[i] == C.inst[j] for i, j in Gc.edges()])), 3)}
     bet_c = nx.betweenness_centrality(Gc, weight=None)
     cm = pd.DataFrame({"faculty": [C.name[i] for i in range(n)], "institute": C.inst, "coupling_strength": [sum(d["weight"] for _, _, d in Gc.edges(i, data=True)) for i in range(n)],
-                       "coupling_degree": [Gc.degree(i) for i in range(n)], "coupling_betweenness": [bet_c[i] for i in range(n)], "coupling_community": lc})
+                       "coupling_degree": [Gc.degree(i) for i in range(n)], "coupling_betweenness": [bet_c[i] for i in range(n)], "coupling_community": lc,
+                       "single_faculty_papers": np.asarray(Ps.sum(0)).ravel().astype(int), "distinct_references": np.asarray(R.sum(1)).ravel().astype(int)})
     cm.to_csv(STATS / "coupling_faculty_metrics.csv", index=False)
     # ---------------------------------------------------------------- 2. time-decayed collaboration metrics
     gs_b = nx.betweenness_centrality(Gs, weight=None)

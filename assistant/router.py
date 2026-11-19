@@ -365,6 +365,8 @@ def route(question, ctx=None):
         calls.append(("retracted_papers", {"faculty": f1} if f1 else {"institute": ours[0]} if ours else {}))
     elif vq:
         calls.append(("venue_profile", {"venue": vq}))
+    elif f1 and re.search(r"bibliographic|coupl|same references|shared references|share(?:s|d)? (?:the )?(?:same )?references|cite the same|cites the same|read the same literature", ql):
+        calls.append(("bibliographic_coupling", {"faculty": f1, "new_only": bool(re.search(r"never|not (?:yet )?co-?author|haven.t co-?author|without", ql))}))
     elif not ids and re.search(r"\bregion|regional|same state|state[- ]level|within (?:the |their |its )?(?:own )?states?|nearby|\blocal\b|locality|geograph|proximity|distance|close by|neighbou?ring", ql) \
             and re.search(r"collab|partner|co-?author|work|link|connect|joint", ql):
         calls.append(("regional_collaboration", {"institute": ours[0]} if len(ours) == 1 else {}))

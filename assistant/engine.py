@@ -160,7 +160,7 @@ class Assistant:
                     ev.append(e)
         tables = []
         by_tool = {"journal_papers": "Faculty who publish in this journal", "top_faculty": "Faculty ranking", "bridge_researchers": "Faculty ranking",
-                   "department_stats": "Departments", "retracted_papers": "Retracted papers", "top_papers": "Papers", "find_experts": "Faculty on this topic",
+                   "department_stats": "Departments", "bibliographic_coupling": "Bibliographic coupling", "retracted_papers": "Retracted papers", "top_papers": "Papers", "find_experts": "Faculty on this topic",
                    "recommend_collaborators": "Suggested collaborators", "strongest_pairs": "Collaborating pairs", "faculty_pattern": "Faculty",
                    "interdisciplinary_communities": "Communities", "partner_institutes": "Partners"}
         by_key = {"rows": "Results", "suggestions": "Suggested collaborators", "table": "Table", "pairs": "Pairs", "papers": "Papers", "communities": "Communities"}

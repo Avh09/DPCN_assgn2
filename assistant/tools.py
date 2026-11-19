@@ -48,6 +48,7 @@ GLOSSARY = {
     "modularity": "How strongly the network divides into groups with many links inside and few between (0 = no structure, towards 1 = strong separation).",
     "louvain/leiden": "Algorithms that find groups ('communities') of faculty who collaborate mostly with each other.",
     "q1_share": "Q1 journal papers divided by journal papers that have a journal quartile. Conference ranks are separate.",
+    "bibliographic_coupling": "Two people are bibliographically coupled when their papers cite the same references; the more shared references, the closer their intellectual base. It needs no joint paper, so it can reveal pairs who read the same literature but never co-authored. Here it is counted from papers with one verified-faculty author only, so that co-authors do not share references automatically.",
     "weighted_jaccard": "Research-topic similarity (0-1): sum of the smaller topic shares / sum of the larger shares over OpenAlex subfields. Computed only for top partners.",
 }
 
@@ -905,6 +906,42 @@ def fastest_growing_topics(since=2020, level="subfield", n=8):
     return _res("fastest_growing_topics", f"Largest gains in share of publications after {since} ({level})", {"rows": rows[:int(n)], "note": "2026 excluded (partial year); topics with at least 40 papers after the cut-off"}, [], COVERAGE_FAC)
 
 
+_COUP = {}
+
+
+def bibliographic_coupling(faculty, n=8, new_only=False):
+    """Bibliographic coupling of one faculty member: who cites the same references (counted from single-faculty papers only)."""
+    fid_, err = _fac(faculty, "bibliographic_coupling")
+    if err:
+        return err
+    if "p" not in _COUP:
+        f, m = ST / "coupling_pairs.csv.gz", ST / "coupling_faculty_metrics.csv"
+        _COUP["p"] = pd.read_csv(f) if f.exists() else None
+        _COUP["m"] = pd.read_csv(m) if m.exists() else None
+    p, m = _COUP["p"], _COUP["m"]
+    if p is None:
+        return _res("bibliographic_coupling", "The bibliographic coupling table is not available in this build.", ok=False)
+    who = store().faculty.loc[fid_]
+    a = p[(p.faculty_a == who.faculty_name) & (p.institute_a == who.institution)].rename(columns={"faculty_b": "name", "institute_b": "institute"})
+    b = p[(p.faculty_b == who.faculty_name) & (p.institute_b == who.institution)].rename(columns={"faculty_a": "name", "institute_a": "institute"})
+    rows = pd.concat([a[["name", "institute", "shared_references", "coupling_cosine", "co_authored"]], b[["name", "institute", "shared_references", "coupling_cosine", "co_authored"]]])
+    me = m[(m.faculty == who.faculty_name) & (m.institute == who.institution)].iloc[0] if m is not None and len(m[(m.faculty == who.faculty_name) & (m.institute == who.institution)]) else None
+    base = {"faculty": who.faculty_name, "institution": who.institution,
+            "single_faculty_papers": int(me.single_faculty_papers) if me is not None else None, "distinct_references": int(me.distinct_references) if me is not None else None,
+            "definition": GLOSSARY["bibliographic_coupling"],
+            "note": "Counted from papers with exactly one verified-faculty author, so that a joint paper's reference list does not count as 'shared' by co-authors automatically. References come from OpenAlex."}
+    if rows.empty:
+        return _res("bibliographic_coupling", f"{who.faculty_name} shares no references with another verified faculty member in single-faculty papers"
+                    + (f" ({base['single_faculty_papers']} such papers, {base['distinct_references']} distinct references)." if me is not None else "."), {**base, "coupled_with": 0, "top": []},
+                    [_flink(fid_)], COVERAGE_FAC)
+    pool = rows[rows.co_authored == 0] if new_only else rows
+    top = pool.sort_values("shared_references", ascending=False).head(int(min(max(n, 1), 15)))
+    data = {**base, "coupled_with": int(len(rows)), "coupled_with_never_coauthored": int((rows.co_authored == 0).sum()), "coupled_with_coauthors": int((rows.co_authored == 1).sum()),
+            "new_only": bool(new_only), "top": [{"name": r.name, "institute": SHORT.get(r.institute, r.institute), "shared_references": int(r.shared_references), "cosine": round(float(r.coupling_cosine), 3),
+                                                  "already_co_authored": bool(r.co_authored)} for r in top.itertuples()]}
+    return _res("bibliographic_coupling", f"{who.faculty_name} is bibliographically coupled with {len(rows)} verified faculty", data, [_flink(fid_)], COVERAGE_FAC)
+
+
 def explain_metric(name):
     k = name.lower().strip().replace(" ", "_").replace("-", "_")
     alias = {"between": "betweenness", "eigen": "eigenvector", "h": "h_index", "hindex": "h_index", "page_rank": "pagerank", "q1": "q1_share", "core": "k_core", "jaccard": "weighted_jaccard", "community": "louvain/leiden"}
@@ -1350,6 +1387,7 @@ TOOLS = {
     "strongest_pairs": (strongest_pairs, "Strongest faculty pairs by joint papers. kind: any | within_institute | cross_institute.", _schema({"kind": {"type": "string", "enum": ["any", "within_institute", "cross_institute"]}, "n": I_})),
     "interdisciplinary_communities": (interdisciplinary_communities, "Collaboration communities ordered by how mixed their departments are.", _schema({"n": I_})),
     "top_papers": (top_papers, "Top papers by citations / fwci / pagerank with optional institute, years, field, journal/conference filter.", _schema({"metric": S_, "institute": S_, "n": I_, "year_from": I_, "year_to": I_, "field": S_, "kind": S_})),
+    "bibliographic_coupling": (bibliographic_coupling, "Bibliographic coupling of ONE faculty member: which other faculty cite the same references (shared reference counts, cosine), and whether they already co-authored. Use for 'bibliographic coupling of X', 'who cites the same papers as X', 'who reads the same literature as X'. new_only=true lists only people they never co-authored with.", _schema({"faculty": S_, "n": I_, "new_only": {"type": "boolean"}}, ["faculty"])),
     "venue_profile": (venue_profile, "Who published in a named JOURNAL or CONFERENCE (e.g. Chaos Solitons & Fractals, IEEE Access): papers, faculty, institutes, quartile/rank, top papers. Use this for any question naming a journal or conference; matching ignores punctuation and '&' vs 'and'.", _schema({"venue": S_, "n": I_}, ["venue"])),
     "get_paper": (get_paper, "Details of one paper by title fragment, DOI or OpenAlex id.", _schema({"query": S_}, ["query"])),
     "citation_neighbourhood": (citation_neighbourhood, "Papers that cite / are cited by a paper inside the corpus, with a figure.", _schema({"paper": S_}, ["paper"])),
@@ -1371,7 +1409,7 @@ TOOLS = {
 
 
 # ============================================================================ links into the dashboard
-TAB_LINK = {"journal_papers": ("papers", "Paper explorer"), "regional_collaboration": ("reach", "Reach and locality"), "department_stats": ("faculty", "Faculty and departments"), "retracted_papers": ("method", "Methodology (retracted papers)"), "institute_profile": ("overview", "Institute overview"), "compare_institutes": ("overview", "Institute comparison"),
+TAB_LINK = {"bibliographic_coupling": ("potential", "Potential collaborations"), "journal_papers": ("papers", "Paper explorer"), "regional_collaboration": ("reach", "Reach and locality"), "department_stats": ("faculty", "Faculty and departments"), "retracted_papers": ("method", "Methodology (retracted papers)"), "institute_profile": ("overview", "Institute overview"), "compare_institutes": ("overview", "Institute comparison"),
             "top_faculty": ("faculty", "Faculty leaderboard"), "faculty_pattern": ("faculty", "Faculty table"),
             "network_overview": ("collab", "Collaboration network"), "strongest_pairs": ("collab", "Collaboration network"), "bridge_researchers": ("collab", "Collaboration network"),
             "interdisciplinary_communities": ("collab", "Collaboration network"), "filter_network_by_weight": ("collab", "Collaboration network"),

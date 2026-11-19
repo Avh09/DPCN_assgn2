@@ -177,6 +177,16 @@ def _venue(d, r):
     return (f"Yes. {d['papers']} paper(s) in {d['recorded_names'][0]} by {d['faculty_count']} verified faculty, mainly " + ", ".join(f"{x['name']} ({x['papers']})" for x in d["faculty"][:3]) + ".", ev, [])
 
 
+def _coupling(d, r):
+    if not d.get("top"):
+        return r["summary"], [d["note"]], []
+    top = ", ".join(f"{x['name']} ({x['shared_references']} shared references)" for x in d["top"][:3])
+    ev = [f"{x['name']} ({x['institute']}): {x['shared_references']} shared references, similarity {x['cosine']}; " + ("already co-authored" if x["already_co_authored"] else "never co-authored") for x in d["top"]]
+    ev.append(f"Coupled with {d['coupled_with']} faculty in total: {d['coupled_with_coauthors']} are co-authors, {d['coupled_with_never_coauthored']} never co-authored.")
+    return (f"{d['faculty']}'s bibliographic coupling: they cite many of the same references as {top}. Coupled with {d['coupled_with']} verified faculty ({d['coupled_with_never_coauthored']} of them never co-authored with them).", ev,
+            [d["definition"], d["note"]])
+
+
 def _pattern(d, r):
     return r["summary"], [f"{x['name']} ({x['institution']}): degree {x['degree']}, betweenness {_fmt(x['betweenness'])}, {x['papers']} papers, {x['citations']} citations" for x in d["rows"]], [f"Thresholds were computed over {d['thresholds_computed_over']}."]
 
@@ -349,7 +359,7 @@ def _explain(d, r):
     return d.get("definition") or r["summary"], [], []
 
 
-FORMATTERS = {"venue_profile": _venue, "explain_metric": _explain, "assess_collaboration": _assess, "get_collaboration_history": _assess, "get_shortest_collaboration_path": _assess, "get_common_collaborators": _assess,
+FORMATTERS = {"bibliographic_coupling": _coupling, "venue_profile": _venue, "explain_metric": _explain, "assess_collaboration": _assess, "get_collaboration_history": _assess, "get_shortest_collaboration_path": _assess, "get_common_collaborators": _assess,
               "recommend_collaborators": _recommend, "compare_institutes": _compare_inst, "top_faculty": _top_faculty, "bridge_researchers": _top_faculty, "faculty_pattern": _pattern,
               "resilience_summary": _resilience, "simulate_node_removal": _removal, "network_overview": _network, "citation_flows": _flows, "get_paper": _paper, "explain_paper_pagerank": _pagerank,
               "assess_institute_collaboration": _institute_collab, "partner_institutes": _partner, "partner_place_impact": _place_impact, "citation_give_take": _give_take, "explain_output_difference": _why, "find_experts": _experts, "get_faculty_profile": _profile, "top_papers": _top_papers, "retracted_papers": _retracted, "regional_collaboration": _regional, "department_stats": _departments, "journal_papers": _journal}
