@@ -278,12 +278,14 @@ function renderPotential() {
   const pt = (r) => { const v = Object.values(r.pooled)[0]; return `${fmt(v.positives)} real new collaborations in ${fmt(v.pairs)} pair-years, test years ${Object.keys(r.folds).join(', ')}, base rate ${(100 * v.positives / v.pairs).toFixed(2)}%`; };
   const H5 = ['Model', 'Avg precision', 'ROC-AUC', 'Hit@5 per faculty', 'Hit@10 per faculty'];
   const cands = D.candidates.filter(r => sel < 0 || r.institute_a === I[sel] || r.institute_b === I[sel]).slice(0, 40);
-  const newCards = h3 ? card('Which pairs could start collaborating? (3-year outcome)', `Each model only sees papers up to year T and is tested on whether the pair co-authors in T+1 to T+3, over several test years pooled (${pt(h3)}). <b>Hit@5</b>: of the faculty who really started a new collaboration, the share whose top 5 suggested partners contained a correct one (Hit@10 likewise).`, table(H5, prows(h3))) +
-      (h1 ? card('Same, one-year outcome', `Label = co-authors in the next year only (${pt(h1)}). Harder and noisier.`, table(H5, prows(h1))) : '')
+  const eRow = (r, lab) => { const f = Object.entries(r.pooled).find(([k]) => k.startsWith('E:')) || Object.entries(r.pooled)[0], v = f[1]; return [lab, (+v.average_precision).toFixed(3), fmt2(v.roc_auc), fmt1(100 * v['hit@5']) + '%', fmt1(100 * v['hit@10']) + '%', (100 * v.positives / v.pairs).toFixed(2) + '%']; };
+  const newCards = h3 ? card('How well does the model find new collaborators?', `The model in use: gradient-boosted trees (LightGBM) averaged with a logistic regression. Each test looks only at papers up to year T and checks who really started co-authoring afterwards, on years the model never saw (${pt(h3)}). <b>Hit@5</b>: of the faculty who really started a new collaboration, the share whose top 5 suggested partners contained a correct one (Hit@10 likewise).`,
+      table(['Test', 'Avg precision', 'ROC-AUC', 'Hit@5 per faculty', 'Hit@10 per faculty', 'Base rate'], [eRow(h3, 'Next 3 years (used for the suggestions)'), ...(h1 ? [eRow(h1, 'Next year only (harder, noisier)')] : [])]))
     : card('Which pairs could start collaborating?', `Trained on features at ${nw.train.T || 2019}, tested on ${nw.test.T || 2022} features and 2023–2025 outcomes. Base rate ${(M(nw, 'logistic regression').base_rate * 100).toFixed(2)}%.`, table(['Model', 'Avg precision', 'ROC-AUC', 'Precision@100', 'Recall@500'], mrows(nw)));
   const rt = V3 && V3.tasks && V3.tasks.repeat && V3.tasks.repeat.test;
-  const repCard = rt ? card('Which pairs are likely to work together again?', `A separate task: pairs that already co-authored. Trained on snapshots 2016–2023, tested on 2024 features against 2025 outcomes (${Object.values(rt)[0].positives} of ${Object.values(rt)[0].pairs} pairs did). Accuracy uses the cut-off chosen on a validation year.`,
-      table(['Model', 'Avg precision', 'ROC-AUC', 'Accuracy', 'F1'], Object.entries(rt).filter(([k]) => !/GNN/.test(k)).map(([k, v]) => [esc(k), (+v.average_precision).toFixed(3), fmt2(v.roc_auc), fmt1(100 * v.operating_point.accuracy) + '%', fmt2(v.operating_point.f1)])))
+  const rbestRow = rt && Object.entries(rt).filter(([k]) => !/GNN|baseline/.test(k)).sort((p, q) => q[1].average_precision - p[1].average_precision)[0];
+  const repCard = rbestRow ? card('How well does the model find repeat collaborators?', `A repeat collaborator is someone the faculty member has already co-authored with. Trained on snapshots 2016–2023, tested on 2024 features against 2025 outcomes (${rbestRow[1].positives} of ${rbestRow[1].pairs} such pairs published together again). Accuracy uses the cut-off chosen on a validation year.`,
+      table(['Model', 'Avg precision', 'ROC-AUC', 'Accuracy', 'Base rate'], [['LightGBM + logistic regression', (+rbestRow[1].average_precision).toFixed(3), fmt2(rbestRow[1].roc_auc), fmt1(100 * rbestRow[1].operating_point.accuracy) + '%', fmt1(100 * rbestRow[1].positives / rbestRow[1].pairs) + '%']]))
     : card('Which pairs are likely to work together again?', 'A separate task; the probabilities pass the calibration check for the random forest.', table(['Model', 'Avg precision', 'ROC-AUC', 'Precision@100', 'Recall@500'], mrows(rp)));
   const bk = h3 && Object.values(h3.pooled).sort((p, q) => q.average_precision - p.average_precision)[0];
   const rbest = rt && Object.entries(rt).sort((p, q) => q[1].average_precision - p[1].average_precision)[0];
@@ -292,6 +294,9 @@ function renderPotential() {
     ['Hit@10 per faculty', `<b>${fmt1(100 * bk['hit@10'])}%</b>`, 'Same, with the top 10.'],
     ['Lift over chance', `<b>${(bk.average_precision / (bk.positives / bk.pairs)).toFixed(0)}×</b>`, 'Average precision divided by the base rate of new collaborations.'],
     ...(rbest ? [['Repeat collaborations', `<b>${fmt1(100 * rbest[1].operating_point.accuracy)}%</b> accuracy`, `Pairs that already co-authored: will they again? Average precision ${(+rbest[1].average_precision).toFixed(2)}, base rate ${fmt1(100 * rbest[1].positives / rbest[1].pairs)}%.`]] : [])])) : '';
+  const SG = D.suggest, sgMap = new Map();
+  const finderCard = SG ? card('Find collaborators for a faculty member', 'Choose a faculty member and press the button: you get the people the model suggests, split into new collaborators (never co-authored) and repeat collaborators (already co-authored, likeliest to publish together again). The two lists come from two separate models, so their scores are not comparable. Scores are rankings, not probabilities.',
+      `<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><input id="sg-in" list="sg-list" placeholder="Start typing a faculty name…" autocomplete="off" style="flex:1;min-width:240px;padding:9px 12px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--ink)"><datalist id="sg-list">${Object.values(SG).sort((p, q) => p.name.localeCompare(q.name)).map(f => { const lab = `${f.name} (${SH[instOf(f.institute)]})`; sgMap.set(lab, f); return `<option value="${esc(lab)}"></option>`; }).join('')}</datalist><button class="btn primary" id="sg-go">Suggest top 5</button></div><div id="sg-out" style="margin-top:14px"></div>`) : '';
   const CP = D.coupling, cs = CP && CP.summary;
   const qk = cs && Object.keys(cs).find(k => k.startsWith('collaboration_rate_by_coupling_quintile'));
   const cpCard = CP ? card('Pairs that read the same literature but never co-authored', `Bibliographic coupling: shared references, counted from single-faculty papers only (a joint paper’s reference list would count automatically). The share of coupled pairs that really collaborate rises from ${fmt1(100 * cs[qk][0])}% in the least-coupled fifth to ${fmt1(100 * cs[qk][4])}% in the most-coupled fifth, against ${fmt1(100 * cs.collaboration_rate_pairs_with_no_coupling)}% for pairs with no shared references.`,
@@ -301,12 +306,30 @@ function renderPotential() {
   const decCard = dk ? card('Brokers now versus over the whole period', `Joint papers count less the older they are (half-life ${dk.half_life_years} years, reference year ${dk.reference_year}). Rankings stay broadly similar (rank correlation ${fmt2(dk.spearman_static_vs_decayed.betweenness)} for betweenness) but some faculty move a lot.`,
       table(['Rising brokers (more central now)', 'Fading brokers (less central now)'], dk[rk].map((r, i) => [`${esc(r.faculty)} <small>${SH[instOf(r.institute)]}</small> +${r.betweenness_rank_change}`, `${esc(dk[fk][i].faculty)} <small>${SH[instOf(dk[fk][i].institute)]}</small> ${dk[fk][i].betweenness_rank_change}`])), 'mt') : '';
   $('#pc-body').innerHTML = `<div class="note-warn"><b>Three different things.</b> “Existing” is a recorded joint paper. “Compatibility” is topic overlap, shared collaborators and structure today. “Predicted” is a model ranking of pairs that did not collaborate before but might. New-link scores are <b>rankings, not probabilities</b>: they put the likeliest pairs first, but the raw numbers are not calibrated. They are a way to prioritise conversations, not evidence that a collaboration will happen. Real new collaborations are rare (about 0.1–0.2% of pairs), so precision stays low in absolute terms even when the ranking is much better than chance.</div>` +
-    headCard +
+    headCard + finderCard +
     `<div class="grid g2">` + newCards + repCard + `</div>` +
     (h3 ? `<p class="explain"><b>Model.</b> Gradient-boosted trees (LightGBM, 5 seeds) rank-averaged with a logistic regression, on 59 features per pair: network structure (including the co-author graph of all co-authors), topic, reference, title and venue similarity, citation links and recency-weighted similarity. The earlier version (single training year, ${Object.keys(nw.metrics).length} baselines) reached average precision ${(+M(nw, 'logistic regression').average_precision).toFixed(3)}.</p>` : '') +
     card('Who could collaborate next?', 'Highest-ranked pairs with no joint paper so far, from 2025 features and a 3-year horizon. Rank score is a ranking, not a probability.', table(['#', 'Faculty A', 'Faculty B', 'Hops', 'Common collaborators', 'Topic similarity', 'Shared subfields'], cands.map(r => [r.rank, `${esc(r.faculty_a)} <small>${SH[instOf(r.institute_a)]}</small>`, `${esc(r.faculty_b)} <small>${SH[instOf(r.institute_b)]}</small>`, r.hops === '' ? 'not connected' : r.hops, esc(r.common_collaborators || '—'), fmt2(+r.topic_cosine), esc((r.shared_subfields || '').split(';').slice(0, 2).join(';'))])), 'mt') +
     cpCard + decCard +
     `<p class="explain">Ask the AI Research Assistant page for pair-level explanations (“Can X collaborate with Y?”).</p>`;
+  if (SG) wireFinder(sgMap);
+}
+
+function wireFinder(sgMap) {
+  const tag = (txt, col) => `<span class="chip" style="border-color:${col};color:${col};font-weight:600">${txt}</span>`;
+  const go = () => {
+    const f = sgMap.get($('#sg-in').value.trim()), out = $('#sg-out');
+    if (!f) { out.innerHTML = '<p class="explain">Pick a faculty member from the list first (start typing a name, then choose one of the options).</p>'; return; }
+    const nw = f.new.length ? table(['#', 'Suggested', 'Why the model likes the pair'], f.new.map((r, i) => [i + 1, `${tag('New', 'var(--brand1)')} ${esc(r.name)} <small>${SH[instOf(r.institute)]} · ${esc(r.department || '')}</small>`,
+        [r.hops == null ? 'not yet linked through any chain of co-authors' : `${r.hops} co-author steps apart`, r.common.length ? `shared collaborators: ${esc(r.common.join(', '))}` : '', r.subfields.length ? `shared topics: ${esc(r.subfields.join('; '))}` : '', `topic similarity ${fmt2(r.topic)}`].filter(Boolean).join(' · ')]))
+      : '<p class="explain">No new-collaborator suggestions: this person has too few recent papers for the model to score.</p>';
+    const rp = f.repeat.length ? table(['#', 'Already co-authored with', 'Joint history'], f.repeat.map((r, i) => [i + 1, `${tag('Repeat', 'var(--brand2)')} ${esc(r.name)} <small>${SH[instOf(r.institute)]} · ${esc(r.department || '')}</small>`,
+        `${r.joint_papers} joint paper${r.joint_papers === 1 ? '' : 's'}${r.last_joint_year ? `, last in ${r.last_joint_year}` : ''} · rank score ${fmt2(r.score)}`]))
+      : '<p class="explain">No repeat-collaborator suggestions: no earlier co-author among the verified faculty is currently active.</p>';
+    out.innerHTML = `<h4 style="margin:6px 0">New collaborators for ${esc(f.name)} <small>(never co-authored; ranked by the new-collaboration model)</small></h4>${nw}<h4 style="margin:18px 0 6px">Repeat collaborators <small>(already co-authored; ranked by the repeat-collaboration model)</small></h4>${rp}`;
+  };
+  $('#sg-go').onclick = go;
+  $('#sg-in').addEventListener('keydown', ev => { if (ev.key === 'Enter') go(); });
 }
 
 // ---------------------------------------------------------------- Method: data quality
