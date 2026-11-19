@@ -429,6 +429,85 @@ addPage('resil', 'Resilience', 10, `<div class="page-head"><div class="eyebrow">
 addPage('potential', 'Potential', 11, `<div class="page-head"><div class="eyebrow">11 — Link prediction</div><h1>Who might <em>collaborate</em> next?</h1><p class="lede">Temporal prediction of faculty collaborations from past structure and topics, with no future information in the features.</p></div><div id="pc-body"></div>`);
 A.RENDER.resil = () => { renderResil(); renderFindings('resil'); };
 A.RENDER.potential = () => { renderPotential(); renderFindings('potential'); };
+
+// ---------------------------------------------------------------- new page: Citation dynamics (Wang-Song-Barabasi model, citation_dynamics.py)
+const PHI = x => { const t = 1 / (1 + 0.2316419 * Math.abs(x)), d = 0.3989423 * Math.exp(-x * x / 2), p = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274)))); return x > 0 ? 1 - p : p; };
+const wsbC = (t, lam, mu, sig, m) => m * (Math.exp(lam * PHI((Math.log(t) - mu) / sig)) - 1);
+function renderDynamics() {
+  const CD = D.citeDyn;
+  if (!CD) { $('#dyn-body').innerHTML = '<p class="explain">Citation-dynamics results are not available in this build.</p>'; return; }
+  const R = CD.res, m = R.m, pt = R.prediction_test, [l0, mu0, s0] = R.prior.centre;
+  const eq = (s) => `<div style="font:500 17px/1.7 'Georgia',serif;padding:10px 14px;margin:8px 0;border-radius:10px;background:var(--surface2,rgba(128,128,128,.08));overflow-x:auto">${s}</div>`;
+  const prow = (t) => [fmt(t.papers), fmt2(t.median_fitness), fmt1(t.median_peak_age_years) + ' yrs', fmt2(t.median_longevity), fmt1(100 * t.share_high_fitness) + '%'];
+  const ptab = (rows) => table(['Paper', 'Year', 'Institutes', 'Citations by 2025', 'Fitness λ', 'Peak age', 'Projected by 2035'], rows.map(r => [`${esc(r.title.slice(0, 110))}${r.title.length > 110 ? '…' : ''} <small>${esc(r.field || '')}</small>`, r.year, esc(r.insts), fmt(r.citations_2025), fmt2(r.fitness), fmt1(r.peak_age) + ' yrs', fmt(r.projected_2035)]));
+  const wmap = new Map(); P.forEach((p, k) => { if (p[A.T.wid]) wmap.set(p[A.T.wid], k); });
+  const plist = Object.entries(CD.papers).filter(([w]) => wmap.has(w)).map(([w, v]) => ({ w, k: wmap.get(w), v })).sort((a, b) => P[b.k][A.T.cites] - P[a.k][A.T.cites]);
+  const pmap = new Map(); plist.forEach(o => pmap.set(`${P[o.k][A.T.title].slice(0, 120)} (${o.v[0]})`, o));
+  $('#dyn-body').innerHTML =
+    card('The model', 'Wang, Song and Barabási (Science, 2013): why some papers keep gaining citations and others fade.',
+      `<p class="explain">A paper gains new citations faster when it already has many (people cite what others cite), when it is intrinsically attractive, and while it is still new. Written as a rate equation:</p>` +
+      eq(`dc<sub>i</sub>/dt ∝ η<sub>i</sub> · (c<sub>i</sub> + m) · P<sub>i</sub>(t)`) +
+      `<p class="explain">With a log-normal ageing term P<sub>i</sub>(t), the equation has an exact solution for the citations after t years:</p>` +
+      eq(`c<sub>i</sub>(t) = m · [ e<sup>λ<sub>i</sub> · Φ( (ln t − μ<sub>i</sub>) / σ<sub>i</sub> )</sup> − 1 ]`) +
+      `<dl style="display:grid;grid-template-columns:auto auto 1fr;gap:8px 14px;margin:10px 0 0">${[['λ', 'Fitness', `How strongly the paper attracts citations. It alone fixes the long-run total, c<sub>∞</sub> = m(e<sup>λ</sup> − 1). Typical value here ${fmt2(l0)}.`],
+        ['μ', 'Immediacy', `When attention peaks: e<sup>μ</sup> is roughly the age (in years) at which the paper gains citations fastest. Typical here ${fmt1(Math.exp(mu0))} years.`],
+        ['σ', 'Longevity', `How slowly attention fades: larger σ = a longer, flatter citation life. Typical here ${fmt2(s0)}.`],
+        ['m', 'Constant', `Average number of references per paper; ${m} as in the original study.`], ['Φ', '', 'The standard normal cumulative distribution (an S-shaped curve from 0 to 1).']].map(([s, n, w]) => `<dt style="font:600 16px Georgia,serif">${s}</dt><dd style="margin:0;font-weight:600">${n}</dd><dd style="margin:0">${w}</dd>`).join('')}</dl>`) +
+    `<div class="grid g2 mt">` +
+    card('Try the dynamics yourself', 'Move the sliders to see how fitness, immediacy and longevity shape a paper’s citation life (line = total citations, bars = citations per year).',
+      `<div style="display:grid;grid-template-columns:auto 1fr auto;gap:6px 12px;align-items:center;margin-bottom:8px">` +
+      [['dyn-l', 'Fitness λ', 0.1, 4, 0.05, l0], ['dyn-m', 'Immediacy μ', -0.5, 3, 0.05, mu0], ['dyn-s', 'Longevity σ', 0.2, 2, 0.02, s0]].map(([id, lab, a, b, st, v]) =>
+        `<label for="${id}">${lab}</label><input type="range" id="${id}" min="${a}" max="${b}" step="${st}" value="${(+v).toFixed(2)}"><span class="num" id="${id}-v"></span>`).join('') + `</div>` + chart('dyn-sim', 300) + `<p class="explain" id="dyn-sim-note"></p>`) +
+    card('Follow a real paper', 'Pick one of the fitted papers: dots are its real citations year by year, the line is the fitted model, extended to 2035.',
+      `<input id="dyn-in" list="dyn-list" placeholder="Start typing a paper title…" autocomplete="off" style="width:100%;padding:9px 12px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--ink);margin-bottom:8px"><datalist id="dyn-list">${[...pmap.keys()].map(t => `<option value="${esc(t)}"></option>`).join('')}</datalist>` + chart('dyn-paper', 300) + `<p class="explain" id="dyn-paper-note"></p>`) +
+    `</div>` +
+    `<div class="grid g2 mt">` +
+    card('How well does the model work?', `Fitted to ${fmt(R.fitted_papers)} papers published 2016–2021 with at least 10 citations by 2025. Fit to each paper’s history: median R² ${fmt2(R.median_fit_r2)} (${fmt1(100 * R.share_fit_r2_ge_0_9)}% of papers above 0.9).`,
+      table(['Predicting 2025 citations from the first 5 years', 'Model', 'Simple rule'], [
+        ['Typical error (factor)', `×${fmt2(pt.wsb.median_error_factor)}`, `×${fmt2(pt.baseline.median_error_factor)}`],
+        ['Within ±25% of the real count', fmt1(100 * pt.wsb.share_within_25pct) + '%', fmt1(100 * pt.baseline.share_within_25pct) + '%'],
+        ['Rank correlation with the real count', fmt2(pt.wsb.rank_correlation), fmt2(pt.baseline.rank_correlation)],
+        ['Real top-10% papers found in its top 10%', fmt1(100 * pt.wsb.top10pct_found) + '%', fmt1(100 * pt.baseline.top10pct_found) + '%']]) +
+      `<p class="explain">${fmt(pt.papers)} papers published 2016–2018. Simple rule: ${esc(pt.baseline_desc)}. <b>Reading:</b> the model describes citation histories very closely, but with only five years of data a simple growth rule forecasts the final count better, as other studies of this model have also found. So the page uses the model to <b>characterise</b> papers (how attractive, how quick, how long-lived), not as a forecast.</p>`) +
+    card('Fitness of the papers', 'How many fitted papers have each fitness value λ. Most papers sit near the typical value; a long tail of highly attractive papers drives most citations.', chart('dyn-hist', 300)) +
+    `</div>` +
+    `<div class="grid g2 mt">` +
+    card('By institute', 'Median parameters of each institute’s fitted papers. “High fitness” = in the top 10% of all fitted papers.', table(['Institute', 'Papers', 'Median fitness λ', 'Median peak age', 'Median longevity σ', 'High-fitness share'], Object.entries(R.by_institute).map(([k, v]) => [k, ...prow(v)]))) +
+    card('By field', 'The eight fields with the most fitted papers.', table(['Field', 'Papers', 'Median fitness λ', 'Median peak age', 'Median longevity σ', 'High-fitness share'], Object.entries(R.by_field).map(([k, v]) => [esc(k), ...prow(v)]))) +
+    `</div>` +
+    card('Most attractive papers', 'Highest fitness λ among papers whose parameters are well determined (fit R² ≥ 0.8 and the citation peak already visible in the data). Projection by 2035 = real citations by 2025 plus the model’s expected further gain.', ptab(R.top_fitness), 'mt') +
+    card('Early stars (published 2020–2021)', 'Recent papers (at least 30 citations, peak nearly visible) whose early citation pattern already shows high fitness: candidates for future highly cited work. Treat the projection as indicative only (see the prediction test above).', ptab(R.early_stars), 'mt');
+  // fitness histogram
+  const b = R.fitness_bins;
+  A.plot('dyn-hist', [{ type: 'bar', x: R.fitness_hist.map((_, i) => (b[i] + b[i + 1]) / 2), y: R.fitness_hist, marker: { color: css('--c1') }, name: 'Papers' }],
+    { xaxis: { title: { text: 'Fitness λ' } }, yaxis: { title: { text: 'Number of papers' } }, bargap: 0.05 });
+  // slider simulation
+  const sim = () => {
+    const l = +$('#dyn-l').value, mu = +$('#dyn-m').value, s = +$('#dyn-s').value;
+    $('#dyn-l-v').textContent = l.toFixed(2); $('#dyn-m-v').textContent = mu.toFixed(2); $('#dyn-s-v').textContent = s.toFixed(2);
+    const ts = d3.range(1, 21), c = ts.map(t => wsbC(t, l, mu, s, m)), per = c.map((v, i) => i ? v - c[i - 1] : v);
+    A.plot('dyn-sim', [{ type: 'bar', x: ts, y: per, name: 'Citations that year', marker: { color: css('--c3') }, yaxis: 'y2', opacity: 0.55 },
+      { type: 'scatter', mode: 'lines', x: ts, y: c, name: 'Total citations', line: { color: css('--c1'), width: 3 } }],
+      { xaxis: { title: { text: 'Years since publication' } }, yaxis: { title: { text: 'Total citations' } }, yaxis2: { overlaying: 'y', side: 'right', showgrid: false, title: { text: 'Per year' } }, legend: { orientation: 'h', y: -0.25 } });
+    $('#dyn-sim-note').innerHTML = `Long-run total c<sub>∞</sub> = ${fmt(Math.round(m * (Math.exp(l) - 1)))} citations; fastest growth at about ${fmt1(Math.exp(mu))} years; ${fmt(Math.round(c[9]))} citations after 10 years.`;
+  };
+  ['#dyn-l', '#dyn-m', '#dyn-s'].forEach(s => $(s).addEventListener('input', sim)); sim();
+  // real paper
+  const show = (o) => {
+    const [y0, l, mu, s, r2, cum] = o.v, n = cum.length, tEnd = 2035 - y0 + 1, ts = d3.range(1, tEnd + 1);
+    A.plot('dyn-paper', [{ type: 'scatter', mode: 'markers', x: cum.map((_, i) => y0 + i), y: cum, name: 'Real (OpenAlex)', marker: { color: css('--c2'), size: 9 } },
+      { type: 'scatter', mode: 'lines', x: ts.map(t => y0 + t - 1), y: ts.map(t => wsbC(t, l, mu, s, m)), name: 'Model fit', line: { color: css('--c1'), width: 3 } }],
+      { xaxis: { title: { text: 'Year' } }, yaxis: { title: { text: 'Total citations' } }, legend: { orientation: 'h', y: -0.25 },
+        shapes: [{ type: 'line', x0: 2025.5, x1: 2025.5, yref: 'paper', y0: 0, y1: 1, line: { dash: 'dot', color: css('--muted') } }] });
+    $('#dyn-paper-note').innerHTML = `<b>${esc(P[o.k][A.T.title].slice(0, 140))}</b> (${y0}): fitness λ ${fmt2(l)}, peak at about ${fmt1(Math.exp(mu))} years, longevity σ ${fmt2(s)}, fit R² ${r2 == null ? '—' : fmt2(r2)}. Real citations by 2025: ${fmt(cum[n - 1])}. Right of the dotted line is the model’s extension.`;
+  };
+  const pick = () => { const o = pmap.get($('#dyn-in').value.trim()); if (o) show(o); };
+  $('#dyn-in').addEventListener('change', pick); $('#dyn-in').addEventListener('keydown', ev => { if (ev.key === 'Enter') pick(); });
+  if (plist.length) { show(plist[0]); $('#dyn-in').value = [...pmap.keys()][0]; }
+}
+addPage('dynamics', 'Citation dynamics', 12, `<div class="page-head"><div class="eyebrow">12 — Dynamics</div><h1>How do papers <em>gain</em> citations?</h1><p class="lede">A dynamical model of citation growth fitted to every paper’s yearly citation history: fitness, timing and longevity of attention.</p></div><div id="dyn-body"></div>`);
+A.RENDER.dynamics = () => { renderDynamics(); };
+
 // the first page was rendered before this file loaded
 try { const h = (window.__startHash || '').split('?')[0]; A.rendered.delete(A.state.tab); A.go(A.RENDER[h] ? h : A.state.tab); } catch (e) { document.body.dataset.err = String(e.stack).slice(0, 500); console.error(e); }
 document.addEventListener('atlas:inst', () => { A.rendered.delete('resil'); A.rendered.delete('potential'); if (['resil', 'potential'].includes(A.state.tab)) A.go(A.state.tab); else renderFindings(A.state.tab); });

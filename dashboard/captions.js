@@ -37,6 +37,9 @@ const CAP = {
   'cn-nref': X('references listed for a paper (log scale)', 'number of papers (log scale)'),
   'fn-bridges': X('co-authorship links to faculty of other institutes', 'faculty member'),
   'mv-sankey': X('left: institute before the move; right: institute now', 'one middle box per person who moved; ribbon width is one person'),
+  'dyn-hist': X('fitness λ of a paper (how strongly it attracts citations)', 'number of fitted papers with that fitness'),
+  'dyn-sim': X('years since publication', 'total citations (line, left) and citations that year (bars, right)'),
+  'dyn-paper': X('year', 'total citations of the selected paper: real (dots) and model (line)'),
   'cd-hist': X('co-author steps from the selected person', 'number of faculty at that distance'),
   'rc-upset': X('which of the three institutes work with the partner', 'number of Indian partner institutes in that group'),
   'rc-loc': X('share of joint-paper links (%)', 'institute; bars split by how near the partner is'),
@@ -74,6 +77,7 @@ const nm = p => (p.s ? ` (${clean(p.s)})` : '');
 const unit = (gd, t) => { const ax = gd.layout[t.orientation === 'h' ? 'xaxis' : 'yaxis'], ti = ax && ax.title && (ax.title.text || ax.title); return /%|share/i.test(ti || '') ? '%' : ''; };
 const labelOf = (t, i) => { const c = arr(t.customdata)[i]; const v = Array.isArray(c) ? c.find(z => typeof z === 'string') : c; const x = typeof v === 'string' ? v : arr(t.text)[i]; return clean(typeof x === 'string' ? x.split('<br>')[0] : ''); };
 function insight(id, gd) {
+  if (id.startsWith('dyn-')) return '';            // Citation dynamics charts carry their own notes
   const S = series(gd); if (!S.length) return '';
   const t0 = S[0];
   if (id === 'mv-sankey') {

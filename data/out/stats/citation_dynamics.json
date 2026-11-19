@@ -1,0 +1,536 @@
+{
+ "design": "Citation dynamics with the Wang-Song-Barabasi (WSB) model (Science 2013), fitted to every paper's yearly citation history.\n\nModel. A paper i gains citations at a rate that grows with how many it already has (preferential attachment), with its own attractiveness\n(fitness eta_i) and with an ageing factor (novelty fades, log-normal in time):\n        dc_i/dt  ~  eta_i * (c_i + m) * P_i(t),      P_i(t) = log-normal ageing with parameters mu_i, sigma_i\nSolving gives the cumulative citations after t years:\n        c_i(t) = m * ( exp( lambda_i * Phi( (ln t - mu_i) / sigma_i ) ) - 1 )\n  lambda_i  relative fitness: how strongly the paper attracts citations; it alone sets the ultimate impact c_inf = m (e^lambda - 1)\n  mu_i      immediacy: e^mu is roughly the age (years) at which the paper gains citations fastest\n  sigma_i   longevity: how slowly the paper's attention fades\n  m = 30    average references per paper (the constant of the original paper); Phi = standard normal cumulative distribution\n\nData: OpenAlex yearly citation counts (counts_by_year) for every paper; 2026 is partial and is not used (histories end in 2025). t = years since\npublication + 1 (t = 1 at the end of the publication year).\nFits: papers published 2016-2021 (at least 5 yearly points) with at least 10 citations by 2025; least squares on log(1 + cumulative citations) with a\nweak prior towards the typical parameters of papers whose citation peak is already visible (otherwise fitness and immediacy cannot be separated).\nPrediction test: papers published 2016-2018 are fitted on their first 5 years only and must predict their citations in 2025, against a simple\nbaseline (citations after 5 years x the typical growth ratio, learned on the other half of the papers).\nWrites stats/citation_dynamics.json (results) and stats/citation_dynamics_papers.json (per-paper parameters and histories for the dashboard).",
+ "m": 30.0,
+ "prior": {
+  "centre": [
+   0.708,
+   1.1989,
+   0.532
+  ],
+  "scale": [
+   0.5978,
+   0.354,
+   0.2478
+  ],
+  "weight": 0.05
+ },
+ "fitted_papers": 3426,
+ "median_fit_r2": 0.991,
+ "share_fit_r2_ge_0_9": 0.987,
+ "prediction_test": {
+  "papers": 1305,
+  "years": "published 2016-2018, fitted on first 5 years, predicting citations in 2025",
+  "wsb": {
+   "median_error_factor": 1.455,
+   "share_within_25pct": 0.376,
+   "rank_correlation": 0.873,
+   "top10pct_found": 0.712
+  },
+  "baseline": {
+   "median_error_factor": 1.196,
+   "share_within_25pct": 0.653,
+   "rank_correlation": 0.928,
+   "top10pct_found": 0.818
+  },
+  "baseline_desc": "citations after 5 years x median growth ratio of the other half of papers (same publication year)"
+ },
+ "by_institute": {
+  "MANIT": {
+   "papers": 1094,
+   "median_fitness": 0.835,
+   "median_peak_age_years": 3.81,
+   "median_longevity": 0.601,
+   "share_high_fitness": 0.131
+  },
+  "NITJ": {
+   "papers": 534,
+   "median_fitness": 0.722,
+   "median_peak_age_years": 3.34,
+   "median_longevity": 0.605,
+   "share_high_fitness": 0.101
+  },
+  "NITS": {
+   "papers": 1807,
+   "median_fitness": 0.753,
+   "median_peak_age_years": 3.57,
+   "median_longevity": 0.608,
+   "share_high_fitness": 0.081
+  }
+ },
+ "by_field": {
+  "Engineering": {
+   "papers": 1732,
+   "median_fitness": 0.731,
+   "median_peak_age_years": 3.59,
+   "median_longevity": 0.602,
+   "share_high_fitness": 0.083
+  },
+  "Computer Science": {
+   "papers": 440,
+   "median_fitness": 0.709,
+   "median_peak_age_years": 3.7,
+   "median_longevity": 0.598,
+   "share_high_fitness": 0.084
+  },
+  "Materials Science": {
+   "papers": 250,
+   "median_fitness": 0.836,
+   "median_peak_age_years": 4.04,
+   "median_longevity": 0.623,
+   "share_high_fitness": 0.1
+  },
+  "Energy": {
+   "papers": 211,
+   "median_fitness": 1.05,
+   "median_peak_age_years": 3.65,
+   "median_longevity": 0.635,
+   "share_high_fitness": 0.227
+  },
+  "Environmental Science": {
+   "papers": 180,
+   "median_fitness": 0.986,
+   "median_peak_age_years": 3.44,
+   "median_longevity": 0.562,
+   "share_high_fitness": 0.161
+  },
+  "Physics and Astronomy": {
+   "papers": 119,
+   "median_fitness": 0.68,
+   "median_peak_age_years": 3.04,
+   "median_longevity": 0.624,
+   "share_high_fitness": 0.017
+  },
+  "Medicine": {
+   "papers": 90,
+   "median_fitness": 0.794,
+   "median_peak_age_years": 2.71,
+   "median_longevity": 0.606,
+   "share_high_fitness": 0.089
+  },
+  "Mathematics": {
+   "papers": 75,
+   "median_fitness": 1.068,
+   "median_peak_age_years": 2.55,
+   "median_longevity": 0.646,
+   "share_high_fitness": 0.16
+  }
+ },
+ "by_year": {
+  "2016": {
+   "papers": 360,
+   "median_fitness": 0.941,
+   "median_peak_age_years": 5.2,
+   "median_longevity": 0.675,
+   "share_high_fitness": 0.172
+  },
+  "2017": {
+   "papers": 433,
+   "median_fitness": 0.899,
+   "median_peak_age_years": 4.66,
+   "median_longevity": 0.646,
+   "share_high_fitness": 0.136
+  },
+  "2018": {
+   "papers": 523,
+   "median_fitness": 0.831,
+   "median_peak_age_years": 4.13,
+   "median_longevity": 0.609,
+   "share_high_fitness": 0.101
+  },
+  "2019": {
+   "papers": 519,
+   "median_fitness": 0.707,
+   "median_peak_age_years": 3.56,
+   "median_longevity": 0.566,
+   "share_high_fitness": 0.092
+  },
+  "2020": {
+   "papers": 774,
+   "median_fitness": 0.722,
+   "median_peak_age_years": 3.12,
+   "median_longevity": 0.579,
+   "share_high_fitness": 0.076
+  },
+  "2021": {
+   "papers": 817,
+   "median_fitness": 0.744,
+   "median_peak_age_years": 2.8,
+   "median_longevity": 0.568,
+   "share_high_fitness": 0.076
+  }
+ },
+ "fitness_hist": [
+  12,
+  849,
+  789,
+  524,
+  420,
+  294,
+  188,
+  110,
+  96,
+  51,
+  39,
+  20,
+  17,
+  8,
+  2,
+  3,
+  1,
+  1,
+  1,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "fitness_bins": [
+  0.0,
+  0.25,
+  0.5,
+  0.75,
+  1.0,
+  1.25,
+  1.5,
+  1.75,
+  2.0,
+  2.25,
+  2.5,
+  2.75,
+  3.0,
+  3.25,
+  3.5,
+  3.75,
+  4.0,
+  4.25,
+  4.5,
+  4.75,
+  5.0,
+  5.25,
+  5.5,
+  5.75,
+  6.0,
+  6.25,
+  6.5,
+  6.75,
+  7.0,
+  7.25,
+  7.5,
+  7.75,
+  8.0
+ ],
+ "top_fitness": [
+  {
+   "id": "W2514094790",
+   "title": "Floating photovoltaic power plant: A review",
+   "year": 2016,
+   "insts": "MANIT",
+   "field": "Environmental Science",
+   "citations_2025": 793,
+   "fitness": 4.421,
+   "peak_age": 5.71,
+   "longevity": 0.854,
+   "projected_2035": 1810
+  },
+  {
+   "id": "W2222420182",
+   "title": "Solar\u2013wind hybrid renewable energy system: A review",
+   "year": 2016,
+   "insts": "MANIT",
+   "field": "Energy",
+   "citations_2025": 793,
+   "fitness": 4.12,
+   "peak_age": 3.75,
+   "longevity": 1.16,
+   "projected_2035": 1338
+  },
+  {
+   "id": "W2514173981",
+   "title": "Analysis of k-Fold Cross-Validation over Hold-Out Validation on Colossal Datasets for Quality Classification",
+   "year": 2016,
+   "insts": "MANIT",
+   "field": "Computer Science",
+   "citations_2025": 728,
+   "fitness": 3.93,
+   "peak_age": 5.53,
+   "longevity": 0.637,
+   "projected_2035": 1366
+  },
+  {
+   "id": "W2922098032",
+   "title": "Plastics and microplastics: A threat to environment",
+   "year": 2019,
+   "insts": "NITS",
+   "field": "Environmental Science",
+   "citations_2025": 385,
+   "fitness": 3.828,
+   "peak_age": 4.95,
+   "longevity": 0.87,
+   "projected_2035": 1040
+  },
+  {
+   "id": "W3120158009",
+   "title": "Green synthesis of silver nanoparticles using plant extracts and their antimicrobial activities: a review of recent literature",
+   "year": 2021,
+   "insts": "NITS",
+   "field": "Materials Science",
+   "citations_2025": 631,
+   "fitness": 3.811,
+   "peak_age": 2.17,
+   "longevity": 1.04,
+   "projected_2035": 1227
+  },
+  {
+   "id": "W2890993842",
+   "title": "A Review - Future Aspect of Natural Fiber Reinforced Composite",
+   "year": 2016,
+   "insts": "MANIT",
+   "field": "Materials Science",
+   "citations_2025": 203,
+   "fitness": 3.562,
+   "peak_age": 8.41,
+   "longevity": 0.87,
+   "projected_2035": 565
+  },
+  {
+   "id": "W2587444606",
+   "title": "Recent advancement in BIPV product technologies: A review",
+   "year": 2017,
+   "insts": "MANIT",
+   "field": "Energy",
+   "citations_2025": 414,
+   "fitness": 3.525,
+   "peak_age": 4.04,
+   "longevity": 1.181,
+   "projected_2035": 719
+  },
+  {
+   "id": "W2793605784",
+   "title": "Advances and Researches on Non Destructive Testing: A Review",
+   "year": 2018,
+   "insts": "MANIT",
+   "field": "Engineering",
+   "citations_2025": 421,
+   "fitness": 3.473,
+   "peak_age": 4.96,
+   "longevity": 0.691,
+   "projected_2035": 875
+  },
+  {
+   "id": "W3186962463",
+   "title": "A comprehensive survey on feature selection in the various fields of machine learning",
+   "year": 2021,
+   "insts": "NITJ",
+   "field": "Computer Science",
+   "citations_2025": 407,
+   "fitness": 3.355,
+   "peak_age": 3.13,
+   "longevity": 0.597,
+   "projected_2035": 838
+  },
+  {
+   "id": "W2798223637",
+   "title": "Exploiting waste: towards a sustainable production of biodiesel using Musa acuminata peel ash as a heterogeneous catalyst",
+   "year": 2018,
+   "insts": "NITS",
+   "field": "Engineering",
+   "citations_2025": 228,
+   "fitness": 3.319,
+   "peak_age": 5.29,
+   "longevity": 1.079,
+   "projected_2035": 511
+  },
+  {
+   "id": "W3126154006",
+   "title": "A review on current trends in potential use of metal-organic framework for hydrogen storage",
+   "year": 2021,
+   "insts": "MANIT",
+   "field": "Chemistry",
+   "citations_2025": 398,
+   "fitness": 3.319,
+   "peak_age": 2.32,
+   "longevity": 0.99,
+   "projected_2035": 748
+  },
+  {
+   "id": "W2344476636",
+   "title": "Effect of variation of angle of attack on the performance of two-strut scramjet combustor",
+   "year": 2016,
+   "insts": "NITS",
+   "field": "Engineering",
+   "citations_2025": 165,
+   "fitness": 3.301,
+   "peak_age": 8.18,
+   "longevity": 1.229,
+   "projected_2035": 348
+  },
+  {
+   "id": "W2795768356",
+   "title": "Role of consumer traits and situational factors on impulse buying: does gender matter?",
+   "year": 2018,
+   "insts": "MANIT",
+   "field": "Business, Management and Accounting",
+   "citations_2025": 131,
+   "fitness": 3.262,
+   "peak_age": 7.54,
+   "longevity": 1.049,
+   "projected_2035": 369
+  },
+  {
+   "id": "W2790564161",
+   "title": "Thermo-environomical and drying kinetics of bitter gourd flakes drying under north wall insulated greenhouse dryer",
+   "year": 2018,
+   "insts": "MANIT",
+   "field": "Agricultural and Biological Sciences",
+   "citations_2025": 123,
+   "fitness": 3.236,
+   "peak_age": 7.79,
+   "longevity": 0.794,
+   "projected_2035": 441
+  },
+  {
+   "id": "W3173170759",
+   "title": "Tomato plant disease detection using transfer learning with C-GAN synthetic images",
+   "year": 2021,
+   "insts": "MANIT",
+   "field": "Agricultural and Biological Sciences",
+   "citations_2025": 581,
+   "fitness": 3.228,
+   "peak_age": 2.19,
+   "longevity": 0.581,
+   "projected_2035": 747
+  }
+ ],
+ "early_stars": [
+  {
+   "id": "W3120158009",
+   "title": "Green synthesis of silver nanoparticles using plant extracts and their antimicrobial activities: a review of recent literature",
+   "year": 2021,
+   "insts": "NITS",
+   "field": "Materials Science",
+   "citations_2025": 631,
+   "fitness": 3.811,
+   "peak_age": 2.17,
+   "longevity": 1.04,
+   "projected_2035": 1227
+  },
+  {
+   "id": "W3186962463",
+   "title": "A comprehensive survey on feature selection in the various fields of machine learning",
+   "year": 2021,
+   "insts": "NITJ",
+   "field": "Computer Science",
+   "citations_2025": 407,
+   "fitness": 3.355,
+   "peak_age": 3.13,
+   "longevity": 0.597,
+   "projected_2035": 838
+  },
+  {
+   "id": "W3126154006",
+   "title": "A review on current trends in potential use of metal-organic framework for hydrogen storage",
+   "year": 2021,
+   "insts": "MANIT",
+   "field": "Chemistry",
+   "citations_2025": 398,
+   "fitness": 3.319,
+   "peak_age": 2.32,
+   "longevity": 0.99,
+   "projected_2035": 748
+  },
+  {
+   "id": "W3173170759",
+   "title": "Tomato plant disease detection using transfer learning with C-GAN synthetic images",
+   "year": 2021,
+   "insts": "MANIT",
+   "field": "Agricultural and Biological Sciences",
+   "citations_2025": 581,
+   "fitness": 3.228,
+   "peak_age": 2.19,
+   "longevity": 0.581,
+   "projected_2035": 747
+  },
+  {
+   "id": "W3033435861",
+   "title": "Advanced cooling techniques of P.V. modules: A state of art",
+   "year": 2020,
+   "insts": "MANIT",
+   "field": "Energy",
+   "citations_2025": 386,
+   "fitness": 3.223,
+   "peak_age": 3.27,
+   "longevity": 0.71,
+   "projected_2035": 708
+  },
+  {
+   "id": "W3176428980",
+   "title": "The role and significance of Magnesium in modern day research-A review",
+   "year": 2021,
+   "insts": "NITJ",
+   "field": "Materials Science",
+   "citations_2025": 567,
+   "fitness": 3.202,
+   "peak_age": 2.34,
+   "longevity": 0.568,
+   "projected_2035": 752
+  },
+  {
+   "id": "W3006364515",
+   "title": "Characterization of PAHs and n-Alkanes in Atmospheric Aerosol of Jamshedpur City, India",
+   "year": 2020,
+   "insts": "NITJ",
+   "field": "Environmental Science",
+   "citations_2025": 87,
+   "fitness": 3.048,
+   "peak_age": 6.62,
+   "longevity": 0.781,
+   "projected_2035": 395
+  },
+  {
+   "id": "W3135377612",
+   "title": "Life cycle assessment of electric vehicles in comparison to combustion engine vehicles: A review",
+   "year": 2021,
+   "insts": "MANIT",
+   "field": "Engineering",
+   "citations_2025": 233,
+   "fitness": 2.996,
+   "peak_age": 3.29,
+   "longevity": 0.759,
+   "projected_2035": 542
+  },
+  {
+   "id": "W3133590696",
+   "title": "Multi-input CNN-GRU based human activity recognition using wearable sensors",
+   "year": 2021,
+   "insts": "MANIT",
+   "field": "Computer Science",
+   "citations_2025": 388,
+   "fitness": 2.961,
+   "peak_age": 2.09,
+   "longevity": 0.726,
+   "projected_2035": 549
+  },
+  {
+   "id": "W3209102624",
+   "title": "Per- and polyfluoroalkyl substances in water and wastewater: A critical review of their global occurrence and distribution",
+   "year": 2021,
+   "insts": "NITJ",
+   "field": "Environmental Science",
+   "citations_2025": 707,
+   "fitness": 2.925,
+   "peak_age": 2.27,
+   "longevity": 0.303,
+   "projected_2035": 714
+  }
+ ],
+ "list_rule": "lists use papers with fit R2 >= 0.8 whose citation peak is already visible in the data (early stars: nearly visible, and at least 30 citations)"
+}
