@@ -43,7 +43,7 @@ def km(a, b):
     return 6371 * 2 * np.arcsin(np.sqrt(h))
 
 
-def gravity():
+def gravity(inst=None, n_boot=200):
     p = pd.read_csv(LOC / "partners_locality.csv")
     p = p[p.state.isin(CENTRE)]
     g = p.groupby(["your_inst", "state"])[[f"y{y}" for y in YEARS]].sum()
@@ -55,6 +55,8 @@ def gravity():
                 rows.append({"inst": k, "state": s, "year": y, "papers": float(g.loc[(k, s), f"y{y}"]) if (k, s) in g.index else 0.0,
                              "logd": np.log(d), "same": float(HOME[k][2] == s), "km": d})
     df = pd.DataFrame(rows)
+    if inst:
+        df = df[df.inst == inst]
     df = df[df.groupby("state").papers.transform("sum") > 0]          # states with no joint paper at all carry no information
 
     def design(x):
@@ -75,7 +77,7 @@ def gravity():
     rng = np.random.default_rng(15)
     states = df.state.unique()
     boots = []
-    for _ in range(200):
+    for _ in range(n_boot):
         pick = rng.choice(states, len(states))
         bx = pd.concat([df[df.state == s].assign(state=f"{s}#{i}") for i, s in enumerate(pick)])
         try:
@@ -93,7 +95,7 @@ def gravity():
             "gamma_2016_18": round(float(early), 3), "gamma_2023_25": round(float(late), 3),
             "joint_papers_used": int(df.papers.sum()), "states": int(df.state.nunique()), "bootstrap_runs": int(len(B)),
             "partners_left_out_unknown_state": int((pd.read_csv(LOC / "partners_locality.csv").state.isin(["Unknown", "National (multi-site)"])).sum()),
-            "by_distance_band": distance_bands(p)}
+            "by_distance_band": distance_bands(p[p.your_inst == inst] if inst else p)}
 
 
 def distance_bands(p):
@@ -155,13 +157,16 @@ def main():
     import os
     old = ST / "region_dynamics.json"
     grav = json.load(open(old))["gravity"] if os.environ.get("REUSE_GRAVITY") and old.exists() else gravity()
-    res = {"design": __doc__.split("Run:")[0].strip(), "gravity": grav, "markov": markov()}
+    by_inst = {SH[k]: gravity(k, n_boot=40) for k in HOME}
+    res = {"design": __doc__.split("Run:")[0].strip(), "gravity": grav, "gravity_by_inst": by_inst, "markov": markov()}
     (ST / "region_dynamics.json").write_text(json.dumps(res, indent=1, default=float))
     g = res["gravity"]
     print("gamma by year:", dict(zip(g["years"], g["gamma"])))
     print("CI lo:", g["lo"]); print("CI hi:", g["hi"])
     print("trend/yr", g["trend_per_year"], g["trend_ci95"], "| home bonus x", g["home_state_bonus_factor"], "| papers", g["joint_papers_used"], "states", g["states"])
     print("bands:", g["by_distance_band"])
+    for k, v in res["gravity_by_inst"].items():
+        print(k, "gamma 2016-18", v["gamma_2016_18"], "2023-25", v["gamma_2023_25"], "trend", v["trend_per_year"], v["trend_ci95"], "home x", v["home_state_bonus_factor"], "papers", v["joint_papers_used"])
     m = res["markov"]["all"]
     print("moves", m["moves"]); print("now 2025:", m["now_2025"]); print("stationary:", m["stationary"]); print("persistence:", m["persistence_years"])
     for r in m["transition"]: print("  ", r)
