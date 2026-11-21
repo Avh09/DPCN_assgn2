@@ -1,0 +1,104 @@
+{
+ "design": "Worked example for the report: the deployed new-collaboration model, trained only on snapshots up to 2023 and tested on what really happened in 2025.\n\nModel: v5 (LightGBM 5-seed bag + logistic regression, rank-averaged), one-year horizon, features from papers up to 2024.\nTrain: snapshots T = 2016..2023 (labels = new co-authorship in T+1, so up to 2024). Test: features at T = 2024, label = new co-authorship in 2025.\nReports how many faculty who really started a new faculty collaboration in 2025 had that partner among their top 5 / top 10 suggestions,\nand lists correctly predicted pairs with the 2025 joint paper. Writes stats/ml_case_study.json.",
+ "faculty_with_new_link_2025": 179,
+ "median_candidates_per_faculty": 649,
+ "hits": {
+  "top1": 32,
+  "top5": 80,
+  "top10": 115
+ },
+ "hit_rate": {
+  "top1": 0.179,
+  "top5": 0.447,
+  "top10": 0.642
+ },
+ "random_top5_expected": 0.0077,
+ "correct_pairs_top5": 57,
+ "true_new_pairs_2025": 121,
+ "examples": [
+  {
+   "faculty": "Fozia Z. Haque (MANIT Bhopal, Physics)",
+   "suggested": "Jyoti Rani (MANIT Bhopal, Physics)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Effect of doping of lignin on the structural and optical properties of green synthesised cerium oxide nanoparticles",
+   "same_department": true
+  },
+  {
+   "faculty": "Atul Kumar (MANIT Bhopal, Electronics and Communication Engineering)",
+   "suggested": "Varun Bajaj (MANIT Bhopal, Electronics and Communication Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Next-Gen Cooperative Relaying: Leveraging Deep Learning for Automatic Modulation Classification with Antenna Diversity",
+   "same_department": true
+  },
+  {
+   "faculty": "Abdhesh Kumar Sinha (NIT Jamshedpur, Civil Engineering)",
+   "suggested": "Somenath Mondal (NIT Jamshedpur, Civil Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Performance Evaluation of Vegetative Species for Engineered Slope Stabilization Using Finite Element Analysis Aided with Machine Learning",
+   "same_department": true
+  },
+  {
+   "faculty": "GUMPU SRINIVASULU (MANIT Bhopal, Electrical Engineering)",
+   "suggested": "Siddhartha Deb Roy (MANIT Bhopal, Electrical Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Segmentation of Peer-to-Peer Energy Market Using K-Means, Hierarchical, and DBSCAN Clustering Techniques",
+   "same_department": true
+  },
+  {
+   "faculty": "Surya Prakash (NIT Jamshedpur, Electrical Engineering)",
+   "suggested": "Veerpratap Meena (NIT Jamshedpur, Electrical Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Grid-Tied Multi-Stage PV Power Converter with Dual-Active-Bridge Interface for EV Applications",
+   "same_department": true
+  },
+  {
+   "faculty": "Kethavath Raghavendra Naik (NIT Jamshedpur, Electrical Engineering)",
+   "suggested": "Veerpratap Meena (NIT Jamshedpur, Electrical Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Machine Learning-Based Classification of Space Debris and Satellites Using Orbital Parameters",
+   "same_department": true
+  },
+  {
+   "faculty": "Kumari Namrata (NIT Jamshedpur, Electrical Engineering)",
+   "suggested": "Veerpratap Meena (NIT Jamshedpur, Electrical Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Detection of Islanding in AC Microgrid Using Random Forest And Scalogram Image Based Local Binary Pattern",
+   "same_department": true
+  },
+  {
+   "faculty": "B Ramachandra Reddy (NIT Jamshedpur, Computer Science and Engineering)",
+   "suggested": "Jitesh Pradhan (NIT Jamshedpur, Computer Science and Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Multi-varient Feature Extraction and its Late Fusion with VGG-16 based Deep Feature for Oral Cancer Detection via Multiple Classification",
+   "same_department": true
+  },
+  {
+   "faculty": "Nenavath Sreenu (MANIT Bhopal, Management Studies)",
+   "suggested": "Bikrant Kesari (MANIT Bhopal, Management Studies)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "The role of HR analytics in driving organizational agility and operational performance: evidence from the construction sector",
+   "same_department": true
+  },
+  {
+   "faculty": "Deepak Singh Tomar (MANIT Bhopal, Computer Science and Engineering)",
+   "suggested": "Bholanath Roy (MANIT Bhopal, Computer Science and Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Bug Bounty Programs: A Comprehensive Meta-Analytical Review of Strategies, Challenges, and Future Directions",
+   "same_department": true
+  },
+  {
+   "faculty": "Vijay Panchore (MANIT Bhopal, Mechanical Engineering)",
+   "suggested": "Tikendra Nath Verma (MANIT Bhopal, Mechanical Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "CFD analysis of natural ventilation\u2019s role in modulating transient metabolic rate and enhancing indoor comfort",
+   "same_department": true
+  },
+  {
+   "faculty": "Somnath Santra (NIT Silchar, Mechanical Engineering)",
+   "suggested": "Sukumar Pati (NIT Silchar, Mechanical Engineering)",
+   "rank_in_list": 1,
+   "joint_paper_2025": "Computational study of blood flow and mass transport in stenosed arteries under pathophysiological conditions",
+   "same_department": true
+  }
+ ]
+}
